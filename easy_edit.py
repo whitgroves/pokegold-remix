@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 # Converts certain gen2 game files between assembly and csv for easier editing of the type chart and movepool.
+# Not backwards-compatible with gen1.
 
 import os
 import csv
@@ -10,7 +11,7 @@ from argparse import ArgumentParser
 # Command-Line Arguments
 
 parser = ArgumentParser()
-parser.description = 'Converts certain game files between assembly and csv for easier editing of the type chart and movepool.\
+parser.description = 'Converts certain gen2 game files between assembly and csv for easier editing of the type chart and movepool.\
                       By default, assumes cwd is the root folder of the disassembly. Does not support custom types.'
 parser.add_argument('-c', '--csv-dir', type=Path, help="Where to read/write the csv files. Defaults to cwd.", default='.')
 parser.add_argument('-d', '--data-dir', type=Path, help="Where the game's data files are located.", default='./data/')
@@ -78,7 +79,7 @@ def export_matchups() -> None: # exports type_matchups.asm to type_matchups.csv
             writer.writerow([attacker, *matchups[attacker].values()])
     safe_print('Exporting type_matchups.asm to type_matchups.csv...Done.')
 
-def update_matchups() -> None: # overwrites type_matchups.asm using type_matchups.csv; currently NOT compatible with Gen 1
+def update_matchups() -> None: # overwrites type_matchups.asm using type_matchups.csv; breaks gen1 (foresight)
     csv_path = ARGS.csv_dir.joinpath('type_matchups.csv')
     if not csv_path.exists(): safe_print('type_matchups.csv not found. Skipping update.')
     else:
@@ -101,7 +102,6 @@ def update_matchups() -> None: # overwrites type_matchups.asm using type_matchup
                         code = f'\tdb {rpad(attacker, 13)} {rpad(defender, 13)} {effects[effect]}'
                         if defender == 'GHOST,' and attacker in ['NORMAL,', 'FIGHTING,']: foresight.append(code) # see last note
                         else: lines.append(code)
-                # TODO: read type_constants to identify gen1 vs gen2 code and set automatic toggle to skip this block for gen 1
                 lines.append('\n\tdb -2 ; end (with Foresight)')
                 lines.append("\n; Foresight removes Ghost's immunities.")
                 lines.extend(foresight)
@@ -111,22 +111,23 @@ def update_matchups() -> None: # overwrites type_matchups.asm using type_matchup
 
 ## Moves
 
-def export_moves() -> None: # exports moves.asm to moves.csv
+def export_moves() -> None: # exports moves.asm to moves.csv; breaks gen1 (side effect %)
     safe_print('Exporting moves.asm to moves.csv...', end='\r')
     with ARGS.data_dir.joinpath('moves', 'moves.asm').open() as infile:
         with ARGS.csv_dir.joinpath('moves.csv').open('w') as outfile:
             writer = csv.writer(outfile, delimiter=',')
-            writer.writerow(['Name', 'Effect', 'Power', 'Type', 'Accuracy', 'PP'])
+            writer.writerow(['Name', 'Effect', 'Power', 'Type', 'Accuracy', 'PP', 'Side Effect %'])
             for line in infile.readlines():
                 data = line.split(';')[0].split('\tmove')
-                if len(data) > 1: 
+                if len(data) > 1:
                     data = [d.strip().upper() for d in data[-1].split(',')]
                     data[0] = format_move(data[0])
                     data[3] = format_type(data[3])
+                    print(data)
                     writer.writerow(data)
     safe_print('Exporting moves.asm to moves.csv...Done.')
 
-def update_moves() -> None: # overwrites moves.asm using moves.csv
+def update_moves() -> None: # overwrites moves.asm using moves.csv; breaks gen1 (side effect %)
     csv_path = ARGS.csv_dir.joinpath('moves.csv')
     if not csv_path.exists(): safe_print('moves.csv not found. Skipping update.')
     else:
@@ -135,28 +136,31 @@ def update_moves() -> None: # overwrites moves.asm using moves.csv
             with ARGS.data_dir.joinpath('moves', 'moves.asm').open('w') as outfile:
                 reader = csv.reader(infile, delimiter=',')
                 lines = [
+                    '; Characteristics of each move.',
+                    '',
                     'MACRO move',
-                    '\tdb \\1 ; animation (interchangeable with move id)',
+                    '\tdb \\1 ; animation',
                     '\tdb \\2 ; effect',
                     '\tdb \\3 ; power',
                     '\tdb \\4 ; type',
                     '\tdb \\5 percent ; accuracy',
                     '\tdb \\6 ; pp',
+                    '\tdb \\7 percent ; effect chance',
                     '\tassert \\6 <= 40, "PP must be 40 or less"',
                     'ENDM',
                     '',
                     'Moves:',
-                    '; Characteristics of each move.',
+                    '; entries correspond to move ids (see constants/move_constants.asm)',
                     '\ttable_width MOVE_LENGTH, Moves',
                 ]
-                for i, (name, effect, power, _type, accuracy, pp, *_) in enumerate(reader):
+                for i, (name, effect, power, _type, accuracy, pp, side_effect, *_) in enumerate(reader):
                     if i == 0: continue # header
-                    if any([not field.isnumeric() for field in [power, accuracy, pp]]): raise ValueError('Power, Accuracy, and PP must be numeric.')
+                    if any([not field.isnumeric() for field in [power, accuracy, pp, side_effect]]): raise ValueError('Power, Accuracy, PP, and Side Effect % must be numeric.')
                     name = format_move(name, as_code=True)
                     _type = format_type(_type, as_code=True)
                     name, effect, _type = [field.strip().upper()+',' for field in [name, effect, _type]]
-                    power, accuracy, pp = [lpad(field, 3)+',' for field in [power, accuracy, pp]]
-                    lines.append(f'\tmove {rpad(name, 13)} {rpad(effect, 27)} {rpad(power, 4)} {rpad(_type, 13)} {rpad(accuracy, 4)}{pp[:-1]}')
+                    power, accuracy, pp, side_effect = [lpad(field, 3)+',' for field in [power, accuracy, pp, side_effect]]
+                    lines.append(f'\tmove {rpad(name, 13)} {rpad(effect, 25)} {rpad(power, 4)} {rpad(_type, 13)} {rpad(accuracy, 4)}{rpad(pp,2)}{lpad(side_effect[:-1], 4)}')
                 lines.append('\tassert_table_length NUM_ATTACKS')
                 outfile.writelines([line+'\n' for line in lines])
         safe_print('Updating moves.asm using moves.csv...Done.')
@@ -343,9 +347,9 @@ if __name__ == '__main__':
     if ARGS.all or ARGS.matchups:
        if ARGS.export: export_matchups()
        if ARGS.update: update_matchups()
-    if ARGS.all or ARGS.moves: pass
-        # if ARGS.export: export_moves()
-        # if ARGS.update: update_moves()
+    if ARGS.all or ARGS.moves:
+        if ARGS.export: export_moves()
+        if ARGS.update: update_moves()
     if ARGS.mon: pass
     #     ARGS.mon = ARGS.mon.lower() # filenames are all lowercase
     #     for punct in ['.', '_', "'"]: ARGS.mon = ARGS.mon.replace(punct, '') # Mr.Mime, Farfetch'd, plus "_" to be nice
