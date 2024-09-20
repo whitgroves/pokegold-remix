@@ -1,4 +1,4 @@
-TypeMatchups:
+TypeEffects:
 	;  attacker,     defender,     *=
 	db NORMAL,       ROCK,         NOT_VERY_EFFECTIVE
 	db NORMAL,       STEEL,        NOT_VERY_EFFECTIVE
@@ -32,6 +32,7 @@ TypeMatchups:
 	db GRASS,        ROCK,         SUPER_EFFECTIVE
 	db GRASS,        DRAGON,       NOT_VERY_EFFECTIVE
 	db GRASS,        STEEL,        NOT_VERY_EFFECTIVE
+	db ICE,          FIRE,         NOT_VERY_EFFECTIVE
 	db ICE,          WATER,        NOT_VERY_EFFECTIVE
 	db ICE,          GRASS,        SUPER_EFFECTIVE
 	db ICE,          ICE,          NOT_VERY_EFFECTIVE
@@ -39,7 +40,6 @@ TypeMatchups:
 	db ICE,          FLYING,       SUPER_EFFECTIVE
 	db ICE,          DRAGON,       SUPER_EFFECTIVE
 	db ICE,          STEEL,        NOT_VERY_EFFECTIVE
-	db ICE,          FIRE,         NOT_VERY_EFFECTIVE
 	db FIGHTING,     NORMAL,       SUPER_EFFECTIVE
 	db FIGHTING,     ICE,          SUPER_EFFECTIVE
 	db FIGHTING,     POISON,       NOT_VERY_EFFECTIVE
@@ -92,9 +92,9 @@ TypeMatchups:
 	db ROCK,         STEEL,        NOT_VERY_EFFECTIVE
 	db GHOST,        NORMAL,       NO_EFFECT
 	db GHOST,        PSYCHIC_TYPE, SUPER_EFFECTIVE
+	db GHOST,        GHOST,        SUPER_EFFECTIVE
 	db GHOST,        DARK,         NOT_VERY_EFFECTIVE
 	db GHOST,        STEEL,        NOT_VERY_EFFECTIVE
-	db GHOST,        GHOST,        SUPER_EFFECTIVE
 	db DRAGON,       DRAGON,       SUPER_EFFECTIVE
 	db DRAGON,       STEEL,        NOT_VERY_EFFECTIVE
 	db DARK,         FIGHTING,     NOT_VERY_EFFECTIVE
