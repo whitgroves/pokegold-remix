@@ -123,7 +123,6 @@ def export_moves() -> None: # exports moves.asm to moves.csv; breaks gen1 (side 
                     data = [d.strip().upper() for d in data[-1].split(',')]
                     data[0] = format_move(data[0])
                     data[3] = format_type(data[3])
-                    print(data)
                     writer.writerow(data)
     safe_print('Exporting moves.asm to moves.csv...Done.')
 
@@ -216,6 +215,7 @@ def export_mon() -> None: # exports <ARGS.mon>.asm and evos_attacks.asm (partial
             if reading_sprites: mon_data[-1].append(data)
             else: mon_data.append(data.split(','))
     tm_hm_moves = mon_data.pop(-1) # multi-line exception in gen 1, but useful to separate here for formatting
+    if len(tm_hm_moves) == 1: tm_hm_moves.pop() # 1 entry = empty learnset, as there are no pokemon that learn only 1 TM/HM
     evo_data = [] # excluded in code for mons that don't evolve, but included here for consistent formatting
     level_moves = [] # level up learnset and evolution are pulled from a single file (evos_attacks.asm) for all mons
     with indir.joinpath('evos_attacks.asm').open() as infile:
@@ -255,7 +255,7 @@ def export_mon() -> None: # exports <ARGS.mon>.asm and evos_attacks.asm (partial
         for evo in evo_data: writer.writerow(['', *evo]) # gotta support eevee
         writer.writerow([]) # readability
         writer.writerow(['moves -- must match constants/move_constants.asm (case insensitive)']) # must start with "moves" -- see update_mon()
-        writer.writerow(['...by level up !!ORDER MATTERS!!', 'Move Name', 'Learned At'])
+        writer.writerow(['...by level up (in order)', 'Move Name', 'Learned At'])
         for level, move in level_moves: writer.writerow(['', format_move(move), level])
         writer.writerow([]) # readability
         writer.writerow(['...by TM/HM', 'Move Name']) # first column must end with "TM/HM" -- see update_mon()
@@ -298,14 +298,16 @@ def update_mon() -> None: # imports <ARGS.mon>.csv to <ARGS.mon>.asm and does in
         dex_num = None
         with open('constants/pokemon_constants.asm') as temp: # lookup dex no. for comments
             for line in temp.readlines():
-                if filename.upper() not in line: continue
-                dex_num = int(line.split(';')[-1].strip(), 16) # comments are in hex
+                line = line.split(';')
+                if line[0].replace('const','').strip() != filename.upper(): continue
+                dex_num = int(line[-1].strip(), 16) # comments are in hex
+                break
         with out_path.joinpath('base_stats',f'{filename}.asm').open('w') as outfile:
             lines = []
             for i, data in enumerate(mon_data):
                 data = [d for d in data if d != ''] # libre fills empty columns
                 match i:
-                    case 0:  line = f'db {data[0]} ; {dex_num}'
+                    case 0:  line = f'db {data[0]} ; {dex_num:03d}'
                     case 1:  line = f'db {", ".join([lpad(d, 3) for d in data])}\n\t;   hp  atk  def  spd  sat  sdf'
                     case 2:  line = f'db {", ".join([format_type(d, as_code=True) for d in data])} ; type'
                     case 3:  line = f'db {data[0]} ; catch rate'
@@ -316,7 +318,6 @@ def update_mon() -> None: # imports <ARGS.mon>.csv to <ARGS.mon>.asm and does in
                     case 8:  line = f'db {data[0]} ; step cycles to hatch'
                     case 9:  line = f'db {data[0]} ; unknown 2'
                     case 10:
-                        print(data)
                         if len(data) > 1: # special case
                             lines.append('IF DEF(_GOLD)')
                             lines.append(f'\tINCBIN {data[0]}')
@@ -332,8 +333,8 @@ def update_mon() -> None: # imports <ARGS.mon>.csv to <ARGS.mon>.asm and does in
                 if i in [0, 1, 13]: line = line + '\n' # clean code
                 lines.append(f'\t{line}')
             lines.append('\t; tm/hm learnset')
-            line = 'tmhm' # gen 2 puts these all on one line, so formatting is easier
-            if len(tm_hm_moves) > 0: line = line + ' ' + ', '.join([format_move(move[0], as_code=True) for move in tm_hm_moves]) # each move is a 1-item list
+            line = 'tmhm'
+            if len(tm_hm_moves) > 0: line = line + ' ' + ', '.join([format_move(move[0], as_code=True) for move in tm_hm_moves]) # gen 2 puts these on a single line
             lines.append(f'\t{line}')
             lines.append('\t; end')
             outfile.writelines([line+'\n' for line in lines])
@@ -390,7 +391,7 @@ if __name__ == '__main__':
         safe_print(f'{operation} data for all pokemon...', end='\r')
         ARGS.quiet = True
         for file in os.listdir(ARGS.data_dir.joinpath('pokemon', 'base_stats')):
-            ARGS.mon = file.rsplit('.',maxsplit=1)[0]
+            ARGS.mon = file.rsplit('.',maxsplit=1)[0].replace('_', '')
             try:
                 if ARGS.export: export_mon()
                 if ARGS.update: update_mon()
