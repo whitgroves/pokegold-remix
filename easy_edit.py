@@ -13,7 +13,7 @@ from argparse import ArgumentParser
 parser = ArgumentParser()
 parser.description = 'Converts certain gen2 game files between assembly and csv for easier editing of the type chart and movepool.\
                       By default, assumes cwd is the root folder of the disassembly. Does not support custom types.'
-parser.add_argument('-c', '--csv-dir', type=Path, help="Where to read/write the csv files. Defaults to cwd.", default='.')
+parser.add_argument('-c', '--csv-dir', type=Path, help="Where to read/write the csv files. Defaults to cwd.", default='.edits')
 parser.add_argument('-d', '--data-dir', type=Path, help="Where the game's data files are located.", default='./data/')
 parser.add_argument('-e', '--export', action='store_true', help="When set, exports the game's assembly files to csv.")
 parser.add_argument('-u', '--update', action='store_true', help="When set, updates the game's assembly files with csv edits.")
@@ -173,40 +173,57 @@ mon_data_labels = [
     'base stats (0-255)',
     'type(s) -- enter twice for monotype (ex: BUG BUG)',
     'catch rate (X/255)',
-    'base exp (0-255)', 
-    'dex sprite -- not advised to chnage here',
-    'battle sprite pointers -- see gfx/pics.asm',
-    'level 1 learnset -- for empty slot(s) add NO_MOVE',
+    'base exp (0-255)',
+    'held items -- enter NO_ITEM for none',
+    'gender ratio -- see constants/pokemon_data_constants.asm',
+    'unknown 1',
+    'hatch steps',
+    'unknown 2',
+    'front sprite -- by version',
+    'unused (NULL)',
     'growth rate -- see constants/pokemon_data_constants.asm',
+    'egg group(s) -- see constants/pokemon_data_constants.asm',
+    # tm/hm learnset -- excluded from this list for csv formatting
 ]
 
-# Special cases where mons EvosMoves pointers are formatted with internal camel case.
-mon_name_exceptions = {'nidoranm':'NidoranM', 'nidoranf':'NidoranF', 'mrmime':'MrMime'} 
+# Special cases where name formatting does not match the typical pattern across files. { <mon name> : (<filename>, <EvosAttacks prefix>) }
+name_exceptions = {
+    'nidoranf' : ('nidoran_f', 'NidoranF'),
+    'nidoranm' : ('nidoran_m', 'NidoranM'),
+    'mrmime' : ('mr__mime', 'MrMime'),
+    'hooh' : ('ho_oh', 'HoOh'),
+}
 
 def export_mon() -> None: # exports <ARGS.mon>.asm and evos_moves.asm (partial) to <ARGS.mon>.csv
     safe_print(f'Exporting {ARGS.mon}.asm and evos_moves.asm to {ARGS.mon}.csv...', end='\r')
     indir = ARGS.data_dir.joinpath('pokemon')
     mon_data = [] # see mon_data_labels
-    label_index = 0 # see mon_data_labels
-    tm_hm_moves = [] # multi-row edge case, excluded from mon_data_labels since they're always at the end
-    with indir.joinpath('base_stats', f'{ARGS.mon}.asm').open() as infile:
+    reading_sprites = False # these vary by version and are determined at build time
+    filename = ARGS.mon
+    pointer = filename[0].upper() + filename[1:]
+    if ARGS.mon in name_exceptions: filename, pointer = name_exceptions[ARGS.mon]
+    with indir.joinpath('base_stats', f'{filename}.asm').open() as infile:
         for line in infile.readlines():
             data = line.split(';')[0].strip()
-            if not data: continue
-            if label_index < len(mon_data_labels):
-                mon_data.append(data.split(' ', maxsplit=1)[-1].strip().split(','))
-                label_index += 1
-            elif not any([prefix in data for prefix in ['db 0', 'db %11111111']]): # mew is special
-                tm_hm_moves.extend([move.strip() for move in data.split('tmhm')[-1].strip().split(',') if '\\' not in move])
+            if not data or any(d in data for d in ['IF DEF','ENDC']): continue
+            if not reading_sprites and 'INCBIN' in data:
+                reading_sprites = True
+                mon_data.append([]) # start sprite list
+            elif reading_sprites and not 'INCBIN' in data:
+                reading_sprites = False
+            data = data.split(' ', maxsplit=1)[-1].strip()
+            if reading_sprites: mon_data[-1].append(data)
+            else: mon_data.append(data.split(','))
+    tm_hm_moves = mon_data.pop(-1) # multi-line exception in gen 1, but useful to separate here for formatting
     evo_data = [] # excluded in code for mons that don't evolve, but included here for consistent formatting
-    level_moves = [] # level up learnset and evolution are pulled from a single file (evos_moves.asm) for all mons
-    with indir.joinpath('evos_moves.asm').open() as infile:
-        mon_header = (mon_name_exceptions[ARGS.mon] if ARGS.mon in mon_name_exceptions else ARGS.mon[0].upper() + ARGS.mon[1:].lower()) + 'EvosMoves:'
+    level_moves = [] # level up learnset and evolution are pulled from a single file (evos_attacks.asm) for all mons
+    with indir.joinpath('evos_attacks.asm').open() as infile:
+        mon_header = pointer + 'EvosAttacks:'
         mon_found = False
         in_evos = True
         for line in infile.readlines():
             data = line.split(';')[0].strip()
-            if 'EvosMoves:' in data and mon_found: mon_found = False
+            if 'EvosAttacks:' in data and mon_found: mon_found = False
             if data == mon_header: 
                 mon_found = True
                 continue # skip header
@@ -223,18 +240,13 @@ def export_mon() -> None: # exports <ARGS.mon>.asm and evos_moves.asm (partial) 
             data = [d.strip() for d in mon_data[i]]
             if i in [1, 2, 5, 6, 7]:
                 match i:
-                    case 1: writer.writerow(['','Hit Points','Attack','Defense','Speed','Special'])
+                    case 1: writer.writerow(['','Hit Points','Attack','Defense','Speed','Sp. Attack', 'Sp. Defense'])
                     case 2: 
                         writer.writerow(['','Type 1','Type 2'])
                         data = [format_type(d) for d in data]
-                    case 5: writer.writerow(['','File','(0)','(1)']) # if someone knows how these work please advise
-                    case 6: writer.writerow(['','Front','Back'])
-                    case 7: 
-                        writer.writerow(['','Slot 1','Slot 2','Slot 3','Slot 4'])
-                        data = [format_move(d) for d in data]
             writer.writerow([label, *data])
             writer.writerow([]) # readability
-        writer.writerow(['evolution(s) -- see data/pokemon/evos_moves.asm'])
+        writer.writerow(['evolution(s) -- see data/pokemon/evos_attacks.asm'])
         writer.writerow(['if by level...', '(EVOLVE_LEVEL)', 'At Level', 'Evolves To'])
         writer.writerow(['if by stone...', '(EVOLVE_ITEM)', 'With Item', 'Min Level', 'Evolves To'])
         writer.writerow(['if by trade...', '(EVOLVE_TRADE)', 'Min Level', 'Evolves To'])
@@ -242,7 +254,7 @@ def export_mon() -> None: # exports <ARGS.mon>.asm and evos_moves.asm (partial) 
         for evo in evo_data: writer.writerow(['', *evo]) # gotta support eevee
         writer.writerow([]) # readability
         writer.writerow(['moves -- must match constants/move_constants.asm (case insensitive)']) # must start with "moves" -- see update_mon()
-        writer.writerow(['...by level up -- max 8 !!ORDER MATTERS!!', 'Move Name', 'Learned At'])
+        writer.writerow(['...by level up !!ORDER MATTERS!!', 'Move Name', 'Learned At'])
         for level, move in level_moves: writer.writerow(['', format_move(move), level])
         writer.writerow([]) # readability
         writer.writerow(['...by TM/HM', 'Move Name']) # first column must end with "TM/HM" -- see update_mon()
@@ -256,78 +268,78 @@ def update_mon() -> None: # imports <ARGS.mon>.csv to <ARGS.mon>.asm and does in
     elif not out_path.exists(): safe_print(f'{ARGS.mon}.asm not found. Skipping update.')
     else:
         safe_print(f'Updating {ARGS.mon}.asm using {ARGS.mon}.csv...', end='\r')
-        data_index = 0 # traverses mon_data_labels, then evos, level up moves, and tm/hm's
-        mon_data = [] # see mon_data_labels
-        evo_data = [] # nested list for eevee
-        level_moves = [] # [[move, level], [move, level], ..., etc.]
-        tm_hm_moves = [] # [move1, move2, ..., moveN]
-        with csv_path.open() as infile:
-            reader = csv.reader(infile, delimiter=',')
-            for row in reader:
-                if not row or all([col == '' for col in row]): continue # libre fills empty rows
-                n_labels = len(mon_data_labels)
-                if len(mon_data) < n_labels: # base stats, sprites, etc.
-                    if row[0] == mon_data_labels[data_index]:
-                        mon_data.append(row[1:])
-                        data_index += 1
-                elif data_index == n_labels: # evolution(s)
-                    if row[0] == '': evo_data.append([col for col in row[1:] if col != ''])
-                    elif row[0][:5] == 'moves': data_index += 1 # must match section header -- see export_mon()
-                elif data_index == n_labels + 1: # level up moves
-                    if row[0] == '': level_moves.append(row[1:])
-                    elif row[0][-5:] == 'TM/HM': data_index += 1 # must match section header -- see export_mon()
-                elif data_index == n_labels + 2: # tm/hm moves    
-                    if row[0] == '': tm_hm_moves.append([move for move in row[1:]]) # imports as nested list
-        with out_path.joinpath('base_stats',f'{ARGS.mon}.asm').open('w') as outfile:
-            lines = []
-            for i, data in enumerate(mon_data):
-                data = [d for d in data if d != ''] # libre fills empty columns
-                match i:
-                    case 0: line = f'db {data[0]} ; pokedex id'
-                    case 1: line = f'db {", ".join([lpad(d, 3) for d in data])}\n\t;   hp  atk  def  spd  spc'
-                    case 2: line = f'db {", ".join([format_type(d, as_code=True) for d in data])} ; type'
-                    case 3: line = f'db {data[0]} ; catch rate'
-                    case 4: line = f'db {data[0]} ; base exp'
-                    case 5: line = f'INCBIN {", ".join(data)} ; sprite dimensions'
-                    case 6: line = f'dw {", ".join(data)}'
-                    case 7: line = f'db {", ".join([format_move(d, as_code=True) for d in data])} ; level 1 learnset'
-                    case 8: line = f'db {data[0]} ; growth rate'
-                    case _: break
-                if i in [0, 1, 4, 6, 8]: line = line + '\n' # clean code
-                lines.append(line)
-            lines.append('; tm/hm learnset')
-            if len(tm_hm_moves) == 0: lines.append('tmhm')
-            else:
-                move_index = 0 # rows of 5
-                while move_index < len(tm_hm_moves):
-                    line = ('tmhm ' if move_index == 0 else ' '*5) + ''.join([rpad(format_move(move[0], as_code=True)+',', 14) for move in tm_hm_moves[move_index:move_index+5]]) + '\\'
-                    move_index += 5
-                    if move_index >= len(tm_hm_moves): line = line.rsplit(',', maxsplit=1)[0] # clean code
-                    lines.append(line)
-            lines.append('; end\n')
-            lines.append(f'{"db %11111111" if mon_data[0][0] == "DEX_MEW" else "db 0"} ; padding') # mew is special
-            outfile.writelines(['\t'+line+'\n' for line in lines])
-        evos_moves = None # read entire file into a list, slice and replace mon data, then write the whole thing back
-        with out_path.joinpath('evos_moves.asm').open('r') as outfile: evos_moves = outfile.readlines()
-        mon_header = (mon_name_exceptions[ARGS.mon] if ARGS.mon in mon_name_exceptions else ARGS.mon[0].upper() + ARGS.mon[1:].lower()) + 'EvosMoves:'
-        mon_found = False
-        start, end = 0, None
-        for i, line in enumerate(evos_moves):
-            if 'EvosMoves:' in line and mon_found:
-                end = i
-                break
-            if mon_header in line: 
-                mon_found = True
-                start = i
-        updates = [mon_header, '; Evolutions']
-        for evo in evo_data: updates.append(f'\tdb {", ".join(evo)}') # scrub a lubba dub dub
-        updates.append('\tdb 0')
-        updates.append('; Learnset')
-        for move in level_moves: updates.append(f'\tdb {move[1]}, {format_move(move[0], as_code=True)}')
-        updates.append('\tdb 0'+('\n' if end is not None else ''))
-        updates = [line + '\n' for line in updates]
-        lines = evos_moves[:start] + updates + ([] if end is None else evos_moves[end:])
-        with out_path.joinpath('evos_moves.asm').open('w') as outfile: outfile.writelines(lines)
+        # data_index = 0 # traverses mon_data_labels, then evos, level up moves, and tm/hm's
+        # mon_data = [] # see mon_data_labels
+        # evo_data = [] # nested list for eevee
+        # level_moves = [] # [[move, level], [move, level], ..., etc.]
+        # tm_hm_moves = [] # [move1, move2, ..., moveN]
+        # with csv_path.open() as infile:
+        #     reader = csv.reader(infile, delimiter=',')
+        #     for row in reader:
+        #         if not row or all([col == '' for col in row]): continue # libre fills empty rows
+        #         n_labels = len(mon_data_labels)
+        #         if len(mon_data) < n_labels: # base stats, sprites, etc.
+        #             if row[0] == mon_data_labels[data_index]:
+        #                 mon_data.append(row[1:])
+        #                 data_index += 1
+        #         elif data_index == n_labels: # evolution(s)
+        #             if row[0] == '': evo_data.append([col for col in row[1:] if col != ''])
+        #             elif row[0][:5] == 'moves': data_index += 1 # must match section header -- see export_mon()
+        #         elif data_index == n_labels + 1: # level up moves
+        #             if row[0] == '': level_moves.append(row[1:])
+        #             elif row[0][-5:] == 'TM/HM': data_index += 1 # must match section header -- see export_mon()
+        #         elif data_index == n_labels + 2: # tm/hm moves    
+        #             if row[0] == '': tm_hm_moves.append([move for move in row[1:]]) # imports as nested list
+        # with out_path.joinpath('base_stats',f'{ARGS.mon}.asm').open('w') as outfile:
+        #     lines = []
+        #     for i, data in enumerate(mon_data):
+        #         data = [d for d in data if d != ''] # libre fills empty columns
+        #         match i:
+        #             case 0: line = f'db {data[0]} ; pokedex id'
+        #             case 1: line = f'db {", ".join([lpad(d, 3) for d in data])}\n\t;   hp  atk  def  spd  spc'
+        #             case 2: line = f'db {", ".join([format_type(d, as_code=True) for d in data])} ; type'
+        #             case 3: line = f'db {data[0]} ; catch rate'
+        #             case 4: line = f'db {data[0]} ; base exp'
+        #             case 5: line = f'INCBIN {", ".join(data)} ; sprite dimensions'
+        #             case 6: line = f'dw {", ".join(data)}'
+        #             case 7: line = f'db {", ".join([format_move(d, as_code=True) for d in data])} ; level 1 learnset'
+        #             case 8: line = f'db {data[0]} ; growth rate'
+        #             case _: break
+        #         if i in [0, 1, 4, 6, 8]: line = line + '\n' # clean code
+        #         lines.append(line)
+        #     lines.append('; tm/hm learnset')
+        #     if len(tm_hm_moves) == 0: lines.append('tmhm')
+        #     else:
+        #         move_index = 0 # rows of 5
+        #         while move_index < len(tm_hm_moves):
+        #             line = ('tmhm ' if move_index == 0 else ' '*5) + ''.join([rpad(format_move(move[0], as_code=True)+',', 14) for move in tm_hm_moves[move_index:move_index+5]]) + '\\'
+        #             move_index += 5
+        #             if move_index >= len(tm_hm_moves): line = line.rsplit(',', maxsplit=1)[0] # clean code
+        #             lines.append(line)
+        #     lines.append('; end\n')
+        #     lines.append(f'{"db %11111111" if mon_data[0][0] == "DEX_MEW" else "db 0"} ; padding') # mew is special
+        #     outfile.writelines(['\t'+line+'\n' for line in lines])
+        # evos_moves = None # read entire file into a list, slice and replace mon data, then write the whole thing back
+        # with out_path.joinpath('evos_moves.asm').open('r') as outfile: evos_moves = outfile.readlines()
+        # mon_header = (mon_name_exceptions[ARGS.mon] if ARGS.mon in mon_name_exceptions else ARGS.mon[0].upper() + ARGS.mon[1:].lower()) + 'EvosAttacks:'
+        # mon_found = False
+        # start, end = 0, None
+        # for i, line in enumerate(evos_moves):
+        #     if 'EvosAttacks:' in line and mon_found:
+        #         end = i
+        #         break
+        #     if mon_header in line: 
+        #         mon_found = True
+        #         start = i
+        # updates = [mon_header, '; Evolutions']
+        # for evo in evo_data: updates.append(f'\tdb {", ".join(evo)}') # scrub a lubba dub dub
+        # updates.append('\tdb 0')
+        # updates.append('; Learnset')
+        # for move in level_moves: updates.append(f'\tdb {move[1]}, {format_move(move[0], as_code=True)}')
+        # updates.append('\tdb 0'+('\n' if end is not None else ''))
+        # updates = [line + '\n' for line in updates]
+        # lines = evos_moves[:start] + updates + ([] if end is None else evos_moves[end:])
+        # with out_path.joinpath('evos_moves.asm').open('w') as outfile: outfile.writelines(lines)
         safe_print(f'Updating {ARGS.mon}.asm using {ARGS.mon}.csv...Done.')
 
 # Showtime
@@ -350,23 +362,23 @@ if __name__ == '__main__':
     if ARGS.all or ARGS.moves:
         if ARGS.export: export_moves()
         if ARGS.update: update_moves()
-    if ARGS.mon: pass
-    #     ARGS.mon = ARGS.mon.lower() # filenames are all lowercase
-    #     for punct in ['.', '_', "'"]: ARGS.mon = ARGS.mon.replace(punct, '') # Mr.Mime, Farfetch'd, plus "_" to be nice
-    #     if ARGS.export: export_mon()
-    #     if ARGS.update: update_mon()
-    # elif ARGS.all:
-    #     operation = ('Exporting' if ARGS.export else 'Updating')
-    #     safe_print(f'{operation} data for all pokemon...', end='\r')
-    #     ARGS.quiet = True
-    #     for file in os.listdir(ARGS.data_dir.joinpath('pokemon', 'base_stats')):
-    #         ARGS.mon = file.rsplit('.',maxsplit=1)[0]
-    #         try:
-    #             if ARGS.export: export_mon()
-    #             if ARGS.update: update_mon()
-    #         except Exception as e:
-    #             print(f'\n{ARGS.mon} broke everything')
-    #             print(e)
-    #             break
-    #     ARGS.quiet = False
-    #     safe_print(f'{operation} data for all pokemon...Done.')
+    if ARGS.mon:
+        ARGS.mon = ARGS.mon.lower() # filenames are all lowercase
+        for punct in ['.', '_', "'", '-']: ARGS.mon = ARGS.mon.replace(punct, '') # simplify to all lowercase
+        if ARGS.export: export_mon()
+        if ARGS.update: update_mon()
+    elif ARGS.all:
+        operation = ('Exporting' if ARGS.export else 'Updating')
+        safe_print(f'{operation} data for all pokemon...', end='\r')
+        ARGS.quiet = True
+        for file in os.listdir(ARGS.data_dir.joinpath('pokemon', 'base_stats')):
+            ARGS.mon = file.rsplit('.',maxsplit=1)[0]
+            try:
+                if ARGS.export: export_mon()
+                if ARGS.update: update_mon()
+            except Exception as e:
+                print(f'\n{ARGS.mon} broke everything')
+                print(e)
+                break
+        ARGS.quiet = False
+        safe_print(f'{operation} data for all pokemon...Done.')
