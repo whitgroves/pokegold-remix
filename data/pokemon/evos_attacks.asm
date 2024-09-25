@@ -1298,7 +1298,7 @@ DrowzeeEvosAttacks:
 	db 36, MEDITATE
 	db 40, PSYCHIC_M
 	db 43, PSYCH_UP
-	db 45, FUTURE_SIGHT
+	db 45, DOUBLE_TEAM
 	db 0 ; no more level-up moves
 
 HypnoEvosAttacks:
@@ -1314,7 +1314,7 @@ HypnoEvosAttacks:
 	db 40, MEDITATE
 	db 49, PSYCHIC_M
 	db 55, PSYCH_UP
-	db 60, FUTURE_SIGHT
+	db 60, DOUBLE_TEAM
 	db 0 ; no more level-up moves
 
 KrabbyEvosAttacks:
@@ -1833,6 +1833,7 @@ JolteonEvosAttacks:
 	db 42, THUNDER_WAVE
 	db 47, AGILITY
 	db 52, THUNDER
+	db 59, DOUBLE_TEAM
 	db 0 ; no more level-up moves
 
 FlareonEvosAttacks:
@@ -2268,7 +2269,7 @@ LedianEvosAttacks:
 	db 33, BATON_PASS
 	db 42, SWIFT
 	db 51, AGILITY
-	db 60, DOUBLE_EDGE
+	db 60, DOUBLE_TEAM
 	db 0 ; no more level-up moves
 
 SpinarakEvosAttacks:
@@ -2313,6 +2314,7 @@ CrobatEvosAttacks:
 	db 30, WING_ATTACK
 	db 42, MEAN_LOOK
 	db 55, HAZE
+	db 61, DOUBLE_TEAM
 	db 0 ; no more level-up moves
 
 ChinchouEvosAttacks:
@@ -2651,6 +2653,7 @@ EspeonEvosAttacks:
 	db 42, PSYCH_UP
 	db 47, PSYCHIC_M
 	db 52, MORNING_SUN
+	db 59, DOUBLE_TEAM
 	db 0 ; no more level-up moves
 
 UmbreonEvosAttacks:
@@ -2697,6 +2700,7 @@ MisdreavusEvosAttacks:
 	db 6, SPITE
 	db 12, CONFUSE_RAY
 	db 19, MEAN_LOOK
+	db 23, DOUBLE_TEAM
 	db 27, PSYBEAM
 	db 36, PAIN_SPLIT
 	db 46, PERISH_SONG
@@ -2876,9 +2880,10 @@ SneaselEvosAttacks:
 	db 1, SCRATCH
 	db 1, LEER
 	db 9, QUICK_ATTACK
+	db 12, FURY_SWIPES
 	db 17, SCREECH
 	db 25, FAINT_ATTACK
-	db 33, FURY_SWIPES
+	db 33, DOUBLE_TEAM
 	db 41, AGILITY
 	db 49, SLASH
 	db 57, BEAT_UP
@@ -3117,7 +3122,7 @@ StantlerEvosAttacks:
 	db 8, LEER
 	db 15, HYPNOSIS
 	db 23, STOMP
-	db 31, SAND_ATTACK
+	db 31, DOUBLE_TEAM
 	db 40, TAKE_DOWN
 	db 49, CONFUSE_RAY
 	db 0 ; no more level-up moves
@@ -3149,12 +3154,14 @@ HitmontopEvosAttacks:
 	db 1, ROLLING_KICK
 	db 7, FOCUS_ENERGY
 	db 13, PURSUIT
-	db 19, QUICK_ATTACK
+	db 19, ROLLING_KICK
+	db 22, DOUBLE_KICK
 	db 25, RAPID_SPIN
 	db 31, COUNTER
+	db 33, TRIPLE_KICK
 	db 37, AGILITY
 	db 43, DETECT
-	db 49, TRIPLE_KICK
+	db 49, DOUBLE_TEAM
 	db 0 ; no more level-up moves
 
 SmoochumEvosAttacks:
@@ -3353,4 +3360,5 @@ CelebiEvosAttacks:
 	db 30, FUTURE_SIGHT
 	db 40, BATON_PASS
 	db 50, PERISH_SONG
+	db 60, DOUBLE_TEAM
 	db 0 ; no more level-up moves
