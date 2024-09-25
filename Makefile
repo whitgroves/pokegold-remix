@@ -56,11 +56,17 @@ RGBFIX  ?= $(RGBDS)rgbfix
 RGBGFX  ?= $(RGBDS)rgbgfx
 RGBLINK ?= $(RGBDS)rgblink
 
+# Update for your personal setup <<<-----!!!
+PY ?= python3
+EMU ?= mgba-qt
+
+# Where to save/load csv files for easy_edit
+EASY ?= .edits
 
 ### Build targets
 
 .SUFFIXES:
-.PHONY: all gold silver gold_debug silver_debug clean tidy compare tools
+.PHONY: all gold silver gold_debug silver_debug clean tidy compare tools edits updates # test release
 .SECONDEXPANSION:
 .PRECIOUS:
 .SECONDARY:
@@ -81,6 +87,8 @@ clean: tidy
 	        -o -name "*.dimensions" \
 	        -o -name "*.sgb.tilemap" \) \
 	     -delete
+	find $(EASY) -name '*.csv' -delete
+	find $(EASY) -name '.~lock.*.csv#' -delete
 
 tidy:
 	$(RM) $(roms) \
@@ -106,6 +114,17 @@ compare: $(roms) $(patches)
 tools:
 	$(MAKE) -C tools/
 
+edits:
+	$(PY) tools/easy_edit.py -e -c $(EASY) --all
+
+updates:
+	$(PY) tools/easy_edit.py -u -c $(EASY) --all
+
+# test: gold
+# 	$(EMU) pokegold.gbc
+
+# release: blue
+# 	mv pokegold.gbc 'Pokemon - Gold Remix.gbc'
 
 RGBASMFLAGS = -Q8 -P includes.asm -Weverything -Wnumeric-string=2 -Wtruncation=1
 # Create a sym/map for debug purposes if `make` run with `DEBUG=1`
@@ -135,7 +154,7 @@ $(info $(shell $(MAKE) -C tools))
 # The dep rules have to be explicit or else missing files won't be reported.
 # As a side effect, they're evaluated immediately instead of when the rule is invoked.
 # It doesn't look like $(shell) can be deferred so there might not be a better way.
-preinclude_deps := includes.asm $(shell tools/scan_includes includes.asm)
+preinclude_deps := includes.asm $(shell tools/scan_includes includes.asm) updates
 define DEP
 $1: $2 $$(shell tools/scan_includes $2) $(preinclude_deps) | rgbdscheck.o
 	$$(RGBASM) $$(RGBASMFLAGS) -o $$@ $$<
