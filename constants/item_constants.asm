@@ -249,7 +249,7 @@ DEF TM01 EQU const_value
 	const ITEM_DC       ; dc
 	add_tm PSYCHIC_M    ; dd
 	add_tm SHADOW_BALL  ; de
-	add_tm MUD_SLAP     ; df
+	add_tm MUD_SLAP     ; df (formerly MUD_SLAP - TODO: change to RAZOR_WIND)
 	add_tm FLAMETHROWER ; e0 (formerly DOUBLE_TEAM) TM32
 	add_tm ICE_PUNCH    ; e1
 	add_tm SWAGGER      ; e2
@@ -263,7 +263,7 @@ DEF TM01 EQU const_value
 	add_tm DREAM_EATER  ; ea
 	add_tm DETECT       ; eb
 	add_tm REST         ; ec
-	add_tm ATTRACT      ; ed
+	add_tm ATTRACT      ; ed (formerly ATTRACT - TODO: change to TRI_ATTACK)
 	add_tm THIEF        ; ee
 	add_tm STEEL_WING   ; ef
 	add_tm FIRE_PUNCH   ; f0
