@@ -10,7 +10,7 @@ However, some changes from Crystal, the Legacy hacks, and the [pret tutorials](h
 - Updated interactions for all 17 types ~
 - Updated typings to make certain Pokemon lore-friendly, interesting, or unique ~
 - Updated learnsets to better fit each Pokemon's kit ~
-- Several changes to the movepool, detailed [here](./MOVES.md) ~
+- Several updates to the movepool, detailed [here](./MOVES.md) ~
 - The Ghost type is special and the Dark type is physical ~
 - All 251 Pokemon are available on a single save ~
 - Select and play as the female protagonist (Kris) ~

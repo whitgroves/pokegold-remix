@@ -3,7 +3,7 @@ In order to mix things up, enable certain signature moves to work better with ne
 
 - The following moves have had their types changed:
     - TBD
-- The following moves are now 100% accurate (ignoring the 1/256 ~~glitch~~ feature):
+- The following moves are now 100% accurate:
     - TBD
 - The following moves have had their base power changed:
     - TBD
