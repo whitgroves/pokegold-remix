@@ -224,7 +224,7 @@ DEF TM01 EQU const_value
 	const ITEM_C3       ; c3
 	add_tm ROAR         ; c4
 	add_tm TOXIC        ; c5
-	add_tm ZAP_CANNON   ; c6
+	add_tm THUNDERBOLT  ; c6 (formerly ZAP_CANNON) TM07
 	add_tm ROCK_SMASH   ; c7
 	add_tm PSYCH_UP     ; c8
 	add_tm HIDDEN_POWER ; c9
@@ -233,7 +233,7 @@ DEF TM01 EQU const_value
 	add_tm SNORE        ; cc
 	add_tm BLIZZARD     ; cd
 	add_tm HYPER_BEAM   ; ce
-	add_tm ICY_WIND     ; cf
+	add_tm ICE_BEAM     ; cf (formerly ICY_WIND) TM16
 	add_tm PROTECT      ; d0
 	add_tm RAIN_DANCE   ; d1
 	add_tm GIGA_DRAIN   ; d2
@@ -242,7 +242,7 @@ DEF TM01 EQU const_value
 	add_tm SOLARBEAM    ; d5
 	add_tm IRON_TAIL    ; d6
 	add_tm DRAGONBREATH ; d7
-	add_tm THUNDER      ; d8
+	add_tm THUNDER      ; d8 
 	add_tm EARTHQUAKE   ; d9
 	add_tm RETURN       ; da
 	add_tm DIG          ; db
@@ -250,7 +250,7 @@ DEF TM01 EQU const_value
 	add_tm PSYCHIC_M    ; dd
 	add_tm SHADOW_BALL  ; de
 	add_tm MUD_SLAP     ; df
-	add_tm DOUBLE_TEAM  ; e0
+	add_tm FLAMETHROWER ; e0 (formerly DOUBLE_TEAM) TM32
 	add_tm ICE_PUNCH    ; e1
 	add_tm SWAGGER      ; e2
 	add_tm SLEEP_TALK   ; e3

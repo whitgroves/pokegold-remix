@@ -11,6 +11,7 @@ However, some changes from Crystal, the Legacy hacks, and the [pret tutorials](h
 - Updated typings to make certain Pokemon lore-friendly, interesting, or unique ~
 - Updated learnsets to better fit each Pokemon's kit ~
 - Several updates to the movepool, detailed [here](./MOVES.md) ~
+- TMs 07, 16, and 32 now teach *Thunderbolt*, *Ice Beam*, and *Flamethrower* ✓
 - The Ghost type is special and the Dark type is physical ~
 - All 251 Pokemon are available on a single save ~
 - Select and play as the female protagonist (Kris) ~
