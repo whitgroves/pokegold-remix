@@ -30,24 +30,24 @@ I don't like the Suicune plot, plus *Crystal Legacy* is far more comprehensive t
 That said, if you'd like to play Crystal Legacy with the remixed types, you can can clone both repos and use easy_edit to migrate the typechart, movepool, and pokemon to their codebase, then build your own revision of CL (although this will remove all of their stat and learnset changes).
 
 ## What's *easy_edit*?
-While working on Blue Remix I developed a script to convert type, move, and pokemon data from assembly to csv and back again for easier editing.
+While working on Blue Remix I developed a script, [*easy_edit*](https://github.com/whitgroves/pokeblue-remix/blob/rev_1.3/tools/easy_edit.py), to convert type, move, and pokemon data from assembly to csv and back again for easier editing.
 
-The version here should be compatible with any gen 2 disassembly and only relies on the python3 standard library, so feel free to use it for your own projects.
+The version here, **ee2 (easy_edit gen 2)**, should be compatible with any gen 2 disassembly and only relies on the python3 standard library, so feel free to use it for your own projects.
 
 ### Example 1
-To make changes for another repo, copy [easy_edit.py](./tools/easy_edit.py) into your project, then call:
+To make changes for another repo, copy [ee2.py](./tools/ee2.py) into the root of your project, then call:
 ```
-$ easy_edit.py -e --matchups
-$ easy_edit.py -e --moves
-$ easy_edit.py -e --mon <pokemon name, all lowercase, no spaces>
-$ easy_edit.py -e --all
+$ ee2.py -e --matchups
+$ ee2.py -e --moves
+$ ee2.py -e --mon <pokemon name, all lowercase, no spaces>
+$ ee2.py -e --all
 ```
 To generate your csv files for editing, then run:
 ```
-$ easy_edit.py -u --matchups
-$ easy_edit.py -u --moves
-$ easy_edit.py -u --mon <pokemon name, all lowercase, no spaces>
-$ easy_edit.py -u --all
+$ ee2.py -u --matchups
+$ ee2.py -u --moves
+$ ee2.py -u --mon <pokemon name, all lowercase, no spaces>
+$ ee2.py -u --all
 ```
 To overwrite the game's assembly files with any of those updates.
 
@@ -67,8 +67,8 @@ To import matchups, moves, and pokemon data from another gen2 hack (e.g., Crysta
 $ git clone https://github.com/cRz-Shadows/Pokemon_Crystal_Legacy.git
 $ git clone https://github.com/whitgroves/pokegold-remix.git
 $ cd pokegold-remix
-$ tools/easy_edit.py -e --all -d ../Pokemon_Crystal_Legacy/data/
-$ tools/easy_edit.py -u --all
+$ tools/ee2.py -e --all -d ../Pokemon_Crystal_Legacy/data/
+$ tools/ee2.py -u --all
 ```
 *Note: When importing between Gold/Silver and Crystal, sprite files need to be manually updated due to former having separate sprites for gold and silver.*
 
@@ -78,6 +78,6 @@ Please note that this script is not "smart", so values in the csv (except for "P
 
 Also, consider making a backup of the original data before updating so you can rollback changes:
 ```
-$ easy_edit.py -e --all -c .edits
+$ ee2.py -e --all -c .edits
 $ cp -r .edits .backups
 ```

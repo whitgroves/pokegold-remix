@@ -60,7 +60,7 @@ RGBLINK ?= $(RGBDS)rgblink
 PY ?= python3
 EMU ?= mgba-qt
 
-# Where to save/load csv files for easy_edit
+# Where to save/load csv files for ee2 (easy_edit)
 EASY ?= .edits
 
 ### Build targets
@@ -115,10 +115,10 @@ tools:
 	$(MAKE) -C tools/
 
 edits:
-	$(PY) tools/easy_edit.py -e -c $(EASY) --all
+	$(PY) tools/ee2.py -e -c $(EASY) --all
 
 updates:
-	$(PY) tools/easy_edit.py -u -c $(EASY) --all
+	$(PY) tools/ee2.py -u -c $(EASY) --all
 
 # test: gold
 # 	$(EMU) pokegold.gbc

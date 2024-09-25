@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 # Converts certain gen2 game files between assembly and csv for easier editing of the type chart and movepool.
-# Not backwards-compatible with gen1.
 
 import os
 import csv
@@ -56,7 +55,7 @@ def lpad(string:str, target:int) -> str: # left-pads `string` if shorter than `t
 
 def safe_print(message:str, **kwargs) -> None:
     if ARGS.quiet and not ARGS.verbose: return
-    print(f'easy_edit.py: {message}', **kwargs)
+    print(f'ee2.py (easy_edit): {message}', **kwargs)
 
 # Export / Update Functions
 
