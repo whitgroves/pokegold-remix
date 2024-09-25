@@ -15,6 +15,7 @@ However, some changes from Crystal, the Legacy hacks, and the [pret tutorials](h
 - All 251 Pokemon are available on a single save ~
 - Select and play as the female protagonist (Kris) ~
 - Fast text speed and Set battles by default ~
+- Use animated Pokemon sprites from Crystal ~
 - Auto-sort the backpack by pressing Start (thanks to [devolov](https://github.com/pret/pokered/wiki/Add-Item-Sorting-In-Bag)) ~
 - The good rod is good and the super rod is super ~
 - The "Down + B" trick actually works ~

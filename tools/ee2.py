@@ -78,7 +78,7 @@ def export_matchups() -> None: # exports type_matchups.asm to type_matchups.csv
             writer.writerow([attacker, *matchups[attacker].values()])
     safe_print('Exporting type_matchups.asm to type_matchups.csv...Done.')
 
-def update_matchups() -> None: # overwrites type_matchups.asm using type_matchups.csv; breaks gen1 (foresight)
+def update_matchups() -> None: # overwrites type_matchups.asm using type_matchups.csv
     csv_path = ARGS.csv_dir.joinpath('type_matchups.csv')
     if not csv_path.exists(): safe_print('type_matchups.csv not found. Skipping update.')
     else:
@@ -88,7 +88,7 @@ def update_matchups() -> None: # overwrites type_matchups.asm using type_matchup
             with ARGS.data_dir.joinpath('types', 'type_matchups.asm').open('w') as outfile:
                 reader = csv.reader(infile, delimiter=',')
                 lines = [
-                    'TypeEffects:',
+                    'TypeMatchups:',
                     '\t;  attacker,     defender,     *=',
                 ]
                 foresight = [] # Normal->Ghost and Normal->Fighting go in a separate table for Foresight
@@ -110,7 +110,7 @@ def update_matchups() -> None: # overwrites type_matchups.asm using type_matchup
 
 ## Moves
 
-def export_moves() -> None: # exports moves.asm to moves.csv; breaks gen1 (side effect %)
+def export_moves() -> None: # exports moves.asm to moves.csv
     safe_print('Exporting moves.asm to moves.csv...', end='\r')
     with ARGS.data_dir.joinpath('moves', 'moves.asm').open() as infile:
         with ARGS.csv_dir.joinpath('moves.csv').open('w') as outfile:
@@ -125,7 +125,7 @@ def export_moves() -> None: # exports moves.asm to moves.csv; breaks gen1 (side 
                     writer.writerow(data)
     safe_print('Exporting moves.asm to moves.csv...Done.')
 
-def update_moves() -> None: # overwrites moves.asm using moves.csv; breaks gen1 (side effect %)
+def update_moves() -> None: # overwrites moves.asm using moves.csv
     csv_path = ARGS.csv_dir.joinpath('moves.csv')
     if not csv_path.exists(): safe_print('moves.csv not found. Skipping update.')
     else:
@@ -193,7 +193,7 @@ name_exceptions = {
     'hooh' : ('ho_oh', 'HoOh'),
 }
 
-def export_mon() -> None: # exports <ARGS.mon>.asm and evos_attacks.asm (partial) to <ARGS.mon>.csv; breaks gen 1
+def export_mon() -> None: # exports <ARGS.mon>.asm and evos_attacks.asm (partial) to <ARGS.mon>.csv
     safe_print(f'Exporting {ARGS.mon}.asm and evos_attacks.asm to {ARGS.mon}.csv...', end='\r')
     indir = ARGS.data_dir.joinpath('pokemon')
     mon_data = [] # see mon_data_labels
@@ -261,7 +261,7 @@ def export_mon() -> None: # exports <ARGS.mon>.asm and evos_attacks.asm (partial
         for move in tm_hm_moves: writer.writerow(['', format_move(move)])
     safe_print(f'Exporting {ARGS.mon}.asm and evos_attacks.asm to {ARGS.mon}.csv...Done.')
 
-def update_mon() -> None: # imports <ARGS.mon>.csv to <ARGS.mon>.asm and does in-place update of evos_attacks.asm; breaks gen 1
+def update_mon() -> None: # imports <ARGS.mon>.csv to <ARGS.mon>.asm and does in-place update of evos_attacks.asm
     csv_path = ARGS.csv_dir.joinpath(f'{ARGS.mon}.csv')
     out_path = ARGS.data_dir.joinpath('pokemon')
     if not csv_path.exists(): safe_print(f'{ARGS.mon}.csv not found. Skipping update.')

@@ -1,11 +1,8 @@
 roms := \
 	pokegold.gbc \
-	pokesilver.gbc \
-	pokegold_debug.gbc \
-	pokesilver_debug.gbc
+	pokegold_debug.gbc
 patches := \
-	pokegold.patch \
-	pokesilver.patch
+	pokegold.patch
 
 rom_obj := \
 	audio.o \
@@ -66,7 +63,7 @@ EASY ?= .edits
 ### Build targets
 
 .SUFFIXES:
-.PHONY: all gold silver gold_debug silver_debug clean tidy compare tools edits updates # test release
+.PHONY: all gold gold_debug clean tidy compare tools edits updates test # release
 .SECONDEXPANSION:
 .PRECIOUS:
 .SECONDARY:
@@ -120,8 +117,8 @@ edits:
 updates:
 	$(PY) tools/ee2.py -u -c $(EASY) --all
 
-# test: gold
-# 	$(EMU) pokegold.gbc
+test: gold
+	$(EMU) pokegold.gbc
 
 # release: blue
 # 	mv pokegold.gbc 'Pokemon - Gold Remix.gbc'

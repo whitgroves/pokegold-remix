@@ -1,4 +1,4 @@
-TypeEffects:
+TypeMatchups:
 	;  attacker,     defender,     *=
 	db NORMAL,       ROCK,         NOT_VERY_EFFECTIVE
 	db NORMAL,       STEEL,        NOT_VERY_EFFECTIVE
