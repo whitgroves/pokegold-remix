@@ -42,7 +42,7 @@ MahoganyGymPryceScript:
 	setevent EVENT_BEAT_BOARDER_DOUGLAS
 	writetext PryceText_GlacierBadgeSpeech
 	promptbutton
-	verbosegiveitem TM_ICY_WIND
+	verbosegiveitem TM_ICE_BEAM
 	iffalse MahoganyGym_NoRoomForIcyWind
 	setevent EVENT_GOT_TM16_ICY_WIND
 	writetext PryceText_IcyWindSpeech
@@ -213,10 +213,10 @@ PryceText_GlacierBadgeSpeech:
 
 PryceText_IcyWindSpeech:
 	text "That TM contains"
-	line "ICY WIND."
+	line "ICE BEAM."
 
 	para "It inflicts damage"
-	line "and lowers speed."
+	line "and may freeze."
 
 	para "It demonstrates"
 	line "the harshness of"
