@@ -58,7 +58,7 @@ PY ?= python3
 EMU ?= mgba-qt
 
 # Where to save/load csv files for ee2 (easy_edit)
-EASY ?= .edits
+EASY ?= .easy_edit
 
 ### Build targets
 

@@ -246,10 +246,12 @@ def export_mon() -> None: # exports <ARGS.mon>.asm and evos_attacks.asm (partial
                         data = [format_type(d) for d in data]
             writer.writerow([label, *data])
             writer.writerow([]) # readability
-        writer.writerow(['evolution(s) -- see data/pokemon/evos_attacks.asm'])
+        writer.writerow(['evolution(s) -- see data/pokemon/evos_attacks.asm & constants/pokemon_data_constants.asm'])
         writer.writerow(['if by level...', '(EVOLVE_LEVEL)', 'At Level', 'Evolves To'])
         writer.writerow(['if by stone...', '(EVOLVE_ITEM)', 'With Item', 'Min Level', 'Evolves To'])
         writer.writerow(['if by trade...', '(EVOLVE_TRADE)', 'Min Level', 'Evolves To'])
+        writer.writerow(['if by happy...', '(EVOLVE_HAPPINESS)', 'During Time', 'Evolves To'])
+        writer.writerow(['if by stats...', '(EVOLVE_STAT)', 'With Ratio', 'Evolves To'])
         writer.writerow(['if fully evolved...', '*Leave blank*'])
         for evo in evo_data: writer.writerow(['', *evo]) # gotta support eevee
         writer.writerow([]) # readability
