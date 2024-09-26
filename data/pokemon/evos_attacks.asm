@@ -1805,6 +1805,7 @@ EeveeEvosAttacks:
 	db 30, BITE
 	db 36, BATON_PASS
 	db 42, TAKE_DOWN
+	db 48, CONVERSION
 	db 0 ; no more level-up moves
 
 VaporeonEvosAttacks:
