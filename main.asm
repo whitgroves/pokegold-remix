@@ -171,7 +171,7 @@ SECTION "Battle Core", ROMX
 
 INCLUDE "engine/battle/core.asm"
 INCLUDE "data/battle/effect_command_pointers.asm"
-
+INCLUDE "engine/battle/weather_interactions.asm"
 
 SECTION "bank10", ROMX
 
@@ -376,7 +376,6 @@ INCLUDE "engine/rtc/print_hours_mins.asm"
 INCLUDE "engine/pokedex/pokedex_3.asm"
 INCLUDE "engine/events/catch_tutorial_input.asm"
 INCLUDE "engine/pokegear/townmap_convertlinebreakcharacters.asm"
-
 
 SECTION "Credits Strings", ROMX
 

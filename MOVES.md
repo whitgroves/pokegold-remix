@@ -39,13 +39,13 @@ Certain moves and interactions have been updated to fit new mon typings and/or s
 - Rain now causes these additional effects:
     - *Ice*-, *Grass*-, and *Electric*-type moves are more effective ✓
     - *Ground*- and *Flying*-type moves are less effective ✓
-    - Moves that fail to inflict the *Freeze* status get a 10% reroll ~
-    - The *Burn* status can be inflicted, but has a 90% chance to fail ~
+    - Moves that fail to inflict the *Freeze* status get a 10% reroll ✓
+    - The *Burn* status can be inflicted, but has a 90% chance to fail ✓
 - Sun now causes these additional effects:
     - *Grass*- and *Flying*- type moves are more effective ✓
     - *Ice*- and *Ghost*- moves are less effective ✓
-    - Moves that fail to inflict the *Burn* status get a 10% reroll ~
-    - The *Freeze* status can be inflicted, but has a 90% chance to fail ~
+    - Moves that fail to inflict the *Burn* status get a 10% reroll ✓
+    - The *Freeze* status can be inflicted, but has a 90% chance to fail ✓
     - Changed battle text to make certain move interactions (e.g., *Moonlight*) less confusing ✓
 - Sandstorm now causes these additional effects:
     - *Rock*- and *Ground*-type moves are more effective ✓

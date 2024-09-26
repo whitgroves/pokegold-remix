@@ -3938,8 +3938,7 @@ BattleCommand_BurnTarget:
 	ld a, b
 	cp HELD_PREVENT_BURN
 	ret z
-	ld a, [wEffectFailed]
-	and a
+	call CheckWeatherBurn ; checks wEffectFailed against current weather status and sets nz on fail
 	ret nz
 	call SafeCheckSafeguard
 	ret nz
@@ -3996,17 +3995,13 @@ BattleCommand_FreezeTarget:
 	ld a, [wTypeModifier]
 	and $7f
 	ret z
-	ld a, [wBattleWeather]
-	cp WEATHER_SUN
-	ret z
 	call CheckMoveTypeMatchesTarget ; Don't freeze an Ice-type
 	ret z
 	call GetOpponentItem
 	ld a, b
 	cp HELD_PREVENT_FREEZE
 	ret z
-	ld a, [wEffectFailed]
-	and a
+	call CheckWeatherFreeze ; checks wEffectFailed against current weather status and sets nz on fail
 	ret nz
 	call SafeCheckSafeguard
 	ret nz
