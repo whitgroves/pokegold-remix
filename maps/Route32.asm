@@ -107,7 +107,7 @@ Route32RoarTMGuyScript:
 	iftrue .AlreadyHaveRoar
 	writetext Text_RoarIntro
 	promptbutton
-	verbosegiveitem TM_ROAR
+	verbosegiveitem TM_TRI_ATTACK
 	iffalse .Finish
 	setevent EVENT_GOT_TM05_ROAR
 .AlreadyHaveRoar:
@@ -747,22 +747,22 @@ Route32UnusedText: ; unreferenced
 	done
 
 Text_RoarIntro:
-	text "WROOOOAR!"
-	line "PEOPLE RUN WHEN I"
+	text "This route has"
+	line "exits to the"
 
-	para "ROAR! BUT YOU"
-	line "CAME LOOKING!"
+	para "North, the West"
+	line "and the South."
 
-	para "THAT PLEASES ME!"
-	line "NOW TAKE THIS!"
+	para "Three into one,"
+	line "just like this."
 	done
 
 Text_RoarOutro:
-	text "WROOOAR!"
-	line "IT'S ROAR!"
+	text "That TM is"
+	line "TRI ATTACK."
 
-	para "EVEN #MON RUN"
-	line "FROM A GOOD ROAR!"
+	para "It can paralyze,"
+	line "burn, or freeze."
 	done
 
 MeetFriedaText:
