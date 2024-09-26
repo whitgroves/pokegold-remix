@@ -91,6 +91,7 @@ CharmeleonEvosAttacks:
 	db 13, SMOKESCREEN
 	db 20, RAGE
 	db 27, SCARY_FACE
+	db 31, ROAR
 	db 34, FLAMETHROWER
 	db 41, SLASH
 	db 48, DRAGON_RAGE
@@ -107,6 +108,7 @@ CharizardEvosAttacks:
 	db 13, SMOKESCREEN
 	db 20, RAGE
 	db 27, SCARY_FACE
+	db 31, ROAR
 	db 34, FLAMETHROWER
 	db 36, WING_ATTACK
 	db 44, SLASH
@@ -425,6 +427,7 @@ NidoqueenEvosAttacks:
 	db 1, DOUBLE_KICK
 	db 1, TAIL_WHIP
 	db 23, BODY_SLAM
+	db 28, ROAR
 	db 0 ; no more level-up moves
 
 NidoranMEvosAttacks:
@@ -460,6 +463,7 @@ NidokingEvosAttacks:
 	db 1, DOUBLE_KICK
 	db 1, POISON_STING
 	db 23, THRASH
+	db 30, ROAR
 	db 0 ; no more level-up moves
 
 ClefairyEvosAttacks:
@@ -1295,6 +1299,7 @@ OnixEvosAttacks:
 	db 14, ROCK_THROW
 	db 23, HARDEN
 	db 27, RAGE
+	db 31, ROAR
 	db 36, SANDSTORM
 	db 40, SLAM
 	db 0 ; no more level-up moves
@@ -1536,6 +1541,7 @@ RhydonEvosAttacks:
 	db 13, STOMP
 	db 19, FURY_ATTACK
 	db 31, SCARY_FACE
+	db 35, ROAR
 	db 37, HORN_DRILL
 	db 54, TAKE_DOWN
 	db 65, EARTHQUAKE
@@ -1578,6 +1584,7 @@ KangaskhanEvosAttacks:
 	db 13, BITE
 	db 19, TAIL_WHIP
 	db 25, MEGA_PUNCH
+	db 28, ROAR
 	db 31, RAGE
 	db 37, ENDURE
 	db 43, DIZZY_PUNCH
@@ -2157,6 +2164,7 @@ TyphlosionEvosAttacks:
 	db 21, QUICK_ATTACK
 	db 31, FLAME_WHEEL
 	db 45, SWIFT
+	db 50, ROAR
 	db 60, FLAMETHROWER
 	db 0 ; no more level-up moves
 
@@ -2819,6 +2827,7 @@ SteelixEvosAttacks:
 	db 14, ROCK_THROW
 	db 23, HARDEN
 	db 27, RAGE
+	db 31, ROAR
 	db 36, SANDSTORM
 	db 40, SLAM
 	db 49, CRUNCH
@@ -2942,6 +2951,7 @@ UrsaringEvosAttacks:
 	db 8, LICK
 	db 15, FURY_SWIPES
 	db 22, FAINT_ATTACK
+	db 25, ROAR
 	db 29, REST
 	db 39, SLASH
 	db 49, SNORE
@@ -3137,6 +3147,7 @@ DonphanEvosAttacks:
 	db 17, FLAIL
 	db 25, FURY_ATTACK
 	db 33, ROLLOUT
+	db 38, ROAR
 	db 41, RAPID_SPIN
 	db 49, EARTHQUAKE
 	db 0 ; no more level-up moves
@@ -3303,13 +3314,14 @@ SuicuneEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, BITE
 	db 1, ICY_WIND
+	db 1, RAIN_DANCE
 	db 11, BUBBLEBEAM
-	db 21, RAIN_DANCE
+	db 21, ROAR
 	db 31, GUST
 	db 41, AURORA_BEAM
 	db 51, MIST
-	db 61, MIRROR_COAT
-	db 71, HYDRO_PUMP
+	db 61, HYDRO_PUMP
+	db 71, BLIZZARD
 	db 0 ; no more level-up moves
 
 LarvitarEvosAttacks:
@@ -3355,6 +3367,7 @@ TyranitarEvosAttacks:
 	db 22, ROCK_SLIDE
 	db 29, THRASH
 	db 38, SCARY_FACE
+	db 42, ROAR
 	db 47, CRUNCH
 	db 61, EARTHQUAKE
 	db 75, HYPER_BEAM
