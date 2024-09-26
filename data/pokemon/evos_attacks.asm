@@ -1352,10 +1352,10 @@ VoltorbEvosAttacks:
 	db 17, SONICBOOM
 	db 23, SELFDESTRUCT
 	db 29, ROLLOUT
-	db 33, LIGHT_SCREEN
+	db 33, SPARK
 	db 37, SWIFT
 	db 39, EXPLOSION
-	db 41, MIRROR_COAT
+	db 41, ZAP_CANNON
 	db 0 ; no more level-up moves
 
 ElectrodeEvosAttacks:
@@ -1368,10 +1368,10 @@ ElectrodeEvosAttacks:
 	db 17, SONICBOOM
 	db 23, SELFDESTRUCT
 	db 29, ROLLOUT
-	db 34, LIGHT_SCREEN
+	db 34, SPARK
 	db 40, SWIFT
 	db 44, EXPLOSION
-	db 48, MIRROR_COAT
+	db 48, ZAP_CANNON
 	db 0 ; no more level-up moves
 
 ExeggcuteEvosAttacks:
@@ -3012,8 +3012,9 @@ OctilleryEvosAttacks:
 	db 22, AURORA_BEAM
 	db 22, BUBBLEBEAM
 	db 25, OCTAZOOKA
-	db 38, FOCUS_ENERGY
+	db 38, LOCK_ON
 	db 54, ICE_BEAM
+	db 68, ZAP_CANNON
 	db 70, HYPER_BEAM
 	db 0 ; no more level-up moves
 
