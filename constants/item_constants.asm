@@ -226,7 +226,7 @@ DEF TM01 EQU const_value
 	add_tm TOXIC        ; c5
 	add_tm THUNDERBOLT  ; c6 (formerly ZAP_CANNON) TM07
 	add_tm ROCK_SMASH   ; c7
-	add_tm METAL_CLAW   ; c8 (formerly PSYCH_UP - TODO: make available in goldenrod store) TM09
+	add_tm METAL_CLAW   ; c8 (formerly PSYCH_UP) TM09
 	add_tm HIDDEN_POWER ; c9
 	add_tm SUNNY_DAY    ; ca
 	add_tm SWEET_SCENT  ; cb

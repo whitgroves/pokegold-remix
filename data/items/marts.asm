@@ -134,35 +134,43 @@ MartGoldenrod4F:
 	db -1 ; end
 
 MartGoldenrod5F1:
-	db 3 ; # items
+	db 4 ; # items
 	db TM_THUNDERPUNCH
 	db TM_FIRE_PUNCH
 	db TM_ICE_PUNCH
+	db TM_METAL_CLAW
 	db -1 ; end
 
 MartGoldenrod5F2:
-	db 4 ; # items
+	db 6 ; # items
 	db TM_THUNDERPUNCH
 	db TM_FIRE_PUNCH
 	db TM_ICE_PUNCH
+	db TM_METAL_CLAW
 	db TM_HEADBUTT
+	db TM_SWIFT
 	db -1 ; end
 
 MartGoldenrod5F3:
-	db 4 ; # items
+	db 6 ; # items
 	db TM_THUNDERPUNCH
 	db TM_FIRE_PUNCH
 	db TM_ICE_PUNCH
+	db TM_METAL_CLAW
 	db TM_ROCK_SMASH
+	db TM_DIG
 	db -1 ; end
 
 MartGoldenrod5F4:
-	db 5 ; # items
+	db 8 ; # items
 	db TM_THUNDERPUNCH
 	db TM_FIRE_PUNCH
 	db TM_ICE_PUNCH
+	db TM_METAL_CLAW
 	db TM_HEADBUTT
+	db TM_SWIFT
 	db TM_ROCK_SMASH
+	db TM_DIG
 	db -1 ; end
 
 MartOlivine:
