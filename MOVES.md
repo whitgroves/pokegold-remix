@@ -37,18 +37,18 @@ Certain moves and interactions have been updated to fit new mon typings and/or s
 
 ## Weather Changes (✓ = done, ~ = in progress)
 - Rain now causes these additional effects:
-    - *Ice*-, *Grass*-, and *Electric*-type moves are more effective ~
-    - *Ground*- and *Flying*-type moves are less effective ~
-    - *Ice*-type moves have an increased chance to freeze (+5%)
-    - *Fire*-type moves have a decreased chance to burn (-10%)
+    - *Ice*-, *Grass*-, and *Electric*-type moves are more effective ✓
+    - *Ground*- and *Flying*-type moves are less effective ✓
+    - Moves that fail to inflict the *Freeze* status get a 10% reroll ~
+    - The *Burn* status can be inflicted, but has a 90% chance to fail ~
 - Sun now causes these additional effects:
-    - *Grass*- and *Flying*- type moves are more effective ~
-    - *Ice*- and *Ghost*- moves are less effective ~
-    - *Fire*-type moves have an increased chance to burn (+5%)
-    - *Ice*-type moves have a decreased chance to freeze (-10%)
+    - *Grass*- and *Flying*- type moves are more effective ✓
+    - *Ice*- and *Ghost*- moves are less effective ✓
+    - Moves that fail to inflict the *Burn* status get a 10% reroll ~
+    - The *Freeze* status can be inflicted, but has a 90% chance to fail ~
     - Changed battle text to make certain move interactions (e.g., *Moonlight*) less confusing ✓
 - Sandstorm now causes these additional effects:
-    - *Rock*- and *Ground*-type moves are more effective ~
-    - *Grass*-, *Flying*-, and *Electric*-type moves are less effective ~
-    - *Solarbeam*, *Synthesis*, *Morning Sun*, *Moonlight*, behave as if under Rain
-    - *Thunder* behaves as if under Sun
+    - *Rock*- and *Ground*-type moves are more effective ✓
+    - *Grass*-, *Flying*-, and *Electric*-type moves are less effective ✓
+    - *Solarbeam*, *Synthesis*, *Morning Sun*, *Moonlight*, behave as if under Rain ~
+    - *Thunder* behaves as if under Sun ~

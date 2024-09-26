@@ -63,7 +63,7 @@ EASY ?= .easy_edit
 ### Build targets
 
 .SUFFIXES:
-.PHONY: all gold gold_debug clean tidy compare tools edits updates test # release
+.PHONY: all gold gold_debug clean tidy compare tools edits updates test release
 .SECONDEXPANSION:
 .PRECIOUS:
 .SECONDARY:
@@ -120,8 +120,8 @@ updates:
 test: gold
 	$(EMU) pokegold.gbc
 
-# release: blue
-# 	mv pokegold.gbc 'Pokemon - Gold Remix.gbc'
+release: gold
+	mv pokegold.gbc 'Pokemon - Gold Remix.gbc'
 
 RGBASMFLAGS = -Q8 -P includes.asm -Weverything -Wnumeric-string=2 -Wtruncation=1
 # Create a sym/map for debug purposes if `make` run with `DEBUG=1`

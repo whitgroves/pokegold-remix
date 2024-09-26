@@ -70,7 +70,9 @@ DoWeatherModifiers:
 	jr z, .ApplyModifier
 
 .NextWeatherType:
-	inc de
+	; originally there were 2 modifiers each for rain and sun
+	; but since the number of mods vary now, increment by 1 each time
+	; inc de
 	inc de
 	jr .CheckWeatherType
 
