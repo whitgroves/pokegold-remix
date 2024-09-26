@@ -247,6 +247,7 @@ PidgeottoEvosAttacks:
 	db 23, WHIRLWIND
 	db 33, WING_ATTACK
 	db 43, AGILITY
+	db 47, RAZOR_WIND
 	db 55, MIRROR_MOVE
 	db 0 ; no more level-up moves
 
@@ -262,6 +263,7 @@ PidgeotEvosAttacks:
 	db 23, WHIRLWIND
 	db 33, WING_ATTACK
 	db 46, AGILITY
+	db 55, RAZOR_WIND
 	db 61, MIRROR_MOVE
 	db 0 ; no more level-up moves
 
@@ -1139,6 +1141,7 @@ FarfetchDEvosAttacks:
 	db 31, AGILITY
 	db 37, SLASH
 	db 44, FALSE_SWIPE
+	db 50, RAZOR_WIND
 	db 0 ; no more level-up moves
 
 DoduoEvosAttacks:
@@ -2052,6 +2055,7 @@ DragoniteEvosAttacks:
 	db 47, SAFEGUARD
 	db 55, WING_ATTACK
 	db 61, OUTRAGE
+	db 68, RAZOR_WIND
 	db 75, HYPER_BEAM
 	db 0 ; no more level-up moves
 
@@ -2339,7 +2343,8 @@ CrobatEvosAttacks:
 	db 19, CONFUSE_RAY
 	db 30, WING_ATTACK
 	db 42, MEAN_LOOK
-	db 55, HAZE
+	db 48, HAZE
+	db 56, RAZOR_WIND
 	db 61, DOUBLE_TEAM
 	db 0 ; no more level-up moves
 
@@ -2816,8 +2821,9 @@ GligarEvosAttacks:
 	db 13, HARDEN
 	db 20, QUICK_ATTACK
 	db 28, FAINT_ATTACK
-	db 36, SLASH
-	db 44, SCREECH
+	db 34, SLASH
+	db 41, SCREECH
+	db 46, RAZOR_WIND
 	db 52, GUILLOTINE
 	db 0 ; no more level-up moves
 
@@ -3071,10 +3077,10 @@ MantineEvosAttacks:
 	db 1, BUBBLE
 	db 10, SUPERSONIC
 	db 18, BUBBLEBEAM
-	db 25, TAKE_DOWN
+	db 25, WING_ATTACK
 	db 32, AGILITY
-	db 40, WING_ATTACK
-	db 49, CONFUSE_RAY
+	db 40, RAZOR_WIND
+	db 49, TAKE_DOWN
 	db 0 ; no more level-up moves
 
 SkarmoryEvosAttacks:
@@ -3085,7 +3091,8 @@ SkarmoryEvosAttacks:
 	db 19, SWIFT
 	db 25, AGILITY
 	db 37, STEEL_WING
-	db 49, SPIKES
+	db 49, RAZOR_WIND
+	db 53, SPIKES
 	db 0 ; no more level-up moves
 
 HoundourEvosAttacks:
