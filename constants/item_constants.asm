@@ -226,7 +226,7 @@ DEF TM01 EQU const_value
 	add_tm TOXIC        ; c5
 	add_tm THUNDERBOLT  ; c6 (formerly ZAP_CANNON) TM07
 	add_tm ROCK_SMASH   ; c7
-	add_tm PSYCH_UP     ; c8
+	add_tm PSYCH_UP     ; c8 (formerly PSYCH_UP - TODO: change to METAL_CLAW and make available in goldenrod store) TM09
 	add_tm HIDDEN_POWER ; c9
 	add_tm SUNNY_DAY    ; ca
 	add_tm SWEET_SCENT  ; cb
@@ -249,7 +249,7 @@ DEF TM01 EQU const_value
 	const ITEM_DC       ; dc
 	add_tm PSYCHIC_M    ; dd
 	add_tm SHADOW_BALL  ; de
-	add_tm MUD_SLAP     ; df (formerly MUD_SLAP - TODO: change to RAZOR_WIND)
+	add_tm MUD_SLAP     ; df (formerly MUD_SLAP - TODO: change to RAZOR_WIND and update Falkner) TM31
 	add_tm FLAMETHROWER ; e0 (formerly DOUBLE_TEAM) TM32
 	add_tm ICE_PUNCH    ; e1
 	add_tm SWAGGER      ; e2
@@ -263,7 +263,7 @@ DEF TM01 EQU const_value
 	add_tm DREAM_EATER  ; ea
 	add_tm DETECT       ; eb
 	add_tm REST         ; ec
-	add_tm ATTRACT      ; ed (formerly ATTRACT - TODO: change to TRI_ATTACK)
+	add_tm ATTRACT      ; ed (formerly ATTRACT - TODO: change to TRI_ATTACK and update Whitney) TM45
 	add_tm THIEF        ; ee
 	add_tm STEEL_WING   ; ef
 	add_tm FIRE_PUNCH   ; f0
