@@ -831,6 +831,7 @@ AbraEvosAttacks:
 	db EVOLVE_LEVEL, 16, KADABRA
 	db 0 ; no more evolutions
 	db 1, TELEPORT
+	db 10, PSYCH_UP
 	db 0 ; no more level-up moves
 
 KadabraEvosAttacks:
@@ -839,6 +840,7 @@ KadabraEvosAttacks:
 	db 1, TELEPORT
 	db 1, KINESIS
 	db 1, CONFUSION
+	db 10, PSYCH_UP
 	db 16, CONFUSION
 	db 18, DISABLE
 	db 21, PSYBEAM
@@ -853,6 +855,7 @@ AlakazamEvosAttacks:
 	db 1, TELEPORT
 	db 1, KINESIS
 	db 1, CONFUSION
+	db 10, PSYCH_UP
 	db 16, CONFUSION
 	db 18, DISABLE
 	db 21, PSYBEAM
@@ -1061,7 +1064,7 @@ SlowpokeEvosAttacks:
 	db 1, CURSE
 	db 1, TACKLE
 	db 6, GROWL
-	db 15, WATER_GUN
+	db 15, PSYCH_UP
 	db 20, CONFUSION
 	db 29, DISABLE
 	db 34, HEADBUTT
@@ -1074,9 +1077,8 @@ SlowbroEvosAttacks:
 	db 1, CURSE
 	db 1, TACKLE
 	db 1, GROWL
-	db 1, WATER_GUN
 	db 6, GROWL
-	db 15, WATER_GUN
+	db 15, PSYCH_UP
 	db 20, CONFUSION
 	db 29, DISABLE
 	db 34, HEADBUTT
@@ -1663,6 +1665,7 @@ MrMimeEvosAttacks:
 	db 36, PSYBEAM
 	db 41, BATON_PASS
 	db 46, SAFEGUARD
+	db 52, PSYCH_UP
 	db 0 ; no more level-up moves
 
 ScytherEvosAttacks:
@@ -2051,8 +2054,8 @@ MewEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, POUND
 	db 10, TRANSFORM
-	db 20, MEGA_PUNCH
-	db 30, METRONOME
+	db 20, METRONOME
+	db 30, PSYCH_UP
 	db 40, PSYCHIC_M
 	db 50, ANCIENTPOWER
 	db 0 ; no more level-up moves
@@ -2383,7 +2386,7 @@ TogepiEvosAttacks:
 	db 1, GROWL
 	db 1, CHARM
 	db 7, METRONOME
-	db 18, SWEET_KISS
+	db 18, PSYCH_UP
 	db 25, ENCORE
 	db 31, SAFEGUARD
 	db 38, DOUBLE_EDGE
@@ -2394,7 +2397,7 @@ TogeticEvosAttacks:
 	db 1, GROWL
 	db 1, CHARM
 	db 7, METRONOME
-	db 18, SWEET_KISS
+	db 18, PSYCH_UP
 	db 25, ENCORE
 	db 31, SAFEGUARD
 	db 38, DOUBLE_EDGE
@@ -2408,6 +2411,7 @@ NatuEvosAttacks:
 	db 10, NIGHT_SHADE
 	db 20, TELEPORT
 	db 30, FUTURE_SIGHT
+	db 36, PSYCH_UP
 	db 40, CONFUSE_RAY
 	db 50, PSYCHIC_M
 	db 0 ; no more level-up moves
@@ -2420,6 +2424,7 @@ XatuEvosAttacks:
 	db 10, NIGHT_SHADE
 	db 20, TELEPORT
 	db 35, FUTURE_SIGHT
+	db 44, PSYCH_UP
 	db 50, CONFUSE_RAY
 	db 65, PSYCHIC_M
 	db 0 ; no more level-up moves
@@ -2509,7 +2514,7 @@ SudowoodoEvosAttacks:
 	db 19, LOW_KICK
 	db 28, ROCK_SLIDE
 	db 37, FAINT_ATTACK
-	db 46, SLAM
+	db 46, PSYCH_UP
 	db 0 ; no more level-up moves
 
 PolitoedEvosAttacks:
@@ -2735,8 +2740,10 @@ GirafarigEvosAttacks:
 	db 13, STOMP
 	db 20, AGILITY
 	db 30, BATON_PASS
+	db 35, PSYCH_UP
 	db 41, PSYBEAM
 	db 54, CRUNCH
+	db 60, PSYCHIC_M
 	db 0 ; no more level-up moves
 
 PinecoEvosAttacks:
@@ -3125,7 +3132,7 @@ Porygon2EvosAttacks:
 	db 9, AGILITY
 	db 12, PSYBEAM
 	db 20, RECOVER
-	db 24, DEFENSE_CURL
+	db 24, PSYCH_UP
 	db 32, LOCK_ON
 	db 36, TRI_ATTACK
 	db 44, ZAP_CANNON
@@ -3137,9 +3144,9 @@ StantlerEvosAttacks:
 	db 8, LEER
 	db 15, HYPNOSIS
 	db 23, STOMP
-	db 31, DOUBLE_TEAM
+	db 31, CONFUSE_RAY
 	db 40, TAKE_DOWN
-	db 49, CONFUSE_RAY
+	db 49, DOUBLE_TEAM
 	db 0 ; no more level-up moves
 
 SmeargleEvosAttacks:
