@@ -373,10 +373,11 @@ SandshrewEvosAttacks:
 	db 1, SCRATCH
 	db 6, DEFENSE_CURL
 	db 11, SAND_ATTACK
-	db 17, POISON_STING
+	db 14, FURY_SWIPES
+	db 20, DIG
 	db 23, SLASH
-	db 30, SWIFT
-	db 37, FURY_SWIPES
+	db 30, METAL_CLAW
+	db 37, EARTHQUAKE
 	db 45, SANDSTORM
 	db 0 ; no more level-up moves
 
@@ -387,10 +388,11 @@ SandslashEvosAttacks:
 	db 1, SAND_ATTACK
 	db 6, DEFENSE_CURL
 	db 11, SAND_ATTACK
-	db 17, POISON_STING
+	db 14, FURY_SWIPES
+	db 20, DIG
 	db 24, SLASH
-	db 33, SWIFT
-	db 42, FURY_SWIPES
+	db 33, METAL_CLAW
+	db 42, EARTHQUAKE
 	db 52, SANDSTORM
 	db 0 ; no more level-up moves
 
@@ -3082,8 +3084,8 @@ SkarmoryEvosAttacks:
 	db 13, SAND_ATTACK
 	db 19, SWIFT
 	db 25, AGILITY
-	db 37, FURY_ATTACK
-	db 49, STEEL_WING
+	db 37, STEEL_WING
+	db 49, SPIKES
 	db 0 ; no more level-up moves
 
 HoundourEvosAttacks:
