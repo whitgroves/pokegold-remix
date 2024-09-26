@@ -17,4 +17,10 @@ In order to mix things up, enable certain signature moves to work better with ne
     - Waterfall
     - Dizzy Punch
     - Crabhammer
-    - Bite
+- The following TMs have been reassigned:
+    - TM05: *Roar* -> *Tri Attack*
+    - TM07: *Zap Cannon* -> *Thunderbolt*
+    - TM09: *Psych Up* -> *Metal Claw*
+    - TM16: *Icy Wind* -> *Ice Beam*
+    - TM31: *Mud Slap* -> *Razor Wind*
+    - TM32: *Double Team* -> *Flamethrower*

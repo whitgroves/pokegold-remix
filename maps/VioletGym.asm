@@ -38,7 +38,7 @@ VioletGymFalknerScript:
 	specialphonecall SPECIALCALL_ASSISTANT
 	writetext FalknerZephyrBadgeText
 	promptbutton
-	verbosegiveitem TM_MUD_SLAP
+	verbosegiveitem TM_RAZOR_WIND
 	iffalse .NoRoomForMudSlap
 	setevent EVENT_GOT_TM31_MUD_SLAP
 	writetext FalknerTMMudSlapText
@@ -178,12 +178,12 @@ FalknerTMMudSlapText:
 	cont "used only once."
 
 	para "TM31 contains"
-	line "MUD-SLAP."
+	line "RAZOR WIND."
 
-	para "It reduces the"
-	line "enemy's accuracy"
+	para "It can make the"
+	line "enemy flinch"
 
-	para "while it causes"
+	para "when it causes"
 	line "damage."
 
 	para "In other words, it"

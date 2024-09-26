@@ -6,14 +6,14 @@ Similar to Blue Remix, the goal is not to recreate the Legacy games, but simply 
 
 However, some changes from Crystal, the Legacy hacks, and the [pret tutorials](https://github.com/pret/pokered/wiki/Tutorials) are duplicated here, such as sprite animations, making *Cut* Bug-type, and auto-sorting the items in the backpack.
 
-## Planned Changes (✓ = done, ~ = in progress)
+## Changes (✓ = done, ~ = in progress)
 - Updated interactions for all 17 types ~
 - Updated typings to make certain Pokemon lore-friendly, interesting, or unique ~
 - Updated learnsets to better fit each Pokemon's kit ~
-- Several updates to the movepool, detailed [here](./MOVES.md) ~
-- TMs 07, 16, and 32 now teach *Thunderbolt*, *Ice Beam*, and *Flamethrower* ✓
+- Updated movepool, learnsets, and TMs, detailed [here](./MOVES.md) ~
 - The Ghost type is special and the Dark type is physical ~
 - All 251 Pokemon are available on a single save ~
+- New moves and mons for some of the trainer teams ~
 - Select and play as the female protagonist (Kris) ~
 - Fast text speed and Set battles by default ~
 - Use animated Pokemon sprites from Crystal ~
@@ -24,10 +24,10 @@ However, some changes from Crystal, the Legacy hacks, and the [pret tutorials](h
 These changes are largely untested, so if you run into issues please reach out on X: [@whitgroves](https://x.com/whitgroves)
 
 ## Why *Gold* Remix?
-Similar to *Blue Remix*, Gold was the gen 2 game I made memories with, so I decided to go with my favorite.
+Similar to Blue Remix, Gold was the gen 2 game I made memories with, so I decided to go with my favorite.
 
 ## Why Not Crystal?
-I don't like the Suicune plot, plus *Crystal Legacy* is far more comprehensive than what I can build.
+I don't like the Suicune plot, plus Crystal Legacy is far more comprehensive than what I can build.
 
 That said, if you'd like to play Crystal Legacy with the remixed types, you can can clone both repos and use easy_edit to migrate the typechart, movepool, and pokemon to their codebase, then build your own revision of CL (although this will remove all of their stat and learnset changes).
 
