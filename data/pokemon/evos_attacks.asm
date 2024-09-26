@@ -659,7 +659,7 @@ DiglettEvosAttacks:
 	db 5, GROWL
 	db 9, MAGNITUDE
 	db 17, DIG
-	db 25, SAND_ATTACK
+	db 25, MUD_SLAP
 	db 33, SLASH
 	db 41, EARTHQUAKE
 	db 49, FISSURE
@@ -674,7 +674,7 @@ DugtrioEvosAttacks:
 	db 5, GROWL
 	db 9, MAGNITUDE
 	db 17, DIG
-	db 25, SAND_ATTACK
+	db 25, MUD_SLAP
 	db 37, SLASH
 	db 49, EARTHQUAKE
 	db 61, FISSURE
@@ -739,6 +739,7 @@ MankeyEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, SCRATCH
 	db 1, LEER
+	db 5, MUD_SLAP
 	db 9, LOW_KICK
 	db 15, KARATE_CHOP
 	db 21, FURY_SWIPES
@@ -794,6 +795,7 @@ PoliwagEvosAttacks:
 	db 1, BUBBLE
 	db 7, HYPNOSIS
 	db 13, WATER_GUN
+	db 17, MUD_SLAP
 	db 19, DOUBLESLAP
 	db 25, RAIN_DANCE
 	db 31, BODY_SLAM
@@ -810,6 +812,7 @@ PoliwhirlEvosAttacks:
 	db 1, WATER_GUN
 	db 7, HYPNOSIS
 	db 13, WATER_GUN
+	db 17, MUD_SLAP
 	db 19, DOUBLESLAP
 	db 27, RAIN_DANCE
 	db 35, BODY_SLAM
@@ -1064,6 +1067,7 @@ SlowpokeEvosAttacks:
 	db 1, CURSE
 	db 1, TACKLE
 	db 6, GROWL
+	db 9, MUD_SLAP
 	db 15, PSYCH_UP
 	db 20, CONFUSION
 	db 29, DISABLE
@@ -1078,6 +1082,7 @@ SlowbroEvosAttacks:
 	db 1, TACKLE
 	db 1, GROWL
 	db 6, GROWL
+	db 9, MUD_SLAP
 	db 15, PSYCH_UP
 	db 20, CONFUSION
 	db 29, DISABLE
@@ -1123,6 +1128,7 @@ FarfetchDEvosAttacks:
 	db 7, SAND_ATTACK
 	db 13, LEER
 	db 19, FURY_ATTACK
+	db 21, MUD_SLAP
 	db 25, SWORDS_DANCE
 	db 31, AGILITY
 	db 37, SLASH
@@ -1136,6 +1142,7 @@ DoduoEvosAttacks:
 	db 1, GROWL
 	db 9, PURSUIT
 	db 13, FURY_ATTACK
+	db 18, MUD_SLAP
 	db 21, TRI_ATTACK
 	db 25, RAGE
 	db 33, DRILL_PECK
@@ -1150,6 +1157,7 @@ DodrioEvosAttacks:
 	db 1, FURY_ATTACK
 	db 9, PURSUIT
 	db 13, FURY_ATTACK
+	db 18, MUD_SLAP
 	db 21, TRI_ATTACK
 	db 25, RAGE
 	db 38, DRILL_PECK
@@ -1189,6 +1197,7 @@ GrimerEvosAttacks:
 	db 5, HARDEN
 	db 10, DISABLE
 	db 16, SLUDGE
+	db 20, MUD_SLAP
 	db 23, MINIMIZE
 	db 31, SCREECH
 	db 40, ACID_ARMOR
@@ -1200,11 +1209,13 @@ MukEvosAttacks:
 	db 1, POISON_GAS
 	db 1, POUND
 	db 1, HARDEN
+	db 16, SLUDGE
+	db 20, MUD_SLAP
+	db 23, MINIMIZE
+	db 31, SCREECH
 	db 33, HARDEN
 	db 37, DISABLE
 	db 45, SLUDGE
-	db 23, MINIMIZE
-	db 31, SCREECH
 	db 45, ACID_ARMOR
 	db 60, SLUDGE_BOMB
 	db 0 ; no more level-up moves
@@ -2584,7 +2595,7 @@ AipomEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, SCRATCH
 	db 1, TAIL_WHIP
-	db 6, SAND_ATTACK
+	db 6, MUD_SLAP
 	db 12, BATON_PASS
 	db 19, FURY_SWIPES
 	db 27, SWIFT
@@ -2632,6 +2643,7 @@ WooperEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, WATER_GUN
 	db 1, TAIL_WHIP
+	db 1, MUD_SLAP
 	db 11, SLAM
 	db 21, AMNESIA
 	db 31, EARTHQUAKE
@@ -2644,6 +2656,7 @@ QuagsireEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, WATER_GUN
 	db 1, TAIL_WHIP
+	db 1, MUD_SLAP
 	db 11, SLAM
 	db 23, AMNESIA
 	db 35, EARTHQUAKE
@@ -2780,15 +2793,16 @@ DunsparceEvosAttacks:
 	db 5, DEFENSE_CURL
 	db 13, GLARE
 	db 18, SPITE
-	db 26, PURSUIT
-	db 30, SCREECH
-	db 38, TAKE_DOWN
+	db 22, MUD_SLAP
+	db 27, PURSUIT
+	db 31, SCREECH
+	db 38, ROLLOUT
 	db 0 ; no more level-up moves
 
 GligarEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, POISON_STING
-	db 6, SAND_ATTACK
+	db 6, MUD_SLAP
 	db 13, HARDEN
 	db 20, QUICK_ATTACK
 	db 28, FAINT_ATTACK
@@ -2869,9 +2883,10 @@ ShuckleEvosAttacks:
 	db 1, CONSTRICT
 	db 1, WITHDRAW
 	db 9, WRAP
-	db 14, ENCORE
+	db 14, MUD_SLAP
 	db 23, SAFEGUARD
 	db 28, BIDE
+	db 34, ENCORE
 	db 37, REST
 	db 0 ; no more level-up moves
 
@@ -2965,6 +2980,7 @@ SwinubEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, MIST
+	db 5, MUD_SLAP
 	db 10, POWDER_SNOW
 	db 19, ENDURE
 	db 28, ICY_WIND
@@ -2977,7 +2993,7 @@ PiloswineEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, HORN_ATTACK
 	db 1, POWDER_SNOW
-	db 1, ENDURE
+	db 1, MUD_SLAP
 	db 10, POWDER_SNOW
 	db 19, ENDURE
 	db 28, ICY_WIND
@@ -3105,6 +3121,7 @@ PhanpyEvosAttacks:
 	db 1, TACKLE
 	db 1, GROWL
 	db 9, DEFENSE_CURL
+	db 12, MUD_SLAP
 	db 17, FLAIL
 	db 25, TAKE_DOWN
 	db 33, ROLLOUT
