@@ -248,10 +248,10 @@ def export_mon() -> None: # exports <ARGS.mon>.asm and evos_attacks.asm (partial
             writer.writerow([]) # readability
         writer.writerow(['evolution(s) -- see data/pokemon/evos_attacks.asm & constants/pokemon_data_constants.asm'])
         writer.writerow(['if by level...', '(EVOLVE_LEVEL)', 'At Level', 'Evolves To'])
-        writer.writerow(['if by stone...', '(EVOLVE_ITEM)', 'With Item', 'Min Level', 'Evolves To'])
-        writer.writerow(['if by trade...', '(EVOLVE_TRADE)', 'Min Level', 'Evolves To'])
-        writer.writerow(['if by happy...', '(EVOLVE_HAPPINESS)', 'During Time', 'Evolves To'])
-        writer.writerow(['if by stats...', '(EVOLVE_STAT)', 'With Ratio', 'Evolves To'])
+        writer.writerow(['if by stone...', '(EVOLVE_ITEM)', 'With Item', 'Evolves To'])
+        writer.writerow(['if by trade...', '(EVOLVE_TRADE)', 'With Item (-1 for none)', 'Evolves To'])
+        writer.writerow(['if by happy...', '(EVOLVE_HAPPINESS)', 'Time Constant', 'Evolves To'])
+        writer.writerow(['if by stats...', '(EVOLVE_STAT)', 'At Level', 'Stat Constant', 'Evolves To'])
         writer.writerow(['if fully evolved...', '*Leave blank*'])
         for evo in evo_data: writer.writerow(['', *evo]) # gotta support eevee
         writer.writerow([]) # readability
