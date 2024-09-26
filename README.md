@@ -10,14 +10,14 @@ However, some changes from Crystal, the Legacy hacks, and the [pret tutorials](h
 - Updated interactions for all 17 types ~
 - Updated typings to make certain Pokemon lore-friendly, interesting, or unique ~
 - Updated learnsets to better fit each Pokemon's kit ~
-- Updated movepool, learnsets, and TMs, detailed [here](./MOVES.md) ~
-- The Ghost type is special and the Dark type is physical ~
+- Updated moves and TMs, detailed [here](./MOVES.md) ~
+- The Ghost type is special and the Dark type is physical ✓
 - All 251 Pokemon are available on a single save ~
 - New moves and mons for some of the trainer teams ~
 - Select and play as the female protagonist (Kris) ~
 - Fast text speed and Set battles by default ~
 - Use animated Pokemon sprites from Crystal ~
-- Auto-sort the backpack by pressing Start (thanks to [devolov](https://github.com/pret/pokered/wiki/Add-Item-Sorting-In-Bag)) ~
+- Auto-sort the backpack by pressing Start ~
 - The good rod is good and the super rod is super ~
 - The "Down + B" trick actually works ~
 
