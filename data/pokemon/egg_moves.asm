@@ -243,6 +243,7 @@ DoduoEggMoves:
 	db HAZE
 	db FAINT_ATTACK
 	db FLAIL
+	db TRI_ATTACK
 	db -1 ; end
 
 SeelEggMoves:
@@ -331,6 +332,10 @@ RhyhornEggMoves:
 	db PURSUIT
 	db COUNTER
 	db MAGNITUDE
+	db FLAMETHROWER
+	db THUNDERBOLT
+	db ICE_BEAM
+	db TRI_ATTACK
 	db -1 ; end
 
 ChanseyEggMoves:
@@ -523,6 +528,10 @@ IgglybuffEggMoves:
 	db PERISH_SONG
 	db PRESENT
 	db FAINT_ATTACK
+	db FLAMETHROWER
+	db THUNDERBOLT
+	db ICE_BEAM
+	db TRI_ATTACK
 	db -1 ; end
 
 TogepiEggMoves:
@@ -531,6 +540,10 @@ TogepiEggMoves:
 	db PECK
 	db FORESIGHT
 	db FUTURE_SIGHT
+	db FLAMETHROWER
+	db THUNDERBOLT
+	db ICE_BEAM
+	db TRI_ATTACK
 	db -1 ; end
 
 NatuEggMoves:
@@ -683,6 +696,7 @@ TeddiursaEggMoves:
 	db SEISMIC_TOSS
 	db FOCUS_ENERGY
 	db COUNTER
+	db METAL_CLAW
 	db -1 ; end
 
 SlugmaEggMoves:

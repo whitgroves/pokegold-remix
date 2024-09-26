@@ -483,6 +483,7 @@ ClefairyEvosAttacks:
 	db 34, METRONOME
 	db 43, MOONLIGHT
 	db 53, LIGHT_SCREEN
+	db 60, TRI_ATTACK
 	db 0 ; no more level-up moves
 
 ClefableEvosAttacks:
@@ -491,6 +492,8 @@ ClefableEvosAttacks:
 	db 1, DOUBLESLAP
 	db 1, METRONOME
 	db 1, MOONLIGHT
+	db 53, LIGHT_SCREEN
+	db 60, TRI_ATTACK
 	db 0 ; no more level-up moves
 
 VulpixEvosAttacks:
@@ -1167,8 +1170,8 @@ DodrioEvosAttacks:
 	db 9, PURSUIT
 	db 13, FURY_ATTACK
 	db 18, MUD_SLAP
-	db 21, TRI_ATTACK
 	db 25, RAGE
+	db 31, TRI_ATTACK
 	db 38, DRILL_PECK
 	db 47, AGILITY
 	db 0 ; no more level-up moves
