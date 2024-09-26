@@ -7,7 +7,7 @@ Similar to Blue Remix, the goal is not to recreate the Legacy games, but simply 
 However, some changes from Crystal, the Legacy hacks, and the [pret tutorials](https://github.com/pret/pokered/wiki/Tutorials) are duplicated here, such as sprite animations, making *Cut* Bug-type, and auto-sorting the items in the backpack.
 
 ## Changes (✓ = done, ~ = in progress)
-- Updated interactions for all 17 types ~
+- Updated interactions for all 17 types ✓
 - Updated typings to make certain Pokemon lore-friendly, interesting, or unique ~
 - Updated learnsets to better fit each Pokemon's kit ~
 - Updated moves, TMs, and weather interactions, detailed [here](./MOVES.md) ~
