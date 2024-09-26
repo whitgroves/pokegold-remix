@@ -8,3 +8,5 @@ WeatherTypeModifiers:
 WeatherMoveModifiers:
 	db WEATHER_RAIN, EFFECT_SOLARBEAM, NOT_VERY_EFFECTIVE
 	db -1 ; end
+
+; TODO -- update these interactions!

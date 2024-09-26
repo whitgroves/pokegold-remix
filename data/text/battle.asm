@@ -129,8 +129,8 @@ BattleText_RainContinuesToFall:
 	prompt
 
 BattleText_TheSunlightIsStrong:
-	text "The sunlight is"
-	line "strong."
+	text "The skies are"
+	line "bright and clear."
 	prompt
 
 BattleText_TheSandstormRages:
@@ -143,7 +143,7 @@ BattleText_TheRainStopped:
 	prompt
 
 BattleText_TheSunlightFaded:
-	text "The sunlight"
+	text "The brightness"
 	line "faded."
 	prompt
 
