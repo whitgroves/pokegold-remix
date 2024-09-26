@@ -155,6 +155,7 @@ INCLUDE "engine/events/pokerus/pokerus.asm"
 
 SECTION "Effect Commands", ROMX
 
+INCLUDE "engine/battle/always_physical_moves.asm"
 INCLUDE "engine/battle/effect_commands.asm"
 
 

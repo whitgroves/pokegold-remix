@@ -12,7 +12,7 @@ from argparse import ArgumentParser
 parser = ArgumentParser()
 parser.description = 'Converts certain gen2 game files between assembly and csv for easier editing of the type chart and movepool.\
                       By default, assumes cwd is the root folder of the disassembly. Does not support custom types.'
-parser.add_argument('-c', '--csv-dir', type=Path, help="Where to read/write the csv files. Defaults to cwd.", default='.edits')
+parser.add_argument('-c', '--csv-dir', type=Path, help="Where to read/write the csv files. Defaults to <cwd>/.easy_edit.", default='.easy_edit')
 parser.add_argument('-d', '--data-dir', type=Path, help="Where the game's data files are located.", default='./data/')
 parser.add_argument('-e', '--export', action='store_true', help="When set, exports the game's assembly files to csv.")
 parser.add_argument('-u', '--update', action='store_true', help="When set, updates the game's assembly files with csv edits.")

@@ -2553,9 +2553,23 @@ PlayerAttackDamage:
 
 	ld a, [hl]
 	cp SPECIAL
-	jr nc, .special
+	jr nc, .isSpecialMoveAlwaysPhysical
+	jr .physical
 
-; physical
+.isSpecialMoveAlwaysPhysical
+	ld a, [wPlayerMoveStructAnimation] ; animation pointer = move id
+	ld b, a
+	ld hl, AlwaysPhysicalMoves ; engine/battle/always_physical_moves.asm
+
+.alwaysPhysicalLoop
+	ld a, [hli]
+	cp b
+	jr z, .physical ; found matching id
+	cp $ff ; end of list
+	jr nz, .alwaysPhysicalLoop
+	jr .special
+
+.physical
 	ld hl, wEnemyMonDefense
 	ld a, [hli]
 	ld b, a
@@ -2783,9 +2797,23 @@ EnemyAttackDamage:
 
 	ld a, [hl]
 	cp SPECIAL
-	jr nc, .special
+	jr nc, .isSpecialMoveAlwaysPhysical
+	jr .physical
 
-; physical
+.isSpecialMoveAlwaysPhysical
+	ld a, [wEnemyMoveStructAnimation] ; animation pointer = move id
+	ld b, a
+	ld hl, AlwaysPhysicalMoves ; engine/battle/always_physical_moves.asm
+
+.alwaysPhysicalLoop
+	ld a, [hli]
+	cp b
+	jr z, .physical ; found matching id
+	cp $ff ; end of list
+	jr nz, .alwaysPhysicalLoop
+	jr .special
+
+.physical
 	ld hl, wBattleMonDefense
 	ld a, [hli]
 	ld b, a
