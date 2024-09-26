@@ -1129,7 +1129,7 @@ MagnetonEvosAttacks:
 FarfetchDEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, PECK
-	db 7, SAND_ATTACK
+	db 7, VINE_WHIP
 	db 13, LEER
 	db 19, FURY_ATTACK
 	db 21, MUD_SLAP
@@ -1695,7 +1695,7 @@ ScytherEvosAttacks:
 	db 12, PURSUIT
 	db 18, FALSE_SWIPE
 	db 24, AGILITY
-	db 30, WING_ATTACK
+	db 30, SWIFT
 	db 36, SLASH
 	db 42, SWORDS_DANCE
 	db 48, DOUBLE_TEAM
@@ -3219,7 +3219,7 @@ SmoochumEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, POUND
 	db 1, LICK
-	db 9, SWEET_KISS
+	db 9, SING
 	db 13, POWDER_SNOW
 	db 21, ICY_WIND
 	db 25, SING
