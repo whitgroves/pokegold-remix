@@ -1061,6 +1061,7 @@ SkyAttack:
 	checkcharge
 	checkobedience
 	doturn
+	skipsuncharge
 	charge
 	usedmovetext
 	critical

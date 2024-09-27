@@ -1,15 +1,47 @@
-# Gold Remix - Move Updates
-Certain moves and interactions have been updated to fit new mon typings and/or spice things up a bit.
-
-## Type, Accuracy, Power, and Effect Changes
+## Type and Effect Changes
 - The following moves have had their types changed:
-    - TBD
-- The following moves are now 100% accurate:
-    - TBD
-- The following moves have had their base power changed:
-    - TBD
+    - Comet Punch: *Normal* -> *Fighting*
+    - Mega Punch: *Normal* -> *Fighting*
+    - Vicegrip: *Normal* -> *Dark*
+    - Guillotine: *Normal* -> *Dark*
+    - Razor Wind: *Normal* -> *Flying*
+    - Cut: *Normal* -> *Bug*
+    - Whirlwind: *Normal* -> *Flying*
+    - Mega Kick: *Normal* -> *Fighting*
+    - Horn Attack: *Normal* -> *Dragon*
+    - Fury Attack: *Normal* -> *Dark*
+    - Horn Drill: *Normal* -> *Dragon*
+    - Thrash: *Normal* -> *Dark*
+    - Hyper Beam: *Normal* -> *Dragon*
+    - Strength: *Normal* -> *Fighting*
+    - Agility: *Psychic* -> *Normal*
+    - Rage: *Normal* -> *Dark*
+    - Egg Bomb: *Normal* -> *Dragon*
+    - Bone Club: *Ground* -> *Rock*
+    - Skull Bash: *Normal* -> *Rock*
+    - Spike Cannon: *Normal* -> *Steel*
+    - Glare: *Normal* -> *Dark*
+    - Lovely Kiss: *Normal* -> *Dark*
+    - Dizzy Punch: *Normal* -> *Psychic*
+    - Flash: *Normal* -> *Electric*
+    - Splash: *Normal* -> *Water*
+    - Bonemerang: *Ground* -> *Rock*
+    - Perish Song: *Normal* -> *Ghost*
+    - Bone Rush: *Ground* -> *Rock*
+    - Frustration: *Normal* -> *Dark*
+    - Pain Split: *Normal* -> *Ghost*
+    - Psych Up: *Normal* -> *Psychic*
 - The following moves have had their effects changed:
-    - TBD
+    - Razor Wind: *Charging Move* -> *30% Chance To Flinch*
+    - Horn Attack: *No Effect* -> *30% Chance To Flinch*
+    - Blizzard: *10% Chance To Freeze* -> *20% Chance To Freeze*
+    - Lick: *30% Chance To Paralyze* -> *Leeches Health On Hit*
+    - Skull Bash: *Charging Move* -> *30% Chance To Flinch*
+    - Sky Attack: *Skips Charging Turn In Sun (See [Weather Interactions](#weather-interactions))*
+    - Mud-Slap: *100% Chance To Lower Accuracy* -> *50% Chance To Lower Accuracy*
+    - Icy Wind: *100% Chance To Lower Speed* -> *50% Chance To Lower Speed*
+    - Dragonbreath: *30% Chance To Paralyze* -> *20% Chance To Lower Special Defense*
+    - Crunch: *20% Chance To Lower Special Defense* -> *30% Chance To Paralyze*
 - The following special moves are always treated as physical:
     - Fire Punch
     - Ice Punch
@@ -19,8 +51,54 @@ Certain moves and interactions have been updated to fit new mon typings and/or s
     - Dizzy Punch
     - Crabhammer
     - Vine Whip
+    - Horn Attack
+    - Outrage
 
-## TM Changes
+## Accuracy, Power, and PP Adjustments
+- The following moves have had their accuracy changed:
+    - Razor Wind: *75%* -> *100%*
+    - Cut: *95%* -> *100%*
+    - Fly: *95%* -> *100%*
+    - Rolling Kick: *85%* -> *100%*
+    - Sand Attack: *100%* -> *80%*
+    - Tackle: *95%* -> *100%*
+    - Razor Leaf: *95%* -> *100%*
+    - Rock Throw: *90%* -> *100%*
+    - Bone Club: *85%* -> *100%*
+    - Crabhammer: *85%* -> *100%*
+    - Bonemerang: *90%* -> *100%*
+    - Rock Slide: *90%* -> *100%*
+    - Hyper Fang: *90%* -> *100%*
+    - Super Fang: *90%* -> *100%*
+    - Triple Kick: *90%* -> *100%*
+    - Aeroblast: *95%* -> *100%*
+    - Octazooka: *85%* -> *100%*
+    - Icy Wind: *95%* -> *100%*
+    - Sacred Fire: *95%* -> *100%*
+    - Iron Tail: *75%* -> *90%*
+    - Metal Claw: *95%* -> *100%*
+- The following moves have had their base power changed:
+    - Vine Whip: *35* -> *40*
+    - Horn Attack: *65* -> *70*
+    - Poison Sting: *15* -> *20*
+    - Absorb: *20* -> *30*
+    - Mega Drain: *40* -> *50*
+    - Petal Dance: *70* -> *90*
+    - Lick: *20* -> *30*
+    - Smog: *20* -> *30*
+    - Skull Bash: *100* -> *70*
+    - Leech Life: *20* -> *30*
+    - Rock Slide: *75* -> *80*
+    - Giga Drain: *60* -> *80*
+- The following moves have had their PP changed:
+    - Vine Whip *10* -> *20*
+    - Horn Attack *25* -> *15*
+    - Absorb: *20* -> *30*
+    - Mega Drain: *10* -> *20*
+    - Leech Life: *15* -> *30*
+    - Giga Drain: *5* -> *10*
+
+## TM Moves
 - The following TMs have been reassigned:
     - TM05: *Roar* -> *Tri Attack*
     - TM07: *Zap Cannon* -> *Thunderbolt*
@@ -35,7 +113,7 @@ Certain moves and interactions have been updated to fit new mon typings and/or s
 - The following TMs are now available in the Celadon Dept. Store:
     - TBD
 
-## Weather Changes
+## Weather Interactions
 - Rain now causes these additional effects:
     - *Ice*-, *Grass*-, and *Electric*-type moves are more effective
     - *Ground*- and *Flying*-type moves are less effective
@@ -46,6 +124,7 @@ Certain moves and interactions have been updated to fit new mon typings and/or s
     - *Ice*- and *Ghost*- moves are less effective
     - Moves that fail to inflict the *Burn* status get a 10% reroll to inflict status
     - The *Freeze* status can be inflicted, but has a 90% chance to fail on hit
+    - *Sky Attack* skips its charging turn, similar to *Solarbeam*
     - Changed battle text to make certain move interactions (e.g., *Moonlight*) less confusing
 - Sandstorm now causes these additional effects:
     - *Rock*-, *Ground*, and *Dark*-type moves are more effective

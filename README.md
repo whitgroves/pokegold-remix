@@ -2,9 +2,9 @@
 
 This is a follow-up to [Pokémon Blue Remix](https://github.com/whitgroves/pokeblue-remix) forked from [pret's disassembly of Pokémon Gold/Silver](https://github.com/pret/pokegold) and inspired by [TheSmithPlays' Crystal Legacy project](https://github.com/cRz-Shadows/Pokemon_Crystal_Legacy).
 
-Similar to Blue Remix, the goal is not to recreate the Legacy games, but simply to see what gen 2 would feel like with a rebalanced type chart and some more unique typings (e.g., Steel is super effective vs Dragon, Sunflora is now Grass/Fire).
+Similar to Blue Remix, the goal is not to recreate the Legacy games, but simply to see what gen 2 would feel like with a rebalanced type chart and some unhinged typings (e.g., Steel is super effective vs Dragon, Sunflora is now Grass/Fire).
 
-However, some changes from Crystal, the Legacy hacks, and the [pret tutorials](https://github.com/pret/pokered/wiki/Tutorials) are duplicated here, such as sprite animations, making *Cut* Bug-type, and auto-sorting the items in the backpack.
+However, some changes from Crystal, the Legacy hacks, and the [pret tutorials](https://github.com/pret/pokered/wiki/Tutorials) are duplicated here, such as learnsets, making *Cut* Bug-type, and auto-sorting the items in the backpack.
 
 ## Changes (✓ = done, ~ = in progress)
 - Updated interactions for all 17 types ✓
