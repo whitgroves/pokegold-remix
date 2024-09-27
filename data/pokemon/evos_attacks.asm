@@ -1143,7 +1143,8 @@ FarfetchDEvosAttacks:
 	db 25, SWORDS_DANCE
 	db 31, AGILITY
 	db 37, SLASH
-	db 44, FALSE_SWIPE
+	db 42, FALSE_SWIPE
+	db 46, RAZOR_LEAF
 	db 50, RAZOR_WIND
 	db 0 ; no more level-up moves
 
