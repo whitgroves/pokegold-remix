@@ -8,5 +8,6 @@ AlwaysPhysicalMoves:
     db CRABHAMMER
     db VINE_WHIP
     db HORN_ATTACK
+    db EGG_BOMB
     db OUTRAGE
     db -1 ; end

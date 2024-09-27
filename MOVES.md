@@ -52,6 +52,7 @@
     - Crabhammer
     - Vine Whip
     - Horn Attack
+    - Egg Bomb
     - Outrage
 
 ## Accuracy, Power, and PP Adjustments
