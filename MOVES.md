@@ -35,20 +35,21 @@ Certain moves and interactions have been updated to fit new mon typings and/or s
 - The following TMs are now available in the Celadon Dept. Store:
     - TBD
 
-## Weather Changes (✓ = done, ~ = in progress)
+## Weather Changes
 - Rain now causes these additional effects:
-    - *Ice*-, *Grass*-, and *Electric*-type moves are more effective ✓
-    - *Ground*- and *Flying*-type moves are less effective ✓
-    - Moves that fail to inflict the *Freeze* status get a 10% reroll ✓
-    - The *Burn* status can be inflicted, but has a 90% chance to fail ✓
+    - *Ice*-, *Grass*-, and *Electric*-type moves are more effective
+    - *Ground*- and *Flying*-type moves are less effective
+    - Moves that fail to inflict the *Freeze* status get a 10% reroll to inflict status
+    - The *Burn* status can be inflicted, but has a 90% chance to fail on hit
 - Sun now causes these additional effects:
-    - *Grass*- and *Flying*- type moves are more effective ✓
-    - *Ice*- and *Ghost*- moves are less effective ✓
-    - Moves that fail to inflict the *Burn* status get a 10% reroll ✓
-    - The *Freeze* status can be inflicted, but has a 90% chance to fail ✓
-    - Changed battle text to make certain move interactions (e.g., *Moonlight*) less confusing ✓
+    - *Grass*- and *Flying*- type moves are more effective
+    - *Ice*- and *Ghost*- moves are less effective
+    - Moves that fail to inflict the *Burn* status get a 10% reroll to inflict status
+    - The *Freeze* status can be inflicted, but has a 90% chance to fail on hit
+    - Changed battle text to make certain move interactions (e.g., *Moonlight*) less confusing
 - Sandstorm now causes these additional effects:
-    - *Rock*- and *Ground*-type moves are more effective ✓
-    - *Grass*-, *Flying*-, and *Electric*-type moves are less effective ✓
-    - *Solarbeam*, *Synthesis*, *Morning Sun*, *Moonlight*, behave as if under Rain ~
-    - *Thunder* behaves as if under Sun ~
+    - *Rock*-, *Ground*, and *Dark*-type moves are more effective
+    - *Grass*-, *Flying*-, and *Electric*-type moves are less effective
+    - *Dragon*-type Pokemon are immune to Sandstorm
+    - *Solarbeam* behaves as if under Rain
+    - *Thunder* behaves as if under Sun

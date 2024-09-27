@@ -370,11 +370,11 @@ AI_Smart_EffectHandlers:
 	dbw EFFECT_PURSUIT,          AI_Smart_Pursuit
 	dbw EFFECT_RAPID_SPIN,       AI_Smart_RapidSpin
 	dbw EFFECT_MORNING_SUN,      AI_Smart_MorningSun
-	dbw EFFECT_SYNTHESIS,        AI_Smart_Synthesis
-	dbw EFFECT_MOONLIGHT,        AI_Smart_Moonlight
+	dbw EFFECT_SYNTHESIS,        AI_Smart_Synthesis 
+	dbw EFFECT_MOONLIGHT,        AI_Smart_Moonlight 
 	dbw EFFECT_HIDDEN_POWER,     AI_Smart_HiddenPower
 	dbw EFFECT_RAIN_DANCE,       AI_Smart_RainDance
-	dbw EFFECT_SUNNY_DAY,        AI_Smart_SunnyDay
+	dbw EFFECT_SUNNY_DAY,        AI_Smart_SunnyDay 
 	dbw EFFECT_BELLY_DRUM,       AI_Smart_BellyDrum
 	dbw EFFECT_PSYCH_UP,         AI_Smart_PsychUp
 	dbw EFFECT_MIRROR_COAT,      AI_Smart_MirrorCoat
@@ -2038,6 +2038,7 @@ AI_Smart_Sandstorm:
 	db ROCK
 	db GROUND
 	db STEEL
+	db DRAGON
 	db -1 ; end
 
 AI_Smart_Endure:
@@ -2310,15 +2311,27 @@ AI_Smart_RainDance:
 ; Particularly, if the player is a Water-type.
 	ld a, [wBattleMonType1]
 	cp WATER
-	jr z, AIBadWeatherType
+	jp z, AIBadWeatherType
+	cp ICE
+	jp z, AIBadWeatherType
+	cp ELECTRIC
+	jp z, AIBadWeatherType
 	cp FIRE
-	jr z, AIGoodWeatherType
+	jp z, AIGoodWeatherType
+	cp FLYING
+	jp z, AIGoodWeatherType
 
 	ld a, [wBattleMonType2]
 	cp WATER
-	jr z, AIBadWeatherType
+	jp z, AIBadWeatherType
+	cp ICE
+	jp z, AIBadWeatherType
+	cp ELECTRIC
+	jp z, AIBadWeatherType
 	cp FIRE
-	jr z, AIGoodWeatherType
+	jp z, AIGoodWeatherType
+	cp FLYING
+	jp z, AIGoodWeatherType
 
 	push hl
 	ld hl, RainDanceMoves
@@ -2331,15 +2344,27 @@ AI_Smart_SunnyDay:
 ; Particularly, if the player is a Fire-type.
 	ld a, [wBattleMonType1]
 	cp FIRE
-	jr z, AIBadWeatherType
+	jp z, AIBadWeatherType
+	cp FLYING
+	jp z, AIBadWeatherType
 	cp WATER
-	jr z, AIGoodWeatherType
+	jp z, AIGoodWeatherType
+	cp ICE
+	jp z, AIGoodWeatherType
+	cp GHOST
+	jp z, AIGoodWeatherType
 
 	ld a, [wBattleMonType2]
 	cp FIRE
-	jr z, AIBadWeatherType
+	jp z, AIBadWeatherType
+	cp FLYING
+	jp z, AIBadWeatherType
 	cp WATER
-	jr z, AIGoodWeatherType
+	jp z, AIGoodWeatherType
+	cp ICE
+	jp z, AIGoodWeatherType
+	cp GHOST
+	jp z, AIGoodWeatherType
 
 	push hl
 	ld hl, SunnyDayMoves
@@ -2600,15 +2625,19 @@ AI_Smart_Stomp:
 
 AI_Smart_Solarbeam:
 ; 80% chance to encourage this move when it's sunny.
-; 90% chance to discourage this move when it's raining.
+; 90% chance to discourage this move when it's raining or in a sandstorm.
 
 	ld a, [wBattleWeather]
 	cp WEATHER_SUN
 	jr z, .encourage
 
 	cp WEATHER_RAIN
+	jr z, .discourage
+
+	cp WEATHER_SANDSTORM
 	ret nz
 
+.discourage
 	call Random
 	cp 10 percent
 	ret c
@@ -2626,12 +2655,16 @@ AI_Smart_Solarbeam:
 	ret
 
 AI_Smart_Thunder:
-; 90% chance to discourage this move when it's sunny.
+; 90% chance to discourage this move when it's sunny or in a sandstorm.
 
 	ld a, [wBattleWeather]
 	cp WEATHER_SUN
+	jr z, .discourage
+
+	cp WEATHER_SANDSTORM
 	ret nz
 
+.discourage
 	call Random
 	cp 10 percent
 	ret c

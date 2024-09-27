@@ -1676,6 +1676,8 @@ HandleWeather:
 	ret z
 	cp STEEL
 	ret z
+	cp DRAGON
+	ret z
 
 	ld a, [hl]
 	cp ROCK
@@ -1683,6 +1685,8 @@ HandleWeather:
 	cp GROUND
 	ret z
 	cp STEEL
+	ret z
+	cp DRAGON
 	ret z
 
 	call SwitchTurnCore

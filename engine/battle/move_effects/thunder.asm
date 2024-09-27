@@ -6,7 +6,11 @@ BattleCommand_ThunderAccuracy:
 	cp WEATHER_RAIN
 	jr z, .rain
 	cp WEATHER_SUN
+	jr z, .notRain
+	cp WEATHER_SANDSTORM
 	ret nz
+
+.notRain
 	ld [hl], 50 percent + 1
 	ret
 

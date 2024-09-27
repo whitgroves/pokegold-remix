@@ -8,6 +8,24 @@ SunnyDayMoves:
 	db FIRE_SPIN
 	db FIRE_BLAST
 	db SACRED_FIRE
+	db FLAME_WHEEL
 	db MORNING_SUN
 	db SYNTHESIS
+	db MOONLIGHT
+	db SOLARBEAM
+	db VINE_WHIP
+	db ABSORB
+	db MEGA_DRAIN
+	db RAZOR_LEAF
+	db PETAL_DANCE
+	db RAZOR_WIND
+	db GUST
+	db WING_ATTACK
+	db FLY
+	db PECK
+	db DRILL_PECK
+	db SKY_ATTACK
+	db AEROBLAST
 	db -1 ; end
+
+; TODO - add (other) grass, flying moves to this list
