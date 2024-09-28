@@ -40,7 +40,7 @@ MoveEffectsPointers:
 	dw TriAttack
 	dw NormalHit
 	dw OHKOHit
-	dw RazorWind
+	dw RazorWind ; TODO - see if can be removed/replaced safely
 	dw SuperFang
 	dw StaticDamage
 	dw TrapTarget
@@ -76,7 +76,7 @@ MoveEffectsPointers:
 	dw SpecialDefenseDownHit
 	dw AccuracyDownHit
 	dw EvasionDownHit
-	dw SkyAttack
+	dw SkyAttack ; TODO - replace if now matched with Solarbeam
 	dw ConfuseHit
 	dw PoisonMultiHit
 	dw NormalHit
@@ -88,7 +88,7 @@ MoveEffectsPointers:
 	dw LeechSeed
 	dw Splash
 	dw Disable
-	dw StaticDamage
+	dw StaticDamage ; TODO - replace if (when) all static damage moves get overhauled
 	dw Psywave
 	dw Counter
 	dw Encore
@@ -146,7 +146,7 @@ MoveEffectsPointers:
 	dw BellyDrum
 	dw PsychUp
 	dw MirrorCoat
-	dw SkullBash
+	dw SkullBash ; TODO - see if can be removed/replaced safely
 	dw Twister
 	dw Earthquake
 	dw FutureSight

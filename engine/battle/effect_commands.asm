@@ -3577,7 +3577,7 @@ UpdateMoveData:
 	call GetMoveName
 	jp CopyName1
 
-BattleCommand_SleepTarget:
+BattleCommand_SleepTarget: ; TODO - support side effect -OR- create separate command for it (see poisontarget)
 	call GetOpponentItem
 	ld a, b
 	cp HELD_PREVENT_SLEEP
