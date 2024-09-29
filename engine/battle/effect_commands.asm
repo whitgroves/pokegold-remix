@@ -3928,7 +3928,9 @@ BattleCommand_BurnTarget:
 	ld a, b
 	cp HELD_PREVENT_BURN
 	ret z
-	call CheckWeatherBurn ; checks wEffectFailed against current weather status and sets nz on fail
+	call CheckWeatherBurn ; updates wEffectFailed against current weather status
+	ld a, [wEffectFailed]
+	and a
 	ret nz
 	call SafeCheckSafeguard
 	ret nz
@@ -3991,7 +3993,9 @@ BattleCommand_FreezeTarget:
 	ld a, b
 	cp HELD_PREVENT_FREEZE
 	ret z
-	call CheckWeatherFreeze ; checks wEffectFailed against current weather status and sets nz on fail
+	call CheckWeatherFreeze ; updates wEffectFailed against current weather status
+	ld a, [wEffectFailed]
+	and a
 	ret nz
 	call SafeCheckSafeguard
 	ret nz
