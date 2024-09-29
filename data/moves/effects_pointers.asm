@@ -146,7 +146,7 @@ MoveEffectsPointers:
 	dw BellyDrum
 	dw PsychUp
 	dw MirrorCoat
-	dw SkullBash ; TODO - see if can be removed/replaced safely
+	dw NormalHit ; previously SkullBash
 	dw Twister
 	dw Earthquake
 	dw FutureSight

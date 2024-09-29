@@ -1062,9 +1062,6 @@ BattleCommand_DoTurn:
 	cp EFFECT_SKY_ATTACK
 	jr z, .print
 
-	cp EFFECT_SKULL_BASH
-	jr z, .print
-
 	cp EFFECT_SOLARBEAM
 	jr z, .print
 
@@ -1893,8 +1890,6 @@ BattleCommand_LowerSub:
 	ld a, BATTLE_VARS_MOVE_EFFECT
 	call GetBattleVar
 	cp EFFECT_SKY_ATTACK
-	jr z, .charge_turn
-	cp EFFECT_SKULL_BASH
 	jr z, .charge_turn
 	cp EFFECT_SOLARBEAM
 	jr z, .charge_turn
@@ -5520,7 +5515,7 @@ BattleCommand_Charge:
 
 	ld a, BATTLE_VARS_MOVE_EFFECT
 	call GetBattleVar
-	cp EFFECT_SKULL_BASH
+	cp EFFECT_UNUSED_91 ; previously EFFECT_SKULL_BASH, redirect to unused const to avoid issues
 	ld b, endturn_command
 	jp z, SkipToBattleCommand
 	jp EndMoveEffect
