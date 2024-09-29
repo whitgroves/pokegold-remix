@@ -173,6 +173,7 @@ INCLUDE "engine/battle/core.asm"
 INCLUDE "data/battle/effect_command_pointers.asm"
 INCLUDE "engine/battle/weather_interactions.asm"
 
+
 SECTION "bank10", ROMX
 
 INCLUDE "engine/pokedex/pokedex.asm"

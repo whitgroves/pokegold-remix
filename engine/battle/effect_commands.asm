@@ -1059,9 +1059,6 @@ BattleCommand_DoTurn:
 	ld a, BATTLE_VARS_MOVE_EFFECT
 	call GetBattleVar
 ; continuous?
-	cp EFFECT_RAZOR_WIND
-	jr z, .print
-
 	cp EFFECT_SKY_ATTACK
 	jr z, .print
 
@@ -1895,8 +1892,6 @@ BattleCommand_LowerSub:
 
 	ld a, BATTLE_VARS_MOVE_EFFECT
 	call GetBattleVar
-	cp EFFECT_RAZOR_WIND
-	jr z, .charge_turn
 	cp EFFECT_SKY_ATTACK
 	jr z, .charge_turn
 	cp EFFECT_SKULL_BASH

@@ -40,7 +40,7 @@ MoveEffectsPointers:
 	dw TriAttack
 	dw NormalHit
 	dw OHKOHit
-	dw RazorWind ; TODO - see if can be removed/replaced safely
+	dw NormalHit ; previously RazorWind
 	dw SuperFang
 	dw StaticDamage
 	dw TrapTarget
