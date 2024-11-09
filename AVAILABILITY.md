@@ -1,0 +1,31 @@
+## Mon Availability
+- The following pokemon are found in new areas:
+    - TBD
+- The following pokemon now evolve by new methods (in addition to their old ones):
+    - Nidorina -> Nidoqueen: *Happiness*
+    - Nidorino -> Nidoking: *Happiness*
+    - Gloom -> Vileplume: *Happiness, Night*
+    - Gloom -> Bellossom: *Happiness, Day*
+    - Poliwhirl -> Politoed: *Happiness*
+    - Kadabra -> Alakazam: *Happiness*
+    - Machoke -> Machamp: *Happiness*
+    - Graveler -> Golem: *Happiness*
+    - Slowpoke -> Slowking: *Dragon Scale*
+    - Haunter -> Gengar: *Happiness, Night*
+    - Onix -> Steelix: *Up-Grade*
+    - Seadra -> Kingdra: *Dragon Scale*
+    - Scyther -> Scizor: *Up-Grade*
+    - Eevee -> Espeon: *Sun Stone*
+    - Eevee -> Umbreon: *Moon Stone*
+    - Porygon -> Porygon2: *Up-Grade*
+    - Togepi -> Togetic: *Sun Stone* -or- *Moon Stone*
+    - Sunkern -> Sunflora: *Happiness, Day*
+- The following evolution items are now available in the Mahogany Mart (after Rocket Hideout):
+    - Leaf Stone
+    - Fire Stone
+    - Water Stone
+    - Thunderstone
+    - Moon Stone
+    - Sun Stone
+    - Dragon Scale
+    - Up-Grade
