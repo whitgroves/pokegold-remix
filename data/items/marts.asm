@@ -210,15 +210,15 @@ MartMahogany1:
 
 MartMahogany2:
 	db 9 ; # items
-	db RAGECANDYBAR
 	db GREAT_BALL
 	db SUPER_POTION
 	db HYPER_POTION
 	db ANTIDOTE
 	db PARLYZ_HEAL
 	db SUPER_REPEL
-	db REVIVE
 	db FLOWER_MAIL
+	db UP_GRADE
+	db DRAGON_SCALE
 	db -1 ; end
 
 MartBlackthorn:
