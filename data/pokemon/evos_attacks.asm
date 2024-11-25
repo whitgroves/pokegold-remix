@@ -2726,13 +2726,14 @@ UmbreonEvosAttacks:
 	db 1, TACKLE
 	db 1, TAIL_WHIP
 	db 8, SAND_ATTACK
-	db 16, PURSUIT
+	db 16, CONFUSE_RAY
 	db 23, QUICK_ATTACK
-	db 30, CONFUSE_RAY
+	db 30, NIGHT_SHADE
 	db 36, FAINT_ATTACK
 	db 42, MEAN_LOOK
-	db 47, SCREECH
+	db 47, SHADOW_BALL
 	db 52, MOONLIGHT
+	db 59, PERISH_SONG
 	db 0 ; no more level-up moves
 
 MurkrowEvosAttacks:
