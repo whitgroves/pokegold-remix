@@ -9,6 +9,5 @@ AlwaysPhysicalMoves:
     db VINE_WHIP
     db RAZOR_LEAF
     db HORN_ATTACK
-    db EGG_BOMB
     db OUTRAGE
     db -1 ; end
