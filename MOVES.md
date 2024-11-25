@@ -35,6 +35,7 @@
     - Razor Wind: *Charging Move* -> *30% Chance To Flinch*
     - Horn Attack: *No Effect* -> *30% Chance To Flinch*
     - Blizzard: *10% Chance To Freeze* -> *20% Chance To Freeze*
+    - Night Shade: *Damage Equal To User's Level* -> *10% Chance To Sleep*
     - Lick: *30% Chance To Paralyze* -> *Leeches Health On Hit*
     - Skull Bash: *Charging Move* -> *30% Chance To Flinch*
     - Sky Attack: *Skips Charging Turn In Sun (See [Weather Interactions](#weather-interactions))*
@@ -86,6 +87,7 @@
     - Absorb: *20* -> *30*
     - Mega Drain: *40* -> *50*
     - Petal Dance: *70* -> *90*
+    - Night Shade: *Damage Equal To User's Level* -> *55*
     - Lick: *20* -> *30*
     - Smog: *20* -> *30*
     - Skull Bash: *100* -> *70*
@@ -134,3 +136,6 @@
     - *Dragon*-type Pokemon are immune to Sandstorm
     - *Solarbeam* behaves as if under Rain
     - *Thunder* behaves as if under Sun
+
+## Miscellaneous
+- *Fire*-type moves can no longer defrost through *Safeguard*

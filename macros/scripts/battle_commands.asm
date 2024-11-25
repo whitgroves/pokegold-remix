@@ -24,7 +24,7 @@ ENDM
 	command checkfaint              ; 11
 	command buildopponentrage       ; 12
 	command poisontarget            ; 13
-	command sleeptarget             ; 14
+	command sleep                   ; 14 - previusly sleeptarget, name changed for consistency with other status effects
 	command draintarget             ; 15
 	command eatdream                ; 16
 	command burntarget              ; 17
@@ -64,7 +64,7 @@ ENDM
 	command charge                  ; 39
 	command checkcharge             ; 3a
 	command traptarget              ; 3b
-	command effect0x3c              ; 3c
+	command sleeptarget             ; 3c - previously effect0x3c, changed to implement SleepHit
 	command rampage                 ; 3d
 	command checkrampage            ; 3e
 	command constantdamage          ; 3f

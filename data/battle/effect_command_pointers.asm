@@ -24,7 +24,7 @@ BattleCommandPointers:
 	dw BattleCommand_CheckFaint
 	dw BattleCommand_BuildOpponentRage
 	dw BattleCommand_PoisonTarget
-	dw BattleCommand_SleepTarget
+	dw BattleCommand_Sleep ; previusly BattleCommand_SleepTarget - name changed for consistency with other status effects
 	dw BattleCommand_DrainTarget
 	dw BattleCommand_EatDream
 	dw BattleCommand_BurnTarget
@@ -64,7 +64,7 @@ BattleCommandPointers:
 	dw BattleCommand_Charge
 	dw BattleCommand_CheckCharge
 	dw BattleCommand_TrapTarget
-	dw BattleCommand_Unused3C
+	dw BattleCommand_SleepTarget ; previously BattleCommand_Unused3C - changed to implement SleepHit
 	dw BattleCommand_Rampage
 	dw BattleCommand_CheckRampage
 	dw BattleCommand_ConstantDamage

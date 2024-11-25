@@ -1,6 +1,6 @@
 # Pokémon Gold Remix
 
-This is a follow-up to [Pokémon Blue Remix](https://github.com/whitgroves/pokeblue-remix) forked from [pret's disassembly of Pokémon Gold/Silver](https://github.com/pret/pokegold) and inspired by [TheSmithPlays' Crystal Legacy project](https://github.com/cRz-Shadows/Pokemon_Crystal_Legacy).
+This is a follow-up to [Pokémon Blue Remix](https://github.com/whitgroves/pokeblue-remix) forked from [pret's disassembly of Pokémon Gold/Silver](https://github.com/pret/pokegold) and inspired by [TheSmithPlays' Crystal Legacy project](https://github.com/cRz-Shadows/Pokemon_Crystal_Legacy). If you'd like to play the game, please follow the [pret instructions](https://github.com/pret/pokegold/blob/master/INSTALL.md) on how to build the ROM.
 
 Similar to Blue Remix, the goal is not to recreate the Legacy games, but simply to see what gen 2 would feel like with a rebalanced type chart and some unhinged typings (e.g., Steel is super effective vs Dragon, Sunflora is now Grass/Fire).
 

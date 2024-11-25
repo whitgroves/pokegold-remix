@@ -40,7 +40,7 @@ MoveEffectsPointers:
 	dw TriAttack
 	dw NormalHit
 	dw OHKOHit
-	dw NormalHit ; previously RazorWind
+	dw SleepHit ; previously RazorWind
 	dw SuperFang
 	dw StaticDamage
 	dw TrapTarget
@@ -76,7 +76,7 @@ MoveEffectsPointers:
 	dw SpecialDefenseDownHit
 	dw AccuracyDownHit
 	dw EvasionDownHit
-	dw SkyAttack ; TODO - replace if now matched with Solarbeam
+	dw SkyAttack ; TODO - consolidate with Solarbeam
 	dw ConfuseHit
 	dw PoisonMultiHit
 	dw NormalHit

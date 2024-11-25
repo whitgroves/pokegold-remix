@@ -28,6 +28,27 @@ DoSleep:
 	doturn
 	checkhit
 	checksafeguard
+	sleep ; previously sleeptarget - name changed for consistency with SleepHit and other status effects
+	endmove
+
+SleepHit:
+	checkobedience
+	usedmovetext
+	doturn
+	critical
+	damagestats
+	damagecalc
+	stab
+	damagevariation
+	checkhit
+	effectchance
+	moveanim
+	failuretext
+	applydamage
+	criticaltext
+	supereffectivetext
+	checkfaint
+	buildopponentrage
 	sleeptarget
 	endmove
 

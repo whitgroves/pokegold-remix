@@ -3567,7 +3567,46 @@ UpdateMoveData:
 	call GetMoveName
 	jp CopyName1
 
-BattleCommand_SleepTarget: ; TODO - support side effect -OR- create separate command for it (see poisontarget)
+; checks whether target can be statused on hit and sets the zero flag if so
+; does NOT check against HELD_PREVENT_ items
+CheckStatusHit:
+	call CheckSubstituteOpp 	 ; substitute
+	jr nz, .fail
+	ld a, BATTLE_VARS_STATUS_OPP ; already statused
+	call GetBattleVarAddr 	
+	and a
+	jr nz, .fail
+	ld a, [wTypeModifier]	; type immunity
+	and $7f					; mask -> 0111111 - 7th bit is STAB
+	jr z, .fail
+	ld a, [wEffectFailed]	; side effect chance
+	and a
+	jr nz, .fail
+	call SafeCheckSafeguard ; safeguard
+	jr nz, .fail
+	ld a, 0
+	jr .done
+.fail
+	ld a, 1
+.done
+	and a
+	ret
+
+BattleCommand_SleepTarget:
+	call GetOpponentItem ; status item prevent check
+	ld a, b
+	cp HELD_PREVENT_SLEEP
+	ret z
+	call CheckStatusHit ; remaining status checks
+	ret nz
+	ld a, BATTLE_VARS_STATUS_OPP
+	call GetBattleVarAddr
+	ld d, h
+	ld e, l
+	call SleepOpponent ; sleep gets updated using register de instead of hl
+	ret
+
+BattleCommand_Sleep:
 	call GetOpponentItem
 	ld a, b
 	cp HELD_PREVENT_SLEEP
@@ -3605,25 +3644,7 @@ BattleCommand_SleepTarget: ; TODO - support side effect -OR- create separate com
 	jr nz, .fail
 
 	call AnimateCurrentMove
-
-.random_loop
-	call BattleRandom
-	and SLP_MASK
-	jr z, .random_loop
-	cp SLP_MASK
-	jr z, .random_loop
-	inc a
-	ld [de], a
-	call UpdateOpponentInParty
-	call RefreshBattleHuds
-
-	ld hl, FellAsleepText
-	call StdBattleTextbox
-
-	farcall UseHeldStatusHealingItem
-	ret nz
-
-	call OpponentCantMove
+	call SleepOpponent
 	ret
 
 .fail
@@ -3654,27 +3675,35 @@ BattleCommand_SleepTarget: ; TODO - support side effect -OR- create separate com
 	xor a
 	ret
 
+SleepOpponent:
+.random_loop
+	call BattleRandom
+	and SLP_MASK
+	jr z, .random_loop
+	cp SLP_MASK
+	jr z, .random_loop
+	inc a
+	ld [de], a
+	call UpdateOpponentInParty
+	call RefreshBattleHuds
+
+	ld hl, FellAsleepText
+	call StdBattleTextbox
+		
+	farcall UseHeldStatusHealingItem
+	ret nz
+
+	call OpponentCantMove
+	ret
+
 BattleCommand_PoisonTarget:
-	call CheckSubstituteOpp
-	ret nz
-	ld a, BATTLE_VARS_STATUS_OPP
-	call GetBattleVarAddr
-	and a
-	ret nz
-	ld a, [wTypeModifier]
-	and $7f
-	ret z
+	call CheckStatusHit ; check for sub, existing status, type immunity, side effect chance, and safeguard
 	call CheckIfTargetIsPoisonType
 	ret z
 	call GetOpponentItem
 	ld a, b
 	cp HELD_PREVENT_POISON
 	ret z
-	ld a, [wEffectFailed]
-	and a
-	ret nz
-	call SafeCheckSafeguard
-	ret nz
 
 	call PoisonOpponent
 	ld de, ANIM_PSN
@@ -3786,7 +3815,7 @@ BattleCommand_Poison:
 	cp EFFECT_TOXIC
 	ret
 
-CheckIfTargetIsPoisonType:
+CheckIfTargetIsPoisonType: ; TODO - implement status immunity for Rock, Steel, Ghost types
 	ld de, wEnemyMonType1
 	ldh a, [hBattleTurn]
 	and a
@@ -3913,29 +3942,19 @@ SapHealth:
 BattleCommand_BurnTarget:
 	xor a
 	ld [wNumHits], a
-	call CheckSubstituteOpp
+	call CheckWeatherBurn ; updates wEffectFailed against current weather status
+	call CheckStatusHit ; check for sub, existing status, type immunity, side effect chance, and safeguard
 	ret nz
-	ld a, BATTLE_VARS_STATUS_OPP
-	call GetBattleVarAddr
-	and a
-	jp nz, Defrost
-	ld a, [wTypeModifier]
-	and $7f
-	ret z
 	call CheckMoveTypeMatchesTarget ; Don't burn a Fire-type
 	ret z
 	call GetOpponentItem
 	ld a, b
 	cp HELD_PREVENT_BURN
 	ret z
-	call CheckWeatherBurn ; updates wEffectFailed against current weather status
-	ld a, [wEffectFailed]
-	and a
-	ret nz
-	call SafeCheckSafeguard
-	ret nz
 	ld a, BATTLE_VARS_STATUS_OPP
 	call GetBattleVarAddr
+	and a
+	jp nz, Defrost
 	set BRN, [hl]
 	call UpdateOpponentInParty
 	ld hl, ApplyBrnEffectOnAttack
@@ -3978,27 +3997,14 @@ Defrost:
 BattleCommand_FreezeTarget:
 	xor a
 	ld [wNumHits], a
-	call CheckSubstituteOpp
-	ret nz
-	ld a, BATTLE_VARS_STATUS_OPP
-	call GetBattleVarAddr
-	and a
-	ret nz
-	ld a, [wTypeModifier]
-	and $7f
-	ret z
+	call CheckWeatherFreeze ; updates wEffectFailed against current weather status
+	call CheckStatusHit ; check for sub, existing status, type immunity, side effect chance, and safeguard
 	call CheckMoveTypeMatchesTarget ; Don't freeze an Ice-type
 	ret z
 	call GetOpponentItem
 	ld a, b
 	cp HELD_PREVENT_FREEZE
 	ret z
-	call CheckWeatherFreeze ; updates wEffectFailed against current weather status
-	ld a, [wEffectFailed]
-	and a
-	ret nz
-	call SafeCheckSafeguard
-	ret nz
 	ld a, BATTLE_VARS_STATUS_OPP
 	call GetBattleVarAddr
 	set FRZ, [hl]
@@ -4027,24 +4033,11 @@ BattleCommand_FreezeTarget:
 BattleCommand_ParalyzeTarget:
 	xor a
 	ld [wNumHits], a
-	call CheckSubstituteOpp
-	ret nz
-	ld a, BATTLE_VARS_STATUS_OPP
-	call GetBattleVarAddr
-	and a
-	ret nz
-	ld a, [wTypeModifier]
-	and $7f
-	ret z
+	call CheckStatusHit ; check for sub, existing status, type immunity, side effect chance, and safeguard
 	call GetOpponentItem
 	ld a, b
 	cp HELD_PREVENT_PARALYZE
 	ret z
-	ld a, [wEffectFailed]
-	and a
-	ret nz
-	call SafeCheckSafeguard
-	ret nz
 	ld a, BATTLE_VARS_STATUS_OPP
 	call GetBattleVarAddr
 	set PAR, [hl]
@@ -5578,10 +5571,6 @@ BattleCommand_Charge:
 .BattleDugText:
 	text_far _BattleDugText
 	text_end
-
-BattleCommand_Unused3C:
-; effect0x3c
-	ret
 
 BattleCommand_TrapTarget:
 	ld a, [wAttackMissed]
