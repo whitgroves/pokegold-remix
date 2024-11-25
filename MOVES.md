@@ -1,12 +1,11 @@
-## Type and Effect Changes
-- The following moves have had their types changed:
+## Type Changes
+- The following damaging moves have had their types changed:
     - Comet Punch: *Normal* -> *Fighting*
     - Mega Punch: *Normal* -> *Fighting*
     - Vicegrip: *Normal* -> *Dark*
     - Guillotine: *Normal* -> *Dark*
     - Razor Wind: *Normal* -> *Flying*
     - Cut: *Normal* -> *Bug*
-    - Whirlwind: *Normal* -> *Flying*
     - Mega Kick: *Normal* -> *Fighting*
     - Horn Attack: *Normal* -> *Dragon*
     - Fury Attack: *Normal* -> *Dark*
@@ -15,24 +14,27 @@
     - Sonicboom: *Normal* -> *Steel*
     - Hyper Beam: *Normal* -> *Dragon*
     - Strength: *Normal* -> *Fighting*
-    - Agility: *Psychic* -> *Normal*
     - Rage: *Normal* -> *Dark*
-    - Egg Bomb: *Normal* -> *Dragon*
     - Bone Club: *Ground* -> *Rock*
     - Skull Bash: *Normal* -> *Rock*
     - Spike Cannon: *Normal* -> *Steel*
-    - Glare: *Normal* -> *Dark*
-    - Lovely Kiss: *Normal* -> *Dark*
     - Dizzy Punch: *Normal* -> *Psychic*
     - Flash: *Normal* -> *Electric*
-    - Splash: *Normal* -> *Water*
     - Bonemerang: *Ground* -> *Rock*
     - Tri Attack: *Normal* -> *Dragon*
-    - Perish Song: *Normal* -> *Ghost*
     - Bone Rush: *Ground* -> *Rock*
     - Frustration: *Normal* -> *Dark*
+- The following non-damaging moves have had their types changed (for flavor):
+    - Whirlwind: *Normal* -> *Flying*
+    - Agility: *Psychic* -> *Normal*
+    - Glare: *Normal* -> *Dark*
+    - Lovely Kiss: *Normal* -> *Dark*
+    - Splash: *Normal* -> *Water*
+    - Perish Song: *Normal* -> *Ghost*
     - Pain Split: *Normal* -> *Ghost*
     - Psych Up: *Normal* -> *Psychic*
+
+## Effect Changes
 - The following moves have had their effects changed:
     - Razor Wind: *Charging Move* -> *30% Chance To Flinch*
     - Horn Attack: *No Effect* -> *30% Chance To Flinch*
@@ -41,12 +43,12 @@
     - Night Shade: *Damage Equal To User's Level* -> *10% Chance To Sleep*
     - Lick: *30% Chance To Paralyze* -> *Leeches Health On Hit*
     - Skull Bash: *Charging Move* -> *30% Chance To Flinch*
-    - Sky Attack: *Skips Charging Turn In Sun (See [Weather Interactions](#weather-interactions))*
+    - Sky Attack: *Skips Charging Turn In Sun (See [Weather Interactions](./TYPES.md#weather-interactions))*
     - Mud-Slap: *100% Chance To Lower Accuracy* -> *50% Chance To Lower Accuracy*
     - Icy Wind: *100% Chance To Lower Speed* -> *50% Chance To Lower Speed*
     - Dragonbreath: *30% Chance To Paralyze* -> *20% Chance To Lower Special Defense*
     - Crunch: *20% Chance To Lower Special Defense* -> *30% Chance To Paralyze*
-- The following special moves are always treated as physical:
+- The following special moves are always have their damage treated as physical:
     - Fire Punch
     - Ice Punch
     - Thunderpunch
@@ -57,7 +59,6 @@
     - Vine Whip
     - Razor Leaf
     - Horn Attack
-    - Egg Bomb
     - Outrage
 
 ## Accuracy, Power, and PP Adjustments
@@ -106,42 +107,6 @@
     - Mega Drain: *10* -> *20*
     - Leech Life: *15* -> *30*
     - Giga Drain: *5* -> *10*
-
-## TM Moves
-- The following TMs have been reassigned:
-    - TM05: *Roar* -> *Sonicboom*
-    - TM07: *Zap Cannon* -> *Thunderbolt*
-    - TM09: *Psych Up* -> *Metal Claw*
-    - TM16: *Icy Wind* -> *Ice Beam*
-    - TM20: *Endure* -> *Tri Attack*
-    - TM31: *Mud Slap* -> *Razor Wind*
-    - TM32: *Double Team* -> *Flamethrower*
-- The following TMs are now available in the Goldenrod Dept. Store:
-    - TM09 Metal Claw
-    - TM39 Swift *- Available after receiving TM02 Headbutt in Ilex Forest*
-    - TM28 Dig *- Available after receiving TM08 Rock Smash on Route 36*
-- The following TMs are now available in the Celadon Dept. Store:
-    - TBD
-
-## Weather Interactions
-- Rain now causes these additional effects:
-    - *Ice*-, *Grass*-, and *Electric*-type moves are more effective
-    - *Ground*- and *Flying*-type moves are less effective
-    - Moves that fail to inflict the *Freeze* status get a 10% reroll to inflict status
-    - The *Burn* status can be inflicted, but has a 90% chance to fail on hit
-- Sun now causes these additional effects:
-    - *Grass*- and *Flying*- type moves are more effective
-    - *Ice*- and *Ghost*- moves are less effective
-    - Moves that fail to inflict the *Burn* status get a 10% reroll to inflict status
-    - The *Freeze* status can be inflicted, but has a 90% chance to fail on hit
-    - *Sky Attack* skips its charging turn, similar to *Solarbeam*
-    - Changed battle text to make certain move interactions (e.g., *Moonlight*) less confusing
-- Sandstorm now causes these additional effects:
-    - *Rock*-, *Ground*, and *Dark*-type moves are more effective
-    - *Grass*-, *Flying*-, and *Electric*-type moves are less effective
-    - *Dragon*-type Pokemon are immune to Sandstorm
-    - *Solarbeam* behaves as if under Rain
-    - *Thunder* behaves as if under Sun
 
 ## Miscellaneous
 - *Fire*-type moves can no longer defrost through *Safeguard*

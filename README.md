@@ -7,12 +7,12 @@ Similar to Blue Remix, the goal is not to recreate the Legacy games, but simply 
 However, some changes from Crystal, the Legacy hacks, and the [pret tutorials](https://github.com/pret/pokered/wiki/Tutorials) are duplicated here, such as learnsets, making *Cut* Bug-type, and auto-sorting the items in the backpack.
 
 ## Changes (✓ = done, ~ = in progress)
-- Updated interactions for all 17 types ✓
+- Updated [type chart](./TYPES.md) ✓
 - Updated typings to make certain Pokemon lore-friendly, interesting, or unique ✓
 - Updated learnsets to better fit each Pokemon's kit ~
-- Updated moves, TMs, and weather interactions, detailed [here](./MOVES.md) ~
+- Updated [moves](./MOVES.md), [TMs](./AVAILABILITY.md#item-availability), and [weather interactions](./TYPES.md#weather-interactions) ~
 - The Ghost type is special and the Dark type is physical ✓
-- All 251 Pokemon are available on a single save, detailed [here](./AVAILABILITY.md) ~
+- All 251 Pokemon are [available](./AVAILABILITY.md) on a single save ~
 - New moves and mons for some of the trainer teams ~
 - Select and play as the female protagonist (Kris)
 - Fast text speed and Set battles by default
@@ -27,7 +27,7 @@ These changes are largely untested, so if you run into issues please reach out o
 Similar to Blue Remix, Gold was the gen 2 game I made memories with, so I decided to go with my favorite.
 
 ## Why Not Crystal?
-I don't like the Suicune plot, plus Crystal Legacy is far more comprehensive than what I can build.
+~~I don't like the Suicune plot, plus Crystal Legacy is far more comprehensive than what I can build.~~ Nostalgia
 
 That said, if you'd like to play Crystal Legacy with the remixed types and learnsets, you can follow [Example 4](#example-4-the-good-one) below.
 
