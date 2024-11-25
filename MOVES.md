@@ -12,6 +12,7 @@
     - Fury Attack: *Normal* -> *Dark*
     - Horn Drill: *Normal* -> *Dragon*
     - Thrash: *Normal* -> *Dark*
+    - Sonicboom: *Normal* -> *Steel*
     - Hyper Beam: *Normal* -> *Dragon*
     - Strength: *Normal* -> *Fighting*
     - Agility: *Psychic* -> *Normal*
@@ -26,6 +27,7 @@
     - Flash: *Normal* -> *Electric*
     - Splash: *Normal* -> *Water*
     - Bonemerang: *Ground* -> *Rock*
+    - Tri Attack: *Normal* -> *Dragon*
     - Perish Song: *Normal* -> *Ghost*
     - Bone Rush: *Ground* -> *Rock*
     - Frustration: *Normal* -> *Dark*
@@ -34,6 +36,7 @@
 - The following moves have had their effects changed:
     - Razor Wind: *Charging Move* -> *30% Chance To Flinch*
     - Horn Attack: *No Effect* -> *30% Chance To Flinch*
+    - Sonicboom: *Always 20 Damage* -> *Priority Move*
     - Blizzard: *10% Chance To Freeze* -> *20% Chance To Freeze*
     - Night Shade: *Damage Equal To User's Level* -> *10% Chance To Sleep*
     - Lick: *30% Chance To Paralyze* -> *Leeches Health On Hit*
@@ -84,6 +87,7 @@
     - Vine Whip: *35* -> *40*
     - Horn Attack: *65* -> *70*
     - Poison Sting: *15* -> *20*
+    - Sonicboom: *Always 20 Damage* -> *40*
     - Absorb: *20* -> *30*
     - Mega Drain: *40* -> *50*
     - Petal Dance: *70* -> *90*
@@ -97,6 +101,7 @@
 - The following moves have had their PP changed:
     - Vine Whip *10* -> *20*
     - Horn Attack *25* -> *15*
+    - Sonicboom: *20* -> *30*
     - Absorb: *20* -> *30*
     - Mega Drain: *10* -> *20*
     - Leech Life: *15* -> *30*
@@ -104,10 +109,11 @@
 
 ## TM Moves
 - The following TMs have been reassigned:
-    - TM05: *Roar* -> *Tri Attack*
+    - TM05: *Roar* -> *Sonicboom*
     - TM07: *Zap Cannon* -> *Thunderbolt*
     - TM09: *Psych Up* -> *Metal Claw*
     - TM16: *Icy Wind* -> *Ice Beam*
+    - TM20: *Endure* -> *Tri Attack*
     - TM31: *Mud Slap* -> *Razor Wind*
     - TM32: *Double Team* -> *Flamethrower*
 - The following TMs are now available in the Goldenrod Dept. Store:

@@ -485,7 +485,6 @@ ClefairyEvosAttacks:
 	db 34, METRONOME
 	db 43, MOONLIGHT
 	db 53, LIGHT_SCREEN
-	db 60, TRI_ATTACK
 	db 0 ; no more level-up moves
 
 ClefableEvosAttacks:
@@ -682,7 +681,6 @@ DiglettEvosAttacks:
 
 DugtrioEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, TRI_ATTACK
 	db 1, SCRATCH
 	db 1, GROWL
 	db 1, MAGNITUDE
@@ -693,6 +691,7 @@ DugtrioEvosAttacks:
 	db 37, SLASH
 	db 49, EARTHQUAKE
 	db 61, FISSURE
+	db 70, TRI_ATTACK
 	db 0 ; no more level-up moves
 
 MeowthEvosAttacks:
@@ -1137,9 +1136,10 @@ MagnetonEvosAttacks:
 	db 16, SONICBOOM
 	db 21, THUNDER_WAVE
 	db 27, LOCK_ON
-	db 35, TRI_ATTACK
+	db 35, THUNDERBOLT
 	db 43, SCREECH
 	db 53, ZAP_CANNON
+	db 64, TRI_ATTACK
 	db 0 ; no more level-up moves
 
 FarfetchDEvosAttacks:
@@ -1165,10 +1165,11 @@ DoduoEvosAttacks:
 	db 9, PURSUIT
 	db 13, FURY_ATTACK
 	db 18, MUD_SLAP
-	db 21, TRI_ATTACK
+	db 21, STOMP
 	db 25, RAGE
 	db 33, DRILL_PECK
 	db 37, AGILITY
+	db 42, EARTHQUAKE
 	db 0 ; no more level-up moves
 
 DodrioEvosAttacks:
@@ -1181,9 +1182,11 @@ DodrioEvosAttacks:
 	db 13, FURY_ATTACK
 	db 18, MUD_SLAP
 	db 25, RAGE
-	db 31, TRI_ATTACK
+	db 31, STOMP
 	db 38, DRILL_PECK
 	db 47, AGILITY
+	db 55, EARTHQUAKE
+	db 66, TRI_ATTACK
 	db 0 ; no more level-up moves
 
 SeelEvosAttacks:
@@ -1907,8 +1910,8 @@ PorygonEvosAttacks:
 	db 12, PSYBEAM
 	db 20, RECOVER
 	db 24, SHARPEN
-	db 32, LOCK_ON
-	db 36, TRI_ATTACK
+	db 28, LOCK_ON
+	db 33, TRI_ATTACK
 	db 44, ZAP_CANNON
 	db 0 ; no more level-up moves
 
@@ -3193,8 +3196,8 @@ Porygon2EvosAttacks:
 	db 12, PSYBEAM
 	db 20, RECOVER
 	db 24, PSYCH_UP
-	db 32, LOCK_ON
-	db 36, TRI_ATTACK
+	db 28, LOCK_ON
+	db 33, TRI_ATTACK
 	db 44, ZAP_CANNON
 	db 0 ; no more level-up moves
 

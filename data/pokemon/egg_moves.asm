@@ -50,7 +50,7 @@ SpearowEggMoves:
 	db FALSE_SWIPE
 	db SCARY_FACE
 	db QUICK_ATTACK
-	db TRI_ATTACK
+	db SKY_ATTACK
 	db -1 ; end
 
 EkansEggMoves:

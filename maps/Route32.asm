@@ -107,7 +107,7 @@ Route32RoarTMGuyScript:
 	iftrue .AlreadyHaveRoar
 	writetext Text_RoarIntro
 	promptbutton
-	verbosegiveitem TM_TRI_ATTACK
+	verbosegiveitem TM_SONICBOOM
 	iffalse .Finish
 	setevent EVENT_GOT_TM05_ROAR
 .AlreadyHaveRoar:
@@ -747,22 +747,22 @@ Route32UnusedText: ; unreferenced
 	done
 
 Text_RoarIntro:
-	text "This route has"
-	line "exits to the"
+	text "BOOOOOOM!"
+	line "PEOPLE RUN WHEN I"
 
-	para "North, the West"
-	line "and the South."
+	para "GO BOOM! BUT YOU"
+	line "STUCK AROUND!"
 
-	para "Three into one,"
-	line "just like this."
+	para "THAT PLEASES ME!"
+	line "NOW TAKE THIS!"
 	done
 
 Text_RoarOutro:
-	text "That TM is"
-	line "TRI ATTACK."
+	text "BOOOOOOM!"
+	line "IT'S SONICBOOM!"
 
-	para "It can paralyze,"
-	line "burn, or freeze."
+	para "EVEN FAST #MON"
+	line "CAN'T KEEP UP!"
 	done
 
 MeetFriedaText:
