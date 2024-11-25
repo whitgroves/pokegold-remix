@@ -2488,7 +2488,7 @@ MareepEvosAttacks:
 	db 9, THUNDERSHOCK
 	db 16, THUNDER_WAVE
 	db 23, COTTON_SPORE
-	db 30, LIGHT_SCREEN
+	db 30, SPARK
 	db 37, THUNDER
 	db 0 ; no more level-up moves
 
@@ -2501,7 +2501,7 @@ FlaaffyEvosAttacks:
 	db 9, THUNDERSHOCK
 	db 18, THUNDER_WAVE
 	db 27, COTTON_SPORE
-	db 36, LIGHT_SCREEN
+	db 36, SPARK
 	db 45, THUNDER
 	db 0 ; no more level-up moves
 
@@ -2513,8 +2513,8 @@ AmpharosEvosAttacks:
 	db 1, THUNDER_WAVE
 	db 9, THUNDERSHOCK
 	db 18, THUNDER_WAVE
-	db 27, COTTON_SPORE
-	db 30, THUNDERPUNCH
+	db 27, THUNDERPUNCH
+	db 30, THUNDERBOLT
 	db 42, LIGHT_SCREEN
 	db 57, THUNDER
 	db 0 ; no more level-up moves
