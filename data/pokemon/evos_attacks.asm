@@ -226,7 +226,8 @@ PidgeyEvosAttacks:
 	db EVOLVE_LEVEL, 18, PIDGEOTTO
 	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 5, SAND_ATTACK
+	db 4, SAND_ATTACK
+	db 7, MUD_SLAP
 	db 9, GUST
 	db 15, QUICK_ATTACK
 	db 21, WHIRLWIND
@@ -241,7 +242,8 @@ PidgeottoEvosAttacks:
 	db 1, TACKLE
 	db 1, SAND_ATTACK
 	db 1, GUST
-	db 5, SAND_ATTACK
+	db 4, SAND_ATTACK
+	db 7, MUD_SLAP
 	db 9, GUST
 	db 15, QUICK_ATTACK
 	db 23, WHIRLWIND
@@ -257,7 +259,8 @@ PidgeotEvosAttacks:
 	db 1, SAND_ATTACK
 	db 1, GUST
 	db 1, QUICK_ATTACK
-	db 5, SAND_ATTACK
+	db 4, SAND_ATTACK
+	db 7, MUD_SLAP
 	db 9, GUST
 	db 15, QUICK_ATTACK
 	db 23, WHIRLWIND
@@ -1145,10 +1148,11 @@ MagnetonEvosAttacks:
 FarfetchDEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, PECK
+	db 1, LEER
 	db 7, VINE_WHIP
-	db 13, LEER
+	db 13, MUD_SLAP
 	db 19, FURY_ATTACK
-	db 21, MUD_SLAP
+	db 21, REVERSAL
 	db 25, SWORDS_DANCE
 	db 31, AGILITY
 	db 37, SLASH
@@ -1163,8 +1167,8 @@ DoduoEvosAttacks:
 	db 1, PECK
 	db 1, GROWL
 	db 9, PURSUIT
-	db 13, FURY_ATTACK
-	db 18, MUD_SLAP
+	db 13, MUD_SLAP
+	db 18, FURY_ATTACK
 	db 21, STOMP
 	db 25, RAGE
 	db 33, DRILL_PECK
@@ -1179,8 +1183,8 @@ DodrioEvosAttacks:
 	db 1, PURSUIT
 	db 1, FURY_ATTACK
 	db 9, PURSUIT
-	db 13, FURY_ATTACK
-	db 18, MUD_SLAP
+	db 13, MUD_SLAP
+	db 18, FURY_ATTACK
 	db 25, RAGE
 	db 31, STOMP
 	db 38, DRILL_PECK
@@ -2490,7 +2494,8 @@ MareepEvosAttacks:
 	db 1, GROWL
 	db 9, THUNDERSHOCK
 	db 16, THUNDER_WAVE
-	db 23, COTTON_SPORE
+	db 21, COTTON_SPORE
+	db 25, TAKE_DOWN
 	db 30, SPARK
 	db 37, THUNDER
 	db 0 ; no more level-up moves
@@ -2503,7 +2508,8 @@ FlaaffyEvosAttacks:
 	db 1, THUNDERSHOCK
 	db 9, THUNDERSHOCK
 	db 18, THUNDER_WAVE
-	db 27, COTTON_SPORE
+	db 24, COTTON_SPORE
+	db 27, TAKE_DOWN
 	db 36, SPARK
 	db 45, THUNDER
 	db 0 ; no more level-up moves
@@ -2742,8 +2748,9 @@ UmbreonEvosAttacks:
 MurkrowEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, PECK
-	db 11, PURSUIT
-	db 16, HAZE
+	db 6, PURSUIT
+	db 11, HAZE
+	db 17, GLARE
 	db 26, NIGHT_SHADE
 	db 31, FAINT_ATTACK
 	db 41, MEAN_LOOK

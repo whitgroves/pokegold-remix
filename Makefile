@@ -120,6 +120,9 @@ updates:
 test: gold
 	$(EMU) pokegold.gbc
 
+staging: gold
+	mv pokegold.gbc goldremix_1_1.gbc
+
 release: gold
 	mv pokegold.gbc 'Pokemon - Gold Remix.gbc'
 
