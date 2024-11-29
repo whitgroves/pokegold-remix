@@ -1,6 +1,6 @@
 DefaultOptions:
-; wOptions: med text speed
-	db TEXT_DELAY_MED
+; wOptions: fast text speed, stereo sound, set battles (see ram_constants.asm)
+	db %01100001
 ; wSaveFileExists: no
 	db FALSE
 ; wTextboxFrame: frame 1

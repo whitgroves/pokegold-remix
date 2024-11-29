@@ -15,7 +15,7 @@ However, some changes from Crystal, the Legacy hacks, and the [pret tutorials](h
 - All 251 Pokemon are [available](./AVAILABILITY.md) on a single save ~
 - New moves and mons for some of the trainer teams ~
 - Select and play as the female protagonist (Kris)
-- Fast text speed and Set battles by default
+- Fast text, Stereo sound, and Set battles by default ✓
 - Use animated Pokemon sprites from Crystal
 - Auto-sort the backpack by pressing Start
 - The good rod is good and the super rod is super
