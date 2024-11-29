@@ -3,7 +3,7 @@
 JohtoGrassWildMons:
 
 	def_grass_wildmons SPROUT_TOWER_2F
-	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
+	db 3 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn
 	db 3, RATTATA
 	db 4, RATTATA
@@ -31,7 +31,7 @@ JohtoGrassWildMons:
 	end_grass_wildmons
 
 	def_grass_wildmons SPROUT_TOWER_3F
-	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
+	db 2 percent, 2 percent, 3 percent ; encounter rates: morn/day/nite
 	; morn
 	db 3, RATTATA
 	db 4, RATTATA
@@ -1608,14 +1608,14 @@ JohtoGrassWildMons:
 	db 7, PIDGEY
 	db 6, WOOPER
 	db 6, HOOTHOOT
-	db 6, ZUBAT
+	db 7, FARFETCH_D
 	; day
 	db 6, SENTRET
 	db 6, MAREEP
 	db 7, HOPPIP
 	db 7, PIDGEY
 	db 6, WOOPER
-	db 8, RATTATA
+	db 7, FARFETCH_D
 	db 6, POLIWAG
 	; nite
 	db 8, RATTATA
