@@ -3698,6 +3698,7 @@ SleepOpponent:
 
 BattleCommand_PoisonTarget:
 	call CheckStatusHit ; check for sub, existing status, type immunity, side effect chance, and safeguard
+	ret nz
 	call CheckIfTargetIsPoisonType
 	ret z
 	call GetOpponentItem
@@ -3999,6 +4000,7 @@ BattleCommand_FreezeTarget:
 	ld [wNumHits], a
 	call CheckWeatherFreeze ; updates wEffectFailed against current weather status
 	call CheckStatusHit ; check for sub, existing status, type immunity, side effect chance, and safeguard
+	ret nz
 	call CheckMoveTypeMatchesTarget ; Don't freeze an Ice-type
 	ret z
 	call GetOpponentItem
@@ -4034,6 +4036,7 @@ BattleCommand_ParalyzeTarget:
 	xor a
 	ld [wNumHits], a
 	call CheckStatusHit ; check for sub, existing status, type immunity, side effect chance, and safeguard
+	ret nz
 	call GetOpponentItem
 	ld a, b
 	cp HELD_PREVENT_PARALYZE
