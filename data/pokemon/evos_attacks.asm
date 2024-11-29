@@ -226,8 +226,7 @@ PidgeyEvosAttacks:
 	db EVOLVE_LEVEL, 18, PIDGEOTTO
 	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 4, SAND_ATTACK
-	db 7, MUD_SLAP
+	db 5, SAND_ATTACK
 	db 9, GUST
 	db 15, QUICK_ATTACK
 	db 21, WHIRLWIND
@@ -242,8 +241,7 @@ PidgeottoEvosAttacks:
 	db 1, TACKLE
 	db 1, SAND_ATTACK
 	db 1, GUST
-	db 4, SAND_ATTACK
-	db 7, MUD_SLAP
+	db 5, SAND_ATTACK
 	db 9, GUST
 	db 15, QUICK_ATTACK
 	db 23, WHIRLWIND
@@ -259,8 +257,7 @@ PidgeotEvosAttacks:
 	db 1, SAND_ATTACK
 	db 1, GUST
 	db 1, QUICK_ATTACK
-	db 4, SAND_ATTACK
-	db 7, MUD_SLAP
+	db 5, SAND_ATTACK
 	db 9, GUST
 	db 15, QUICK_ATTACK
 	db 23, WHIRLWIND
@@ -1150,13 +1147,13 @@ FarfetchDEvosAttacks:
 	db 1, PECK
 	db 1, LEER
 	db 7, VINE_WHIP
-	db 13, MUD_SLAP
-	db 19, FURY_ATTACK
+	db 13, FURY_ATTACK
+	db 19, FALSE_SWIPE
 	db 21, REVERSAL
 	db 25, SWORDS_DANCE
 	db 31, AGILITY
 	db 37, SLASH
-	db 42, FALSE_SWIPE
+	db 42, CROSS_CHOP
 	db 46, RAZOR_LEAF
 	db 50, RAZOR_WIND
 	db 0 ; no more level-up moves
@@ -1166,8 +1163,8 @@ DoduoEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, PECK
 	db 1, GROWL
-	db 9, PURSUIT
-	db 13, MUD_SLAP
+	db 6, MUD_SLAP
+	db 11, PURSUIT
 	db 18, FURY_ATTACK
 	db 21, STOMP
 	db 25, RAGE
@@ -1180,10 +1177,10 @@ DodrioEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, PECK
 	db 1, GROWL
-	db 1, PURSUIT
+	db 1, MUD_SLAP
 	db 1, FURY_ATTACK
-	db 9, PURSUIT
-	db 13, MUD_SLAP
+	db 6, MUD_SLAP
+	db 11, PURSUIT
 	db 18, FURY_ATTACK
 	db 25, RAGE
 	db 31, STOMP
@@ -2750,10 +2747,12 @@ MurkrowEvosAttacks:
 	db 1, PECK
 	db 6, PURSUIT
 	db 11, HAZE
-	db 17, GLARE
-	db 26, NIGHT_SHADE
+	db 17, THIEF
+	db 26, GLARE
 	db 31, FAINT_ATTACK
+	db 35, MIRROR_MOVE
 	db 41, MEAN_LOOK
+	db 50, NIGHT_SHADE
 	db 0 ; no more level-up moves
 
 SlowkingEvosAttacks:

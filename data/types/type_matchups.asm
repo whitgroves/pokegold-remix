@@ -110,7 +110,7 @@ TypeMatchups:
 	db DARK,         FIGHTING,     NOT_VERY_EFFECTIVE
 	db DARK,         PSYCHIC_TYPE, SUPER_EFFECTIVE
 	db DARK,         BUG,          NOT_VERY_EFFECTIVE
-	db DARK,         DARK,         SUPER_EFFECTIVE
+	db DARK,         DARK,         NOT_VERY_EFFECTIVE
 	db STEEL,        FIRE,         NOT_VERY_EFFECTIVE
 	db STEEL,        GRASS,        SUPER_EFFECTIVE
 	db STEEL,        ICE,          SUPER_EFFECTIVE
