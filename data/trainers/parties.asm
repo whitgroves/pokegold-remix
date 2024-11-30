@@ -3177,8 +3177,8 @@ OfficerGroup:
 GruntFGroup:
 	; GRUNTF (1)
 	db "GRUNT@", TRAINERTYPE_NORMAL
-	db  9, ZUBAT
-	db 11, EKANS
+	db  9, EKANS
+	db 11, HOUNDOUR
 	db -1 ; end
 
 	; GRUNTF (2)
