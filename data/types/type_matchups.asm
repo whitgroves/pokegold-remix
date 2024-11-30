@@ -18,6 +18,7 @@ TypeMatchups:
 	db WATER,        GRASS,        NOT_VERY_EFFECTIVE
 	db WATER,        ICE,          NOT_VERY_EFFECTIVE
 	db WATER,        GROUND,       SUPER_EFFECTIVE
+	db WATER,        ROCK,         SUPER_EFFECTIVE
 	db ELECTRIC,     FIRE,         NOT_VERY_EFFECTIVE
 	db ELECTRIC,     WATER,        SUPER_EFFECTIVE
 	db ELECTRIC,     ELECTRIC,     NOT_VERY_EFFECTIVE
@@ -106,10 +107,10 @@ TypeMatchups:
 	db DRAGON,       DRAGON,       SUPER_EFFECTIVE
 	db DRAGON,       STEEL,        NOT_VERY_EFFECTIVE
 	db DARK,         NORMAL,       SUPER_EFFECTIVE
-	db DARK,         GRASS,        NOT_VERY_EFFECTIVE
 	db DARK,         FIGHTING,     NOT_VERY_EFFECTIVE
 	db DARK,         PSYCHIC_TYPE, SUPER_EFFECTIVE
 	db DARK,         BUG,          NOT_VERY_EFFECTIVE
+	db DARK,         ROCK,         NOT_VERY_EFFECTIVE
 	db DARK,         DARK,         NOT_VERY_EFFECTIVE
 	db STEEL,        FIRE,         NOT_VERY_EFFECTIVE
 	db STEEL,        GRASS,        SUPER_EFFECTIVE
