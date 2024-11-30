@@ -450,7 +450,7 @@ JohtoGrassWildMons:
 	db 6, WOOPER
 	db 7, ONIX
 	db 6, DIGLETT
-	db 8, PARAS
+	db 5, TYROGUE
 	; day
 	db 8, ZUBAT
 	db 8, GEODUDE
@@ -458,7 +458,7 @@ JohtoGrassWildMons:
 	db 6, WOOPER
 	db 7, ONIX
 	db 6, DIGLETT
-	db 8, PARAS
+	db 5, TYROGUE
 	; nite
 	db 8, ZUBAT
 	db 8, GEODUDE
@@ -466,7 +466,7 @@ JohtoGrassWildMons:
 	db 6, WOOPER
 	db 7, ONIX
 	db 6, DIGLETT
-	db 8, PARAS
+	db 5, TYROGUE
 	end_grass_wildmons
 
 	def_grass_wildmons UNION_CAVE_B1F
@@ -1630,29 +1630,29 @@ JohtoGrassWildMons:
 	def_grass_wildmons ROUTE_33
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 6, CATERPIE
-	db 6, WEEDLE
+	db 6, PIDGEY
 	db 8, LEDYBA
+	db 8, SPINARAK
 	db 6, YANMA
 	db 7, METAPOD
 	db 7, KAKUNA
-	db 8, SPINARAK
+	db 7, PIKACHU
 	; day
-	db 6, CATERPIE
-	db 6, WEEDLE
+	db 6, PIDGEY
 	db 8, LEDYBA
+	db 8, SPINARAK
 	db 6, YANMA
 	db 7, METAPOD
 	db 7, KAKUNA
-	db 8, SPINARAK
+	db 7, AIPOM
 	; nite
-	db 6, CATERPIE
-	db 6, WEEDLE
+	db 6, HOOTHOOT
 	db 8, SPINARAK
+	db 8, LEDYBA
 	db 6, YANMA
 	db 7, METAPOD
 	db 7, KAKUNA
-	db 8, LEDYBA
+	db 7, EKANS
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_34
