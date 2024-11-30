@@ -13,7 +13,7 @@ Trainers:
 FalknerGroup:
 	; FALKNER (1)
 	db "FALKNER@", TRAINERTYPE_MOVES 
-	db 	7, DODUO,      	PECK, MUD_SLAP, QUICK_ATTACK, NO_MOVE
+	db 	7, MURKROW,     PECK, PURSUIT, RAZOR_WIND, NO_MOVE
 	db  9, FARFETCH_D,  LEER, VINE_WHIP, RAZOR_WIND, NO_MOVE
 	db -1 ; end
 
@@ -522,7 +522,7 @@ BirdKeeperGroup:
 	; BIRD_KEEPER (1)
 	db "ROD@", TRAINERTYPE_NORMAL
 	db  7, PIDGEY
-	db  9, MURKROW
+	db  7, HOOTHOOT
 	db -1 ; end
 
 	; BIRD_KEEPER (2)
@@ -596,9 +596,9 @@ BirdKeeperGroup:
 
 	; BIRD_KEEPER (13)
 	db "PETER@", TRAINERTYPE_NORMAL
-	db  6, PIDGEY
 	db  6, HOOTHOOT
-	db  8, SPEAROW
+	db  6, PIDGEY
+	db  8, DODUO
 	db -1 ; end
 
 	; BIRD_KEEPER (14)
