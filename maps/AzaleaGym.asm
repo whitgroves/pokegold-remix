@@ -275,7 +275,7 @@ BugCatcherJoshSeenText:
 	line "SLOWPOKE? Whew,"
 	cont "you're mighty!"
 
-	para "But my grown-up"
+	para "But my bug"
 	line "#MON are pretty"
 	cont "tough too!"
 	done

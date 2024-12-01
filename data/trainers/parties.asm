@@ -1435,15 +1435,15 @@ BugCatcherGroup:
 
 	; BUG_CATCHER (5)
 	db "BENNY@", TRAINERTYPE_NORMAL
-	db  7, PARAS
-	db  9, PINECO
-	db 12, VENONAT
+	db 12, BUTTERFREE
+	db 12, BEEDRILL
 	db -1 ; end
 
 	; BUG_CATCHER (6)
 	db "AL@", TRAINERTYPE_NORMAL
-	db 12, BUTTERFREE
-	db 12, BEEDRILL
+	db  7, PARAS
+	db  9, PINECO
+	db 12, VENONAT
 	db -1 ; end
 
 	; BUG_CATCHER (7)
