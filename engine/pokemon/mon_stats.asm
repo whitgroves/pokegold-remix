@@ -178,17 +178,21 @@ GetGender:
 	ld a, BANK(sBox)
 	call z, OpenSRAM
 
-; Attack DV
+; bootleg hash so gender is still deterministic with respect to DVs but female mons can roll high ATK
+; lightly tested, but if this completely throws off the gender ratio constants, please @ me: @whitgroves
+; ATK|DEF ratio
 	ld a, [hli]
-	and $f0
-	ld b, a
-; Speed DV
+	ld b, a	; store ATK|DEF
+	swap a 	; ATK|DEF -> DEF|ATK
+	xor b	; compare ATK & DEF
+	ld b, a ; store ratio
+; SPD|SPE ratio
 	ld a, [hl]
-	and $f0
-	swap a
-
-; Put our DVs together.
-	or b
+	ld c, a ; store SPD|SPE
+	swap a	; SPD|SPE -> SPE|SPD
+	xor c	; compare SPD & SPE
+; combine DV ratios
+	and b
 	ld b, a
 
 ; Close SRAM if we were dealing with a sBoxMon.

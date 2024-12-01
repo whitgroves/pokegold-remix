@@ -17,6 +17,7 @@ However, some changes from Crystal, the Legacy hacks, and the [pret tutorials](h
 - Select and play as the female protagonist (Kris)
 - Fast text, Stereo sound, and Set battles by default ✓
 - Use animated Pokemon sprites from Crystal
+- Decoupled pokemon gender from Attack DV ✓
 - Auto-sort the backpack by pressing Start
 - The good rod is good and the super rod is super
 - The "Down + B" trick actually works
