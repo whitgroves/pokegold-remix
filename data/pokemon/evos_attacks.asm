@@ -614,9 +614,12 @@ ParasEvosAttacks:
 	db 13, POISONPOWDER
 	db 19, LEECH_LIFE
 	db 25, SPORE
+	db 27, ENDURE
 	db 31, SLASH
+	db 33, PAIN_SPLIT
 	db 37, GROWTH
 	db 43, GIGA_DRAIN
+	db 50, DESTINY_BOND
 	db 0 ; no more level-up moves
 
 ParasectEvosAttacks:
@@ -627,10 +630,15 @@ ParasectEvosAttacks:
 	db 7, STUN_SPORE
 	db 13, POISONPOWDER
 	db 19, LEECH_LIFE
+	db 24, LICK
 	db 28, SPORE
+	db 33, CURSE
 	db 37, SLASH
+	db 42, PAIN_SPLIT
 	db 46, GROWTH
-	db 55, GIGA_DRAIN
+	db 51, GIGA_DRAIN
+	db 55, DREAM_EATER
+	db 60, DESTINY_BOND
 	db 0 ; no more level-up moves
 
 VenonatEvosAttacks:
@@ -638,7 +646,6 @@ VenonatEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, DISABLE
-	db 1, FORESIGHT
 	db 9, SUPERSONIC
 	db 17, CONFUSION
 	db 20, POISONPOWDER
@@ -653,14 +660,13 @@ VenomothEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, DISABLE
-	db 1, FORESIGHT
 	db 1, SUPERSONIC
 	db 9, SUPERSONIC
 	db 17, CONFUSION
 	db 20, POISONPOWDER
 	db 25, LEECH_LIFE
 	db 28, STUN_SPORE
-	db 31, GUST
+	db 31, WHIRLWIND
 	db 36, PSYBEAM
 	db 42, SLEEP_POWDER
 	db 52, PSYCHIC_M
@@ -2978,12 +2984,15 @@ ShuckleEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, CONSTRICT
 	db 1, WITHDRAW
+	db 1, BIDE
 	db 9, WRAP
+	db 11, DEFENSE_CURL
 	db 14, MUD_SLAP
 	db 23, SAFEGUARD
-	db 28, BIDE
-	db 34, ENCORE
-	db 37, REST
+	db 28, ROLLOUT
+	db 34, ACID
+	db 37, SOFTBOILED
+	db 42, SANDSTORM
 	db 0 ; no more level-up moves
 
 HeracrossEvosAttacks:
