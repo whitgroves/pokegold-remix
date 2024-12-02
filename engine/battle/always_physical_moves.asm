@@ -7,7 +7,6 @@ AlwaysPhysicalMoves:
     db DIZZY_PUNCH
     db CRABHAMMER
     db VINE_WHIP
-    db RAZOR_LEAF
     db HORN_ATTACK
     db OUTRAGE
     db -1 ; end

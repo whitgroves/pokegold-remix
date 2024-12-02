@@ -57,7 +57,6 @@
     - Dizzy Punch
     - Crabhammer
     - Vine Whip
-    - Razor Leaf
     - Horn Attack
     - Outrage
 
