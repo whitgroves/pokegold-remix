@@ -1170,8 +1170,7 @@ FarfetchDEvosAttacks:
 	db 31, AGILITY
 	db 37, SLASH
 	db 42, CROSS_CHOP
-	db 46, RAZOR_LEAF
-	db 50, RAZOR_WIND
+	db 46, RAZOR_WIND
 	db 0 ; no more level-up moves
 
 DoduoEvosAttacks:
@@ -2707,9 +2706,11 @@ SunfloraEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, ABSORB
 	db 1, POUND
-	db 4, GROWTH
-	db 10, RAZOR_LEAF
+	db 1, GROWTH
+	db 10, VINE_WHIP
+	db 15, RAZOR_LEAF
 	db 19, SUNNY_DAY
+	db 24, MORNING_SUN
 	db 31, PETAL_DANCE
 	db 46, SOLARBEAM
 	db 0 ; no more level-up moves
@@ -2933,11 +2934,16 @@ SnubbullEvosAttacks:
 	db 1, SCARY_FACE
 	db 4, TAIL_WHIP
 	db 8, CHARM
+	db 9, LICK
 	db 13, BITE
-	db 19, LICK
-	db 26, ROAR
-	db 34, RAGE
+	db 16, HEADBUTT
+	db 21, MEAN_LOOK
+	db 23, ROAR
+	db 26, PURSUIT
+	db 34, SWAGGER
+	db 39, ATTRACT
 	db 43, TAKE_DOWN
+	db 48, CRUNCH
 	db 0 ; no more level-up moves
 
 GranbullEvosAttacks:
@@ -2946,11 +2952,16 @@ GranbullEvosAttacks:
 	db 1, SCARY_FACE
 	db 4, TAIL_WHIP
 	db 8, CHARM
+	db 9, LICK
 	db 13, BITE
-	db 19, LICK
-	db 28, ROAR
-	db 38, RAGE
-	db 51, TAKE_DOWN
+	db 16, HEADBUTT
+	db 21, MEAN_LOOK
+	db 23, ROAR
+	db 28, PURSUIT
+	db 37, SWAGGER
+	db 43, ATTRACT
+	db 48, TAKE_DOWN
+	db 55, CRUNCH
 	db 0 ; no more level-up moves
 
 QwilfishEvosAttacks:
