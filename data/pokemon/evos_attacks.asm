@@ -2708,11 +2708,12 @@ YanmaEvosAttacks:
 WooperEvosAttacks:
 	db EVOLVE_LEVEL, 20, QUAGSIRE
 	db 0 ; no more evolutions
-	db 1, WATER_GUN
 	db 1, TAIL_WHIP
+	db 1, WATER_GUN
 	db 1, MUD_SLAP
 	db 11, SLAM
 	db 21, AMNESIA
+	db 24, BUBBLEBEAM
 	db 31, EARTHQUAKE
 	db 41, RAIN_DANCE
 	db 51, MIST
@@ -2721,11 +2722,12 @@ WooperEvosAttacks:
 
 QuagsireEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, WATER_GUN
 	db 1, TAIL_WHIP
+	db 1, WATER_GUN
 	db 1, MUD_SLAP
 	db 11, SLAM
 	db 23, AMNESIA
+	db 27, BUBBLEBEAM
 	db 35, EARTHQUAKE
 	db 47, RAIN_DANCE
 	db 59, MIST
