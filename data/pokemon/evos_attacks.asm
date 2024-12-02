@@ -1086,30 +1086,37 @@ SlowpokeEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, CURSE
 	db 1, TACKLE
-	db 6, GROWL
+	db 6, PSYWAVE
 	db 9, MUD_SLAP
 	db 15, PSYCH_UP
+	db 18, HEADBUTT
 	db 20, CONFUSION
+	db 24, ACID
 	db 29, DISABLE
-	db 34, HEADBUTT
-	db 43, AMNESIA
+	db 34, AMNESIA
+	db 43, SLUDGE
 	db 48, PSYCHIC_M
+	db 55, SLUDGE_BOMB
+	db 59, REST
 	db 0 ; no more level-up moves
 
 SlowbroEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, CURSE
 	db 1, TACKLE
-	db 1, GROWL
-	db 6, GROWL
+	db 6, PSYWAVE
 	db 9, MUD_SLAP
 	db 15, PSYCH_UP
+	db 18, HEADBUTT
 	db 20, CONFUSION
+	db 24, ACID
 	db 29, DISABLE
-	db 34, HEADBUTT
+	db 34, AMNESIA
 	db 37, WITHDRAW
-	db 46, AMNESIA
+	db 46, SLUDGE
 	db 54, PSYCHIC_M
+	db 60, SLUDGE_BOMB
+	db 68, REST
 	db 0 ; no more level-up moves
 
 MagnemiteEvosAttacks:
@@ -1507,12 +1514,15 @@ LickitungEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, LICK
 	db 7, SUPERSONIC
-	db 13, DEFENSE_CURL
+	db 13, SLAM
 	db 19, STOMP
-	db 25, WRAP
+	db 25, ACID
 	db 31, DISABLE
-	db 37, SLAM
-	db 43, SCREECH
+	db 37, BODY_SLAM
+	db 43, SLUDGE
+	db 46, SCREECH
+	db 52, DOUBLE_EDGE
+	db 59, SLUDGE_BOMB
 	db 0 ; no more level-up moves
 
 KoffingEvosAttacks:
@@ -2507,7 +2517,7 @@ FlaaffyEvosAttacks:
 	db 9, THUNDERSHOCK
 	db 18, THUNDER_WAVE
 	db 24, COTTON_SPORE
-	db 27, TAKE_DOWN
+	db 27, THUNDERPUNCH
 	db 36, SPARK
 	db 45, THUNDER
 	db 0 ; no more level-up moves
@@ -2781,13 +2791,18 @@ SlowkingEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, CURSE
 	db 1, TACKLE
-	db 6, GROWL
-	db 15, WATER_GUN
+	db 6, PSYWAVE
+	db 9, MUD_SLAP
+	db 15, PSYCH_UP
+	db 18, HEADBUTT
 	db 20, CONFUSION
+	db 24, HORN_ATTACK
 	db 29, DISABLE
-	db 34, HEADBUTT
-	db 43, SWAGGER
+	db 34, SWAGGER
+	db 43, DRAGONBREATH
 	db 48, PSYCHIC_M
+	db 55, HYPER_BEAM
+	db 59, RECOVER
 	db 0 ; no more level-up moves
 
 MisdreavusEvosAttacks:
