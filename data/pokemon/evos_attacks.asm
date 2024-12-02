@@ -353,20 +353,27 @@ PikachuEvosAttacks:
 	db 6, TAIL_WHIP
 	db 8, THUNDER_WAVE
 	db 11, QUICK_ATTACK
-	db 15, DOUBLE_TEAM
-	db 20, SLAM
+	db 15, SPARK
+	db 20, SWIFT
 	db 26, THUNDERBOLT
 	db 33, AGILITY
 	db 41, THUNDER
-	db 50, LIGHT_SCREEN
+	db 50, DOUBLE_TEAM
 	db 0 ; no more level-up moves
 
 RaichuEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, THUNDERSHOCK
+	db 1, CONFUSION
 	db 1, TAIL_WHIP
-	db 1, QUICK_ATTACK
-	db 1, THUNDERBOLT
+	db 1, THUNDERSHOCK
+	db 1, THUNDER_WAVE
+	db 11, CONFUSION
+	db 15, SPARK
+	db 20, PSYBEAM
+	db 26, THUNDERBOLT
+	db 33, LIGHT_SCREEN
+	db 41, THUNDER
+	db 50, PSYCHIC_M
 	db 0 ; no more level-up moves
 
 SandshrewEvosAttacks:
@@ -2432,7 +2439,8 @@ PichuEvosAttacks:
 	db 1, CHARM
 	db 6, TAIL_WHIP
 	db 8, THUNDER_WAVE
-	db 11, SWEET_KISS
+	db 11, QUICK_ATTACK
+	db 15, SPARK
 	db 0 ; no more level-up moves
 
 CleffaEvosAttacks:
