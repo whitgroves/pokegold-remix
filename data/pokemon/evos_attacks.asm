@@ -1630,12 +1630,13 @@ TangelaEvosAttacks:
 	db 4, SLEEP_POWDER
 	db 10, ABSORB
 	db 13, POISONPOWDER
-	db 19, VINE_WHIP
-	db 25, BIND
+	db 19, NIGHT_SHADE
+	db 25, CURSE
 	db 31, MEGA_DRAIN
 	db 34, STUN_SPORE
-	db 40, SLAM
+	db 40, SHADOW_BALL
 	db 46, GROWTH
+	db 54, GIGA_DRAIN
 	db 0 ; no more level-up moves
 
 KangaskhanEvosAttacks:
@@ -2738,15 +2739,15 @@ SunfloraEvosAttacks:
 
 YanmaEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, TACKLE
-	db 1, FORESIGHT
+	db 1, GUST
+	db 1, SUPERSONIC
 	db 7, QUICK_ATTACK
-	db 13, DOUBLE_TEAM
+	db 13, AGILITY
 	db 19, SONICBOOM
-	db 25, DETECT
-	db 31, SUPERSONIC
+	db 25, TWISTER
+	db 31, TWINEEDLE
 	db 37, WING_ATTACK
-	db 43, SCREECH
+	db 43, DOUBLE_TEAM
 	db 0 ; no more level-up moves
 
 WooperEvosAttacks:
