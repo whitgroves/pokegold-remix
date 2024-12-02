@@ -212,7 +212,7 @@ GetGender:
 	ld a, BANK(BaseData)
 	call GetFarByte
 
-; The higher the ratio, the more likely the monster is to be female.
+; The higher the ratio constant, the more likely the monster is to be female.
 
 	cp GENDER_UNKNOWN
 	jr z, .Genderless
@@ -223,9 +223,8 @@ GetGender:
 	cp GENDER_F100
 	jr z, .Female
 
-; Values below the ratio are male, and vice versa.
 	cp b
-	jr c, .Male
+	jr c, .Male ; b > a, i.e., DV ratio > gender ratio constant
 
 .Female:
 	xor a
