@@ -1443,10 +1443,14 @@ ExeggcuteEvosAttacks:
 ExeggutorEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, BARRAGE
-	db 1, HYPNOSIS
-	db 1, CONFUSION
+	db 1, LEECH_SEED
+	db 7, REFLECT
+	db 13, LEECH_SEED
 	db 19, STOMP
+	db 25, LIGHT_SCREEN
 	db 31, EGG_BOMB
+	db 37, DRAGON_RAGE
+	db 43, SOLARBEAM
 	db 0 ; no more level-up moves
 
 CuboneEvosAttacks:
