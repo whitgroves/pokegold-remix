@@ -340,49 +340,30 @@ JohtoGrassWildMons:
 
 	def_grass_wildmons NATIONAL_PARK
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
-	IF DEF(_GOLD)
 	; morn
-	db 10, CATERPIE
-	db 10, METAPOD
-	db 12, CATERPIE
-	db 12, PIDGEY
-	db 10, PIDGEY
-	db 14, PIDGEY
-	db 14, PIDGEY
+	db 14, SUNKERN
+	db 12, ODDISH
+	db 13, PSYDUCK
+	db 12, FARFETCH_D
+	db 12, BUTTERFREE
+	db 12, BEEDRILL
+	db 13, VENONAT
 	; day
-	db 10, CATERPIE
-	db 10, METAPOD
-	db 11, SUNKERN
-	db 12, PIDGEY
-	db 13, SUNKERN
-	db 14, PIDGEY
-	db 14, PIDGEY
-	ELIF DEF(_SILVER)
-	; morn
-	db 10, WEEDLE
-	db 10, KAKUNA
-	db 12, WEEDLE
-	db 12, PIDGEY
-	db 10, PIDGEY
-	db 14, PIDGEY
-	db 14, PIDGEY
-	; day
-	db 10, WEEDLE
-	db 10, KAKUNA
-	db 11, SUNKERN
-	db 12, PIDGEY
-	db 13, SUNKERN
-	db 14, PIDGEY
-	db 14, PIDGEY
-	ENDC
+	db 14, BELLSPROUT
+	db 12, SUNKERN
+	db 13, PSYDUCK
+	db 12, FARFETCH_D
+	db 12, BUTTERFREE
+	db 12, BEEDRILL
+	db 13, VENONAT
 	; nite
-	db 10, HOOTHOOT
-	db 10, HOOTHOOT
-	db 12, HOOTHOOT
-	db 12, HOOTHOOT
-	db 10, HOOTHOOT
-	db 14, HOOTHOOT
-	db 14, HOOTHOOT
+	db 14, ODDISH
+	db 12, BELLSPROUT
+	db 13, VENONAT
+	db 12, PSYDUCK
+	db 12, MURKROW
+	db 12, BEEDRILL
+	db 13, BUTTERFREE
 	end_grass_wildmons
 
 	def_grass_wildmons RUINS_OF_ALPH_OUTSIDE
@@ -587,24 +568,24 @@ JohtoGrassWildMons:
 	db 7, METAPOD
 	db 8, MANKEY
 	db 8, ODDISH
-	db 7, HERACROSS
 	db 8, PINECO
-	db 7, SCYTHER
+	db 7, HERACROSS
+	db 7, PINSIR
 	; day
 	db 7, KAKUNA
 	db 7, METAPOD
 	db 8, MANKEY
 	db 8, VENONAT
-	db 7, AIPOM
-	db 8, PINECO
+	db 8, AIPOM
 	db 7, SCYTHER
+	db 7, HERACROSS
 	; nite
 	db 7, KAKUNA
 	db 7, METAPOD
 	db 8, ODDISH
 	db 8, VENONAT
-	db 7, PINSIR
 	db 8, TANGELA
+	db 7, PINSIR
 	db 7, SCYTHER
 	end_grass_wildmons
 
@@ -1638,139 +1619,85 @@ JohtoGrassWildMons:
 	def_grass_wildmons ROUTE_34
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 10, DROWZEE
-	db 11, RATTATA
-	db 12, DROWZEE
-	db 10, ABRA
-	db 13, RATTATA
+	db 8, GROWLITHE
+	db 9, SNUBBULL
+	db 9, PIDGEY
 	db 10, DITTO
-	db 10, DITTO
+	db 10, KOFFING
+	db 8, PSYDUCK
+	db 9, MEOWTH
 	; day
-	db 10, DROWZEE
-	db 11, RATTATA
-	db 12, DROWZEE
-	db 10, ABRA
-	db 13, RATTATA
+	db 8, GROWLITHE
+	db 9, SNUBBULL
+	db 9, PIDGEY
 	db 10, DITTO
-	db 10, DITTO
+	db 10, LICKITUNG
+	db 8, PSYDUCK
+	db 9, HOUNDOUR
 	; nite
-	db 10, DROWZEE
-	db 11, RATTATA
-	db 12, DROWZEE
-	db 10, ABRA
-	db 13, RATTATA
+	db 8, HOUNDOUR
+	db 9, MEOWTH
+	db 8, DROWZEE
 	db 10, DITTO
-	db 10, DITTO
+	db 10, GRIMER
+	db 8, PSYDUCK
+	db 9, SNUBBULL
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_35
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
-	IF DEF(_GOLD)
-	; morn
-	db 12, NIDORAN_M
-	db 12, NIDORAN_F
-	db 14, DROWZEE
-	db 10, ABRA
-	db 14, PIDGEY
-	db 10, DITTO
-	db 12, YANMA
-	; day
-	db 12, NIDORAN_M
-	db 12, NIDORAN_F
-	db 14, DROWZEE
-	db 10, ABRA
-	db 14, PIDGEY
-	db 10, DITTO
-	db 12, YANMA
-	; nite
-	db 12, NIDORAN_M
-	db 12, NIDORAN_F
-	db 14, DROWZEE
-	db 10, ABRA
-	db 14, HOOTHOOT
-	db 10, DITTO
-	db 12, YANMA
-	ELIF DEF(_SILVER)
 	; morn
 	db 12, NIDORAN_F
 	db 12, NIDORAN_M
-	db 14, DROWZEE
+	db 13, PIDGEY
 	db 10, ABRA
-	db 14, PIDGEY
-	db 10, DITTO
-	db 12, YANMA
+	db 10, YANMA
+	db 12, EXEGGCUTE
+	db 12, JIGGLYPUFF
 	; day
 	db 12, NIDORAN_F
 	db 12, NIDORAN_M
-	db 14, DROWZEE
+	db 13, PIDGEY
 	db 10, ABRA
-	db 14, PIDGEY
-	db 10, DITTO
-	db 12, YANMA
+	db 10, PIKACHU
+	db 12, EXEGGCUTE
+	db 12, JIGGLYPUFF
 	; nite
 	db 12, NIDORAN_F
 	db 12, NIDORAN_M
-	db 14, DROWZEE
+	db 13, PIDGEY
 	db 10, ABRA
-	db 14, HOOTHOOT
-	db 10, DITTO
-	db 12, YANMA
-	ENDC
+	db 12, JIGGLYPUFF
+	db 11, MURKROW
+	db 12, CLEFAIRY
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_36
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
-	IF DEF(_GOLD)
 	; morn
 	db 12, NIDORAN_M
 	db 12, NIDORAN_F
 	db 13, PIDGEY
-	db 13, GROWLITHE
-	db 13, STANTLER
-	db 15, PIDGEY
-	db 15, PIDGEY
+	db 14, HOPPIP
+	db 12, EXEGGCUTE
+	db 12, HERACROSS
+	db 10, STANTLER
 	; day
 	db 12, NIDORAN_M
 	db 12, NIDORAN_F
-	db 14, PIDGEY
-	db 13, GROWLITHE
-	db 13, STANTLER
-	db 15, GROWLITHE
-	db 15, GROWLITHE
-	; nite
-	db 12, NIDORAN_M
-	db 12, NIDORAN_F
-	db 13, HOOTHOOT
-	db 13, GROWLITHE
-	db 13, STANTLER
-	db 15, HOOTHOOT
-	db 15, HOOTHOOT
-	ELIF DEF(_SILVER)
-	; morn
-	db 12, NIDORAN_F
-	db 12, NIDORAN_M
 	db 13, PIDGEY
-	db 13, VULPIX
-	db 13, STANTLER
-	db 15, PIDGEY
-	db 15, PIDGEY
-	; day
-	db 12, NIDORAN_F
-	db 12, NIDORAN_M
-	db 14, PIDGEY
-	db 13, VULPIX
-	db 13, STANTLER
-	db 15, VULPIX
-	db 15, VULPIX
+	db 14, HOPPIP
+	db 12, EXEGGCUTE
+	db 12, SCYTHER
+	db 10, VENONAT
 	; nite
-	db 12, NIDORAN_F
 	db 12, NIDORAN_M
+	db 12, NIDORAN_F
 	db 13, HOOTHOOT
-	db 13, VULPIX
-	db 13, STANTLER
-	db 15, HOOTHOOT
-	db 15, HOOTHOOT
-	ENDC
+	db 13, VENONAT
+	db 11, MURKROW
+	db 12, PINSIR
+	db 10, STANTLER
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_37
