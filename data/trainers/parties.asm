@@ -360,10 +360,10 @@ YoungsterGroup:
 
 	; YOUNGSTER (5)
 	db "SAMUEL@", TRAINERTYPE_NORMAL
-	db  7, RATTATA
-	db 10, SANDSHREW
-	db  8, SPEAROW
-	db  8, SPEAROW
+	db  7, SENTRET
+	db  8, SANDSHREW
+	db 10, SPEAROW
+	db 10, DITTO
 	db -1 ; end
 
 	; YOUNGSTER (6)
@@ -373,13 +373,13 @@ YoungsterGroup:
 	db -1 ; end
 
 	; YOUNGSTER (7)
-	db "JOEY@", TRAINERTYPE_NORMAL
+	db "JOEY@", TRAINERTYPE_NORMAL ; rematch post Goldenrod
 	db 15, RATTATA
 	db -1 ; end
 
 	; YOUNGSTER (8)
-	db "JOEY@", TRAINERTYPE_MOVES
-	db 21, RATICATE,   TAIL_WHIP, QUICK_ATTACK, HYPER_FANG, SCARY_FACE
+	db "JOEY@", TRAINERTYPE_MOVES ; rematch post Olivine
+	db 21, RATICATE,   THIEF, QUICK_ATTACK, HYPER_FANG, DIG
 	db -1 ; end
 
 	; YOUNGSTER (9)
@@ -1463,7 +1463,7 @@ BugCatcherGroup:
 	db -1 ; end
 
 	; BUG_CATCHER (10)
-	db "WADE@", TRAINERTYPE_NORMAL
+	db "WADE@", TRAINERTYPE_NORMAL ; rematch post Goldenrod
 	db 10, LEDYBA
 	db  9, METAPOD
 	db  9, KAKUNA
@@ -1471,7 +1471,7 @@ BugCatcherGroup:
 	db -1 ; end
 
 	; BUG_CATCHER (11)
-	db "WADE@", TRAINERTYPE_NORMAL
+	db "WADE@", TRAINERTYPE_NORMAL ; rematch post Mahogany
 	db 18, LEDIAN
 	db 14, BUTTERFREE
 	db 16, BEEDRILL
@@ -1594,14 +1594,16 @@ FisherGroup:
 	db -1 ; end
 
 	; FISHER (16)
-	db "RALPH@", TRAINERTYPE_NORMAL
-	db 17, GOLDEEN
+	db "RALPH@", TRAINERTYPE_NORMAL ; rematch post Ecruteak
+	db 17, QWILFISH
+	db 19, GOLDEEN
 	db -1 ; end
 
 	; FISHER (17)
-	db "RALPH@", TRAINERTYPE_NORMAL
-	db 17, QWILFISH
-	db 19, GOLDEEN
+	db "RALPH@", TRAINERTYPE_NORMAL ; rematch post Lake of Rage
+	db 27, QUAGSIRE
+	db 28, QWILFISH
+	db 33, SEAKING
 	db -1 ; end
 
 	; FISHER (18)
@@ -2114,9 +2116,10 @@ GuitaristGroup:
 
 HikerGroup:
 	; HIKER (1)
-	db "ANTHONY@", TRAINERTYPE_NORMAL
-	db 16, GEODUDE
-	db 18, MACHOP
+	db "ANTHONY@", TRAINERTYPE_NORMAL ; rematch, post Radio Tower
+	db 25, GRAVELER
+	db 27, ONIX
+	db 28, MACHOKE
 	db -1 ; end
 
 	; HIKER (2)
@@ -2187,10 +2190,10 @@ HikerGroup:
 	db -1 ; end
 
 	; HIKER (12)
-	db "ANTHONY@", TRAINERTYPE_NORMAL
-	db 25, ONIX
-	db 27, GRAVELER
-	db 29, MACHOKE
+	db "ANTHONY@", TRAINERTYPE_NORMAL ; rematch, post E4
+	db 36, STEELIX
+	db 34, GOLEM
+	db 35, MACHAMP
 	db -1 ; end
 
 	; HIKER (13)
@@ -2582,12 +2585,13 @@ PsychicGroup:
 PicnickerGroup:
 	; PICNICKER (1)
 	db "LIZ@", TRAINERTYPE_NORMAL
+	db  9, HOPPIP
 	db  9, MAREEP
 	db -1 ; end
 
 	; PICNICKER (2)
 	db "GINA@", TRAINERTYPE_NORMAL
-	db  9, HOPPIP
+	db  8, TANGELA
 	db  9, HOPPIP
 	db 12, BULBASAUR
 	db -1 ; end
@@ -2625,9 +2629,9 @@ PicnickerGroup:
 
 	; PICNICKER (9)
 	db "GINA@", TRAINERTYPE_NORMAL
-	db 14, HOPPIP
-	db 14, HOPPIP
-	db 17, IVYSAUR
+	db 18, SKIPLOOM
+	db 19, TANGELA
+	db 20, IVYSAUR
 	db -1 ; end
 
 	; PICNICKER (10)
@@ -2637,16 +2641,16 @@ PicnickerGroup:
 	db -1 ; end
 
 	; PICNICKER (11)
-	db "LIZ@", TRAINERTYPE_NORMAL
-	db 15, HOPPIP
-	db 15, FLAAFFY
+	db "LIZ@", TRAINERTYPE_NORMAL ; rematch post Ecruteak
+	db 18, SKIPLOOM
+	db 18, FLAAFFY
 	db -1 ; end
 
 	; PICNICKER (12)
-	db "LIZ@", TRAINERTYPE_NORMAL
-	db 15, FURRET
-	db 19, SKIPLOOM
-	db 24, FLAAFFY
+	db "LIZ@", TRAINERTYPE_NORMAL ; rematch post Hideout
+	db 27, POLIWHIRL
+	db 27, JUMPLUFF
+	db 27, FLAAFFY
 	db -1 ; end
 
 	; PICNICKER (13)
@@ -2663,9 +2667,9 @@ PicnickerGroup:
 
 	; PICNICKER (15)
 	db "GINA@", TRAINERTYPE_NORMAL
-	db 26, SKIPLOOM
-	db 26, SKIPLOOM
-	db 29, IVYSAUR
+	db 27, JUMPLUFF
+	db 30, TENTACRUEL
+	db 32, VENUSAUR
 	db -1 ; end
 
 	; PICNICKER (16)
@@ -2708,7 +2712,8 @@ CamperGroup:
 
 	; CAMPER (2)
 	db "TODD@", TRAINERTYPE_NORMAL
-	db 14, PSYDUCK
+	db  8, PINECO
+	db 16, PSYDUCK
 	db -1 ; end
 
 	; CAMPER (3)
@@ -2765,15 +2770,15 @@ CamperGroup:
 	; CAMPER (12)
 	db "TODD@", TRAINERTYPE_NORMAL
 	db 17, GEODUDE
-	db 17, GEODUDE
+	db 21, PINECO
 	db 23, PSYDUCK
 	db -1 ; end
 
 	; CAMPER (13)
 	db "TODD@", TRAINERTYPE_NORMAL
-	db 23, GEODUDE
-	db 23, GEODUDE
-	db 26, PSYDUCK
+	db 26, GOLEM
+	db 31, FORRETRESS
+	db 33, GOLDUCK
 	db -1 ; end
 
 	; CAMPER (14)
@@ -3165,7 +3170,7 @@ BlueGroup:
 OfficerGroup:
 	; OFFICER (1)
 	db "KEITH@", TRAINERTYPE_NORMAL
-	db 17, GROWLITHE
+	db 18, GROWLITHE
 	db -1 ; end
 
 	; OFFICER (2)

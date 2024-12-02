@@ -38,9 +38,9 @@ TrainerHikerAnthony:
 .Rematch:
 	scall .RematchStd
 	winlosstext HikerAnthony2BeatenText, 0
-	checkevent EVENT_CLEARED_RADIO_TOWER
+	checkevent EVENT_BEAT_ELITE_FOUR; previously EVENT_CLEARED_RADIO_TOWER
 	iftrue .LoadFight2
-	checkflag ENGINE_FLYPOINT_OLIVINE
+	checkflag EVENT_CLEARED_RADIO_TOWER; previously ENGINE_FLYPOINT_OLIVINE
 	iftrue .LoadFight1
 	loadtrainer HIKER, ANTHONY2
 	startbattle
