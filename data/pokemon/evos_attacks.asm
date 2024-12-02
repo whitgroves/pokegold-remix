@@ -739,27 +739,31 @@ PsyduckEvosAttacks:
 	db EVOLVE_LEVEL, 33, GOLDUCK
 	db 0 ; no more evolutions
 	db 1, SCRATCH
+	db 1, WATER_GUN
 	db 5, TAIL_WHIP
 	db 10, DISABLE
 	db 16, CONFUSION
-	db 23, SCREECH
+	db 23, BUBBLEBEAM
 	db 31, PSYCH_UP
-	db 40, FURY_SWIPES
+	db 36, WING_ATTACK
+	db 42, PSYCHIC_M
 	db 50, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
 GolduckEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, SCRATCH
+	db 1, WATER_GUN
 	db 1, TAIL_WHIP
 	db 1, DISABLE
 	db 1, CONFUSION
+	db 1, WATER_GUN
 	db 5, TAIL_WHIP
 	db 10, DISABLE
 	db 16, CONFUSION
-	db 23, SCREECH
+	db 23, BUBBLEBEAM
 	db 31, PSYCH_UP
-	db 44, FURY_SWIPES
+	db 40, WING_ATTACK
+	db 49, PSYCHIC_M
 	db 58, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
@@ -951,14 +955,14 @@ BellsproutEvosAttacks:
 	db EVOLVE_LEVEL, 21, WEEPINBELL
 	db 0 ; no more evolutions
 	db 1, VINE_WHIP
-	db 6, GROWTH
+	db 6, SWEET_SCENT
 	db 11, WRAP
 	db 15, SLEEP_POWDER
 	db 17, POISONPOWDER
 	db 19, STUN_SPORE
 	db 23, ACID
-	db 30, SWEET_SCENT
-	db 37, RAZOR_LEAF
+	db 30, RAZOR_LEAF
+	db 37, GROWTH
 	db 45, SLAM
 	db 0 ; no more level-up moves
 
@@ -966,25 +970,29 @@ WeepinbellEvosAttacks:
 	db EVOLVE_ITEM, LEAF_STONE, VICTREEBEL
 	db 0 ; no more evolutions
 	db 1, VINE_WHIP
-	db 1, GROWTH
+	db 1, SWEET_SCENT
 	db 1, WRAP
-	db 6, GROWTH
+	db 6, SWEET_SCENT
 	db 11, WRAP
 	db 15, SLEEP_POWDER
 	db 17, POISONPOWDER
 	db 19, STUN_SPORE
 	db 24, ACID
-	db 33, SWEET_SCENT
-	db 42, RAZOR_LEAF
-	db 54, SLAM
+	db 33, RAZOR_LEAF
+	db 42, GROWTH
+	db 54, CRUNCH
 	db 0 ; no more level-up moves
 
 VictreebelEvosAttacks:
 	db 0 ; no more evolutions
+	db 1, WRAP
 	db 1, VINE_WHIP
-	db 1, SLEEP_POWDER
 	db 1, SWEET_SCENT
-	db 1, RAZOR_LEAF
+	db 1, POISONPOWDER
+	db 24, ACID
+	db 33, RAZOR_LEAF
+	db 42, GROWTH
+	db 54, CRUNCH
 	db 0 ; no more level-up moves
 
 TentacoolEvosAttacks:
@@ -1167,8 +1175,8 @@ MagnetonEvosAttacks:
 
 FarfetchDEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, PECK
 	db 1, LEER
+	db 1, PECK
 	db 7, VINE_WHIP
 	db 13, FURY_ATTACK
 	db 19, FALSE_SWIPE
