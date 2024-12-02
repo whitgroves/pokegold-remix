@@ -2500,26 +2500,31 @@ NatuEvosAttacks:
 	db EVOLVE_LEVEL, 25, XATU
 	db 0 ; no more evolutions
 	db 1, PECK
-	db 1, LEER
-	db 10, NIGHT_SHADE
-	db 20, TELEPORT
-	db 30, FUTURE_SIGHT
-	db 36, PSYCH_UP
-	db 40, CONFUSE_RAY
+	db 5, TELEPORT
+	db 10, CONFUSE_RAY
+	db 15, CONFUSION
+	db 20, PSYCH_UP
+	db 25, FUTURE_SIGHT
+	db 30, REFLECT
+	db 35, LIGHT_SCREEN
+	db 40, NIGHT_SHADE
 	db 50, PSYCHIC_M
+	db 55, DREAM_EATER
 	db 0 ; no more level-up moves
 
 XatuEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, PECK
-	db 1, LEER
-	db 1, NIGHT_SHADE
-	db 10, NIGHT_SHADE
-	db 20, TELEPORT
-	db 35, FUTURE_SIGHT
-	db 44, PSYCH_UP
-	db 50, CONFUSE_RAY
-	db 65, PSYCHIC_M
+	db 5, TELEPORT
+	db 10, CONFUSE_RAY
+	db 15, CONFUSION
+	db 20, PSYCH_UP
+	db 25, FUTURE_SIGHT
+	db 35, REFLECT
+	db 41, LIGHT_SCREEN
+	db 47, NIGHT_SHADE
+	db 58, PSYCHIC_M
+	db 64, DREAM_EATER
 	db 0 ; no more level-up moves
 
 MareepEvosAttacks:
