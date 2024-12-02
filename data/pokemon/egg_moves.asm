@@ -586,6 +586,9 @@ HoppipEggMoves:
 	db REFLECT
 	db AMNESIA
 	db PAY_DAY
+	db RAZOR_LEAF
+	db RAZOR_WIND
+	db LIGHT_SCREEN
 	db -1 ; end
 
 AipomEggMoves:

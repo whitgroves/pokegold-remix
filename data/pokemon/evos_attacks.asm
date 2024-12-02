@@ -2591,50 +2591,69 @@ HoppipEvosAttacks:
 	db EVOLVE_LEVEL, 18, SKIPLOOM
 	db 0 ; no more evolutions
 	db 1, SPLASH
+	db 1, CHARM
 	db 5, SYNTHESIS
-	db 5, TAIL_WHIP
-	db 10, TACKLE
+	db 7, GUST
+	db 10, ABSORB
 	db 13, POISONPOWDER
 	db 15, STUN_SPORE
 	db 17, SLEEP_POWDER
 	db 20, LEECH_SEED
+	db 23, SWEET_SCENT
 	db 25, COTTON_SPORE
+	db 28, WHIRLWIND
 	db 30, MEGA_DRAIN
+	db 32, GROWTH
+	db 38, BATON_PASS
+	db 40, GIGA_DRAIN
+	db 50, SUNNY_DAY
 	db 0 ; no more level-up moves
 
 SkiploomEvosAttacks:
 	db EVOLVE_LEVEL, 27, JUMPLUFF
 	db 0 ; no more evolutions
 	db 1, SPLASH
+	db 1, CHARM
 	db 1, SYNTHESIS
-	db 1, TAIL_WHIP
-	db 1, TACKLE
+	db 1, GUST
 	db 5, SYNTHESIS
-	db 5, TAIL_WHIP
-	db 10, TACKLE
+	db 7, GUST
+	db 10, ABSORB
 	db 13, POISONPOWDER
 	db 15, STUN_SPORE
 	db 17, SLEEP_POWDER
 	db 22, LEECH_SEED
+	db 25, SWEET_SCENT
 	db 29, COTTON_SPORE
-	db 36, MEGA_DRAIN
+	db 31, WHIRLWIND
+	db 35, MEGA_DRAIN
+	db 38, GROWTH
+	db 40, BATON_PASS
+	db 45, GIGA_DRAIN
+	db 50, SUNNY_DAY
 	db 0 ; no more level-up moves
 
 JumpluffEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, SPLASH
+	db 1, CHARM
 	db 1, SYNTHESIS
-	db 1, TAIL_WHIP
-	db 1, TACKLE
+	db 1, GUST
 	db 5, SYNTHESIS
-	db 5, TAIL_WHIP
-	db 10, TACKLE
+	db 7, GUST
+	db 10, ABSORB
 	db 13, POISONPOWDER
 	db 15, STUN_SPORE
 	db 17, SLEEP_POWDER
 	db 22, LEECH_SEED
-	db 33, COTTON_SPORE
-	db 44, MEGA_DRAIN
+	db 25, SWEET_SCENT
+	db 32, COTTON_SPORE
+	db 34, WHIRLWIND
+	db 38, MEGA_DRAIN
+	db 42, GROWTH
+	db 46, BATON_PASS
+	db 49, GIGA_DRAIN
+	db 55, SUNNY_DAY
 	db 0 ; no more level-up moves
 
 AipomEvosAttacks:
