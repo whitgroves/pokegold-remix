@@ -20,7 +20,8 @@ FalknerGroup:
 WhitneyGroup:
 	; WHITNEY (1)
 	db "WHITNEY@", TRAINERTYPE_MOVES
-	db 18, CLEFAIRY,   DOUBLESLAP, MIMIC, ENCORE, METRONOME
+	db 18, CLEFAIRY,   DOUBLESLAP, SING, ENCORE, METRONOME
+	db 16, TEDDIURSA,  FURY_SWIPES, LICK, HEADBUTT, METAL_CLAW
 	db 20, MILTANK,    ROLLOUT, ATTRACT, STOMP, MILK_DRINK
 	db -1 ; end
 
@@ -637,14 +638,14 @@ BirdKeeperGroup:
 LassGroup:
 	; LASS (1)
 	db "CARRIE@", TRAINERTYPE_MOVES
-	db 18, SNUBBULL,   SCARY_FACE, CHARM, BITE, LICK
+	db 18, SNUBBULL,   FIRE_PUNCH, CHARM, BITE, LICK
 	db -1 ; end
 
 	; LASS (2)
 	db "BRIDGET@", TRAINERTYPE_NORMAL
 	db 15, JIGGLYPUFF
-	db 15, JIGGLYPUFF
-	db 15, JIGGLYPUFF
+	db 14, TOGEPI
+	db 16, EEVEE
 	db -1 ; end
 
 	; LASS (3)
@@ -989,15 +990,14 @@ CooltrainerFGroup:
 BeautyGroup:
 	; BEAUTY (1)
 	db "VICTORIA@", TRAINERTYPE_NORMAL
-	db  9, SENTRET
+	db  9, CLEFFA
 	db 13, SENTRET
-	db 17, SENTRET
+	db 17, FURRET
 	db -1 ; end
 
 	; BEAUTY (2)
 	db "SAMANTHA@", TRAINERTYPE_MOVES
-	db 16, MEOWTH,     SCRATCH, GROWL, BITE, PAY_DAY
-	db 16, MEOWTH,     SCRATCH, GROWL, BITE, SLASH
+	db 20, MEOWTH,     BITE, PAY_DAY, METAL_CLAW, ATTRACT
 	db -1 ; end
 
 	; BEAUTY (3)
@@ -1136,13 +1136,13 @@ PokemaniacGroup:
 
 	; POKEMANIAC (11)
 	db "ISSAC@", TRAINERTYPE_MOVES
-	db 12, LICKITUNG,  LICK, SUPERSONIC, CUT, NO_MOVE
+	db 10, LICKITUNG,  LICK, SUPERSONIC, ICE_PUNCH, FIRE_PUNCH
+	db 10, WIGGLYTUFF, SING, POUND, HEADBUTT, THUNDERPUNCH
 	db -1 ; end
 
 	; POKEMANIAC (12)
 	db "DONALD@", TRAINERTYPE_NORMAL
-	db 10, SLOWPOKE
-	db 10, SLOWPOKE
+	db 15, SLOWPOKE
 	db -1 ; end
 
 	; POKEMANIAC (13)
@@ -1453,7 +1453,7 @@ BugCatcherGroup:
 
 	; BUG_CATCHER (8)
 	db "ARNIE@", TRAINERTYPE_NORMAL
-	db 15, VENONAT
+	db 17, VENONAT
 	db -1 ; end
 
 	; BUG_CATCHER (9)
@@ -1484,13 +1484,16 @@ BugCatcherGroup:
 	db -1 ; end
 
 	; BUG_CATCHER (13)
-	db "ARNIE@", TRAINERTYPE_NORMAL
-	db 19, VENONAT
+	db "ARNIE@", TRAINERTYPE_NORMAL ; rematch post Lake of Rage
+	db 24, PARASECT
+	db 25, VENONAT
 	db -1 ; end
 
 	; BUG_CATCHER (14)
-	db "ARNIE@", TRAINERTYPE_MOVES
-	db 28, VENOMOTH,   DISABLE, SUPERSONIC, CONFUSION, LEECH_LIFE
+	db "ARNIE@", TRAINERTYPE_MOVES ; rematch post E4
+	db 37  PARASECT,   SPORE, CURSE, SLASH, DREAM_EATER
+	db 37, VENOMOTH,   PSYCHIC_M, SLEEP_POWDER, LEECH_LIFE, WHIRLWIND
+	db 37, SHUCKLE,	   DEFENSE_CURL, ROLLOUT, SOFTBOILED, SANDSTORM
 	db -1 ; end
 
 FisherGroup:
@@ -1971,9 +1974,9 @@ SuperNerdGroup:
 	db -1 ; end
 
 	; SUPER_NERD (2)
-	db "ERIC@", TRAINERTYPE_NORMAL
-	db 11, GRIMER
-	db 11, GRIMER
+	db "ERIC@", TRAINERTYPE_NORMAL ; Goldenrod Underground
+	db 11, MAGNEMITE
+	db 12, PORYGON
 	db -1 ; end
 
 	; SUPER_NERD (3)
@@ -2021,10 +2024,10 @@ SuperNerdGroup:
 
 	; SUPER_NERD (10)
 	db "TERU@", TRAINERTYPE_NORMAL
-	db  7, MAGNEMITE
-	db 11, VOLTORB
-	db  7, MAGNEMITE
-	db  9, MAGNEMITE
+	db  9, VOLTORB
+	db 11, MAGNEMITE
+	db  7, CHINCHOU
+	db  9, ELEKID
 	db -1 ; end
 
 	; SUPER_NERD (11)
@@ -2366,7 +2369,7 @@ FirebreatherGroup:
 
 	; FIREBREATHER (6)
 	db "WALT@", TRAINERTYPE_NORMAL
-	db 11, MAGMAR
+	db 13, HOUNDOUR
 	db 13, MAGMAR
 	db -1 ; end
 
@@ -2386,9 +2389,9 @@ JugglerGroup:
 	; JUGGLER (1)
 	db "IRWIN@", TRAINERTYPE_NORMAL
 	db  2, VOLTORB
-	db  6, VOLTORB
-	db 10, VOLTORB
-	db 14, VOLTORB
+	db  4, KOFFING
+	db  8, EXEGGCUTE
+	db 16, MAGNEMITE
 	db -1 ; end
 
 	; JUGGLER (2)
@@ -2407,19 +2410,19 @@ JugglerGroup:
 	db -1 ; end
 
 	; JUGGLER (4)
-	db "IRWIN@", TRAINERTYPE_NORMAL
-	db  6, VOLTORB
-	db 10, VOLTORB
-	db 14, VOLTORB
-	db 18, VOLTORB
+	db "IRWIN@", TRAINERTYPE_NORMAL ; rematch post Cianwood
+	db 16, VOLTORB
+	db 16, KOFFING
+	db 16, EXEGGCUTE
+	db 16, MAGNEMITE
 	db -1 ; end
 
 	; JUGGLER (5)
-	db "IRWIN@", TRAINERTYPE_NORMAL
-	db 18, VOLTORB
-	db 22, VOLTORB
-	db 26, VOLTORB
-	db 30, ELECTRODE
+	db "IRWIN@", TRAINERTYPE_NORMAL ; rematch post Radio Tower
+	db 31, EXEGGUTOR
+	db 34, ELECTRODE
+	db 35, WEEZING
+	db 35, MAGNETON
 	db -1 ; end
 
 BlackbeltGroup:
@@ -2603,6 +2606,7 @@ PicnickerGroup:
 
 	; PICNICKER (4)
 	db "KIM@", TRAINERTYPE_NORMAL
+	db 13, NIDORAN_F
 	db 15, VULPIX
 	db -1 ; end
 
@@ -2718,14 +2722,14 @@ CamperGroup:
 
 	; CAMPER (3)
 	db "IVAN@", TRAINERTYPE_NORMAL
-	db 10, DIGLETT
-	db 10, ZUBAT
-	db 14, DIGLETT
+	db 13, NIDORAN_M
+	db 12, DUNSPARCE
+	db 14, YANMA
 	db -1 ; end
 
 	; CAMPER (4)
 	db "ELLIOT@", TRAINERTYPE_NORMAL
-	db 13, SANDSHREW
+	db 13, GROWLITHE
 	db 15, MARILL
 	db -1 ; end
 
@@ -3169,14 +3173,13 @@ BlueGroup:
 
 OfficerGroup:
 	; OFFICER (1)
-	db "KEITH@", TRAINERTYPE_NORMAL
-	db 18, GROWLITHE
+	db "KEITH@", TRAINERTYPE_ITEM
+	db 18, GROWLITHE,	BERRY
 	db -1 ; end
 
 	; OFFICER (2)
-	db "DIRK@", TRAINERTYPE_NORMAL
-	db 14, GROWLITHE
-	db 14, GROWLITHE
+	db "DIRK@", TRAINERTYPE_MOVES
+	db 18, GROWLITHE,	BITE, EMBER, HEADBUTT, DIG
 	db -1 ; end
 
 GruntFGroup:

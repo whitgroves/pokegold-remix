@@ -185,7 +185,7 @@ TrainerBugCatcherArnie:
 .WantsBattle:
 	scall Route35RematchM
 	winlosstext BugCatcherArnieBeatenText, 0
-	checkflag ENGINE_FLYPOINT_BLACKTHORN
+	checkflag EVENT_BEAT_ELITE_FOUR ; previously ENGINE_FLYPOINT_BLACKTHORN
 	iftrue .LoadFight2
 	checkflag ENGINE_FLYPOINT_LAKE_OF_RAGE
 	iftrue .LoadFight1
@@ -361,7 +361,7 @@ JugglerIrwin1SeenText:
 
 JugglerIrwin1BeatenText:
 	text "Whew! That was a"
-	line "jolt!"
+	line "blast!"
 	done
 
 JugglerIrwinAfterBattleText:
@@ -370,7 +370,7 @@ JugglerIrwinAfterBattleText:
 	cont "prize #MON."
 
 	para "But your prowess"
-	line "electrified me!"
+	line "blew me away!"
 	done
 
 BugCatcherArnieSeenText:
