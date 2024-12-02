@@ -408,8 +408,8 @@ YoungsterGroup:
 SchoolboyGroup:
 	; SCHOOLBOY (1)
 	db "JACK@", TRAINERTYPE_NORMAL
-	db 12, ODDISH
-	db 15, VOLTORB
+	db 12, BELLSPROUT
+	db 15, FARFETCH_D
 	db -1 ; end
 
 	; SCHOOLBOY (2)
@@ -482,29 +482,29 @@ SchoolboyGroup:
 	db -1 ; end
 
 	; SCHOOLBOY (13)
-	db "JACK@", TRAINERTYPE_NORMAL
-	db 14, ODDISH
-	db 17, VOLTORB
+	db "JACK@", TRAINERTYPE_NORMAL ; rematch post Olivine
+	db 21, WEEPINBELL
+	db 19, FARFETCH_D
 	db -1 ; end
 
 	; SCHOOLBOY (14)
-	db "JACK@", TRAINERTYPE_NORMAL
-	db 28, GLOOM
-	db 31, ELECTRODE
+	db "JACK@", TRAINERTYPE_NORMAL ; rematch post Radio Tower
+	db 33, VICTREEBEL
+	db 33, GOLDUCK
 	db -1 ; end
 
 	; SCHOOLBOY (15)
-	db "ALAN@", TRAINERTYPE_NORMAL
-	db 17, TANGELA
-	db 17, YANMA
+	db "ALAN@", TRAINERTYPE_NORMAL ; rematch post Olivine
+	db 20, TANGELA
+	db 20, YANMA
 	db -1 ; end
 
 	; SCHOOLBOY (16)
-	db "ALAN@", TRAINERTYPE_NORMAL
-	db 20, NATU
-	db 22, TANGELA
-	db 20, QUAGSIRE
-	db 25, YANMA
+	db "ALAN@", TRAINERTYPE_NORMAL ; rematch post Blackthorn
+	db 33, TANGELA
+	db 30, QUAGSIRE
+	db 28, XATU
+	db 33, YANMA
 	db -1 ; end
 
 	; SCHOOLBOY (17)
@@ -1491,7 +1491,7 @@ BugCatcherGroup:
 
 	; BUG_CATCHER (14)
 	db "ARNIE@", TRAINERTYPE_MOVES ; rematch post E4
-	db 37  PARASECT,   SPORE, CURSE, SLASH, DREAM_EATER
+	db 37, PARASECT,   SPORE, CURSE, SLASH, DREAM_EATER
 	db 37, VENOMOTH,   PSYCHIC_M, SLEEP_POWDER, LEECH_LIFE, WHIRLWIND
 	db 37, SHUCKLE,	   DEFENSE_CURL, ROLLOUT, SOFTBOILED, SANDSTORM
 	db -1 ; end
@@ -2549,9 +2549,9 @@ PsychicGroup:
 
 	; PSYCHIC_T (7)
 	db "MARK@", TRAINERTYPE_MOVES
-	db 13, ABRA,       TELEPORT, FLASH, NO_MOVE, NO_MOVE
-	db 13, ABRA,       TELEPORT, FLASH, NO_MOVE, NO_MOVE
-	db 15, KADABRA,    TELEPORT, KINESIS, CONFUSION, NO_MOVE
+	db 15, NATU,       PSYCH_UP, CONFUSION, FLASH, PECK
+	db 15, SLOWPOKE,   PSYCH_UP, PSYWAVE, MUD_SLAP, CURSE
+	db 16, KADABRA,    PSYCH_UP, CONFUSION, FIRE_PUNCH, THUNDERPUNCH
 	db -1 ; end
 
 	; PSYCHIC_T (8)
@@ -2967,8 +2967,8 @@ BoarderGroup:
 
 PokefanMGroup:
 	; POKEFANM (1)
-	db "WILLIAM@", TRAINERTYPE_ITEM
-	db 14, RAICHU,     BERRY
+	db "WILLIAM@", TRAINERTYPE_MOVES
+	db 14, RAICHU,   CONFUSION, THUNDERSHOCK, SURF, FRUSTRATION  
 	db -1 ; end
 
 	; POKEFANM (2)
@@ -3123,6 +3123,7 @@ PokefanFGroup:
 	; POKEFANF (1)
 	db "BEVERLY@", TRAINERTYPE_ITEM
 	db 14, SNUBBULL,   BERRY
+	db 14, SUNKERN,	   BERRY
 	db -1 ; end
 
 	; POKEFANF (2)
@@ -3131,13 +3132,15 @@ PokefanFGroup:
 	db -1 ; end
 
 	; POKEFANF (3)
-	db "BEVERLY@", TRAINERTYPE_ITEM
+	db "BEVERLY@", TRAINERTYPE_ITEM ; rematch post Mahogany
 	db 18, SNUBBULL,   BERRY
+	db 19, SUNFLORA,   BERRY
 	db -1 ; end
 
 	; POKEFANF (4)
-	db "BEVERLY@", TRAINERTYPE_ITEM
+	db "BEVERLY@", TRAINERTYPE_ITEM ; rematch post Radio Tower
 	db 30, GRANBULL,   BERRY
+	db 31, SUNFLORA,   BITTER_BERRY
 	db -1 ; end
 
 	; POKEFANF (5)
