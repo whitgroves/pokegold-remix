@@ -480,29 +480,29 @@ JohtoGrassWildMons:
 	def_grass_wildmons UNION_CAVE_B2F
 	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
 	; morn
-	db 22, ZUBAT
-	db 22, RATICATE
 	db 22, GOLBAT
-	db 21, GEODUDE
-	db 20, RATTATA
-	db 23, ONIX
-	db 23, ONIX
+	db 23, GEODUDE
+	db 23, QUAGSIRE
+	db 22, DIGLETT
+	db 27, ONIX
+	db 25, GRAVELER
+	db 26, DUGTRIO
 	; day
-	db 22, ZUBAT
-	db 22, RATICATE
 	db 22, GOLBAT
-	db 21, GEODUDE
-	db 20, RATTATA
-	db 23, ONIX
-	db 23, ONIX
+	db 23, GEODUDE
+	db 23, QUAGSIRE
+	db 22, DIGLETT
+	db 27, ONIX
+	db 25, GRAVELER
+	db 26, DUGTRIO
 	; nite
-	db 22, ZUBAT
-	db 22, RATICATE
 	db 22, GOLBAT
-	db 21, GEODUDE
-	db 20, RATTATA
-	db 23, ONIX
-	db 23, ONIX
+	db 23, GEODUDE
+	db 23, QUAGSIRE
+	db 22, DIGLETT
+	db 27, ONIX
+	db 25, GRAVELER
+	db 26, DUGTRIO
 	end_grass_wildmons
 
 	def_grass_wildmons SLOWPOKE_WELL_B1F
@@ -536,29 +536,29 @@ JohtoGrassWildMons:
 	def_grass_wildmons SLOWPOKE_WELL_B2F
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn
-	db 21, ZUBAT
-	db 23, ZUBAT
-	db 19, ZUBAT
+	db 22, GOLBAT
 	db 21, SLOWPOKE
-	db 23, GOLBAT
+	db 22, SLOWPOKE
 	db 23, SLOWPOKE
-	db 23, SLOWPOKE
+	db 26, DUGTRIO
+	db 24, PARASECT
+	db 27, DUNSPARCE
 	; day
-	db 21, ZUBAT
-	db 23, ZUBAT
-	db 19, ZUBAT
+	db 22, GOLBAT
 	db 21, SLOWPOKE
-	db 23, GOLBAT
+	db 22, SLOWPOKE
 	db 23, SLOWPOKE
-	db 23, SLOWPOKE
+	db 26, DUGTRIO
+	db 24, PARASECT
+	db 27, DUNSPARCE
 	; nite
-	db 21, ZUBAT
-	db 23, ZUBAT
-	db 19, ZUBAT
+	db 22, GOLBAT
 	db 21, SLOWPOKE
-	db 23, GOLBAT
+	db 22, SLOWPOKE
 	db 23, SLOWPOKE
-	db 23, SLOWPOKE
+	db 26, DUGTRIO
+	db 24, PARASECT
+	db 27, DUNSPARCE
 	end_grass_wildmons
 
 	def_grass_wildmons ILEX_FOREST
