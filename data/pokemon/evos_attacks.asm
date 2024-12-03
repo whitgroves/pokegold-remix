@@ -2842,7 +2842,7 @@ SlowkingEvosAttacks:
 
 MisdreavusEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, GROWL
+	db 1, CURSE
 	db 1, PSYWAVE
 	db 6, SPITE
 	db 12, CONFUSE_RAY
@@ -3144,14 +3144,17 @@ PiloswineEvosAttacks:
 
 CorsolaEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, TACKLE
-	db 7, HARDEN
-	db 13, BUBBLE
-	db 19, RECOVER
+	db 1, BUBBLE
+	db 1, HARDEN
+	db 7, SPITE
+	db 13, CURSE
+	db 19, PAIN_SPLIT
 	db 25, BUBBLEBEAM
-	db 31, SPIKE_CANNON
-	db 37, MIRROR_COAT
+	db 31, RAIN_DANCE
+	db 37, ENDURE
+	db 41, RECOVER
 	db 43, ANCIENTPOWER
+	db 50, DESTINY_BOND
 	db 0 ; no more level-up moves
 
 RemoraidEvosAttacks:

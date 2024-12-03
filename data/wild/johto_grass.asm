@@ -285,57 +285,57 @@ JohtoGrassWildMons:
 	def_grass_wildmons BURNED_TOWER_1F
 	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
 	; morn
-	db 13, RATTATA
+	db 15, GASTLY
 	db 14, KOFFING
-	db 15, RATTATA
-	db 14, ZUBAT
-	db 16, KOFFING
-	db 15, RATICATE
-	db 15, RATICATE
+	db 15, KOFFING
+	db 14, MAGMAR
+	db 16, GASTLY
+	db 17, GASTLY
+	db 13, MISDREAVUS
 	; day
-	db 13, RATTATA
+	db 15, GASTLY
 	db 14, KOFFING
-	db 15, RATTATA
-	db 14, ZUBAT
-	db 16, KOFFING
-	db 15, RATICATE
-	db 15, RATICATE
+	db 15, KOFFING
+	db 14, MAGMAR
+	db 16, GASTLY
+	db 17, GASTLY
+	db 13, MISDREAVUS
 	; nite
-	db 13, RATTATA
+	db 15, GASTLY
 	db 14, KOFFING
-	db 15, RATTATA
-	db 14, ZUBAT
-	db 16, KOFFING
-	db 15, RATICATE
-	db 15, RATICATE
+	db 15, KOFFING
+	db 14, MAGMAR
+	db 16, GASTLY
+	db 17, GASTLY
+	db 13, MISDREAVUS
 	end_grass_wildmons
 
 	def_grass_wildmons BURNED_TOWER_B1F
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
 	; morn
-	db 14, RATTATA
+	db 15, GASTLY
 	db 14, KOFFING
-	db 16, KOFFING
-	db 16, RATTATA
-	db 15, ZUBAT
+	db 15, KOFFING
 	db 14, MAGMAR
-	db 14, MAGMAR
+	db 16, GASTLY
+	db 17, GASTLY
+	db 14, EEVEE
 	; day
-	db 14, RATTATA
+	db 15, GASTLY
 	db 14, KOFFING
-	db 16, KOFFING
-	db 16, MAGMAR
-	db 15, ZUBAT
-	db 14, RATTATA
-	db 14, RATTATA
+	db 15, KOFFING
+	db 14, MAGMAR
+	db 16, GASTLY
+	db 17, GASTLY
+	db 14, EEVEE
 	; nite
-	db 14, RATTATA
+	db 15, GASTLY
 	db 14, KOFFING
-	db 16, KOFFING
-	db 16, RATTATA
-	db 15, ZUBAT
+	db 15, KOFFING
 	db 14, MAGMAR
-	db 14, MAGMAR
+	db 16, GASTLY
+	db 17, GASTLY
+	db 14, EEVEE
 	end_grass_wildmons
 
 	def_grass_wildmons NATIONAL_PARK
@@ -1702,168 +1702,86 @@ JohtoGrassWildMons:
 
 	def_grass_wildmons ROUTE_37
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
-	IF DEF(_GOLD)
 	; morn
-	db 13, PIDGEY
-	db 15, STANTLER
-	db 15, PIDGEY
-	db 14, GROWLITHE
-	db 15, PIDGEY
-	db 15, PIDGEY
-	db 15, PIDGEY
+	db 14, VULPIX
+	db 16, PIDGEY
+	db 13, STANTLER
+	db 15, SUDOWOODO
+	db 16, HOOTHOOT
+	db 13, TANGELA
+	db 13, MISDREAVUS
 	; day
-	db 13, PIDGEY
-	db 15, STANTLER
-	db 15, PIDGEY
-	db 14, GROWLITHE
-	db 15, PIDGEOTTO
-	db 16, GROWLITHE
-	db 16, GROWLITHE
+	db 14, VULPIX
+	db 16, PIDGEY
+	db 13, TANGELA
+	db 15, SUDOWOODO
+	db 13, MURKROW
+	db 13, STANTLER
+	db 13, MISDREAVUS
 	; nite
-	db 13, SPINARAK
-	db 15, STANTLER
-	db 15, HOOTHOOT
-	db 14, GROWLITHE
-	db 15, SPINARAK
-	db 15, SPINARAK
-	db 15, SPINARAK
-	ELIF DEF(_SILVER)
-	; morn
-	db 13, LEDYBA
-	db 15, STANTLER
-	db 15, PIDGEY
 	db 14, VULPIX
-	db 15, LEDYBA
-	db 15, LEDYBA
-	db 15, LEDYBA
-	; day
-	db 13, PIDGEY
-	db 15, STANTLER
-	db 15, PIDGEY
-	db 14, VULPIX
-	db 15, PIDGEOTTO
-	db 16, VULPIX
-	db 16, VULPIX
-	; nite
-	db 13, HOOTHOOT
-	db 15, STANTLER
-	db 15, HOOTHOOT
-	db 14, VULPIX
-	db 15, HOOTHOOT
-	db 15, HOOTHOOT
-	db 15, HOOTHOOT
-	ENDC
+	db 13, TANGELA
+	db 16, HOOTHOOT
+	db 13, MURKROW
+	db 13, MISDREAVUS
+	db 13, STANTLER
+	db 15, SUDOWOODO
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_38
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
-	IF DEF(_GOLD)
 	; morn
 	db 16, RATTATA
-	db 16, RATICATE
-	db 16, MAGNEMITE
-	db 16, FARFETCH_D
-	db 13, MILTANK
-	db 13, TAUROS
-	db 13, SNUBBULL
+	db 17, DODUO
+	db 17, PONYTA
+	db 17, MEOWTH
+	db 14, MILTANK
+	db 14, TAUROS
+	db 18, RATICATE
 	; day
 	db 16, RATTATA
-	db 16, RATICATE
-	db 16, MAGNEMITE
-	db 16, FARFETCH_D
-	db 13, MILTANK
-	db 13, TAUROS
-	db 13, SNUBBULL
+	db 17, PONYTA
+	db 17, DODUO
+	db 17, MEOWTH
+	db 14, MILTANK
+	db 14, TAUROS
+	db 18, RATICATE
 	; nite
 	db 16, RATTATA
-	db 16, RATICATE
-	db 16, MAGNEMITE
-	db 16, RATTATA
-	db 13, MILTANK
-	db 13, TAUROS
-	db 13, SNUBBULL
-	ELIF DEF(_SILVER)
-	; morn
-	db 16, MEOWTH
-	db 16, RATICATE
-	db 16, MAGNEMITE
-	db 16, FARFETCH_D
-	db 13, MILTANK
-	db 13, TAUROS
-	db 13, SNUBBULL
-	; day
-	db 16, MEOWTH
-	db 16, RATICATE
-	db 16, MAGNEMITE
-	db 16, FARFETCH_D
-	db 13, MILTANK
-	db 13, TAUROS
-	db 13, SNUBBULL
-	; nite
-	db 16, MEOWTH
-	db 16, RATICATE
-	db 16, MAGNEMITE
-	db 16, MEOWTH
-	db 13, MILTANK
-	db 13, TAUROS
-	db 13, SNUBBULL
-	ENDC
+	db 17, MEOWTH
+	db 17, DODUO
+	db 17, PONYTA
+	db 14, MILTANK
+	db 14, TAUROS
+	db 18, RATICATE
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_39
-	IF DEF(_GOLD)
 	db 2 percent, 2 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
 	db 16, RATTATA
-	db 17, RATICATE
+	db 15, MARILL
 	db 16, MAGNEMITE
-	db 16, FARFETCH_D
-	db 15, MILTANK
-	db 15, TAUROS
-	db 15, TAUROS
+	db 17, MEOWTH
+	db 14, MILTANK
+	db 14, TAUROS
+	db 18, RATICATE
 	; day
 	db 16, RATTATA
-	db 17, RATICATE
+	db 15, MARILL
 	db 16, MAGNEMITE
-	db 16, FARFETCH_D
-	db 15, MILTANK
-	db 15, TAUROS
-	db 15, TAUROS
+	db 17, MEOWTH
+	db 14, MILTANK
+	db 14, TAUROS
+	db 18, RATICATE
 	; nite
 	db 16, RATTATA
-	db 17, RATICATE
+	db 17, MEOWTH
 	db 16, MAGNEMITE
-	db 16, RATTATA
-	db 15, MILTANK
-	db 15, TAUROS
-	db 15, TAUROS
-	ELIF DEF(_SILVER)
-	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
-	; morn
-	db 16, MEOWTH
-	db 17, RATICATE
-	db 16, MAGNEMITE
-	db 16, FARFETCH_D
-	db 15, MILTANK
-	db 15, TAUROS
-	db 15, TAUROS
-	; day
-	db 16, MEOWTH
-	db 17, RATICATE
-	db 16, MAGNEMITE
-	db 16, FARFETCH_D
-	db 15, MILTANK
-	db 15, TAUROS
-	db 15, TAUROS
-	; nite
-	db 16, MEOWTH
-	db 17, RATICATE
-	db 16, MAGNEMITE
-	db 16, MEOWTH
-	db 15, MILTANK
-	db 15, TAUROS
-	db 15, TAUROS
-	ENDC
+	db 15, MARILL
+	db 14, MILTANK
+	db 14, TAUROS
+	db 18, RATICATE
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_42
