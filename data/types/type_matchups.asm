@@ -4,7 +4,6 @@ TypeMatchups:
 	db NORMAL,       STEEL,        NOT_VERY_EFFECTIVE
 	db FIRE,         FIRE,         NOT_VERY_EFFECTIVE
 	db FIRE,         WATER,        NOT_VERY_EFFECTIVE
-	db FIRE,         ELECTRIC,     NOT_VERY_EFFECTIVE
 	db FIRE,         GRASS,        SUPER_EFFECTIVE
 	db FIRE,         ICE,          SUPER_EFFECTIVE
 	db FIRE,         FIGHTING,     NOT_VERY_EFFECTIVE
@@ -19,7 +18,6 @@ TypeMatchups:
 	db WATER,        ICE,          NOT_VERY_EFFECTIVE
 	db WATER,        GROUND,       SUPER_EFFECTIVE
 	db WATER,        ROCK,         SUPER_EFFECTIVE
-	db ELECTRIC,     FIRE,         NOT_VERY_EFFECTIVE
 	db ELECTRIC,     WATER,        SUPER_EFFECTIVE
 	db ELECTRIC,     ELECTRIC,     NOT_VERY_EFFECTIVE
 	db ELECTRIC,     GRASS,        NOT_VERY_EFFECTIVE
