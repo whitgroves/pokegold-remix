@@ -18,12 +18,12 @@ TrainerClassDVs:
 	dn 13, 12, 13, 12 ; KAREN
 	dn  7, 15, 13,  6 ; KOGA
 	dn 15, 12, 12, 15 ; CHAMPION
-	dn 10, 12,  8,  6 ; BROCK
+	dn  7, 15,  8,  6 ; BROCK
 	dn  9, 10, 10, 10 ; MISTY
 	dn 11,  7, 11,  7 ; LT_SURGE
 	dn  6,  8,  4, 10 ; SCIENTIST
 	dn 10,  8, 11, 11 ; ERIKA
-	dn  6,  3, 11,  4 ; YOUNGSTER
+	dn  8,  3,  8,  4 ; YOUNGSTER
 	dn  6,  8,  3,  9 ; SCHOOLBOY
 	dn  8,  7, 12,  8 ; BIRD_KEEPER
 	dn  3,  6,  8,  9 ; LASS
@@ -33,7 +33,7 @@ TrainerClassDVs:
 	dn  6,  9, 10, 10 ; BEAUTY
 	dn  6,  8,  7, 10 ; POKEMANIAC
 	dn 13,  4, 12,  5 ; GRUNTM
-	dn  8, 12,  7, 10 ; GENTLEMAN
+	dn 12, 10, 12, 10 ; GENTLEMAN
 	dn  8,  8,  8,  9 ; SKIER
 	dn  8,  8,  8,  8 ; TEACHER
 	dn  3, 13,  9,  9 ; SABRINA
@@ -42,7 +42,7 @@ TrainerClassDVs:
 	dn  9,  6, 10,  7 ; SWIMMERM
 	dn  7,  7, 10, 10 ; SWIMMERF
 	dn 13,  3,  3, 13 ; SAILOR
-	dn  8,  6,  8, 12 ; SUPER_NERD
+	dn  8,  6,  7,  9 ; SUPER_NERD
 	dn 13,  3,  2, 13 ; RIVAL2 - now with RIVAL1 DVs
 	dn  8,  6, 13,  7 ; GUITARIST
 	dn 10,  6,  8,  4 ; HIKER
@@ -51,7 +51,7 @@ TrainerClassDVs:
 	dn  8,  6, 11,  6 ; BURGLAR
 	dn  4,  8,  7, 10 ; FIREBREATHER
 	dn  6,  9,  6,  9 ; JUGGLER
-	dn 14,  9,  9,  6 ; BLACKBELT_T
+	dn 11,  7, 11,  7 ; BLACKBELT_T
 	dn 12,  5, 11,  7 ; EXECUTIVEM
 	dn  4,  9,  8, 13 ; PSYCHIC_T
 	dn  8, 10, 10,  6 ; PICNICKER
