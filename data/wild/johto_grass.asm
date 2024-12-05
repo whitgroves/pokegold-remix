@@ -369,29 +369,29 @@ JohtoGrassWildMons:
 	def_grass_wildmons RUINS_OF_ALPH_OUTSIDE
 	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
 	; morn
-	db 20, NATU
 	db 22, NATU
-	db 18, NATU
 	db 24, NATU
+	db 15, ABRA
+	db 25, XATU
 	db 20, SMEARGLE
-	db 22, SMEARGLE
-	db 22, SMEARGLE
+	db 20, SMEARGLE
+	db 20, NOCTOWL
 	; day
-	db 20, NATU
 	db 22, NATU
-	db 18, NATU
 	db 24, NATU
+	db 15, ABRA
+	db 25, XATU
 	db 20, SMEARGLE
-	db 22, SMEARGLE
-	db 22, SMEARGLE
+	db 20, SMEARGLE
+	db 20, NOCTOWL
 	; nite
-	db 20, NATU
 	db 22, NATU
-	db 18, NATU
 	db 24, NATU
+	db 15, ABRA
+	db 25, XATU
+	db 20, NOCTOWL
 	db 20, SMEARGLE
-	db 22, SMEARGLE
-	db 22, SMEARGLE
+	db 20, SMEARGLE
 	end_grass_wildmons
 
 	def_grass_wildmons RUINS_OF_ALPH_INNER_CHAMBER
@@ -1786,7 +1786,6 @@ JohtoGrassWildMons:
 
 	def_grass_wildmons ROUTE_42
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
-	IF DEF(_GOLD)
 	; morn
 	db 15, MANKEY
 	db 13, MAREEP
@@ -1811,32 +1810,6 @@ JohtoGrassWildMons:
 	db 15, FLAAFFY
 	db 17, FLAAFFY
 	db 17, FLAAFFY
-	ELIF DEF(_SILVER)
-	; morn
-	db 13, MAREEP
-	db 14, SPEAROW
-	db 15, MAREEP
-	db 16, SPEAROW
-	db 15, FLAAFFY
-	db 17, FLAAFFY
-	db 17, FLAAFFY
-	; day
-	db 13, MAREEP
-	db 14, SPEAROW
-	db 15, MAREEP
-	db 16, SPEAROW
-	db 15, FLAAFFY
-	db 17, FLAAFFY
-	db 17, FLAAFFY
-	; nite
-	db 13, MAREEP
-	db 14, ZUBAT
-	db 15, MAREEP
-	db 16, ZUBAT
-	db 15, FLAAFFY
-	db 17, FLAAFFY
-	db 17, FLAAFFY
-	ENDC
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_43
