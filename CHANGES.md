@@ -146,6 +146,9 @@ These mons evolve by new methods in addition to their old ones (e.g., *Nidorina*
 - Porygon -> Porygon2: *Up-Grade*
 - Togepi -> Togetic: *Sun Stone* -or- *Moon Stone*
 - Sunkern -> Sunflora: *Happiness, Day*
+### Other
+- Gender is no longer determined solely by Attack DV (i.e., female mons outside of all-female species can roll high ATK DVs).
+- As a consequence of the above, the shininess formula has been updated and now has a ~1/7281 chance instead of 1/8192.
 ## Move Updates
 ### Damaging Moves
 - Comet Punch: *Normal* -> *Fighting*

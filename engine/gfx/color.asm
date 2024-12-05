@@ -5,7 +5,7 @@ DEF SHINY_DEF_DV EQU 10
 DEF SHINY_SPD_DV EQU 10
 DEF SHINY_SPC_DV EQU 10
 
-CheckShininess:
+Unused_CheckShininess:
 ; Check if a mon is shiny by DVs at bc.
 ; Return carry if shiny.
 
@@ -43,30 +43,38 @@ CheckShininess:
 	and a
 	ret
 
-Unused_CheckShininess:
-; Return carry if the DVs at hl are all 10 or higher.
+CheckShininess:
+; The updated gender check (see engine/pokemon/mon_stats.asm) determines gender in a way that
+; shiny mons will always be female using the base formula above.
+; To remedy this, we check for even values above 10 on ATK and SPD DVs + 10's on DEF and SPE.
+; This allows mons with male DVs to be shiny for gender ratios up through GENDER_F50,
+; while yielding a ~1/7281 chance on encounters, which is slightly better than base but still rare.
 
 ; Attack
 	ld a, [hl]
-	cp 10 << 4
+	cp 10 << 4 	; ATK above 10?
 	jr c, .not_shiny
+	and %0001	; filter odd values
+	jr nz, .not_shiny
 
 ; Defense
 	ld a, [hli]
-	and %1111
-	cp 10
-	jr c, .not_shiny
+	and %1111	; lower nibble
+	cp 10		; must be exactly 10
+	jr nz, .not_shiny
 
 ; Speed
 	ld a, [hl]
-	cp 10 << 4
+	cp 10 << 4	; SPD above 10?
 	jr c, .not_shiny
+	and %0001	; filter odd values
+	jr nz, .not_shiny
 
 ; Special
 	ld a, [hl]
-	and %1111
-	cp 10
-	jr c, .not_shiny
+	and %1111	; lower nibble
+	cp 10		; must be exactly 10
+	jr nz, .not_shiny
 
 ; shiny
 	scf
