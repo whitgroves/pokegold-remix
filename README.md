@@ -1,18 +1,19 @@
 # Pokémon Gold Remix
 
-This is a follow-up to [Pokémon Blue Remix](https://github.com/whitgroves/pokeblue-remix) forked from [pret's disassembly of Pokémon Gold/Silver](https://github.com/pret/pokegold) and inspired by [TheSmithPlays' Crystal Legacy project](https://github.com/cRz-Shadows/Pokemon_Crystal_Legacy). If you'd like to play the game, please follow the [pret instructions](https://github.com/pret/pokegold/blob/master/INSTALL.md) on how to build the ROM.
+This is a follow-up to [Pokémon Blue Remix](https://github.com/whitgroves/pokeblue-remix) forked from [pret's disassembly of Pokémon Gold/Silver](https://github.com/pret/pokegold) and inspired by [TheSmithPlays' Crystal Legacy project](https://github.com/cRz-Shadows/Pokemon_Crystal_Legacy). If you'd like to play the game, please follow [these instructions](./INSTALL.md) (courtesy pret) on how to build the ROM.
 
-Similar to Blue Remix, the goal is not to recreate the Legacy games, but simply to see what gen 2 would feel like with a rebalanced type chart and some unhinged typings (e.g., Steel is super effective vs Dragon, Sunflora is now Grass/Fire).
+Similar to Blue Remix, the goal is not to recreate the Legacy games, but rather to see what gen 2 would feel like with a rebalanced type chart and some unhinged typings (e.g., Steel is super effective vs Dragon, Sunflora is now Grass/Fire).
 
 However, some changes from Crystal, the Legacy hacks, and the [pret tutorials](https://github.com/pret/pokered/wiki/Tutorials) are duplicated here, such as learnsets, making *Cut* Bug-type, and auto-sorting the items in the backpack.
 
 ## Changes (✓ = done, ~ = in progress)
-- Updated [type chart](./TYPES.md) ✓
+The following changes have been implemented or planned:
+- Updated interactions for all 17 types ✓
 - Updated typings to make certain Pokemon lore-friendly, interesting, or unique ✓
 - Updated learnsets to better fit each Pokemon's kit ~
-- Updated [moves](./MOVES.md), [TMs](./AVAILABILITY.md#item-availability), and [weather interactions](./TYPES.md#weather-interactions) ~
+- Updated moves, TMs, and weather interactions ~
 - The Ghost type is special and the Dark type is physical ✓
-- All 251 Pokemon are [available](./AVAILABILITY.md) on a single save ~
+- All 251 Pokemon are on a single save ~
 - New moves and mons for some of the trainer teams ~
 - Select and play as the female protagonist (Kris)
 - Fast text, Stereo sound, and Set battles by default ✓
@@ -22,7 +23,7 @@ However, some changes from Crystal, the Legacy hacks, and the [pret tutorials](h
 - The good rod is good and the super rod is super
 - The "Down + B" trick actually works
 
-These changes are largely untested, so if you run into issues please reach out on X: [@whitgroves](https://x.com/whitgroves)
+A list of completed changes is available [here](./CHANGES.md). These are largely untested, so if you run into issues please reach out on X: [@whitgroves](https://x.com/whitgroves)
 
 ## Why *Gold* Remix?
 Similar to Blue Remix, Gold was the gen 2 game I made memories with, so I decided to go with my favorite.
@@ -42,14 +43,16 @@ To make changes for another repo, copy [ee2.py](./tools/ee2.py) into the root of
 ```
 $ ee2.py -e --matchups
 $ ee2.py -e --moves
-$ ee2.py -e --mon <pokemon name, all lowercase, no spaces>
+$ ee2.py -e --mon   <<pokemon name, all lowercase, no spaces>>
 $ ee2.py -e --all
 ```
-To generate your csv files for editing, then run:
+To generate your csv files (`type_matchups.csv, moves.csv, <pokemon name>.csv`, or all 3, respectively). 
+
+Then run:
 ```
 $ ee2.py -u --matchups
 $ ee2.py -u --moves
-$ ee2.py -u --mon <pokemon name, all lowercase, no spaces>
+$ ee2.py -u --mon   <<pokemon name, all lowercase, no spaces>>
 $ ee2.py -u --all
 ```
 To overwrite the game's assembly files with any of those updates.
@@ -59,7 +62,9 @@ To make changes to this build using `make`:
 ```
 $ git clone https://github.com/whitgroves/pokegold-remix.git
 $ cd pokegold-remix
-$ make edits
+$ make types    <<--matchups>>
+$ make moves    <<--moves>>
+$ make edits    <<--all>>
 << update csv files as desired >>
 $ make updates
 ```
@@ -82,7 +87,7 @@ $ git clone https://github.com/cRz-Shadows/Pokemon_Crystal_Legacy.git
 $ git clone https://github.com/whitgroves/pokegold-remix.git
 $ cd pokegold-remix
 $ tools/ee2.py -e --all -c ./remix/
-$ rm ./remix/moves.csv <removes remix movepool to keep the Legacy move updates>
+$ rm ./remix/moves.csv  <<removes remix movepool to keep the Legacy move updates>>
 $ tools/ee2.py -u --all -c ./remix/ -d ../Pokemon_Crystal_Legacy/data/
 ```
 Alternatively if you just want the updated type chart:

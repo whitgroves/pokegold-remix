@@ -1,0 +1,277 @@
+# Pokémon Gold Remix - Changes
+Listed below are the changes that have been implemented so far:
+- [Type Chart](#type-chart)
+- [Pokémon Changes](#pokémon-changes)
+    - [Types](#types)
+    - [Evolution Methods](#evolution-methods)
+- [Move Updates](#move-updates)
+    - [Damaging Moves](#damaging-moves)
+    - [Always Physical Moves](#always-physical-moves)
+    - [Non-Damaging Moves](#non-damaging-moves)
+    - [TMs](#tms)
+    - [Weather Interactions](#weather-interactions)
+- [Store Updates](#store-updates)
+
+## Type Chart
+The goal here was to rebalance the chart so otherwise "isolated" types (e.g., *Ghost*, *Dark*) feel more interactive while making "weaker" types (e.g. *Bug*) less so by giving them key advantages.
+
+To that end, please pay close attention to *Ice*, *Bug*, *Ghost*, *Dragon*, and *Dark*, as many well-known interactions have changed (e.g., *Ice* resists *Electric*, *Steel* is super effective vs *Dragon*).
+
+|*→Defending→*|NORMAL|FIRE|WATER|ELECTRIC|GRASS|ICE|FIGHTING|POISON|GROUND|FLYING|PSYCHIC|BUG|ROCK|GHOST|DRAGON|DARK|STEEL
+|:--|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+|***↓Attacking↓***|
+NORMAL|||||||||||||0.5|0|||0.5
+FIRE||0.5|0.5||2|2|0.5|||||2|0.5|2|0.5||2
+WATER||2|0.5||0.5|0.5|||2||||2||||
+ELECTRIC|||2|0.5|0.5|0.5|||0|2||2|||0.5|2|2
+GRASS||0.5|2||0.5|||0.5||0.5||0.5|2||||0.5
+ICE|||0.5||2|0.5|0.5||2|2|||||0.5||0.5
+FIGHTING|2|||||2||||0.5|0.5|0.5|2|0.5||2|2
+POISON|||||2|||0.5|0.5|||2|0.5|0.5|2||0
+GROUND||2||2|0.5|||2||0||0.5|2||||2
+FLYING||||0.5|2||2|||||2|0.5||||0.5
+PSYCHIC|||||||2|2|||0.5|0.5|||0.5|0.5|0.5
+BUG||0.5|||2|||||0.5|2||0.5|0.5||2|0.5
+ROCK||2||||2|||0.5|2||2|||||0.5
+GHOST|0||||0.5||0.5||||2|||2||0.5|
+DRAGON|||||||||||2||||2||0.5
+DARK|2||||||0.5||||2|0.5|0.5|||0.5|
+STEEL||0.5|||2|2|0.5||||||2|0.5|2||0.5
+
+## Pokémon Changes
+### Types
+These mons have had their types (and in many cases, learnsets) updated.
+- Bulbasaur, Ivysaur, Venusaur: *Grass/Poison* -> *Grass*
+- Charizard: *Fire/Flying* -> *Fire/Dragon*
+- Blastoise: *Water* -> *Water/Steel*
+- Arbok: *Poison* -> *Poison/Dark*
+- Pikachu: *Electric* -> *Electric/Normal*
+- Raichu: *Electric* -> *Electric/Psychic*
+- Sandshrew: *Ground* -> *Ground/Normal*
+- Sandslash: *Ground* -> *Ground/Steel*
+- Nidoran♀, Nidorina: *Poison* -> *Poison/Fighting*
+- Nidoqueen: *Poison/Ground* -> *Dragon/Fighting*
+- Nidoran♂, Nidorino:  *Poison* -> *Poison/Fighting*
+- Nidoking: *Poison/Ground* -> *Poison/Dragon*
+- Clefairy, Clefable: *Normal* -> *Normal/Psychic*
+- Ninetales: *Fire* -> *Fire/Ghost*
+- Zubat, Golbat: *Poison/Flying* -> *Dark/Flying*
+- Oddish: *Grass/Poison* -> *Grass*
+- Vileplume: *Grass/Poison* -> *Grass/Dark*
+- Parasect: *Bug/Grass* -> *Bug/Ghost*
+- Venonat, Venomoth: *Bug/Poison* -> *Bug/Psychic*
+- Persian: *Normal* -> *Normal/Dark*
+- Golduck: *Water* -> *Water/Psychic*
+- Mankey, Primeape: *Fighting* -> *Fighting/Normal*
+- Growlithe: *Fire* -> *Fire/Normal*
+- Arcanine: *Fire* -> *Fire/Fighting*
+- Poliwag, Poliwhirl: *Water* -> *Water/Normal*
+- Geodude, Graveler, Golem: *Rock/Ground* -> *Rock*
+- Ponyta, Rapidash: *Fire* -> *Fire/Normal*
+- Slowpoke, Slowbro: *Water/Psychic* -> *Poison/Psychic*
+- Farfetch'd: *Normal/Flying* -> *Fighting/Flying*
+- Doduo, Dodrio: *Normal/Flying* -> *Ground/Flying*
+- Seel: *Water* -> *Water/Ice*
+- Muk: *Poison* -> *Poison/Dark*
+- Cloyster: *Water* -> *Water/Steel*
+- Gastly, Haunter: *Ghost/Poison* -> *Ghost*
+- Gengar: *Ghost/Poison* -> *Ghost/Dark*
+- Drowzee, Hypno: *Psychic* -> *Psychic/Dark*
+- Kingler: *Water* -> *Water/Fighting*
+- Exeggcute: *Grass/Psychic* -> *Grass/Normal*
+- Exeggcutor: *Grass/Psychic* -> *Grass/Dragon*
+- Cubone: *Ground* -> *Rock/Normal*
+- Marowak: *Ground* -> *Rock/Ghost*
+- Lickitung: *Normal* -> *Normal/Poison*
+- Koffing, Weezing: *Poison* -> *Poison/Flying*
+- Rhyhorn: *Ground/Rock* -> *Rock/Fighting*
+- Rhydon: *Ground/Rock* -> *Rock/Dragon*
+- Tangela: *Grass* -> *Grass/Ghost*
+- Kangaskhan: *Normal* -> *Normal/Dragon*
+- Seadra: *Water* -> *Water/Dragon*
+- Mr. Mime: *Psychic* -> *Psychic/Normal*
+- Scyther: *Bug/Flying* -> *Bug/Normal*
+- Jynx: *Ice/Psychic* -> *Ice/Ghost*
+- Electabuzz: *Electric* -> *Electric/Fighting*
+- Pinsir: *Bug* -> *Bug/Dark*
+- Tauros: *Normal* -> *Normal/Fighting*
+- Gyarados: *Water* -> *Water/Dragon*
+- Porygon: *Normal* -> *Normal/Ghost*
+- Kabuto, Kabutops: *Rock/Water* -> *Rock/Bug*
+- Bayleef, Meganium: *Grass* -> *Grass/Dragon*
+- Cyndaquil, Quilava, Typhlosion: *Fire* -> *Fire/Normal*
+- Croconaw, Feraligatr: *Water* -> *Water/Dark*
+- Noctowl: *Normal/Flying* -> *Ghost/Flying*
+- Spinarak/Ariados: *Bug/Poison* -> *Bug/Dark*
+- Crobat: *Poison/Flying* -> *Dark/Flying*
+- Pichu: *Electric* -> *Electric/Normal*
+- Togetic: *Normal* -> *Normal/Psychic*
+- Ampharos: *Electric* -> *Electric/Dragon*
+- Marill, Azumarill: *Water* -> *Water/Normal*
+- Sudowoodo: *Rock* -> *Rock/Fighting*
+- Sunflora: *Grass* -> *Grass/Fire*
+- Yanma: *Bug/Flying* -> *Bug/Dragon*
+- Umbreon: *Dark* -> *Ghost*
+- Slowking: *Water/Psychic* -> *Psychic/Dragon*
+- Misdreavus: *Ghost* -> *Ghost/Psychic*
+- Gligar: *Ground/Flying* -> *Poison/Flying*
+- Snubbull, Granbull: *Normal* -> *Normal/Dark*
+- Corsola: *Water/Rock* -> *Water/Ghost*
+- Octillery: *Water* -> *Water/Fire*
+- Donphan: *Ground* -> *Ground/Fighting*
+- Porygon2: *Normal* -> *Normal/Ghost*
+- Smoochum: *Ice/Psychic* -> *Ice*
+- Suicune: *Water* -> *Water/Ice*
+- Larvitar: *Rock/Ground* -> *Dark/Ground*
+- Pupitar: *Rock/Ground* -> *Dark/Rock*
+- Tyranitar: *Rock/Dark* -> *Dark/Dragon*
+- Lugia: *Psychic/Flying* -> *Water/Flying*
+### Evolution Methods
+These mons evolve by new methods in addition to their old ones (e.g., *Nidorina* still evolves by Moon Stone, *Machoke* still evolves by trade).
+- Nidorina -> Nidoqueen: *Happiness*
+- Nidorino -> Nidoking: *Happiness*
+- Gloom -> Vileplume: *Happiness, Night*
+- Gloom -> Bellossom: *Happiness, Day*
+- Poliwhirl -> Politoed: *Happiness*
+- Kadabra -> Alakazam: *Happiness*
+- Machoke -> Machamp: *Happiness*
+- Graveler -> Golem: *Happiness*
+- Slowpoke -> Slowking: *Dragon Scale (use from menu)*
+- Haunter -> Gengar: *Happiness, Night*
+- Onix -> Steelix: *Up-Grade (use from menu)*
+- Seadra -> Kingdra: *Dragon Scale*
+- Scyther -> Scizor: *Up-Grade*
+- Eevee -> Espeon: *Sun Stone*
+- Eevee -> Umbreon: *Moon Stone*
+- Porygon -> Porygon2: *Up-Grade*
+- Togepi -> Togetic: *Sun Stone* -or- *Moon Stone*
+- Sunkern -> Sunflora: *Happiness, Day*
+## Move Updates
+### Damaging Moves
+- Comet Punch: *Normal* -> *Fighting*
+- Mega Punch: *Normal* -> *Fighting*
+- Vicegrip: *Normal* -> *Dark*
+- Guillotine: *Normal* -> *Dark*
+- Razor Wind: *Normal* -> *Flying* | *Charging Move* -> *30% Chance To Flinch* | *75%* -> *100% Accuracy*
+- Cut: *Normal* -> *Bug* | *95%* -> *100% Accuracy*
+- Fly: *95%* -> *100% Accuracy*
+- Vine Whip: *35* -> *40 Power* | *10* -> *20 PP* | [*Always Physical*](#always-physical-moves)
+- Mega Kick: *Normal* -> *Fighting*
+- Rolling Kick: *85%* -> *100% Accuracy*
+- Sand Attack: *100%* -> *80% Accuracy*
+- Horn Attack: *Normal* -> *Dragon* | *No Effect* -> *30% Chance To Flinch* | *65* -> *70 Power* | *25* -> *15 PP* | [*Always Physical*](#always-physical-moves)
+- Fury Attack: *Normal* -> *Dark*
+- Horn Drill: *Normal* -> *Dragon*
+- Tackle: *95%* -> *100% Accuracy*
+- Thrash: *Normal* -> *Dark*
+- Poison Sting: *15* -> *20 Power*
+- Sonicboom: *Normal* -> *Steel* | *Flat Damage* -> *Priority Move* | *20 Damage* -> *40 Power* | *20* -> *30 PP*
+- Blizzard: *10% Chance To Freeze* -> *20% Chance To Freeze*
+- Hyper Beam: *Normal* -> *Dragon*
+- Strength: *Normal* -> *Fighting*
+- Absorb: *20* -> *30 Power* | *20* -> *30 PP*
+- Mega Drain: *40* -> *50 Power* | *10* -> *20 PP*
+- Razor Leaf: *95%* -> *100% Accuracy*
+- Petal Dance: *70* -> *90 Power*
+- Rock Throw: *90%* -> *100% Accuracy*
+- Rage: *Normal* -> *Dark*
+- Night Shade: *Flat Damage* -> *10% Chance To Sleep* | *Damage Equal To User's Level* -> *55 Power*
+- Lick: *30% Chance To Paralyze* -> *Leeches Health On Hit* | *20* -> *30 Power*
+- Smog: *20* -> *30 Power*
+- Bone Club: *Ground* -> *Rock* | *85%* -> *100% Accuracy*
+- Skull Bash: *Normal* -> *Rock* | *Charging Move* -> *30% Chance To Flinch* | *100* -> *70 Power*
+- Spike Cannon: *Normal* -> *Steel*
+- Leech Life: *20* -> *30 Power* | *15* -> *30 PP*
+- Sky Attack: *Charging Move* -> [*Skips Charging Turn Under Sun*](#sun)
+- Dizzy Punch: *Normal* -> *Psychic* | [*Always Physical*](#always-physical-moves)
+- Crabhammer: *85%* -> *100% Accuracy* | [*Always Physical*](#always-physical-moves)
+- Bonemerang: *Ground* -> *Rock* | *90%* -> *100% Accuracy*
+- Rock Slide: *90%* -> *100% Accuracy* | *75* -> *80 Power*
+- Hyper Fang: *90%* -> *100% Accuracy*
+- Tri Attack: *Normal* -> *Dragon*
+- Super Fang: *90%* -> *100% Accuracy*
+- Triple Kick: *90%* -> *100% Accuracy*
+- Aeroblast: *95%* -> *100% Accuracy*
+- Mud-Slap: *100% Chance To Lower Accuracy* -> *50% Chance To Lower Accuracy*
+- Octazooka: *85%* -> *100% Accuracy*
+- Icy Wind: *100% Chance To Lower Speed* -> *50% Chance To Lower Speed* | *95%* -> *100% Accuracy*
+- Bone Rush: *Ground* -> *Rock*
+- Giga Drain: *60* -> *80 Power* | *5* -> *10 PP*
+- Frustration: *Normal* -> *Dark*
+- Sacred Fire: *95%* -> *100% Accuracy*
+- Dragonbreath: *30% Chance To Paralyze* -> *20% Chance To Lower Special Defense*
+- Iron Tail: *75%* -> *90% Accuracy*
+- Metal Claw: *95%* -> *100% Accuracy*
+- Crunch: *20% Chance To Lower Special Defense* -> *30% Chance To Paralyze*
+### Always Physical Moves
+These moves are special, but their damage is always treated as physical.
+- Fire Punch
+- Ice Punch
+- Thunderpunch
+- Clamp
+- Waterfall
+- Dizzy Punch
+- Crabhammer
+- Vine Whip
+- Horn Attack
+- Outrage
+
+As a side note, all *Ghost* moves are now special and all *Dark* moves are now physical.
+### Non-Damaging Moves
+These moves had their types changed for flavor only; however, this can impact the AI's choices.
+- Whirlwind: *Normal* -> *Flying*
+- Agility: *Psychic* -> *Normal*
+- Glare: *Normal* -> *Dark*
+- Lovely Kiss: *Normal* -> *Dark*
+- Flash: *Normal* -> *Electric*
+- Splash: *Normal* -> *Water*
+- Perish Song: *Normal* -> *Ghost*
+- Pain Split: *Normal* -> *Ghost*
+- Psych Up: *Normal* -> *Psychic*
+### TMs
+These TMs have been reassigned, with the original moves now appearing on several learnsets. Except for TM09, they are available in their same locations.
+- TM05: *Roar* -> *Sonicboom*
+- TM07: *Zap Cannon* -> *Thunderbolt*
+- TM09: *Psych Up* -> *Metal Claw*
+- TM16: *Icy Wind* -> *Ice Beam*
+- TM20: *Endure* -> *Tri Attack*
+- TM31: *Mud Slap* -> *Razor Wind*
+- TM32: *Double Team* -> *Flamethrower*
+### Weather Interactions
+Weathers cause new interactions in addition to their old ones (e.g., Rain boosting *Water* moves, *Solarbeam* skipping a turn in Sun).
+#### Rain
+- *Ice*, *Grass*, and *Electric* moves are more effective
+- *Ground* and *Flying* moves are less effective
+- Moves that fail to inflict the *Freeze* status get a 10% reroll to inflict status
+- The *Burn* status can be inflicted, but has a 90% chance to fail on hit
+#### Sun
+- *Grass* and *Flying* moves are more effective
+- *Ice* and *Ghost* moves are less effective
+- Moves that fail to inflict the *Burn* status get a 10% reroll to inflict status
+- The *Freeze* status can be inflicted, but has a 90% chance to fail on hit
+- *Sky Attack* skips its charging turn, similar to *Solarbeam*
+- Changed battle text to make certain move interactions (e.g., *Moonlight*) less confusing
+#### Sand
+- *Rock*, *Ground*, and *Dark* moves are more effective
+- *Grass*, *Flying*, and *Electric* moves are less effective
+- *Dragon* Pokemon are immune to Sandstorm
+- *Solarbeam* behaves as if under Rain
+- *Thunder* behaves as if under Sun
+### Miscellaneous
+- *Fire*-type moves can no longer defrost through *Safeguard*
+
+## Store updates
+Several of the stores have been updated to make certain TMs and evolution items more available.
+### Goldenrod Dept. Store
+- TM09 Metal Claw
+- TM39 Swift -*Available after receiving TM02 Headbutt in Ilex Forest*
+- TM28 Dig -*Available after receiving TM08 Rock Smash on Route 36*
+### Mahogany Mart (post Rocket Hideout)
+- Leaf Stone
+- Fire Stone
+- Water Stone
+- Thunderstone
+- Moon Stone
+- Sun Stone
+- Dragon Scale
+- Up-Grade

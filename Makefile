@@ -111,6 +111,12 @@ compare: $(roms) $(patches)
 tools:
 	$(MAKE) -C tools/
 
+types:
+	$(PY) tools/ee2.py -e -c $(EASY) --matchups
+
+moves:
+	$(PY) tools/ee2.py -e -c $(EASY) --moves
+
 edits:
 	$(PY) tools/ee2.py -e -c $(EASY) --all
 
