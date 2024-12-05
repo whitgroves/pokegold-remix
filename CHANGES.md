@@ -229,7 +229,7 @@ These moves had their types changed for flavor only; however, this can impact th
 - Pain Split: *Normal* -> *Ghost*
 - Psych Up: *Normal* -> *Psychic*
 ### TMs
-These TMs have been reassigned, with the original moves now appearing on several learnsets. Except for TM09, they are available in their same locations.
+These TMs have been reassigned. Except for TM09, they are available in their same locations.
 - TM05: *Roar* -> *Sonicboom*
 - TM07: *Zap Cannon* -> *Thunderbolt*
 - TM09: *Psych Up* -> *Metal Claw*
@@ -237,6 +237,8 @@ These TMs have been reassigned, with the original moves now appearing on several
 - TM20: *Endure* -> *Tri Attack*
 - TM31: *Mud Slap* -> *Razor Wind*
 - TM32: *Double Team* -> *Flamethrower*
+
+The original moves can still be learned by level-up on mons that could learn it by TM or otherwise fit the theming (e.g., *Dragon* and "dog" pokemon get *Roar*).
 ### Weather Interactions
 Weathers cause new interactions in addition to their old ones (e.g., Rain boosting *Water* moves, *Solarbeam* skipping a turn in Sun).
 #### Rain
