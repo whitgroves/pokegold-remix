@@ -857,11 +857,16 @@ PoliwhirlEvosAttacks:
 PoliwrathEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, WATER_GUN
-	db 1, HYPNOSIS
-	db 1, DOUBLESLAP
+	db 1, MIND_READER
+	db 1, KARATE_CHOP
 	db 1, SUBMISSION
+	db 7, MIND_READER
+	db 13, WATER_GUN
+	db 19, KARATE_CHOP
+	db 27, RAIN_DANCE
 	db 35, SUBMISSION
-	db 51, MIND_READER
+	db 43, BELLY_DRUM
+	db 51, CROSS_CHOP
 	db 0 ; no more level-up moves
 
 AbraEvosAttacks:
@@ -1279,24 +1284,29 @@ MukEvosAttacks:
 ShellderEvosAttacks:
 	db EVOLVE_ITEM, WATER_STONE, CLOYSTER
 	db 0 ; no more evolutions
-	db 1, TACKLE
+	db 1, BUBBLE
 	db 1, WITHDRAW
 	db 9, SUPERSONIC
-	db 17, AURORA_BEAM
-	db 25, PROTECT
-	db 33, LEER
-	db 41, CLAMP
-	db 49, ICE_BEAM
+	db 17, BUBBLEBEAM
+	db 25, AURORA_BEAM
+	db 33, CLAMP
+	db 41, PROTECT
+	db 47, RAIN_DANCE
+	db 52, ICE_BEAM
 	db 0 ; no more level-up moves
 
 CloysterEvosAttacks:
 	db 0 ; no more evolutions
+	db 1, BUBBLEBEAM
 	db 1, WITHDRAW
-	db 1, SUPERSONIC
-	db 1, AURORA_BEAM
+	db 1, CLAMP
 	db 1, PROTECT
-	db 33, SPIKES
-	db 41, SPIKE_CANNON
+	db 17, BUBBLEBEAM
+	db 25, SPIKES
+	db 33, CLAMP
+	db 41, PROTECT
+	db 47, SPIKE_CANNON
+	db 52, CRUNCH
 	db 0 ; no more level-up moves
 
 GastlyEvosAttacks:
@@ -1396,10 +1406,12 @@ KrabbyEvosAttacks:
 	db 5, LEER
 	db 12, VICEGRIP
 	db 16, HARDEN
-	db 23, STOMP
-	db 27, GUILLOTINE
-	db 34, PROTECT
-	db 41, CRABHAMMER
+	db 23, ROCK_SMASH
+	db 27, CRABHAMMER
+	db 31, REVERSAL
+	db 39, CLAMP
+	db 44, GUILLOTINE
+	db 50, RAIN_DANCE
 	db 0 ; no more level-up moves
 
 KinglerEvosAttacks:
@@ -1410,10 +1422,12 @@ KinglerEvosAttacks:
 	db 5, LEER
 	db 12, VICEGRIP
 	db 16, HARDEN
-	db 23, STOMP
-	db 27, GUILLOTINE
-	db 38, PROTECT
-	db 49, CRABHAMMER
+	db 23, ROCK_SMASH
+	db 27, CRABHAMMER
+	db 36, REVERSAL
+	db 43, CLAMP
+	db 51, GUILLOTINE
+	db 60, RAIN_DANCE
 	db 0 ; no more level-up moves
 
 VoltorbEvosAttacks:
