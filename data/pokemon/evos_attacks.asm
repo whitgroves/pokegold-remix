@@ -1116,6 +1116,7 @@ MagnemiteEvosAttacks:
 	db 16, SONICBOOM
 	db 21, THUNDER_WAVE
 	db 27, LOCK_ON
+	db 30, THUNDERBOLT
 	db 33, SWIFT
 	db 39, SCREECH
 	db 45, ZAP_CANNON
@@ -1317,11 +1318,12 @@ OnixEvosAttacks:
 	db EVOLVE_TRADE, METAL_COAT, STEELIX
 	db EVOLVE_ITEM, UP_GRADE, STEELIX
 	db 0 ; no more evolutions
-	db 1, TACKLE
 	db 1, SCREECH
+	db 1, TACKLE
+	db 1, HARDEN
 	db 10, BIND
 	db 14, ROCK_THROW
-	db 23, HARDEN
+	db 23, DIG
 	db 27, RAGE
 	db 31, ROAR
 	db 36, SANDSTORM
@@ -2911,11 +2913,12 @@ GligarEvosAttacks:
 
 SteelixEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, TACKLE
 	db 1, SCREECH
+	db 1, TACKLE
+	db 1, HARDEN
 	db 10, BIND
 	db 14, ROCK_THROW
-	db 23, HARDEN
+	db 23, DIG
 	db 27, RAGE
 	db 31, ROAR
 	db 36, SANDSTORM
