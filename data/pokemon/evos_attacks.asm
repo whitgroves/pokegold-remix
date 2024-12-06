@@ -1801,10 +1801,10 @@ ElectabuzzEvosAttacks:
 	db 1, LEER
 	db 1, THUNDERPUNCH
 	db 9, THUNDERPUNCH
-	db 17, LIGHT_SCREEN
-	db 25, SWIFT
-	db 36, SCREECH
-	db 47, THUNDERBOLT
+	db 17, ROCK_SMASH
+	db 25, MACH_PUNCH
+	db 36, THUNDERBOLT
+	db 47, DYNAMICPUNCH
 	db 58, THUNDER
 	db 0 ; no more level-up moves
 
@@ -3211,14 +3211,14 @@ DelibirdEvosAttacks:
 
 MantineEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, TACKLE
-	db 1, BUBBLE
+	db 1, WATER_GUN
+	db 1, SLAM
 	db 10, SUPERSONIC
-	db 18, BUBBLEBEAM
-	db 25, WING_ATTACK
+	db 18, WING_ATTACK
+	db 25, BUBBLEBEAM
 	db 32, AGILITY
 	db 40, RAZOR_WIND
-	db 49, TAKE_DOWN
+	db 49, ICE_BEAM
 	db 0 ; no more level-up moves
 
 SkarmoryEvosAttacks:
@@ -3382,10 +3382,10 @@ ElekidEvosAttacks:
 	db 1, QUICK_ATTACK
 	db 1, LEER
 	db 9, THUNDERPUNCH
-	db 17, LIGHT_SCREEN
+	db 17, POUND
 	db 25, SWIFT
-	db 33, SCREECH
-	db 41, THUNDERBOLT
+	db 33, THUNDERBOLT
+	db 41, TAKE_DOWN
 	db 49, THUNDER
 	db 0 ; no more level-up moves
 
