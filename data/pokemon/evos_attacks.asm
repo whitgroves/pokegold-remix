@@ -1302,10 +1302,10 @@ CloysterEvosAttacks:
 	db 1, CLAMP
 	db 1, PROTECT
 	db 17, BUBBLEBEAM
-	db 25, SPIKES
+	db 25, SPIKE_CANNON
 	db 33, CLAMP
 	db 41, PROTECT
-	db 47, SPIKE_CANNON
+	db 47, SPIKES
 	db 52, CRUNCH
 	db 0 ; no more level-up moves
 
@@ -1830,7 +1830,7 @@ PinsirEvosAttacks:
 	db 7, FOCUS_ENERGY
 	db 13, BIND
 	db 19, SEISMIC_TOSS
-	db 25, HARDEN
+	db 25, CLAMP
 	db 31, GUILLOTINE
 	db 37, SUBMISSION
 	db 43, SWORDS_DANCE
