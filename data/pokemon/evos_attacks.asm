@@ -3174,28 +3174,31 @@ CorsolaEvosAttacks:
 RemoraidEvosAttacks:
 	db EVOLVE_LEVEL, 25, OCTILLERY
 	db 0 ; no more evolutions
+	db 1, BARRAGE
 	db 1, WATER_GUN
 	db 11, LOCK_ON
 	db 22, PSYBEAM
 	db 22, AURORA_BEAM
 	db 22, BUBBLEBEAM
-	db 33, FOCUS_ENERGY
+	db 33, SPIKE_CANNON
 	db 44, ICE_BEAM
 	db 55, HYPER_BEAM
 	db 0 ; no more level-up moves
 
 OctilleryEvosAttacks:
 	db 0 ; no more evolutions
+	db 1, BARRAGE
 	db 1, WATER_GUN
-	db 11, CONSTRICT
+	db 11, LOCK_ON
 	db 22, PSYBEAM
 	db 22, AURORA_BEAM
 	db 22, BUBBLEBEAM
 	db 25, OCTAZOOKA
-	db 38, LOCK_ON
-	db 54, ICE_BEAM
-	db 68, ZAP_CANNON
-	db 70, HYPER_BEAM
+	db 33, FLAMETHROWER
+	db 44, SPIKE_CANNON
+	db 55, ICE_BEAM
+	db 66, HYPER_BEAM
+	db 77, ZAP_CANNON
 	db 0 ; no more level-up moves
 
 DelibirdEvosAttacks:
