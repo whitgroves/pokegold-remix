@@ -540,11 +540,11 @@ BirdKeeperGroup:
 
 	; BIRD_KEEPER (4)
 	db "THEO@", TRAINERTYPE_NORMAL
-	db 17, PIDGEY
 	db 15, PIDGEY
-	db 19, PIDGEY
-	db 15, PIDGEY
-	db 15, PIDGEY
+	db 15, SPEAROW
+	db 17, MURKROW
+	db 15, DELIBIRD
+	db 19, DODUO
 	db -1 ; end
 
 	; BIRD_KEEPER (5)
@@ -556,9 +556,9 @@ BirdKeeperGroup:
 
 	; BIRD_KEEPER (6)
 	db "DENIS@", TRAINERTYPE_NORMAL
-	db 18, SPEAROW
+	db 18, PIDGEOTTO
+	db 19, SKARMORY
 	db 20, FEAROW
-	db 18, SPEAROW
 	db -1 ; end
 
 	; BIRD_KEEPER (7)
@@ -664,7 +664,7 @@ LassGroup:
 
 	; LASS (5)
 	db "CONNIE@", TRAINERTYPE_NORMAL
-	db 21, MARILL
+	db 21, AZUMARILL
 	db -1 ; end
 
 	; LASS (6)
@@ -709,12 +709,12 @@ LassGroup:
 
 	; LASS (12)
 	db "CONNIE@", TRAINERTYPE_NORMAL
-	db 21, MARILL
+	db 21, AZUMARILL
 	db -1 ; end
 
 	; LASS (13)
 	db "CONNIE@", TRAINERTYPE_NORMAL
-	db 21, MARILL
+	db 21, AZUMARILL
 	db -1 ; end
 
 	; LASS (14)
@@ -1348,7 +1348,7 @@ GentlemanGroup:
 	; GENTLEMAN (1)
 	db "PRESTON@", TRAINERTYPE_NORMAL
 	db 18, GROWLITHE
-	db 18, GROWLITHE
+	db 19, RHYHORN
 	db -1 ; end
 
 	; GENTLEMAN (2)
@@ -1906,25 +1906,25 @@ SailorGroup:
 	; SAILOR (2)
 	db "HUEY@", TRAINERTYPE_NORMAL
 	db 18, POLIWAG
-	db 18, POLIWHIRL
+	db 18, KRABBY
 	db -1 ; end
 
 	; SAILOR (3)
 	db "TERRELL@", TRAINERTYPE_NORMAL
-	db 20, POLIWHIRL
+	db 20, WARTORTLE
 	db -1 ; end
 
 	; SAILOR (4)
-	db "KENT@", TRAINERTYPE_MOVES
-	db 18, KRABBY,     BUBBLE, LEER, VICEGRIP, HARDEN
-	db 20, KRABBY,     BUBBLEBEAM, LEER, VICEGRIP, HARDEN
+	db "KENT@", TRAINERTYPE_NORMAL
+	db 18, KRABBY
+	db 20, TENTACOOL
 	db -1 ; end
 
 	; SAILOR (5)
-	db "ERNEST@", TRAINERTYPE_NORMAL
-	db 18, MACHOP
-	db 18, MACHOP
-	db 18, POLIWHIRL
+	db "ERNEST@", TRAINERTYPE_MOVES
+	db 18, MACHOP, 		FIRE_PUNCH, KARATE_CHOP, FOCUS_ENERGY, LEER
+	db 18, ELECTABUZZ, 	THUNDERPUNCH, QUICK_ATTACK, ROCK_SMASH, LEER
+	db 20, QUAGSIRE, 	WATER_GUN, MUD_SLAP, SLAM, TAIL_WHIP
 	db -1 ; end
 
 	; SAILOR (6)
@@ -1960,15 +1960,15 @@ SailorGroup:
 	db -1 ; end
 
 	; SAILOR (11)
-	db "HUEY@", TRAINERTYPE_NORMAL
+	db "HUEY@", TRAINERTYPE_NORMAL ; rematch post Radio Tower
 	db 28, POLIWHIRL
-	db 28, POLIWHIRL
+	db 28, KINGLER
 	db -1 ; end
 
 	; SAILOR (12)
-	db "HUEY@", TRAINERTYPE_NORMAL
-	db 34, POLIWHIRL
+	db "HUEY@", TRAINERTYPE_NORMAL ; rematch post E4
 	db 34, POLIWRATH
+	db 36, KINGLER
 	db -1 ; end
 
 SuperNerdGroup:
