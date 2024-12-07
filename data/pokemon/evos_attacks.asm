@@ -816,9 +816,6 @@ PoliwhirlEvosAttacks:
 
 PoliwrathEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, WATER_GUN
-	db 1, MIND_READER
-	db 1, KARATE_CHOP
 	db 1, SUBMISSION
 	db 7, MIND_READER
 	db 13, WATER_GUN
