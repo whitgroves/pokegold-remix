@@ -62,7 +62,8 @@ These mons have had their types (and in many cases, learnsets) updated.
 - Venonat, Venomoth: *Bug/Poison* -> *Bug/Psychic*
 - Persian: *Normal* -> *Normal/Dark*
 - Golduck: *Water* -> *Water/Psychic*
-- Mankey, Primeape: *Fighting* -> *Fighting/Normal*
+- Mankey: *Fighting* -> *Fighting/Normal*
+- Primeape: *Fighting* -> *Fighting/Dark*
 - Growlithe: *Fire* -> *Fire/Normal*
 - Arcanine: *Fire* -> *Fire/Fighting*
 - Poliwag, Poliwhirl: *Water* -> *Water/Normal*
@@ -177,6 +178,7 @@ These mons evolve by new methods in addition to their old ones (e.g., *Nidorina*
 - Razor Leaf: *95%* -> *100% Accuracy*
 - Petal Dance: *70* -> *90 Power*
 - Rock Throw: *90%* -> *100% Accuracy*
+- Dig: *10* -> *15 PP*
 - Rage: *Normal* -> *Dark*
 - Night Shade: *Flat Damage* -> *10% Chance To Sleep* | *Damage Equal To User's Level* -> *55 Power*
 - Lick: *30% Chance To Paralyze* -> *Leeches Health On Hit* | *20* -> *30 Power*
@@ -187,7 +189,6 @@ These mons evolve by new methods in addition to their old ones (e.g., *Nidorina*
 - Leech Life: *20* -> *30 Power* | *15* -> *30 PP*
 - Sky Attack: *Charging Move* -> [*Skips Charging Turn Under Sun*](#sun)
 - Dizzy Punch: *Normal* -> *Psychic* | [*Always Physical*](#always-physical-moves)
-- Crabhammer: *85%* -> *100% Accuracy* | [*Always Physical*](#always-physical-moves)
 - Bonemerang: *Ground* -> *Rock* | *90%* -> *100% Accuracy*
 - Rock Slide: *90%* -> *100% Accuracy* | *75* -> *80 Power*
 - Hyper Fang: *90%* -> *100% Accuracy*
