@@ -3140,8 +3140,8 @@ RemoraidEvosAttacks:
 	db 22, PSYBEAM
 	db 22, AURORA_BEAM
 	db 22, BUBBLEBEAM
-	db 33, SPIKE_CANNON
-	db 44, ICE_BEAM
+	db 33, ICE_BEAM
+	db 44, HYDRO_PUMP
 	db 55, HYPER_BEAM
 	db 0 ; no more level-up moves
 
@@ -3154,11 +3154,15 @@ OctilleryEvosAttacks:
 	db 22, AURORA_BEAM
 	db 22, BUBBLEBEAM
 	db 25, OCTAZOOKA
-	db 33, FLAMETHROWER
-	db 44, SPIKE_CANNON
-	db 55, ICE_BEAM
-	db 66, HYPER_BEAM
+	db 25, FLAMETHROWER
+	db 33, SPIKE_CANNON
+	db 44, ICE_BEAM
+	db 55, THUNDERBOLT
+	db 66, TRI_ATTACK
+	db 77, FIRE_BLAST
+	db 77, HYDRO_PUMP
 	db 77, ZAP_CANNON
+	db 77, HYPER_BEAM
 	db 0 ; no more level-up moves
 
 DelibirdEvosAttacks:
