@@ -104,7 +104,7 @@ Moves:
 	move ROCK_THROW,   EFFECT_NORMAL_HIT,         50, ROCK,         100, 15,   0
 	move EARTHQUAKE,   EFFECT_EARTHQUAKE,        100, GROUND,       100, 10,   0
 	move FISSURE,      EFFECT_OHKO,                1, GROUND,        30,  5,   0
-	move DIG,          EFFECT_FLY,                60, GROUND,       100, 10,   0
+	move DIG,          EFFECT_FLY,                60, GROUND,       100, 15,   0
 	move TOXIC,        EFFECT_TOXIC,               0, POISON,        85, 10,   0
 	move CONFUSION,    EFFECT_CONFUSE_HIT,        50, PSYCHIC_TYPE, 100, 25,  10
 	move PSYCHIC_M,    EFFECT_SP_DEF_DOWN_HIT,    90, PSYCHIC_TYPE, 100, 10,  10
@@ -165,7 +165,7 @@ Moves:
 	move PSYWAVE,      EFFECT_PSYWAVE,             1, PSYCHIC_TYPE,  80, 15,   0
 	move SPLASH,       EFFECT_SPLASH,              0, WATER,        100, 40,   0
 	move ACID_ARMOR,   EFFECT_DEFENSE_UP_2,        0, POISON,       100, 40,   0
-	move CRABHAMMER,   EFFECT_NORMAL_HIT,         90, WATER,        100, 10,   0
+	move CRABHAMMER,   EFFECT_NORMAL_HIT,         90, WATER,         85, 10,   0
 	move EXPLOSION,    EFFECT_SELFDESTRUCT,      250, NORMAL,       100,  5,   0
 	move FURY_SWIPES,  EFFECT_MULTI_HIT,          18, NORMAL,        80, 15,   0
 	move BONEMERANG,   EFFECT_DOUBLE_HIT,         50, ROCK,         100, 10,   0

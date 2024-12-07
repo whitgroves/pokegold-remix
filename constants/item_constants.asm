@@ -260,15 +260,15 @@ DEF TM01 EQU const_value
 	add_tm SWIFT        ; e7
 	add_tm DEFENSE_CURL ; e8
 	add_tm THUNDERPUNCH ; e9
-	add_tm DREAM_EATER  ; ea (TODO: consider changing to TRI ATTACK, TELEPORT, CRUNCH, or PURSUIT) TM42
-	add_tm DETECT       ; eb (TODO: consider changing to TRI ATTACK, TELEPORT, CRUNCH, or PURSUIT) TM43
+	add_tm DREAM_EATER  ; ea
+	add_tm DETECT       ; eb (TODO: consider changing to ROCK_SLIDE, TELEPORT, CRUNCH, or PURSUIT) TM43
 	add_tm REST         ; ec
 	add_tm ATTRACT      ; ed
 	add_tm THIEF        ; ee
-	add_tm STEEL_WING   ; ef (TODO: consider changing out) TM47
+	add_tm STEEL_WING   ; ef
 	add_tm FIRE_PUNCH   ; f0
 	add_tm FURY_CUTTER  ; f1
-	add_tm NIGHTMARE    ; f2 (TODO: consider changing to TRI_ATTACK, TELEPORT, CRUNCH, or PURSUIT) TM50
+	add_tm NIGHTMARE    ; f2 (TODO: consider changing to ROCK_SLIDE, TELEPORT, CRUNCH, or PURSUIT) TM50
 DEF NUM_TMS EQU __tmhm_value__ - 1
 
 MACRO add_hm
