@@ -316,16 +316,16 @@ GuillotineDescription:
 	next "pincer attack.@"
 
 RazorWindDescription:
-	db   "1st turn: Prepare"
-	next "2nd turn: Attack@"
+	db   "An attack that may"
+	next "flinch or crit.@"
 
 SwordsDanceDescription:
 	db   "A dance that in-"
 	next "creases ATTACK.@"
 
 CutDescription:
-	db   "Cuts using claws,"
-	next "scythes, etc.@"
+	db   "Cuts at the foe."
+	next "Likely to crit.@"
 
 GustDescription:
 	db   "Whips up a strong"
@@ -384,8 +384,8 @@ HeadbuttDescription:
 	next "make foe flinch.@"
 
 HornAttackDescription:
-	db   "An attack using a"
-	next "horn to jab.@"
+	db   "An attack that may"
+	next "make foe flinch.@"
 
 FuryAttackDescription:
 	db   "Jabs the target"
@@ -460,8 +460,8 @@ SupersonicDescription:
 	next "cause confusion.@"
 
 SonicboomDescription:
-	db   "Always inflicts"
-	next "20HP damage.@"
+	db   "Strikes first with"
+	next "a sound wave.@"
 
 DisableDescription:
 	db   "Disables the foe's"
@@ -668,8 +668,8 @@ TeleportDescription:
 	next "from battle.@"
 
 NightShadeDescription:
-	db   "The user's level"
-	next "equals damage HP.@"
+	db   "May cause foes"
+	next "to fall asleep.@"
 
 MimicDescription:
 	db   "Copies a move used"
@@ -752,8 +752,8 @@ EggBombDescription:
 	next "the foe.@"
 
 LickDescription:
-	db   "An attack that may"
-	next "cause paralysis.@"
+	db   "Steals the enemy's"
+	next "life force.@"
 
 SmogDescription:
 	db   "An attack that may"
@@ -784,8 +784,8 @@ SwiftDescription:
 	next "never misses.@"
 
 SkullBashDescription:
-	db   "1st turn: Prepare"
-	next "2nd turn: Attack@"
+	db   "An attack that may"
+	next "cause flinching.@"
 
 SpikeCannonDescription:
 	db   "Fires spikes to"
@@ -1049,7 +1049,7 @@ PerishSongDescription:
 
 IcyWindDescription:
 	db   "An icy attack that"
-	next "lowers SPEED.@"
+	next "may lower SPEED.@"
 
 DetectDescription:
 	db   "Evades attack that"
@@ -1164,8 +1164,8 @@ MegahornDescription:
 	next "attack.@"
 
 DragonbreathDescription:
-	db   "A strong breath"
-	next "attack.@"
+	db   "A breath attack of"
+	next "mystical energy.@"
 
 BatonPassDescription:
 	db   "Switches while"
@@ -1232,8 +1232,8 @@ SunnyDayDescription:
 	next "moves for 5 turns.@"
 
 CrunchDescription:
-	db   "An attack that may"
-	next "lower SPCL.DEF.@"
+	db   "A brutal attack."
+	next "May paralyze.@"
 
 MirrorCoatDescription:
 	db   "Counters a SPCL."

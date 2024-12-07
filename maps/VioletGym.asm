@@ -183,8 +183,8 @@ FalknerTMMudSlapText:
 	para "It can make the"
 	line "enemy flinch"
 
-	para "when it causes"
-	line "damage."
+	para "and is likely to"
+	line "critically hit."
 
 	para "In other words, it"
 	line "is both defensive"
