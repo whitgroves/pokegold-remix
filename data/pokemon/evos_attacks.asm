@@ -3193,7 +3193,7 @@ SkarmoryEvosAttacks:
 	db 1, LEER
 	db 1, PECK
 	db 13, SAND_ATTACK
-	db 19, SWIFT
+	db 19, SONICBOOM
 	db 25, AGILITY
 	db 37, STEEL_WING
 	db 49, RAZOR_WIND
@@ -3205,9 +3205,9 @@ HoundourEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, LEER
 	db 1, EMBER
-	db 7, ROAR
-	db 13, SMOG
-	db 20, BITE
+	db 7, SMOG
+	db 13, BITE
+	db 20, ROAR
 	db 27, FAINT_ATTACK
 	db 35, FLAMETHROWER
 	db 43, CRUNCH
@@ -3217,9 +3217,9 @@ HoundoomEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, LEER
 	db 1, EMBER
-	db 7, ROAR
-	db 13, SMOG
-	db 20, BITE
+	db 7, SMOG
+	db 13, BITE
+	db 20, ROAR
 	db 30, FAINT_ATTACK
 	db 41, FLAMETHROWER
 	db 52, CRUNCH
