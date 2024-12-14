@@ -1100,8 +1100,8 @@ PokemaniacGroup:
 
 	; POKEMANIAC (4)
 	db "SHANE@", TRAINERTYPE_NORMAL
-	db 16, NIDORINA
-	db 16, NIDORINO
+	db 19, NIDORINA
+	db 19, NIDORINO
 	db -1 ; end
 
 	; POKEMANIAC (5)
@@ -1543,7 +1543,7 @@ FisherGroup:
 
 	; FISHER (7)
 	db "CHRIS@", TRAINERTYPE_NORMAL
-	db 18, QWILFISH
+	db 18, CHINCHOU
 	db -1 ; end
 
 	; FISHER (8)
@@ -1615,15 +1615,16 @@ FisherGroup:
 	db -1 ; end
 
 	; FISHER (18)
-	db "CHRIS@", TRAINERTYPE_NORMAL
-	db 23, QWILFISH
+	db "CHRIS@", TRAINERTYPE_NORMAL ; rematch post Radio Tower
+	db 18, MAGIKARP
+	db 25, CHINCHOU
 	db -1 ; end
 
 	; FISHER (19)
-	db "CHRIS@", TRAINERTYPE_NORMAL
-	db 32, GOLDEEN
-	db 32, GOLDEEN
-	db 34, QWILFISH
+	db "CHRIS@", TRAINERTYPE_NORMAL ; rematch post E4
+	db 31, QWILFISH
+	db 33, LANTURN
+	db 35, GYARADOS
 	db -1 ; end
 
 	; FISHER (20)
@@ -2156,9 +2157,9 @@ HikerGroup:
 
 	; HIKER (6)
 	db "BENJAMIN@", TRAINERTYPE_NORMAL
-	db 14, DIGLETT
-	db 14, GEODUDE
-	db 16, DUGTRIO
+	db 14, CUBONE
+	db 15, ZUBAT
+	db 16, GEODUDE
 	db -1 ; end
 
 	; HIKER (7)
