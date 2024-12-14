@@ -495,10 +495,13 @@ VulpixEvosAttacks:
 NinetalesEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, EMBER
-	db 1, QUICK_ATTACK
-	db 1, CONFUSE_RAY
-	db 1, SAFEGUARD
-	db 43, FIRE_SPIN
+	db 1, TAIL_WHIP
+	db 7, SPITE
+	db 13, CURSE
+	db 19, CONFUSE_RAY
+	db 25, NIGHT_SHADE
+	db 31, FLAMETHROWER
+	db 44, SHADOW_BALL
 	db 0 ; no more level-up moves
 
 JigglypuffEvosAttacks:
