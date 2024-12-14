@@ -1815,29 +1815,29 @@ JohtoGrassWildMons:
 	def_grass_wildmons ROUTE_43
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 15, FLAAFFY
+	db 14, MAREEP
+	db 18, SKIPLOOM
 	db 15, GIRAFARIG
-	db 17, PIDGEOTTO
-	db 15, MAREEP
-	db 16, VENONAT
-	db 17, PIDGEOTTO
-	db 17, PIDGEOTTO
+	db 15, FLAAFFY
+	db 17, SPINARAK
+	db 16, SKARMORY
+	db 15, CHANSEY
 	; day
-	db 15, FLAAFFY
+	db 14, MAREEP
+	db 18, SKIPLOOM
 	db 15, GIRAFARIG
-	db 17, PIDGEOTTO
-	db 15, MAREEP
-	db 17, FLAAFFY
-	db 17, FLAAFFY
-	db 17, FLAAFFY
+	db 15, FLAAFFY
+	db 17, SPINARAK
+	db 16, SKARMORY
+	db 15, CHANSEY
 	; nite
-	db 15, FLAAFFY
+	db 17, SPINARAK
 	db 15, GIRAFARIG
-	db 17, NOCTOWL
-	db 16, VENONAT
-	db 15, MAREEP
-	db 16, VENONAT
-	db 16, VENONAT
+	db 18, SKIPLOOM
+	db 14, MAREEP
+	db 15, FLAAFFY
+	db 16, SKARMORY
+	db 15, CHANSEY
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_44

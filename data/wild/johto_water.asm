@@ -179,9 +179,9 @@ JohtoWaterWildMons:
 
 	def_water_wildmons ROUTE_43
 	db 2 percent ; encounter rate
-	db 20, MAGIKARP
 	db 15, MAGIKARP
-	db 10, MAGIKARP
+	db 18, MAGIKARP
+	db 13, MAGIKARP
 	end_water_wildmons
 
 	def_water_wildmons ROUTE_44
@@ -243,8 +243,8 @@ JohtoWaterWildMons:
 	def_water_wildmons LAKE_OF_RAGE
 	db 4 percent ; encounter rate
 	db 15, MAGIKARP
-	db 10, MAGIKARP
-	db 15, GYARADOS
+	db 18, MAGIKARP
+	db 20, GYARADOS
 	end_water_wildmons
 
 	def_water_wildmons BLACKTHORN_CITY
