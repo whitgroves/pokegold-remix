@@ -431,7 +431,7 @@ JohtoGrassWildMons:
 	db 6, WOOPER
 	db 7, ONIX
 	db 8, PARAS
-	db 5, TYROGUE
+	db 6, DIGLETT
 	; day
 	db 8, ZUBAT
 	db 8, GEODUDE
@@ -439,7 +439,7 @@ JohtoGrassWildMons:
 	db 6, WOOPER
 	db 7, ONIX
 	db 8, PARAS
-	db 5, TYROGUE
+	db 6, DIGLETT
 	; nite
 	db 8, ZUBAT
 	db 8, GEODUDE
@@ -447,7 +447,7 @@ JohtoGrassWildMons:
 	db 6, WOOPER
 	db 7, ONIX
 	db 8, PARAS
-	db 5, TYROGUE
+	db 6, DIGLETT
 	end_grass_wildmons
 
 	def_grass_wildmons UNION_CAVE_B1F
@@ -458,7 +458,7 @@ JohtoGrassWildMons:
 	db 6, DIGLETT
 	db 7, ONIX
 	db 8, PARAS
-	db 5, TYROGUE
+	db 6, WOOPER
 	; day
 	db 8, ZUBAT
 	db 8, GEODUDE
@@ -466,7 +466,7 @@ JohtoGrassWildMons:
 	db 6, DIGLETT
 	db 7, ONIX
 	db 8, PARAS
-	db 5, TYROGUE
+	db 6, WOOPER
 	; nite
 	db 8, ZUBAT
 	db 8, GEODUDE
@@ -474,7 +474,7 @@ JohtoGrassWildMons:
 	db 6, DIGLETT
 	db 7, ONIX
 	db 8, PARAS
-	db 5, TYROGUE
+	db 6, WOOPER
 	end_grass_wildmons
 
 	def_grass_wildmons UNION_CAVE_B2F
@@ -592,57 +592,57 @@ JohtoGrassWildMons:
 	def_grass_wildmons MOUNT_MORTAR_1F_OUTSIDE
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
 	; morn
-	db 13, ZUBAT
 	db 15, ZUBAT
+	db 16, GEODUDE
 	db 14, MACHOP
-	db 14, RATTATA
-	db 14, GEODUDE
-	db 16, RATTATA
 	db 15, MARILL
+	db 13, CUBONE
+	db 18, AZUMARILL
+	db 15, CUBONE
 	; day
-	db 13, ZUBAT
 	db 15, ZUBAT
+	db 16, GEODUDE
 	db 14, MACHOP
-	db 14, RATTATA
-	db 14, GEODUDE
-	db 16, RATTATA
 	db 15, MARILL
+	db 13, CUBONE
+	db 18, AZUMARILL
+	db 15, CUBONE
 	; nite
-	db 13, ZUBAT
 	db 15, ZUBAT
+	db 16, GEODUDE
 	db 14, MACHOP
-	db 14, RATTATA
-	db 14, GEODUDE
-	db 16, RATTATA
 	db 15, MARILL
+	db 13, CUBONE
+	db 18, AZUMARILL
+	db 15, CUBONE
 	end_grass_wildmons
 
 	def_grass_wildmons MOUNT_MORTAR_1F_INSIDE
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
 	; morn
-	db 13, GEODUDE
-	db 13, MACHOP
-	db 15, GEODUDE
-	db 14, RATTATA
 	db 15, MACHOP
-	db 14, ZUBAT
-	db 14, ZUBAT
+	db 16, GEODUDE
+	db 16, ZUBAT
+	db 14, ONIX
+	db 13, CUBONE
+	db 15, CUBONE
+	db 18, KANGASKHAN
 	; day
-	db 13, GEODUDE
-	db 13, MACHOP
-	db 15, GEODUDE
-	db 14, RATTATA
 	db 15, MACHOP
-	db 14, ZUBAT
-	db 14, ZUBAT
+	db 16, GEODUDE
+	db 16, ZUBAT
+	db 14, ONIX
+	db 13, CUBONE
+	db 15, CUBONE
+	db 18, KANGASKHAN
 	; nite
-	db 13, GEODUDE
-	db 13, MACHOP
-	db 15, GEODUDE
-	db 14, RATTATA
 	db 15, MACHOP
-	db 14, ZUBAT
-	db 14, ZUBAT
+	db 16, GEODUDE
+	db 16, ZUBAT
+	db 14, ONIX
+	db 13, CUBONE
+	db 15, CUBONE
+	db 18, KANGASKHAN
 	end_grass_wildmons
 
 	def_grass_wildmons MOUNT_MORTAR_2F_INSIDE
@@ -676,29 +676,29 @@ JohtoGrassWildMons:
 	def_grass_wildmons MOUNT_MORTAR_B1F
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
 	; morn
-	db 15, ZUBAT
-	db 17, ZUBAT
-	db 16, RATTATA
 	db 16, MACHOP
-	db 16, GEODUDE
-	db 16, RATICATE
-	db 16, RATICATE
+	db 18, GEODUDE
+	db 15, ONIX
+	db 17, ZUBAT
+	db 17, CUBONE
+	db 18, HITMONCHAN
+	db  5, TYROGUE
 	; day
-	db 15, ZUBAT
-	db 17, ZUBAT
-	db 16, RATTATA
 	db 16, MACHOP
-	db 16, GEODUDE
-	db 16, RATICATE
-	db 16, RATICATE
+	db 18, GEODUDE
+	db 15, ONIX
+	db 17, ZUBAT
+	db 17, CUBONE
+	db 18, HITMONTOP
+	db  5, TYROGUE
 	; nite
-	db 15, ZUBAT
-	db 17, ZUBAT
-	db 16, RATTATA
 	db 16, MACHOP
-	db 16, GEODUDE
-	db 16, RATICATE
-	db 16, RATICATE
+	db 18, GEODUDE
+	db 15, ONIX
+	db 17, ZUBAT
+	db 17, CUBONE
+	db 18, HITMONLEE
+	db  5, TYROGUE
 	end_grass_wildmons
 
 	def_grass_wildmons ICE_PATH_1F

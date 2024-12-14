@@ -2130,7 +2130,7 @@ HikerGroup:
 
 	; HIKER (2)
 	db "RUSSELL@", TRAINERTYPE_NORMAL
-	db  5, TYROGUE
+	db  6, DIGLETT
 	db  7, MACHOP
 	db  8, GEODUDE
 	db -1 ; end
