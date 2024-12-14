@@ -53,9 +53,9 @@ JohtoWaterWildMons:
 
 	def_water_wildmons MOUNT_MORTAR_1F_OUTSIDE
 	db 4 percent ; encounter rate
-	db 20, GOLDEEN
-	db 15, GOLDEEN
-	db 20, SEAKING
+	db 15, MARILL
+	db 15, CHINCHOU
+	db 18, AZUMARILL
 	end_water_wildmons
 
 	def_water_wildmons MOUNT_MORTAR_2F_INSIDE
@@ -67,9 +67,9 @@ JohtoWaterWildMons:
 
 	def_water_wildmons MOUNT_MORTAR_B1F
 	db 2 percent ; encounter rate
-	db 20, GOLDEEN
-	db 15, GOLDEEN
-	db 20, SEAKING
+	db 15, CHINCHOU
+	db 18, CHINCHOU
+	db 20, AZUMARILL
 	end_water_wildmons
 
 	def_water_wildmons WHIRL_ISLAND_SW
@@ -172,9 +172,9 @@ JohtoWaterWildMons:
 
 	def_water_wildmons ROUTE_42
 	db 4 percent ; encounter rate
-	db 20, GOLDEEN
-	db 15, GOLDEEN
-	db 20, SEAKING
+	db 15, MARILL
+	db 15, MAGIKARP
+	db 15, CHINCHOU
 	end_water_wildmons
 
 	def_water_wildmons ROUTE_43
