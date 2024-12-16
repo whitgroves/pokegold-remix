@@ -1195,6 +1195,7 @@ SeelEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, HEADBUTT
 	db 5, GROWL
+	db 12, BUBBLEBEAM
 	db 16, AURORA_BEAM
 	db 21, REST
 	db 32, TAKE_DOWN
@@ -1205,9 +1206,8 @@ SeelEvosAttacks:
 DewgongEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, HEADBUTT
-	db 1, GROWL
-	db 1, AURORA_BEAM
 	db 5, GROWL
+	db 12, BUBBLEBEAM
 	db 16, AURORA_BEAM
 	db 21, REST
 	db 32, TAKE_DOWN
@@ -1747,16 +1747,15 @@ ScytherEvosAttacks:
 
 JynxEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, POUND
+	db 1, SPITE
 	db 1, LICK
-	db 1, LOVELY_KISS
-	db 1, POWDER_SNOW
-	db 9, LOVELY_KISS
+	db 9, DOUBLESLAP
 	db 13, POWDER_SNOW
-	db 21, DOUBLESLAP
+	db 18, LOVELY_KISS
+	db 21, NIGHT_SHADE
 	db 25, ICY_WIND
 	db 35, MEAN_LOOK
-	db 41, BODY_SLAM
+	db 41, ATTRACT
 	db 51, PERISH_SONG
 	db 57, BLIZZARD
 	db 0 ; no more level-up moves
@@ -1841,12 +1840,12 @@ LaprasEvosAttacks:
 	db 1, GROWL
 	db 1, SING
 	db 8, MIST
-	db 15, BODY_SLAM
+	db 15, AURORA_BEAM
 	db 22, CONFUSE_RAY
-	db 29, PERISH_SONG
+	db 29, HORN_ATTACK
 	db 36, ICE_BEAM
 	db 43, RAIN_DANCE
-	db 50, SAFEGUARD
+	db 50, PERISH_SONG
 	db 57, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
@@ -2604,10 +2603,8 @@ SudowoodoEvosAttacks:
 
 PolitoedEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, WATER_GUN
 	db 1, HYPNOSIS
-	db 1, DOUBLESLAP
-	db 1, PERISH_SONG
+	db 1, WATER_GUN
 	db 28, MIST
 	db 30, RAIN_DANCE
 	db 32, ICY_WIND
@@ -3103,9 +3100,9 @@ SwinubEvosAttacks:
 	db EVOLVE_LEVEL, 33, PILOSWINE
 	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 1, MIST
+	db 1, POWDER_SNOW
 	db 5, MUD_SLAP
-	db 10, POWDER_SNOW
+	db 10, MAGNITUDE
 	db 19, ENDURE
 	db 28, ICY_WIND
 	db 37, TAKE_DOWN
@@ -3115,13 +3112,13 @@ SwinubEvosAttacks:
 
 PiloswineEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, HORN_ATTACK
+	db 1, TACKLE
 	db 1, POWDER_SNOW
-	db 1, MUD_SLAP
-	db 10, POWDER_SNOW
+	db 5, MUD_SLAP
+	db 10, MAGNITUDE
 	db 19, ENDURE
 	db 28, ICY_WIND
-	db 33, FURY_ATTACK
+	db 33, HORN_ATTACK
 	db 42, TAKE_DOWN
 	db 56, BLIZZARD
 	db 70, AMNESIA
