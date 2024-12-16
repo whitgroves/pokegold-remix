@@ -621,13 +621,13 @@ ScientistJedSeenText:
 	text "This was once a"
 	line "ninja hideout."
 
-	para "There are traps to"
-	line "confound intruders"
-	cont "like you."
+	para "But the security"
+	line "cameras are my own"
+	cont "personal touch."
 	done
 
 ScientistJedBeatenText:
-	text "I get it…"
+	text "Persistent, huh?"
 	done
 
 ScientistJedAfterBattleText:
@@ -635,40 +635,36 @@ ScientistJedAfterBattleText:
 	line "divulge a secret"
 	cont "about our hideout."
 
-	para "That thing on the"
-	line "floor up ahead is"
-	cont "a warp panel."
+	para "In the floor near"
+	line "the stairs is a"
+	cont "warp panel."
 
-	para "If you step on it,"
-	line "you'll be warped"
-
-	para "back to the en-"
-	line "trance."
+	para "But I won't tell"
+	line "you where it goes."
 	done
 
 GruntM16SeenText:
-	text "Heheh. Feeling"
-	line "lucky, punk?"
+	text "I bet you think"
+	line "you're smart for"
+	cont "getting this far…"
 
-	para "Go ahead, take"
-	line "another step."
-
-	para "We've got traps"
-	line "set in the floor!"
+	para "But did you expect"
+	line "someone guarding"
+	cont "the stairs?"
 	done
 
 GruntM16BeatenText:
-	text "Kaboom!"
+	text "This is why I got"
+	line "stair duty…"
 	done
 
 GruntM16AfterBattleText:
-	text "I don't even know"
-	line "where the traps"
-	cont "are planted."
+	text "This room is full"
+	line "of traps."
 
-	para "You'll just have"
-	line "to collect your"
-	cont "courage and walk."
+	para "Even I don't know"
+	line "where all of them"
+	cont "are."
 	done
 
 TeamRocketBaseB1FSecurityCameraText:
@@ -747,7 +743,7 @@ TeamRocketBaseB1F_MapEvents:
 
 	def_object_events
 	object_event  0,  0, SPRITE_ROCKET, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_TEAM_ROCKET_BASE_SECURITY_GRUNTS
-	object_event  2,  4, SPRITE_ROCKET, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 3, TrainerGruntM16, EVENT_TEAM_ROCKET_BASE_POPULATION
+	object_event  1, 15, SPRITE_ROCKET, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 3, TrainerGruntM16, EVENT_TEAM_ROCKET_BASE_POPULATION
 	object_event 18, 12, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerScientistJed, EVENT_TEAM_ROCKET_BASE_POPULATION
 	object_event 27,  6, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, TeamRocketBaseB1FHyperPotion, EVENT_TEAM_ROCKET_BASE_B1F_HYPER_POTION
 	object_event 14, 15, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, TeamRocketBaseB1FNugget, EVENT_TEAM_ROCKET_BASE_B1F_NUGGET
