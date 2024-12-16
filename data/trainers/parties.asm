@@ -1292,13 +1292,13 @@ GruntMGroup:
 	db -1 ; end
 
 	; GRUNTM (22)
-	db "EXECUTIVE@", TRAINERTYPE_NORMAL
-	db 36, GOLBAT
+	db "GRUNT@", TRAINERTYPE_NORMAL ; previously unused
+	db 23, GRANBULL
 	db -1 ; end
 
 	; GRUNTM (23)
-	db "EXECUTIVE@", TRAINERTYPE_NORMAL
-	db 30, KOFFING
+	db "GRUNT@", TRAINERTYPE_MOVES ; previously unused -- now "rematch" of GRUNT_1 at Rocket HQ
+	db 24, AIPOM, 	FURY_SWIPES, ROCK_SMASH, FIRE_PUNCH, THIEF
 	db -1 ; end
 
 	; GRUNTM (24)

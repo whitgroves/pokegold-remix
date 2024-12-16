@@ -44,7 +44,7 @@ SecurityCamera2:
 	scall PlaySecurityCameraSounds
 	checkevent EVENT_TEAM_ROCKET_BASE_POPULATION
 	iftrue NoSecurityCamera
-	showemote EMOTE_SHOCK, PLAYER, 15
+	showemote EMOTE_QUESTION, PLAYER, 15
 	playmusic MUSIC_ROCKET_ENCOUNTER
 	turnobject PLAYER, RIGHT
 	moveobject TEAMROCKETBASEB1F_ROCKET1, 12, 5
@@ -84,16 +84,7 @@ SecurityCamera4:
 	appear TEAMROCKETBASEB1F_ROCKET1
 	turnobject PLAYER, LEFT
 	applymovement TEAMROCKETBASEB1F_ROCKET1, SecurityCameraMovement1
-	scall TrainerCameraGrunt1
-	ifequal TRUE, NoSecurityCamera
-	scall PlaySecurityCameraSounds
-	showemote EMOTE_SHOCK, PLAYER, 15
-	playmusic MUSIC_ROCKET_ENCOUNTER
-	turnobject PLAYER, RIGHT
-	moveobject TEAMROCKETBASEB1F_ROCKET1, 25, 11
-	appear TEAMROCKETBASEB1F_ROCKET1
-	applymovement TEAMROCKETBASEB1F_ROCKET1, SecurityCameraMovement8
-	scall TrainerCameraGrunt2
+	scall TrainerCameraGrunt4
 	ifequal TRUE, NoSecurityCamera
 	setevent EVENT_SECURITY_CAMERA_4
 	end
@@ -110,16 +101,7 @@ SecurityCamera5:
 	appear TEAMROCKETBASEB1F_ROCKET1
 	turnobject PLAYER, LEFT
 	applymovement TEAMROCKETBASEB1F_ROCKET1, SecurityCameraMovement1
-	scall TrainerCameraGrunt1
-	ifequal TRUE, NoSecurityCamera
-	scall PlaySecurityCameraSounds
-	showemote EMOTE_SHOCK, PLAYER, 15
-	playmusic MUSIC_ROCKET_ENCOUNTER
-	turnobject PLAYER, RIGHT
-	moveobject TEAMROCKETBASEB1F_ROCKET1, 14, 16
-	appear TEAMROCKETBASEB1F_ROCKET1
-	applymovement TEAMROCKETBASEB1F_ROCKET1, SecurityCameraMovement9
-	scall TrainerCameraGrunt2
+	scall TrainerCameraGrunt5
 	ifequal TRUE, NoSecurityCamera
 	setevent EVENT_SECURITY_CAMERA_5
 	end
@@ -163,6 +145,32 @@ TrainerCameraGrunt3:
 	loadtrainer GRUNTF, GRUNTF_6
 	startbattle
 	disappear TEAMROCKETBASEB1F_ROCKET_GIRL
+	reloadmapafterbattle
+	end
+
+TrainerCameraGrunt4:
+	opentext
+	writetext CameraGrunt4SeenText
+	waitbutton
+	closetext
+	winlosstext CameraGrunt4BeatenText, 0
+	setlasttalked TEAMROCKETBASEB1F_ROCKET1
+	loadtrainer GRUNTM, GRUNTM_22
+	startbattle
+	disappear TEAMROCKETBASEB1F_ROCKET1
+	reloadmapafterbattle
+	end
+
+TrainerCameraGrunt5:
+	opentext
+	writetext CameraGrunt5SeenText
+	waitbutton
+	closetext
+	winlosstext CameraGrunt5BeatenText, 0
+	setlasttalked TEAMROCKETBASEB1F_ROCKET1
+	loadtrainer GRUNTM, GRUNTM_23
+	startbattle
+	disappear TEAMROCKETBASEB1F_ROCKET1
 	reloadmapafterbattle
 	end
 
@@ -570,10 +578,43 @@ CameraGrunt3SeenText:
 	done
 
 CameraGrunt3BeatenText:
+	text "Still just a brat!"
+	
+	para "You'll never find"
+	line "the camera switch!"
+	done
+
+CameraGrunt4SeenText:
+	text "That's far enough!"
+
+	para "I won't let you"
+	line "get the SCIENTIST!"
+	done
+
+CameraGrunt4BeatenText:
 	text "Fine, I'll talk!"
 	
-	para "Jed's the one"
+	para "JED's the one"
 	line "watching the cams!"
+	done
+
+CameraGrunt5SeenText:
+	text "We got an"
+	line "intruder alert"
+	cont "downstairs."
+
+	para "Wait… haven't I"
+	line "seen you before?"
+	done
+
+CameraGrunt5BeatenText:
+	text "There's a hidden"
+	line "switch that turns"
+	cont "off the cameras."
+
+	para "But you've come"
+	line "far enough that it"
+	cont "doesn't matter."
 	done
 
 ScientistJedSeenText:

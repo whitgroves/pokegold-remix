@@ -279,8 +279,8 @@ DEF NUM_NONTRAINER_PHONECONTACTS EQU const_value - 1
 	const GRUNTM_19
 	const GRUNTM_20
 	const GRUNTM_21
-	const GRUNTM_22 ; unused
-	const GRUNTM_23 ; unused
+	const GRUNTM_22 ; previously unused, now HQ grunt
+	const GRUNTM_23 ; previously unused, now HQ grunt
 	const GRUNTM_24
 	const GRUNTM_25
 	const GRUNTM_26 ; unused
