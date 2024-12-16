@@ -1252,10 +1252,10 @@ GruntMGroup:
 
 	; GRUNTM (16)
 	db "GRUNT@", TRAINERTYPE_NORMAL
-	db 16, PINECO
+	db 16, ZUBAT
 	db 16, SLUGMA
 	db 16, WOOPER
-	db 16, SLOWPOKE
+	db 16, RATTATA
 	db -1 ; end
 
 	; GRUNTM (17)

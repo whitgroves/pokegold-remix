@@ -191,7 +191,7 @@ PlaySecurityCameraSounds:
 ExplodingTrap1:
 	checkevent EVENT_EXPLODING_TRAP_1
 	iftrue NoExplodingTrap
-	scall KoffingExplodingTrap
+	scall PinecoExplodingTrap
 	reloadmapafterbattle
 	setevent EVENT_EXPLODING_TRAP_1
 	end
@@ -247,7 +247,7 @@ ExplodingTrap7:
 ExplodingTrap8:
 	checkevent EVENT_EXPLODING_TRAP_8
 	iftrue NoExplodingTrap
-	scall KoffingExplodingTrap
+	scall PinecoExplodingTrap
 	reloadmapafterbattle
 	setevent EVENT_EXPLODING_TRAP_8
 	end
@@ -271,7 +271,7 @@ ExplodingTrap10:
 ExplodingTrap11:
 	checkevent EVENT_EXPLODING_TRAP_11
 	iftrue NoExplodingTrap
-	scall GeodudeExplodingTrap
+	scall PinecoExplodingTrap
 	reloadmapafterbattle
 	setevent EVENT_EXPLODING_TRAP_11
 	end
@@ -303,7 +303,7 @@ ExplodingTrap14:
 ExplodingTrap15:
 	checkevent EVENT_EXPLODING_TRAP_15
 	iftrue NoExplodingTrap
-	scall VoltorbExplodingTrap
+	scall PinecoExplodingTrap
 	reloadmapafterbattle
 	setevent EVENT_EXPLODING_TRAP_15
 	end
@@ -359,7 +359,7 @@ ExplodingTrap21:
 ExplodingTrap22:
 	checkevent EVENT_EXPLODING_TRAP_22
 	iftrue NoExplodingTrap
-	scall VoltorbExplodingTrap
+	scall PinecoExplodingTrap
 	reloadmapafterbattle
 	setevent EVENT_EXPLODING_TRAP_22
 	end
@@ -390,7 +390,17 @@ KoffingExplodingTrap:
 	special FadeInFromWhite
 	setlasttalked -1
 	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
-	loadwildmon KOFFING, 21
+	loadwildmon KOFFING, 19
+	startbattle
+	end
+
+PinecoExplodingTrap:
+	special FadeOutToWhite
+	cry PINECO
+	special FadeInFromWhite
+	setlasttalked -1
+	loadvar VAR_BATTLETYPE, BATTLETYPE_TRAP
+	loadwildmon PINECO, 17
 	startbattle
 	end
 

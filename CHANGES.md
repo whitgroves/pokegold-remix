@@ -11,11 +11,12 @@ Listed below are the changes that have been implemented so far:
     - [TMs](#tms)
     - [Weather Interactions](#weather-interactions)
 - [Store Updates](#store-updates)
+- [Miscellaneous](#miscellaneous)
 
 ## Type Chart
 The goal here was to rebalance the chart so otherwise "isolated" types (e.g., *Ghost*, *Dark*) feel more interactive while making "weaker" types (e.g. *Bug*) less so by giving them key advantages.
 
-To that end, please pay close attention to *Ice*, *Bug*, *Ghost*, *Dragon*, and *Dark*, as many well-known interactions have changed (e.g., *Ice* resists *Electric*, *Steel* is super effective vs *Dragon*).
+To that end, please pay close attention to *Ice*, *Bug*, *Ghost*, *Dragon*, and *Dark*, as many well-known interactions have changed (e.g., *Dragon* now resists *Ice*, *Dark* is no longer immune to *Psychic*).
 
 |*→Defending→*|NORMAL|FIRE|WATER|ELECTRIC|GRASS|ICE|FIGHTING|POISON|GROUND|FLYING|PSYCHIC|BUG|ROCK|GHOST|DRAGON|DARK|STEEL
 |:--|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
@@ -147,9 +148,7 @@ These mons evolve by new methods in addition to their old ones (e.g., *Nidorina*
 - Porygon -> Porygon2: *Up-Grade*
 - Togepi -> Togetic: *Sun Stone* -or- *Moon Stone*
 - Sunkern -> Sunflora: *Happiness, Day*
-### Other
-- Gender is no longer determined solely by Attack DV (i.e., female mons outside of all-female species can roll high ATK DVs).
-- As a consequence of the above, the shininess formula has been updated and now has a ~1/7281 chance instead of 1/8192.
+
 ## Move Updates
 ### Damaging Moves
 - Comet Punch: *Normal* -> *Fighting*
@@ -263,8 +262,6 @@ Weathers cause new interactions in addition to their old ones (e.g., Rain boosti
 - *Dragon* Pokemon are immune to Sandstorm
 - *Solarbeam* behaves as if under Rain
 - *Thunder* behaves as if under Sun
-### Miscellaneous
-- *Fire*-type moves can no longer defrost through *Safeguard*
 
 ## Store updates
 Several of the stores have been updated to make certain TMs and evolution items more available.
@@ -281,3 +278,10 @@ Several of the stores have been updated to make certain TMs and evolution items 
 - Sun Stone
 - Dragon Scale
 - Up-Grade
+
+## Miscellaneous
+- *Fire*-type moves can no longer defrost through *Safeguard*
+- Gender is no longer determined solely by Attack DV (i.e., female mons outside of all-female species can roll high ATK DVs)
+- As a consequence of the above, the shininess formula has been updated and now has a ~1/7281 chance instead of 1/8192
+- Similarly, trainer DVs have been updated so that trainer classes generally have the same gender mons as the base game
+- Each surveillance statue in the Rocket Hideout summons 1 unique battle instead of 2 generic grunts
