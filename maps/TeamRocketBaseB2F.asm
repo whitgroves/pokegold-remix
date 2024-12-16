@@ -833,7 +833,7 @@ GruntM18SeenText:
 	done
 
 GruntM18BeatenText:
-	text "I knew I'd lose…"
+	text "It figures…"
 	done
 
 GruntM18AfterBattleText:
@@ -847,8 +847,8 @@ GruntM18AfterBattleText:
 	para "this kid with long"
 	line "red hair and mean-"
 
-	para "looking eyes just"
-	line "creamed me…"
+	para "looking eyes"
+	line "humbled me…"
 	done
 
 GruntM19SeenText:
