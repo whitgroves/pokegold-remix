@@ -559,9 +559,9 @@ OddishEvosAttacks:
 	db 14, POISONPOWDER
 	db 16, STUN_SPORE
 	db 18, SLEEP_POWDER
-	db 23, ACID
+	db 23, MEGA_DRAIN
 	db 32, MOONLIGHT
-	db 39, PETAL_DANCE
+	db 39, GIGA_DRAIN
 	db 0 ; no more level-up moves
 
 GloomEvosAttacks:
@@ -575,17 +575,22 @@ GloomEvosAttacks:
 	db 14, POISONPOWDER
 	db 16, STUN_SPORE
 	db 18, SLEEP_POWDER
-	db 24, ACID
+	db 24, MEGA_DRAIN
 	db 35, MOONLIGHT
-	db 44, PETAL_DANCE
+	db 44, GIGA_DRAIN
 	db 0 ; no more level-up moves
 
 VileplumeEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, ABSORB
-	db 1, SWEET_SCENT
-	db 1, STUN_SPORE
-	db 1, PETAL_DANCE
+	db 7, SWEET_SCENT
+	db 14, POISONPOWDER
+	db 16, STUN_SPORE
+	db 18, SLEEP_POWDER
+	db 24, PETAL_DANCE
+	db 29, BEAT_UP
+	db 35, MOONLIGHT
+	db 44, TOXIC
 	db 0 ; no more level-up moves
 
 ParasEvosAttacks:
@@ -2548,10 +2553,14 @@ AmpharosEvosAttacks:
 BellossomEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, ABSORB
-	db 1, SWEET_SCENT
-	db 1, STUN_SPORE
-	db 1, PETAL_DANCE
-	db 55, SOLARBEAM
+	db 7, SWEET_SCENT
+	db 14, POISONPOWDER
+	db 16, STUN_SPORE
+	db 18, SLEEP_POWDER
+	db 24, PETAL_DANCE
+	db 29, SUNNY_DAY
+	db 35, MORNING_SUN
+	db 44, SOLARBEAM
 	db 0 ; no more level-up moves
 
 MarillEvosAttacks:
@@ -2901,8 +2910,8 @@ DunsparceEvosAttacks:
 GligarEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, POISON_STING
-	db 6, MUD_SLAP
-	db 13, HARDEN
+	db 6, GUST
+	db 13, VICEGRIP
 	db 20, QUICK_ATTACK
 	db 28, FAINT_ATTACK
 	db 34, SLASH
