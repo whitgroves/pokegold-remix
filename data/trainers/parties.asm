@@ -301,9 +301,9 @@ LtSurgeGroup:
 
 ScientistGroup:
 	; SCIENTIST (1)
-	db "ROSS@", TRAINERTYPE_NORMAL
-	db 22, KOFFING
-	db 22, KOFFING
+	db "ROSS@", TRAINERTYPE_MOVES
+	db 22, MAGNEMITE,	SUPERSONIC, SONICBOOM, THUNDER_WAVE, THUNDERSHOCK
+	db 22, MANKEY,		THRASH, FURY_SWIPES, RAGE, MUD_SLAP
 	db -1 ; end
 
 	; SCIENTIST (2)
@@ -1291,12 +1291,12 @@ GruntMGroup:
 
 	; GRUNTM (22)
 	db "GRUNT@", TRAINERTYPE_NORMAL ; previously unused
-	db 23, GRANBULL
+	db 22, SNUBBULL
 	db -1 ; end
 
 	; GRUNTM (23)
 	db "GRUNT@", TRAINERTYPE_MOVES ; previously unused -- now "rematch" of GRUNT_1 at Rocket HQ
-	db 24, AIPOM, 	FURY_SWIPES, ROCK_SMASH, FIRE_PUNCH, THIEF
+	db 23, AIPOM, 	FURY_SWIPES, ROCK_SMASH, FIRE_PUNCH, THIEF
 	db -1 ; end
 
 	; GRUNTM (24)
@@ -1324,7 +1324,9 @@ GruntMGroup:
 
 	; GRUNTM (28)
 	db "GRUNT@", TRAINERTYPE_NORMAL
-	db 19, RATICATE
+	db 20, CHINCHOU
+	db 21, EXEGGCUTE
+	db 22, SLUGMA
 	db -1 ; end
 
 	; GRUNTM (29)
@@ -2508,9 +2510,9 @@ ExecutiveMGroup:
 
 	; EXECUTIVEM (4)
 	db "EXECUTIVE@", TRAINERTYPE_NORMAL
-	db 22, ZUBAT
-	db 24, RATICATE
-	db 22, KOFFING
+	db 23, HOUNDOUR
+	db 24, REMORAID
+	db 25, RHYHORN
 	db -1 ; end
 
 PsychicGroup:
@@ -3215,9 +3217,10 @@ GruntFGroup:
 	db -1 ; end
 
 	; GRUNTF (5)
-	db "GRUNT@", TRAINERTYPE_MOVES
-	db 18, EKANS,      WRAP, LEER, POISON_STING, BITE
-	db 18, GLOOM,      ABSORB, SWEET_SCENT, STUN_SPORE, SLEEP_POWDER
+	db "GRUNT@", TRAINERTYPE_NORMAL
+	db 17, GLOOM
+	db 18, SNUBBULL
+	db 19, ZUBAT
 	db -1 ; end
 
 	; GRUNTF (6)

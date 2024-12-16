@@ -445,14 +445,14 @@ GruntF5BeatenText:
 	done
 
 GruntF5AfterBattleText:
-	text "The password to"
+	text "One password to"
 	line "the boss's room is"
 
 	para "SLOWPOKETAIL."
 
 	para "But it's useless"
 	line "unless you have"
-	cont "two passwords."
+	cont "both passwords."
 	done
 
 GruntM28SeenText:
