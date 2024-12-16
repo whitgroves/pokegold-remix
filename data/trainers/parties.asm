@@ -1280,14 +1280,14 @@ GruntMGroup:
 
 	; GRUNTM (20)
 	db "GRUNT@", TRAINERTYPE_NORMAL
-	db 17, DROWZEE
-	db 19, ZUBAT
+	db 17, GRIMER
+	db 19, DROWZEE
 	db -1 ; end
 
 	; GRUNTM (21)
-	db "GRUNT@", TRAINERTYPE_NORMAL
+	db "GRUNT@", TRAINERTYPE_NORMAL ; "rematch" of GRUNTM_2 at Rocket HQ
 	db 16, ZUBAT
-	db 17, GRIMER
+	db 17, KOFFING
 	db 18, RATTATA
 	db -1 ; end
 
@@ -3220,4 +3220,11 @@ GruntFGroup:
 	db "GRUNT@", TRAINERTYPE_MOVES
 	db 18, EKANS,      WRAP, LEER, POISON_STING, BITE
 	db 18, GLOOM,      ABSORB, SWEET_SCENT, STUN_SPORE, SLEEP_POWDER
+	db -1 ; end
+
+	; GRUNTF (6)
+	db "GRUNT@", TRAINERTYPE_NORMAL ; "rematch" of GRUNTF_1 at Rocket HQ
+	db 17, EKANS
+	db 18, HOUNDOUR
+	db 19, MISDREAVUS
 	db -1 ; end

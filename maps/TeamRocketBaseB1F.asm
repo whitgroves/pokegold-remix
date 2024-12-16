@@ -5,6 +5,7 @@
 	const TEAMROCKETBASEB1F_POKE_BALL1
 	const TEAMROCKETBASEB1F_POKE_BALL2
 	const TEAMROCKETBASEB1F_POKE_BALL3
+	const TEAMROCKETBASEB1F_ROCKET_GIRL
 
 TeamRocketBaseB1F_MapScripts:
 	def_scene_scripts
@@ -20,13 +21,13 @@ TeamRocketBaseB1FHideSecurityGruntCallback:
 	disappear TEAMROCKETBASEB1F_ROCKET1
 	endcallback
 
-SecurityCamera1a:
+SecurityCamera1:
 	checkevent EVENT_SECURITY_CAMERA_1
 	iftrue NoSecurityCamera
 	scall PlaySecurityCameraSounds
 	checkevent EVENT_TEAM_ROCKET_BASE_POPULATION
 	iftrue NoSecurityCamera
-	showemote EMOTE_SHOCK, PLAYER, 15
+	showemote EMOTE_QUESTION, PLAYER, 15
 	playmusic MUSIC_ROCKET_ENCOUNTER
 	moveobject TEAMROCKETBASEB1F_ROCKET1, 19, 2
 	appear TEAMROCKETBASEB1F_ROCKET1
@@ -34,57 +35,15 @@ SecurityCamera1a:
 	applymovement TEAMROCKETBASEB1F_ROCKET1, SecurityCameraMovement1
 	scall TrainerCameraGrunt1
 	ifequal TRUE, NoSecurityCamera
-	scall PlaySecurityCameraSounds
-	showemote EMOTE_SHOCK, PLAYER, 15
-	playmusic MUSIC_ROCKET_ENCOUNTER
-	moveobject TEAMROCKETBASEB1F_ROCKET1, 19, 2
-	appear TEAMROCKETBASEB1F_ROCKET1
-	applymovement TEAMROCKETBASEB1F_ROCKET1, SecurityCameraMovement1
-	scall TrainerCameraGrunt2
-	ifequal TRUE, NoSecurityCamera
 	setevent EVENT_SECURITY_CAMERA_1
 	end
 
-SecurityCamera1b:
-	checkevent EVENT_SECURITY_CAMERA_1
-	iftrue NoSecurityCamera
-	scall PlaySecurityCameraSounds
-	checkevent EVENT_TEAM_ROCKET_BASE_POPULATION
-	iftrue NoSecurityCamera
-	showemote EMOTE_SHOCK, PLAYER, 15
-	playmusic MUSIC_ROCKET_ENCOUNTER
-	moveobject TEAMROCKETBASEB1F_ROCKET1, 19, 3
-	appear TEAMROCKETBASEB1F_ROCKET1
-	turnobject PLAYER, LEFT
-	applymovement TEAMROCKETBASEB1F_ROCKET1, SecurityCameraMovement1
-	scall TrainerCameraGrunt1
-	ifequal TRUE, NoSecurityCamera
-	scall PlaySecurityCameraSounds
-	showemote EMOTE_SHOCK, PLAYER, 15
-	playmusic MUSIC_ROCKET_ENCOUNTER
-	moveobject TEAMROCKETBASEB1F_ROCKET1, 19, 3
-	appear TEAMROCKETBASEB1F_ROCKET1
-	applymovement TEAMROCKETBASEB1F_ROCKET1, SecurityCameraMovement1
-	scall TrainerCameraGrunt2
-	ifequal TRUE, NoSecurityCamera
-	setevent EVENT_SECURITY_CAMERA_1
-	end
-
-SecurityCamera2a:
+SecurityCamera2:
 	checkevent EVENT_SECURITY_CAMERA_2
 	iftrue NoSecurityCamera
 	scall PlaySecurityCameraSounds
 	checkevent EVENT_TEAM_ROCKET_BASE_POPULATION
 	iftrue NoSecurityCamera
-	showemote EMOTE_SHOCK, PLAYER, 15
-	playmusic MUSIC_ROCKET_ENCOUNTER
-	moveobject TEAMROCKETBASEB1F_ROCKET1, 4, 7
-	appear TEAMROCKETBASEB1F_ROCKET1
-	turnobject PLAYER, LEFT
-	applymovement TEAMROCKETBASEB1F_ROCKET1, SecurityCameraMovement2
-	scall TrainerCameraGrunt1
-	ifequal TRUE, NoSecurityCamera
-	scall PlaySecurityCameraSounds
 	showemote EMOTE_SHOCK, PLAYER, 15
 	playmusic MUSIC_ROCKET_ENCOUNTER
 	turnobject PLAYER, RIGHT
@@ -96,33 +55,7 @@ SecurityCamera2a:
 	setevent EVENT_SECURITY_CAMERA_2
 	end
 
-SecurityCamera2b:
-	checkevent EVENT_SECURITY_CAMERA_2
-	iftrue NoSecurityCamera
-	scall PlaySecurityCameraSounds
-	checkevent EVENT_TEAM_ROCKET_BASE_POPULATION
-	iftrue NoSecurityCamera
-	showemote EMOTE_SHOCK, PLAYER, 15
-	playmusic MUSIC_ROCKET_ENCOUNTER
-	moveobject TEAMROCKETBASEB1F_ROCKET1, 4, 8
-	appear TEAMROCKETBASEB1F_ROCKET1
-	turnobject PLAYER, LEFT
-	applymovement TEAMROCKETBASEB1F_ROCKET1, SecurityCameraMovement4
-	scall TrainerCameraGrunt1
-	ifequal TRUE, NoSecurityCamera
-	scall PlaySecurityCameraSounds
-	showemote EMOTE_SHOCK, PLAYER, 15
-	playmusic MUSIC_ROCKET_ENCOUNTER
-	turnobject PLAYER, RIGHT
-	moveobject TEAMROCKETBASEB1F_ROCKET1, 12, 5
-	appear TEAMROCKETBASEB1F_ROCKET1
-	applymovement TEAMROCKETBASEB1F_ROCKET1, SecurityCameraMovement5
-	scall TrainerCameraGrunt2
-	ifequal TRUE, NoSecurityCamera
-	setevent EVENT_SECURITY_CAMERA_2
-	end
-
-SecurityCamera3a:
+SecurityCamera3:
 	checkevent EVENT_SECURITY_CAMERA_3
 	iftrue NoSecurityCamera
 	scall PlaySecurityCameraSounds
@@ -130,46 +63,11 @@ SecurityCamera3a:
 	iftrue NoSecurityCamera
 	showemote EMOTE_SHOCK, PLAYER, 15
 	playmusic MUSIC_ROCKET_ENCOUNTER
-	moveobject TEAMROCKETBASEB1F_ROCKET1, 19, 6
-	appear TEAMROCKETBASEB1F_ROCKET1
-	turnobject PLAYER, LEFT
-	applymovement TEAMROCKETBASEB1F_ROCKET1, SecurityCameraMovement1
-	scall TrainerCameraGrunt1
-	ifequal TRUE, NoSecurityCamera
-	scall PlaySecurityCameraSounds
-	showemote EMOTE_SHOCK, PLAYER, 15
-	playmusic MUSIC_ROCKET_ENCOUNTER
 	turnobject PLAYER, RIGHT
-	moveobject TEAMROCKETBASEB1F_ROCKET1, 25, 11
-	appear TEAMROCKETBASEB1F_ROCKET1
-	applymovement TEAMROCKETBASEB1F_ROCKET1, SecurityCameraMovement6
-	scall TrainerCameraGrunt2
-	ifequal TRUE, NoSecurityCamera
-	setevent EVENT_SECURITY_CAMERA_3
-	end
-
-SecurityCamera3b:
-	checkevent EVENT_SECURITY_CAMERA_3
-	iftrue NoSecurityCamera
-	scall PlaySecurityCameraSounds
-	checkevent EVENT_TEAM_ROCKET_BASE_POPULATION
-	iftrue NoSecurityCamera
-	showemote EMOTE_SHOCK, PLAYER, 15
-	playmusic MUSIC_ROCKET_ENCOUNTER
-	moveobject TEAMROCKETBASEB1F_ROCKET1, 19, 7
-	appear TEAMROCKETBASEB1F_ROCKET1
-	turnobject PLAYER, LEFT
-	applymovement TEAMROCKETBASEB1F_ROCKET1, SecurityCameraMovement1
-	scall TrainerCameraGrunt1
-	ifequal TRUE, NoSecurityCamera
-	scall PlaySecurityCameraSounds
-	showemote EMOTE_SHOCK, PLAYER, 15
-	playmusic MUSIC_ROCKET_ENCOUNTER
-	turnobject PLAYER, RIGHT
-	moveobject TEAMROCKETBASEB1F_ROCKET1, 25, 12
-	appear TEAMROCKETBASEB1F_ROCKET1
-	applymovement TEAMROCKETBASEB1F_ROCKET1, SecurityCameraMovement7
-	scall TrainerCameraGrunt2
+	moveobject TEAMROCKETBASEB1F_ROCKET_GIRL, 25, 11
+	appear TEAMROCKETBASEB1F_ROCKET_GIRL
+	applymovement TEAMROCKETBASEB1F_ROCKET_GIRL, SecurityCameraMovement6
+	scall TrainerCameraGrunt3
 	ifequal TRUE, NoSecurityCamera
 	setevent EVENT_SECURITY_CAMERA_3
 	end
@@ -252,6 +150,19 @@ TrainerCameraGrunt2:
 	loadtrainer GRUNTM, GRUNTM_21
 	startbattle
 	disappear TEAMROCKETBASEB1F_ROCKET1
+	reloadmapafterbattle
+	end
+
+TrainerCameraGrunt3:
+	opentext
+	writetext CameraGrunt3SeenText
+	waitbutton
+	closetext
+	winlosstext CameraGrunt3BeatenText, 0
+	setlasttalked TEAMROCKETBASEB1F_ROCKET_GIRL
+	loadtrainer GRUNTF, GRUNTF_6
+	startbattle
+	disappear TEAMROCKETBASEB1F_ROCKET_GIRL
 	reloadmapafterbattle
 	end
 
@@ -634,22 +545,35 @@ CameraGrunt1SeenText:
 	done
 
 CameraGrunt1BeatenText:
-	text "Dang… I failed…"
+	text "I ran up here"
+	line "for nothing…"
 	done
 
 CameraGrunt2SeenText:
-	text "It's my turn!"
-	line "There's no escape!"
+	text "The surveillance"
+	line "cams show us"
+	cont "everything!"
 	done
 
 CameraGrunt2BeatenText:
-	text "Surveillance cams"
-	line "are in the #MON"
-	cont "statues."
+	text "…everything"
+	line "near the #MON"
+	cont "statues that is…"
+	done
 
-	para "We'll keep appear-"
-	line "ing until you trip"
-	cont "a secret switch."
+CameraGrunt3SeenText:
+	text "You're the brat"
+	line "from the WELL!"
+
+	para "What are you"
+	line "doing back here?"
+	done
+
+CameraGrunt3BeatenText:
+	text "Fine, I'll talk!"
+	
+	para "Jed's the one"
+	line "watching the cams!"
 	done
 
 ScientistJedSeenText:
@@ -710,8 +634,11 @@ TeamRocketBaseB1FSecurityCameraText:
 	text "It's a PERSIAN"
 	line "statue…"
 
-	para "Its eyes are oddly"
-	line "shiny."
+	para "The eyes are oddly"
+	line "shiny…"
+
+	para "I should keep my"
+	line "distance."
 	done
 
 TeamRocketBaseB1FSecretSwitchText:
@@ -735,13 +662,10 @@ TeamRocketBaseB1F_MapEvents:
 
 	def_coord_events
 	; There are five security cameras in the base.
-	; Walking in front of one triggers two Rocket Grunts.
-	coord_event 24,  2, SCENE_TEAMROCKETBASEB1F_TRAPS, SecurityCamera1a
-	coord_event 24,  3, SCENE_TEAMROCKETBASEB1F_TRAPS, SecurityCamera1b
-	coord_event  6,  2, SCENE_TEAMROCKETBASEB1F_TRAPS, SecurityCamera2a
-	coord_event  6,  3, SCENE_TEAMROCKETBASEB1F_TRAPS, SecurityCamera2b
-	coord_event 24,  6, SCENE_TEAMROCKETBASEB1F_TRAPS, SecurityCamera3a
-	coord_event 24,  7, SCENE_TEAMROCKETBASEB1F_TRAPS, SecurityCamera3b
+	; Walking directly in front of one triggers two Rocket Grunts.
+	coord_event 24,  2, SCENE_TEAMROCKETBASEB1F_TRAPS, SecurityCamera1
+	coord_event  6,  2, SCENE_TEAMROCKETBASEB1F_TRAPS, SecurityCamera2
+	coord_event 24,  6, SCENE_TEAMROCKETBASEB1F_TRAPS, SecurityCamera3
 	coord_event 22, 16, SCENE_TEAMROCKETBASEB1F_TRAPS, SecurityCamera4
 	coord_event  8, 16, SCENE_TEAMROCKETBASEB1F_TRAPS, SecurityCamera5
 	; There are spots on the floor that trigger a Pokémon battle.
@@ -787,3 +711,4 @@ TeamRocketBaseB1F_MapEvents:
 	object_event 27,  6, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, TeamRocketBaseB1FHyperPotion, EVENT_TEAM_ROCKET_BASE_B1F_HYPER_POTION
 	object_event 14, 15, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, TeamRocketBaseB1FNugget, EVENT_TEAM_ROCKET_BASE_B1F_NUGGET
 	object_event 21, 12, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, TeamRocketBaseB1FXAccuracy, EVENT_TEAM_ROCKET_BASE_B1F_X_ACCURACY
+	object_event  0,  0, SPRITE_ROCKET_GIRL, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_TEAM_ROCKET_BASE_SECURITY_GRUNTS

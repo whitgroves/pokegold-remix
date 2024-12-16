@@ -650,5 +650,6 @@ DEF NUM_NONTRAINER_PHONECONTACTS EQU const_value - 1
 	const GRUNTF_3
 	const GRUNTF_4
 	const GRUNTF_5
+	const GRUNTF_6
 
 DEF NUM_TRAINER_CLASSES EQU __trainer_class__ - 1
