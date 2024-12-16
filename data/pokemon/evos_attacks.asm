@@ -747,8 +747,8 @@ MankeyEvosAttacks:
 	db 9, LOW_KICK
 	db 15, KARATE_CHOP
 	db 21, FURY_SWIPES
-	db 27, FOCUS_ENERGY
-	db 33, SEISMIC_TOSS
+	db 27, RAGE
+	db 33, PURSUIT
 	db 39, CROSS_CHOP
 	db 45, SCREECH
 	db 51, THRASH
@@ -762,9 +762,8 @@ PrimeapeEvosAttacks:
 	db 9, LOW_KICK
 	db 15, KARATE_CHOP
 	db 21, FURY_SWIPES
-	db 27, FOCUS_ENERGY
-	db 28, RAGE
-	db 36, SEISMIC_TOSS
+	db 27, RAGE
+	db 36, PURSUIT
 	db 45, CROSS_CHOP
 	db 54, SCREECH
 	db 63, THRASH
@@ -1430,8 +1429,8 @@ ElectrodeEvosAttacks:
 ExeggcuteEvosAttacks:
 	db EVOLVE_ITEM, LEAF_STONE, EXEGGUTOR
 	db 0 ; no more evolutions
-	db 1, BARRAGE
 	db 1, HYPNOSIS
+	db 1, BARRAGE
 	db 7, REFLECT
 	db 13, LEECH_SEED
 	db 19, CONFUSION
