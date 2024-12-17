@@ -57,7 +57,7 @@ These mons have had their types (and in many cases, learnsets) updated.
 - Clefairy, Clefable: *Normal* -> *Normal/Psychic*
 - Ninetales: *Fire* -> *Fire/Ghost*
 - Zubat, Golbat: *Poison/Flying* -> *Dark/Flying*
-- Oddish: *Grass/Poison* -> *Grass*
+- Oddish, Gloom: *Grass/Poison* -> *Grass*
 - Vileplume: *Grass/Poison* -> *Grass/Dark*
 - Parasect: *Bug/Grass* -> *Bug/Ghost*
 - Venonat, Venomoth: *Bug/Poison* -> *Bug/Psychic*
@@ -156,7 +156,7 @@ These mons evolve by new methods in addition to their old ones (e.g., *Nidorina*
 - Vicegrip: *Normal* -> *Dark*
 - Guillotine: *Normal* -> *Dark*
 - Razor Wind: *Normal* -> *Flying* | *Charging Move* -> *30% Chance To Flinch* | *75%* -> *100% Accuracy*
-- Cut: *Normal* -> *Bug* | *95%* -> *100% Accuracy*
+- Cut: *Normal* -> *Bug* | *No Effect* -> *High Crit Rate* | *95%* -> *100% Accuracy*
 - Fly: *95%* -> *100% Accuracy*
 - Vine Whip: *35* -> *40 Power* | *10* -> *20 PP* | [*Always Physical*](#always-physical-moves)
 - Mega Kick: *Normal* -> *Fighting*

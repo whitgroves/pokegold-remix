@@ -1843,29 +1843,29 @@ JohtoGrassWildMons:
 	def_grass_wildmons ROUTE_44
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 23, TANGELA
-	db 22, WEEPINBELL
-	db 22, BELLSPROUT
-	db 24, LICKITUNG
-	db 24, WEEPINBELL
-	db 26, LICKITUNG
-	db 26, LICKITUNG
+	db 24, EXEGGCUTE
+	db 23, WEEPINBELL
+	db 25, PINECO
+	db 20, YANMA
+	db 22, ARIADOS
+	db 20, SKARMORY
+	db 23, GLOOM
 	; day
-	db 23, TANGELA
-	db 22, WEEPINBELL
-	db 22, BELLSPROUT
-	db 24, LICKITUNG
-	db 24, WEEPINBELL
-	db 26, LICKITUNG
-	db 26, LICKITUNG
+	db 24, EXEGGCUTE
+	db 23, WEEPINBELL
+	db 25, PINECO
+	db 20, FEAROW
+	db 23, GLOOM
+	db 20, SKARMORY
+	db 22, ARIADOS
 	; nite
-	db 23, TANGELA
-	db 22, WEEPINBELL
-	db 22, BELLSPROUT
-	db 24, LICKITUNG
-	db 24, WEEPINBELL
-	db 26, LICKITUNG
-	db 26, LICKITUNG
+	db 22, ARIADOS
+	db 23, GLOOM
+	db 25, PINECO
+	db 20, NOCTOWL
+	db 23, WEEPINBELL
+	db 20, SKARMORY
+	db 24, EXEGGCUTE
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_45
