@@ -357,13 +357,13 @@ CooltrainermAllenAfterBattleText:
 	line "so tough."
 
 	para "I wonder if"
-	line "ECRUTEAK GYM's"
+	line "BLACKTHORN GYM's"
 
-	para "MORTY is still in"
-	line "training?"
+	para "CLAIR has gone"
+	line "training again?"
 
-	para "He really hammered"
-	line "me."
+	para "She really"
+	line "hammered me."
 	done
 
 CooltrainerfCybilSeenText:

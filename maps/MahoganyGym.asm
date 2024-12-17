@@ -294,11 +294,11 @@ BoarderDouglasAfterBattleText:
 	text "The secret behind"
 	line "PRYCE's power…"
 
-	para "He meditates under"
-	line "a waterfall daily"
+	para "He goes on walks"
+	line "in nature daily,"
 
-	para "to strengthen his"
-	line "mind and body."
+	para "and meditates…"
+	line "even if it rains."
 	done
 
 SkierRoxanneSeenText:
