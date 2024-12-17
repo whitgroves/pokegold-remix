@@ -703,277 +703,142 @@ JohtoGrassWildMons:
 
 	def_grass_wildmons ICE_PATH_1F
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
-	IF DEF(_GOLD)
 	; morn
 	db 21, SWINUB
-	db 22, GOLBAT
-	db 22, ZUBAT
-	db 23, SWINUB
-	db 22, ZUBAT
-	db 22, JYNX
-	db 22, JYNX
+	db 23, GOLBAT
+	db 20, SNEASEL
+	db 24, DELIBIRD
+	db 20, JYNX
+	db 21, JYNX
+	db 22, SLUGMA
 	; day
 	db 21, SWINUB
-	db 22, GOLBAT
-	db 22, ZUBAT
-	db 23, SWINUB
-	db 22, JYNX
+	db 23, GOLBAT
+	db 20, SNEASEL
+	db 24, DELIBIRD
 	db 20, JYNX
-	db 20, JYNX
+	db 21, JYNX
+	db 22, SLUGMA
 	; nite
 	db 21, SWINUB
-	db 22, GOLBAT
-	db 22, ZUBAT
-	db 23, SWINUB
-	db 22, ZUBAT
-	db 22, JYNX
-	db 22, JYNX
-	ELIF DEF(_SILVER)
-	; morn
-	db 21, SWINUB
-	db 22, GOLBAT
-	db 22, DELIBIRD
-	db 23, SWINUB
-	db 22, ZUBAT
-	db 22, JYNX
-	db 22, JYNX
-	; day
-	db 21, SWINUB
-	db 22, GOLBAT
-	db 22, DELIBIRD
-	db 23, SWINUB
-	db 22, JYNX
+	db 23, GOLBAT
+	db 20, SNEASEL
+	db 24, DELIBIRD
 	db 20, JYNX
-	db 20, JYNX
-	; nite
-	db 21, SWINUB
-	db 22, GOLBAT
-	db 22, DELIBIRD
-	db 23, SWINUB
-	db 22, ZUBAT
-	db 22, JYNX
-	db 22, JYNX
-	ENDC
+	db 21, JYNX
+	db 22, SLUGMA
 	end_grass_wildmons
 
 	def_grass_wildmons ICE_PATH_B1F
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
-	IF DEF(_GOLD)
 	; morn
 	db 21, SWINUB
-	db 22, GOLBAT
-	db 22, ZUBAT
-	db 23, SWINUB
-	db 22, ZUBAT
-	db 22, JYNX
-	db 22, JYNX
+	db 23, GOLBAT
+	db 20, SNEASEL
+	db 24, DELIBIRD
+	db 20, JYNX
+	db 21, JYNX
+	db 22, SLUGMA
 	; day
 	db 21, SWINUB
-	db 22, GOLBAT
-	db 22, ZUBAT
-	db 23, SWINUB
-	db 22, JYNX
+	db 23, GOLBAT
+	db 20, SNEASEL
+	db 24, DELIBIRD
 	db 20, JYNX
-	db 20, JYNX
+	db 21, JYNX
+	db 22, SLUGMA
 	; nite
 	db 21, SWINUB
-	db 22, GOLBAT
-	db 22, ZUBAT
-	db 23, SWINUB
-	db 22, ZUBAT
-	db 22, JYNX
-	db 22, JYNX
-	ELIF DEF(_SILVER)
-	; morn
-	db 21, SWINUB
-	db 22, GOLBAT
-	db 22, DELIBIRD
-	db 23, SWINUB
-	db 22, ZUBAT
-	db 22, JYNX
-	db 22, JYNX
-	; day
-	db 21, SWINUB
-	db 22, GOLBAT
-	db 22, DELIBIRD
-	db 23, SWINUB
-	db 22, JYNX
+	db 23, GOLBAT
+	db 20, SNEASEL
+	db 24, DELIBIRD
 	db 20, JYNX
-	db 20, JYNX
-	; nite
-	db 21, SWINUB
-	db 22, GOLBAT
-	db 22, DELIBIRD
-	db 23, SWINUB
-	db 22, ZUBAT
-	db 22, JYNX
-	db 22, JYNX
-	ENDC
+	db 21, JYNX
+	db 22, SLUGMA
 	end_grass_wildmons
 
 	def_grass_wildmons ICE_PATH_B2F_MAHOGANY_SIDE
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
-	IF DEF(_GOLD)
 	; morn
 	db 22, SWINUB
 	db 23, GOLBAT
-	db 23, ZUBAT
-	db 24, SWINUB
-	db 23, ZUBAT
-	db 23, JYNX
-	db 23, JYNX
+	db 21, SNEASEL
+	db 24, DELIBIRD
+	db 21, JYNX
+	db 22, JYNX
+	db 22, SLUGMA
 	; day
 	db 22, SWINUB
 	db 23, GOLBAT
-	db 23, ZUBAT
-	db 24, SWINUB
-	db 23, JYNX
+	db 21, SNEASEL
+	db 24, DELIBIRD
 	db 21, JYNX
-	db 21, JYNX
+	db 22, JYNX
+	db 22, SLUGMA
 	; nite
 	db 22, SWINUB
 	db 23, GOLBAT
-	db 23, ZUBAT
-	db 24, SWINUB
-	db 23, ZUBAT
-	db 23, JYNX
-	db 23, JYNX
-	ELIF DEF(_SILVER)
-	; morn
-	db 22, SWINUB
-	db 23, GOLBAT
-	db 23, DELIBIRD
-	db 24, SWINUB
-	db 23, ZUBAT
-	db 23, JYNX
-	db 23, JYNX
-	; day
-	db 22, SWINUB
-	db 23, GOLBAT
-	db 23, DELIBIRD
-	db 24, SWINUB
-	db 23, JYNX
+	db 21, SNEASEL
+	db 24, DELIBIRD
 	db 21, JYNX
-	db 21, JYNX
-	; nite
-	db 22, SWINUB
-	db 23, GOLBAT
-	db 23, DELIBIRD
-	db 24, SWINUB
-	db 23, ZUBAT
-	db 23, JYNX
-	db 23, JYNX
-	ENDC
+	db 22, JYNX
+	db 22, SLUGMA
 	end_grass_wildmons
 
 	def_grass_wildmons ICE_PATH_B2F_BLACKTHORN_SIDE
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
-	IF DEF(_GOLD)
 	; morn
 	db 22, SWINUB
 	db 23, GOLBAT
-	db 23, ZUBAT
-	db 24, SWINUB
-	db 23, ZUBAT
-	db 23, JYNX
-	db 23, JYNX
+	db 21, SNEASEL
+	db 24, DELIBIRD
+	db 21, JYNX
+	db 22, JYNX
+	db 22, SLUGMA
 	; day
 	db 22, SWINUB
 	db 23, GOLBAT
-	db 23, ZUBAT
-	db 24, SWINUB
-	db 23, JYNX
+	db 21, SNEASEL
+	db 24, DELIBIRD
 	db 21, JYNX
-	db 21, JYNX
+	db 22, JYNX
+	db 22, SLUGMA
 	; nite
 	db 22, SWINUB
 	db 23, GOLBAT
-	db 23, ZUBAT
-	db 24, SWINUB
-	db 23, ZUBAT
-	db 23, JYNX
-	db 23, JYNX
-	ELIF DEF(_SILVER)
-	; morn
-	db 22, SWINUB
-	db 23, GOLBAT
-	db 23, DELIBIRD
-	db 24, SWINUB
-	db 23, ZUBAT
-	db 23, JYNX
-	db 23, JYNX
-	; day
-	db 22, SWINUB
-	db 23, GOLBAT
-	db 23, DELIBIRD
-	db 24, SWINUB
-	db 23, JYNX
+	db 21, SNEASEL
+	db 24, DELIBIRD
 	db 21, JYNX
-	db 21, JYNX
-	; nite
-	db 22, SWINUB
-	db 23, GOLBAT
-	db 23, DELIBIRD
-	db 24, SWINUB
-	db 23, ZUBAT
-	db 23, JYNX
-	db 23, JYNX
-	ENDC
+	db 22, JYNX
+	db 22, SLUGMA
 	end_grass_wildmons
 
 	def_grass_wildmons ICE_PATH_B3F
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
-	IF DEF(_GOLD)
 	; morn
+	db 22, SWINUB
+	db 22, SNEASEL
 	db 23, SWINUB
-	db 24, GOLBAT
-	db 24, ZUBAT
-	db 25, SWINUB
-	db 24, ZUBAT
-	db 24, JYNX
+	db 24, DELIBIRD
+	db 22, JYNX
+	db 23, JYNX
 	db 24, JYNX
 	; day
+	db 22, SWINUB
+	db 22, SNEASEL
 	db 23, SWINUB
-	db 24, GOLBAT
-	db 24, ZUBAT
-	db 25, SWINUB
+	db 24, DELIBIRD
+	db 22, JYNX
+	db 23, JYNX
 	db 24, JYNX
-	db 22, JYNX
-	db 22, JYNX
 	; nite
+	db 22, SWINUB
+	db 22, SNEASEL
 	db 23, SWINUB
-	db 24, GOLBAT
-	db 24, ZUBAT
-	db 25, SWINUB
-	db 24, ZUBAT
-	db 24, JYNX
-	db 24, JYNX
-	ELIF DEF(_SILVER)
-	; morn
-	db 23, SWINUB
-	db 24, GOLBAT
 	db 24, DELIBIRD
-	db 25, SWINUB
-	db 24, ZUBAT
-	db 24, JYNX
-	db 24, JYNX
-	; day
-	db 23, SWINUB
-	db 24, GOLBAT
-	db 24, DELIBIRD
-	db 25, SWINUB
-	db 24, JYNX
 	db 22, JYNX
-	db 22, JYNX
-	; nite
-	db 23, SWINUB
-	db 24, GOLBAT
-	db 24, DELIBIRD
-	db 25, SWINUB
-	db 24, ZUBAT
+	db 23, JYNX
 	db 24, JYNX
-	db 24, JYNX
-	ENDC
 	end_grass_wildmons
 
 	def_grass_wildmons WHIRL_ISLAND_NW
