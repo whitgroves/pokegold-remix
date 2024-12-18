@@ -18,7 +18,18 @@ BlackthornCity_MapScripts:
 
 BlackthornCityFlypointCallback:
 	setflag ENGINE_FLYPOINT_BLACKTHORN
-	jumpstd RadioTowerRocketsScript
+	checkevent EVENT_RADIO_TOWER_ROCKET_TAKEOVER
+	iffalse .RadioTowerInProgressOrDone
+	checkevent EVENT_CLEARED_RADIO_TOWER
+	iftrue .RadioTowerInProgressOrDone
+	setflag ENGINE_ROCKETS_IN_RADIO_TOWER
+	setevent EVENT_GOLDENROD_CITY_CIVILIANS
+	setevent EVENT_RADIO_TOWER_BLACKBELT_BLOCKS_STAIRS
+	clearevent EVENT_RADIO_TOWER_ROCKET_TAKEOVER
+	clearevent EVENT_USED_THE_CARD_KEY_IN_THE_RADIO_TOWER
+	specialphonecall SPECIALCALL_WEIRDBROADCAST
+
+.RadioTowerInProgressOrDone:
 	endcallback
 
 BlackthornCitySantosCallback:

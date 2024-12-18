@@ -287,3 +287,5 @@ Several of the stores have been updated with new items.
 - Each surveillance statue in the Rocket Hideout summons 1 unique battle instead of 2 generic grunts
 - The trainer in Cianwood now gifts a Delibird instead of Shuckle so the player can always FLY home after beating the gym
 - HM moves can now be forgotten; when learning over them, a confirmation prompt is brought up before they're overwritten
+- The Radio Tower incident now starts when reaching Blackthorn rather than immediately the 7th badge
+- Consequently, Route 44 and the [Mahogany Mart](#mahogany-mart-post-rocket-hideout) both open immediately after beating Pryce
