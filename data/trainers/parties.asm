@@ -2201,10 +2201,11 @@ HikerGroup:
 	; HIKER (11)
 	db "BAILEY@", TRAINERTYPE_NORMAL
 	db 13, GEODUDE
-	db 13, GEODUDE
-	db 13, GEODUDE
-	db 13, GEODUDE
-	db 13, GEODUDE
+	db 13, PHANPY
+	db 13, SANDSHREW
+	db 13, TEDDIURSA
+	db 13, SLUGMA
+	db 13, GLIGAR
 	db -1 ; end
 
 	; HIKER (12)
@@ -2659,7 +2660,7 @@ PicnickerGroup:
 	; PICNICKER (10)
 	db "ERIN@", TRAINERTYPE_NORMAL
 	db 16, PONYTA
-	db 16, PONYTA
+	db 16, TEDDIURSA
 	db -1 ; end
 
 	; PICNICKER (11)
@@ -2705,9 +2706,10 @@ PicnickerGroup:
 	db -1 ; end
 
 	; PICNICKER (18)
-	db "ERIN@", TRAINERTYPE_NORMAL
+	db "ERIN@", TRAINERTYPE_NORMAL ; rematch post E4
+	db 31, EXEGGCUTE
 	db 32, PONYTA
-	db 32, PONYTA
+	db 30, URSARING
 	db -1 ; end
 
 	; PICNICKER (19)
@@ -2721,9 +2723,10 @@ PicnickerGroup:
 	db -1 ; end
 
 	; PICNICKER (21)
-	db "ERIN@", TRAINERTYPE_NORMAL
-	db 36, PONYTA
-	db 36, PONYTA
+	db "ERIN@", TRAINERTYPE_NORMAL ; rematch post Cerulean
+	db 34, EXEGGUTOR
+	db 36, URSARING
+	db 40, RAPIDASH
 	db -1 ; end
 
 CamperGroup:
@@ -2786,7 +2789,7 @@ CamperGroup:
 
 	; CAMPER (11)
 	db "TED@", TRAINERTYPE_NORMAL
-	db 17, MANKEY
+	db 21, SANDSHREW
 	db -1 ; end
 
 	; CAMPER (12)
