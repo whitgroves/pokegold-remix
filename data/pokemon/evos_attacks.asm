@@ -3449,8 +3449,8 @@ SuicuneEvosAttacks:
 LarvitarEvosAttacks:
 	db EVOLVE_LEVEL, 30, PUPITAR
 	db 0 ; no more evolutions
-	db 1, BITE
 	db 1, LEER
+	db 1, BITE
 	db 8, SANDSTORM
 	db 15, SCREECH
 	db 22, ROCK_SLIDE
@@ -3464,10 +3464,8 @@ LarvitarEvosAttacks:
 PupitarEvosAttacks:
 	db EVOLVE_LEVEL, 55, TYRANITAR
 	db 0 ; no more evolutions
-	db 1, BITE
 	db 1, LEER
-	db 1, SANDSTORM
-	db 1, SCREECH
+	db 1, BITE
 	db 8, SANDSTORM
 	db 15, SCREECH
 	db 22, ROCK_SLIDE
@@ -3480,10 +3478,8 @@ PupitarEvosAttacks:
 
 TyranitarEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, BITE
 	db 1, LEER
-	db 1, SANDSTORM
-	db 1, SCREECH
+	db 1, BITE
 	db 8, SANDSTORM
 	db 15, SCREECH
 	db 22, ROCK_SLIDE
