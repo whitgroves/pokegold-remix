@@ -309,6 +309,7 @@ RocketBaseElectrodeScript:
 	setevent EVENT_SECURITY_CAMERA_3
 	setevent EVENT_SECURITY_CAMERA_4
 	setevent EVENT_SECURITY_CAMERA_5
+	clearevent EVENT_GOLDENROD_CITY_ROCKET_TAKEOVER ; foreshadows but doesn't start Radio Tower yet
 	end
 
 TeamRocketBaseB2FLockedDoor:

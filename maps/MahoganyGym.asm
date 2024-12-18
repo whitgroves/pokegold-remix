@@ -59,11 +59,7 @@ MahoganyGym_NoRoomForIcyWind:
 
 MahoganyGymActivateRockets:
 	ifequal 7, .RadioTowerRockets
-	ifequal 6, .GoldenrodRockets
 	end
-
-.GoldenrodRockets:
-	jumpstd GoldenrodRocketsScript
 
 .RadioTowerRockets:
 	jumpstd RadioTowerRocketsScript

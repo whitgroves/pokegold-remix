@@ -22,7 +22,6 @@ StdScripts::
 	add_stdscript SmashRockScript
 	add_stdscript PokecenterSignScript
 	add_stdscript MartSignScript
-	add_stdscript GoldenrodRocketsScript
 	add_stdscript RadioTowerRocketsScript
 	add_stdscript ElevatorButtonScript
 	add_stdscript DayToTextScript
@@ -247,10 +246,6 @@ DayToTextScript:
 	db "FRIDAY@"
 .SaturdayText:
 	db "SATURDAY@"
-
-GoldenrodRocketsScript:
-	clearevent EVENT_GOLDENROD_CITY_ROCKET_TAKEOVER
-	end
 
 RadioTowerRocketsScript:
 	setflag ENGINE_ROCKETS_IN_RADIO_TOWER
