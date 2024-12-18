@@ -1906,8 +1906,8 @@ SwimmerFGroup:
 SailorGroup:
 	; SAILOR (1)
 	db "EUGENE@", TRAINERTYPE_NORMAL
-	db 17, POLIWHIRL
-	db 17, RATICATE
+	db 17, POLIWAG
+	db 17, RATTATA
 	db 19, KRABBY
 	db -1 ; end
 
