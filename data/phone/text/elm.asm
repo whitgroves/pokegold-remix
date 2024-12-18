@@ -168,21 +168,27 @@ ElmPhoneRadioTowerRocketTakeoverText:
 	para "happening with the"
 	line "radio broadcasts."
 
-	para "They were talking"
-	line "about TEAM ROCKET."
+	para "It seems to be"
+	line "affecting the"
+	cont "local #MON."
 
-	para "<PLAYER>, do you"
-	line "know anything"
-	cont "about it?"
+	para "<PLAYER>, are your"
+	line "#MON okay?"
 
-	para "Maybe TEAM ROCKET"
-	line "has returned. No,"
+	para "I just spoke with"
+	line "PROF.OAK and he"
 
-	para "that just can't"
-	line "be true."
+	para "says he can't get"
+	line "in the GOLDENROD"
 
-	para "Sorry to bug you."
-	line "Take care!"
+	para "RADIO TOWER to do"
+	line "his radio show."
+
+	para "That can't be"
+	line "related, can it?"
+
+	para "Either way,"
+	line "be careful!"
 	done
 
 ElmPhoneGiftText:
