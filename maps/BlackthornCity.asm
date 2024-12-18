@@ -18,6 +18,7 @@ BlackthornCity_MapScripts:
 
 BlackthornCityFlypointCallback:
 	setflag ENGINE_FLYPOINT_BLACKTHORN
+	jumpstd RadioTowerRocketsScript
 	endcallback
 
 BlackthornCitySantosCallback:

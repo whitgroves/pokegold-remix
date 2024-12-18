@@ -47,8 +47,6 @@ CianwoodGymChuckScript:
 	playsound SFX_GET_BADGE
 	waitsfx
 	setflag ENGINE_STORMBADGE
-	readvar VAR_BADGES
-	scall CianwoodGymActivateRockets
 .FightDone:
 	checkevent EVENT_GOT_TM01_DYNAMICPUNCH
 	iftrue .AlreadyGotTM
@@ -72,13 +70,6 @@ CianwoodGymChuckScript:
 .BagFull:
 	closetext
 	end
-
-CianwoodGymActivateRockets:
-	ifequal 7, .RadioTowerRockets
-	end
-
-.RadioTowerRockets:
-	jumpstd RadioTowerRocketsScript
 
 TrainerBlackbeltYoshi:
 	trainer BLACKBELT_T, YOSHI, EVENT_BEAT_BLACKBELT_YOSHI, BlackbeltYoshiSeenText, BlackbeltYoshiBeatenText, 0, .Script

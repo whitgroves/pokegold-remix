@@ -25,8 +25,6 @@ OlivineGymJasmineScript:
 	playsound SFX_GET_BADGE
 	waitsfx
 	setflag ENGINE_MINERALBADGE
-	readvar VAR_BADGES
-	scall OlivineGymActivateRockets
 .FightDone:
 	checkevent EVENT_GOT_TM23_IRON_TAIL
 	iftrue .GotIronTail
@@ -46,13 +44,6 @@ OlivineGymJasmineScript:
 .NoRoomForIronTail:
 	closetext
 	end
-
-OlivineGymActivateRockets:
-	ifequal 7, .RadioTowerRockets
-	end
-
-.RadioTowerRockets:
-	jumpstd RadioTowerRocketsScript
 
 OlivineGymGuideScript:
 	faceplayer
