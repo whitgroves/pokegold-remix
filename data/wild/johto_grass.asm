@@ -648,29 +648,29 @@ JohtoGrassWildMons:
 	def_grass_wildmons MOUNT_MORTAR_2F_INSIDE
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
 	; morn
-	db 31, GRAVELER
-	db 32, MACHOKE
-	db 31, GEODUDE
-	db 30, RATICATE
-	db 28, MACHOP
-	db 30, GOLBAT
-	db 30, GOLBAT
+	db 28, MACHOKE
+	db 27, GRAVELER
+	db 26, GOLBAT
+	db 27, ONIX
+	db 25, WOBBUFFET
+	db 27, CUBONE
+	db 30, KANGASKHAN
 	; day
-	db 31, GRAVELER
-	db 32, MACHOKE
-	db 31, GEODUDE
-	db 30, RATICATE
-	db 28, MACHOP
-	db 30, GOLBAT
-	db 30, GOLBAT
+	db 28, MACHOKE
+	db 27, GRAVELER
+	db 26, GOLBAT
+	db 27, ONIX
+	db 25, WOBBUFFET
+	db 27, CUBONE
+	db 30, KANGASKHAN
 	; nite
-	db 31, GRAVELER
-	db 32, MACHOKE
-	db 31, GEODUDE
-	db 30, RATICATE
-	db 28, MACHOP
-	db 30, GOLBAT
-	db 30, GOLBAT
+	db 28, MACHOKE
+	db 27, GRAVELER
+	db 26, GOLBAT
+	db 27, ONIX
+	db 25, WOBBUFFET
+	db 27, CUBONE
+	db 30, KANGASKHAN
 	end_grass_wildmons
 
 	def_grass_wildmons MOUNT_MORTAR_B1F
@@ -822,7 +822,7 @@ JohtoGrassWildMons:
 	db 24, DELIBIRD
 	db 22, JYNX
 	db 23, JYNX
-	db 20, WOBBUFFET
+	db 24, MR__MIME
 	; day
 	db 22, SWINUB
 	db 22, SNEASEL
@@ -830,7 +830,7 @@ JohtoGrassWildMons:
 	db 24, DELIBIRD
 	db 22, JYNX
 	db 23, JYNX
-	db 20, WOBBUFFET
+	db 24, MR__MIME
 	; nite
 	db 22, SWINUB
 	db 22, SNEASEL
@@ -838,7 +838,7 @@ JohtoGrassWildMons:
 	db 24, DELIBIRD
 	db 22, JYNX
 	db 23, JYNX
-	db 20, WOBBUFFET
+	db 24, MR__MIME
 	end_grass_wildmons
 
 	def_grass_wildmons WHIRL_ISLAND_NW
