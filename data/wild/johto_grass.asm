@@ -822,7 +822,7 @@ JohtoGrassWildMons:
 	db 24, DELIBIRD
 	db 22, JYNX
 	db 23, JYNX
-	db 24, JYNX
+	db 20, WOBBUFFET
 	; day
 	db 22, SWINUB
 	db 22, SNEASEL
@@ -830,7 +830,7 @@ JohtoGrassWildMons:
 	db 24, DELIBIRD
 	db 22, JYNX
 	db 23, JYNX
-	db 24, JYNX
+	db 20, WOBBUFFET
 	; nite
 	db 22, SWINUB
 	db 22, SNEASEL
@@ -838,7 +838,7 @@ JohtoGrassWildMons:
 	db 24, DELIBIRD
 	db 22, JYNX
 	db 23, JYNX
-	db 24, JYNX
+	db 20, WOBBUFFET
 	end_grass_wildmons
 
 	def_grass_wildmons WHIRL_ISLAND_NW
@@ -1316,29 +1316,29 @@ JohtoGrassWildMons:
 	def_grass_wildmons DARK_CAVE_BLACKTHORN_ENTRANCE
 	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
 	; morn
-	db 23, GEODUDE
-	db 23, ZUBAT
 	db 25, GRAVELER
-	db 20, WOBBUFFET
-	db 25, WOBBUFFET
 	db 23, GOLBAT
-	db 23, GOLBAT
+	db 24, SANDSLASH
+	db 21, TEDDIURSA
+	db 27, DUNSPARCE
+	db 25, LARVITAR
+	db 30, URSARING
 	; day
-	db 23, GEODUDE
-	db 23, ZUBAT
 	db 25, GRAVELER
-	db 20, WOBBUFFET
-	db 25, WOBBUFFET
 	db 23, GOLBAT
-	db 23, GOLBAT
+	db 24, SANDSLASH
+	db 21, TEDDIURSA
+	db 27, DUNSPARCE
+	db 25, LARVITAR
+	db 30, URSARING
 	; nite
-	db 23, GEODUDE
-	db 23, ZUBAT
 	db 25, GRAVELER
-	db 20, WOBBUFFET
-	db 25, WOBBUFFET
 	db 23, GOLBAT
-	db 23, GOLBAT
+	db 24, SANDSLASH
+	db 21, TEDDIURSA
+	db 27, DUNSPARCE
+	db 25, LARVITAR
+	db 30, URSARING
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_29
@@ -1735,57 +1735,30 @@ JohtoGrassWildMons:
 
 	def_grass_wildmons ROUTE_45
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
-	IF DEF(_GOLD)
 	; morn
-	db 23, GEODUDE
-	db 23, GRAVELER
-	db 24, GLIGAR
-	db 20, TEDDIURSA
 	db 25, GRAVELER
-	db 27, GRAVELER
-	db 27, GRAVELER
+	db 25, DONPHAN
+	db 24, SANDSLASH
+	db 23, FEAROW
+	db 22, GLIGAR
+	db 24, SLUGMA
+	db 21, TEDDIURSA
 	; day
-	db 23, GEODUDE
-	db 23, GRAVELER
-	db 24, GLIGAR
-	db 20, TEDDIURSA
 	db 25, GRAVELER
-	db 27, GRAVELER
-	db 27, GRAVELER
+	db 23, FEAROW
+	db 24, SANDSLASH
+	db 25, DONPHAN
+	db 24, SLUGMA
+	db 22, GLIGAR
+	db 21, TEDDIURSA
 	; nite
-	db 23, GEODUDE
-	db 23, GRAVELER
-	db 24, GLIGAR
-	db 20, TEDDIURSA
+	db 24, SANDSLASH
+	db 22, GLIGAR
 	db 25, GRAVELER
-	db 27, GRAVELER
-	db 27, GRAVELER
-	ELIF DEF(_SILVER)
-	; morn
-	db 23, GEODUDE
-	db 23, GRAVELER
-	db 24, GRAVELER
-	db 20, PHANPY
-	db 25, GRAVELER
-	db 27, SKARMORY
-	db 27, SKARMORY
-	; day
-	db 23, GEODUDE
-	db 23, GRAVELER
-	db 24, GRAVELER
-	db 20, PHANPY
-	db 25, GRAVELER
-	db 27, SKARMORY
-	db 27, SKARMORY
-	; nite
-	db 23, GEODUDE
-	db 23, GRAVELER
-	db 24, GRAVELER
-	db 20, PHANPY
-	db 25, GRAVELER
-	db 27, SKARMORY
-	db 27, SKARMORY
-	ENDC
+	db 25, MURKROW
+	db 24, SLUGMA
+	db 21, TEDDIURSA
+	db 30, URSARING
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_46

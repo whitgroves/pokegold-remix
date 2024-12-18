@@ -109,16 +109,16 @@ JohtoWaterWildMons:
 
 	def_water_wildmons DARK_CAVE_BLACKTHORN_ENTRANCE
 	db 2 percent ; encounter rate
-	db 15, MAGIKARP
-	db 10, MAGIKARP
-	db 5, MAGIKARP
+	db 19, MAGIKARP
+	db 25, CHINCHOU
+	db 27, LANTURN
 	end_water_wildmons
 
 	def_water_wildmons DRAGONS_DEN_B1F
 	db 4 percent ; encounter rate
-	db 15, MAGIKARP
-	db 10, MAGIKARP
-	db 10, DRATINI
+	db 19, MAGIKARP
+	db 23, HORSEA
+	db 21, DRATINI
 	end_water_wildmons
 
 	def_water_wildmons ROUTE_30
@@ -193,9 +193,9 @@ JohtoWaterWildMons:
 
 	def_water_wildmons ROUTE_45
 	db 2 percent ; encounter rate
-	db 20, MAGIKARP
-	db 15, MAGIKARP
-	db 5, MAGIKARP
+	db 19, MAGIKARP
+	db 17, MAGIKARP
+	db 22, FEAROW
 	end_water_wildmons
 
 	def_water_wildmons NEW_BARK_TOWN
@@ -248,10 +248,10 @@ JohtoWaterWildMons:
 	end_water_wildmons
 
 	def_water_wildmons BLACKTHORN_CITY
-	db 4 percent ; encounter rate
-	db 15, MAGIKARP
-	db 10, MAGIKARP
-	db 5, MAGIKARP
+	db 2 percent ; encounter rate
+	db 19, MAGIKARP
+	db 23, HORSEA
+	db 21, DRATINI
 	end_water_wildmons
 
 	def_water_wildmons SILVER_CAVE_OUTSIDE
