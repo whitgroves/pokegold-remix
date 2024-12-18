@@ -180,22 +180,24 @@ ForgetMove:
 	ld a, [hl]
 	push af
 	push bc
-	call IsHMMove
+	call IsHMMove 	; nc = no, c = yes
+	jr nc, .cleanup ; forget immediately
+	ld hl, MoveCantForgetHMText
+	call PrintText
+	call YesNoBox	; nc = yes, c = no
+
+.cleanup ; regardless of choice, reset registers must be reset or the game will crash
 	pop bc
 	pop de
 	ld a, d
-	jr c, .hmmove
 	pop hl
+	jr c, .loop		; no from YesNoBox = start over
+	
+.forget
 	add hl, bc
 	and a
 	ret
-
-.hmmove
-	ld hl, MoveCantForgetHMText
-	call PrintText
-	pop hl
-	jr .loop
-
+	
 .cancel
 	scf
 	ret

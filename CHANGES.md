@@ -264,7 +264,7 @@ Weathers cause new interactions in addition to their old ones (e.g., Rain boosti
 - *Thunder* behaves as if under Sun
 
 ## Store updates
-Several of the stores have been updated to make certain TMs and evolution items more available.
+Several of the stores have been updated with new items.
 ### Goldenrod Dept. Store
 - TM09 Metal Claw
 - TM39 Swift -*Available after receiving TM02 Headbutt in Ilex Forest*
@@ -285,3 +285,5 @@ Several of the stores have been updated to make certain TMs and evolution items 
 - As a consequence of the above, the shininess formula has been updated and now has a ~1/7281 chance instead of 1/8192
 - Similarly, trainer DVs have been updated so that trainer classes generally have the same gender mons as the base game
 - Each surveillance statue in the Rocket Hideout summons 1 unique battle instead of 2 generic grunts
+- The trainer in Cianwood now gifts a Delibird instead of Shuckle so the player can always FLY home after beating the gym
+- HM moves can now be forgotten; when learning over them, a confirmation prompt is brought up before they're overwritten

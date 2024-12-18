@@ -22,8 +22,9 @@ The following changes have been implemented or planned:
 - The good rod is good and the super rod is super
 - The "Down + B" trick actually works
 - Better rocket hideout ✓
+- HMs can be deleted ✓
 
-A list of major changes is available [here](./CHANGES.md). These are largely untested, so if you run into issues please reach out on X: [@whitgroves](https://x.com/whitgroves)
+A detailed list of changes is available [here](./CHANGES.md). These are largely untested, so if you run into issues please reach out on X: [@whitgroves](https://x.com/whitgroves)
 
 ## Why *Gold* Remix?
 Similar to Blue Remix, Gold was the gen 2 game I made memories with, so I decided to go with my favorite.

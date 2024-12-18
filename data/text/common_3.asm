@@ -185,9 +185,10 @@ _MoveForgotText::
 	prompt
 
 _MoveCantForgetHMText::
-	text "HM moves can't be"
-	line "forgotten now."
-	prompt
+	text "It's an HM move."
+	line "Are you sure you"
+	cont "want to forget?"
+	done
 
 _CardFlipPlayWithThreeCoinsText::
 	text "Play with three"
