@@ -167,23 +167,51 @@ GruntM10AfterBattleText:
 	done
 
 Executivem2SeenText:
-	text "Stop! I'm known as"
-	line "the TEAM ROCKET"
-	cont "fortress!"
+	text "…"
+
+	para "First the WELL,"
+	line "then the HIDEOUT…"
+	
+	para "Now this?"
+
+	para "Stop meddling in"
+	line "TEAM ROCKET's"
+	cont "business!"
+
+	para "As our newest"
+	line "EXECUTIVE, I'm"
+	cont "drawing the line…"
 
 	para "You're not taking"
 	line "another step!"
 	done
 
 Executivem2BeatenText:
-	text "The fortress came"
-	line "down!"
+	text "…"
+
+	para "I'm not worthy"
+	line "to be called an"
+	cont "EXECUTIVE yet."
 	done
 
 Executivem2AfterBattleText:
 	text "You've earned my"
 	line "respect, so here's"
 	cont "some advice."
+
+	para "You should have"
+	line "met our SCIENTIST"
+	cont "by now."
+
+	para "With his research,"
+	line "GIOVANNI and"
+	cont "TEAM ROCKET"
+
+	para "can dominate both"
+	line "JOHTO and KANTO."
+
+	para "Don't stand in"
+	line "the way of that."
 
 	para "It's not too late."
 	line "You can still turn"

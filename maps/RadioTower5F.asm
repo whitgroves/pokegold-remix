@@ -246,34 +246,56 @@ FakeDirectorTextAfter:
 	done
 
 Executivef1SeenText:
-	text "Hi, little boy."
-	line "Remember me from"
+	text "<PLAYER>, isn't it?"
 
-	para "the HIDEOUT in"
-	line "MAHOGANY TOWN?"
+	para "Remember me from"
+	line "the HIDEOUT in"
+	cont "MAHOGANY TOWN?"
 
-	para "I lost then, but I"
-	line "won't this time."
+	para "I lost then, but"
+	line "there's much more"
+	cont "on the line now."
+
+	para "You won't win"
+	line "this time."
 	done
 
 Executivef1BeatenText:
 	text "This can't be"
 	line "happening!"
 
-	para "I fought hard, but"
-	line "I still lost…"
+	para "All our work…"
+	line "for nothing?"
 	done
 
 Executivef1AfterBattleText:
-	text "<PLAYER>, isn't it?"
+	para "A kid like you"
+	line "can't appreciate"
 
-	para "A brat like you"
-	line "won't appreciate"
-
-	para "the magnificence"
+	para "the bigger picture"
 	line "of TEAM ROCKET."
 
-	para "That's too bad."
+	para "Who defines the"
+	line "boundaries of the"
+	cont "#MON world?"
+
+	para "Is it SILPH? The"
+	line "INDIGO PLATEAU?"
+
+	para "Or maybe it's"
+	line "something else?"
+
+	para "Only GIOVANNI"
+	line "was willing to"
+	cont "challenge that."
+
+	para "…"
+
+	para "But I can tell…"
+	line "you still don't"
+	line "understand."
+
+	para "It's all too bad."
 	line "I really admire"
 	cont "your power."
 	done
@@ -285,22 +307,31 @@ RadioTower5FRocketBossBeforeText:
 	para "You must be quite"
 	line "the trainer."
 
-	para "We intend to take"
-	line "over this RADIO"
+	para "But it's too late."
 
-	para "STATION and an-"
-	line "nounce our come-"
-	cont "back."
+	para "With control of"
+	line "the RADIO STATION,"
 
-	para "That should bring"
+	para "and eventually,"
+	line "JOHTO and KANTO,"
+
+	para "We will signal to"
 	line "our boss GIOVANNI"
 
-	para "back from his solo"
-	line "training."
+	para "that it is time to"
+	line "return to power"
+
+	para "as the head of"
+	line "TEAM ROCKET"
+	cont "once again."
 
 	para "We are going to"
 	line "regain our former"
-	cont "glory."
+	cont "glory,"
+
+	para "and then complete"
+	line "our work from"
+	cont "three years ago."
 
 	para "I won't allow you"
 	line "to interfere with"
@@ -315,11 +346,21 @@ RadioTower5FRocketBossWinText:
 RadioTower5FRocketBossAfterText:
 	text "How could this be?"
 
-	para "Our dreams have"
-	line "come to naught."
+	para "Have our dreams"
+	line "come to naught?"
 
-	para "I wasn't up to the"
-	line "task after all."
+	para "Was I not fit"
+	line "for the task?"
+
+	para "…"
+
+	para "I am starting"
+	line "to see why he"
+	cont "disappeared."
+
+	para "I have my own"
+	line "questions to"
+	cont "answer."
 
 	para "Like GIOVANNI did"
 	line "before me, I will"

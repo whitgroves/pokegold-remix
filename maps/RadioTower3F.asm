@@ -268,23 +268,22 @@ GruntM8AfterBattleText:
 	done
 
 GruntM9SeenText:
-	text "Why did the shut-"
-	line "ter open? Did you"
+	text "What the… why did"
+	line "the shutter open?"
 
-	para "have something to"
-	line "do with this?"
+	para "Did you get past"
+	line "past our men in"
+	cont "the UNDERGROUND?"
 	done
 
 GruntM9BeatenText:
-	text "I'm done for!"
+	text "I hate stair duty!"
 	done
 
 GruntM9AfterBattleText:
-	text "What?! You made it"
-	line "past our men in"
-	cont "the UNDERGROUND?"
-
-	para "How could you?"
+	text "I bet you think"
+	line "you're smart for"
+	cont "getting this far."
 	done
 
 ScientistMarcSeenText:
