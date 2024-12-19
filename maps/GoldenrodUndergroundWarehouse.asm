@@ -101,7 +101,7 @@ GruntM24SeenText:
 	done
 
 GruntM24BeatenText:
-	text "He disposed of me…"
+	text "I was disposed of…"
 	done
 
 GruntM24AfterBattleText:

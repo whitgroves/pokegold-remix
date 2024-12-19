@@ -1227,10 +1227,9 @@ GruntMGroup:
 	db -1 ; end
 
 	; GRUNTM (11)
-	db "GRUNT@", TRAINERTYPE_NORMAL
-	db 23, MUK
-	db 23, KOFFING
-	db 25, RATTATA
+	db "GRUNT@", TRAINERTYPE_NORMAL ; "rematch" of GRUNTM_29 during Radio Tower
+	db 24, SLOWPOKE
+	db 22, RATICATE
 	db -1 ; end
 
 	; GRUNTM (12)
@@ -1239,20 +1238,22 @@ GruntMGroup:
 	db -1 ; end
 
 	; GRUNTM (13)
-	db "GRUNT@", TRAINERTYPE_NORMAL
-	db 27, RATTATA
+	db "GRUNT@", TRAINERTYPE_NORMAL ; "rematch" of GRUNTM_2/GRUNTM_21 during Radio Tower
+	db 22, GOLBAT
+	db 23, KOFFING
+	db 24, RATICATE
 	db -1 ; end
 
 	; GRUNTM (14)
 	db "GRUNT@", TRAINERTYPE_NORMAL
-	db 24, RATICATE
-	db 24, GOLBAT
+	db 28, PRIMEAPE
 	db -1 ; end
 
 	; GRUNTM (15)
-	db "GRUNT@", TRAINERTYPE_NORMAL
-	db 26, GRIMER
-	db 23, WEEZING
+	db "GRUNT@", TRAINERTYPE_NORMAL ; "rematch" of GRUNTM_28 during Radio Tower
+	db 27, LANTURN
+	db 29, SLUGMA
+	db 31, EXEGGCUTOR
 	db -1 ; end
 
 	; GRUNTM (16)
@@ -1305,15 +1306,14 @@ GruntMGroup:
 	db -1 ; end
 
 	; GRUNTM (24)
-	db "GRUNT@", TRAINERTYPE_NORMAL
-	db 25, KOFFING
-	db 25, KOFFING
+	db "GRUNT@", TRAINERTYPE_MOVES ; "rematch" of GRUNTM_18 during Rocket Hideout
+	db 18, GLIGAR,	CUT, VICEGRIP, POISON_STING, GUST
+	db 18, SCYTHER,	CUT, PURSUIT, FALSE_SWIPE, AGILITY
 	db -1 ; end
 
 	; GRUNTM (25)
 	db "GRUNT@", TRAINERTYPE_NORMAL
-	db 24, KOFFING
-	db 24, MUK
+	db 26, HYPNO
 	db -1 ; end
 
 	; GRUNTM (26)
@@ -2333,16 +2333,16 @@ BlaineGroup:
 
 BurglarGroup:
 	; BURGLAR (1)
-	db "DUNCAN@", TRAINERTYPE_NORMAL
-	db 23, KOFFING
-	db 25, MAGMAR
-	db 23, KOFFING
+	db "DUNCAN@", TRAINERTYPE_MOVES
+	db 25, MAGMAR,	SMOKESCREEN, THIEF, FIRE_PUNCH, SMOG
+	db 25, PARAS,	DIG, THIEF, SPORE, LEECH_LIFE
+	db 25, MEOWTH,	PAY_DAY, THIEF, SWIFT, GROWL
 	db -1 ; end
 
 	; BURGLAR (2)
 	db "EDDIE@", TRAINERTYPE_MOVES
-	db 26, GROWLITHE,  DIG, EMBER, LEER, TAKE_DOWN
-	db 24, KOFFING,    TACKLE, SMOG, SLUDGE, SMOKESCREEN
+	db 24, KOFFING,	SMOKESCREEN, THIEF, SLUDGE, SMOG
+	db 26, DUGTRIO, DIG, THIEF, MUD_SLAP, GROWL
 	db -1 ; end
 
 	; BURGLAR (3)
@@ -3217,9 +3217,10 @@ GruntFGroup:
 	db -1 ; end
 
 	; GRUNTF (3)
-	db "GRUNT@", TRAINERTYPE_NORMAL
+	db "GRUNT@", TRAINERTYPE_NORMAL ; "rematch" of GRUNTF_5 during Radio Tower
 	db 25, GLOOM
-	db 25, GLOOM
+	db 25, GRANBULL
+	db 25, GOLBAT
 	db -1 ; end
 
 	; GRUNTF (4)
