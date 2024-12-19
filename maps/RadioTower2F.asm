@@ -211,25 +211,37 @@ GruntM6AfterBattleText:
 	done
 
 GruntF2SeenText:
-	text "Hahaha!"
+	text "You again?"
 
-	para "How boring."
-	line "It was far too"
+	para "Hahaha! I knew"
+	line "it was far too"
 
-	para "easy to take over"
-	line "this place!"
+	para "easy to take"
+	line "over this place!"
 
-	para "Come on, keep me"
-	line "amused!"
+	para "Come on, brat!"
+	line "Keep me amused!"
 	done
 
 GruntF2BeatenText:
-	text "Wh-who are you?"
+	text "I was wrong"
+	line "about you."
+
+	para "You're not a"
+	line "brat at all…"
+
+	para "You're a first-"
+	line "class TRAINER!"
 	done
 
 GruntF2AfterBattleText:
-	text "You beat me, and"
-	line "I won't forget it!"
+	text "Aren't you here"
+	line "to stop us?"
+
+	para "Get moving, brat."
+
+	para "I won't let you"
+	cont "win next time!"
 	done
 
 RadioTower2FSalesSignText:

@@ -1175,31 +1175,31 @@ GruntMGroup:
 	db -1 ; end
 
 	; GRUNTM (3)
-	db "GRUNT@", TRAINERTYPE_NORMAL
-	db 24, RATICATE
-	db 24, RATICATE
+	db "GRUNT@", TRAINERTYPE_NORMAL ; "rematch" of GRUNTM_22 at Radio Tower
+	db 24, ARIADOS
+	db 24, GRANBULL
 	db -1 ; end
 
 	; GRUNTM (4)
 	db "GRUNT@", TRAINERTYPE_NORMAL
 	db 23, GRIMER
-	db 23, GRIMER
-	db 25, MUK
+	db 23, KOFFING
+	db 25, RATICATE
 	db -1 ; end
 
 	; GRUNTM (5)
 	db "GRUNT@", TRAINERTYPE_NORMAL
-	db 21, RATTATA
-	db 21, RATTATA
-	db 23, RATTATA
-	db 23, RATTATA
-	db 23, RATTATA
+	db 20, FURRET
+	db 21, MANKEY
+	db 21, DROWZEE
+	db 21, MEOWTH
+	db 23, RATICATE
 	db -1 ; end
 
 	; GRUNTM (6)
 	db "GRUNT@", TRAINERTYPE_NORMAL
-	db 26, ZUBAT
-	db 26, ZUBAT
+	db 26, KOFFING
+	db 26, GOLBAT
 	db -1 ; end
 
 	; GRUNTM (7)
@@ -3212,8 +3212,10 @@ GruntFGroup:
 	db -1 ; end
 
 	; GRUNTF (2)
-	db "GRUNT@", TRAINERTYPE_NORMAL
+	db "GRUNT@", TRAINERTYPE_NORMAL ; "rematch" of GRUNTF_1/GRUNTF_6 at Radio Tower
+	db 23, MISDREAVUS
 	db 26, ARBOK
+	db 27, HOUNDOOM
 	db -1 ; end
 
 	; GRUNTF (3)
