@@ -218,11 +218,15 @@ FakeDirectorTextBefore2:
 
 	para "Sure, I'll tell"
 	line "you. But only if"
-	cont "you can beat me!"
+	cont "you can beat my"
+	cont "modified #MON!"
 	done
 
 FakeDirectorWinText:
-	text "OK, OK. I'll tell"
+	text "They won't listen"
+	line "at all…"
+
+	para "OK, OK. I'll tell"
 	line "you where he is."
 	done
 

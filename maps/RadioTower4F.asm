@@ -217,6 +217,21 @@ GruntF4AfterBattleText:
 ScientistRichSeenText:
 	text "Most excellent."
 
+	para "Four years ago,"
+	line "they called me"
+	cont "crazy for my work."
+
+	para "Virtual #MON…"
+	
+	para "Ancient #MON…"
+
+	para "#MON designed"
+	line "to exceed all"
+	cont "limitations…"
+
+	para "This is simply"
+	line "the next step."
+
 	para "This RADIO TOWER"
 	line "will fulfill our"
 	cont "grand design."
@@ -227,12 +242,23 @@ ScientistRichBeatenText:
 
 	para "All grand plans"
 	line "come with snags."
+
+	para "In a few years"
+	line "you'll see this"
+	cont "copied by SILPH."
 	done
 
 ScientistRichAfterBattleText:
-	text "Do you honestly"
+	text "TEAM ROCKET is the"
+	line "only group willing"
+	
+	para "to push past the"
+	line "boundaries of"
+	cont "#MON research."
+
+	para "Do you honestly"
 	line "believe you can"
-	cont "stop TEAM ROCKET?"
+	cont "stop that?"
 	done
 
 RadioTower4FProductionSignText:
