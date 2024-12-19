@@ -260,13 +260,21 @@ BlackthornGymClairText_DescribeTM24:
 	text "That contains"
 	line "DRAGONBREATH."
 
-	para "No, it doesn't"
-	line "have anything to"
-	cont "do with my breath."
+	para "Most dragons can"
+	line "breathe fire, ice,"
+	cont "or lightning."
 
-	para "If you don't want"
-	line "it, you don't have"
-	cont "to take it."
+	para "But this move"
+	line "channels mystical"
+	cont "energy in its"
+	cont "purest form."
+
+	para "Receiving this"
+	line "technique is"
+	cont "an honor."
+
+	para "Don't take it"
+	line "lightly!"
 	done
 
 BlackthornGymClairText_League:
@@ -361,6 +369,10 @@ CooltrainerfLolaAfterBattleText:
 	text "Dragons are weak"
 	line "against dragon-"
 	cont "type moves."
+
+	para "Typical fire, ice,"
+	line "or electric-type"
+	cont "moves won't do it."
 	done
 
 BlackthornGymGuideText:
@@ -373,10 +385,10 @@ BlackthornGymGuideText:
 	para "are almost done!"
 	line "Count on me!"
 
-	para "CLAIR uses the"
-	line "mythical and sac-"
-	cont "red dragon-type"
-	cont "#MON."
+	para "CLAIR uses"
+	line "mythical and"
+	cont "sacred dragon-"
+	cont "type #MON."
 
 	para "You can't damage"
 	line "them very easily."
