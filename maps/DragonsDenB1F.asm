@@ -170,13 +170,21 @@ ClairText_DescribeDragonbreathDragonDen:
 	text "That contains"
 	line "DRAGONBREATH."
 
-	para "No, it doesn't"
-	line "have anything to"
-	cont "do with my breath."
+	para "Most dragons can"
+	line "breathe fire, ice,"
+	cont "or lightning."
 
-	para "If you don't want"
-	line "it, you don't have"
-	cont "to take it."
+	para "But this move"
+	line "channels mystical"
+	cont "energy in its"
+	cont "purest form."
+
+	para "Receiving this"
+	line "technique is"
+	cont "an honor."
+
+	para "Don't take it"
+	line "lightly!"
 	done
 
 ClairText_CollectedAllBadges:
