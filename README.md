@@ -21,7 +21,7 @@ The following changes have been implemented or planned:
 - Auto-sort the backpack by pressing Start
 - The good rod is good and the super rod is super
 - The "Down + B" trick actually works
-- Better rocket hideout ✓
+- Better rocket hideout & radio tower ✓
 - HMs can be deleted ✓
 
 A detailed list of changes is available [here](./CHANGES.md). These are largely untested, so if you run into issues please reach out on X: [@whitgroves](https://x.com/whitgroves)
