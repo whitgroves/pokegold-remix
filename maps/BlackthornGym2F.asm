@@ -86,7 +86,7 @@ CooltrainermCodySeenText:
 	para "My policy is to"
 	line "use #MON that"
 
-	para "are stronger than"
+	para "can cut down"
 	line "dragon #MON."
 	done
 
@@ -107,10 +107,16 @@ CooltrainermCodyAfterBattleText:
 	done
 
 CooltrainerfFranSeenText:
-	text "We go through rig-"
-	line "orous training un-"
-	cont "der CLAIR. I can't"
-	cont "afford to lose."
+	text "We go through"
+	line "rigorous training"
+	cont "under CLAIR."
+
+	para "Only then can we"
+	line "receive her dragon"
+	cont "techniques."
+
+	para "I can't afford"
+	line "to lose here!"
 	done
 
 CooltrainerfFranBeatenText:

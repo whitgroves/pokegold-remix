@@ -382,10 +382,10 @@ BlackthornGymGuideText:
 	line "them very easily."
 
 	para "But you know,"
-	line "they're supposed"
+	line "I've heard stories"
 
-	para "to be weak against"
-	line "ice-type moves."
+	para "of dragons taken"
+	line "down by ninjas."
 	done
 
 BlackthornGymGuideWinText:
