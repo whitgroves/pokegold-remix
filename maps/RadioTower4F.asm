@@ -280,7 +280,7 @@ ScientistRichAfterBattleText:
 	text "TEAM ROCKET is the"
 	line "only group willing"
 	
-	para "to push past the"
+	para "to push the"
 	line "boundaries of"
 	cont "#MON research."
 

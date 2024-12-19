@@ -104,8 +104,6 @@ RadioTower5FRocketBossScript:
 	setevent EVENT_GOLDENROD_CITY_ROCKET_SCOUT
 	setevent EVENT_GOLDENROD_CITY_ROCKET_TAKEOVER
 	setevent EVENT_RADIO_TOWER_ROCKET_TAKEOVER
-	;clearevent EVENT_MAHOGANY_MART_OWNERS ; TODO -- test & remove
-	;clearflag ENGINE_ROCKETS_IN_MAHOGANY
 	clearevent EVENT_GOLDENROD_CITY_CIVILIANS
 	clearevent EVENT_RADIO_TOWER_CIVILIANS_AFTER
 	setevent EVENT_BLACKTHORN_CITY_SUPER_NERD_BLOCKS_GYM
@@ -219,7 +217,9 @@ FakeDirectorTextBefore2:
 	para "Sure, I'll tell"
 	line "you. But only if"
 	cont "you can beat my"
-	cont "modified #MON!"
+
+	para "team of ROCKET-"
+	line "enhanced #MON!"
 	done
 
 FakeDirectorWinText:
@@ -269,7 +269,7 @@ Executivef1BeatenText:
 	done
 
 Executivef1AfterBattleText:
-	para "A kid like you"
+	text "A kid like you"
 	line "can't appreciate"
 
 	para "the bigger picture"
@@ -293,7 +293,7 @@ Executivef1AfterBattleText:
 
 	para "But I can tell…"
 	line "you still don't"
-	line "understand."
+	cont "understand."
 
 	para "It's all too bad."
 	line "I really admire"

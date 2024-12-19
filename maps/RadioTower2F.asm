@@ -241,7 +241,7 @@ GruntF2AfterBattleText:
 	para "Get moving, brat."
 
 	para "I won't let you"
-	cont "win next time!"
+	line "win next time!"
 	done
 
 RadioTower2FSalesSignText:
