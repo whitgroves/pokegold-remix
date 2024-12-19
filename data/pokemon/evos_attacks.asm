@@ -3198,12 +3198,14 @@ MantineEvosAttacks:
 
 SkarmoryEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, LEER
 	db 1, PECK
+	db 1, LEER
 	db 13, SAND_ATTACK
 	db 19, SONICBOOM
-	db 25, AGILITY
+	db 25, WING_ATTACK
+	db 31, METAL_CLAW
 	db 37, STEEL_WING
+	db 42, AGILITY
 	db 49, RAZOR_WIND
 	db 53, SPIKES
 	db 0 ; no more level-up moves
