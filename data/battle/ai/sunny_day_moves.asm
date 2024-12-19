@@ -26,6 +26,7 @@ SunnyDayMoves:
 	db DRILL_PECK
 	db SKY_ATTACK
 	db AEROBLAST
+	db TRI_ATTACK
 	db -1 ; end
 
 ; TODO - add (other) grass, flying moves to this list

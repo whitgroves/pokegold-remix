@@ -29,6 +29,7 @@ RainDanceMoves:
 	db THUNDER
 	db ZAP_CANNON
 	db SPARK
+	db TRI_ATTACK
 	db -1 ; end
 
 ; TODO - add ice, electric, and grass moves (EXCEPT solarbeam) to this list
