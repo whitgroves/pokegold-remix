@@ -280,7 +280,7 @@ Executivef1AfterBattleText:
 	cont "#MON world?"
 
 	para "Is it SILPH? The"
-	line "INDIGO PLATEAU?"
+	line "#MON LEAGUE?"
 
 	para "Or maybe it's"
 	line "something else?"
