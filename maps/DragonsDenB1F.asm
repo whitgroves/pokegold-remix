@@ -29,6 +29,7 @@ DragonsDenB1FCheckRivalCallback:
 DragonsDenB1FDragonFangScript:
 	giveitem DRAGON_FANG
 	iffalse .BagFullDragonFang
+	;setevent EVENT_DRAGONS_DEN_B1F_DRAGON_FANG
 	disappear DRAGONSDENB1F_POKE_BALL1
 	opentext
 	getitemname STRING_BUFFER_3, DRAGON_FANG
@@ -50,13 +51,7 @@ DragonsDenB1FDragonFangScript:
 	writetext ClairText_GiveDragonbreathDragonDen
 	promptbutton
 	waitsfx
-	writetext DragonShrinePlayerReceivedRisingBadgeText
-	playsound SFX_GET_BADGE
-	waitsfx
-	setflag ENGINE_RISINGBADGE
 	specialphonecall SPECIALCALL_MASTERBALL
-	writetext DragonShrineRisingBadgeExplanationText
-	promptbutton
 	verbosegiveitem TM_DRAGONBREATH, 1
 	iffalse .ClairLastText
 	setevent EVENT_GOT_TM24_DRAGONBREATH
@@ -128,42 +123,13 @@ MovementDragonsDen_ClairWalksAway:
 	step_end
 
 ClairText_GiveDragonbreathDragonDen:
-	text "CLAIR: All right."
-	line "I recognize your"
+	text "All right."
 
-	para "true power. This"
-	line "BADGE is yours."
-	done
+	para "You have proven"
+	line "yourself worthy."
 
-DragonShrinePlayerReceivedRisingBadgeText:
-	text "<PLAYER> received"
-	line "RISINGBADGE."
-	done
-
-DragonShrineRisingBadgeExplanationText:
-	text "RISINGBADGE will"
-	line "enable your"
-
-	para "#MON to use the"
-	line "move for climbing"
-	cont "waterfalls."
-
-	para "Also, all #MON"
-	line "will recognize you"
-
-	para "as a trainer and"
-	line "obey your every"
-
-	para "command without"
-	line "question."
-
-	para "I also want you to"
-	line "have this TM."
-	done
-
-Text_ReceivedTM24: ; unreferenced
-	text "<PLAYER> received"
-	line "TM24."
+	para "I want you to have"
+	line "this TM."
 	done
 
 ClairText_DescribeDragonbreathDragonDen:
@@ -175,9 +141,8 @@ ClairText_DescribeDragonbreathDragonDen:
 	cont "or lightning."
 
 	para "But this move"
-	line "channels mystical"
-	cont "energy in its"
-	cont "purest form."
+	line "channels pure"
+	cont "mystical energy."
 
 	para "Receiving this"
 	line "technique is"
@@ -188,25 +153,19 @@ ClairText_DescribeDragonbreathDragonDen:
 	done
 
 ClairText_CollectedAllBadges:
-	text "So, you've col-"
-	line "lected all the"
-	cont "BADGES."
+	text "Now that you've"
+	line "beaten all the"
+	cont "GYMs in JOHTO,"
 
-	para "Your destination"
-	line "is the #MON"
+	para "your next goal"
+	line "should be the"
+	cont "#MON LEAGUE."
 
-	para "LEAGUE in INDIGO"
-	line "PLATEAU."
+	para "The trainers along"
+	line "the way are tough."
 
-	para "Do you know how to"
-	line "get there?"
-
-	para "From here, go to"
-	line "NEW BARK TOWN."
-
-	para "Then SURF east."
-	line "The route there is"
-	cont "very tough."
+	para "You should prepare"
+	line "before you leave."
 
 	para "Don't you dare"
 	line "lose at the #-"

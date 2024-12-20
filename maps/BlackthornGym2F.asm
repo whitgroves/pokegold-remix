@@ -91,7 +91,7 @@ CooltrainermCodySeenText:
 	done
 
 CooltrainermCodyBeatenText:
-	text "You are special…"
+	text "You cut me down!"
 	done
 
 CooltrainermCodyAfterBattleText:

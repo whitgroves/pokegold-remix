@@ -289,3 +289,4 @@ Several of the stores have been updated with new items.
 - HM moves can now be forgotten; when learning over them, a confirmation prompt is brought up before they're overwritten
 - The Radio Tower incident now starts when reaching Blackthorn rather than immediately the 7th badge
 - Consequently, Route 44 and the [Mahogany Mart](#mahogany-mart-post-rocket-hideout) both open immediately after beating Pryce
+- Clair gives the Risingbadge immediately upon defeat, but the player must still get the Dragon Fang to receive TM24

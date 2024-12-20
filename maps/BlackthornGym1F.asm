@@ -29,8 +29,6 @@ BlackthornGym1FBouldersCallback:
 BlackthornGymClairScript:
 	faceplayer
 	opentext
-	checkflag ENGINE_RISINGBADGE
-	iftrue .AlreadyGotBadge
 	checkevent EVENT_BEAT_CLAIR
 	iftrue .FightDone
 	writetext ClairIntroText
@@ -42,7 +40,11 @@ BlackthornGymClairScript:
 	reloadmapafterbattle
 	setevent EVENT_BEAT_CLAIR
 	opentext
-	writetext ClairText_GoToDragonsDen
+	writetext BlackthornGymText_ReceivedRisingBadge
+	playsound SFX_GET_BADGE
+	waitsfx
+	setflag ENGINE_RISINGBADGE
+	writetext ClairText_BadgeSpeech
 	waitbutton
 	closetext
 	setevent EVENT_BEAT_COOLTRAINERM_PAUL
@@ -50,13 +52,12 @@ BlackthornGymClairScript:
 	setevent EVENT_BEAT_COOLTRAINERM_MIKE
 	setevent EVENT_BEAT_COOLTRAINERF_FRAN
 	setevent EVENT_BEAT_COOLTRAINERF_LOLA
-	;clearevent EVENT_MAHOGANY_MART_OWNERS
 	setevent EVENT_BLACKTHORN_CITY_GRAMPS_BLOCKS_DRAGONS_DEN
 	clearevent EVENT_BLACKTHORN_CITY_GRAMPS_NOT_BLOCKING_DRAGONS_DEN
 	end
 
 .FightDone:
-	checkitem DRAGON_FANG
+	checkevent EVENT_DRAGONS_DEN_B1F_DRAGON_FANG
 	iftrue .HasDragonFang
 	writetext ClairText_WhatsTheMatter
 	waitbutton
@@ -64,21 +65,16 @@ BlackthornGymClairScript:
 	end
 
 .HasDragonFang:
-	writetext BlackthornGymClairText_Cheat
-	waitbutton
-	closetext
-	end
-
-.AlreadyGotBadge:
-	checkevent EVENT_GOT_TM24_DRAGONBREATH
+	;checkevent EVENT_GOT_TM24_DRAGONBREATH
+	checkevent EVENT_DRAGONS_DEN_B1F_DRAGON_FANG
 	iftrue .GotTM24
-	writetext BlackthornGymClairText_YouKeptMeWaiting
-	promptbutton
-	verbosegiveitem TM_DRAGONBREATH
-	iffalse .BagFull
-	setevent EVENT_GOT_TM24_DRAGONBREATH
-	writetext BlackthornGymClairText_DescribeTM24
-	waitbutton
+	;writetext BlackthornGymClairText_YouKeptMeWaiting
+	;promptbutton
+	;verbosegiveitem TM_DRAGONBREATH
+	;iffalse .BagFull
+	;setevent EVENT_GOT_TM24_DRAGONBREATH
+	;writetext BlackthornGymClairText_DescribeTM24
+	;waitbutton
 	closetext
 	end
 
@@ -173,87 +169,90 @@ ClairIntroText:
 
 ClairWinText:
 	text "I lost?"
-
-	para "I don't believe"
-	line "it. There must be"
-	cont "some mistake…"
+	
+	para "…"
+	
+	para "The RISINGBADGE"
+	line "is yours."
 	done
 
-ClairText_GoToDragonsDen:
-	text "I won't admit"
-	line "this."
+BlackthornGymText_ReceivedRisingBadge:
+	text "<PLAYER> received"
+	line "RISINGBADGE."
+	done
+
+ClairText_BadgeSpeech:
+	text "RISINGBADGE will"
+	line "enable your"
+
+	para "#MON to use the"
+	line "move for climbing"
+	cont "waterfalls."
+
+	para "Also, all #MON"
+	line "will recognize you"
+
+	para "as a trainer and"
+	line "obey your commands"
+	cont "without question."
+
+	para "However, I do not"
+	line "recognize you as"
+	
+	para "worthy of our"
+	line "GYM's techniques."
 
 	para "I may have lost,"
-	line "but you're still"
-
-	para "not ready for the"
-	line "#MON LEAGUE."
-
-	para "I know. You should"
-	line "take the dragon"
-	cont "user challenge."
+	line "but I can only"
+	
+	para "pass them on to"
+	line "someone who has"
+	
+	para "taken the dragon"
+	line "user challenge."
 
 	para "Behind this GYM is"
 	line "a place called"
 	cont "DRAGON'S DEN."
 
 	para "Go and bring me"
-	line "the DRAGON FANG"
+	line "a DRAGON FANG"
+	cont "from deep within" ; temp
+	cont "the DEN."			; temp
 
-	para "from deep inside"
-	line "the DEN."
+	;para "from the ancient"
+	;line "#MON that lives"
+	;cont "deep inside."
 
 	para "That is the test"
 	line "to be accepted as"
-
-	para "a true dragon"
-	line "user."
+	cont "a dragon user."
 
 	para "If you can do"
-	line "that, I will ac-"
-	cont "cept you as a"
-	cont "worthy trainer."
-
-	para "Until then, I"
-	line "won't give you a"
-	cont "BADGE."
+	line "that, I will deem"
+	cont "you worthy of our"
+	cont "GYM's technique."
 	done
 
 ClairText_WhatsTheMatter:
-	text "CLAIR: What's"
-	line "the matter?"
+	text "What's the matter?"
 
-	para "This errand won't"
-	line "be hard for you,"
+	para "If you're ready"
+	line "for the LEAGUE,"
 
-	para "unless your vic-"
-	line "tory was a fluke."
-	done
-
-BlackthornGymClairText_Cheat:
-	text "CLAIR: You did"
-	line "not get that at"
-	cont "DRAGON'S DEN."
-
-	para "Trying to cheat"
-	line "like that…"
-
-	para "I'm disappointed"
-	line "in you."
+	para "this errand won't"
+	line "be hard for you."
 	done
 
 BlackthornGymClairText_YouKeptMeWaiting:
-	text "CLAIR: You have"
-	line "proven yourself to"
-	cont "me."
+	text "You kept me"
+	line "waiting… but"
+
+	para "you have proven"
+	line "yourself worthy."
 
 	para "I want you to have"
 	line "this TM."
-	done
-
-BlackthornGymText_ReceivedTM24: ; unreferenced
-	text "<PLAYER> received"
-	line "TM24."
 	done
 
 BlackthornGymClairText_DescribeTM24:
@@ -265,9 +264,8 @@ BlackthornGymClairText_DescribeTM24:
 	cont "or lightning."
 
 	para "But this move"
-	line "channels mystical"
-	cont "energy in its"
-	cont "purest form."
+	line "channels pure"
+	cont "mystical energy."
 
 	para "Receiving this"
 	line "technique is"
@@ -278,29 +276,9 @@ BlackthornGymClairText_DescribeTM24:
 	done
 
 BlackthornGymClairText_League:
-	text "So you've col-"
-	line "lected all the"
-	cont "BADGES."
-
-	para "Your destination"
-	line "is the #MON"
-
-	para "LEAGUE in INDIGO"
-	line "PLATEAU."
-
-	para "Do you know how to"
-	line "get there?"
-
-	para "From here, go to"
-	line "NEW BARK TOWN."
-
-	para "Then SURF east."
-	line "The route there is"
-	cont "very tough."
-
-	para "Don't you dare"
-	line "lose at the #-"
-	cont "MON LEAGUE!"
+	text "Don't you dare"
+	line "lose at the"
+	cont "#MON LEAGUE!"
 
 	para "If you do, I'll"
 	line "feel even worse"
@@ -406,8 +384,17 @@ BlackthornGymGuideWinText:
 
 	para "All that's left is"
 	line "the #MON LEAGUE"
-	cont "challenge."
+	
+	para "challenge in the"
+	line "INDIGO PLATEAU."
 
+	para "Do you know how to"
+	line "get there?"
+
+	para "From here, go to"
+	line "NEW BARK TOWN,"
+	cont "Then SURF east."
+	
 	para "You're on the way"
 	line "to becoming the"
 	cont "#MON CHAMPION!"
