@@ -266,10 +266,14 @@ Weathers cause new interactions in addition to their old ones (e.g., Rain boosti
 ## Store updates
 Several of the stores have been updated with new items.
 ### Goldenrod Dept. Store
+TM CORNER (5th floor) now sells these additional TMs:
 - TM09 Metal Claw
 - TM39 Swift -*Available after receiving TM02 Headbutt in Ilex Forest*
 - TM28 Dig -*Available after receiving TM08 Rock Smash on Route 36*
-### Mahogany Mart (post Rocket Hideout)
+### Mahogany Mart
+The Mahogany Mart carries these items once the Rocket Hideout is cleared and Pryce has been defeated:
+- Lemonade
+- Gold Berry
 - Leaf Stone
 - Fire Stone
 - Water Stone

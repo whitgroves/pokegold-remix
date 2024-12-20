@@ -209,8 +209,9 @@ MartMahogany1:
 	db -1 ; end
 
 MartMahogany2:
-	db 9 ; # items
-	db RAGECANDYBAR
+	db 10 ; # items
+	db GOLD_BERRY
+	db LEMONADE
 	db LEAF_STONE
 	db FIRE_STONE
 	db WATER_STONE

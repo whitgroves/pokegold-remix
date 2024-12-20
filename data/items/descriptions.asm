@@ -834,8 +834,8 @@ MysteryBerryDesc:
 	next "for PP. (HOLD)@"
 
 DragonScaleDesc:
-	db   "A rare dragon-type"
-	next "item.@"
+	db   "Evolves certain"
+	next "kinds of #MON.@"
 
 BerserkGeneDesc:
 	db   "Boosts ATTACK but"
@@ -913,8 +913,8 @@ TeruSama26Desc:
 	db   "?@"
 
 UpGradeDesc:
-	db   "A mysterious box"
-	next "made by SILPH CO.@"
+	db   "Evolves certain"
+	next "kinds of #MON.@"
 
 BerryDesc:
 	db   "A self-restore"
