@@ -287,8 +287,8 @@ SpearowEvosAttacks:
 
 FearowEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, PECK
 	db 1, GROWL
+	db 1, PECK
 	db 7, LEER
 	db 13, FURY_ATTACK
 	db 26, PURSUIT
@@ -1366,8 +1366,8 @@ HypnoEvosAttacks:
 KrabbyEvosAttacks:
 	db EVOLVE_LEVEL, 28, KINGLER
 	db 0 ; no more evolutions
-	db 1, BUBBLE
 	db 5, LEER
+	db 1, BUBBLE
 	db 12, VICEGRIP
 	db 16, HARDEN
 	db 23, ROCK_SMASH
@@ -1989,7 +1989,7 @@ AerodactylEvosAttacks:
 	db 15, BITE
 	db 22, SUPERSONIC
 	db 29, ANCIENTPOWER
-	db 36, DRAGONBREATH
+	db 36, SCARY_FACE
 	db 43, TAKE_DOWN
 	db 50, HYPER_BEAM
 	db 0 ; no more level-up moves
@@ -2963,10 +2963,9 @@ GranbullEvosAttacks:
 
 QwilfishEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, SPIKES
 	db 1, TACKLE
+	db 1, SPIKES
 	db 1, POISON_STING
-	db 10, HARDEN
 	db 10, MINIMIZE
 	db 19, WATER_GUN
 	db 28, PIN_MISSILE
@@ -3119,8 +3118,8 @@ PiloswineEvosAttacks:
 
 CorsolaEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, BUBBLE
 	db 1, HARDEN
+	db 1, BUBBLE
 	db 7, SPITE
 	db 13, CURSE
 	db 19, PAIN_SPLIT
