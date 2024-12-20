@@ -143,89 +143,58 @@ KantoGrassWildMons:
 
 	def_grass_wildmons VICTORY_ROAD
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
-	IF DEF(_GOLD)
 	; morn
+	db 35, RHYHORN
 	db 32, GRAVELER
 	db 32, GOLBAT
-	db 33, URSARING
-	db 34, ONIX
-	db 36, ONIX
-	db 35, RHYHORN
-	db 35, RHYHORN
+	db 25, CHARMELEON
+	db 34, MACHOKE
+	db 34, PILOSWINE
+	db 36, SLUGMA
 	; day
+	db 35, RHYHORN
 	db 32, GRAVELER
 	db 32, GOLBAT
-	db 33, URSARING
-	db 34, ONIX
-	db 36, ONIX
-	db 35, RHYHORN
-	db 35, RHYHORN
+	db 25, CHARMELEON
+	db 34, MACHOKE
+	db 34, PILOSWINE
+	db 36, SLUGMA
 	; nite
+	db 35, RHYHORN
 	db 32, GRAVELER
 	db 32, GOLBAT
-	db 33, URSARING
-	db 34, ONIX
-	db 36, ONIX
-	db 35, RHYHORN
-	db 35, RHYHORN
-	ELIF DEF(_SILVER)
-	; morn
-	db 32, GRAVELER
-	db 32, GOLBAT
-	db 33, DONPHAN
-	db 34, ONIX
-	db 36, ONIX
-	db 35, RHYHORN
-	db 35, RHYHORN
-	; day
-	db 32, GRAVELER
-	db 32, GOLBAT
-	db 33, DONPHAN
-	db 34, ONIX
-	db 36, ONIX
-	db 35, RHYHORN
-	db 35, RHYHORN
-	; nite
-	db 32, GRAVELER
-	db 32, GOLBAT
-	db 33, DONPHAN
-	db 34, ONIX
-	db 36, ONIX
-	db 35, RHYHORN
-	db 35, RHYHORN
-	ENDC
+	db 25, CHARMELEON
+	db 34, MACHOKE
+	db 34, PILOSWINE
+	db 36, SLUGMA
 	end_grass_wildmons
 
 	def_grass_wildmons TOHJO_FALLS
-	IF DEF(_GOLD)
 	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
-	ELIF DEF(_SILVER)
-	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
-	ENDC
 	; morn
-	db 22, ZUBAT
-	db 22, RATICATE
-	db 22, GOLBAT
-	db 21, SLOWPOKE
-	db 20, RATTATA
-	db 23, SLOWPOKE
-	db 23, SLOWPOKE
+	db 30, GOLBAT
+	db 30, RATICATE
+	db 28, ARIADOS
+	db 25, WARTORTLE
+	db 27, FURRET
+	db 28, SHUCKLE
+	db 31, DUNSPARCE
 	; day
-	db 22, ZUBAT
-	db 22, RATICATE
-	db 22, GOLBAT
-	db 21, SLOWPOKE
-	db 20, RATTATA
-	db 23, SLOWPOKE
-	db 23, SLOWPOKE
+	db 30, GOLBAT
+	db 30, RATICATE
+	db 28, ARIADOS
+	db 25, WARTORTLE
+	db 27, FURRET
+	db 28, SHUCKLE
+	db 31, DUNSPARCE
 	; nite
-	db 22, ZUBAT
-	db 22, RATICATE
-	db 22, GOLBAT
-	db 21, SLOWPOKE
-	db 20, RATTATA
-	db 23, SLOWPOKE
-	db 23, SLOWPOKE
+	db 30, GOLBAT
+	db 30, RATICATE
+	db 28, ARIADOS
+	db 25, WARTORTLE
+	db 27, FURRET
+	db 28, SHUCKLE
+	db 31, DUNSPARCE
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_1
@@ -1116,112 +1085,58 @@ KantoGrassWildMons:
 
 	def_grass_wildmons ROUTE_26
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
-	IF DEF(_GOLD)
 	; morn
-	db 28, DODUO
-	db 28, SANDSLASH
-	db 32, PONYTA
-	db 30, DODUO
-	db 30, DODRIO
-	db 30, RATICATE
-	db 30, QUAGSIRE
+	db 31, DODRIO
+	db 30, TAUROS
+	db 31, GIRAFARIG
+	db 25, IVYSAUR
+	db 30, YANMA
+	db 31, GLIGAR
+	db 30, PINSIR
 	; day
-	db 28, DODUO
-	db 28, SANDSLASH
-	db 32, PONYTA
-	db 30, DODUO
-	db 30, RATICATE
-	db 30, DODRIO
-	db 30, DODRIO
+	db 31, DODRIO
+	db 30, TAUROS
+	db 31, GIRAFARIG
+	db 25, IVYSAUR
+	db 30, SCYTHER
+	db 30, ARBOK
+	db 30, YANMA
 	; nite
-	db 28, RATICATE
-	db 28, SANDSLASH
-	db 32, PONYTA
-	db 30, RATICATE
-	db 30, QUAGSIRE
-	db 32, QUAGSIRE
-	db 32, QUAGSIRE
-	ELIF DEF(_SILVER)
-	; morn
-	db 28, DODUO
-	db 28, RATICATE
-	db 32, PONYTA
-	db 30, DODUO
+	db 31, GLIGAR
 	db 30, ARBOK
-	db 30, RATICATE
-	db 30, QUAGSIRE
-	; day
-	db 28, DODUO
-	db 28, RATICATE
-	db 32, PONYTA
-	db 30, DODUO
-	db 30, RATICATE
-	db 30, ARBOK
-	db 30, ARBOK
-	; nite
-	db 28, RATICATE
-	db 28, RATICATE
-	db 32, PONYTA
-	db 30, RATICATE
-	db 30, QUAGSIRE
-	db 30, ARBOK
-	db 30, ARBOK
-	ENDC
+	db 31, GIRAFARIG
+	db 25, IVYSAUR
+	db 30, PINSIR
+	db 30, TAUROS
+	db 30, SCYTHER
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_27
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
-	IF DEF(_GOLD)
 	; morn
-	db 28, DODUO
-	db 28, RATICATE
-	db 30, DODUO
-	db 28, QUAGSIRE
-	db 32, PONYTA
-	db 30, SANDSLASH
-	db 30, SANDSLASH
+	db 33, PIDGEOTTO
+	db 27, FURRET
+	db 30, RATICATE
+	db 30, LEDIAN
+	db 32, JUMPLUFF
+	db 28, ARIADOS
+	db 33, NOCTOWL
 	; day
-	db 28, DODUO
-	db 28, RATICATE
-	db 30, DODUO
+	db 33, PIDGEOTTO
+	db 27, FURRET
 	db 30, RATICATE
-	db 32, PONYTA
-	db 30, SANDSLASH
-	db 30, SANDSLASH
+	db 30, LEDIAN
+	db 32, JUMPLUFF
+	db 28, ARIADOS
+	db 35, MURKROW
 	; nite
-	db 28, QUAGSIRE
-	db 28, RATICATE
-	db 30, QUAGSIRE
+	db 33, NOCTOWL
 	db 30, RATICATE
-	db 32, PONYTA
-	db 30, SANDSLASH
-	db 30, SANDSLASH
-	ELIF DEF(_SILVER)
-	; morn
-	db 28, DODUO
-	db 28, ARBOK
-	db 30, DODUO
-	db 28, QUAGSIRE
-	db 32, PONYTA
-	db 30, DODRIO
-	db 30, DODRIO
-	; day
-	db 28, DODUO
-	db 28, ARBOK
-	db 30, DODUO
-	db 30, RATICATE
-	db 32, PONYTA
-	db 30, DODRIO
-	db 30, DODRIO
-	; nite
-	db 28, QUAGSIRE
-	db 28, ARBOK
-	db 30, QUAGSIRE
-	db 30, RATICATE
-	db 32, PONYTA
-	db 32, QUAGSIRE
-	db 32, QUAGSIRE
-	ENDC
+	db 28, ARIADOS
+	db 27, FURRET
+	db 35, MURKROW
+	db 32, JUMPLUFF
+	db 33, PIDGEOTTO
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_28

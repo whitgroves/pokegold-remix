@@ -79,8 +79,8 @@ CharmanderEvosAttacks:
 CharmeleonEvosAttacks:
 	db EVOLVE_LEVEL, 36, CHARIZARD
 	db 0 ; no more evolutions
-	db 1, SCRATCH
 	db 1, GROWL
+	db 1, SCRATCH
 	db 7, EMBER
 	db 13, SMOKESCREEN
 	db 20, RAGE
@@ -1801,12 +1801,13 @@ TaurosEvosAttacks:
 	db 1, TACKLE
 	db 4, TAIL_WHIP
 	db 8, RAGE
-	db 13, HORN_ATTACK
-	db 19, SCARY_FACE
+	db 13, HEADBUTT
+	db 19, HORN_ATTACK
 	db 26, PURSUIT
 	db 34, REST
-	db 43, THRASH
-	db 53, TAKE_DOWN
+	db 43, BODY_SLAM
+	db 52, TAKE_DOWN
+	db 61, THRASH
 	db 0 ; no more level-up moves
 
 MagikarpEvosAttacks:
@@ -1906,9 +1907,9 @@ FlareonEvosAttacks:
 	db 16, EMBER
 	db 23, QUICK_ATTACK
 	db 30, BITE
-	db 36, FIRE_SPIN
+	db 36, FLAME_WHEEL
 	db 42, SMOG
-	db 47, LEER
+	db 47, FIRE_SPIN
 	db 52, FLAMETHROWER
 	db 0 ; no more level-up moves
 
@@ -2332,9 +2333,9 @@ LedianEvosAttacks:
 	db 1, SUPERSONIC
 	db 8, SUPERSONIC
 	db 15, COMET_PUNCH
-	db 24, LIGHT_SCREEN
-	db 24, REFLECT
 	db 24, SAFEGUARD
+	db 24, REFLECT
+	db 24, LIGHT_SCREEN
 	db 33, BATON_PASS
 	db 42, SWIFT
 	db 51, AGILITY
@@ -2888,8 +2889,8 @@ DunsparceEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, RAGE
 	db 5, DEFENSE_CURL
-	db 13, GLARE
-	db 18, SPITE
+	db 13, SPITE
+	db 18, GLARE
 	db 22, MUD_SLAP
 	db 27, PURSUIT
 	db 31, SCREECH
