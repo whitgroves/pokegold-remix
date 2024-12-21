@@ -170,6 +170,7 @@ GrowlitheEggMoves:
 	db CRUNCH
 	db THRASH
 	db FIRE_SPIN
+	db SUBMISSION
 	db -1 ; end
 
 PoliwagEggMoves:
@@ -673,6 +674,7 @@ SnubbullEggMoves:
 	db HEAL_BELL
 	db LICK
 	db LEER
+	db SUBMISSION
 	db -1 ; end
 
 QwilfishEggMoves:
@@ -707,6 +709,7 @@ TeddiursaEggMoves:
 	db FOCUS_ENERGY
 	db COUNTER
 	db METAL_CLAW
+	db SUBMISSION
 	db -1 ; end
 
 SlugmaEggMoves:
@@ -714,11 +717,11 @@ SlugmaEggMoves:
 	db -1 ; end
 
 SwinubEggMoves:
-	db TAKE_DOWN
 	db BITE
 	db BODY_SLAM
 	db ROCK_SLIDE
 	db ANCIENTPOWER
+	db SUBMISSION
 	db -1 ; end
 
 CorsolaEggMoves:
@@ -799,6 +802,7 @@ ElekidEggMoves:
 	db BARRIER
 	db ROLLING_KICK
 	db MEDITATE
+	db SUBMISSION
 	db -1 ; end
 
 MagbyEggMoves:

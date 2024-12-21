@@ -171,6 +171,7 @@ Several moves have had their types, effects, or other attributes changed to prov
 - Sonicboom: *Normal* -> *Steel* | *Flat Damage* -> *Priority Move* | *20 Damage* -> *40 Power* | *20* -> *30 PP*
 - Blizzard: *10% Chance To Freeze* -> *20% Chance To Freeze*
 - Hyper Beam: *Normal* -> *Dragon*
+- Submission: *80 Damage* -> *100 Damage* | *25* -> *20 PP*
 - Seismic Toss: *Flat Damage* -> *30% Chance To Paralyze* | *Damage Equal To User's Level* -> *85 Power* | *20* -> *15 PP*
 - Strength: *Normal* -> *Fighting* | *No Effect* -> *10% Chance To Raise Attack* | *15* -> *10 PP*
 - Absorb: *20* -> *30 Power* | *20* -> *30 PP*

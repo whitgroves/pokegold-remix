@@ -789,7 +789,7 @@ ArcanineEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, ROAR
 	db 1, LEER
-	db 1, TAKE_DOWN
+	db 1, SUBMISSION
 	db 1, FLAME_WHEEL
 	db 50, EXTREMESPEED
 	db 0 ; no more level-up moves
@@ -1570,7 +1570,7 @@ RhyhornEvosAttacks:
 	db 19, FURY_ATTACK
 	db 31, SCARY_FACE
 	db 37, HORN_DRILL
-	db 49, TAKE_DOWN
+	db 49, SUBMISSION
 	db 55, EARTHQUAKE
 	db 0 ; no more level-up moves
 
@@ -1585,7 +1585,7 @@ RhydonEvosAttacks:
 	db 31, SCARY_FACE
 	db 35, ROAR
 	db 37, HORN_DRILL
-	db 54, TAKE_DOWN
+	db 54, OUTRAGE
 	db 65, EARTHQUAKE
 	db 0 ; no more level-up moves
 
@@ -1802,16 +1802,20 @@ PinsirEvosAttacks:
 
 TaurosEvosAttacks:
 	db 0 ; no more evolutions
+	db 1, TAIL_WHIP
 	db 1, TACKLE
-	db 4, TAIL_WHIP
-	db 8, RAGE
+	db 4, RAGE
+	db 8, STOMP
 	db 13, HEADBUTT
-	db 19, HORN_ATTACK
+	db 16, HORN_ATTACK
+	db 21, DOUBLE_KICK
 	db 26, PURSUIT
-	db 34, REST
-	db 43, BODY_SLAM
-	db 52, TAKE_DOWN
+	db 34, BODY_SLAM
+	db 43, TAKE_DOWN
+	db 52, SUBMISSION
 	db 61, THRASH
+	db 70, DOUBLE_EDGE
+	db 79, HORN_DRILL
 	db 0 ; no more level-up moves
 
 MagikarpEvosAttacks:
@@ -3018,7 +3022,7 @@ HeracrossEvosAttacks:
 	db 12, ENDURE
 	db 19, FURY_ATTACK
 	db 27, COUNTER
-	db 35, TAKE_DOWN
+	db 35, SUBMISSION
 	db 44, REVERSAL
 	db 54, MEGAHORN
 	db 0 ; no more level-up moves
@@ -3117,7 +3121,7 @@ PiloswineEvosAttacks:
 	db 19, ENDURE
 	db 28, ICY_WIND
 	db 33, HORN_ATTACK
-	db 42, TAKE_DOWN
+	db 42, SUBMISSION
 	db 56, BLIZZARD
 	db 70, AMNESIA
 	db 0 ; no more level-up moves
