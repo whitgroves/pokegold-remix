@@ -150,6 +150,7 @@ BlastoiseEvosAttacks:
 	db 19, BITE
 	db 25, RAPID_SPIN
 	db 31, PROTECT
+	db 36, SPIKE_CANNON
 	db 42, RAIN_DANCE
 	db 55, SKULL_BASH
 	db 68, HYDRO_PUMP
@@ -2720,7 +2721,7 @@ YanmaEvosAttacks:
 	db 13, AGILITY
 	db 19, SONICBOOM
 	db 25, TWISTER
-	db 31, TWINEEDLE
+	db 31, SWIFT
 	db 37, WING_ATTACK
 	db 43, DOUBLE_TEAM
 	db 0 ; no more level-up moves
@@ -2863,9 +2864,9 @@ PinecoEvosAttacks:
 	db 1, TACKLE
 	db 1, PROTECT
 	db 8, SELFDESTRUCT
-	db 15, TAKE_DOWN
+	db 15, BIDE
 	db 22, RAPID_SPIN
-	db 29, BIDE
+	db 29, ENDURE
 	db 36, EXPLOSION
 	db 43, SPIKES
 	db 50, DOUBLE_EDGE
@@ -2877,9 +2878,10 @@ ForretressEvosAttacks:
 	db 1, PROTECT
 	db 1, SELFDESTRUCT
 	db 8, SELFDESTRUCT
-	db 15, TAKE_DOWN
+	db 15, BIDE
 	db 22, RAPID_SPIN
-	db 29, BIDE
+	db 29, ENDURE
+	db 31, SPIKE_CANNON
 	db 39, EXPLOSION
 	db 49, SPIKES
 	db 59, DOUBLE_EDGE
@@ -2903,7 +2905,7 @@ GligarEvosAttacks:
 	db 6, GUST
 	db 13, VICEGRIP
 	db 20, QUICK_ATTACK
-	db 28, FAINT_ATTACK
+	db 28, TWINEEDLE
 	db 34, SLASH
 	db 41, SCREECH
 	db 46, RAZOR_WIND
@@ -2967,10 +2969,10 @@ QwilfishEvosAttacks:
 	db 1, TACKLE
 	db 1, SPIKES
 	db 1, POISON_STING
-	db 10, MINIMIZE
+	db 10, PIN_MISSILE
 	db 19, WATER_GUN
-	db 28, PIN_MISSILE
-	db 37, TAKE_DOWN
+	db 28, TWINEEDLE
+	db 37, SPIKE_CANNON
 	db 46, HYDRO_PUMP
 	db 0 ; no more level-up moves
 

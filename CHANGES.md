@@ -150,6 +150,7 @@ These mons evolve by new methods in addition to their old ones (e.g., *Nidorina*
 - Sunkern -> Sunflora: *Happiness, Day*
 
 ## Move Updates
+Several moves have had their types, effects, or other attributes changed to provide better STAB coverage or make certain movesets more viable.
 ### Damaging Moves
 - Comet Punch: *Normal* -> *Fighting*
 - Vicegrip: *Normal* -> *Dark*
@@ -166,6 +167,7 @@ These mons evolve by new methods in addition to their old ones (e.g., *Nidorina*
 - Tackle: *95%* -> *100% Accuracy*
 - Thrash: *Normal* -> *Dark*
 - Poison Sting: *15* -> *20 Power*
+- Twineedle: *Bug* -> *Poison*
 - Sonicboom: *Normal* -> *Steel* | *Flat Damage* -> *Priority Move* | *20 Damage* -> *40 Power* | *20* -> *30 PP*
 - Blizzard: *10% Chance To Freeze* -> *20% Chance To Freeze*
 - Hyper Beam: *Normal* -> *Dragon*
