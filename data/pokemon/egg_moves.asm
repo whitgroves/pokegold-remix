@@ -413,8 +413,9 @@ LaprasEggMoves:
 	db -1 ; end
 
 EeveeEggMoves:
-	db FLAIL
 	db CHARM
+	db DOUBLE_TEAM
+	db EXTREMESPEED
 	db -1 ; end
 
 OmanyteEggMoves:
@@ -467,6 +468,7 @@ CyndaquilEggMoves:
 	db REVERSAL
 	db THRASH
 	db FORESIGHT
+	db EXTREMESPEED
 	db -1 ; end
 
 TotodileEggMoves:
@@ -484,6 +486,7 @@ SentretEggMoves:
 	db SLASH
 	db FOCUS_ENERGY
 	db REVERSAL
+	db EXTREMESPEED
 	db -1 ; end
 
 HoothootEggMoves:
@@ -613,6 +616,7 @@ YanmaEggMoves:
 	db WHIRLWIND
 	db REVERSAL
 	db LEECH_LIFE
+	db EXTREMESPEED
 	db -1 ; end
 
 WooperEggMoves:
@@ -701,6 +705,7 @@ SneaselEggMoves:
 	db FORESIGHT
 	db REFLECT
 	db BITE
+	db EXTREMESPEED
 	db -1 ; end
 
 TeddiursaEggMoves:

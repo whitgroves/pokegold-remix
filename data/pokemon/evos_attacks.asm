@@ -1741,6 +1741,7 @@ ScytherEvosAttacks:
 	db 36, SLASH
 	db 42, SWORDS_DANCE
 	db 48, DOUBLE_TEAM
+	db 54, EXTREMESPEED
 	db 0 ; no more level-up moves
 
 JynxEvosAttacks:
@@ -1900,12 +1901,12 @@ JolteonEvosAttacks:
 	db 8, SAND_ATTACK
 	db 16, THUNDERSHOCK
 	db 23, QUICK_ATTACK
-	db 30, DOUBLE_KICK
-	db 36, PIN_MISSILE
-	db 42, THUNDER_WAVE
+	db 30, SPARK
+	db 36, DOUBLE_KICK
+	db 42, PIN_MISSILE
 	db 47, AGILITY
 	db 52, THUNDER
-	db 59, DOUBLE_TEAM
+	db 59, EXTREMESPEED
 	db 0 ; no more level-up moves
 
 FlareonEvosAttacks:
@@ -2727,12 +2728,14 @@ YanmaEvosAttacks:
 	db 1, GUST
 	db 1, SUPERSONIC
 	db 7, QUICK_ATTACK
-	db 13, AGILITY
-	db 19, SONICBOOM
+	db 13, SONICBOOM
+	db 19, AGILITY
 	db 25, TWISTER
-	db 31, SWIFT
+	db 31, BATON_PASS
 	db 37, WING_ATTACK
-	db 43, DOUBLE_TEAM
+	db 43, AMNESIA
+	db 49, FAINT_ATTACK
+	db 55, DOUBLE_TEAM
 	db 0 ; no more level-up moves
 
 WooperEvosAttacks:
