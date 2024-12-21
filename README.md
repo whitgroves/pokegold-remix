@@ -11,10 +11,10 @@ The following changes have been implemented or planned:
 - Updated interactions for all 17 types ✓
 - Updated typings to make certain Pokemon lore-friendly, interesting, or unique ✓
 - Updated learnsets to better fit each Pokemon's kit ~
-- Updated moves, TMs, and weather interactions ~
+- Updated moves, TMs, and weather interactions ✓
 - The Ghost type is special and the Dark type is physical ✓
 - All 251 Pokemon are on a single save ~
-- New moves and mons for some of the trainer teams ~
+- New moves and mons for some of the trainer teams ✓
 - Select and play as the female protagonist (Kris)
 - Fast text, Stereo sound, and Set battles by default ✓
 - Use animated Pokemon sprites from Crystal
