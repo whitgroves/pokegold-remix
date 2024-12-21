@@ -171,11 +171,13 @@ These mons evolve by new methods in addition to their old ones (e.g., *Nidorina*
 - Sonicboom: *Normal* -> *Steel* | *Flat Damage* -> *Priority Move* | *20 Damage* -> *40 Power* | *20* -> *30 PP*
 - Blizzard: *10% Chance To Freeze* -> *20% Chance To Freeze*
 - Hyper Beam: *Normal* -> *Dragon*
-- Strength: *Normal* -> *Fighting*
+- Seismic Toss: *Flat Damage* -> *30% Chance To Paralyze* | *Damage Equal To User's Level* -> *85 Power* | *20* -> *15 PP*
+- Strength: *Normal* -> *Fighting* | *No Effect* -> *10% Chance To Raise Attack* | *15* -> *10 PP*
 - Absorb: *20* -> *30 Power* | *20* -> *30 PP*
 - Mega Drain: *40* -> *50 Power* | *10* -> *20 PP*
 - Razor Leaf: *95%* -> *100% Accuracy*
 - Petal Dance: *70* -> *90 Power*
+- Dragon Rage: *Flat Damage* -> *Always Hits* | *40 Damage* -> *60 Power* | *10* -> *20 PP*
 - Rock Throw: *90%* -> *100% Accuracy*
 - Dig: *10* -> *15 PP*
 - Rage: *Normal* -> *Dark*
@@ -204,7 +206,7 @@ These mons evolve by new methods in addition to their old ones (e.g., *Nidorina*
 - Sacred Fire: *95%* -> *100% Accuracy*
 - Dragonbreath: *30% Chance To Paralyze* -> *20% Chance To Lower Special Defense*
 - Iron Tail: *75%* -> *90% Accuracy*
-- Metal Claw: *95%* -> *100% Accuracy*
+- Metal Claw: *10% Chance To Raise Attack* -> *20% Chance To Raise Attack* | *95%* -> *100% Accuracy*
 - Crunch: *20% Chance To Lower Special Defense* -> *30% Chance To Paralyze*
 ### Always Physical Moves
 These moves are special, but their damage is always treated as physical.
@@ -223,12 +225,20 @@ As a side note, all *Ghost* moves are now special and all *Dark* moves are now p
 ### Non-Damaging Moves
 These moves had their types changed for flavor only; however, this can impact the AI's choices.
 - Whirlwind: *Normal* -> *Flying*
+- Roar: *Normal* -> *Dragon*
+- Growth: *Normal* -> *Grass*
 - Agility: *Psychic* -> *Normal*
+- Smokescreen: *Normal* -> *Dark*
 - Glare: *Normal* -> *Dark*
 - Lovely Kiss: *Normal* -> *Dark*
 - Flash: *Normal* -> *Electric*
 - Splash: *Normal* -> *Water*
+- Rest: *Psychic* -> *Normal*
+- Mind Reader: *Normal* -> *Psychic*
 - Perish Song: *Normal* -> *Ghost*
+- Lock-On: *Normal* -> *Steel*
+- Swagger: *Normal* -> *Dark*
+- Mean Look: *Normal* -> *Dark*
 - Pain Split: *Normal* -> *Ghost*
 - Psych Up: *Normal* -> *Psychic*
 ### TMs
