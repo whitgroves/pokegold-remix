@@ -152,14 +152,12 @@ These mons evolve by new methods in addition to their old ones (e.g., *Nidorina*
 ## Move Updates
 ### Damaging Moves
 - Comet Punch: *Normal* -> *Fighting*
-- Mega Punch: *Normal* -> *Fighting*
 - Vicegrip: *Normal* -> *Dark*
 - Guillotine: *Normal* -> *Dark*
 - Razor Wind: *Normal* -> *Flying* | *Charging Move* -> *30% Chance To Flinch* | *75%* -> *100% Accuracy*
 - Cut: *Normal* -> *Bug* | *No Effect* -> *High Crit Rate* | *95%* -> *100% Accuracy*
 - Fly: *95%* -> *100% Accuracy*
 - Vine Whip: *35* -> *40 Power* | *10* -> *20 PP* | [*Always Physical*](#always-physical-moves)
-- Mega Kick: *Normal* -> *Fighting*
 - Rolling Kick: *85%* -> *100% Accuracy*
 - Sand Attack: *100%* -> *80% Accuracy*
 - Horn Attack: *Normal* -> *Dragon* | *No Effect* -> *30% Chance To Flinch* | *65* -> *70 Power* | *25* -> *15 PP* | [*Always Physical*](#always-physical-moves)
