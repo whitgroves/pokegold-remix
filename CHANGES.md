@@ -109,6 +109,7 @@ These mons have had their types (and in many cases, learnsets) updated.
 - Crobat: *Poison/Flying* -> *Dark/Flying*
 - Pichu: *Electric* -> *Electric/Normal*
 - Togetic: *Normal* -> *Normal/Psychic*
+- Mareep, Flaaffy: *Electric* -> *Electric/Normal*
 - Ampharos: *Electric* -> *Electric/Dragon*
 - Marill, Azumarill: *Water* -> *Water/Normal*
 - Sudowoodo: *Rock* -> *Rock/Fighting*
