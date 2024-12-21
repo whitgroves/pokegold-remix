@@ -58,6 +58,8 @@ EkansEggMoves:
 	db SLAM
 	db SPITE
 	db BEAT_UP
+	db DIG
+	db CRUNCH
 	db -1 ; end
 
 SandshrewEggMoves:
