@@ -6352,7 +6352,13 @@ ApplyPrzEffectOnSpeed:
 	jr z, .enemy
 	ld a, [wBattleMonStatus]
 	and 1 << PAR
+	jr nz, .drop_player
+	ld a, [wPlayerWrapCount]
+	and a
+	jr nz, .drop_player
 	ret z
+
+.drop_player
 	ld hl, wBattleMonSpeed + 1
 	ld a, [hld]
 	ld b, a
@@ -6373,7 +6379,13 @@ ApplyPrzEffectOnSpeed:
 .enemy
 	ld a, [wEnemyMonStatus]
 	and 1 << PAR
+	jr nz, .drop_enemy
+	ld a, [wEnemyWrapCount]
+	and a
+	jr nz, .drop_enemy
 	ret z
+
+.drop_enemy
 	ld hl, wEnemyMonSpeed + 1
 	ld a, [hld]
 	ld b, a

@@ -5602,6 +5602,8 @@ BattleCommand_TrapTarget:
 	inc a
 	inc a
 	ld [hl], a
+	ld hl, ApplyPrzEffectOnSpeed ; trapped targets get SPD halved
+	call CallBattleCore
 	ld a, BATTLE_VARS_MOVE_ANIM
 	call GetBattleVar
 	ld [de], a
@@ -5628,6 +5630,7 @@ BattleCommand_TrapTarget:
 	dbw FIRE_SPIN, WasTrappedText ; 'was trapped!'
 	dbw CLAMP,     ClampedByText  ; 'was CLAMPED by'
 	dbw WHIRLPOOL, WasTrappedText ; 'was trapped!'
+	dbw CONSTRICT, WasTrappedText ; 'was trapped!'
 
 INCLUDE "engine/battle/move_effects/mist.asm"
 

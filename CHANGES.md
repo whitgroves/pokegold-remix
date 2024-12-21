@@ -165,6 +165,7 @@ Several moves have had their types, effects, or other attributes changed to prov
 - Fury Attack: *Normal* -> *Dark*
 - Horn Drill: *Normal* -> *Dragon*
 - Tackle: *95%* -> *100% Accuracy*
+- Wrap: *Normal* -> *Poison* | *85%* -> *75% Accuracy*
 - Thrash: *Normal* -> *Dark*
 - Poison Sting: *15* -> *20 Power*
 - Twineedle: *Bug* -> *Poison*
@@ -179,6 +180,7 @@ Several moves have had their types, effects, or other attributes changed to prov
 - Razor Leaf: *95%* -> *100% Accuracy*
 - Petal Dance: *70* -> *90 Power*
 - Dragon Rage: *Flat Damage* -> *Always Hits* | *40 Damage* -> *60 Power* | *10* -> *20 PP*
+- Fire Spin: *70%* -> *75% Accuracy* | *15*-> *20 PP*
 - Rock Throw: *90%* -> *100% Accuracy*
 - Dig: *10* -> *15 PP*
 - Rage: *Normal* -> *Dark*
@@ -186,8 +188,10 @@ Several moves have had their types, effects, or other attributes changed to prov
 - Lick: *30% Chance To Paralyze* -> *Leeches Health On Hit* | *20* -> *30 Power*
 - Smog: *20* -> *30 Power*
 - Bone Club: *Ground* -> *Rock* | *85%* -> *100% Accuracy*
+- Clamp: *35* -> *15 Power* | *10* -> *20 PP* | [*Always Physical*](#always-physical-moves)
 - Skull Bash: *Normal* -> *Rock* | *Charging Move* -> *30% Chance To Flinch* | *100* -> *70 Power*
 - Spike Cannon: *Normal* -> *Steel*
+- Constrict: *Normal* -> *Bug* | *10% Chance To Lower Speed* -> [*Trapping Move*](#trapping-moves) | *10* -> *15 Power* | *35* -> *20 PP*
 - Leech Life: *20* -> *30 Power* | *15* -> *30 PP*
 - Sky Attack: *Charging Move* -> [*Skips Charging Turn Under Sun*](#sun)
 - Dizzy Punch: *Normal* -> *Psychic* | [*Always Physical*](#always-physical-moves)
@@ -209,6 +213,7 @@ Several moves have had their types, effects, or other attributes changed to prov
 - Iron Tail: *75%* -> *90% Accuracy*
 - Metal Claw: *10% Chance To Raise Attack* -> *20% Chance To Raise Attack* | *95%* -> *100% Accuracy*
 - Crunch: *20% Chance To Lower Special Defense* -> *30% Chance To Paralyze*
+- Whirlpool: *70%* -> *75% Accuracy* | *15*-> *20 PP*
 ### Always Physical Moves
 These moves are special, but their damage is always treated as physical.
 - Fire Punch
@@ -223,6 +228,8 @@ These moves are special, but their damage is always treated as physical.
 - Outrage
 
 As a side note, all *Ghost* moves are now special and all *Dark* moves are now physical.
+### Trapping Moves
+Besides preventing a switch out, trapped pokemon will now have their speed cut as if they were paralyzed. This does not stack with the PRZ status.
 ### Non-Damaging Moves
 These moves had their types changed for flavor only; however, this can impact the AI's choices.
 - Whirlwind: *Normal* -> *Flying*

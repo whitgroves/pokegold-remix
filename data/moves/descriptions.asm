@@ -792,8 +792,8 @@ SpikeCannonDescription:
 	next "hit 2-5 times.@"
 
 ConstrictDescription:
-	db   "An attack that may"
-	next "lower SPEED.@"
+	db   "Traps the foe for"
+	next "2-5 turns.@"
 
 AmnesiaDescription:
 	db   "Sharply raises the"

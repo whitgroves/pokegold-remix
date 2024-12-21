@@ -423,6 +423,7 @@ OmanyteEggMoves:
 	db SLAM
 	db SUPERSONIC
 	db HAZE
+	db CLAMP
 	db -1 ; end
 
 KabutoEggMoves:
