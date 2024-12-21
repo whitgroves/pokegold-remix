@@ -80,6 +80,7 @@ These mons have had their types (and in many cases, learnsets) updated.
 - Gengar: *Ghost/Poison* -> *Ghost/Dark*
 - Drowzee, Hypno: *Psychic* -> *Psychic/Dark*
 - Kingler: *Water* -> *Water/Fighting*
+- Voltorb, Electrode: *Electric* -> *Steel*
 - Exeggcute: *Grass/Psychic* -> *Grass/Normal*
 - Exeggcutor: *Grass/Psychic* -> *Grass/Dragon*
 - Cubone: *Ground* -> *Rock/Normal*
@@ -116,8 +117,10 @@ These mons have had their types (and in many cases, learnsets) updated.
 - Umbreon: *Dark* -> *Ghost*
 - Slowking: *Water/Psychic* -> *Psychic/Dragon*
 - Misdreavus: *Ghost* -> *Ghost/Psychic*
+- Unown: *Psychic* -> *Ghost/Dark*
 - Gligar: *Ground/Flying* -> *Poison/Flying*
 - Snubbull, Granbull: *Normal* -> *Normal/Dark*
+- Shuckle: *Bug/Rock* -> *Rock/Poison*
 - Corsola: *Water/Rock* -> *Water/Ghost*
 - Octillery: *Water* -> *Water/Fire*
 - Donphan: *Ground* -> *Ground/Fighting*

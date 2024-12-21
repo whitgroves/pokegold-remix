@@ -523,6 +523,7 @@ PichuEggMoves:
 	db PRESENT
 	db ENCORE
 	db DOUBLESLAP
+	db SURF
 	db -1 ; end
 
 CleffaEggMoves:

@@ -1051,7 +1051,7 @@ PonytaEvosAttacks:
 	db 8, TAIL_WHIP
 	db 13, EMBER
 	db 19, STOMP
-	db 26, FIRE_SPIN
+	db 26, FLAME_WHEEL
 	db 34, TAKE_DOWN
 	db 43, AGILITY
 	db 53, FIRE_BLAST
@@ -1067,7 +1067,7 @@ RapidashEvosAttacks:
 	db 8, TAIL_WHIP
 	db 13, EMBER
 	db 19, STOMP
-	db 26, FIRE_SPIN
+	db 26, FLAME_WHEEL
 	db 34, TAKE_DOWN
 	db 40, FURY_ATTACK
 	db 47, AGILITY
@@ -2519,12 +2519,13 @@ MareepEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, GROWL
-	db 9, THUNDERSHOCK
-	db 16, THUNDER_WAVE
-	db 21, COTTON_SPORE
-	db 25, TAKE_DOWN
-	db 30, SPARK
-	db 37, THUNDER
+	db 8, THUNDERSHOCK
+	db 14, COTTON_SPORE
+	db 23, SPARK
+	db 28, CHARM
+	db 37, BODY_SLAM
+	db 45, TAKE_DOWN
+	db 51, THUNDER
 	db 0 ; no more level-up moves
 
 FlaaffyEvosAttacks:
@@ -2532,25 +2533,28 @@ FlaaffyEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, GROWL
-	db 1, THUNDERSHOCK
-	db 9, THUNDERSHOCK
-	db 18, THUNDER_WAVE
-	db 24, COTTON_SPORE
-	db 27, THUNDERPUNCH
-	db 36, SPARK
-	db 45, THUNDER
+	db 8, THUNDERSHOCK
+	db 14, COTTON_SPORE
+	db 15, THUNDERPUNCH
+	db 26, SPARK
+	db 31, CHARM
+	db 41, RAIN_DANCE
+	db 50, TAKE_DOWN
+	db 55, THUNDER
 	db 0 ; no more level-up moves
 
 AmpharosEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, TACKLE
+	db 1, SLAM
 	db 1, GROWL
-	db 9, THUNDERSHOCK
-	db 18, THUNDER_WAVE
-	db 27, THUNDERPUNCH
-	db 30, THUNDERBOLT
-	db 42, LIGHT_SCREEN
-	db 57, THUNDER
+	db 8, THUNDERSHOCK
+	db 15, THUNDERPUNCH
+	db 26, SPARK
+	db 30, FLASH
+	db 33, THUNDERBOLT
+	db 44, RAIN_DANCE
+	db 57, TWISTER
+	db 61, THUNDER
 	db 0 ; no more level-up moves
 
 BellossomEvosAttacks:
@@ -2844,6 +2848,15 @@ MisdreavusEvosAttacks:
 UnownEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, HIDDEN_POWER
+	db 11, ANCIENTPOWER
+	db 21, CURSE
+	db 31, TELEPORT
+	db 41, MEAN_LOOK
+	db 51, METRONOME
+	db 61, HYPNOSIS
+	db 71, PAIN_SPLIT
+	db 81, RECOVER
+	db 91, NIGHTMARE
 	db 0 ; no more level-up moves
 
 WobbuffetEvosAttacks:
@@ -3004,17 +3017,16 @@ ScizorEvosAttacks:
 
 ShuckleEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, CONSTRICT
 	db 1, WITHDRAW
+	db 1, CONSTRICT
 	db 1, BIDE
 	db 9, WRAP
 	db 11, DEFENSE_CURL
-	db 14, MUD_SLAP
-	db 23, SAFEGUARD
-	db 28, ROLLOUT
-	db 34, ACID
-	db 37, SOFTBOILED
-	db 42, SANDSTORM
+	db 23, ROLLOUT
+	db 28, ACID
+	db 34, SOFTBOILED
+	db 37, SANDSTORM
+	db 42, TOXIC
 	db 0 ; no more level-up moves
 
 HeracrossEvosAttacks:
