@@ -479,7 +479,7 @@ ClefableEvosAttacks:
 	db 1, METRONOME
 	db 1, MOONLIGHT
 	db 53, LIGHT_SCREEN
-	db 60, TRI_ATTACK
+	db 60, MIRROR_COAT
 	db 0 ; no more level-up moves
 
 VulpixEvosAttacks:
@@ -1724,7 +1724,7 @@ MrMimeEvosAttacks:
 	db 36, PSYBEAM
 	db 41, BATON_PASS
 	db 46, SAFEGUARD
-	db 52, PSYCH_UP
+	db 52, MIRROR_COAT
 	db 0 ; no more level-up moves
 
 ScytherEvosAttacks:

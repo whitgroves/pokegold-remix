@@ -385,6 +385,7 @@ MrMimeEggMoves:
 	db FUTURE_SIGHT
 	db HYPNOSIS
 	db MIMIC
+	db PSYCH_UP
 	db -1 ; end
 
 ScytherEggMoves:
