@@ -1730,11 +1730,11 @@ ScytherEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, QUICK_ATTACK
 	db 1, LEER
-	db 6, FOCUS_ENERGY
+	db 6, FALSE_SWIPE
 	db 12, PURSUIT
-	db 18, FALSE_SWIPE
-	db 24, AGILITY
-	db 30, SWIFT
+	db 18, SWIFT
+	db 24, CUT
+	db 30, AGILITY
 	db 36, SLASH
 	db 42, SWORDS_DANCE
 	db 48, DOUBLE_TEAM
@@ -2976,16 +2976,16 @@ QwilfishEvosAttacks:
 
 ScizorEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, QUICK_ATTACK
+	db 1, SLAM
 	db 1, LEER
-	db 6, FOCUS_ENERGY
-	db 12, PURSUIT
-	db 18, FALSE_SWIPE
-	db 24, AGILITY
-	db 30, METAL_CLAW
-	db 36, SLASH
-	db 42, SWORDS_DANCE
-	db 48, DOUBLE_TEAM
+	db 6, FALSE_SWIPE
+	db 12, VICEGRIP
+	db 18, SWIFT
+	db 24, METAL_CLAW
+	db 30, SWORDS_DANCE
+	db 36, AGILITY
+	db 42, CRUNCH
+	db 48, BATON_PASS
 	db 0 ; no more level-up moves
 
 ShuckleEvosAttacks:
