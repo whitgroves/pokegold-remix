@@ -215,7 +215,7 @@ Several moves have had their types, effects, or other attributes changed to prov
 - Crunch: *20% Chance To Lower Special Defense* -> *30% Chance To Paralyze*
 - Whirlpool: *70%* -> *75% Accuracy* | *15*-> *20 PP*
 ### Always Physical Moves
-These moves are special, but their damage is always treated as physical.
+These moves are special, but their damage is now treated as physical.
 - Fire Punch
 - Ice Punch
 - Thunderpunch
@@ -226,6 +226,7 @@ These moves are special, but their damage is always treated as physical.
 - Vine Whip
 - Horn Attack
 - Outrage
+- Flame Wheel
 
 As a side note, all *Ghost* moves are now special and all *Dark* moves are now physical.
 ### Trapping Moves

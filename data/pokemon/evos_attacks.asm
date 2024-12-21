@@ -3428,11 +3428,11 @@ RaikouEvosAttacks:
 EnteiEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, BITE
-	db 11, FIRE_SPIN
+	db 11, FLAME_WHEEL
 	db 21, ROAR
 	db 31, SUNNY_DAY
 	db 41, FLAMETHROWER
-	db 51, AGILITY
+	db 51, SOLARBEAM
 	db 61, EARTHQUAKE
 	db 71, FIRE_BLAST
 	db 0 ; no more level-up moves
