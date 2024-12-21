@@ -399,6 +399,8 @@ ScytherEggMoves:
 PinsirEggMoves:
 	db FURY_ATTACK
 	db FLAIL
+	db HYPER_FANG
+	db SUPER_FANG
 	db -1 ; end
 
 LaprasEggMoves:
@@ -655,6 +657,8 @@ GligarEggMoves:
 	db WING_ATTACK
 	db RAZOR_WIND
 	db COUNTER
+	db HYPER_FANG
+	db SUPER_FANG
 	db -1 ; end
 
 SnubbullEggMoves:

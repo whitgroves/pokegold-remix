@@ -192,9 +192,9 @@ Several moves have had their types, effects, or other attributes changed to prov
 - Dizzy Punch: *Normal* -> *Psychic* | [*Always Physical*](#always-physical-moves)
 - Bonemerang: *Ground* -> *Rock* | *90%* -> *100% Accuracy*
 - Rock Slide: *90%* -> *100% Accuracy* | *75* -> *80 Power*
-- Hyper Fang: *90%* -> *100% Accuracy*
+- Hyper Fang: *Normal* -> *Dark* | *90%* -> *100% Accuracy*
 - Tri Attack: *Normal* -> *Dragon*
-- Super Fang: *90%* -> *100% Accuracy*
+- Super Fang: *Normal* -> *Dark*
 - Triple Kick: *90%* -> *100% Accuracy*
 - Aeroblast: *95%* -> *100% Accuracy*
 - Mud-Slap: *100% Chance To Lower Accuracy* -> *50% Chance To Lower Accuracy*

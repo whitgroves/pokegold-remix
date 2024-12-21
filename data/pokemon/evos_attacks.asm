@@ -307,8 +307,9 @@ EkansEvosAttacks:
 	db 15, BITE
 	db 23, GLARE
 	db 29, SCREECH
+	db 31, HYPER_FANG
 	db 37, ACID
-	db 43, HAZE
+	db 43, SUPER_FANG
 	db 0 ; no more level-up moves
 
 ArbokEvosAttacks:
@@ -319,8 +320,9 @@ ArbokEvosAttacks:
 	db 15, BITE
 	db 25, GLARE
 	db 33, SCREECH
+	db 36, HYPER_FANG
 	db 43, ACID
-	db 51, HAZE
+	db 51, SUPER_FANG
 	db 0 ; no more level-up moves
 
 PikachuEvosAttacks:
@@ -2357,26 +2359,24 @@ SpinarakEvosAttacks:
 	db 11, CONSTRICT
 	db 17, NIGHT_SHADE
 	db 23, LEECH_LIFE
-	db 30, FURY_SWIPES
+	db 30, HYPER_FANG
 	db 37, SPIDER_WEB
 	db 45, AGILITY
-	db 53, PSYCHIC_M
+	db 53, SUPER_FANG
 	db 0 ; no more level-up moves
 
 AriadosEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, POISON_STING
 	db 1, STRING_SHOT
-	db 1, SCARY_FACE
-	db 1, CONSTRICT
 	db 6, SCARY_FACE
 	db 11, CONSTRICT
 	db 17, NIGHT_SHADE
 	db 25, LEECH_LIFE
-	db 34, FURY_SWIPES
+	db 34, HYPER_FANG
 	db 43, SPIDER_WEB
 	db 53, AGILITY
-	db 63, PSYCHIC_M
+	db 63, SUPER_FANG
 	db 0 ; no more level-up moves
 
 CrobatEvosAttacks:
