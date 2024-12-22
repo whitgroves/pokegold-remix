@@ -628,6 +628,7 @@ LoadBluePage:
 	hlcoord 0, 8
 	lb bc, 10, 20
 	call ClearBox
+	call StatsScreen_PlaceHappinessInfo
 	call .PlaceOTInfo
 	hlcoord 10, 8
 	ld de, SCREEN_WIDTH
@@ -718,6 +719,23 @@ IDNoString:
 
 OTString:
 	db "OT/@"
+
+StatsScreen_PlaceHappinessInfo:
+	ld de, .happinessPrefix
+	hlcoord 0, 15
+	call PlaceString
+	hlcoord 1, 16
+	lb bc, 1, 3
+	ld de, wTempMonHappiness
+	call PrintNum
+	ld de, .happinessSuffix
+	hlcoord 4, 16
+	call PlaceString
+	ret
+.happinessPrefix:
+	db "TRUST/@"
+.happinessSuffix:
+	db "/255@"
 
 StatsScreen_PlaceFrontpic:
 	push bc
