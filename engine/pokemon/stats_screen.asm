@@ -683,6 +683,7 @@ LoadBluePage:
 	cp BOXMON
 	call z, CloseSRAM
 	callfar CorrectNickErrors
+	; there was extra code here to fix names not fixed by CorrectNickErrors, but I cut it for space
 	push de
 	hlcoord 3, 10
 	pop de
@@ -701,24 +702,48 @@ IDNoString:
 OTString:
 	db "OT/@"
 
+; displays happiness as a % of 255 -- note that happiness evo requirement (220) is ~87%
 StatsScreen_PlaceHappinessInfo:
 	ld de, .happinessPrefix
 	hlcoord 0, 12
 	call PlaceString
-	hlcoord 6, 12
-	lb bc, PRINTNUM_LEFTALIGN | 1, 3
-	ld de, wTempMonHappiness
+	xor a
+	ldh [hMultiplicand + 0], a
+	ldh [hMultiplicand + 1], a
+	ld a, [wTempMonHappiness]	; max happiness is 255 so we only need the last byte
+	ldh [hMultiplicand + 2], a
+	ld a, 100					; multiply by 100, then divide by 255 to get percent
+	ldh [hMultiplier], a
+	call Multiply
+	ldh a, [hProduct + 2] 		; max product is 25500 (15 bits) so skip bytes 0 & 1
+	ldh [hDividend + 0], a
+	ldh a, [hProduct + 3]
+	ldh [hDividend + 1], a
+	ld a, $ff
+	ldh [hDivisor], a
+	ld b, 2
+	call Divide
+	ldh a, [hQuotient + 3]		; max quotient is 100 (7 bits) so only use last byte
+	ld [wPokedexStatus], a		; CL hack -- see StatsScreen_PrintDVs
+	ld de, wPokedexStatus
+	lb bc, PRINTNUM_LEADINGZEROS | 1, 3
+	hlcoord 6, 12 ; 6, 12
 	call PrintNum
+	ld de, .happinessSuffix
+	hlcoord 9, 12
+	call PlaceString
 	ret
-.happinessPrefix:
+.happinessPrefix
 	db "TRUST/@"
+.happinessSuffix
+	db "<%>@"
 
 ; based on Crystal Legacy -- special thanks to the author of StatsScreen_PrintDVs
 StatsScreen_PrintDVs:
 	ld de, .dvsPrefix
 	hlcoord 0, 14
 	call PlaceString
-; ATK
+.printAtk
 	ld de, .atkPrefix
 	hlcoord 4, 14
 	call PlaceString
@@ -730,7 +755,11 @@ StatsScreen_PrintDVs:
 	lb bc, PRINTNUM_LEADINGZEROS | 1, 2
 	hlcoord 8, 14
 	call PrintNum
-; DEF
+	ld a, [wPokedexStatus]	; high dv (> 10) gets a special indicator
+	hlcoord 7, 14
+	call .printDVIndicator
+	call PlaceString
+.printDef
 	ld de, .defPrefix
 	hlcoord 4, 15
 	call PlaceString
@@ -741,7 +770,11 @@ StatsScreen_PrintDVs:
 	lb bc, PRINTNUM_LEADINGZEROS | 1, 2
 	hlcoord 8, 15
 	call PrintNum
-; SPE
+	ld a, [wPokedexStatus]
+	hlcoord 7, 15
+	call .printDVIndicator
+	call PlaceString
+.printSpe
 	ld de, .spePrefix
 	hlcoord 4, 16
 	call PlaceString
@@ -752,7 +785,11 @@ StatsScreen_PrintDVs:
 	lb bc, PRINTNUM_LEADINGZEROS | 1, 2
 	hlcoord 8, 16
 	call PrintNum
-; SPD
+	ld a, [wPokedexStatus]
+	hlcoord 7, 16
+	call .printDVIndicator
+	call PlaceString
+.printSpd
 	ld de, .spdPrefix
 	hlcoord 4, 17
 	call PlaceString
@@ -764,17 +801,35 @@ StatsScreen_PrintDVs:
 	lb bc, PRINTNUM_LEADINGZEROS | 1, 2
 	hlcoord 8, 17
 	call PrintNum
+	ld a, [wPokedexStatus]
+	hlcoord 7, 17
+	call .printDVIndicator
+	call PlaceString
 	ret
-.dvsPrefix:
+.dvsPrefix
 	db "DVs/@"
-.atkPrefix:
-	db "ATK▷@"
-.defPrefix:
-	db "DEF▷@"
-.spdPrefix:
-	db "SPD▷@"
-.spePrefix:
-	db "SPE▷@"
+.atkPrefix
+	db "ATK@"
+.defPrefix
+	db "DEF@"
+.spdPrefix
+	db "SPD@"
+.spePrefix
+	db "SPE@"
+.printDVIndicator: ; assumes DV in register a and coordinates in hl
+	cp 10
+	jr c, .printLow
+	ld de, .highDV
+	jr .placeString
+.printLow
+	ld de, .lowDV
+.placeString
+	call PlaceString
+	ret
+.highDV
+	db "▶@"
+.lowDV
+	db "▷@"
 
 StatsScreen_PlaceFrontpic:
 	push bc

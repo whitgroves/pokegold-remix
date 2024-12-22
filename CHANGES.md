@@ -317,3 +317,4 @@ The Mahogany Mart carries these items once the Rocket Hideout is cleared and Pry
 - The Radio Tower incident now starts when reaching Blackthorn rather than immediately the 7th badge
 - Consequently, Route 44 and the [Mahogany Mart](#mahogany-mart-post-rocket-hideout) both open immediately after beating Pryce
 - Clair gives the Risingbadge immediately upon defeat, but the player must still get the Dragon Fang to receive TM24
+- The stats screen shows happiness % (TRUST) and Attack, Defense, Special, and Speed DVs (HP was cut for space since it is calculated rather than inherited)

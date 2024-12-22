@@ -21,6 +21,7 @@ The following changes have been implemented or planned:
 - Auto-sort the backpack by pressing Start
 - The good rod is good and the super rod is super
 - The "Down + B" trick actually works
+- View happiness % on the stats screen ✓
 - Better rocket hideout & radio tower ✓
 - HMs can be deleted ✓
 
