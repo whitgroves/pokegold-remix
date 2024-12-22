@@ -628,8 +628,9 @@ LoadBluePage:
 	hlcoord 0, 8
 	lb bc, 10, 20
 	call ClearBox
-	call StatsScreen_PlaceHappinessInfo
 	call .PlaceOTInfo
+	call StatsScreen_PlaceHappinessInfo
+	call StatsScreen_PrintDVs
 	hlcoord 10, 8
 	ld de, SCREEN_WIDTH
 	ld b, 10
@@ -656,13 +657,13 @@ LoadBluePage:
 	ret
 
 .PlaceOTInfo:
-	hlcoord 0, 9
+	hlcoord 0, 8
 	ld de, IDNoString
 	call PlaceString
-	hlcoord 0, 12
+	hlcoord 0, 10
 	ld de, OTString
 	call PlaceString
-	hlcoord 2, 10
+	hlcoord 3, 8
 	ld de, wTempMonID
 	lb bc, PRINTNUM_LEADINGZEROS | 2, 5
 	call PrintNum
@@ -683,27 +684,7 @@ LoadBluePage:
 	call z, CloseSRAM
 	callfar CorrectNickErrors
 	push de
-
-; Adjust coordinate of OT name based on index of nickname terminator
-	lb bc, 0, -1
-.loop
-	inc c
-	ld a, [de]
-	inc de
-	cp "@"
-	jr nz, .loop
-; remove left padding if name was 8-10 chars (somehow?)
-	ld a, NAME_LENGTH - 1
-	sub c
-	cp NAME_LENGTH - PLAYER_NAME_LENGTH
-; otherwise, use 2 spaces of left padding
-	jr c, .ok
-	ld a, NAME_LENGTH - PLAYER_NAME_LENGTH - 1
-.ok
-	ld c, a
-	hlcoord 0, 13
-	add hl, bc
-; that's finally over ... place string, quit forever
+	hlcoord 3, 10
 	pop de
 	call PlaceString
 	ret
@@ -722,20 +703,78 @@ OTString:
 
 StatsScreen_PlaceHappinessInfo:
 	ld de, .happinessPrefix
-	hlcoord 0, 15
+	hlcoord 0, 12
 	call PlaceString
-	hlcoord 1, 16
-	lb bc, 1, 3
+	hlcoord 6, 12
+	lb bc, PRINTNUM_LEFTALIGN | 1, 3
 	ld de, wTempMonHappiness
 	call PrintNum
-	ld de, .happinessSuffix
-	hlcoord 4, 16
-	call PlaceString
 	ret
 .happinessPrefix:
 	db "TRUST/@"
-.happinessSuffix:
-	db "/255@"
+
+; based on Crystal Legacy -- special thanks to the author of StatsScreen_PrintDVs
+StatsScreen_PrintDVs:
+	ld de, .dvsPrefix
+	hlcoord 0, 14
+	call PlaceString
+; ATK
+	ld de, .atkPrefix
+	hlcoord 4, 14
+	call PlaceString
+	ld a, [wTempMonDVs]
+	and %11110000
+	swap a
+	ld [wPokedexStatus], a  ; CL hack -- we need a memory location for PrintNum
+	ld de, wPokedexStatus	; and (supposedly!) wPokedexStatus is available here
+	lb bc, PRINTNUM_LEADINGZEROS | 1, 2
+	hlcoord 8, 14
+	call PrintNum
+; DEF
+	ld de, .defPrefix
+	hlcoord 4, 15
+	call PlaceString
+	ld a, [wTempMonDVs]
+	and %00001111
+	ld [wPokedexStatus], a
+	ld de, wPokedexStatus
+	lb bc, PRINTNUM_LEADINGZEROS | 1, 2
+	hlcoord 8, 15
+	call PrintNum
+; SPE
+	ld de, .spePrefix
+	hlcoord 4, 16
+	call PlaceString
+	ld a, [wTempMonDVs + 1]
+	and %00001111
+	ld [wPokedexStatus], a
+	ld de, wPokedexStatus
+	lb bc, PRINTNUM_LEADINGZEROS | 1, 2
+	hlcoord 8, 16
+	call PrintNum
+; SPD
+	ld de, .spdPrefix
+	hlcoord 4, 17
+	call PlaceString
+	ld a, [wTempMonDVs + 1]
+	and %11110000
+	swap a
+	ld [wPokedexStatus], a
+	ld de, wPokedexStatus
+	lb bc, PRINTNUM_LEADINGZEROS | 1, 2
+	hlcoord 8, 17
+	call PrintNum
+	ret
+.dvsPrefix:
+	db "DVs/@"
+.atkPrefix:
+	db "ATK▷@"
+.defPrefix:
+	db "DEF▷@"
+.spdPrefix:
+	db "SPD▷@"
+.spePrefix:
+	db "SPE▷@"
 
 StatsScreen_PlaceFrontpic:
 	push bc
@@ -884,128 +923,3 @@ GetNicknamePointer:
 	ret z
 	ld a, [wCurPartyMon]
 	jp SkipNames
-
-; special thanks to crystal legacy -- debug only (for now)
-StatsScreen_PrintDVs:
-	hlcoord 1, 12
-	ld de, .DVstring1
-	call PlaceString
-	hlcoord 1, 13
-	ld de, .DVstring2
-	call PlaceString
-	; hlcoord 1, 14
-	; ld de, .DVstring3
-	; call PlaceString
-
-	; we're using wPokedexStatus because why not, nobody using it atm lol
-	; ATK DV
-	ld a, [wTempMonDVs] ; only get the first byte of the word
-	and %11110000 ; most significant nybble of first byte in word-sized wTempMonDVs
-	swap a ; so we can print it properly
-	ld [wPokedexStatus], a
-	ld c, 0
-	; calc HP stat contribution
-	and 1 ; a still has the ATK DV
-	jr z, .atk_not_odd
-	ld a, 0
-	add 8
-	ld b, 0
-	ld c, a
-	;
-.atk_not_odd
-	push bc
-	ld de, wPokedexStatus
-	lb bc, PRINTNUM_LEADINGZEROS | 1, 2 ; bytes, digits
-	hlcoord 10, 12
-	call PrintNum
-
-	; DEF DV
-	ld a, [wTempMonDVs] ; only get the first byte of the word
-	and %00001111 ; least significant nybble, don't need to swap the bits of the byte
-	ld [wPokedexStatus], a ;DEF
-	; calc HP stat contribution
-	pop bc
-	and 1 ; a still has the DEF DV
-	jr z, .def_not_odd
-	ld a, c
-	add 4
-	ld b, 0
-	ld c, a
-	;
-.def_not_odd
-	push bc
-	ld de, wPokedexStatus
-	lb bc, PRINTNUM_LEADINGZEROS | 1, 2 ; bytes, digits
-	hlcoord 17, 12
-	call PrintNum
-
-	; SPE DV
-	ld a, [wTempMonDVs + 1] ; second byte of word
-	and %11110000 ; most significant nybble of 2nd byte in word-sized wTempMonDVs
-	swap a ; so we can print it properly
-	ld [wPokedexStatus], a ;SPEED
-	; calc HP stat contribution
-	pop bc
-	and 1 ; a still has the SPEED DV
-	jr z, .speed_not_odd
-	ld a, c
-	add 2
-	ld b, 0
-	ld c, a
-	;
-.speed_not_odd
-	push bc
-	ld de, wPokedexStatus
-	lb bc, PRINTNUM_LEADINGZEROS | 1, 2 ; bytes, digits
-	hlcoord 17, 13 ; 1, 5, 9, 13
-	call PrintNum
-
-	; SPC DV
-	ld a, [wTempMonDVs + 1] ; second byte of word
-	and %00001111 ; least significant nybble, don't need to swap the bits of the byte
-	ld [wPokedexStatus], a ;SPC
-	; calc HP stat contribution
-	pop bc
-	and 1 ; a still has the DEF DV
-	jr z, .spc_not_odd
-	ld a, c
-	add 1
-	ld b, 0
-	ld c, a
-	;
-.spc_not_odd
-	push bc
-	ld de, wPokedexStatus
-	lb bc, PRINTNUM_LEADINGZEROS | 1, 2 ; bytes, digits
-	hlcoord 10, 13
-	call PrintNum
-	; hlcoord 18, 15 ; 1, 4, 7, 10, 13 
-	; call PrintNum
-
-	; HP
-	; HP DV is determined by the last bit of each of these four DVs
-	; odd Attack DV adds 8, Defense adds 4, Speed adds 2, and Special adds 1
-	;For example, a Lugia with the DVs 5 Atk, 15 Def, 13 Spe, and 13 Spc will have:
-	; 5 Attack = Odd, HP += 8
-	; 15 Defense = Odd, HP += 4
-	; 13 Speed = Odd, HP += 2
-	; 13 Special = Odd, HP += 1
-	;resulting in an HP stat of 15
-	; THANKS SMOGON
-	; going to "and 1" each final value and push a counter to stack to preserve it
-	pop bc
-	ld a, c
-	ld [wPokedexStatus], a
-	ld de, wPokedexStatus
-	lb bc, PRINTNUM_LEADINGZEROS | 1, 2 ; bytes, digits
-	hlcoord 3, 13 ; 1, 4, 7, 10, 13 
-	call PrintNum
-	ret
-
-.DVstring1:
-	db "DVS: ATK    DEF   @"
-.DVstring2:	
-	; db "ATK    DEF@"
-	db "HP   SPC    SPE   @"
-; .DVstring3:
-; 	db "SPC    SPE    HP@"
