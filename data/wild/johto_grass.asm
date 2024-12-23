@@ -431,7 +431,7 @@ JohtoGrassWildMons:
 	db 6, WOOPER
 	db 7, ONIX
 	db 8, PARAS
-	db 6, DIGLETT
+	db 6, DUNSPARCE
 	; day
 	db 8, ZUBAT
 	db 8, GEODUDE
@@ -439,7 +439,7 @@ JohtoGrassWildMons:
 	db 6, WOOPER
 	db 7, ONIX
 	db 8, PARAS
-	db 6, DIGLETT
+	db 6, DUNSPARCE
 	; nite
 	db 8, ZUBAT
 	db 8, GEODUDE
@@ -447,7 +447,7 @@ JohtoGrassWildMons:
 	db 6, WOOPER
 	db 7, ONIX
 	db 8, PARAS
-	db 6, DIGLETT
+	db 6, DUNSPARCE
 	end_grass_wildmons
 
 	def_grass_wildmons UNION_CAVE_B1F
@@ -458,7 +458,7 @@ JohtoGrassWildMons:
 	db 6, DIGLETT
 	db 7, ONIX
 	db 8, PARAS
-	db 6, WOOPER
+	db 6, DUNSPARCE
 	; day
 	db 8, ZUBAT
 	db 8, GEODUDE
@@ -466,7 +466,7 @@ JohtoGrassWildMons:
 	db 6, DIGLETT
 	db 7, ONIX
 	db 8, PARAS
-	db 6, WOOPER
+	db 6, DUNSPARCE
 	; nite
 	db 8, ZUBAT
 	db 8, GEODUDE
@@ -474,35 +474,35 @@ JohtoGrassWildMons:
 	db 6, DIGLETT
 	db 7, ONIX
 	db 8, PARAS
-	db 6, WOOPER
+	db 6, DUNSPARCE
 	end_grass_wildmons
 
 	def_grass_wildmons UNION_CAVE_B2F
 	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
 	; morn
 	db 22, GOLBAT
-	db 23, GEODUDE
+	db 24, GEODUDE
 	db 23, QUAGSIRE
 	db 22, DIGLETT
 	db 27, ONIX
-	db 25, GRAVELER
 	db 26, DUGTRIO
+	db 22, DUNSPARCE
 	; day
 	db 22, GOLBAT
-	db 23, GEODUDE
+	db 24, GEODUDE
 	db 23, QUAGSIRE
 	db 22, DIGLETT
 	db 27, ONIX
-	db 25, GRAVELER
 	db 26, DUGTRIO
+	db 22, DUNSPARCE
 	; nite
 	db 22, GOLBAT
-	db 23, GEODUDE
+	db 24, GEODUDE
 	db 23, QUAGSIRE
 	db 22, DIGLETT
 	db 27, ONIX
-	db 25, GRAVELER
 	db 26, DUGTRIO
+	db 22, DUNSPARCE
 	end_grass_wildmons
 
 	def_grass_wildmons SLOWPOKE_WELL_B1F
@@ -537,28 +537,28 @@ JohtoGrassWildMons:
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn
 	db 22, GOLBAT
-	db 21, SLOWPOKE
 	db 22, SLOWPOKE
 	db 23, SLOWPOKE
+	db 24, SLOWPOKE
 	db 26, DUGTRIO
 	db 24, PARASECT
-	db 27, DUNSPARCE
+	db 22, DUNSPARCE
 	; day
 	db 22, GOLBAT
-	db 21, SLOWPOKE
 	db 22, SLOWPOKE
 	db 23, SLOWPOKE
+	db 24, SLOWPOKE
 	db 26, DUGTRIO
 	db 24, PARASECT
-	db 27, DUNSPARCE
+	db 22, DUNSPARCE
 	; nite
 	db 22, GOLBAT
-	db 21, SLOWPOKE
 	db 22, SLOWPOKE
 	db 23, SLOWPOKE
+	db 24, SLOWPOKE
 	db 26, DUGTRIO
 	db 24, PARASECT
-	db 27, DUNSPARCE
+	db 22, DUNSPARCE
 	end_grass_wildmons
 
 	def_grass_wildmons ILEX_FOREST
@@ -598,7 +598,7 @@ JohtoGrassWildMons:
 	db 15, MARILL
 	db 13, CUBONE
 	db 18, AZUMARILL
-	db 15, CUBONE
+	db 18, DUNSPARCE
 	; day
 	db 15, ZUBAT
 	db 16, GEODUDE
@@ -606,7 +606,7 @@ JohtoGrassWildMons:
 	db 15, MARILL
 	db 13, CUBONE
 	db 18, AZUMARILL
-	db 15, CUBONE
+	db 18, DUNSPARCE
 	; nite
 	db 15, ZUBAT
 	db 16, GEODUDE
@@ -614,7 +614,7 @@ JohtoGrassWildMons:
 	db 15, MARILL
 	db 13, CUBONE
 	db 18, AZUMARILL
-	db 15, CUBONE
+	db 18, DUNSPARCE
 	end_grass_wildmons
 
 	def_grass_wildmons MOUNT_MORTAR_1F_INSIDE
@@ -624,25 +624,25 @@ JohtoGrassWildMons:
 	db 16, GEODUDE
 	db 16, ZUBAT
 	db 14, ONIX
-	db 13, CUBONE
 	db 15, CUBONE
 	db 18, KANGASKHAN
+	db 18, DUNSPARCE
 	; day
 	db 15, MACHOP
 	db 16, GEODUDE
 	db 16, ZUBAT
 	db 14, ONIX
-	db 13, CUBONE
 	db 15, CUBONE
 	db 18, KANGASKHAN
+	db 18, DUNSPARCE
 	; nite
 	db 15, MACHOP
 	db 16, GEODUDE
 	db 16, ZUBAT
 	db 14, ONIX
-	db 13, CUBONE
 	db 15, CUBONE
 	db 18, KANGASKHAN
+	db 18, DUNSPARCE
 	end_grass_wildmons
 
 	def_grass_wildmons MOUNT_MORTAR_2F_INSIDE
@@ -654,7 +654,7 @@ JohtoGrassWildMons:
 	db 27, ONIX
 	db 25, WOBBUFFET
 	db 27, CUBONE
-	db 30, KANGASKHAN
+	db 31, DUNSPARCE
 	; day
 	db 28, MACHOKE
 	db 27, GRAVELER
@@ -662,7 +662,7 @@ JohtoGrassWildMons:
 	db 27, ONIX
 	db 25, WOBBUFFET
 	db 27, CUBONE
-	db 30, KANGASKHAN
+	db 31, DUNSPARCE
 	; nite
 	db 28, MACHOKE
 	db 27, GRAVELER
@@ -670,7 +670,7 @@ JohtoGrassWildMons:
 	db 27, ONIX
 	db 25, WOBBUFFET
 	db 27, CUBONE
-	db 30, KANGASKHAN
+	db 31, DUNSPARCE
 	end_grass_wildmons
 
 	def_grass_wildmons MOUNT_MORTAR_B1F
@@ -682,7 +682,7 @@ JohtoGrassWildMons:
 	db 17, ZUBAT
 	db 17, CUBONE
 	db 18, HITMONCHAN
-	db  5, TYROGUE
+	db 18, DUNSPARCE
 	; day
 	db 16, MACHOP
 	db 18, GEODUDE
@@ -690,7 +690,7 @@ JohtoGrassWildMons:
 	db 17, ZUBAT
 	db 17, CUBONE
 	db 18, HITMONTOP
-	db  5, TYROGUE
+	db 18, DUNSPARCE
 	; nite
 	db 16, MACHOP
 	db 18, GEODUDE
@@ -698,7 +698,7 @@ JohtoGrassWildMons:
 	db 17, ZUBAT
 	db 17, CUBONE
 	db 18, HITMONLEE
-	db  5, TYROGUE
+	db 18, DUNSPARCE
 	end_grass_wildmons
 
 	def_grass_wildmons ICE_PATH_1F
@@ -1292,25 +1292,25 @@ JohtoGrassWildMons:
 	db 3, ZUBAT
 	db 4, GEODUDE
 	db 4, SANDSHREW
-	db 4, ZUBAT
-	db 4, DUNSPARCE
+	db 4, TEDDIURSA
 	db 5, LARVITAR
+	db 4, DUNSPARCE
 	; day
 	db 3, GEODUDE
 	db 3, ZUBAT
 	db 4, GEODUDE
 	db 4, SANDSHREW
-	db 4, ZUBAT
-	db 4, DUNSPARCE
+	db 4, TEDDIURSA
 	db 5, LARVITAR
+	db 4, DUNSPARCE
 	; nite
 	db 3, GEODUDE
 	db 3, ZUBAT
 	db 4, GEODUDE
 	db 4, SANDSHREW
-	db 4, ZUBAT
-	db 4, DUNSPARCE
+	db 4, TEDDIURSA
 	db 5, LARVITAR
+	db 4, DUNSPARCE
 	end_grass_wildmons
 
 	def_grass_wildmons DARK_CAVE_BLACKTHORN_ENTRANCE
@@ -1320,25 +1320,25 @@ JohtoGrassWildMons:
 	db 23, GOLBAT
 	db 24, SANDSLASH
 	db 21, TEDDIURSA
-	db 27, DUNSPARCE
-	db 25, LARVITAR
 	db 30, URSARING
+	db 25, LARVITAR
+	db 27, DUNSPARCE
 	; day
 	db 25, GRAVELER
 	db 23, GOLBAT
 	db 24, SANDSLASH
 	db 21, TEDDIURSA
-	db 27, DUNSPARCE
-	db 25, LARVITAR
 	db 30, URSARING
+	db 25, LARVITAR
+	db 27, DUNSPARCE
 	; nite
 	db 25, GRAVELER
 	db 23, GOLBAT
 	db 24, SANDSLASH
 	db 21, TEDDIURSA
-	db 27, DUNSPARCE
-	db 25, LARVITAR
 	db 30, URSARING
+	db 25, LARVITAR
+	db 27, DUNSPARCE
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_29
