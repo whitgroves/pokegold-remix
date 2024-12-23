@@ -318,3 +318,5 @@ The Mahogany Mart carries these items once the Rocket Hideout is cleared and Pry
 - Consequently, Route 44 and the [Mahogany Mart](#mahogany-mart-post-rocket-hideout) both open immediately after beating Pryce
 - Clair gives the Risingbadge immediately upon defeat, but the player must still get the Dragon Fang to receive TM24
 - The stats screen shows happiness as percent of 255 (TRUST) and Attack, Defense, Special, and Speed DVs (DNA)
+- After receiving the Old and Good Rods, each Fishing Guru will tell the player where to find the next one
+- Since Remoraid are no longer found on Route 44, Sailor Huey (lighthouse) now activates the Remoraid swarm on Routes 40, 41, and Olivine Port

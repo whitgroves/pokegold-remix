@@ -12,7 +12,7 @@ PhoneRoute33Text:      db "ROUTE 33@"
 PhoneRoute34Text:      db "ROUTE 34@"
 PhoneRoute35Text:      db "ROUTE 35@"
 PhoneRoute36Text:      db "ROUTE 36@"
-PhoneRoute37Text:      db "ROUTE 37@" ; unreferenced
+PhoneRoute40Text:      db "ROUTE 40@" ; previously (unreferenced) PhoneRoute37Text
 PhoneRoute38Text:      db "ROUTE 38@"
 PhoneRoute39Text:      db "ROUTE 39@"
 PhoneRoute42Text:      db "ROUTE 42@"

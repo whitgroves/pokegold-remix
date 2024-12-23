@@ -102,9 +102,9 @@ JohtoWaterWildMons:
 
 	def_water_wildmons DARK_CAVE_VIOLET_ENTRANCE
 	db 2 percent ; encounter rate
-	db 10, MAGIKARP
 	db 15, MAGIKARP
-	db 15, MAGIKARP
+	db 20, CHINCHOU
+	db 25, CHINCHOU
 	end_water_wildmons
 
 	def_water_wildmons DARK_CAVE_BLACKTHORN_ENTRANCE
@@ -137,15 +137,15 @@ JohtoWaterWildMons:
 
 	def_water_wildmons ROUTE_32
 	db 6 percent ; encounter rate
-	db 20, POLIWAG
-	db 15, MARILL
-	db 20, REMORAID
+	db 15, WOOPER
+	db 18, QWILFISH
+	db 20, QUAGSIRE
 	end_water_wildmons
 
 	def_water_wildmons ROUTE_34
 	db 6 percent ; encounter rate
 	db 20, TENTACOOL
-	db 20, QWILFISH
+	db 18, QWILFISH
 	db 15, CORSOLA
 	end_water_wildmons
 
@@ -172,8 +172,8 @@ JohtoWaterWildMons:
 
 	def_water_wildmons ROUTE_42
 	db 4 percent ; encounter rate
+	db 20, POLIWAG
 	db 15, MARILL
-	db 15, MAGIKARP
 	db 15, CHINCHOU
 	end_water_wildmons
 

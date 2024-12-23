@@ -45,8 +45,19 @@ HueyPhoneCallerScript:
 	gettrainername STRING_BUFFER_3, SAILOR, HUEY1
 	scall PhoneScript_GreetPhone_Male
 	scall PhoneScript_Random2
+	ifequal 0, .RemoraidSwarm
+	scall PhoneScript_Random2
 	ifequal 0, .WantsBattle
 	sjump Phone_GenericCall_Male_SkipMon
+
+.RemoraidSwarm:
+	checkflag ENGINE_SWARM
+	iftrue Phone_GenericCall_Male
+	getmonname STRING_BUFFER_4, REMORAID
+	getstring STRING_BUFFER_5, PhoneRoute40Text
+	setval FISHSWARM_REMORAID
+	special ActivateFishingSwarm
+	sjump PhoneScript_SwarmFish
 
 .WantsBattle:
 	getstring STRING_BUFFER_5, PhoneLighthouseText
@@ -584,21 +595,10 @@ WiltonPhoneCallerScript:
 	gettrainername STRING_BUFFER_3, FISHER, WILTON1
 	scall PhoneScript_GreetPhone_Male
 	scall PhoneScript_Random2
-	ifequal 0, .RemoraidSwarm
-	scall PhoneScript_Random2
 	ifequal 0, .WantsBattle
 	scall PhoneScript_Random2
 	ifequal 0, Phone_CheckIfUnseenRare_Male
 	sjump Phone_GenericCall_Male
-
-.RemoraidSwarm:
-	checkflag ENGINE_SWARM
-	iftrue Phone_GenericCall_Male
-	getmonname STRING_BUFFER_4, REMORAID
-	getstring STRING_BUFFER_5, PhoneRoute44Text
-	setval FISHSWARM_REMORAID
-	special ActivateFishingSwarm
-	sjump PhoneScript_SwarmFish
 
 .WantsBattle:
 	getstring STRING_BUFFER_5, PhoneRoute44Text

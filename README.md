@@ -19,7 +19,7 @@ The following changes have been implemented or planned:
 - Fast text, Stereo sound, and Set battles by default ✓
 - Use animated Pokemon sprites from Crystal
 - Auto-sort the backpack by pressing Start
-- The good rod is good and the super rod is super
+- The old rod is good and the other rods are also good ✓
 - The "Down + B" trick actually works
 - View happiness % on the stats screen ✓
 - Better rocket hideout & radio tower ✓

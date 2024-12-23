@@ -77,6 +77,17 @@ DontWantGoodRodText:
 HaveGoodRodText:
 	text "How are things?"
 	line "Land the big one?"
+
+	para "No? Try ROUTE 12"
+	line "over in KANTO."
+
+	para "My bud's younger"
+	line "brother lives"
+	cont "out that way,"
+	
+	para "and he says the"
+ 	line "SEAKING are"
+	cont "always biting!"
 	done
 
 OlivineGoodRodHouse_MapEvents:

@@ -81,6 +81,14 @@ Route32Pokecenter1FFishingGuruText_No:
 Route32Pokecenter1FFishingGuruText_After:
 	text "Yo, youngster. How"
 	line "are they biting?"
+
+	para "No luck?"
+	
+	para "I got an old pal"
+	line "in OLIVINE that"
+
+	para "swears he can"
+	line "always nab KRABBY."
 	done
 
 Route32Pokecenter1FCooltrainerFText:
