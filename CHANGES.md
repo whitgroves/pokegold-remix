@@ -309,12 +309,12 @@ The Mahogany Mart carries these items once the Rocket Hideout is cleared and Pry
 ## Miscellaneous
 - *Fire*-type moves can no longer defrost through *Safeguard*
 - Gender is no longer determined solely by Attack DV (i.e., female mons outside of all-female species can roll high ATK DVs)
-- As a consequence of the above, the shininess formula has been updated and now has a ~1/7281 chance instead of 1/8192
-- Similarly, trainer DVs have been updated so that trainer classes generally have the same gender mons as the base game
+- As a consequence of the above, the shininess formula has been updated and now has a ~1/10,000 chance instead of 1/8192
+- Similarly, trainer DVs have been updated to raise the attack of (most) female trainer classes and give each of the Elite Four a perfect stat
 - Each surveillance statue in the Rocket Hideout summons 1 unique battle instead of 2 generic grunts
 - The trainer in Cianwood now gifts a Delibird instead of Shuckle so the player can always FLY home after beating the gym
 - HM moves can now be forgotten; when learning over them, a confirmation prompt is brought up before they're overwritten
 - The Radio Tower incident now starts when reaching Blackthorn rather than immediately the 7th badge
 - Consequently, Route 44 and the [Mahogany Mart](#mahogany-mart-post-rocket-hideout) both open immediately after beating Pryce
 - Clair gives the Risingbadge immediately upon defeat, but the player must still get the Dragon Fang to receive TM24
-- The stats screen shows happiness % (TRUST) and Attack, Defense, Special, and Speed DVs (HP was cut for space since it is calculated rather than inherited)
+- The stats screen shows happiness as percent of 255 (TRUST) and Attack, Defense, Special, and Speed DVs (DNA)

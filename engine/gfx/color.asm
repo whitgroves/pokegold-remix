@@ -43,15 +43,12 @@ Unused_CheckShininess:
 	and a
 	ret
 
-; The updated gender check (see engine/pokemon/mon_stats.asm) determines gender such that
-; shiny mons will always be female using the base formula (now Unused_CheckShininess).
-
-; The fix is to check for even values above 10 on ATK and SPD DVs + 10's on DEF and SPE.
-; This allows mons with male DVs to be shiny for gender ratios up through GENDER_F50,
-; with a ~1/7281 shiny chance on encounters, which is better than base but still rare.
+; The revised gender check (engine/pokemon/mon_stats.asm) could work with the old method,
+; but since I'm messing with the formula anyway, remix will look for DVs above 10 that match
+; which is about 75% the shiny rate of the base game (1/8192 vs < 1/10,000)
 
 CheckShininess:
-; DVs are stored in register bc, but must be in register hl to cycle through
+; DVs are expected to be at address [bc], but we transfer to hl to store values in b
 	ld l, c
 	ld h, b
 
@@ -59,26 +56,27 @@ CheckShininess:
 	ld a, [hl]
 	cp 10 << 4
 	jr c, .not_shiny
-	and %0001 << 4
-	jr nz, .not_shiny
+	and %11110000
+	swap a
+	ld b, a
 
 ; Defense
 	ld a, [hli]
 	and %1111
-	cp 10
+	cp b
 	jr nz, .not_shiny
 
 ; Speed
 	ld a, [hl]
-	cp 10 << 4
-	jr c, .not_shiny
-	and %0001 << 4
+	and %11110000
+	swap a
+	cp b
 	jr nz, .not_shiny
 
 ; Special
 	ld a, [hl]
 	and %1111
-	cp 10
+	cp b
 	jr nz, .not_shiny
 
 ; shiny

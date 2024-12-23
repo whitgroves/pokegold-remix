@@ -738,7 +738,7 @@ StatsScreen_PlaceHappinessInfo:
 .happinessSuffix
 	db "<%>@"
 
-; based on Crystal Legacy -- special thanks to the author of StatsScreen_PrintDVs
+; based on Crystal Legacy -- SPE thanks to Nayru62 & cRz-Shadows
 StatsScreen_PrintDVs:
 	ld de, .dvsPrefix
 	hlcoord 0, 14
@@ -807,7 +807,7 @@ StatsScreen_PrintDVs:
 	call PlaceString
 	ret
 .dvsPrefix
-	db "DVs/@"
+	db "DNA/@"
 .atkPrefix
 	db "ATK@"
 .defPrefix
