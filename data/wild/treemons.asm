@@ -70,6 +70,7 @@ TreeMonSet_Canyon:
 	db -1
 
 TreeMonSet_Rock:
-	db 80, KRABBY,     20
-	db 20, SHUCKLE,    20
+	db 60, SHUCKLE,    20
+	db 20, SUDOWOODO,  20
+	db 10, DUNSPARCE,  20
 	db -1

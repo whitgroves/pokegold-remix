@@ -485,14 +485,14 @@ ClefableEvosAttacks:
 VulpixEvosAttacks:
 	db EVOLVE_ITEM, FIRE_STONE, NINETALES
 	db 0 ; no more evolutions
-	db 1, EMBER
 	db 1, TAIL_WHIP
+	db 1, EMBER
 	db 7, QUICK_ATTACK
 	db 13, ROAR
 	db 19, CONFUSE_RAY
-	db 25, SAFEGUARD
-	db 31, FLAMETHROWER
-	db 37, FIRE_SPIN
+	db 25, FIRE_SPIN
+	db 31, SAFEGUARD
+	db 37, FLAMETHROWER
 	db 0 ; no more level-up moves
 
 NinetalesEvosAttacks:
@@ -502,9 +502,9 @@ NinetalesEvosAttacks:
 	db 7, SPITE
 	db 13, CURSE
 	db 19, CONFUSE_RAY
-	db 25, NIGHT_SHADE
-	db 31, FLAMETHROWER
-	db 44, SHADOW_BALL
+	db 25, FIRE_SPIN
+	db 31, SAFEGUARD
+	db 37, SHADOW_BALL
 	db 0 ; no more level-up moves
 
 JigglypuffEvosAttacks:
@@ -1174,8 +1174,8 @@ DodrioEvosAttacks:
 SeelEvosAttacks:
 	db EVOLVE_LEVEL, 34, DEWGONG
 	db 0 ; no more evolutions
+	db 1, GROWL
 	db 1, HEADBUTT
-	db 5, GROWL
 	db 12, BUBBLEBEAM
 	db 16, AURORA_BEAM
 	db 21, REST
@@ -1186,8 +1186,8 @@ SeelEvosAttacks:
 
 DewgongEvosAttacks:
 	db 0 ; no more evolutions
+	db 1, GROWL
 	db 1, HEADBUTT
-	db 5, GROWL
 	db 12, BUBBLEBEAM
 	db 16, AURORA_BEAM
 	db 21, REST
@@ -1799,7 +1799,6 @@ GyaradosEvosAttacks:
 LaprasEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, ICY_WIND
-	db 1, GROWL
 	db 1, SING
 	db 8, MIST
 	db 15, AURORA_BEAM
