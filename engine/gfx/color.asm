@@ -1,52 +1,8 @@
 INCLUDE "engine/gfx/sgb_layouts.asm"
 
-DEF SHINY_ATK_MASK EQU %0010
-DEF SHINY_DEF_DV EQU 10
-DEF SHINY_SPD_DV EQU 10
-DEF SHINY_SPC_DV EQU 10
-
-Unused_CheckShininess:
-; Check if a mon is shiny by DVs at bc.
-; Return carry if shiny.
-
-	ld l, c
-	ld h, b
-
-; Attack
-	ld a, [hl]
-	and SHINY_ATK_MASK << 4
-	jr z, .not_shiny
-
-; Defense
-	ld a, [hli]
-	and %1111
-	cp SHINY_DEF_DV
-	jr nz, .not_shiny
-
-; Speed
-	ld a, [hl]
-	and %1111 << 4
-	cp SHINY_SPD_DV << 4
-	jr nz, .not_shiny
-
-; Special
-	ld a, [hl]
-	and %1111
-	cp SHINY_SPC_DV
-	jr nz, .not_shiny
-
-; shiny
-	scf
-	ret
-
-.not_shiny
-	and a
-	ret
-
-; The revised gender check (engine/pokemon/mon_stats.asm) could work with the old method,
-; but since I'm messing with the formula anyway, remix will look for DVs above 10 that match
-; which is about 75% the shiny rate of the base game (1/8192 vs < 1/10,000)
-
+; The original check was for DEF, SPD, and SPE DVs = 10 and a masked ATK DV of %0010 for a 1/8192 chance.
+; Becuase the gender check also relies on DVs (see engine/pokemon/mon_stats.asm), this formula had to be changed
+; in tandem with that one, but the current version looks for matching DVs >= 10 for a chance of roughly 1 in 10,000.
 CheckShininess:
 ; DVs are expected to be at address [bc], but we transfer to hl to store values in b
 	ld l, c
@@ -86,6 +42,8 @@ CheckShininess:
 .not_shiny
 	and a
 	ret
+
+DummyPredef33: ; previously Unused_CheckShininess -- marker needed to not break data/predef_pointers.asm
 
 SGB_ApplyCreditsPals::
 	push de

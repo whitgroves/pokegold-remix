@@ -43,6 +43,7 @@ StatsScreenMain:
 	call CalcTempmonStats
 
 .got_stats
+	;call ForceShiny ; debug -- uncomment to display all mons as shiny on stats screen
 	call ClearBGPalettes
 	call ClearTilemap
 	call UpdateSprites
@@ -978,3 +979,12 @@ GetNicknamePointer:
 	ret z
 	ld a, [wCurPartyMon]
 	jp SkipNames
+
+ForceShiny: ; palette debug -- to use, add to the front of StatsScreenMain.got_stats
+	push hl
+	ld hl, wTempMonDVs
+	ld a, $ff
+	ld [hli], a
+	ld [hl], a
+	pop hl
+	ret
