@@ -1144,8 +1144,8 @@ FarfetchDEvosAttacks:
 DoduoEvosAttacks:
 	db EVOLVE_LEVEL, 31, DODRIO
 	db 0 ; no more evolutions
-	db 1, PECK
 	db 1, GROWL
+	db 1, PECK
 	db 6, MUD_SLAP
 	db 11, PURSUIT
 	db 18, FURY_ATTACK
