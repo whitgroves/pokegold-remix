@@ -4,6 +4,8 @@ Listed below are the changes that have been implemented so far:
 - [Pokémon Changes](#pokémon-changes)
     - [Types](#types)
     - [Evolution Methods](#evolution-methods)
+        - [Friendship](#friendship)
+        - [Item](#item)
 - [Move Updates](#move-updates)
     - [Damaging Moves](#damaging-moves)
     - [Always Physical Moves](#always-physical-moves)
@@ -133,25 +135,35 @@ These mons have had their types (and in many cases, learnsets) updated.
 - Tyranitar: *Rock/Dark* -> *Dark/Dragon*
 - Lugia: *Psychic/Flying* -> *Water/Flying*
 ### Evolution Methods
-These mons evolve by new methods in addition to their old ones (e.g., *Nidorina* still evolves by Moon Stone, *Machoke* still evolves by trade).
-- Nidorina -> Nidoqueen: *Happiness*
-- Nidorino -> Nidoking: *Happiness*
-- Gloom -> Vileplume: *Happiness, Night*
-- Gloom -> Bellossom: *Happiness, Day*
-- Poliwhirl -> Politoed: *Happiness*
-- Kadabra -> Alakazam: *Happiness*
-- Machoke -> Machamp: *Happiness*
-- Graveler -> Golem: *Happiness*
-- Slowpoke -> Slowking: *Dragon Scale (use from menu)*
-- Haunter -> Gengar: *Happiness, Night*
-- Onix -> Steelix: *Up-Grade (use from menu)*
+New evolution methods have been added to make trade evolutions available and stone evolutions available earlier. These are in addition to prior methods; for example, *Nidorina* can evolve into *Nidoqueen* by happiness, but will still evolve by Moon Stone.
+
+#### Friendship
+These evolutions can now happen by friendship:
+- Nidorina -> Nidoqueen
+- Nidorino -> Nidoking
+- Gloom -> Vileplume (Night)
+- Gloom -> Bellossom (Day)
+- Poliwhirl -> Politoed
+- Kadabra -> Alakazam
+- Machoke -> Machamp
+- Graveler -> Golem
+- Haunter -> Gengar (Night)
+- Sunkern -> Sunflora (Day)
+
+In general, all friendship evolutions now happen at a happiness stat of of 217, displayed as a [TRUST](#miscellaneous) level of 85% (vs 220 / ~87% in base).
+
+#### Item
+These evolutions now happen by item effect (select and use the item from menu):
+- Slowpoke -> Slowking: *Dragon Scale*
+- Onix -> Steelix: *Up-Grade*
 - Seadra -> Kingdra: *Dragon Scale*
 - Scyther -> Scizor: *Up-Grade*
 - Eevee -> Espeon: *Sun Stone*
 - Eevee -> Umbreon: *Moon Stone*
 - Porygon -> Porygon2: *Up-Grade*
 - Togepi -> Togetic: *Sun Stone* -or- *Moon Stone*
-- Sunkern -> Sunflora: *Happiness, Day*
+
+All evolution items are available for purchase at the [Mahogany Mart](#mahogany-mart) after Mahogany Gym has been cleared.
 
 ## Move Updates
 Several moves have had their types, effects, or other attributes changed to provide better STAB coverage or make certain movesets more viable.
