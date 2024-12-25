@@ -224,9 +224,9 @@ TrainerOfficerDirk:
 	faceplayer
 	opentext
 	checktime NITE
-	iffalse .NotNight
+	iffalse .PrettyTough
 	checkevent EVENT_BEAT_OFFICER_DIRK
-	iftrue .AfterBattle
+	iftrue .PrettyTough
 	playmusic MUSIC_OFFICER_ENCOUNTER
 	writetext OfficerDirkSeenText
 	waitbutton
@@ -239,13 +239,7 @@ TrainerOfficerDirk:
 	closetext
 	end
 
-.AfterBattle:
-	writetext OfficerDirkAfterBattleText
-	waitbutton
-	closetext
-	end
-
-.NotNight:
+.PrettyTough:
 	writetext OfficerDirkPrettyToughText
 	waitbutton
 	closetext
@@ -414,24 +408,23 @@ OfficerDirkSeenText:
 	done
 
 OfficerDirkBeatenText:
-	text "Whoops!"
-	done
-
-OfficerDirkAfterBattleText:
-	text "You know, night-"
-	line "time is fun in its"
-	cont "own ways."
+	text "Nighttime is fun"
+	line "in its own ways."
 
 	para "But don't overdo"
 	line "it, OK?"
 	done
 
 OfficerDirkPrettyToughText:
-	text "Your #MON look"
-	line "pretty tough."
+	text "There are strong"
+	line "TRAINERS ahead,"
 
-	para "You could go any-"
-	line "where safely."
+	para "But your #MON"
+	line "look pretty tough."
+	
+	para "At this rate,"
+	line "you could go"
+	cont "anywhere safely."
 	done
 
 Route35SignText:
