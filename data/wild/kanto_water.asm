@@ -4,86 +4,86 @@ KantoWaterWildMons:
 
 	def_water_wildmons ROUTE_4
 	db 4 percent ; encounter rate
-	db 10, GOLDEEN
-	db 5, GOLDEEN
-	db 10, SEAKING
+	db 18, MAGIKARP
+	db 25, PSYDUCK
+	db 28, BUTTERFREE
 	end_water_wildmons
 
 	def_water_wildmons ROUTE_6
 	db 2 percent ; encounter rate
-	db 10, PSYDUCK
-	db 5, PSYDUCK
-	db 10, GOLDUCK
+	db 25, PSYDUCK
+	db 25, POLIWHIRL
+	db 33, GOLDUCK
 	end_water_wildmons
 
 	def_water_wildmons ROUTE_9
 	db 4 percent ; encounter rate
-	db 15, GOLDEEN
-	db 10, GOLDEEN
-	db 15, SEAKING
+	db 25, GRIMER
+	db 25, KOFFING
+	db 24, SLOWPOKE
 	end_water_wildmons
 
 	def_water_wildmons ROUTE_10_NORTH
 	db 4 percent ; encounter rate
-	db 15, GOLDEEN
-	db 10, GOLDEEN
-	db 15, SEAKING
+	db 25, GRIMER
+	db 25, KOFFING
+	db 24, SLOWPOKE
 	end_water_wildmons
 
 	def_water_wildmons ROUTE_12
 	db 6 percent ; encounter rate
-	db 25, TENTACOOL
-	db 25, QUAGSIRE
-	db 25, TENTACRUEL
+	db 25, GOLDEEN
+	db 33, SEAKING
+	db 24, SLOWPOKE
 	end_water_wildmons
 
 	def_water_wildmons ROUTE_13
 	db 6 percent ; encounter rate
-	db 25, TENTACOOL
-	db 25, QUAGSIRE
-	db 25, TENTACRUEL
+	db 25, GOLDEEN
+	db 21, EKANS
+	db 31, VENOMOTH
 	end_water_wildmons
 
 	def_water_wildmons ROUTE_19
 	db 6 percent ; encounter rate
-	db 35, TENTACOOL
-	db 30, TENTACOOL
-	db 35, TENTACRUEL
+	db 33, SEAKING
+	db 34, DEWGONG
+	db 36, PIDGEOT
 	end_water_wildmons
 
 	def_water_wildmons ROUTE_20
 	db 6 percent ; encounter rate
-	db 35, TENTACOOL
-	db 30, TENTACOOL
-	db 35, TENTACRUEL
+	db 33, SEAKING
+	db 34, DEWGONG
+	db 36, PIDGEOT
 	end_water_wildmons
 
 	def_water_wildmons ROUTE_21
 	db 6 percent ; encounter rate
-	db 35, TENTACOOL
-	db 30, TENTACOOL
-	db 35, TENTACRUEL
+	db 30, TENTACRUEL
+	db 33, SEAKING
+	db 36, PIDGEOT
 	end_water_wildmons
 
 	def_water_wildmons ROUTE_22
 	db 2 percent ; encounter rate
-	db 10, POLIWAG
-	db 5, POLIWAG
-	db 10, POLIWHIRL
+	db 20, POLIWAG
+	db 25, POLIWHIRL
+	db 30, AZUMARILL
 	end_water_wildmons
 
 	def_water_wildmons ROUTE_24
 	db 4 percent ; encounter rate
-	db 10, GOLDEEN
-	db 5, GOLDEEN
-	db 10, SEAKING
+	db 25, PSYDUCK
+	db 25, KRABBY
+	db 33, GOLDUCK
 	end_water_wildmons
 
 	def_water_wildmons ROUTE_25
 	db 4 percent ; encounter rate
-	db 10, GOLDEEN
-	db 5, GOLDEEN
-	db 10, SEAKING
+	db 25, PSYDUCK
+	db 25, KRABBY
+	db 33, GOLDUCK
 	end_water_wildmons
 
 	def_water_wildmons ROUTE_26
@@ -109,65 +109,65 @@ KantoWaterWildMons:
 
 	def_water_wildmons ROUTE_28
 	db 2 percent ; encounter rate
-	db 40, POLIWAG
-	db 35, POLIWAG
-	db 40, POLIWHIRL
+	db 35, POLIWHIRL
+	db 35, QUAGSIRE
+	db 40, AZUMARILL
 	end_water_wildmons
 
 	def_water_wildmons PALLET_TOWN
 	db 6 percent ; encounter rate
-	db 35, TENTACOOL
-	db 30, TENTACOOL
-	db 35, TENTACRUEL
+	db 25, TENTACOOL
+	db 25, GOLDEEN
+	db 30, CORSOLA
 	end_water_wildmons
 
 	def_water_wildmons VIRIDIAN_CITY
 	db 2 percent ; encounter rate
-	db 10, POLIWAG
-	db 5, POLIWAG
-	db 10, POLIWHIRL
+	db 18, MAGIKARP
+	db 20, POLIWAG
+	db 25, POLIWHIRL
 	end_water_wildmons
 
 	def_water_wildmons CERULEAN_CITY
 	db 4 percent ; encounter rate
-	db 10, GOLDEEN
-	db 5, GOLDEEN
-	db 10, SEAKING
+	db 25, PSYDUCK
+	db 18, MAGIKARP
+	db 15, MARILL
 	end_water_wildmons
 
 	def_water_wildmons VERMILION_CITY
 	db 6 percent ; encounter rate
-	db 35, TENTACOOL
-	db 30, TENTACOOL
-	db 35, TENTACRUEL
+	db 25, TENTACOOL
+	db 25, GOLDEEN
+	db 30, TENTACRUEL
 	end_water_wildmons
 
 	def_water_wildmons CELADON_CITY
 	db 2 percent ; encounter rate
-	db 20, GRIMER
-	db 15, GRIMER
-	db 15, MUK
+	db 18, MAGIKARP
+	db 25, GRIMER
+	db 25, KOFFING
 	end_water_wildmons
 
 	def_water_wildmons FUCHSIA_CITY
 	db 2 percent ; encounter rate
-	db 20, MAGIKARP
-	db 15, MAGIKARP
-	db 10, MAGIKARP
+	db 18, MAGIKARP
+	db 20, GYARADOS
+	db 10, DRATINI
 	end_water_wildmons
 
 	def_water_wildmons CINNABAR_ISLAND
 	db 6 percent ; encounter rate
-	db 35, TENTACOOL
-	db 30, TENTACOOL
-	db 35, TENTACRUEL
+	db 30, TENTACRUEL
+	db 33, SEAKING
+	db 30, CORSOLA
 	end_water_wildmons
 
 	def_water_wildmons VERMILION_PORT
 	db 2 percent ; encounter rate
-	db 35, TENTACOOL
-	db 30, TENTACOOL
-	db 35, TENTACRUEL
+	db 25, TENTACOOL
+	db 25, GOLDEEN
+	db 30, TENTACRUEL
 	end_water_wildmons
 
 	db -1 ; end
