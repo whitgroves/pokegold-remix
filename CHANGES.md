@@ -167,8 +167,12 @@ These evolutions now happen by item effect (select and use the item from menu):
 
 All evolution items are available for purchase at the [Mahogany Mart](#mahogany-mart) after Mahogany Gym has been cleared.
 
-### Fossils
-Wild *Omanyte* and *Kabuto* each appear at 10% on the lowest floor of the Ice Path (the room with the Nevermeltice).
+### Availability
+Besides evolution, several unique or otherwise unobtainable pokemon are now available in new ways:
+- *Ivysaur*, *Charmeleon*, and *Squirtle* are available as 10% encounters along Routes 26, 27, and Victory Road.
+- *Hitmonlee*, *Hitmonchan*, and *Hitmontop* are available as 10% encounters on the bottom floor of Mt. Mortar.
+- *Omanyte* and *Kabuto* are 10% encounters on the lowest floor of the Ice Path (the room with the Nevermeltice).
+- Additional *Sudowoodo* are a 40% Headbutt encounter on "rare" trees.
 
 ## Move Updates
 Several moves have had their types, effects, or other attributes changed to provide better STAB coverage or make certain movesets more viable.
@@ -337,4 +341,5 @@ The Mahogany Mart carries these items once the Rocket Hideout is cleared and Pry
 - Clair gives the Risingbadge immediately upon defeat, but the player must still get the Dragon Fang to receive TM24
 - The stats screen shows happiness as percent of 255 (TRUST) and Attack, Defense, Special, and Speed DVs (DNA)
 - After receiving the Old and Good Rods, each Fishing Guru will tell the player where to find the next one
-- Since Remoraid are no longer found on Route 44, Sailor Huey (lighthouse) now activates the Remoraid swarm on Routes 40, 41, and Olivine Port
+- Since Remoraid are no longer found on Route 44, Sailor Huey (lighthouse) now activates the Remoraid swarm
+trees in cities (Ecruteak) can now spawn wild encounters.
