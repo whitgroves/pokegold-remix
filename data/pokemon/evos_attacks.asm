@@ -965,10 +965,9 @@ TentacoolEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, POISON_STING
 	db 6, SUPERSONIC
-	db 12, CONSTRICT
+	db 12, WRAP
 	db 19, ACID
 	db 25, BUBBLEBEAM
-	db 30, WRAP
 	db 36, BARRIER
 	db 43, SCREECH
 	db 49, HYDRO_PUMP
@@ -978,10 +977,10 @@ TentacruelEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, POISON_STING
 	db 6, SUPERSONIC
-	db 12, CONSTRICT
+	db 12, WRAP
 	db 19, ACID
 	db 25, BUBBLEBEAM
-	db 30, WRAP
+	db 30, CLAMP
 	db 38, BARRIER
 	db 47, SCREECH
 	db 55, HYDRO_PUMP
@@ -1746,9 +1745,9 @@ MagmarEvosAttacks:
 
 PinsirEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, VICEGRIP
+	db 1, CONSTRICT
 	db 7, FOCUS_ENERGY
-	db 13, BIND
+	db 13, VICEGRIP
 	db 19, SEISMIC_TOSS
 	db 25, CLAMP
 	db 31, GUILLOTINE
@@ -2015,7 +2014,7 @@ MoltresEvosAttacks:
 DratiniEvosAttacks:
 	db EVOLVE_LEVEL, 30, DRAGONAIR
 	db 0 ; no more evolutions
-	db 1, WRAP
+	db 1, BIND
 	db 1, LEER
 	db 8, THUNDER_WAVE
 	db 15, TWISTER
@@ -2030,7 +2029,7 @@ DratiniEvosAttacks:
 DragonairEvosAttacks:
 	db EVOLVE_LEVEL, 55, DRAGONITE
 	db 0 ; no more evolutions
-	db 1, WRAP
+	db 1, BIND
 	db 1, LEER
 	db 8, THUNDER_WAVE
 	db 15, TWISTER
@@ -2044,7 +2043,7 @@ DragonairEvosAttacks:
 
 DragoniteEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, WRAP
+	db 1, BIND
 	db 1, LEER
 	db 8, THUNDER_WAVE
 	db 15, TWISTER
