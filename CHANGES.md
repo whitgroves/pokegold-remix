@@ -169,7 +169,7 @@ All evolution items are available for purchase at the [Mahogany Mart](#mahogany-
 
 ### Availability
 Besides evolution, several unique or otherwise unobtainable pokemon are now available in new ways:
-- *Ivysaur*, *Charmeleon*, and *Squirtle* are available as 10% encounters along Routes 26, 27, and Victory Road.
+- *Ivysaur*, *Charmeleon*, and *Wartortle* are available as 10% encounters along Routes 26, 27, and Victory Road.
 - *Hitmonlee*, *Hitmonchan*, and *Hitmontop* are available as 10% encounters on the bottom floor of Mt. Mortar.
 - *Omanyte* and *Kabuto* are 10% encounters on the lowest floor of the Ice Path (the room with the Nevermeltice).
 - Additional *Sudowoodo* are a 40% Headbutt encounter on "rare" trees.
