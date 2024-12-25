@@ -279,7 +279,7 @@ SpearowEvosAttacks:
 	db 1, PECK
 	db 1, GROWL
 	db 7, LEER
-	db 13, FURY_ATTACK
+	db 13, FURY_SWIPES
 	db 25, PURSUIT
 	db 31, MIRROR_MOVE
 	db 37, DRILL_PECK
@@ -291,7 +291,7 @@ FearowEvosAttacks:
 	db 1, GROWL
 	db 1, PECK
 	db 7, LEER
-	db 13, FURY_ATTACK
+	db 13, FURY_SWIPES
 	db 26, PURSUIT
 	db 32, MIRROR_MOVE
 	db 40, DRILL_PECK
@@ -429,7 +429,7 @@ NidoranMEvosAttacks:
 	db 12, DOUBLE_KICK
 	db 17, POISON_STING
 	db 23, FOCUS_ENERGY
-	db 30, FURY_ATTACK
+	db 30, RAGE
 	db 38, HORN_DRILL
 	db 0 ; no more level-up moves
 
@@ -443,7 +443,7 @@ NidorinoEvosAttacks:
 	db 12, DOUBLE_KICK
 	db 19, POISON_STING
 	db 27, FOCUS_ENERGY
-	db 36, FURY_ATTACK
+	db 36, RAGE
 	db 46, HORN_DRILL
 	db 0 ; no more level-up moves
 
@@ -1147,7 +1147,7 @@ DoduoEvosAttacks:
 	db 1, PECK
 	db 6, MUD_SLAP
 	db 11, PURSUIT
-	db 18, FURY_ATTACK
+	db 18, DOUBLE_KICK
 	db 21, STOMP
 	db 25, RAGE
 	db 33, DRILL_PECK
@@ -1161,7 +1161,7 @@ DodrioEvosAttacks:
 	db 1, GROWL
 	db 6, MUD_SLAP
 	db 11, PURSUIT
-	db 18, FURY_ATTACK
+	db 18, DOUBLE_KICK
 	db 25, RAGE
 	db 31, STOMP
 	db 38, DRILL_PECK
@@ -1529,7 +1529,7 @@ RhyhornEvosAttacks:
 	db 1, HORN_ATTACK
 	db 1, TAIL_WHIP
 	db 13, STOMP
-	db 19, FURY_ATTACK
+	db 19, HEADBUTT
 	db 31, SCARY_FACE
 	db 37, HORN_DRILL
 	db 49, SUBMISSION
@@ -1541,7 +1541,7 @@ RhydonEvosAttacks:
 	db 1, HORN_ATTACK
 	db 1, TAIL_WHIP
 	db 13, STOMP
-	db 19, FURY_ATTACK
+	db 19, HEADBUTT
 	db 31, SCARY_FACE
 	db 35, ROAR
 	db 37, HORN_DRILL
@@ -3201,7 +3201,7 @@ DonphanEvosAttacks:
 	db 1, GROWL
 	db 9, DEFENSE_CURL
 	db 17, FLAIL
-	db 25, FURY_ATTACK
+	db 25, HEADBUTT
 	db 33, ROLLOUT
 	db 38, ROAR
 	db 41, RAPID_SPIN

@@ -183,7 +183,7 @@ Several moves have had their types, effects, or other attributes changed to prov
 - Rolling Kick: *85%* -> *100% Accuracy*
 - Sand Attack: *100%* -> *80% Accuracy*
 - Horn Attack: *Normal* -> *Dragon* | *No Effect* -> *30% Chance To Flinch* | *65* -> *70 Power* | *25* -> *15 PP* | [*Always Physical*](#always-physical-moves)
-- Fury Attack: *Normal* -> *Dark*
+- Fury Attack: *Normal* -> *Bug*
 - Horn Drill: *Normal* -> *Dragon*
 - Tackle: *95%* -> *100% Accuracy*
 - Wrap: *Normal* -> *Poison* | *85%* -> *75% Accuracy*

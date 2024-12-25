@@ -44,7 +44,7 @@ Moves:
 	move SAND_ATTACK,  EFFECT_ACCURACY_DOWN,       0, GROUND,        80, 15,   0
 	move HEADBUTT,     EFFECT_FLINCH_HIT,         70, NORMAL,       100, 15,  30
 	move HORN_ATTACK,  EFFECT_FLINCH_HIT,         70, DRAGON,       100, 15,  30
-	move FURY_ATTACK,  EFFECT_MULTI_HIT,          15, DARK,          85, 20,   0
+	move FURY_ATTACK,  EFFECT_MULTI_HIT,          15, BUG,           85, 20,   0
 	move HORN_DRILL,   EFFECT_OHKO,                1, DRAGON,        30,  5,   0
 	move TACKLE,       EFFECT_NORMAL_HIT,         35, NORMAL,       100, 35,   0
 	move BODY_SLAM,    EFFECT_PARALYZE_HIT,       85, NORMAL,       100, 15,  30
