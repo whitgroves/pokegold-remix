@@ -258,6 +258,7 @@ These moves had their types changed for flavor only; however, this can impact th
 - Roar: *Normal* -> *Dragon*
 - Growth: *Normal* -> *Grass*
 - Agility: *Psychic* -> *Normal*
+- Recover: *Normal* -> *Psychic*
 - Smokescreen: *Normal* -> *Dark*
 - Glare: *Normal* -> *Dark*
 - Lovely Kiss: *Normal* -> *Dark*
