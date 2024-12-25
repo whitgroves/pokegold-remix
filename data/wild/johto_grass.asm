@@ -679,25 +679,25 @@ JohtoGrassWildMons:
 	db 16, MACHOP
 	db 18, GEODUDE
 	db 15, ONIX
-	db 17, ZUBAT
-	db 17, CUBONE
 	db 18, HITMONCHAN
+	db 18, HITMONTOP
+	db 17, CUBONE
 	db 18, DUNSPARCE
 	; day
 	db 16, MACHOP
 	db 18, GEODUDE
 	db 15, ONIX
-	db 17, ZUBAT
-	db 17, CUBONE
 	db 18, HITMONTOP
+	db 18, HITMONLEE
+	db 17, CUBONE
 	db 18, DUNSPARCE
 	; nite
 	db 16, MACHOP
 	db 18, GEODUDE
 	db 15, ONIX
-	db 17, ZUBAT
-	db 17, CUBONE
 	db 18, HITMONLEE
+	db 18, HITMONCHAN
+	db 17, CUBONE
 	db 18, DUNSPARCE
 	end_grass_wildmons
 
