@@ -4,8 +4,9 @@ Listed below are the changes that have been implemented so far:
 - [Pokémon Changes](#pokémon-changes)
     - [Types](#types)
     - [Evolution Methods](#evolution-methods)
-        - [Friendship](#friendship)
-        - [Item](#item)
+        - [By Friendship](#by-friendship)
+        - [By Item](#by-item)
+    - [Fossils](#fossils)
 - [Move Updates](#move-updates)
     - [Damaging Moves](#damaging-moves)
     - [Always Physical Moves](#always-physical-moves)
@@ -134,10 +135,11 @@ These mons have had their types (and in many cases, learnsets) updated.
 - Pupitar: *Rock/Ground* -> *Dark/Rock*
 - Tyranitar: *Rock/Dark* -> *Dark/Dragon*
 - Lugia: *Psychic/Flying* -> *Water/Flying*
+
 ### Evolution Methods
 New evolution methods have been added to make trade evolutions available and stone evolutions available earlier. These are in addition to prior methods; for example, *Nidorina* can evolve into *Nidoqueen* by happiness, but will still evolve by Moon Stone.
 
-#### Friendship
+#### By Friendship
 These evolutions can now happen by friendship:
 - Nidorina -> Nidoqueen
 - Nidorino -> Nidoking
@@ -152,7 +154,7 @@ These evolutions can now happen by friendship:
 
 In general, all friendship evolutions now happen at a happiness stat of of 217, displayed as a [TRUST](#miscellaneous) level of 85% (vs 220 / ~87% in base).
 
-#### Item
+#### By Item
 These evolutions now happen by item effect (select and use the item from menu):
 - Slowpoke -> Slowking: *Dragon Scale*
 - Onix -> Steelix: *Up-Grade*
@@ -164,6 +166,9 @@ These evolutions now happen by item effect (select and use the item from menu):
 - Togepi -> Togetic: *Sun Stone* -or- *Moon Stone*
 
 All evolution items are available for purchase at the [Mahogany Mart](#mahogany-mart) after Mahogany Gym has been cleared.
+
+### Fossils
+Wild *Omanyte* and *Kabuto* each appear at 10% on the lowest floor of the Ice Path (the room with the Nevermeltice).
 
 ## Move Updates
 Several moves have had their types, effects, or other attributes changed to provide better STAB coverage or make certain movesets more viable.

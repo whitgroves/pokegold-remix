@@ -6027,26 +6027,37 @@ LoadEnemyMon:
 	cp SPEAROW
 	jr z, .sleeping_if_nite
 
-; Other species are never asleep
-	jr .not_sleeping
+; Other species are never asleep (but fossils are frozen)
+	jr .Fossil
 
 .sleeping_if_not_nite
 	ld a, [wTimeOfDay]
 	cp NITE_F
 	jr nz, .sleeping
-	jr .not_sleeping
+	jr .not_statused
 
 .sleeping_if_nite
 	ld a, [wTimeOfDay]
 	cp NITE_F
 	jr z, .sleeping
-	jr .not_sleeping
+	jr .not_statused
 
 .sleeping
 	ld a, TREEMON_SLEEP_TURNS
 	jr .UpdateStatus
 
-.not_sleeping
+.Fossil:
+; Omantye & Kabuto can be found in Ice Path, but spawn in frozen for flavor
+	ld a, [wTempEnemyMonSpecies]
+	cp OMANYTE
+	jr z, .frozen
+	cp KABUTO
+	jr nz, .not_statused
+.frozen:
+	ld a, 1 << FRZ
+	jr .UpdateStatus
+
+.not_statused
 	xor a
 
 .UpdateStatus:

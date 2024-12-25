@@ -653,7 +653,7 @@ JohtoGrassWildMons:
 	db 26, GOLBAT
 	db 27, ONIX
 	db 25, WOBBUFFET
-	db 27, CUBONE
+	db 25, MR__MIME
 	db 31, DUNSPARCE
 	; day
 	db 28, MACHOKE
@@ -661,7 +661,7 @@ JohtoGrassWildMons:
 	db 26, GOLBAT
 	db 27, ONIX
 	db 25, WOBBUFFET
-	db 27, CUBONE
+	db 25, MR__MIME
 	db 31, DUNSPARCE
 	; nite
 	db 28, MACHOKE
@@ -669,7 +669,7 @@ JohtoGrassWildMons:
 	db 26, GOLBAT
 	db 27, ONIX
 	db 25, WOBBUFFET
-	db 27, CUBONE
+	db 25, MR__MIME
 	db 31, DUNSPARCE
 	end_grass_wildmons
 
@@ -818,27 +818,27 @@ JohtoGrassWildMons:
 	; morn
 	db 22, SWINUB
 	db 22, SNEASEL
-	db 23, SWINUB
-	db 24, DELIBIRD
 	db 22, JYNX
-	db 23, JYNX
-	db 24, MR__MIME
+	db 25, OMANYTE
+	db 25, KABUTO
+	db 25, KABUTO
+	db 25, KABUTO
 	; day
 	db 22, SWINUB
 	db 22, SNEASEL
-	db 23, SWINUB
-	db 24, DELIBIRD
 	db 22, JYNX
-	db 23, JYNX
-	db 24, MR__MIME
+	db 25, OMANYTE
+	db 25, KABUTO
+	db 25, KABUTO
+	db 25, KABUTO
 	; nite
 	db 22, SWINUB
 	db 22, SNEASEL
-	db 23, SWINUB
-	db 24, DELIBIRD
 	db 22, JYNX
-	db 23, JYNX
-	db 24, MR__MIME
+	db 25, OMANYTE
+	db 25, KABUTO
+	db 25, KABUTO
+	db 25, KABUTO
 	end_grass_wildmons
 
 	def_grass_wildmons WHIRL_ISLAND_NW

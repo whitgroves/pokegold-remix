@@ -273,11 +273,10 @@ SantosNotSaturdayText:
 
 BlackthornCooltrainerF2Text:
 	text "Wow, you came"
-	line "through the ICE"
-	cont "PATH?"
+	line "through ICE PATH?"
 
-	para "You must be a real"
-	line "hotshot trainer!"
+	para "Did you find any"
+	line "frozen #MON?"
 	done
 
 BlackthornCitySignText:
