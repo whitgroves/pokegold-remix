@@ -115,6 +115,7 @@ TypeMatchups:
 	db STEEL,        GRASS,        SUPER_EFFECTIVE
 	db STEEL,        ICE,          SUPER_EFFECTIVE
 	db STEEL,        FIGHTING,     NOT_VERY_EFFECTIVE
+	db STEEL,        BUG,          SUPER_EFFECTIVE
 	db STEEL,        ROCK,         SUPER_EFFECTIVE
 	db STEEL,        GHOST,        NOT_VERY_EFFECTIVE
 	db STEEL,        DRAGON,       SUPER_EFFECTIVE
