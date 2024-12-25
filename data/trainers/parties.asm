@@ -2918,7 +2918,7 @@ SageGroup:
 	; SAGE (4)
 	db "TROY@", TRAINERTYPE_NORMAL
 	db  7, BELLSPROUT
-	db  7, GASTLY
+	db  7, HOOTHOOT
 	db -1 ; end
 
 	; SAGE (5)
@@ -2929,7 +2929,7 @@ SageGroup:
 	; SAGE (6)
 	db "PING@", TRAINERTYPE_NORMAL
 	db 16, GASTLY
-	db 17, TANGELA
+	db 17, CORSOLA
 	db 18, NOCTOWL
 	db 19, MISDREAVUS
 	db -1 ; end
@@ -2948,9 +2948,8 @@ SageGroup:
 
 	; SAGE (9)
 	db "LI@", TRAINERTYPE_NORMAL
-	db  7, BELLSPROUT
-	db  7, GASTLY
-	db 10, HOOTHOOT
+	db 11, BELLSPROUT
+	db 11, HOOTHOOT
 	db -1 ; end
 
 MediumGroup:
