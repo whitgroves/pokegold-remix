@@ -256,10 +256,12 @@ RattataEvosAttacks:
 	db 1, TACKLE
 	db 1, TAIL_WHIP
 	db 7, QUICK_ATTACK
-	db 13, HYPER_FANG
-	db 20, FOCUS_ENERGY
-	db 27, PURSUIT
-	db 34, SUPER_FANG
+	db 13, BITE
+	db 19, SWIFT
+	db 26, HYPER_FANG
+	db 33, SUPER_FANG
+	db 40, AGILITY
+	db 48, BATON_PASS
 	db 0 ; no more level-up moves
 
 RaticateEvosAttacks:
@@ -267,10 +269,12 @@ RaticateEvosAttacks:
 	db 1, TACKLE
 	db 1, TAIL_WHIP
 	db 7, QUICK_ATTACK
-	db 13, HYPER_FANG
-	db 20, SCARY_FACE
-	db 30, PURSUIT
-	db 40, SUPER_FANG
+	db 13, BITE
+	db 19, SWIFT
+	db 28, HYPER_FANG
+	db 37, SUPER_FANG
+	db 46, AGILITY
+	db 55, BATON_PASS
 	db 0 ; no more level-up moves
 
 SpearowEvosAttacks:
@@ -536,8 +540,8 @@ ZubatEvosAttacks:
 	db 12, BITE
 	db 19, CONFUSE_RAY
 	db 27, WING_ATTACK
-	db 36, MEAN_LOOK
-	db 46, HAZE
+	db 36, SUPER_FANG
+	db 46, HYPER_FANG
 	db 0 ; no more level-up moves
 
 GolbatEvosAttacks:
@@ -549,8 +553,8 @@ GolbatEvosAttacks:
 	db 12, BITE
 	db 19, CONFUSE_RAY
 	db 30, WING_ATTACK
-	db 42, MEAN_LOOK
-	db 55, HAZE
+	db 42, SUPER_FANG
+	db 55, HYPER_FANG
 	db 0 ; no more level-up moves
 
 OddishEvosAttacks:
@@ -2327,10 +2331,10 @@ CrobatEvosAttacks:
 	db 12, BITE
 	db 19, CONFUSE_RAY
 	db 30, WING_ATTACK
-	db 42, MEAN_LOOK
-	db 48, HAZE
+	db 42, SUPER_FANG
+	db 48, HYPER_FANG
 	db 56, RAZOR_WIND
-	db 61, DOUBLE_TEAM
+	db 61, EXTREMESPEED
 	db 0 ; no more level-up moves
 
 ChinchouEvosAttacks:

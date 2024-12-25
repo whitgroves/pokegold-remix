@@ -417,8 +417,8 @@ KantoGrassWildMons:
 	db 23, RATICATE
 	db 24, SLOWPOKE
 	db 25, PIKACHU
-	db 26, MURKROW
 	db 24, PINSIR
+	db 26, MURKROW
 	db 23, BEEDRILL
 	end_grass_wildmons
 
