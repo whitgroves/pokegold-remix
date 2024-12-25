@@ -1130,8 +1130,8 @@ FarfetchDEvosAttacks:
 	db 1, LEER
 	db 1, PECK
 	db 7, VINE_WHIP
-	db 13, FURY_ATTACK
-	db 19, FALSE_SWIPE
+	db 13, FALSE_SWIPE
+	db 19, CUT
 	db 21, REVERSAL
 	db 25, SWORDS_DANCE
 	db 31, AGILITY
@@ -1483,9 +1483,9 @@ HitmonchanEvosAttacks:
 
 LickitungEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, LICK
+	db 1, SLAM
 	db 7, SUPERSONIC
-	db 13, SLAM
+	db 13, LICK
 	db 19, STOMP
 	db 25, ACID
 	db 31, DISABLE
