@@ -201,13 +201,14 @@ KakunaEvosAttacks:
 BeedrillEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, FURY_ATTACK
+	db 1, POISON_STING
 	db 10, FURY_ATTACK
 	db 15, FOCUS_ENERGY
 	db 20, TWINEEDLE
-	db 25, RAGE
+	db 25, AGILITY
 	db 30, PURSUIT
 	db 35, PIN_MISSILE
-	db 40, AGILITY
+	db 40, BATON_PASS
 	db 0 ; no more level-up moves
 
 PidgeyEvosAttacks:
@@ -1847,7 +1848,7 @@ VaporeonEvosAttacks:
 	db 23, BUBBLEBEAM
 	db 30, BITE
 	db 36, AURORA_BEAM
-	db 42, HAZE
+	db 42, RAIN_DANCE
 	db 47, ACID_ARMOR
 	db 52, HYDRO_PUMP
 	db 0 ; no more level-up moves
@@ -1862,7 +1863,7 @@ JolteonEvosAttacks:
 	db 30, SPARK
 	db 36, DOUBLE_KICK
 	db 42, PIN_MISSILE
-	db 47, AGILITY
+	db 47, RAIN_DANCE
 	db 52, THUNDER
 	db 59, EXTREMESPEED
 	db 0 ; no more level-up moves
@@ -1876,7 +1877,7 @@ FlareonEvosAttacks:
 	db 23, QUICK_ATTACK
 	db 30, BITE
 	db 36, FLAME_WHEEL
-	db 42, SMOG
+	db 42, SUNNY_DAY
 	db 47, FIRE_SPIN
 	db 52, FLAMETHROWER
 	db 0 ; no more level-up moves

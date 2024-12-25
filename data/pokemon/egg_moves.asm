@@ -414,6 +414,7 @@ LaprasEggMoves:
 
 EeveeEggMoves:
 	db CHARM
+	db AGILITY
 	db DOUBLE_TEAM
 	db EXTREMESPEED
 	db -1 ; end
