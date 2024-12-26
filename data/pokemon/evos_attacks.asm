@@ -348,14 +348,12 @@ PikachuEvosAttacks:
 RaichuEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, CONFUSION
-	db 1, TAIL_WHIP
 	db 1, THUNDERSHOCK
 	db 1, THUNDER_WAVE
 	db 11, CONFUSION
 	db 15, SPARK
 	db 20, PSYBEAM
 	db 26, THUNDERBOLT
-	db 33, LIGHT_SCREEN
 	db 41, THUNDER
 	db 50, PSYCHIC_M
 	db 0 ; no more level-up moves
