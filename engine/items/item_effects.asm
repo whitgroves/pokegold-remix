@@ -245,6 +245,18 @@ PokeBallEffect:
 	ld a, [wCurItem]
 	cp MASTER_BALL
 	jp z, .catch_without_fail
+
+; down + b trick
+	ldh a, [hJoyDown]
+	bit B_BUTTON_F, a
+	jr z, .continue
+	bit D_DOWN_F, a
+	jr z, .continue
+	;jp .catch_without_fail ; uncomment to debug
+	sla b
+	jr nc, .continue
+	ld b, $ff
+.continue
 	ld a, [wCurItem]
 	ld c, a
 	ld hl, BallMultiplierFunctionTable

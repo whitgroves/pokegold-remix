@@ -20,7 +20,7 @@ The following changes have been implemented or planned:
 - Use animated Pokemon sprites from Crystal
 - Auto-sort the backpack by pressing Start
 - The old rod is good and the other rods are also good ✓
-- The "Down + B" trick actually works
+- The "Down + B" trick actually works ✓
 - View happiness % on the stats screen ✓
 - Better rocket hideout & radio tower ✓
 - HMs can be deleted ✓
