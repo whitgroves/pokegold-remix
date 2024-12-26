@@ -2299,28 +2299,26 @@ SpinarakEvosAttacks:
 	db EVOLVE_LEVEL, 22, ARIADOS
 	db 0 ; no more evolutions
 	db 1, POISON_STING
-	db 1, STRING_SHOT
-	db 6, SCARY_FACE
+	db 6, STRING_SHOT
 	db 11, CONSTRICT
 	db 17, NIGHT_SHADE
 	db 23, LEECH_LIFE
 	db 30, HYPER_FANG
 	db 37, SPIDER_WEB
-	db 45, AGILITY
+	db 45, TWINEEDLE
 	db 53, SUPER_FANG
 	db 0 ; no more level-up moves
 
 AriadosEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, POISON_STING
-	db 1, STRING_SHOT
-	db 6, SCARY_FACE
+	db 6, STRING_SHOT
 	db 11, CONSTRICT
 	db 17, NIGHT_SHADE
 	db 25, LEECH_LIFE
 	db 34, HYPER_FANG
 	db 43, SPIDER_WEB
-	db 53, AGILITY
+	db 53, TWINEEDLE
 	db 63, SUPER_FANG
 	db 0 ; no more level-up moves
 
