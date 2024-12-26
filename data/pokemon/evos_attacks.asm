@@ -3229,13 +3229,15 @@ Porygon2EvosAttacks:
 
 StantlerEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, TACKLE
-	db 8, LEER
-	db 15, HYPNOSIS
-	db 23, STOMP
-	db 31, CONFUSE_RAY
-	db 40, TAKE_DOWN
-	db 49, DOUBLE_TEAM
+	db 1, LICK
+	db 1, STOMP
+	db 8, HYPNOSIS
+	db 16, CONFUSE_RAY
+	db 24, NIGHT_SHADE
+	db 32, GLARE
+	db 40, BODY_SLAM
+	db 48, PSYCHIC_M
+	db 56, MEGAHORN
 	db 0 ; no more level-up moves
 
 SmeargleEvosAttacks:
