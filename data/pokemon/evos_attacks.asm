@@ -513,22 +513,27 @@ JigglypuffEvosAttacks:
 	db EVOLVE_ITEM, MOON_STONE, WIGGLYTUFF
 	db 0 ; no more evolutions
 	db 1, SING
-	db 4, DEFENSE_CURL
+	db 4, SUPERSONIC
 	db 9, POUND
-	db 14, DISABLE
-	db 19, ROLLOUT
+	db 14, SCREECH
+	db 19, SONICBOOM
 	db 24, DOUBLESLAP
 	db 29, REST
-	db 34, BODY_SLAM
-	db 39, DOUBLE_EDGE
+	db 34, SNORE
+	db 39, PERISH_SONG
 	db 0 ; no more level-up moves
 
 WigglytuffEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, SING
-	db 1, DISABLE
-	db 1, DEFENSE_CURL
-	db 1, DOUBLESLAP
+	db 4, BIDE
+	db 9, SLAM
+	db 14, SCREECH
+	db 19, FLAIL
+	db 24, MEGA_PUNCH
+	db 29, BODY_SLAM
+	db 34, TAKE_DOWN
+	db 39, MEGA_KICK
 	db 0 ; no more level-up moves
 
 ZubatEvosAttacks:
@@ -2386,10 +2391,10 @@ IgglybuffEvosAttacks:
 	db EVOLVE_HAPPINESS, TR_ANYTIME, JIGGLYPUFF
 	db 0 ; no more evolutions
 	db 1, SING
-	db 1, CHARM
-	db 4, DEFENSE_CURL
+	db 4, GROWL
 	db 9, POUND
-	db 14, SWEET_KISS
+	db 14, CHARM
+	db 29, REST
 	db 0 ; no more level-up moves
 
 TogepiEvosAttacks:

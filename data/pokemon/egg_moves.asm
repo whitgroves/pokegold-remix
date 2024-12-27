@@ -537,13 +537,12 @@ CleffaEggMoves:
 	db -1 ; end
 
 IgglybuffEggMoves:
-	db PERISH_SONG
+	db BELLY_DRUM
 	db PRESENT
-	db FAINT_ATTACK
-	db FLAMETHROWER
-	db THUNDERBOLT
-	db ICE_BEAM
-	db TRI_ATTACK
+	db SKETCH
+	db BODY_SLAM
+	db TAKE_DOWN
+	db DOUBLE_EDGE
 	db -1 ; end
 
 TogepiEggMoves:
