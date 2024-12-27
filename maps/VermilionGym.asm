@@ -103,8 +103,7 @@ VermilionGymStatue:
 	jumpstd GymStatue2Script
 
 LtSurgeIntroText:
-	text "SURGE: Hey, little"
-	line "boy!"
+	text "Hey there kid!"
 
 	para "I have to hand it"
 	line "to you. It may not"
@@ -126,10 +125,10 @@ LtSurgeIntroText:
 	done
 
 LtSurgeWinLossText:
-	text "SURGE: Arrrgh!"
+	text "Arrrgh!"
 	line "You are strong!"
 
-	para "OK, boy. You get"
+	para "OK, kid. You get"
 	line "THUNDERBADGE!"
 	done
 
@@ -139,9 +138,9 @@ ReceivedThunderBadgeText:
 	done
 
 LtSurgeThunderBadgeText:
-	text "SURGE: THUNDER-"
-	line "BADGE increases"
-	cont "#MON's speed. "
+	text "THUNDERBADGE"
+	line "boosts electric-"
+	cont "type moves."
 
 	para "Consider it proof"
 	line "that you defeated"
@@ -151,7 +150,7 @@ LtSurgeThunderBadgeText:
 	done
 
 LtSurgeFightDoneText:
-	text "SURGE: Hey, boy!"
+	text "Hey, kid!"
 	line "Still slugging and"
 	cont "chugging away?"
 

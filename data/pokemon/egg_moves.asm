@@ -741,11 +741,12 @@ CorsolaEggMoves:
 	db -1 ; end
 
 RemoraidEggMoves:
-	db AURORA_BEAM
 	db OCTAZOOKA
-	db SUPERSONIC
-	db HAZE
-	db SCREECH
+	db FLAMETHROWER
+	db FIRE_BLAST
+	db THUNDERBOLT
+	db ZAP_CANNON
+	db SPIKE_CANNON
 	db -1 ; end
 
 DelibirdEggMoves:

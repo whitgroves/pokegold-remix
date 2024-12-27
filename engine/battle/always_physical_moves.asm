@@ -9,4 +9,7 @@ AlwaysPhysicalMoves:
     db VINE_WHIP
     db HORN_ATTACK
     db OUTRAGE
+    db SPARK
+    db RAZOR_LEAF
+    db PETAL_DANCE
     db -1 ; end

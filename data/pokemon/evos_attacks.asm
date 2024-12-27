@@ -1117,7 +1117,7 @@ MagnemiteEvosAttacks:
 	db 16, SONICBOOM
 	db 21, THUNDER_WAVE
 	db 27, LOCK_ON
-	db 30, THUNDERBOLT
+	db 31, THUNDERBOLT
 	db 33, SWIFT
 	db 39, SCREECH
 	db 45, ZAP_CANNON
@@ -1737,9 +1737,9 @@ ElectabuzzEvosAttacks:
 	db 9, THUNDERPUNCH
 	db 17, ROCK_SMASH
 	db 25, MACH_PUNCH
-	db 36, THUNDERBOLT
+	db 36, DIZZY_PUNCH
 	db 47, DYNAMICPUNCH
-	db 58, THUNDER
+	db 58, ZAP_CANNON
 	db 0 ; no more level-up moves
 
 MagmarEvosAttacks:
@@ -3301,15 +3301,13 @@ SmoochumEvosAttacks:
 
 ElekidEvosAttacks:
 	db EVOLVE_LEVEL, 30, ELECTABUZZ
+	db EVOLVE_ITEM, THUNDERSTONE, ELECTABUZZ
 	db 0 ; no more evolutions
 	db 1, QUICK_ATTACK
 	db 1, LEER
-	db 9, THUNDERPUNCH
-	db 17, POUND
-	db 25, SWIFT
-	db 33, THUNDERBOLT
-	db 41, TAKE_DOWN
-	db 49, THUNDER
+	db 9, POUND
+	db 17, SWIFT
+	db 25, THUNDERPUNCH
 	db 0 ; no more level-up moves
 
 MagbyEvosAttacks:

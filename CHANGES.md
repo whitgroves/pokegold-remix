@@ -164,6 +164,7 @@ These evolutions now happen by item effect (select and use the item from menu):
 - Eevee -> Umbreon: *Moon Stone*
 - Porygon -> Porygon2: *Up-Grade*
 - Togepi -> Togetic: *Sun Stone* -or- *Moon Stone*
+- Elekid -> Electabuzz: *Thunderstone*
 
 All evolution items are available for purchase at the [Mahogany Mart](#mahogany-mart) after Mahogany Gym has been cleared.
 
@@ -202,7 +203,7 @@ Several moves have had their types, effects, or other attributes changed to prov
 - Strength: *Normal* -> *Fighting* | *No Effect* -> *10% Chance To Raise Attack* | *15* -> *10 PP*
 - Absorb: *20* -> *30 Power* | *20* -> *30 PP*
 - Mega Drain: *40* -> *50 Power* | *10* -> *20 PP*
-- Razor Leaf: *95%* -> *100% Accuracy*
+- Razor Leaf: *95%* -> *100% Accuracy* | [*Always Physical*](#always-physical-moves)
 - Petal Dance: *70* -> *90 Power* | [*Always Physical*](#always-physical-moves)
 - Dragon Rage: *Flat Damage* -> *Always Hits* | *40 Damage* -> *60 Power* | *10* -> *20 PP*
 - Fire Spin: *70%* -> *75% Accuracy* | *15*-> *20 PP*
@@ -244,6 +245,8 @@ These moves are special, but their damage is now treated as physical.
 - Fire Punch
 - Ice Punch
 - Thunderpunch
+- Razor Leaf
+- Petal Dance
 - Clamp
 - Waterfall
 - Dizzy Punch
@@ -252,6 +255,8 @@ These moves are special, but their damage is now treated as physical.
 - Horn Attack
 - Outrage
 - Flame Wheel
+- Spark
+
 
 As a side note, all *Ghost* moves are now special and all *Dark* moves are now physical.
 ### Trapping Moves
