@@ -196,9 +196,10 @@ MachopEggMoves:
 
 BellsproutEggMoves:
 	db SWORDS_DANCE
-	db ENCORE
-	db REFLECT
-	db SYNTHESIS
+	db CRUNCH
+	db POISONPOWDER
+	db SLEEP_POWDER
+	db STUN_SPORE
 	db LEECH_LIFE
 	db -1 ; end
 

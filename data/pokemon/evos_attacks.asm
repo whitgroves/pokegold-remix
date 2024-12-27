@@ -599,7 +599,7 @@ VileplumeEvosAttacks:
 	db 14, POISONPOWDER
 	db 16, STUN_SPORE
 	db 18, SLEEP_POWDER
-	db 24, PETAL_DANCE
+	db 24, MEGA_DRAIN
 	db 29, BEAT_UP
 	db 35, MOONLIGHT
 	db 44, TOXIC
@@ -931,43 +931,45 @@ MachampEvosAttacks:
 BellsproutEvosAttacks:
 	db EVOLVE_LEVEL, 21, WEEPINBELL
 	db 0 ; no more evolutions
-	db 1, VINE_WHIP
-	db 6, SWEET_SCENT
-	db 11, WRAP
-	db 15, SLEEP_POWDER
-	db 17, POISONPOWDER
-	db 19, STUN_SPORE
-	db 23, ACID
-	db 30, RAZOR_LEAF
-	db 37, GROWTH
-	db 45, SLAM
+	db 1, ABSORB
+	db 3, WRAP
+	db 5, VINE_WHIP
+	db 11, ACID
+	db 13, GROWTH
+	db 17, SWEET_SCENT
+	db 23, MEGA_DRAIN
+	db 34, SLUDGE
+	db 41, GIGA_DRAIN
+	db 55, SLUDGE_BOMB
 	db 0 ; no more level-up moves
 
 WeepinbellEvosAttacks:
 	db EVOLVE_ITEM, LEAF_STONE, VICTREEBEL
 	db 0 ; no more evolutions
-	db 1, VINE_WHIP
-	db 6, SWEET_SCENT
-	db 11, WRAP
-	db 15, SLEEP_POWDER
-	db 17, POISONPOWDER
-	db 19, STUN_SPORE
-	db 24, ACID
-	db 33, RAZOR_LEAF
-	db 42, GROWTH
-	db 54, CRUNCH
+	db 1, ABSORB
+	db 3, WRAP
+	db 5, VINE_WHIP
+	db 11, ACID
+	db 13, GROWTH
+	db 17, SWEET_SCENT
+	db 24, MEGA_DRAIN
+	db 37, SLUDGE
+	db 46, GIGA_DRAIN
+	db 59, SLUDGE_BOMB
 	db 0 ; no more level-up moves
 
 VictreebelEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, WRAP
-	db 1, VINE_WHIP
-	db 1, SWEET_SCENT
-	db 1, POISONPOWDER
-	db 24, ACID
-	db 33, RAZOR_LEAF
-	db 42, GROWTH
-	db 54, CRUNCH
+	db 1, ABSORB
+	db 3, WRAP
+	db 5, VINE_WHIP
+	db 11, ACID
+	db 13, GROWTH
+	db 17, SWEET_SCENT
+	db 24, RAZOR_LEAF
+	db 37, SWORDS_DANCE
+	db 46, SLUDGE_BOMB
+	db 59, CRUNCH
 	db 0 ; no more level-up moves
 
 TentacoolEvosAttacks:
@@ -2505,6 +2507,8 @@ BellossomEvosAttacks:
 	db 16, STUN_SPORE
 	db 18, SLEEP_POWDER
 	db 24, PETAL_DANCE
+	db 24, RAIN_DANCE
+	db 24, SWORDS_DANCE
 	db 29, SUNNY_DAY
 	db 35, MORNING_SUN
 	db 44, SOLARBEAM
