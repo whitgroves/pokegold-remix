@@ -1571,7 +1571,7 @@ JohtoGrassWildMons:
 	db 14, VULPIX
 	db 16, PIDGEY
 	db 13, STANTLER
-	db 15, SUDOWOODO
+	db 18, BELLSPROUT
 	db 16, HOOTHOOT
 	db 13, TANGELA
 	db 13, MISDREAVUS
@@ -1579,7 +1579,7 @@ JohtoGrassWildMons:
 	db 14, VULPIX
 	db 16, PIDGEY
 	db 13, TANGELA
-	db 15, SUDOWOODO
+	db 18, BELLSPROUT
 	db 13, MURKROW
 	db 13, STANTLER
 	db 13, MISDREAVUS
@@ -1590,7 +1590,7 @@ JohtoGrassWildMons:
 	db 13, MURKROW
 	db 13, MISDREAVUS
 	db 13, STANTLER
-	db 15, SUDOWOODO
+	db 18, BELLSPROUT
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_38
@@ -1622,7 +1622,7 @@ JohtoGrassWildMons:
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_39
-	db 2 percent, 2 percent, 10 percent ; encounter rates: morn/day/nite
+	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
 	db 16, RATTATA
 	db 15, MARILL
