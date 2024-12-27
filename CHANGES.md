@@ -203,7 +203,7 @@ Several moves have had their types, effects, or other attributes changed to prov
 - Absorb: *20* -> *30 Power* | *20* -> *30 PP*
 - Mega Drain: *40* -> *50 Power* | *10* -> *20 PP*
 - Razor Leaf: *95%* -> *100% Accuracy*
-- Petal Dance: *70* -> *90 Power*
+- Petal Dance: *70* -> *90 Power* | [*Always Physical*](#always-physical-moves)
 - Dragon Rage: *Flat Damage* -> *Always Hits* | *40 Damage* -> *60 Power* | *10* -> *20 PP*
 - Fire Spin: *70%* -> *75% Accuracy* | *15*-> *20 PP*
 - Rock Throw: *90%* -> *100% Accuracy*

@@ -108,9 +108,9 @@ ZubatEggMoves:
 OddishEggMoves:
 	db SWORDS_DANCE
 	db RAZOR_LEAF
-	db FLAIL
-	db SYNTHESIS
-	db CHARM
+	db MORNING_SUN
+	db MOONLIGHT
+	db PETAL_DANCE
 	db -1 ; end
 
 ParasEggMoves:
