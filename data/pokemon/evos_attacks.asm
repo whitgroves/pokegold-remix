@@ -3232,14 +3232,14 @@ Porygon2EvosAttacks:
 
 StantlerEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, LICK
 	db 1, STOMP
+	db 1, LICK
 	db 8, HYPNOSIS
-	db 16, CONFUSE_RAY
-	db 24, NIGHT_SHADE
-	db 32, GLARE
-	db 40, BODY_SLAM
-	db 48, PSYCHIC_M
+	db 16, DISABLE
+	db 24, HEADBUTT
+	db 32, HORN_ATTACK
+	db 40, NIGHT_SHADE
+	db 48, TAKE_DOWN
 	db 56, MEGAHORN
 	db 0 ; no more level-up moves
 

@@ -785,11 +785,11 @@ PhanpyEggMoves:
 	db -1 ; end
 
 StantlerEggMoves:
+	db CURSE
 	db REFLECT
-	db SPITE
-	db DISABLE
 	db LIGHT_SCREEN
-	db BITE
+	db BODY_SLAM
+	db PSYCHIC_M
 	db -1 ; end
 
 TyrogueEggMoves:
