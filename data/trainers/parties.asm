@@ -457,13 +457,12 @@ SchoolboyGroup:
 
 	; SCHOOLBOY (7)
 	db "DUDLEY@", TRAINERTYPE_NORMAL
-	db 35, ODDISH
+	db 35, GLOOM
 	db -1 ; end
 
 	; SCHOOLBOY (8)
 	db "JOE@", TRAINERTYPE_NORMAL
 	db 33, TANGELA
-	db 33, VAPOREON
 	db -1 ; end
 
 	; SCHOOLBOY (9)
@@ -690,16 +689,12 @@ LassGroup:
 
 	; LASS (7)
 	db "LAURA@", TRAINERTYPE_NORMAL
-	db 28, GLOOM
-	db 31, PIDGEOTTO
-	db 31, BELLOSSOM
+	db 33, PIDGEOTTO
 	db -1 ; end
 
 	; LASS (8)
 	db "SHANNON@", TRAINERTYPE_NORMAL
-	db 29, PARAS
-	db 29, PARAS
-	db 32, PARASECT
+	db 34, NIDORINA
 	db -1 ; end
 
 	; LASS (9)
@@ -717,8 +712,7 @@ LassGroup:
 
 	; LASS (11)
 	db "ELLEN@", TRAINERTYPE_NORMAL
-	db 30, WIGGLYTUFF
-	db 34, GRANBULL
+	db 34, JIGGLYPUFF
 	db -1 ; end
 
 	; LASS (12)
@@ -867,7 +861,7 @@ CooltrainerMGroup:
 
 	; COOLTRAINERM (17)
 	db "KEVIN@", TRAINERTYPE_NORMAL
-	db 38, RHYHORN
+	db 31, IVYSAUR
 	db 35, CHARMELEON
 	db 35, WARTORTLE
 	db -1 ; end
@@ -2064,7 +2058,7 @@ SuperNerdGroup:
 
 	; SUPER_NERD (8)
 	db "PAT@", TRAINERTYPE_NORMAL
-	db 36, PORYGON
+	db 44, PORYGON
 	db -1 ; end
 
 	; SUPER_NERD (9)
@@ -2809,7 +2803,7 @@ CamperGroup:
 
 	; CAMPER (6)
 	db "LLOYD@", TRAINERTYPE_NORMAL
-	db 34, NIDOKING
+	db 34, NIDORINO
 	db -1 ; end
 
 	; CAMPER (7)

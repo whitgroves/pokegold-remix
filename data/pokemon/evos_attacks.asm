@@ -392,10 +392,10 @@ NidoranFEvosAttacks:
 	db 1, TACKLE
 	db 8, SCRATCH
 	db 12, DOUBLE_KICK
-	db 17, POISON_STING
-	db 23, TAIL_WHIP
+	db 17, TWINEEDLE
+	db 23, FURY_SWIPES
 	db 30, BITE
-	db 38, FURY_SWIPES
+	db 38, SLASH
 	db 0 ; no more level-up moves
 
 NidorinaEvosAttacks:
@@ -406,10 +406,10 @@ NidorinaEvosAttacks:
 	db 1, TACKLE
 	db 8, SCRATCH
 	db 12, DOUBLE_KICK
-	db 19, POISON_STING
-	db 27, TAIL_WHIP
+	db 19, TWINEEDLE
+	db 27, FURY_SWIPES
 	db 36, BITE
-	db 46, FURY_SWIPES
+	db 46, SLASH
 	db 0 ; no more level-up moves
 
 NidoqueenEvosAttacks:
@@ -429,9 +429,9 @@ NidoranMEvosAttacks:
 	db 1, TACKLE
 	db 8, HORN_ATTACK
 	db 12, DOUBLE_KICK
-	db 17, POISON_STING
-	db 23, FOCUS_ENERGY
-	db 30, RAGE
+	db 17, STOMP
+	db 23, TWINEEDLE
+	db 30, SUBMISSION
 	db 38, HORN_DRILL
 	db 0 ; no more level-up moves
 
@@ -443,9 +443,9 @@ NidorinoEvosAttacks:
 	db 1, TACKLE
 	db 8, HORN_ATTACK
 	db 12, DOUBLE_KICK
-	db 19, POISON_STING
-	db 27, FOCUS_ENERGY
-	db 36, RAGE
+	db 19, STOMP
+	db 27, TWINEEDLE
+	db 36, SUBMISSION
 	db 46, HORN_DRILL
 	db 0 ; no more level-up moves
 

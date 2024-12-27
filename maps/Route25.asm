@@ -284,7 +284,7 @@ SchoolboyDudleyBeatenText:
 
 SchoolboyDudleyAfterBattleText:
 	text "I did my best."
-	line "I have no regrets."
+	line "I have no regrets!"
 	done
 
 LassEllenSeenText:
@@ -293,12 +293,12 @@ LassEllenSeenText:
 	done
 
 LassEllenBeatenText:
-	text "How could I lose?"
+	text "Seriously?"
 	done
 
 LassEllenAfterBattleText:
 	text "I did my best."
-	line "I have no regrets."
+	line "I have no regrets!"
 	done
 
 SchoolboyJoeSeenText:
@@ -312,7 +312,7 @@ SchoolboyJoeBeatenText:
 
 SchoolboyJoeAfterBattleText:
 	text "I did my best."
-	line "I have no regrets."
+	line "I have no regrets!"
 	done
 
 LassLauraSeenText:
@@ -326,7 +326,7 @@ LassLauraBeatenText:
 
 LassLauraAfterBattleText:
 	text "I did my best."
-	line "I have no regrets."
+	line "I have no regrets!"
 	done
 
 CamperLloydSeenText:
@@ -340,7 +340,7 @@ CamperLloydBeatenText:
 
 CamperLloydAfterBattleText:
 	text "I did my best."
-	line "I have no regrets."
+	line "I have no regrets!"
 	done
 
 LassShannonSeenText:
@@ -355,7 +355,7 @@ LassShannonBeatenText:
 
 LassShannonAfterBattleText:
 	text "I did my best."
-	line "I have no regrets."
+	line "I have no regrets!"
 	done
 
 SupernerdPatSeenText:
@@ -389,8 +389,8 @@ CooltrainermKevinNuggetText:
 	para "you expected, but"
 	line "you won anyway."
 
-	para "As promised, you"
-	line "win a prize."
+	para "As is tradition,"
+	line "you win a prize."
 	done
 
 CooltrainermKevinSeenText:
@@ -405,17 +405,21 @@ CooltrainermKevinSeenText:
 	done
 
 CooltrainermKevinBeatenText:
-	text "I've never had a"
-	line "battle this good!"
-	done
-
-CooltrainermKevinAfterBattleText:
 	text "That was a great"
 	line "battle!"
 
 	para "You and your #-"
-	line "MON are truly out-"
-	cont "standing!"
+	line "MON are truly"
+	cont "outstanding!"
+	done
+
+CooltrainermKevinAfterBattleText:
+	text "TEAM ROCKET used"
+	line "to recruit here,"
+
+	para "But now it's the"
+	line "best spot in town"
+	cont "for training!"
 	done
 
 BillsHouseSignText:
