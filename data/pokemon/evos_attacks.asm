@@ -463,25 +463,27 @@ ClefairyEvosAttacks:
 	db EVOLVE_ITEM, MOON_STONE, CLEFABLE
 	db 0 ; no more evolutions
 	db 1, POUND
-	db 1, GROWL
 	db 4, ENCORE
 	db 8, SING
-	db 13, DOUBLESLAP
-	db 19, MINIMIZE
-	db 26, DEFENSE_CURL
-	db 34, METRONOME
+	db 13, METRONOME
+	db 19, MIMIC
+	db 26, CHARM
+	db 34, BATON_PASS
 	db 43, MOONLIGHT
 	db 53, LIGHT_SCREEN
 	db 0 ; no more level-up moves
 
 ClefableEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, SING
-	db 1, DOUBLESLAP
-	db 1, METRONOME
-	db 1, MOONLIGHT
-	db 53, LIGHT_SCREEN
-	db 60, MIRROR_COAT
+	db 1, POUND
+	db 4, PSYCH_UP
+	db 8, MEDITATE
+	db 13, METRONOME
+	db 19, MIMIC
+	db 26, BARRIER
+	db 34, BATON_PASS
+	db 43, MOONLIGHT
+	db 53, MIRROR_COAT
 	db 0 ; no more level-up moves
 
 VulpixEvosAttacks:
@@ -530,10 +532,10 @@ WigglytuffEvosAttacks:
 	db 9, SLAM
 	db 14, SCREECH
 	db 19, FLAIL
-	db 24, MEGA_PUNCH
+	db 24, DOUBLESLAP
 	db 29, BODY_SLAM
 	db 34, TAKE_DOWN
-	db 39, MEGA_KICK
+	db 39, BELLY_DRUM
 	db 0 ; no more level-up moves
 
 ZubatEvosAttacks:
@@ -2380,21 +2382,20 @@ PichuEvosAttacks:
 CleffaEvosAttacks:
 	db EVOLVE_HAPPINESS, TR_ANYTIME, CLEFAIRY
 	db 0 ; no more evolutions
-	db 1, POUND
-	db 1, CHARM
-	db 4, ENCORE
-	db 8, SING
-	db 13, SWEET_KISS
+	db 1, TAIL_WHIP
+	db 4, SING
+	db 8, CHARM
+	db 19, BATON_PASS
 	db 0 ; no more level-up moves
 
 IgglybuffEvosAttacks:
 	db EVOLVE_HAPPINESS, TR_ANYTIME, JIGGLYPUFF
+	db EVOLVE_LEVEL, 12, JIGGLYPUFF
 	db 0 ; no more evolutions
 	db 1, SING
 	db 4, GROWL
-	db 9, POUND
-	db 14, CHARM
-	db 29, REST
+	db 9, CHARM
+	db 20, REST
 	db 0 ; no more level-up moves
 
 TogepiEvosAttacks:

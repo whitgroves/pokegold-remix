@@ -531,9 +531,9 @@ CleffaEggMoves:
 	db PRESENT
 	db METRONOME
 	db AMNESIA
-	db BELLY_DRUM
-	db SPLASH
-	db MIMIC
+	db BARRIER
+	db RECOVER
+	db MIRROR_COAT
 	db -1 ; end
 
 IgglybuffEggMoves:
