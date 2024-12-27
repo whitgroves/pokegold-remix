@@ -113,8 +113,8 @@ SaffronGymStatue:
 	jumpstd GymStatue2Script
 
 SabrinaIntroText:
-	text "SABRINA: I knew"
-	line "you were coming…"
+	text "I knew you were"
+	line "coming here…"
 
 	para "Three years ago I"
 	line "had a vision of"
@@ -139,8 +139,7 @@ SabrinaIntroText:
 	done
 
 SabrinaWinLossText:
-	text "SABRINA: Your"
-	line "power…"
+	text "Your power…"
 
 	para "It far exceeds"
 	line "what I foresaw…"
@@ -162,25 +161,27 @@ ReceivedMarshBadgeText:
 	done
 
 SabrinaMarshBadgeText:
-	text "SABRINA: MARSH-"
-	line "BADGE draws out"
+	text "MARSHBADGE draws"
+	line "out the latent"
 
-	para "your subliminal"
-	line "powers…"
+	para "potential of your"
+	line "#MON's psychic-"
+	cont "type moves…"
 
 	para "Although I failed"
 	line "to accurately pre-"
 	cont "dict your power,"
-	cont "this much I know"
-	cont "to be true."
+	
+	para "I know this much"
+	line "to be true:"
 
-	para "You will become a"
-	line "celebrated and"
-	cont "beloved CHAMPION!"
+	para "You and your"
+	line "#MON will"
+	cont "become strong!"
 	done
 
 SabrinaFightDoneText:
-	text "SABRINA: Your love"
+	text "Your love"
 	line "for your #MON"
 
 	para "overwhelmed my"
@@ -256,12 +257,17 @@ PsychicJaredBeatenText:
 	done
 
 PsychicJaredAfterBattleText:
-	text "KARATE KING, the"
-	line "master of the"
+	text "Three years ago,"
+	line "the KARATE KING,"
 
-	para "FIGHTING DOJO, was"
-	line "just destroyed by"
-	cont "SABRINA."
+	para "the master of the"
+	line "FIGHTING DOJO,"
+
+	para "was totally dest-"
+	line "royed by SABRINA."
+
+	para "I wonder where he"
+	line "is now?"
 	done
 
 SaffronGymGuideText:

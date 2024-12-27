@@ -174,10 +174,10 @@ GrowlitheEggMoves:
 	db -1 ; end
 
 PoliwagEggMoves:
-	db MIST
-	db SPLASH
 	db BUBBLEBEAM
-	db HAZE
+	db BELLY_DRUM
+	db ICY_WIND
+	db BATON_PASS
 	db MIND_READER
 	db -1 ; end
 
@@ -416,6 +416,7 @@ LaprasEggMoves:
 EeveeEggMoves:
 	db CHARM
 	db AGILITY
+	db BATON_PASS
 	db DOUBLE_TEAM
 	db EXTREMESPEED
 	db -1 ; end
@@ -493,9 +494,9 @@ SentretEggMoves:
 
 HoothootEggMoves:
 	db MIRROR_MOVE
-	db SUPERSONIC
-	db FAINT_ATTACK
-	db WING_ATTACK
+	db PSYCHIC_M
+	db NIGHT_SHADE
+	db NIGHTMARE
 	db WHIRLWIND
 	db -1 ; end
 

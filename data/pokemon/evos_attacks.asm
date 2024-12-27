@@ -627,14 +627,12 @@ ParasectEvosAttacks:
 	db 7, STUN_SPORE
 	db 13, POISONPOWDER
 	db 19, LEECH_LIFE
-	db 24, LICK
 	db 28, SPORE
 	db 33, CURSE
 	db 37, SLASH
 	db 42, PAIN_SPLIT
 	db 46, GROWTH
 	db 51, GIGA_DRAIN
-	db 55, DREAM_EATER
 	db 60, DESTINY_BOND
 	db 0 ; no more level-up moves
 
@@ -1328,12 +1326,12 @@ DrowzeeEvosAttacks:
 	db 1, HYPNOSIS
 	db 10, DISABLE
 	db 18, CONFUSION
-	db 25, HEADBUTT
-	db 31, POISON_GAS
-	db 36, MEDITATE
-	db 40, PSYCHIC_M
-	db 43, PSYCH_UP
-	db 45, DOUBLE_TEAM
+	db 25, DIZZY_PUNCH
+	db 31, MEDITATE
+	db 36, NIGHT_SHADE
+	db 40, DREAM_EATER
+	db 43, PSYCHIC_M
+	db 45, NIGHTMARE
 	db 0 ; no more level-up moves
 
 HypnoEvosAttacks:
@@ -1342,12 +1340,12 @@ HypnoEvosAttacks:
 	db 1, HYPNOSIS
 	db 10, DISABLE
 	db 18, CONFUSION
-	db 25, HEADBUTT
-	db 33, POISON_GAS
-	db 40, MEDITATE
-	db 49, PSYCHIC_M
-	db 55, PSYCH_UP
-	db 60, DOUBLE_TEAM
+	db 25, DIZZY_PUNCH
+	db 33, MEDITATE
+	db 40, NIGHT_SHADE
+	db 49, DREAM_EATER
+	db 55, PSYCHIC_M
+	db 60, NIGHTMARE
 	db 0 ; no more level-up moves
 
 KrabbyEvosAttacks:
@@ -1691,9 +1689,8 @@ MrMimeEvosAttacks:
 	db 26, LIGHT_SCREEN
 	db 26, REFLECT
 	db 31, ENCORE
-	db 36, PSYBEAM
-	db 41, BATON_PASS
-	db 46, SAFEGUARD
+	db 38, PSYBEAM
+	db 46, BATON_PASS
 	db 52, MIRROR_COAT
 	db 0 ; no more level-up moves
 
@@ -2251,9 +2248,8 @@ HoothootEvosAttacks:
 	db 16, CONFUSION
 	db 22, SWIFT
 	db 28, WING_ATTACK
-	db 34, BODY_SLAM
-	db 42, PSYCHIC_M
-	db 48, TAKE_DOWN
+	db 34, REST
+	db 42, SLEEP_TALK
 	db 0 ; no more level-up moves
 
 NoctowlEvosAttacks:
@@ -2266,10 +2262,8 @@ NoctowlEvosAttacks:
 	db 16, CONFUSION
 	db 25, NIGHT_SHADE
 	db 33, WING_ATTACK
-	db 41, SHADOW_BALL
-	db 49, PSYCHIC_M
-	db 57, DREAM_EATER
-	db 63, NIGHTMARE
+	db 41, PSYCHIC_M
+	db 49, NIGHTMARE
 	db 0 ; no more level-up moves
 
 LedybaEvosAttacks:
@@ -2552,13 +2546,15 @@ SudowoodoEvosAttacks:
 
 PolitoedEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, HYPNOSIS
-	db 1, WATER_GUN
-	db 28, MIST
-	db 30, RAIN_DANCE
-	db 32, ICY_WIND
-	db 35, PERISH_SONG
-	db 51, SWAGGER
+	db 1, BUBBLE
+	db 7, HYPNOSIS
+	db 13, WATER_GUN
+	db 17, MUD_SLAP
+	db 19, BUBBLEBEAM
+	db 27, RAIN_DANCE
+	db 35, BATON_PASS
+	db 43, BELLY_DRUM
+	db 51, AMNESIA
 	db 0 ; no more level-up moves
 
 HoppipEvosAttacks:
@@ -2760,7 +2756,7 @@ SlowkingEvosAttacks:
 	db 24, HORN_ATTACK
 	db 29, DISABLE
 	db 34, SWAGGER
-	db 43, DRAGONBREATH
+	db 43, DRAGON_RAGE
 	db 48, PSYCHIC_M
 	db 55, HYPER_BEAM
 	db 59, RECOVER
