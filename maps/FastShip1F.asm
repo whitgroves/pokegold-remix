@@ -250,7 +250,7 @@ FastShip1FSailor2Text:
 
 FastShip1FSailor3Text:
 	text "The passengers are"
-	line "all trainers."
+	line "all TRAINERs."
 
 	para "They're all itch-"
 	line "ing to battle in"

@@ -702,7 +702,7 @@ MeowthEvosAttacks:
 	db 11, BITE
 	db 16, PAY_DAY
 	db 20, METAL_CLAW
-	db 28, CHARM
+	db 29, CHARM
 	db 35, SCREECH
 	db 41, FURY_SWIPES
 	db 46, SLASH
@@ -715,7 +715,7 @@ PersianEvosAttacks:
 	db 11, BITE
 	db 16, PAY_DAY
 	db 20, METAL_CLAW
-	db 28, FAINT_ATTACK
+	db 30, FAINT_ATTACK
 	db 38, SCREECH
 	db 46, PURSUIT
 	db 53, SLASH

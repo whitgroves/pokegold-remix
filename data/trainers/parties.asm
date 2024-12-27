@@ -40,7 +40,6 @@ MortyGroup:
 	db 21, TANGELA,    SLEEP_POWDER, ABSORB, CONSTRICT, NIGHT_SHADE
 	db 21, CORSOLA,    SURF, CURSE, PAIN_SPLIT, SPITE
 	db 25, GENGAR,     HYPNOSIS, SHADOW_BALL, MEAN_LOOK, DREAM_EATER
-	
 	db -1 ; end
 
 PryceGroup:
@@ -480,14 +479,14 @@ SchoolboyGroup:
 
 	; SCHOOLBOY (11)
 	db "NATE@", TRAINERTYPE_NORMAL
-	db 32, LEDIAN
-	db 32, EXEGGUTOR
+	db 32, BEEDRILL
+	db 32, RATICATE
 	db -1 ; end
 
 	; SCHOOLBOY (12)
 	db "RICKY@", TRAINERTYPE_NORMAL
-	db 32, AIPOM
-	db 32, DITTO
+	db 32, GROWLITHE
+	db 32, PIDGEOTTO
 	db -1 ; end
 
 	; SCHOOLBOY (13)
@@ -968,9 +967,9 @@ CooltrainerFGroup:
 
 	; COOLTRAINERF (13)
 	db "CAROL@", TRAINERTYPE_NORMAL
-	db 35, ELECTRODE
-	db 35, STARMIE
-	db 35, NINETALES
+	db 35, POLITOED
+	db 35, AMPHAROS
+	db 35, JYNX
 	db -1 ; end
 
 	; COOLTRAINERF (14)
@@ -1052,7 +1051,8 @@ BeautyGroup:
 
 	; BEAUTY (6)
 	db "CASSIE@", TRAINERTYPE_NORMAL
-	db 28, VILEPLUME
+	db 25, STARYU
+	db 28, BELLOSSOM
 	db 34, BUTTERFREE
 	db -1 ; end
 
@@ -1152,8 +1152,8 @@ PokemaniacGroup:
 
 	; POKEMANIAC (8)
 	db "ETHAN@", TRAINERTYPE_NORMAL
-	db 31, RHYHORN
-	db 31, RHYDON
+	db 27, CUBONE
+	db 34, SLOWPOKE
 	db -1 ; end
 
 	; POKEMANIAC (9)
@@ -1172,8 +1172,8 @@ PokemaniacGroup:
 
 	; POKEMANIAC (11)
 	db "ISSAC@", TRAINERTYPE_MOVES
-	db 10, LICKITUNG,  LICK, SUPERSONIC, ICE_PUNCH, FIRE_PUNCH
-	db 10, WIGGLYTUFF, SING, POUND, HEADBUTT, THUNDERPUNCH
+	db 10, LICKITUNG,  SLAM, SUPERSONIC, ICE_PUNCH, FIRE_PUNCH
+	db 10, WIGGLYTUFF, SLAM, SING, HEADBUTT, THUNDERPUNCH
 	db -1 ; end
 
 	; POKEMANIAC (12)
@@ -1389,7 +1389,7 @@ GentlemanGroup:
 
 	; GENTLEMAN (2)
 	db "EDWARD@", TRAINERTYPE_NORMAL
-	db 33, PERSIAN
+	db 38, PERSIAN
 	db -1 ; end
 
 	; GENTLEMAN (3)
@@ -1433,7 +1433,10 @@ TeacherGroup:
 
 	; TEACHER (3)
 	db "SHIRLEY@", TRAINERTYPE_NORMAL
-	db 35, JIGGLYPUFF
+	db 35, BUTTERFREE
+	db 35, VULPIX
+	db 35, CROBAT
+	db 35, KANGASKHAN
 	db -1 ; end
 
 SabrinaGroup:
@@ -1497,7 +1500,10 @@ BugCatcherGroup:
 
 	; BUG_CATCHER (9)
 	db "KEN@", TRAINERTYPE_NORMAL
-	db 30, ARIADOS
+	db 28, BUTTERFREE
+	db 29, BEEDRILL
+	db 30, SCYTHER
+	db 31, VENOMOTH
 	db 32, PINSIR
 	db -1 ; end
 
@@ -1608,10 +1614,10 @@ FisherGroup:
 
 	; FISHER (12)
 	db "JONAH@", TRAINERTYPE_NORMAL
-	db 25, SHELLDER
+	db 25, MANTINE
 	db 29, OCTILLERY
-	db 25, REMORAID
-	db 29, CLOYSTER
+	db 25, QWILFISH
+	db 29, LANTURN
 	db -1 ; end
 
 	; FISHER (13)
@@ -1964,27 +1970,27 @@ SailorGroup:
 	; SAILOR (6)
 	db "JEFF@", TRAINERTYPE_NORMAL
 	db 32, RATICATE
-	db 32, RATICATE
+	db 32, MANTINE
 	db -1 ; end
 
 	; SAILOR (7)
 	db "GARRETT@", TRAINERTYPE_NORMAL
-	db 34, KINGLER
+	db 36, KINGLER
 	db -1 ; end
 
 	; SAILOR (8)
 	db "KENNETH@", TRAINERTYPE_NORMAL
-	db 28, MACHOP
-	db 28, MACHOP
+	db 28, QUAGSIRE
+	db 28, TENTACOOL
 	db 28, POLIWRATH
-	db 28, MACHOP
+	db 28, GYARADOS
 	db -1 ; end
 
 	; SAILOR (9)
 	db "STANLY@", TRAINERTYPE_NORMAL
-	db 31, MACHOP
-	db 33, MACHOKE
-	db 26, PSYDUCK
+	db 26, SEEL
+	db 31, URSARING
+	db 33, PSYDUCK
 	db -1 ; end
 
 	; SAILOR (10)
@@ -2055,9 +2061,9 @@ SuperNerdGroup:
 
 	; SUPER_NERD (9)
 	db "SHAWN@", TRAINERTYPE_NORMAL
-	db 31, MAGNEMITE
-	db 33, MUK
-	db 31, MAGNEMITE
+	db 31, ELECTRODE
+	db 33, PORYGON
+	db 31, DITTO
 	db -1 ; end
 
 	; SUPER_NERD (10)
@@ -2144,7 +2150,9 @@ Rival2Group:
 GuitaristGroup:
 	; GUITARIST (1)
 	db "CLYDE@", TRAINERTYPE_NORMAL
-	db 34, ELECTABUZZ
+	db 34, MAGNETON
+	db 35, CHANSEY
+	db 39, WIGGLYTUFF
 	db -1 ; end
 
 	; GUITARIST (2)
@@ -2250,8 +2258,9 @@ HikerGroup:
 
 	; HIKER (14)
 	db "NOLAND@", TRAINERTYPE_NORMAL
-	db 31, SANDSLASH
-	db 33, GOLEM
+	db 31, GLIGAR
+	db 34, GOLEM
+	db 33, DUNSPARCE
 	db -1 ; end
 
 	; HIKER (15)
@@ -2374,11 +2383,11 @@ BurglarGroup:
 	db -1 ; end
 
 	; BURGLAR (3)
-	db "COREY@", TRAINERTYPE_NORMAL
-	db 25, KOFFING
-	db 28, MAGMAR
-	db 25, KOFFING
-	db 30, KOFFING
+	db "COREY@", TRAINERTYPE_MOVES
+	db 30, VILEPLUME,	MEGA_DRAIN, SLEEP_POWDER, SWEET_SCENT, SWAGGER
+	db 28, HYPNO,		CONFUSION, HYPNOSIS, DISABLE, THIEF
+	db 25, MEOWTH,		PAY_DAY, THIEF, METAL_CLAW, SWAGGER
+	db 25, MURKROW,		THIEF, HAZE, PURSUIT, PECK
 	db -1 ; end
 
 FirebreatherGroup:
@@ -2426,9 +2435,9 @@ FirebreatherGroup:
 
 	; FIREBREATHER (8)
 	db "LYLE@", TRAINERTYPE_NORMAL
-	db 28, KOFFING
-	db 31, FLAREON
-	db 28, KOFFING
+	db 33, MAGMAR
+	db 38, MAGCARGO
+	db 35, WEEZING
 	db -1 ; end
 
 JugglerGroup:
@@ -2442,9 +2451,9 @@ JugglerGroup:
 
 	; JUGGLER (2)
 	db "FRITZ@", TRAINERTYPE_NORMAL
-	db 29, MR__MIME
-	db 29, MAGMAR
-	db 29, MACHOKE
+	db 29, VOLTORB
+	db 29, MAGNEMITE
+	db 29, SHUCKLE
 	db -1 ; end
 
 	; JUGGLER (3)
@@ -2523,8 +2532,8 @@ BlackbeltGroup:
 	; BLACKBELT_T (9)
 	db "WAI@", TRAINERTYPE_NORMAL
 	db 30, MACHOKE
-	db 32, MACHOKE
-	db 34, MACHOKE
+	db 32, DODRIO
+	db 34, HITMONTOP
 	db -1 ; end
 
 ExecutiveMGroup:
@@ -2629,8 +2638,8 @@ PsychicGroup:
 
 	; PSYCHIC_T (12)
 	db "RODNEY@", TRAINERTYPE_NORMAL
-	db 29, DROWZEE
-	db 33, HYPNO
+	db 35, GIRAFARIG
+	db 28, SLOWPOKE
 	db -1 ; end
 
 PicnickerGroup:
@@ -2676,7 +2685,9 @@ PicnickerGroup:
 
 	; PICNICKER (8)
 	db "DEBRA@", TRAINERTYPE_NORMAL
-	db 33, SEAKING
+	db 24, PHANPY
+	db 29, FURRET
+	db 33, SUNFLORA
 	db -1 ; end
 
 	; PICNICKER (9)
@@ -3056,14 +3067,14 @@ PokefanMGroup:
 
 	; POKEFANM (8)
 	db "JEREMY@", TRAINERTYPE_ITEM
-	db 28, MEOWTH,     BERRY
-	db 28, MEOWTH,     BERRY
-	db 28, MEOWTH,     BERRY
+	db 28, GOLDEEN,    BERRY
+	db 28, PONYTA,     BERRY
+	db 28, JOLTEON,    BERRY
 	db -1 ; end
 
 	; POKEFANM (9)
 	db "COLIN@", TRAINERTYPE_ITEM
-	db 32, DELIBIRD,   BERRY
+	db 35, DELIBIRD,   BERRY
 	db -1 ; end
 
 	; POKEFANM (10)
@@ -3127,15 +3138,15 @@ TwinsGroup:
 	db -1 ; end
 
 	; TWINS (2)
-	db "ANN & ANNE@", TRAINERTYPE_MOVES
-	db 16, CLEFAIRY,   GROWL, ENCORE, DOUBLESLAP, METRONOME
-	db 16, JIGGLYPUFF, SING, DEFENSE_CURL, POUND, DISABLE
+	db "ANN & ANNE@", TRAINERTYPE_NORMAL
+	db 16, PHANPY
+	db 16, TEDDIURSA
 	db -1 ; end
 
 	; TWINS (3)
-	db "ANN & ANNE@", TRAINERTYPE_MOVES
-	db 16, JIGGLYPUFF, SING, DEFENSE_CURL, POUND, DISABLE
-	db 16, CLEFAIRY,   GROWL, ENCORE, DOUBLESLAP, METRONOME
+	db "ANN & ANNE@", TRAINERTYPE_NORMAL
+	db 16, TEDDIURSA
+	db 16, PHANPY
 	db -1 ; end
 
 	; TWINS (4)
@@ -3158,14 +3169,22 @@ TwinsGroup:
 
 	; TWINS (7)
 	db "MEG & PEG@", TRAINERTYPE_NORMAL
-	db 31, TEDDIURSA
-	db 31, PHANPY
+	db 20, CLEFFA
+	db 20, IGGLYBUFF
+	db 34, CLEFAIRY
+	db 34, JIGGLYPUFF
+	db 34, CLEFABLE
+	db 34, WIGGLYTUFF
 	db -1 ; end
 
 	; TWINS (8)
 	db "MEG & PEG@", TRAINERTYPE_NORMAL
-	db 31, PHANPY
-	db 31, TEDDIURSA
+	db 20, IGGLYBUFF
+	db 20, CLEFFA
+	db 34, JIGGLYPUFF
+	db 34, CLEFAIRY
+	db 34, WIGGLYTUFF
+	db 34, CLEFABLE
 	db -1 ; end
 
 PokefanFGroup:
@@ -3194,11 +3213,11 @@ PokefanFGroup:
 
 	; POKEFANF (5)
 	db "GEORGIA@", TRAINERTYPE_ITEM
-	db 23, SENTRET,    BERRY
-	db 23, SENTRET,    BERRY
-	db 23, SENTRET,    BERRY
+	db 15, SENTRET,    BERRY
+	db 22, SNUBBULL,   BERRY
+	db 23, QUAGSIRE,   BERRY
 	db 28, FURRET,     BERRY
-	db 23, SENTRET,    BERRY
+	db 23, GRANBULL,   BERRY
 	db -1 ; end
 
 RedGroup:

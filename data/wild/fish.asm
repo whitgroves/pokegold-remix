@@ -125,7 +125,7 @@ FishGroups:
 	db  90 percent + 1, QWILFISH,   43
 	db 100 percent,     QUAGSIRE,   45
 
-; FISHGROUP_REMORAID_SWARM -- Route 44 (via FISHSWARM_REMORAID)
+; FISHGROUP_REMORAID_SWARM -- Olivine Port, Route 40, Route 41 (via FISHSWARM_REMORAID)
 .Remoraid_Swarm_Old:
 	db  70 percent + 1, REMORAID,   10
 	db  85 percent + 1, REMORAID,   13
