@@ -154,9 +154,10 @@ GruntM15AfterBattleText:
 	done
 
 DirectorIntroText:
-	text "DIRECTOR: Who?"
-	line "What? You came to"
-	cont "rescue me?"
+	text "Who? What?"
+	
+	para "You came to"
+	line "rescue me?"
 
 	para "Thank you!"
 
@@ -173,14 +174,13 @@ DirectorIntroText:
 	done
 
 DirectorCardKeyText:
-	text "DIRECTOR: Use that"
-	line "to open the shut-"
-	cont "ters on 3F."
+	text "Use that to open"
+	line "the shutter on 3F."
 	done
 
 DirectorAfterText:
 	text "I'm begging you to"
-	line "help."
+	line "help!"
 
 	para "There's no telling"
 	line "what they'll do if"

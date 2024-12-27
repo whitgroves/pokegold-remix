@@ -1101,7 +1101,6 @@ SlowbroEvosAttacks:
 	db 24, ACID
 	db 29, DISABLE
 	db 34, AMNESIA
-	db 37, WITHDRAW
 	db 46, SLUDGE
 	db 54, PSYCHIC_M
 	db 60, SLUDGE_BOMB
@@ -1564,16 +1563,15 @@ ChanseyEvosAttacks:
 	db EVOLVE_HAPPINESS, TR_ANYTIME, BLISSEY
 	db 0 ; no more evolutions
 	db 1, POUND
-	db 5, GROWL
-	db 9, TAIL_WHIP
+	db 5, CHARM
+	db 9, SWEET_KISS
 	db 13, SOFTBOILED
 	db 17, DOUBLESLAP
-	db 23, MINIMIZE
+	db 23, EGG_BOMB
 	db 29, SING
-	db 35, EGG_BOMB
+	db 35, ENCORE
 	db 41, DEFENSE_CURL
-	db 49, LIGHT_SCREEN
-	db 57, DOUBLE_EDGE
+	db 49, DOUBLE_EDGE
 	db 0 ; no more level-up moves
 
 TangelaEvosAttacks:
@@ -2501,8 +2499,8 @@ BellossomEvosAttacks:
 	db 14, POISONPOWDER
 	db 16, STUN_SPORE
 	db 18, SLEEP_POWDER
-	db 24, PETAL_DANCE
 	db 24, RAIN_DANCE
+	db 24, PETAL_DANCE
 	db 24, SWORDS_DANCE
 	db 29, SUNNY_DAY
 	db 35, MORNING_SUN
@@ -3333,16 +3331,15 @@ MiltankEvosAttacks:
 BlisseyEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, POUND
-	db 4, GROWL
-	db 7, TAIL_WHIP
-	db 10, SOFTBOILED
-	db 13, DOUBLESLAP
-	db 18, MINIMIZE
-	db 23, SING
-	db 28, EGG_BOMB
-	db 33, DEFENSE_CURL
-	db 40, LIGHT_SCREEN
-	db 47, DOUBLE_EDGE
+	db 5, CHARM
+	db 9, SWEET_KISS
+	db 13, SOFTBOILED
+	db 17, DOUBLESLAP
+	db 23, METRONOME
+	db 29, SING
+	db 35, ENCORE
+	db 41, BARRIER
+	db 49, HEAL_BELL
 	db 0 ; no more level-up moves
 
 RaikouEvosAttacks:

@@ -35,85 +35,70 @@ Route24RocketScript:
 	end
 
 Route24RocketSeenText:
-	text "Hey, kid! Me am a"
-	line "TEAM ROCKET member"
-	cont "kind of guy!"
+	text "Hyuck-hyuck-hyuck!"
+	line "Remember me?"
 
-	para "Come from another"
-	line "country, a trainer"
-	cont "number one, me!"
+	para "You may have-"
+	line "stopped our fun,"
 
-	para "Think I did, if"
-	line "stop the energy,"
+	para "but TEAM ROCKET's"
+	line "not done!"
 
-	para "be big panic for"
-	line "here people!"
+	para "The RADIO TOWER"
+	line "was only the first"
+	cont "part of our plan."
 
-	para "Secret it is my"
-	line "mission, so tell"
-	cont "you I not!"
+	para "Even though our"
+	line "EXECUTIVE said"
+	cont "to disband,"
 
-	para "But! If win you do"
-	line "versus me, a man I"
-
-	para "be and mine secret"
-	line "to you I tell."
-
-	para "Hey, kid! Battle"
-	line "begin we do!"
+	para "A man's gotta get"
+	line "by somehow, right?"
 	done
 
 Route24RocketBeatenText:
-	text "Ayieeeh! No, no,"
-	line "no, believe it I"
-	cont "can't!"
-
-	para "Strong very much"
-	line "be you! Match I am"
-	cont "not to you!"
+	text "Hyuck-hyuck-hyuck!"
+	line "The plan ran amok!"
 	done
 
 Route24RocketAfterBattleText:
-	text "OK. Tell you mine"
-	line "secret will I."
+	text "Hyuck-hyuck-hyuck!"
 
-	para "MACHINE PART steal"
-	line "by me, hide it I"
+	para "So much for going"
+	line "solo!"
 
-	para "did in GYM of the"
-	line "CERULEAN."
+	para "We stole some"
+	line "MACHINE PART a"
+	cont "while ago,"
 
-	para "Inside water put"
-	line "it I did. Look for"
+	para "and stashed it in"
+	line "CERULEAN for when"
+	cont "we got back!"
 
-	para "in water center of"
-	line "GYM at."
+	para "Hyuck-hyuck-hyuck…"
 
-	para "Boy, but you"
-	line "forget me not!"
+	para "But since TEAM"
+	line "ROCKET's kaput,"
 
-	para "Beat you for sure"
-	line "will TEAM ROCKET."
-
-	para "Come from JOHTO"
-	line "will they, mine"
-
-	para "friends, yes. Will"
-	line "revenge they are."
+	para "I figured, what's"
+	line "the harm in sell-"
+	cont "ing it?"
 	done
 
 Route24RocketDisappearsText:
-	text "…"
+	text "Hyuck-hyuck-huh?"
 
-	para "You say what? TEAM"
-	line "ROCKET bye-bye a"
+	para "Do I remember"
+	line "where it is?"
+	
+	para "We definitely drop-"
+	line "ped it underwater…"
 
-	para "go-go? Broken it"
-	line "is says you?"
+	para "Maybe it's at the"
+	line "GYM?"
 
-	para "Oh, no! Should I"
-	line "do what now on"
-	cont "from, me?"
+	para "Hyuck-hyuck-hyuck!"
+	line "Good luck!"
 	done
 
 Route24_MapEvents:
