@@ -89,19 +89,17 @@ CamperDeanSeenText:
 	done
 
 CamperDeanBeatenText:
-	text "Whoa! Danger, man."
+	text "Whoa! Danger, man!"
 	done
 
 CamperDeanAfterBattleText:
-	text "My #MON were"
-	line "hurt before even"
+	text "My #MON were worn"
+	line "down before even"
+	cont "getting here…"
 
-	para "entering ROCK"
-	line "TUNNEL."
-
-	para "I'd better take"
-	line "them to a #MON"
-	cont "CENTER right away."
+	para "Good thing"
+	line "there's a #MON"
+	cont "CENTER nearby."
 	done
 
 PicnickerHeidiSeenText:

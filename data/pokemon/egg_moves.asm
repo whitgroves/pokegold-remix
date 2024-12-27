@@ -347,6 +347,9 @@ ChanseyEggMoves:
 	db PRESENT
 	db METRONOME
 	db HEAL_BELL
+	db BARRIER
+	db REFLECT
+	db LIGHT_SCREEN
 	db -1 ; end
 
 TangelaEggMoves:
