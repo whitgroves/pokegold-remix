@@ -1309,16 +1309,16 @@ OnixEvosAttacks:
 	db EVOLVE_TRADE, METAL_COAT, STEELIX
 	db EVOLVE_ITEM, UP_GRADE, STEELIX
 	db 0 ; no more evolutions
-	db 1, SCREECH
-	db 1, TACKLE
+	db 1, BIND
 	db 1, HARDEN
-	db 10, BIND
+	db 10, BIDE
 	db 14, ROCK_THROW
 	db 23, DIG
-	db 27, RAGE
-	db 31, ROAR
+	db 27, SLAM
+	db 31, SCREECH
 	db 36, SANDSTORM
-	db 40, SLAM
+	db 40, ROCK_SLIDE
+	db 48, EARTHQUAKE
 	db 0 ; no more level-up moves
 
 DrowzeeEvosAttacks:
@@ -2868,17 +2868,16 @@ GligarEvosAttacks:
 
 SteelixEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, SCREECH
-	db 1, TACKLE
+	db 1, BIND
 	db 1, HARDEN
-	db 10, BIND
-	db 14, ROCK_THROW
+	db 10, BIDE
+	db 14, SPIKES
 	db 23, DIG
-	db 27, RAGE
-	db 31, ROAR
-	db 36, SANDSTORM
-	db 40, SLAM
-	db 49, CRUNCH
+	db 27, SLAM
+	db 31, SCREECH
+	db 36, CRUNCH
+	db 40, IRON_TAIL
+	db 48, EARTHQUAKE
 	db 0 ; no more level-up moves
 
 SnubbullEvosAttacks:

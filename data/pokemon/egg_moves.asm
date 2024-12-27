@@ -280,8 +280,10 @@ GastlyEggMoves:
 	db -1 ; end
 
 OnixEggMoves:
-	db ROCK_SLIDE
-	db FLAIL
+	db ROAR
+	db IRON_TAIL
+	db CRUNCH
+	db DRAGONBREATH
 	db -1 ; end
 
 DrowzeeEggMoves:

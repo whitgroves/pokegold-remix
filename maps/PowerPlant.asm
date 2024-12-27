@@ -278,8 +278,7 @@ PowerPlantOfficer2ManagerHasBeenSadAndFuriousText:
 	para "But since someone"
 	line "wrecked the gener-"
 	cont "ator, he's been"
-	cont "both sad and"
-	cont "furious…"
+	cont "beside himself…"
 	done
 
 PowerPlantOfficer2ManagerHasBeenCheerfulText:
@@ -309,9 +308,8 @@ PowerPlantGymGuide4WeCanGetMagnetTrainRunningText:
 	done
 
 PowerPlantManagerWhoWouldRuinMyGeneratorText:
-	text "MANAGER: I, I, I'm"
-	line "ready to blast"
-	cont "someone!"
+	text "I, I, I'm ready"
+	line "to blast someone!"
 
 	para "Who would dare"
 	line "ruin my generator?"
@@ -322,13 +320,13 @@ PowerPlantManagerWhoWouldRuinMyGeneratorText:
 	para "If I catch him,"
 	line "he's going to get"
 
-	para "a taste of my ZAP"
-	line "CANNON!"
+	para "a full-force"
+	line "THUNDERBOLT!"
 	done
 
 PowerPlantManagerIWontForgiveCulpritText:
-	text "MANAGER: I won't"
-	line "forgive him!"
+	text "I won't forgive"
+	line "him! I won't!"
 
 	para "The culprit can"
 	line "cry and apologize,"
@@ -340,12 +338,13 @@ PowerPlantManagerIWontForgiveCulpritText:
 	done
 
 PowerPlantManagerThatsThePartText:
-	text "MANAGER: Ah! Yeah!"
+	text "You found it?"
+
+	para "Ah! Yeah!"
 
 	para "That's the missing"
-	line "PART from my be-"
-	cont "loved generator!"
-	cont "You found it?"
+	line "MACHINE PART from"
+	cont "my generator!" 
 	done
 
 PowerPlantManagerTakeThisTMText:
@@ -356,22 +355,23 @@ PowerPlantManagerTakeThisTMText:
 	done
 
 PowerPlantManagerTM07IsZapCannonText:
-	text "MANAGER: TM07 is"
-	line "my ZAP CANNON."
+	text "TM07 is the"
+	line "one-and-only"
+	cont "THUNDERBOLT!"
 
-	para "It's a powerful"
-	line "technique!"
+	para "It might not be"
+	line "the strongest"
 
-	para "It's not what any-"
-	line "one would consider"
+	para "electric-type"
+	line "move, but the"
 
-	para "accurate, but it"
-	line "packs a wallop!"
+	para "results are sure"
+	line "to be shocking!"
 	done
 
 PowerPlantManagerMyBelovedGeneratorText:
-	text "MANAGER: My be-"
-	line "loved generator!"
+	text "My precious"
+	line "generator!"
 
 	para "Keep pumping the"
 	line "electricity out!"

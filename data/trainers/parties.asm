@@ -2284,7 +2284,7 @@ HikerGroup:
 
 	; HIKER (17)
 	db "JIM@", TRAINERTYPE_NORMAL
-	db 35, MACHAMP
+	db 36, ONIX
 	db -1 ; end
 
 	; HIKER (18)
@@ -2293,10 +2293,10 @@ HikerGroup:
 	db -1 ; end
 
 	; HIKER (19)
-	db "PARRY@", TRAINERTYPE_NORMAL ; rematch post Cerulean
-	db 38, MAGCARGO
-	db 40, STEELIX
-	db 42, SANDSLASH
+	db "PARRY@", TRAINERTYPE_MOVES ; rematch post Cerulean
+	db 38, MAGCARGO,	AMNESIA, HARDEN, ROCK_THROW, FLAMETHROWER
+	db 40, STEELIX,		SANDSTORM, IRON_TAIL, SCREECH, DIG
+	db 42, SANDSLASH,	EARTHQUAKE, METAL_CLAW, SLASH, ROLLOUT
 	db -1 ; end
 
 	; HIKER (20)
@@ -3042,7 +3042,7 @@ PokefanMGroup:
 
 	; POKEFANM (3)
 	db "ROBERT@", TRAINERTYPE_ITEM
-	db 33, QUAGSIRE,   BERRY
+	db 37, SLOWBRO,    BERRY
 	db -1 ; end
 
 	; POKEFANM (4)

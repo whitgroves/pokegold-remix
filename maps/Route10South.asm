@@ -54,16 +54,16 @@ PokefanmRobertSeenText:
 	done
 
 PokefanmRobertBeatenText:
-	text "I'd have to say"
-	line "that's my loss."
+	text "Look what you did"
+	line "to my #MON…"
 	done
 
 PokefanmRobertAfterBattleText:
-	text "Look what you did"
-	line "to my #MON…"
+	text "I'd have to say"
+	line "that's my loss."
 
-	para "I won't forget"
-	line "this…"
+	para "But couldn't you"
+	line "have gone easy?"
 	done
 
 Route10SignText:
