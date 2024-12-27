@@ -23,7 +23,7 @@ The following changes have been implemented or planned:
 - The "Down + B" trick actually works ✓
 - View happiness % on the stats screen ✓
 - Better rocket hideout & radio tower ✓
-- HMs can be deleted ✓
+- HMs can be forgotten ✓
 
 A detailed list of changes is available [here](./CHANGES.md). These are largely untested, so if you run into issues please reach out on X: [@whitgroves](https://x.com/whitgroves)
 
