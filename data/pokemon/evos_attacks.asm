@@ -1435,7 +1435,7 @@ CuboneEvosAttacks:
 	db 21, FOCUS_ENERGY
 	db 25, BONEMERANG
 	db 29, RAGE
-	db 33, FALSE_SWIPE
+	db 33, SKULL_BASH
 	db 37, THRASH
 	db 41, BONE_RUSH
 	db 0 ; no more level-up moves
@@ -1450,7 +1450,7 @@ MarowakEvosAttacks:
 	db 21, FOCUS_ENERGY
 	db 25, BONEMERANG
 	db 32, RAGE
-	db 39, FALSE_SWIPE
+	db 39, SKULL_BASH
 	db 46, THRASH
 	db 53, BONE_RUSH
 	db 0 ; no more level-up moves
@@ -1585,16 +1585,16 @@ TangelaEvosAttacks:
 
 KangaskhanEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, COMET_PUNCH
-	db 7, LEER
-	db 13, BITE
-	db 19, TAIL_WHIP
+	db 1, GROWL
+	db 5, SLAM
+	db 13, STOMP
+	db 17, SAFEGUARD
+	db 21, ROAR
 	db 25, MEGA_PUNCH
-	db 28, ROAR
-	db 31, RAGE
-	db 37, ENDURE
-	db 43, DIZZY_PUNCH
-	db 49, REVERSAL
+	db 29, DRAGON_RAGE
+	db 37, PROTECT
+	db 43, OUTRAGE
+	db 49, ENDURE
 	db 0 ; no more level-up moves
 
 HorseaEvosAttacks:

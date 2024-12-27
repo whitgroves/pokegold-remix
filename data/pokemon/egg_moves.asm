@@ -305,12 +305,11 @@ ExeggcuteEggMoves:
 	db -1 ; end
 
 CuboneEggMoves:
-	db ROCK_SLIDE
-	db ANCIENTPOWER
-	db BELLY_DRUM
-	db SCREECH
-	db SKULL_BASH
-	db PERISH_SONG
+	db DRAGON_RAGE
+	db OUTRAGE
+	db PROTECT
+	db ENDURE
+	db SAFEGUARD
 	db -1 ; end
 
 LickitungEggMoves:
@@ -356,11 +355,12 @@ TangelaEggMoves:
 	db -1 ; end
 
 KangaskhanEggMoves:
-	db STOMP
-	db FORESIGHT
+	db LEER
 	db FOCUS_ENERGY
-	db SAFEGUARD
-	db DISABLE
+	db HEADBUTT
+	db RAGE
+	db FALSE_SWIPE
+	db THRASH
 	db -1 ; end
 
 HorseaEggMoves:
