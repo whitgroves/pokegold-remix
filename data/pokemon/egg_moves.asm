@@ -168,7 +168,7 @@ GrowlitheEggMoves:
 	db BODY_SLAM
 	db SAFEGUARD
 	db CRUNCH
-	db THRASH
+	db DIG
 	db FIRE_SPIN
 	db SUBMISSION
 	db -1 ; end
@@ -818,8 +818,9 @@ ElekidEggMoves:
 MagbyEggMoves:
 	db KARATE_CHOP
 	db MEGA_PUNCH
-	db BARRIER
-	db SCREECH
+	db SLUDGE
+	db ROCK_SLIDE
+	db FLAME_WHEEL
 	db -1 ; end
 
 MiltankEggMoves:

@@ -85,7 +85,7 @@ BikerDwayneSeenText:
 	done
 
 BikerDwayneBeatenText:
-	text "S-sorry!"
+	text "My bad!"
 	done
 
 BikerDwayneAfterBattleText:
@@ -96,14 +96,14 @@ BikerDwayneAfterBattleText:
 
 BikerHarrisSeenText:
 	text "The cops shut down"
-	line "our UNDERGROUND"
+	line "UNDERGROUND PATH!"
 
-	para "PATH! That really"
-	line "fries me!"
+	para "How am I gonna get"
+	line "to CELADON now?"
 	done
 
 BikerHarrisBeatenText:
-	text "F-forgive me!"
+	text "Tch!"
 	done
 
 BikerHarrisAfterBattleText:
@@ -112,14 +112,13 @@ BikerHarrisAfterBattleText:
 	done
 
 BikerZekeSeenText:
-	text "We're the KANTO"
-	line "#MON FEDERA-"
-	cont "TION!"
-	cont "Right on, dude!"
+	text "Don't look down on"
+	line "the KANTO #-"
+	cont "MON FEDERATION!"
 	done
 
 BikerZekeBeatenText:
-	text "Yikes! Sorry!"
+	text "S-sorry!"
 	done
 
 BikerZekeAfterBattleText:

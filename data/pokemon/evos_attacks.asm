@@ -783,22 +783,24 @@ GrowlitheEvosAttacks:
 	db EVOLVE_ITEM, FIRE_STONE, ARCANINE
 	db 0 ; no more evolutions
 	db 1, BITE
-	db 1, ROAR
+	db 1, GROWL
 	db 9, EMBER
-	db 18, LEER
-	db 26, TAKE_DOWN
-	db 34, FLAME_WHEEL
+	db 18, DIG
+	db 26, ROAR
+	db 34, BODY_SLAM
 	db 42, AGILITY
 	db 50, FLAMETHROWER
-	db 58, EXTREMESPEED
 	db 0 ; no more level-up moves
 
 ArcanineEvosAttacks:
 	db 0 ; no more evolutions
+	db 1, BITE
 	db 1, ROAR
-	db 1, LEER
-	db 1, SUBMISSION
-	db 1, FLAME_WHEEL
+	db 9, EMBER
+	db 18, DIG
+	db 26, SUBMISSION
+	db 34, FLAME_WHEEL
+	db 42, DETECT
 	db 50, EXTREMESPEED
 	db 0 ; no more level-up moves
 
@@ -1479,14 +1481,14 @@ HitmonleeEvosAttacks:
 HitmonchanEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, COMET_PUNCH
-	db 7, AGILITY
-	db 13, PURSUIT
+	db 7, DETECT
+	db 13, MACH_PUNCH
 	db 26, THUNDERPUNCH
 	db 26, ICE_PUNCH
 	db 26, FIRE_PUNCH
-	db 32, MACH_PUNCH
-	db 38, MEGA_PUNCH
-	db 44, DETECT
+	db 32, MEGA_PUNCH
+	db 38, DIZZY_PUNCH
+	db 44, DYNAMICPUNCH
 	db 50, COUNTER
 	db 0 ; no more level-up moves
 
@@ -1741,13 +1743,13 @@ ElectabuzzEvosAttacks:
 MagmarEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, EMBER
-	db 7, LEER
-	db 13, SMOG
+	db 7, SMOG
+	db 13, SMOKESCREEN
 	db 19, FIRE_PUNCH
-	db 25, SMOKESCREEN
+	db 25, POISON_GAS
 	db 33, SUNNY_DAY
 	db 41, FLAMETHROWER
-	db 49, CONFUSE_RAY
+	db 49, ACID_ARMOR
 	db 57, FIRE_BLAST
 	db 0 ; no more level-up moves
 
@@ -2554,7 +2556,7 @@ PolitoedEvosAttacks:
 	db 27, RAIN_DANCE
 	db 35, BATON_PASS
 	db 43, BELLY_DRUM
-	db 51, AMNESIA
+	db 51, PERISH_SONG
 	db 0 ; no more level-up moves
 
 HoppipEvosAttacks:
@@ -3307,16 +3309,13 @@ ElekidEvosAttacks:
 
 MagbyEvosAttacks:
 	db EVOLVE_LEVEL, 30, MAGMAR
+	db EVOLVE_ITEM, FIRE_STONE, MAGMAR
 	db 0 ; no more evolutions
 	db 1, EMBER
-	db 7, LEER
-	db 13, SMOG
-	db 19, FIRE_PUNCH
-	db 25, SMOKESCREEN
-	db 31, SUNNY_DAY
-	db 37, FLAMETHROWER
-	db 43, CONFUSE_RAY
-	db 49, FIRE_BLAST
+	db 7, SCRATCH
+	db 13, SMOKESCREEN
+	db 19, PECK
+	db 25, FIRE_PUNCH
 	db 0 ; no more level-up moves
 
 MiltankEvosAttacks:

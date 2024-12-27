@@ -165,6 +165,7 @@ These evolutions now happen by item effect (select and use the item from menu):
 - Porygon -> Porygon2: *Up-Grade*
 - Togepi -> Togetic: *Sun Stone* -or- *Moon Stone*
 - Elekid -> Electabuzz: *Thunderstone*
+- Magby -> Magmar: *Fire Stone*
 
 All evolution items are available for purchase at the [Mahogany Mart](#mahogany-mart) after Mahogany Gym has been cleared.
 
