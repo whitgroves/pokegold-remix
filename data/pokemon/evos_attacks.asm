@@ -1144,12 +1144,11 @@ FarfetchDEvosAttacks:
 	db 7, VINE_WHIP
 	db 13, FALSE_SWIPE
 	db 19, CUT
-	db 21, REVERSAL
-	db 25, SWORDS_DANCE
-	db 31, AGILITY
-	db 37, SLASH
+	db 21, SWORDS_DANCE
+	db 25, RAZOR_LEAF
+	db 31, SLASH
+	db 37, RAZOR_WIND
 	db 42, CROSS_CHOP
-	db 46, RAZOR_WIND
 	db 0 ; no more level-up moves
 
 DoduoEvosAttacks:
