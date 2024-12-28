@@ -310,7 +310,7 @@ Weathers cause new interactions in addition to their old ones (e.g., Rain boosti
 #### Sand
 - *Rock*, *Ground*, and *Dark* moves are more effective
 - *Grass*, *Flying*, and *Electric* moves are less effective
-- *Dragon* Pokemon are immune to Sandstorm
+- *Ghost* and *Dragon* Pokemon are immune to Sandstorm
 - *Solarbeam* behaves as if under Rain
 - *Thunder* behaves as if under Sun
 

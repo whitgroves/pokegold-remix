@@ -1668,13 +1668,15 @@ HandleWeather:
 	and a
 	jr z, .ok
 	ld hl, wEnemyMonType1
-.ok
+.ok ; TODO -- create an immune to sandstorm table and use IsInArray instead
 	ld a, [hli]
 	cp ROCK
 	ret z
 	cp GROUND
 	ret z
 	cp STEEL
+	ret z
+	cp GHOST
 	ret z
 	cp DRAGON
 	ret z
@@ -1685,6 +1687,8 @@ HandleWeather:
 	cp GROUND
 	ret z
 	cp STEEL
+	ret z
+	cp GHOST
 	ret z
 	cp DRAGON
 	ret z

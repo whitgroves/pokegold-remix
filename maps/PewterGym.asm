@@ -74,8 +74,8 @@ PewterGymStatue:
 	jumpstd GymStatue2Script
 
 BrockIntroText:
-	text "BROCK: Wow, it's"
-	line "not often that we"
+	text "Wow, it's not"
+	line "often that we"
 
 	para "get a challenger"
 	line "from JOHTO."
@@ -86,23 +86,20 @@ BrockIntroText:
 	para "I'm an expert on"
 	line "rock-type #MON."
 
-	para "My #MON are im-"
-	line "pervious to most"
+	para "My rock #MON can"
+	line "weather any storm."
 
-	para "physical attacks."
-	line "You'll have a hard"
-
-	para "time inflicting"
-	line "any damage."
+	para "Will your team be"
+	line "able to wear them"
+	cont "down?"
 
 	para "Come on!"
 	done
 
 BrockWinLossText:
-	text "BROCK: Your #-"
-	line "MON's powerful at-"
-	cont "tacks overcame my"
-	cont "rock-hard defense…"
+	text "Your #MON's"
+	line "endurance overcame"
+	cont "my team's defense…"
 
 	para "You're stronger"
 	line "than I expected…"
@@ -117,12 +114,11 @@ ReceivedBoulderBadgeText:
 	done
 
 BrockBoulderBadgeText:
-	text "BROCK: <PLAYER>,"
-	line "thanks. I enjoyed"
+	text "Thanks, <PLAYER>."
+	line "I enjoyed battling"
 
-	para "battling you, even"
-	line "though I am a bit"
-	cont "upset."
+	para "you, even though"
+	line "I'm a bit upset."
 
 	para "That BOULDERBADGE"
 	line "will make your"
@@ -132,16 +128,15 @@ BrockBoulderBadgeText:
 	done
 
 BrockFightDoneText:
-	text "BROCK: The world"
-	line "is huge. There are"
+	text "The world is huge."
+	line "In it there are"
 
 	para "still many strong"
 	line "trainers like you."
 
 	para "Just wait and see."
 	line "I'm going to be-"
-	cont "come a lot strong-"
-	cont "er too."
+	cont "come stronger too."
 	done
 
 CamperJerrySeenText:
@@ -149,19 +144,19 @@ CamperJerrySeenText:
 	line "this GYM use rock-"
 	cont "type #MON."
 
-	para "The rock-type has"
-	line "high DEFENSE."
+	para "That includes"
+	line "#MON that became"
 
-	para "Battles could end"
-	line "up going a long"
+	para "the rock-type when"
+	line "they were revived"
 
-	para "time. Are you"
-	line "ready for this?"
+	para "from fossils."
+	line "Are you ready?"
 	done
 
 CamperJerryBeatenText:
-	text "I have to win"
-	line "these battles…"
+	text "Fossil #MON"
+	line "weren't enough…"
 	done
 
 CamperJerryAfterBattleText:

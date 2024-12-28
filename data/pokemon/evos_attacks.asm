@@ -1940,7 +1940,7 @@ KabutoEvosAttacks:
 	db 1, HARDEN
 	db 10, ABSORB
 	db 19, LEER
-	db 28, SAND_ATTACK
+	db 28, CUT
 	db 37, ENDURE
 	db 46, MEGA_DRAIN
 	db 55, ANCIENTPOWER
@@ -1952,7 +1952,7 @@ KabutopsEvosAttacks:
 	db 1, HARDEN
 	db 10, ABSORB
 	db 19, LEER
-	db 28, SAND_ATTACK
+	db 28, CUT
 	db 37, ENDURE
 	db 40, SLASH
 	db 51, MEGA_DRAIN
