@@ -1468,11 +1468,10 @@ MarowakEvosAttacks:
 
 HitmonleeEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, DOUBLE_KICK
-	db 6, MEDITATE
-	db 11, ROLLING_KICK
+	db 1, LOW_KICK
+	db 7, MEDITATE
+	db 11, DOUBLE_KICK
 	db 16, JUMP_KICK
-	db 21, FOCUS_ENERGY
 	db 26, HI_JUMP_KICK
 	db 31, MIND_READER
 	db 36, FORESIGHT
@@ -1484,7 +1483,7 @@ HitmonleeEvosAttacks:
 HitmonchanEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, COMET_PUNCH
-	db 7, DETECT
+	db 7, FOCUS_ENERGY
 	db 13, MACH_PUNCH
 	db 26, THUNDERPUNCH
 	db 26, ICE_PUNCH
@@ -3267,20 +3266,23 @@ TyrogueEvosAttacks:
 	db EVOLVE_STAT, 20, ATK_EQ_DEF, HITMONTOP
 	db 0 ; no more evolutions
 	db 1, TACKLE
+	db 7, DETECT
+	db 11, DOUBLE_KICK
+	db 13, MACH_PUNCH
+	db 19, BATON_PASS
 	db 0 ; no more level-up moves
 
 HitmontopEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, ROLLING_KICK
-	db 7, FOCUS_ENERGY
-	db 13, PURSUIT
-	db 20, ROLLING_KICK
+	db 7, DETECT
+	db 11, RAPID_SPIN
 	db 22, DOUBLE_KICK
-	db 25, RAPID_SPIN
+	db 25, DIG
 	db 31, COUNTER
 	db 33, TRIPLE_KICK
 	db 37, AGILITY
-	db 43, DETECT
+	db 43, MEGA_KICK
 	db 49, DOUBLE_TEAM
 	db 0 ; no more level-up moves
 

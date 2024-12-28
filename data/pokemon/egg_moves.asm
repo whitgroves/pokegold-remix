@@ -804,10 +804,11 @@ StantlerEggMoves:
 	db -1 ; end
 
 TyrogueEggMoves:
-	db RAPID_SPIN
-	db HI_JUMP_KICK
-	db MACH_PUNCH
-	db MIND_READER
+	db COMET_PUNCH
+	db LOW_KICK
+	db ROLLING_KICK
+	db KARATE_CHOP
+	db VITAL_THROW
 	db -1 ; end
 
 SmoochumEggMoves:
