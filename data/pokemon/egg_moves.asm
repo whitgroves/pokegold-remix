@@ -238,9 +238,7 @@ FarfetchDEggMoves:
 	db STEEL_WING
 	db FORESIGHT
 	db MIRROR_MOVE
-	db GUST
-	db QUICK_ATTACK
-	db FLAIL
+	db AGILITY
 	db -1 ; end
 
 DoduoEggMoves:

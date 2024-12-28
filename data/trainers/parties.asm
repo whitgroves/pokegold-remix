@@ -623,13 +623,14 @@ BirdKeeperGroup:
 
 	; BIRD_KEEPER (15)
 	db "PERRY@", TRAINERTYPE_NORMAL
-	db 34, FARFETCH_D
+	db 34, FEAROW
+	db 38, DODRIO
 	db -1 ; end
 
 	; BIRD_KEEPER (16)
 	db "BRET@", TRAINERTYPE_NORMAL
 	db 32, PIDGEOTTO
-	db 32, FEAROW
+	db 36, PIDGEOT
 	db -1 ; end
 
 	; BIRD_KEEPER (17)
@@ -2280,10 +2281,10 @@ HikerGroup:
 
 	; HIKER (16)
 	db "KENNY@", TRAINERTYPE_NORMAL
-	db 27, SANDSLASH
+	db 27, MAGNEMITE
 	db 29, GRAVELER
 	db 31, GOLEM
-	db 29, GRAVELER
+	db 29, SANDSLASH
 	db -1 ; end
 
 	; HIKER (17)
@@ -3050,12 +3051,12 @@ PokefanMGroup:
 
 	; POKEFANM (4)
 	db "JOSHUA@", TRAINERTYPE_ITEM
-	db 23, PIKACHU,    BERRY
-	db 23, PIKACHU,    BERRY
-	db 23, PIKACHU,    BERRY
-	db 23, PIKACHU,    BERRY
-	db 23, PIKACHU,    BERRY
-	db 23, PIKACHU,    BERRY
+	db 11, PIKACHU,    BERRY
+	db 15, PIKACHU,    BERRY
+	db 20, PIKACHU,    BERRY
+	db 26, PIKACHU,    BERRY
+	db 33, PIKACHU,    BERRY
+	db 41, PIKACHU,    BERRY
 	db -1 ; end
 
 	; POKEFANM (5)
@@ -3102,9 +3103,12 @@ PokefanMGroup:
 
 	; POKEFANM (12)
 	db "ALEX@", TRAINERTYPE_ITEM
-	db 29, NIDOKING,   BERRY
-	db 29, SLOWKING,   BERRY
-	db 29, SEAKING,    BERRY
+	db 28, KINGLER,    BERRY
+	db 32, KINGDRA,    BERRY
+	db 33, SEAKING,    BERRY
+	db 34, SLOWKING,   BERRY
+	db 36, NIDOQUEEN,  BERRY
+	db 36, NIDOKING,   BERRY
 	db -1 ; end
 
 KimonoGirlGroup:

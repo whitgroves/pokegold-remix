@@ -94,7 +94,7 @@ PokefanmAlexAfterBattleText:
 	done
 
 PokefanmJoshuaSeenText:
-	text "Nihihi! Would you"
+	text "CHUU! Would you"
 	line "like to battle my"
 	cont "PIKACHU gang?"
 	done
@@ -147,16 +147,6 @@ BirdKeeperBretAfterBattleText:
 	done
 
 HikerKennySeenText:
-	text "I should go to"
-	line "ROCK TUNNEL to get"
-	cont "myself an ONIX."
-	done
-
-HikerKennyBeatenText:
-	text "I lost…"
-	done
-
-HikerKennyAfterBattleText:
 	text "Geological fea-"
 	line "tures don't appear"
 	cont "to change."
@@ -164,6 +154,19 @@ HikerKennyAfterBattleText:
 	para "But they actually"
 	line "change, little by"
 	cont "little."
+	done
+
+HikerKennyBeatenText:
+	text "I lost… That's"
+	line "a big change!"
+	done
+
+HikerKennyAfterBattleText:
+	text "I should go back"
+	line "to ROCK TUNNEL"
+
+	para "and get myself"
+	line "an ONIX."
 	done
 
 Route13TrainerTipsText:
