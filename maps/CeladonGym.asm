@@ -111,7 +111,7 @@ CeladonGymStatue:
 	jumpstd GymStatue2Script
 
 ErikaBeforeBattleText:
-	text "ERIKA: Hello…"
+	text "Hello…"
 	line "Lovely weather,"
 
 	para "isn't it?"
@@ -139,7 +139,7 @@ ErikaBeforeBattleText:
 	done
 
 ErikaBeatenText:
-	text "ERIKA: Oh!"
+	text "Oh!"
 	line "I concede defeat…"
 
 	para "You are remarkably"
@@ -155,7 +155,7 @@ PlayerReceivedRainbowBadgeText:
 	done
 
 ErikaExplainTMText:
-	text "ERIKA: That was a"
+	text "That was a very"
 	line "delightful match."
 
 	para "I felt inspired."
@@ -176,9 +176,8 @@ ErikaExplainTMText:
 	done
 
 ErikaAfterBattleText:
-	text "ERIKA: Losing"
-	line "leaves a bitter"
-	cont "aftertaste…"
+	text "Losing leaves"
+	line "a bitter flavor…"
 
 	para "But knowing that"
 	line "there are strong"
@@ -209,8 +208,7 @@ LassMichelleAfterBattleText:
 
 PicnickerTanyaSeenText:
 	text "Oh, a battle?"
-	line "That's kind of"
-	cont "scary, but OK!"
+	line "Sure, OK!"
 	done
 
 PicnickerTanyaBeatenText:

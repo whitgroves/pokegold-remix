@@ -111,6 +111,7 @@ OddishEggMoves:
 	db MORNING_SUN
 	db MOONLIGHT
 	db PETAL_DANCE
+	db BATON_PASS
 	db -1 ; end
 
 ParasEggMoves:
@@ -201,6 +202,7 @@ BellsproutEggMoves:
 	db SLEEP_POWDER
 	db STUN_SPORE
 	db LEECH_LIFE
+	db BATON_PASS
 	db -1 ; end
 
 TentacoolEggMoves:
@@ -353,11 +355,10 @@ ChanseyEggMoves:
 	db -1 ; end
 
 TangelaEggMoves:
-	db FLAIL
 	db CONFUSION
-	db MEGA_DRAIN
-	db REFLECT
 	db AMNESIA
+	db BATON_PASS
+	db MOONLIGHT
 	db -1 ; end
 
 KangaskhanEggMoves:

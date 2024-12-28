@@ -599,10 +599,10 @@ VileplumeEvosAttacks:
 	db 14, POISONPOWDER
 	db 16, STUN_SPORE
 	db 18, SLEEP_POWDER
-	db 24, MEGA_DRAIN
-	db 29, BEAT_UP
+	db 24, PETAL_DANCE
+	db 29, GIGA_DRAIN
 	db 35, MOONLIGHT
-	db 44, TOXIC
+	db 44, BEAT_UP
 	db 0 ; no more level-up moves
 
 ParasEvosAttacks:
@@ -2642,9 +2642,9 @@ SunkernEvosAttacks:
 	db 4, GROWTH
 	db 10, MEGA_DRAIN
 	db 19, SUNNY_DAY
-	db 24, CHARM
+	db 24, LEECH_SEED
 	db 31, SYNTHESIS
-	db 38, LEECH_SEED
+	db 38, BATON_PASS
 	db 46, GIGA_DRAIN
 	db 0 ; no more level-up moves
 
@@ -2656,7 +2656,7 @@ SunfloraEvosAttacks:
 	db 19, SUNNY_DAY
 	db 24, SOLARBEAM
 	db 31, MORNING_SUN
-	db 38, FLAMETHROWER
+	db 38, BATON_PASS
 	db 46, PETAL_DANCE
 	db 0 ; no more level-up moves
 
