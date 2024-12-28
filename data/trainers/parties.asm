@@ -428,10 +428,10 @@ SchoolboyGroup:
 
 	; SCHOOLBOY (2)
 	db "KIPP@", TRAINERTYPE_NORMAL
-	db 27, VOLTORB
-	db 27, MAGNEMITE
-	db 31, VOLTORB
-	db 31, MAGNETON
+	db 27, CUBONE
+	db 27, RATICATE
+	db 31, NIDORINO
+	db 31, MAROWAK
 	db -1 ; end
 
 	; SCHOOLBOY (3)
@@ -441,9 +441,9 @@ SchoolboyGroup:
 
 	; SCHOOLBOY (4)
 	db "JOHNNY@", TRAINERTYPE_NORMAL
-	db 29, BELLSPROUT
-	db 31, WEEPINBELL
-	db 33, VICTREEBEL
+	db 30, EEVEE
+	db 31, RATICATE
+	db 35, BEEDRILL
 	db -1 ; end
 
 	; SCHOOLBOY (5)
@@ -455,8 +455,8 @@ SchoolboyGroup:
 
 	; SCHOOLBOY (6)
 	db "TOMMY@", TRAINERTYPE_NORMAL
-	db 32, XATU
-	db 34, ALAKAZAM
+	db 32, MR__MIME
+	db 34, KADABRA
 	db -1 ; end
 
 	; SCHOOLBOY (7)
@@ -471,10 +471,10 @@ SchoolboyGroup:
 
 	; SCHOOLBOY (9)
 	db "BILLY@", TRAINERTYPE_NORMAL
-	db 27, PARAS
-	db 27, PARAS
-	db 27, POLIWHIRL
-	db 35, DITTO
+	db 27, MANKEY
+	db 27, GROWLITHE
+	db 27, FARFETCH_D
+	db 35, POLIWHIRL
 	db -1 ; end
 
 	; SCHOOLBOY (10)
@@ -1426,13 +1426,18 @@ SkierGroup:
 TeacherGroup:
 	; TEACHER (1)
 	db "COLETTE@", TRAINERTYPE_NORMAL
-	db 36, CLEFAIRY
+	db 35, CLEFAIRY
+	db 36, ESPEON
+	db 37, SLOWBRO
+	db 38, RATICATE
 	db -1 ; end
 
 	; TEACHER (2)
 	db "HILLARY@", TRAINERTYPE_NORMAL
-	db 32, AIPOM
-	db 36, CUBONE
+	db 35, BELLOSSOM
+	db 36, ARCANINE
+	db 37, FARFETCH_D
+	db 38, NIDOQUEEN
 	db -1 ; end
 
 	; TEACHER (3)
