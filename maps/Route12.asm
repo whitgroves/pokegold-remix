@@ -124,13 +124,11 @@ FisherBarneyAfterBattleText:
 	line "our daily lives."
 
 	para "If it weren't,"
-	line "people wouldn't"
-
-	para "have made such a"
-	line "fuss when the"
-
-	para "POWER PLANT went"
-	line "out of commission."
+	line "we couldn't do"
+	
+	para "things like take"
+	line "the MAGNET TRAIN"
+	cont "over to JOHTO."
 	done
 
 FisherKyleSeenText:
