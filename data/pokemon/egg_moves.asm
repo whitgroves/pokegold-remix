@@ -387,7 +387,9 @@ GoldeenEggMoves:
 StaryuEggMoves:
 	db AURORA_BEAM
 	db BARRIER
-	db SUPERSONIC
+	db REFLECT
+	db LIGHT_SCREEN
+	db CONFUSION
 	db -1
 
 MrMimeEggMoves:

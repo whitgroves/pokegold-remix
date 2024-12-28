@@ -1659,24 +1659,27 @@ StaryuEvosAttacks:
 	db EVOLVE_ITEM, WATER_STONE, STARMIE
 	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 1, HARDEN
 	db 7, WATER_GUN
 	db 13, RAPID_SPIN
 	db 19, RECOVER
 	db 25, SWIFT
 	db 31, BUBBLEBEAM
 	db 37, MINIMIZE
-	db 43, LIGHT_SCREEN
+	db 43, AMNESIA
 	db 50, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
 StarmieEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 1, RAPID_SPIN
-	db 1, RECOVER
-	db 1, BUBBLEBEAM
-	db 37, CONFUSE_RAY
+	db 7, WATER_GUN
+	db 13, RAPID_SPIN
+	db 19, RECOVER
+	db 25, BUBBLEBEAM
+	db 31, PSYBEAM
+	db 37, REFLECT
+	db 43, LIGHT_SCREEN
+	db 50, PSYCHIC_M
 	db 0 ; no more level-up moves
 
 MrMimeEvosAttacks:
