@@ -415,8 +415,11 @@ YoungsterGroup:
 
 	; YOUNGSTER (12)
 	db "JASON@", TRAINERTYPE_NORMAL
-	db 33, SANDSLASH
-	db 33, CROBAT
+	db 19, SPEAROW
+	db 22, EKANS
+	db 25, PIDGEOTTO
+	db 31, RATICATE
+	db 33, PONYTA
 	db -1 ; end
 
 SchoolboyGroup:
@@ -2595,14 +2598,14 @@ PsychicGroup:
 
 	; PSYCHIC_T (3)
 	db "HERMAN@", TRAINERTYPE_NORMAL
-	db 30, EXEGGCUTE
-	db 30, EXEGGCUTE
-	db 30, EXEGGUTOR
+	db 30, PSYDUCK
+	db 30, SLOWPOKE
+	db 30, MR__MIME
 	db -1 ; end
 
 	; PSYCHIC_T (4)
 	db "FIDEL@", TRAINERTYPE_NORMAL
-	db 34, XATU
+	db 34, ALAKAZAM
 	db -1 ; end
 
 	; PSYCHIC_T (5)
