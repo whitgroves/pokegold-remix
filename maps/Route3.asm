@@ -62,14 +62,16 @@ FirebreatherOtisSeenText:
 	done
 
 FirebreatherOtisBeatenText:
-	text "It's sunny, but"
-	line "I'm all wet…"
+	text "You rained on my"
+	line "parade!"
 	done
 
 FirebreatherOtisAfterBattleText:
-	text "When it rains,"
-	line "it's hard to get"
-	cont "ignition…"
+	text "It's sunny, but"
+	line "I'm soaked…"
+
+	para "Deodorant?"
+	line "That's flammable!"
 	done
 
 YoungsterWarrenSeenText:

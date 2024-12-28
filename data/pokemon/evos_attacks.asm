@@ -550,8 +550,8 @@ ZubatEvosAttacks:
 	db 12, BITE
 	db 19, CONFUSE_RAY
 	db 27, WING_ATTACK
-	db 36, SUPER_FANG
-	db 46, HYPER_FANG
+	db 36, HYPER_FANG
+	db 46, SUPER_FANG
 	db 0 ; no more level-up moves
 
 GolbatEvosAttacks:
@@ -563,8 +563,8 @@ GolbatEvosAttacks:
 	db 12, BITE
 	db 19, CONFUSE_RAY
 	db 30, WING_ATTACK
-	db 42, SUPER_FANG
-	db 55, HYPER_FANG
+	db 42, HYPER_FANG
+	db 55, SUPER_FANG
 	db 0 ; no more level-up moves
 
 OddishEvosAttacks:
@@ -2189,7 +2189,7 @@ TotodileEvosAttacks:
 	db 20, BITE
 	db 27, SCARY_FACE
 	db 35, SLASH
-	db 43, SCREECH
+	db 43, CRUNCH
 	db 52, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
@@ -2203,7 +2203,7 @@ CroconawEvosAttacks:
 	db 21, BITE
 	db 28, SCARY_FACE
 	db 37, SLASH
-	db 45, SCREECH
+	db 45, CRUNCH
 	db 55, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
@@ -2216,7 +2216,7 @@ FeraligatrEvosAttacks:
 	db 21, BITE
 	db 28, SCARY_FACE
 	db 38, SLASH
-	db 47, SCREECH
+	db 47, CRUNCH
 	db 58, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
@@ -2336,8 +2336,8 @@ CrobatEvosAttacks:
 	db 12, BITE
 	db 19, CONFUSE_RAY
 	db 30, WING_ATTACK
-	db 42, SUPER_FANG
-	db 48, HYPER_FANG
+	db 42, HYPER_FANG
+	db 48, SUPER_FANG
 	db 56, RAZOR_WIND
 	db 61, EXTREMESPEED
 	db 0 ; no more level-up moves

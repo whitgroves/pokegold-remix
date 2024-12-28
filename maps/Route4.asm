@@ -63,7 +63,7 @@ BirdKeeperHankBeatenText:
 	done
 
 BirdKeeperHankAfterBattleText:
-	text "I might go to the"
+	text "I might go see the"
 	line "POWER PLANT. Is it"
 	cont "near ROCK TUNNEL?"
 	done
@@ -77,8 +77,7 @@ PicnickerHopeSeenText:
 	done
 
 PicnickerHopeBeatenText:
-	text "Aww, you are too"
-	line "strong."
+	text "Aww shucks!"
 	done
 
 PicnickerHopeAfterBattleText:
