@@ -554,8 +554,8 @@ BirdKeeperGroup:
 	db "THEO@", TRAINERTYPE_NORMAL
 	db 15, PIDGEY
 	db 15, SPEAROW
-	db 17, MURKROW
 	db 15, DELIBIRD
+	db 18, PIDGEOTTO
 	db 19, DODUO
 	db -1 ; end
 
@@ -587,8 +587,8 @@ BirdKeeperGroup:
 
 	; BIRD_KEEPER (9)
 	db "ROY@", TRAINERTYPE_NORMAL
-	db 29, FEAROW
-	db 35, FEAROW
+	db 29, DODUO
+	db 35, GOLDUCK
 	db -1 ; end
 
 	; BIRD_KEEPER (10)
@@ -3060,14 +3060,15 @@ PokefanMGroup:
 
 	; POKEFANM (5)
 	db "CARTER@", TRAINERTYPE_ITEM
-	db 29, BULBASAUR,  BERRY
-	db 29, CHARMANDER, BERRY
-	db 29, SQUIRTLE,   BERRY
+	db 29, QUILAVA,    BERRY
+	db 29, CROCONAW,   BERRY
+	db 29, BAYLEEF,    BERRY
 	db -1 ; end
 
 	; POKEFANM (6)
 	db "TREVOR@", TRAINERTYPE_ITEM
-	db 33, PSYDUCK,    BERRY
+	db 33, SCYTHER,    BERRY
+	db 33, SCIZOR,     BERRY
 	db -1 ; end
 
 	; POKEFANM (7)

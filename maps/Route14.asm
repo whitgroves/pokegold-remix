@@ -63,8 +63,8 @@ PokefanmCarterBeatenText:
 	done
 
 PokefanmCarterAfterBattleText:
-	text "SQUIRTLE, CHARMAN-"
-	line "DER and BULBASAUR…"
+	text "QUILAVA, CROCONAW,"
+	line "and BAYLEEF…"
 
 	para "I think that's a"
 	line "well-balanced mix."
@@ -100,11 +100,15 @@ PokefanmTrevorBeatenText:
 	done
 
 PokefanmTrevorAfterBattleText:
-	text "If you have KANTO"
-	line "BADGES, they'll"
+	text "I heard that KANTO"
+	line "BADGES raise the"
 
-	para "help you in linked"
-	line "battles."
+	para "effectiveness of"
+	line "certain types."
+
+	para "I wonder if JOHTO"
+	line "BADGES do the same"
+	cont "thing?"
 	done
 
 Route14_MapEvents:
