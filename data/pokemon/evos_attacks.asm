@@ -407,19 +407,21 @@ NidorinaEvosAttacks:
 	db 8, SCRATCH
 	db 12, DOUBLE_KICK
 	db 19, TWINEEDLE
-	db 27, FURY_SWIPES
+	db 27, SEISMIC_TOSS
 	db 36, BITE
 	db 46, SLASH
 	db 0 ; no more level-up moves
 
 NidoqueenEvosAttacks:
 	db 0 ; no more evolutions
+	db 1, GROWL
 	db 1, TACKLE
-	db 1, SCRATCH
-	db 1, DOUBLE_KICK
-	db 1, TAIL_WHIP
-	db 23, BODY_SLAM
-	db 28, ROAR
+	db 8, SCRATCH
+	db 12, DOUBLE_KICK
+	db 19, DRAGON_RAGE
+	db 27, SEISMIC_TOSS
+	db 36, OUTRAGE
+	db 46, SUBMISSION
 	db 0 ; no more level-up moves
 
 NidoranMEvosAttacks:
@@ -431,7 +433,7 @@ NidoranMEvosAttacks:
 	db 12, DOUBLE_KICK
 	db 17, STOMP
 	db 23, TWINEEDLE
-	db 30, SUBMISSION
+	db 30, TAKE_DOWN
 	db 38, HORN_DRILL
 	db 0 ; no more level-up moves
 
@@ -451,12 +453,14 @@ NidorinoEvosAttacks:
 
 NidokingEvosAttacks:
 	db 0 ; no more evolutions
+	db 1, LEER
 	db 1, TACKLE
-	db 1, HORN_ATTACK
-	db 1, DOUBLE_KICK
-	db 1, POISON_STING
-	db 23, THRASH
-	db 30, ROAR
+	db 8, HORN_ATTACK
+	db 12, DOUBLE_KICK
+	db 19, DRAGON_RAGE
+	db 27, TWINEEDLE
+	db 36, OUTRAGE
+	db 46, HORN_DRILL
 	db 0 ; no more level-up moves
 
 ClefairyEvosAttacks:
@@ -2407,7 +2411,6 @@ TogepiEvosAttacks:
 	db 18, PSYCH_UP
 	db 25, ENCORE
 	db 31, SAFEGUARD
-	db 38, DOUBLE_EDGE
 	db 0 ; no more level-up moves
 
 TogeticEvosAttacks:
@@ -2418,7 +2421,7 @@ TogeticEvosAttacks:
 	db 18, PSYCH_UP
 	db 25, ENCORE
 	db 31, SAFEGUARD
-	db 38, DOUBLE_EDGE
+	db 38, BATON_PASS
 	db 0 ; no more level-up moves
 
 NatuEvosAttacks:

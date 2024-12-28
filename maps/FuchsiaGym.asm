@@ -236,8 +236,8 @@ Movement_NinjaSpin:
 JanineText_DisappointYou:
 	text "Fufufufu…"
 
-	para "I'm sorry to dis-"
-	line "appoint you…"
+	para "I'm sorry to"
+	line "disappoint you…"
 
 	para "I'm only joking!"
 
@@ -248,9 +248,8 @@ JanineText_DisappointYou:
 	done
 
 JanineText_ToughOne:
-	text "JANINE: You're a"
-	line "tough one. You"
-	cont "definitely won…"
+	text "You're tough. You"
+	line "definitely won…"
 
 	para "Here's SOULBADGE."
 	line "Take it."
@@ -262,8 +261,8 @@ Text_ReceivedSoulBadge:
 	done
 
 JanineText_ToxicSpeech:
-	text "JANINE: You're so"
-	line "tough! I have a"
+	text "Since you're so"
+	line "tough, I have a"
 	cont "special gift!"
 
 	para "It's TOXIC, a pow-"
@@ -274,11 +273,9 @@ JanineText_ToxicSpeech:
 	done
 
 JanineText_ApplyMyself:
-	text "JANINE: I'm going"
-	line "to really apply"
-
-	para "myself and improve"
-	line "my skills."
+	text "I'm going to apply"
+	line "myself and improve"
+	cont "my skills."
 
 	para "I want to become"
 	line "better than both"
