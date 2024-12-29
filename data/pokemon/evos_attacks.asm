@@ -816,7 +816,7 @@ PoliwagEvosAttacks:
 	db 13, WATER_GUN
 	db 17, MUD_SLAP
 	db 19, DOUBLESLAP
-	db 25, RAIN_DANCE
+	db 26, RAIN_DANCE
 	db 31, BODY_SLAM
 	db 37, BELLY_DRUM
 	db 43, HYDRO_PUMP
@@ -1055,7 +1055,7 @@ PonytaEvosAttacks:
 	db 26, FLAME_WHEEL
 	db 34, TAKE_DOWN
 	db 43, AGILITY
-	db 53, FIRE_BLAST
+	db 53, BATON_PASS
 	db 0 ; no more level-up moves
 
 RapidashEvosAttacks:
@@ -1067,9 +1067,9 @@ RapidashEvosAttacks:
 	db 19, STOMP
 	db 26, FLAME_WHEEL
 	db 34, TAKE_DOWN
-	db 40, FURY_ATTACK
+	db 40, HORN_ATTACK
 	db 47, AGILITY
-	db 61, FIRE_BLAST
+	db 61, BATON_PASS
 	db 0 ; no more level-up moves
 
 SlowpokeEvosAttacks:
@@ -3027,7 +3027,7 @@ SlugmaEvosAttacks:
 	db 29, AMNESIA
 	db 36, FLAMETHROWER
 	db 43, ROCK_SLIDE
-	db 50, BODY_SLAM
+	db 50, ACID_ARMOR
 	db 0 ; no more level-up moves
 
 MagcargoEvosAttacks:
@@ -3039,7 +3039,7 @@ MagcargoEvosAttacks:
 	db 29, AMNESIA
 	db 36, FLAMETHROWER
 	db 48, ROCK_SLIDE
-	db 60, BODY_SLAM
+	db 60, ACID_ARMOR
 	db 0 ; no more level-up moves
 
 SwinubEvosAttacks:

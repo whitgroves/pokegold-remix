@@ -51,7 +51,11 @@ SwimmermSethBeatenText:
 	done
 
 SwimmermSethAfterBattleText:
-	text "This arrogant guy"
+	text "We're here sight-"
+	line "seeing from JOHTO,"
+	cont "but…"
+
+	para "Some arrogant guy"
 	line "was at CINNABAR's"
 	cont "volcano."
 	done
@@ -73,6 +77,9 @@ SwimmerfNikkiAfterBattleText:
 	text "I have to watch"
 	line "out for blemishes"
 	cont "caused by the sun."
+
+	para "Otherwise it would"
+	line "ruin my vacation!"
 	done
 
 FisherArnoldSeenText:

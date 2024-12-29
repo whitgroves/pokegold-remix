@@ -61,7 +61,7 @@ SeafoamGymGuideScript:
 	end
 
 BlaineIntroText:
-	text "BLAINE: Waaah!"
+	text "Waaah!"
 
 	para "My GYM in CINNABAR"
 	line "burned down."
@@ -84,12 +84,15 @@ BlaineIntroText:
 	line "me, I'll give you"
 	cont "a BADGE."
 
-	para "Ha! You'd better"
-	line "have BURN HEAL!"
+	para "You'll need more"
+	line "than a BURN HEAL"
+	cont "for this!"
 	done
 
 BlaineWinLossText:
-	text "BLAINE: Awesome."
+	text "Awesome."
+
+	para "You're ablaze, but"
 	line "I've burned out…"
 
 	para "You've earned"
@@ -102,24 +105,22 @@ ReceivedVolcanoBadgeText:
 	done
 
 BlaineAfterBattleText:
-	text "BLAINE: I did lose"
-	line "this time, but I'm"
-
-	para "going to win the"
-	line "next time."
+	text "I did lose this"
+	line "time, but I always"
+	cont "bounce back."
 
 	para "When I rebuild my"
 	line "CINNABAR GYM,"
 
 	para "we'll have to have"
-	line "a rematch."
+	line "a rematch!"
 	done
 
 BlaineFightDoneText:
-	text "BLAINE: My fire"
-	line "#MON will be"
+	text "My fire #MON"
+	line "will burn"
 
-	para "even stronger."
+	para "even brighter."
 	line "Just you watch!"
 	done
 
