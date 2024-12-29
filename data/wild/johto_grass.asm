@@ -1791,57 +1791,30 @@ JohtoGrassWildMons:
 
 	def_grass_wildmons SILVER_CAVE_OUTSIDE
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
-	IF DEF(_GOLD)
 	; morn
-	db 41, TANGELA
-	db 42, PONYTA
-	db 42, URSARING
-	db 44, RAPIDASH
-	db 41, DODUO
-	db 43, DODRIO
-	db 43, DODRIO
+	db 40, RAPIDASH
+	db 40, DODRIO
+	db 28, BAYLEEF
+	db 28, CROCONAW
+	db 40, GIRAFARIG
+	db 40, AZUMARILL
+	db 28, QUILAVA
 	; day
-	db 41, TANGELA
-	db 42, PONYTA
-	db 42, URSARING
-	db 44, RAPIDASH
-	db 41, DODUO
-	db 43, DODRIO
-	db 43, DODRIO
+	db 40, RHYHORN
+	db 40, FEAROW
+	db 28, QUILAVA
+	db 28, BAYLEEF
+	db 40, RAPIDASH
+	db 35, QUAGSIRE
+	db 28, CROCONAW
 	; nite
-	db 41, TANGELA
-	db 42, PONYTA
-	db 42, URSARING
-	db 44, RAPIDASH
-	db 38, SNEASEL
-	db 42, SNEASEL
-	db 42, SNEASEL
-	ELIF DEF(_SILVER)
-	; morn
-	db 41, TANGELA
-	db 42, PONYTA
-	db 42, DONPHAN
-	db 44, RAPIDASH
-	db 41, DODUO
-	db 43, DODRIO
-	db 43, DODRIO
-	; day
-	db 41, TANGELA
-	db 42, PONYTA
-	db 42, DONPHAN
-	db 44, RAPIDASH
-	db 41, DODUO
-	db 43, DODRIO
-	db 43, DODRIO
-	; nite
-	db 41, TANGELA
-	db 42, PONYTA
-	db 42, DONPHAN
-	db 44, RAPIDASH
-	db 38, SNEASEL
-	db 42, SNEASEL
-	db 42, SNEASEL
-	ENDC
+	db 40, GIRAFARIG
+	db 40, NOCTOWL
+	db 28, CROCONAW
+	db 28, QUILAVA
+	db 40, DODRIO
+	db 35, POLIWHIRL
+	db 28, BAYLEEF
 	end_grass_wildmons
 
 	db -1 ; end

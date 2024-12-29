@@ -177,6 +177,7 @@ Besides evolution, several unique or otherwise unobtainable pokemon are now avai
 - *Ivysaur*, *Charmeleon*, and *Wartortle* are available as 10% encounters along Routes 26, 27, and Victory Road.
 - *Hitmonlee*, *Hitmonchan*, and *Hitmontop* are available as 10% encounters on the bottom floor of Mt. Mortar.
 - *Omanyte* and *Kabuto* are 10% encounters on the lowest floor of the Ice Path (the room with the Nevermeltice).
+- *Bayleef*, *Quilava*, and *Croconaw* are 10-20% encounters along Route 28 and outside Mt. Silver.
 - Additional *Sudowoodo* are a 40% Headbutt encounter on "rare" trees.
 
 ## Move Updates
