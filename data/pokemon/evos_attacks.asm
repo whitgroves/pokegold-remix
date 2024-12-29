@@ -3288,17 +3288,14 @@ HitmontopEvosAttacks:
 
 SmoochumEvosAttacks:
 	db EVOLVE_LEVEL, 30, JYNX
+	db EVOLVE_ITEM, WATER_STONE, JYNX
 	db 0 ; no more evolutions
+	db 1, SPITE
 	db 1, POUND
-	db 1, LICK
-	db 9, SING
+	db 9, DOUBLESLAP
 	db 13, POWDER_SNOW
-	db 21, ICY_WIND
-	db 25, SING
-	db 33, MEAN_LOOK
-	db 37, PSYCHIC_M
-	db 45, PERISH_SONG
-	db 49, BLIZZARD
+	db 18, SWEET_KISS
+	db 25, AURORA_BEAM
 	db 0 ; no more level-up moves
 
 ElekidEvosAttacks:

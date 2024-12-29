@@ -53,6 +53,9 @@ SchoolboyDannyAfterBattleText:
 
 	para "battle whenever we"
 	line "meet."
+
+	para "QUINN taught me"
+	line "that!"
 	done
 
 CooltrainerfQuinnSeenText:

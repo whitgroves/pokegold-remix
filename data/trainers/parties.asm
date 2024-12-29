@@ -454,9 +454,9 @@ SchoolboyGroup:
 
 	; SCHOOLBOY (5)
 	db "DANNY@", TRAINERTYPE_NORMAL
-	db 31, JYNX
-	db 31, ELECTABUZZ
-	db 31, MAGMAR
+	db 29, MAGBY
+	db 29, ELEKID
+	db 29, SMOOCHUM
 	db -1 ; end
 
 	; SCHOOLBOY (6)
@@ -983,8 +983,9 @@ CooltrainerFGroup:
 
 	; COOLTRAINERF (14)
 	db "QUINN@", TRAINERTYPE_NORMAL
-	db 38, IVYSAUR
-	db 38, STARMIE
+	db 38, JYNX
+	db 38, ELECTABUZZ
+	db 38, MAGMAR
 	db -1 ; end
 
 	; COOLTRAINERF (15)
@@ -1476,14 +1477,14 @@ BugCatcherGroup:
 
 	; BUG_CATCHER (2)
 	db "ROB@", TRAINERTYPE_NORMAL
-	db 32, BEEDRILL
 	db 32, BUTTERFREE
+	db 32, VENOMOTH
 	db -1 ; end
 
 	; BUG_CATCHER (3)
 	db "ED@", TRAINERTYPE_NORMAL
-	db 30, BEEDRILL
-	db 30, BEEDRILL
+	db 30, SCYTHER
+	db 30, PINSIR
 	db 30, BEEDRILL
 	db -1 ; end
 
@@ -1545,7 +1546,7 @@ BugCatcherGroup:
 
 	; BUG_CATCHER (12)
 	db "DOUG@", TRAINERTYPE_NORMAL
-	db 34, ARIADOS
+	db 34, PARASECT
 	db -1 ; end
 
 	; BUG_CATCHER (13)
