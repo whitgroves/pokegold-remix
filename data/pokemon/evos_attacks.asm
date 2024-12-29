@@ -2189,7 +2189,7 @@ TotodileEvosAttacks:
 	db 7, RAGE
 	db 13, WATER_GUN
 	db 20, BITE
-	db 27, SCARY_FACE
+	db 27, CLAMP
 	db 35, SLASH
 	db 43, CRUNCH
 	db 52, HYDRO_PUMP
@@ -2203,7 +2203,7 @@ CroconawEvosAttacks:
 	db 7, RAGE
 	db 13, WATER_GUN
 	db 21, BITE
-	db 28, SCARY_FACE
+	db 28, CLAMP
 	db 37, SLASH
 	db 45, CRUNCH
 	db 55, HYDRO_PUMP
@@ -2216,7 +2216,7 @@ FeraligatrEvosAttacks:
 	db 7, RAGE
 	db 13, WATER_GUN
 	db 21, BITE
-	db 28, SCARY_FACE
+	db 28, CLAMP
 	db 38, SLASH
 	db 47, CRUNCH
 	db 58, HYDRO_PUMP

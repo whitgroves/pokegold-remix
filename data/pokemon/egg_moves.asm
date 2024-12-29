@@ -481,12 +481,12 @@ CyndaquilEggMoves:
 	db -1 ; end
 
 TotodileEggMoves:
-	db CRUNCH
+	db GLARE
 	db THRASH
-	db HYDRO_PUMP
-	db ANCIENTPOWER
-	db RAZOR_WIND
-	db ROCK_SLIDE
+	db VICEGRIP
+	db RAPID_SPIN
+	db DRAGON_RAGE
+	db OUTRAGE
 	db -1 ; end
 
 SentretEggMoves:
