@@ -92,9 +92,10 @@ NidoranMEggMoves:
 VulpixEggMoves:
 	db FAINT_ATTACK
 	db HYPNOSIS
-	db FLAIL
 	db SPITE
 	db DISABLE
+	db NIGHT_SHADE
+	db SHADOW_BALL
 	db -1 ; end
 
 ZubatEggMoves:

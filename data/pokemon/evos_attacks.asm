@@ -511,7 +511,7 @@ NinetalesEvosAttacks:
 	db 13, CURSE
 	db 19, CONFUSE_RAY
 	db 25, FIRE_SPIN
-	db 31, SAFEGUARD
+	db 31, FAINT_ATTACK
 	db 37, SHADOW_BALL
 	db 0 ; no more level-up moves
 
