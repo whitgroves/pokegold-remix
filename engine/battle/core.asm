@@ -3894,13 +3894,17 @@ SpikesDamage:
 	bit SCREENS_SPIKES, [hl]
 	ret z
 
-	; Flying-types aren't affected by Spikes.
+	; Flying and Ghost-types aren't affected by Spikes.
 	ld a, [de]
 	cp FLYING
+	ret z
+	cp GHOST
 	ret z
 	inc de
 	ld a, [de]
 	cp FLYING
+	ret z
+	cp GHOST
 	ret z
 
 	push bc

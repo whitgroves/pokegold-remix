@@ -13,6 +13,7 @@ Listed below are the changes that have been implemented so far:
     - [Non-Damaging Moves](#non-damaging-moves)
     - [TMs](#tms)
     - [Weather Interactions](#weather-interactions)
+    - [Other](#other)
 - [Store Updates](#store-updates)
 - [Miscellaneous](#miscellaneous)
 
@@ -152,7 +153,7 @@ These evolutions can now happen by friendship:
 - Haunter -> Gengar (Night)
 - Sunkern -> Sunflora (Day)
 
-In general, all friendship evolutions now happen at a happiness stat of of 217, displayed as a [TRUST](#miscellaneous) level of 85% (vs 220 / ~87% in base).
+In general, all friendship evolutions now happen at a happiness stat of of 217, displayed as a [TRUST](#dvs) level of 85% (vs 220 / ~87% in base).
 
 #### By Item
 These evolutions now happen by item effect (select and use the item from menu):
@@ -189,6 +190,7 @@ Several moves have had their types, effects, or other attributes changed to prov
 - Cut: *Normal* -> *Bug* | *No Effect* -> *High Crit Rate* | *95%* -> *100% Accuracy*
 - Fly: *95%* -> *100% Accuracy*
 - Vine Whip: *35* -> *40 Power* | *10* -> *20 PP* | [*Always Physical*](#always-physical-moves)
+- Stomp: *Normal* -> *Ground*
 - Rolling Kick: *85%* -> *100% Accuracy*
 - Sand Attack: *100%* -> *80% Accuracy*
 - Horn Attack: *Normal* -> *Dragon* | *No Effect* -> *30% Chance To Flinch* | *65* -> *70 Power* | *25* -> *15 PP* | [*Always Physical*](#always-physical-moves)
@@ -197,6 +199,7 @@ Several moves have had their types, effects, or other attributes changed to prov
 - Tackle: *95%* -> *100% Accuracy*
 - Wrap: *Normal* -> *Poison* | *85%* -> *75% Accuracy*
 - Thrash: *Normal* -> *Dark*
+- Double-Edge: *Normal* -> *Steel*
 - Poison Sting: *15* -> *20 Power*
 - Twineedle: *Bug* -> *Poison*
 - Sonicboom: *Normal* -> *Steel* | *Flat Damage* -> *Priority Move* | *20 Damage* -> *40 Power* | *20* -> *30 PP*
@@ -271,6 +274,7 @@ Besides preventing a switch out, trapped pokemon will now have their speed cut a
 These moves ignore STAB but have had their types changed for flavor only; however, this may still impact the AI's choices.
 - Whirlwind: *Normal* -> *Flying*
 - Roar: *Normal* -> *Dragon*
+- Disable: *Normal* -> *Psychic*
 - Growth: *Normal* -> *Grass*
 - Agility: *Psychic* -> *Normal*
 - Recover: *Normal* -> *Psychic*
@@ -281,10 +285,11 @@ These moves ignore STAB but have had their types changed for flavor only; howeve
 - Splash: *Normal* -> *Water*
 - Rest: *Psychic* -> *Normal*
 - Mind Reader: *Normal* -> *Psychic*
+- Spikes: *Ground* -> *Steel*
 - Perish Song: *Normal* -> *Ghost*
 - Lock-On: *Normal* -> *Steel*
 - Swagger: *Normal* -> *Dark*
-- Mean Look: *Normal* -> *Dark*
+- Mean Look: *Normal* -> *Ghost*
 - Pain Split: *Normal* -> *Ghost*
 - Psych Up: *Normal* -> *Psychic*
 
@@ -327,6 +332,10 @@ Weathers cause new interactions in addition to their old ones (e.g., Rain boosti
 - *Solarbeam* behaves as if under Rain
 - *Thunder* behaves as if under Sun
 
+### Other
+- *Fire*-type moves can no longer defrost through *Safeguard*
+- *Ghost*-type pokemon are now immune to *Spikes*
+
 ## Store updates
 Several of the stores have been updated with new items.
 
@@ -358,14 +367,13 @@ The Mahogany Mart carries these items once the Rocket Hideout is cleared and Pry
 - The stats screen shows happiness as percent of 255 (TRUST) and Attack, Defense, Special, and Speed DVs (DNA)
 
 ### Story Progression
+- After receiving the Old and Good Rods, each Fishing Guru will tell the player where to find the next one
+- The trainer in Cianwood now gifts a Delibird instead of Shuckle so the player can always FLY home after beating the gym
 - Each surveillance statue in the Rocket Hideout summons 1 unique battle instead of 2 generic grunts
 - The Radio Tower incident now starts when reaching Blackthorn rather than immediately the 7th badge
 - Consequently, Route 44 and the [Mahogany Mart](#mahogany-mart-post-rocket-hideout) both open immediately after beating Pryce
 - Clair gives the Risingbadge immediately upon defeat, but the player must still get the Dragon Fang to receive TM24
 
 ### Other
-- *Fire*-type moves can no longer defrost through *Safeguard*
-- The trainer in Cianwood now gifts a Delibird instead of Shuckle so the player can always FLY home after beating the gym
-- After receiving the Old and Good Rods, each Fishing Guru will tell the player where to find the next one
 - Since Remoraid are no longer found on Route 44, Sailor Huey (lighthouse) now activates the Remoraid swarm
 trees in cities (Ecruteak) can now spawn wild encounters.

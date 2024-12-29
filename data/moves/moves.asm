@@ -51,7 +51,7 @@ Moves:
 	move WRAP,         EFFECT_TRAP_TARGET,        15, POISON,        85, 20,   0
 	move TAKE_DOWN,    EFFECT_RECOIL_HIT,         90, NORMAL,        85, 20,   0
 	move THRASH,       EFFECT_RAMPAGE,            90, DARK,         100, 20,   0
-	move DOUBLE_EDGE,  EFFECT_RECOIL_HIT,        120, NORMAL,       100, 15,   0
+	move DOUBLE_EDGE,  EFFECT_RECOIL_HIT,        120, STEEL,        100, 15,   0
 	move TAIL_WHIP,    EFFECT_DEFENSE_DOWN,        0, NORMAL,       100, 30,   0
 	move POISON_STING, EFFECT_POISON_HIT,         20, POISON,       100, 35,  30
 	move TWINEEDLE,    EFFECT_POISON_MULTI_HIT,   25, POISON,       100, 20,  20
@@ -63,7 +63,7 @@ Moves:
 	move SING,         EFFECT_SLEEP,               0, NORMAL,        55, 15,   0
 	move SUPERSONIC,   EFFECT_CONFUSE,             0, NORMAL,        55, 20,   0
 	move SONICBOOM,    EFFECT_PRIORITY_HIT,       40, STEEL,        100, 30,   0
-	move DISABLE,      EFFECT_DISABLE,             0, NORMAL,        55, 20,   0
+	move DISABLE,      EFFECT_DISABLE,             0, PSYCHIC_TYPE,  55, 20,   0
 	move ACID,         EFFECT_DEFENSE_DOWN_HIT,   40, POISON,       100, 30,  10
 	move EMBER,        EFFECT_BURN_HIT,           40, FIRE,         100, 25,  10
 	move FLAMETHROWER, EFFECT_BURN_HIT,           95, FIRE,         100, 15,  10
@@ -225,7 +225,7 @@ Moves:
 	move SPARK,        EFFECT_PARALYZE_HIT,       65, ELECTRIC,     100, 20,  30
 	move FURY_CUTTER,  EFFECT_FURY_CUTTER,        10, BUG,           95, 20,   0
 	move STEEL_WING,   EFFECT_DEFENSE_UP_HIT,     70, STEEL,         90, 25,  10
-	move MEAN_LOOK,    EFFECT_MEAN_LOOK,           0, DARK,         100,  5,   0
+	move MEAN_LOOK,    EFFECT_MEAN_LOOK,           0, GHOST,        100,  5,   0
 	move ATTRACT,      EFFECT_ATTRACT,             0, NORMAL,       100, 15,   0
 	move SLEEP_TALK,   EFFECT_SLEEP_TALK,          0, NORMAL,       100, 10,   0
 	move HEAL_BELL,    EFFECT_HEAL_BELL,           0, NORMAL,       100,  5,   0

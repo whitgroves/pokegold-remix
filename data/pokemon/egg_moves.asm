@@ -24,9 +24,8 @@ SquirtleEggMoves:
 	db MIRROR_COAT
 	db HAZE
 	db MIST
-	db CONFUSION
-	db FORESIGHT
-	db FLAIL
+	db SKULL_BASH
+	db DOUBLE_EDGE
 	db -1 ; end
 
 PidgeyEggMoves:
@@ -63,10 +62,11 @@ EkansEggMoves:
 	db -1 ; end
 
 SandshrewEggMoves:
-	db FLAIL
-	db SAFEGUARD
+	db SPIKES
 	db COUNTER
+	db SAFEGUARD
 	db RAPID_SPIN
+	db DOUBLE_EDGE
 	db -1 ; end
 
 NidoranFEggMoves:
@@ -267,11 +267,10 @@ GrimerEggMoves:
 	db -1 ; end
 
 ShellderEggMoves:
-	db BUBBLEBEAM
-	db TAKE_DOWN
+	db CRUNCH
 	db BARRIER
-	db RAPID_SPIN
-	db SCREECH
+	db MIRROR_COAT
+	db LIGHT_SCREEN
 	db -1 ; end
 
 GastlyEggMoves:
@@ -282,9 +281,9 @@ GastlyEggMoves:
 
 OnixEggMoves:
 	db ROAR
-	db IRON_TAIL
 	db CRUNCH
-	db DRAGONBREATH
+	db IRON_TAIL
+	db DOUBLE_EDGE
 	db -1 ; end
 
 DrowzeeEggMoves:
@@ -400,12 +399,10 @@ MrMimeEggMoves:
 	db -1 ; end
 
 ScytherEggMoves:
-	db COUNTER
-	db SAFEGUARD
+	db REVERSAL
 	db BATON_PASS
 	db RAZOR_WIND
-	db REVERSAL
-	db LIGHT_SCREEN
+	db DOUBLE_EDGE
 	db -1 ; end
 
 PinsirEggMoves:
@@ -653,10 +650,10 @@ GirafarigEggMoves:
 	db -1 ; end
 
 PinecoEggMoves:
-	db REFLECT
-	db PIN_MISSILE
-	db FLAIL
-	db SWIFT
+	db SPIKE_CANNON
+	db RAPID_SPIN
+	db TWINEEDLE
+	db BARRIER
 	db -1 ; end
 
 DunsparceEggMoves:
@@ -729,7 +726,7 @@ SlugmaEggMoves:
 	db -1 ; end
 
 SwinubEggMoves:
-	db BITE
+	db STOMP
 	db BODY_SLAM
 	db ROCK_SLIDE
 	db ANCIENTPOWER
@@ -785,7 +782,7 @@ HoundourEggMoves:
 	db -1 ; end
 
 PhanpyEggMoves:
-	db FOCUS_ENERGY
+	db TAKE_DOWN
 	db BODY_SLAM
 	db ANCIENTPOWER
 	db -1 ; end

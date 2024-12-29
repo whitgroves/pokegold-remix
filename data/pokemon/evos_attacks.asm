@@ -152,7 +152,7 @@ BlastoiseEvosAttacks:
 	db 31, PROTECT
 	db 36, SPIKE_CANNON
 	db 42, RAIN_DANCE
-	db 55, SKULL_BASH
+	db 55, DOUBLE_EDGE
 	db 68, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
@@ -369,7 +369,7 @@ SandshrewEvosAttacks:
 	db 23, SLASH
 	db 30, METAL_CLAW
 	db 37, EARTHQUAKE
-	db 45, SANDSTORM
+	db 45, ROLLOUT
 	db 0 ; no more level-up moves
 
 SandslashEvosAttacks:
@@ -382,7 +382,7 @@ SandslashEvosAttacks:
 	db 24, SLASH
 	db 33, METAL_CLAW
 	db 42, EARTHQUAKE
-	db 52, SANDSTORM
+	db 52, ROLLOUT
 	db 0 ; no more level-up moves
 
 NidoranFEvosAttacks:
@@ -1264,8 +1264,8 @@ CloysterEvosAttacks:
 	db 25, SPIKE_CANNON
 	db 33, CLAMP
 	db 41, PROTECT
-	db 47, SPIKES
-	db 52, CRUNCH
+	db 47, CRUNCH
+	db 52, DOUBLE_EDGE
 	db 0 ; no more level-up moves
 
 GastlyEvosAttacks:
@@ -1507,7 +1507,7 @@ LickitungEvosAttacks:
 	db 37, BODY_SLAM
 	db 43, SLUDGE
 	db 46, SCREECH
-	db 52, DOUBLE_EDGE
+	db 52, TAKE_DOWN
 	db 59, SLUDGE_BOMB
 	db 0 ; no more level-up moves
 
@@ -1576,7 +1576,7 @@ ChanseyEvosAttacks:
 	db 29, SING
 	db 35, ENCORE
 	db 41, DEFENSE_CURL
-	db 49, DOUBLE_EDGE
+	db 49, TAKE_DOWN
 	db 0 ; no more level-up moves
 
 TangelaEvosAttacks:
@@ -1786,8 +1786,7 @@ TaurosEvosAttacks:
 	db 43, TAKE_DOWN
 	db 52, SUBMISSION
 	db 61, THRASH
-	db 70, DOUBLE_EDGE
-	db 79, HORN_DRILL
+	db 70, HORN_DRILL
 	db 0 ; no more level-up moves
 
 MagikarpEvosAttacks:
@@ -2286,7 +2285,6 @@ LedybaEvosAttacks:
 	db 29, BATON_PASS
 	db 36, SWIFT
 	db 43, AGILITY
-	db 50, DOUBLE_EDGE
 	db 0 ; no more level-up moves
 
 LedianEvosAttacks:
@@ -2525,7 +2523,7 @@ MarillEvosAttacks:
 	db 10, WATER_GUN
 	db 15, ROLLOUT
 	db 21, BUBBLEBEAM
-	db 28, DOUBLE_EDGE
+	db 28, BODY_SLAM
 	db 36, RAIN_DANCE
 	db 0 ; no more level-up moves
 
@@ -2537,7 +2535,7 @@ AzumarillEvosAttacks:
 	db 10, WATER_GUN
 	db 15, ROLLOUT
 	db 25, BUBBLEBEAM
-	db 36, DOUBLE_EDGE
+	db 36, TAKE_DOWN
 	db 41, ICY_WIND
 	db 48, RAIN_DANCE
 	db 0 ; no more level-up moves
@@ -2825,27 +2823,27 @@ PinecoEvosAttacks:
 	db EVOLVE_LEVEL, 31, FORRETRESS
 	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 1, PROTECT
-	db 8, SELFDESTRUCT
-	db 15, BIDE
-	db 22, RAPID_SPIN
-	db 29, ENDURE
+	db 1, SPIKES
+	db 8, BIDE
+	db 15, SELFDESTRUCT
+	db 22, PIN_MISSILE
+	db 29, PROTECT
 	db 36, EXPLOSION
-	db 43, SPIKES
-	db 50, DOUBLE_EDGE
+	db 43, ENDURE
+	db 50, TAKE_DOWN
 	db 0 ; no more level-up moves
 
 ForretressEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 1, PROTECT
-	db 8, SELFDESTRUCT
-	db 15, BIDE
-	db 22, RAPID_SPIN
-	db 29, ENDURE
+	db 1, SPIKES
+	db 8, BIDE
+	db 15, SELFDESTRUCT
+	db 22, PIN_MISSILE
+	db 29, PROTECT
 	db 31, SPIKE_CANNON
 	db 39, EXPLOSION
-	db 49, SPIKES
+	db 49, ENDURE
 	db 59, DOUBLE_EDGE
 	db 0 ; no more level-up moves
 
@@ -2879,13 +2877,13 @@ SteelixEvosAttacks:
 	db 1, BIND
 	db 1, HARDEN
 	db 10, BIDE
-	db 14, SPIKES
+	db 14, SLAM
 	db 23, DIG
-	db 27, SLAM
+	db 27, IRON_TAIL
 	db 31, SCREECH
 	db 36, CRUNCH
-	db 40, IRON_TAIL
-	db 48, EARTHQUAKE
+	db 40, EARTHQUAKE
+	db 48, DOUBLE_EDGE
 	db 0 ; no more level-up moves
 
 SnubbullEvosAttacks:
@@ -2948,7 +2946,7 @@ ScizorEvosAttacks:
 	db 30, SWORDS_DANCE
 	db 36, AGILITY
 	db 42, CRUNCH
-	db 48, BATON_PASS
+	db 48, DOUBLE_EDGE
 	db 0 ; no more level-up moves
 
 ShuckleEvosAttacks:
@@ -3151,14 +3149,14 @@ SkarmoryEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, PECK
 	db 1, LEER
-	db 13, SAND_ATTACK
+	db 13, SPIKES
 	db 19, SONICBOOM
 	db 25, WING_ATTACK
 	db 31, METAL_CLAW
 	db 37, STEEL_WING
 	db 42, AGILITY
 	db 49, RAZOR_WIND
-	db 53, SPIKES
+	db 53, DOUBLE_EDGE
 	db 0 ; no more level-up moves
 
 HoundourEvosAttacks:
@@ -3203,12 +3201,12 @@ PhanpyEvosAttacks:
 	db 1, TACKLE
 	db 1, GROWL
 	db 9, DEFENSE_CURL
-	db 12, MUD_SLAP
-	db 17, FLAIL
-	db 25, TAKE_DOWN
-	db 33, ROLLOUT
-	db 41, ENDURE
-	db 49, DOUBLE_EDGE
+	db 12, STOMP
+	db 17, SCREECH
+	db 26, ENDURE
+	db 33, BODY_SLAM
+	db 41, EARTHQUAKE
+	db 49, TAKE_DOWN
 	db 0 ; no more level-up moves
 
 DonphanEvosAttacks:
@@ -3216,11 +3214,12 @@ DonphanEvosAttacks:
 	db 1, HORN_ATTACK
 	db 1, GROWL
 	db 9, DEFENSE_CURL
-	db 17, FLAIL
-	db 25, HEADBUTT
+	db 12, STOMP
+	db 17, SCREECH
+	db 25, RAPID_SPIN
 	db 33, ROLLOUT
 	db 38, ROAR
-	db 41, RAPID_SPIN
+	db 41, SUBMISSION
 	db 49, EARTHQUAKE
 	db 0 ; no more level-up moves
 
