@@ -43,6 +43,7 @@ DARK|2||||||0.5|0.5|||2|0.5|0.5|||0.5|
 STEEL|||||2|2|0.5||||||2|0.5|2||0.5
 
 ## Pokémon Changes
+
 ### Types
 These mons have had their types (and in many cases, learnsets) updated.
 - Bulbasaur, Ivysaur, Venusaur: *Grass/Poison* -> *Grass*
@@ -77,7 +78,6 @@ These mons have had their types (and in many cases, learnsets) updated.
 - Farfetch'd: *Normal/Flying* -> *Fighting/Flying*
 - Doduo, Dodrio: *Normal/Flying* -> *Ground/Flying*
 - Seel: *Water* -> *Water/Ice*
-- Muk: *Poison* -> *Poison/Dark*
 - Cloyster: *Water* -> *Water/Steel*
 - Gastly, Haunter: *Ghost/Poison* -> *Ghost*
 - Gengar: *Ghost/Poison* -> *Ghost/Dark*
@@ -178,6 +178,7 @@ Besides evolution, several unique or otherwise unobtainable pokemon are now avai
 
 ## Move Updates
 Several moves have had their types, effects, or other attributes changed to provide better STAB coverage or make certain movesets more viable.
+
 ### Damaging Moves
 - Comet Punch: *Normal* -> *Fighting*
 - Vicegrip: *Normal* -> *Dark*
@@ -241,6 +242,7 @@ Several moves have had their types, effects, or other attributes changed to prov
 - Metal Claw: *10% Chance To Raise Attack* -> *20% Chance To Raise Attack* | *95%* -> *100% Accuracy*
 - Crunch: *20% Chance To Lower Special Defense* -> *30% Chance To Paralyze*
 - Whirlpool: *70%* -> *75% Accuracy* | *15*-> *20 PP*
+
 ### Always Physical Moves
 These moves are special, but their damage is now treated as physical.
 - Fire Punch
@@ -258,12 +260,13 @@ These moves are special, but their damage is now treated as physical.
 - Flame Wheel
 - Spark
 
-
 As a side note, all *Ghost* moves are now special and all *Dark* moves are now physical.
+
 ### Trapping Moves
 Besides preventing a switch out, trapped pokemon will now have their speed cut as if they were paralyzed. This does not stack with the PRZ status.
-### Non-Damaging Moves
-These moves had their types changed for flavor only; however, this can impact the AI's choices.
+
+### Non-STAB Moves
+These moves ignore STAB but have had their types changed for flavor only; however, this may still impact the AI's choices.
 - Whirlwind: *Normal* -> *Flying*
 - Roar: *Normal* -> *Dragon*
 - Growth: *Normal* -> *Grass*
@@ -282,6 +285,7 @@ These moves had their types changed for flavor only; however, this can impact th
 - Mean Look: *Normal* -> *Dark*
 - Pain Split: *Normal* -> *Ghost*
 - Psych Up: *Normal* -> *Psychic*
+
 ### TMs
 These TMs have been reassigned. Except for TM09, they are available in their same locations.
 - TM05: *Roar* -> *Sonicboom*
@@ -293,13 +297,19 @@ These TMs have been reassigned. Except for TM09, they are available in their sam
 - TM32: *Double Team* -> *Flamethrower*
 
 The original moves can still be learned by level-up on mons that could learn it by TM or otherwise fit the theming (e.g., *Dragon* and "dog" pokemon get *Roar*).
+
+### HMs
+HM moves can now be forgotten; when learning over them, a confirmation prompt is brought up before they're overwritten.
+
 ### Weather Interactions
 Weathers cause new interactions in addition to their old ones (e.g., Rain boosting *Water* moves, *Solarbeam* skipping a turn in Sun).
+
 #### Rain
 - *Ice*, *Grass*, and *Electric* moves are more effective
 - *Ground* and *Flying* moves are less effective
 - Moves that fail to inflict the *Freeze* status get a 10% reroll to inflict status
 - The *Burn* status can be inflicted, but has a 90% chance to fail on hit
+
 #### Sun
 - *Grass* and *Flying* moves are more effective
 - *Ice* and *Ghost* moves are less effective
@@ -307,6 +317,7 @@ Weathers cause new interactions in addition to their old ones (e.g., Rain boosti
 - The *Freeze* status can be inflicted, but has a 90% chance to fail on hit
 - *Sky Attack* skips its charging turn, similar to *Solarbeam*
 - Changed battle text to make certain move interactions (e.g., *Moonlight*) less confusing
+
 #### Sand
 - *Rock*, *Ground*, and *Dark* moves are more effective
 - *Grass*, *Flying*, and *Electric* moves are less effective
@@ -316,11 +327,13 @@ Weathers cause new interactions in addition to their old ones (e.g., Rain boosti
 
 ## Store updates
 Several of the stores have been updated with new items.
+
 ### Goldenrod Dept. Store
-TM CORNER (5th floor) now sells these additional TMs:
+The TM CORNER (5th floor) now sells these additional TMs:
 - TM09 Metal Claw
 - TM39 Swift -*Available after receiving TM02 Headbutt in Ilex Forest*
 - TM28 Dig -*Available after receiving TM08 Rock Smash on Route 36*
+
 ### Mahogany Mart
 The Mahogany Mart carries these items once the Rocket Hideout is cleared and Pryce has been defeated:
 - Lemonade
@@ -335,17 +348,22 @@ The Mahogany Mart carries these items once the Rocket Hideout is cleared and Pry
 - Up-Grade
 
 ## Miscellaneous
-- *Fire*-type moves can no longer defrost through *Safeguard*
+
+### DVs
 - Gender is no longer determined solely by Attack DV (i.e., female mons outside of all-female species can roll high ATK DVs)
 - As a consequence of the above, the shininess formula has been updated and now has a ~1/10,000 chance instead of 1/8192
 - Similarly, trainer DVs have been updated to raise the attack of (most) female trainer classes and give each of the Elite Four a perfect stat
+- The stats screen shows happiness as percent of 255 (TRUST) and Attack, Defense, Special, and Speed DVs (DNA)
+
+### Story Progression
 - Each surveillance statue in the Rocket Hideout summons 1 unique battle instead of 2 generic grunts
-- The trainer in Cianwood now gifts a Delibird instead of Shuckle so the player can always FLY home after beating the gym
-- HM moves can now be forgotten; when learning over them, a confirmation prompt is brought up before they're overwritten
 - The Radio Tower incident now starts when reaching Blackthorn rather than immediately the 7th badge
 - Consequently, Route 44 and the [Mahogany Mart](#mahogany-mart-post-rocket-hideout) both open immediately after beating Pryce
 - Clair gives the Risingbadge immediately upon defeat, but the player must still get the Dragon Fang to receive TM24
-- The stats screen shows happiness as percent of 255 (TRUST) and Attack, Defense, Special, and Speed DVs (DNA)
+
+### Other
+- *Fire*-type moves can no longer defrost through *Safeguard*
+- The trainer in Cianwood now gifts a Delibird instead of Shuckle so the player can always FLY home after beating the gym
 - After receiving the Old and Good Rods, each Fishing Guru will tell the player where to find the next one
 - Since Remoraid are no longer found on Route 44, Sailor Huey (lighthouse) now activates the Remoraid swarm
 trees in cities (Ecruteak) can now spawn wild encounters.
