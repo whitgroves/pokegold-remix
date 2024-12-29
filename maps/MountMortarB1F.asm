@@ -34,7 +34,7 @@ MountMortarB1FKiyoScript:
 	writetext MountMortarB1FReceiveMonText
 	playsound SFX_CAUGHT_MON
 	waitsfx
-	givepoke TYROGUE, 10
+	givepoke TYROGUE, 19
 	setevent EVENT_GOT_TYROGUE_FROM_KIYO
 .GotTyrogue:
 	writetext MountMortarB1FKiyoGotTyrogueText
@@ -61,39 +61,64 @@ MountMortarB1FHiddenMaxRevive:
 	hiddenitem MAX_REVIVE, EVENT_MOUNT_MORTAR_B1F_HIDDEN_MAX_REVIVE
 
 MountMortarB1FKiyoIntroText:
-	text "Hey!"
+	text "Yo!"
 
-	para "I am the KARATE"
-	line "KING!"
+	para "I am KIYO,"
+	line "the KARATE KING!"
 
-	para "I train alone here"
-	line "in the dark!"
+	para "The former master"
+	line "of SAFFRON's"
+	cont "FIGHTING DOJO!"
 
-	para "You!"
+	para "Now I train alone"
+	line "here in the dark!"
+
+	para "Raising a #MON"
+	line "that can beat even"
+	cont "SABRINA!"
+
+	para "Yo!"
 	line "Battle with me!"
 
-	para "Hwaaarggh!"
+	para "Let me test how"
+	line "strong my team"
+	cont "has become!"
+
+	para "Woah!"
 	done
 
 MountMortarB1FKiyoWinText:
-	text "Waaaarggh!"
-	line "I'm beaten!"
+	text "No!"
+	line "Defeated again!"
 	done
 
 MountMortarB1FTyrogueRewardText:
-	text "I… I'm crushed…"
+	text "…"
 
-	para "My training is"
-	line "still not enough…"
+	para "A loss is a loss."
+	line "I admit it."
 
-	para "But a loss is a"
-	line "loss. I admit it."
+	para "Even though I"
+	line "raised TYROGUE"
 
-	para "As proof that you"
-	line "defeated me, I'll"
+	para "to be the best"
+	line "fighting #MON,"
 
-	para "give you a rare"
-	line "fighting #MON."
+	para "and put together"
+	line "the best fighting-"
+	cont "type team,"
+
+	para "You beat me!"
+
+	para "Oh!"
+
+	para "As proof of your"
+	line "victory, you must"
+	cont "carry the torch!"
+
+	para "Here! Take TYROGUE"
+	line "and train him into"
+	cont "a CHAMPION!"
 	done
 
 MountMortarB1FReceiveMonText:
@@ -103,21 +128,27 @@ MountMortarB1FReceiveMonText:
 
 MountMortarB1FKiyoGotTyrogueText:
 	text "TYROGUE is a"
-	line "fighting-type."
+	line "fighting #MON "
+	cont "full of potential!"
 
-	para "It evolves into a"
-	line "tougher #MON."
+	para "It evolves into"
+	line "HITMONLEE, HITMON-"
+	cont "CHAN, or HITMONTOP"
+	
+	para "depending on how"
+	line "you raise it!"
 
-	para "Keep up the hard"
-	line "work. I'll keep"
-	cont "training too."
+	para "Make him strong!"
+	
+	para "…and I'll keep "
+	line "training too."
 
-	para "Farewell!"
+	para "Farewell! Go!"
 	done
 
 MountMortarB1FKiyoFullPartyText:
-	text "You have no room"
-	line "in your party!"
+	text "Oh!"
+	line "You have no room!"
 	done
 
 MountMortarB1F_MapEvents:

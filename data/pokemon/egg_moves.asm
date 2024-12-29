@@ -803,9 +803,15 @@ StantlerEggMoves:
 
 TyrogueEggMoves:
 	db COMET_PUNCH
+	db FOCUS_ENERGY
+	db COUNTER
 	db LOW_KICK
+	db MEDITATE
+	db REVERSAL
 	db ROLLING_KICK
-	db KARATE_CHOP
+	db AGILITY
+	db DETECT
+	db SEISMIC_TOSS
 	db VITAL_THROW
 	db -1 ; end
 

@@ -815,7 +815,7 @@ PoliwagEvosAttacks:
 	db 7, HYPNOSIS
 	db 13, WATER_GUN
 	db 17, MUD_SLAP
-	db 19, DOUBLESLAP
+	db 19, BUBBLEBEAM
 	db 26, RAIN_DANCE
 	db 31, BODY_SLAM
 	db 37, BELLY_DRUM
@@ -831,7 +831,8 @@ PoliwhirlEvosAttacks:
 	db 7, HYPNOSIS
 	db 13, WATER_GUN
 	db 17, MUD_SLAP
-	db 19, DOUBLESLAP
+	db 19, BUBBLEBEAM
+	db 25, DOUBLESLAP
 	db 27, RAIN_DANCE
 	db 35, BODY_SLAM
 	db 43, BELLY_DRUM
@@ -843,9 +844,10 @@ PoliwrathEvosAttacks:
 	db 1, SUBMISSION
 	db 7, MIND_READER
 	db 13, WATER_GUN
-	db 19, KARATE_CHOP
+	db 19, BUBBLEBEAM
+	db 26, KARATE_CHOP
 	db 27, RAIN_DANCE
-	db 35, SUBMISSION
+	db 35, SEISMIC_TOSS
 	db 43, BELLY_DRUM
 	db 51, CROSS_CHOP
 	db 0 ; no more level-up moves
@@ -1473,9 +1475,9 @@ HitmonleeEvosAttacks:
 	db 11, DOUBLE_KICK
 	db 16, JUMP_KICK
 	db 26, HI_JUMP_KICK
-	db 31, MIND_READER
+	db 31, PURSUIT
 	db 36, FORESIGHT
-	db 41, ENDURE
+	db 41, MIND_READER
 	db 46, MEGA_KICK
 	db 51, REVERSAL
 	db 0 ; no more level-up moves
@@ -2556,6 +2558,7 @@ PolitoedEvosAttacks:
 	db 13, WATER_GUN
 	db 17, MUD_SLAP
 	db 19, BUBBLEBEAM
+	db 26, ICY_WIND
 	db 27, RAIN_DANCE
 	db 35, BATON_PASS
 	db 43, BELLY_DRUM
@@ -3266,7 +3269,7 @@ TyrogueEvosAttacks:
 	db EVOLVE_STAT, 20, ATK_EQ_DEF, HITMONTOP
 	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 7, DETECT
+	db 7, AGILITY
 	db 11, DOUBLE_KICK
 	db 13, MACH_PUNCH
 	db 19, BATON_PASS
@@ -3275,15 +3278,15 @@ TyrogueEvosAttacks:
 HitmontopEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, ROLLING_KICK
-	db 7, DETECT
+	db 7, AGILITY
 	db 11, RAPID_SPIN
 	db 22, DOUBLE_KICK
 	db 25, DIG
-	db 31, COUNTER
+	db 31, FIRE_SPIN
 	db 33, TRIPLE_KICK
-	db 37, AGILITY
-	db 43, MEGA_KICK
-	db 49, DOUBLE_TEAM
+	db 37, TRI_ATTACK
+	db 43, HORN_DRILL
+	db 49, DETECT
 	db 0 ; no more level-up moves
 
 SmoochumEvosAttacks:
