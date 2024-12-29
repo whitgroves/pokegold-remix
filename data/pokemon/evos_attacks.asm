@@ -2384,6 +2384,7 @@ PichuEvosAttacks:
 
 CleffaEvosAttacks:
 	db EVOLVE_HAPPINESS, TR_ANYTIME, CLEFAIRY
+	db EVOLVE_ITEM, MOON_STONE, CLEFAIRY
 	db 0 ; no more evolutions
 	db 1, TAIL_WHIP
 	db 4, SING
@@ -2406,23 +2407,24 @@ TogepiEvosAttacks:
 	db EVOLVE_ITEM, MOON_STONE, TOGETIC
 	db EVOLVE_ITEM, SUN_STONE, TOGETIC
 	db 0 ; no more evolutions
-	db 1, GROWL
 	db 1, CHARM
+	db 1, ENCORE
 	db 7, METRONOME
-	db 18, PSYCH_UP
-	db 25, ENCORE
-	db 31, SAFEGUARD
+	db 12, BATON_PASS
+	db 18, AMNESIA
 	db 0 ; no more level-up moves
 
 TogeticEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, GROWL
 	db 1, CHARM
+	db 1, ENCORE
 	db 7, METRONOME
+	db 12, BATON_PASS
 	db 18, PSYCH_UP
-	db 25, ENCORE
-	db 31, SAFEGUARD
-	db 38, BATON_PASS
+	db 21, SAFEGUARD
+	db 27, BARRIER
+	db 35, AMNESIA
+	db 48, HEAL_BELL
 	db 0 ; no more level-up moves
 
 NatuEvosAttacks:

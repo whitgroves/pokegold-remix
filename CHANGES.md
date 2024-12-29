@@ -163,7 +163,9 @@ These evolutions now happen by item effect (select and use the item from menu):
 - Eevee -> Espeon: *Sun Stone*
 - Eevee -> Umbreon: *Moon Stone*
 - Porygon -> Porygon2: *Up-Grade*
-- Togepi -> Togetic: *Sun Stone* -or- *Moon Stone*
+- Cleffa -> Clefairy: *Moon Stone*
+- Togepi -> Togetic: *Sun Stone* -OR- *Moon Stone*
+- Smoochum -> Jynx: *Water Stone*
 - Elekid -> Electabuzz: *Thunderstone*
 - Magby -> Magmar: *Fire Stone*
 

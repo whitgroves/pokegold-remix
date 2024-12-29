@@ -555,14 +555,10 @@ IgglybuffEggMoves:
 
 TogepiEggMoves:
 	db PRESENT
-	db MIRROR_MOVE
-	db PECK
-	db FORESIGHT
-	db FUTURE_SIGHT
-	db FLAMETHROWER
-	db THUNDERBOLT
-	db ICE_BEAM
-	db TRI_ATTACK
+	db RECOVER
+	db MOONLIGHT
+	db MORNING_SUN
+	db MIRROR_COAT
 	db -1 ; end
 
 NatuEggMoves:
