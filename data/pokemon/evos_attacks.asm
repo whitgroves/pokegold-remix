@@ -2925,14 +2925,14 @@ GranbullEvosAttacks:
 
 QwilfishEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, TACKLE
-	db 1, SPIKES
 	db 1, POISON_STING
+	db 1, MINIMIZE
+	db 1, SPIKES
 	db 10, PIN_MISSILE
 	db 19, WATER_GUN
 	db 28, TWINEEDLE
 	db 37, SPIKE_CANNON
-	db 46, HYDRO_PUMP
+	db 46, TOXIC
 	db 0 ; no more level-up moves
 
 ScizorEvosAttacks:

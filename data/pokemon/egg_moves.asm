@@ -693,9 +693,9 @@ SnubbullEggMoves:
 
 QwilfishEggMoves:
 	db FLAIL
-	db HAZE
+	db DISABLE
 	db BUBBLEBEAM
-	db SUPERSONIC
+	db BATON_PASS
 	db -1 ; end
 
 ShuckleEggMoves:
