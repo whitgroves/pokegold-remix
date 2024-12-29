@@ -70,23 +70,23 @@ SandshrewEggMoves:
 	db -1 ; end
 
 NidoranFEggMoves:
-	db SUPERSONIC
-	db DISABLE
+	db MAGNITUDE
+	db STOMP
+	db RAGE
+	db THRASH
+	db BODY_SLAM
 	db TAKE_DOWN
-	db FOCUS_ENERGY
-	db CHARM
 	db COUNTER
-	db BEAT_UP
 	db -1 ; end
 
 NidoranMEggMoves:
-	db SUPERSONIC
-	db DISABLE
+	db MAGNITUDE
+	db STOMP
+	db RAGE
+	db THRASH
+	db BODY_SLAM
 	db TAKE_DOWN
-	db CONFUSION
-	db AMNESIA
-	db COUNTER
-	db BEAT_UP
+	db FISSURE
 	db -1 ; end
 
 VulpixEggMoves:
