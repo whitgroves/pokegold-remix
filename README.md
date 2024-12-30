@@ -45,7 +45,7 @@ To make changes for another repo, copy [ee2.py](./tools/ee2.py) into the root of
 ```
 $ ee2.py -e --matchups
 $ ee2.py -e --moves
-$ ee2.py -e --mon   <<pokemon name, all lowercase, no spaces>>
+$ ee2.py -e --mon <pokemon name, all lowercase, no spaces>
 $ ee2.py -e --all
 ```
 To generate your csv files (`type_matchups.csv, moves.csv, <pokemon name>.csv`, or all 3, respectively). 
@@ -54,7 +54,7 @@ Then run:
 ```
 $ ee2.py -u --matchups
 $ ee2.py -u --moves
-$ ee2.py -u --mon   <<pokemon name, all lowercase, no spaces>>
+$ ee2.py -u --mon <pokemon name, all lowercase, no spaces>
 $ ee2.py -u --all
 ```
 To overwrite the game's assembly files with any of those updates.
@@ -64,9 +64,10 @@ To make changes to this build using `make`:
 ```
 $ git clone https://github.com/whitgroves/pokegold-remix.git
 $ cd pokegold-remix
-$ make types    <<--matchups>>
-$ make moves    <<--moves>>
-$ make edits    <<--all>>
+$ make types
+$ make moves
+$ make <pokemon name, all lowercase, no spaces>
+$ make edits
 << update csv files as desired >>
 $ make updates
 ```
