@@ -67,6 +67,7 @@ SandshrewEggMoves:
 	db SAFEGUARD
 	db RAPID_SPIN
 	db DOUBLE_EDGE
+	db SPIKE_CANNON
 	db -1 ; end
 
 NidoranFEggMoves:
@@ -243,11 +244,10 @@ FarfetchDEggMoves:
 	db -1 ; end
 
 DoduoEggMoves:
-	db QUICK_ATTACK
-	db SUPERSONIC
-	db HAZE
+	db PURSUIT
 	db FAINT_ATTACK
 	db FLAIL
+	db THRASH
 	db TRI_ATTACK
 	db -1 ; end
 
@@ -407,7 +407,8 @@ ScytherEggMoves:
 
 PinsirEggMoves:
 	db FURY_ATTACK
-	db FLAIL
+	db REVERSAL
+	db SHARPEN
 	db HYPER_FANG
 	db SUPER_FANG
 	db -1 ; end
@@ -505,9 +506,9 @@ HoothootEggMoves:
 	db -1 ; end
 
 LedybaEggMoves:
-	db PSYBEAM
+	db DIZZY_PUNCH
 	db BIDE
-	db LIGHT_SCREEN
+	db DOUBLE_TEAM
 	db -1 ; end
 
 SpinarakEggMoves:
@@ -606,13 +607,12 @@ HoppipEggMoves:
 
 AipomEggMoves:
 	db COUNTER
-	db SCREECH
 	db PURSUIT
-	db AGILITY
-	db SPITE
-	db SLAM
 	db DOUBLESLAP
 	db BEAT_UP
+	db SWORDS_DANCE
+	db DOUBLE_TEAM
+	db AMNESIA
 	db -1 ; end
 
 YanmaEggMoves:
@@ -667,7 +667,7 @@ DunsparceEggMoves:
 GligarEggMoves:
 	db METAL_CLAW
 	db WING_ATTACK
-	db RAZOR_WIND
+	db ROCK_SLIDE
 	db COUNTER
 	db HYPER_FANG
 	db SUPER_FANG
@@ -722,7 +722,9 @@ TeddiursaEggMoves:
 	db -1 ; end
 
 SlugmaEggMoves:
-	db ACID_ARMOR
+	db ROCK_THROW
+	db ROCK_SLIDE
+	db HARDEN
 	db -1 ; end
 
 SwinubEggMoves:

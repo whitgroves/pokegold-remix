@@ -1072,7 +1072,7 @@ JohtoGrassWildMons:
 	db 42, GOLBAT
 	db 41, AZUMARILL
 	db 48, MAGCARGO
-	db 28, LARVITAR
+	db 46, GLIGAR
 	db 37, PUPITAR
 	db 40, SNORLAX
 	; day
@@ -1080,7 +1080,7 @@ JohtoGrassWildMons:
 	db 42, GOLBAT
 	db 41, AZUMARILL
 	db 48, MAGCARGO
-	db 28, LARVITAR
+	db 46, GLIGAR
 	db 37, PUPITAR
 	db 40, SNORLAX
 	; nite
@@ -1088,7 +1088,7 @@ JohtoGrassWildMons:
 	db 42, GOLBAT
 	db 41, AZUMARILL
 	db 48, MAGCARGO
-	db 28, LARVITAR
+	db 46, GLIGAR
 	db 37, PUPITAR
 	db 40, SNORLAX
 	end_grass_wildmons
@@ -1693,7 +1693,7 @@ JohtoGrassWildMons:
 	db 40, SNORLAX
 	; day
 	db 37, RHYHORN
-	db 40, FEAROW
+	db 46, GLIGAR
 	db 28, QUILAVA
 	db 28, BAYLEEF
 	db 40, RAPIDASH
@@ -1701,7 +1701,7 @@ JohtoGrassWildMons:
 	db 40, SNORLAX
 	; nite
 	db 40, GIRAFARIG
-	db 41, NOCTOWL
+	db 46, GLIGAR
 	db 28, CROCONAW
 	db 28, QUILAVA
 	db 41, SNEASEL

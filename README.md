@@ -10,7 +10,7 @@ However, some changes from Crystal, the Legacy hacks, and the [pret tutorials](h
 The following changes have been implemented or planned:
 - Updated interactions for all 17 types ✓
 - Updated typings to make certain Pokemon lore-friendly, interesting, or unique ✓
-- Updated learnsets to better fit each Pokemon's kit ~
+- Updated learnsets to better fit each Pokemon's kit ✓
 - Updated moves, TMs, and weather interactions ✓
 - The Ghost type is special and the Dark type is physical ✓
 - All 251 Pokemon available on a single save ~

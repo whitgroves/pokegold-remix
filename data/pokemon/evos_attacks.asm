@@ -1162,13 +1162,14 @@ DoduoEvosAttacks:
 	db 1, GROWL
 	db 1, PECK
 	db 6, MUD_SLAP
-	db 11, PURSUIT
+	db 11, QUICK_ATTACK
 	db 18, DOUBLE_KICK
 	db 21, STOMP
-	db 25, RAGE
+	db 25, AGILITY
 	db 33, DRILL_PECK
-	db 37, AGILITY
+	db 37, EXTREMESPEED
 	db 42, EARTHQUAKE
+	db 56, BATON_PASS
 	db 0 ; no more level-up moves
 
 DodrioEvosAttacks:
@@ -1176,12 +1177,12 @@ DodrioEvosAttacks:
 	db 1, PECK
 	db 1, GROWL
 	db 6, MUD_SLAP
-	db 11, PURSUIT
+	db 11, QUICK_ATTACK
 	db 18, DOUBLE_KICK
-	db 25, RAGE
-	db 31, STOMP
+	db 21, STOMP
+	db 25, AGILITY
 	db 38, DRILL_PECK
-	db 47, AGILITY
+	db 47, EXTREMESPEED
 	db 55, EARTHQUAKE
 	db 66, TRI_ATTACK
 	db 0 ; no more level-up moves
@@ -1216,12 +1217,12 @@ GrimerEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, POISON_GAS
 	db 1, POUND
-	db 5, HARDEN
+	db 5, ACID
 	db 10, DISABLE
 	db 16, SLUDGE
 	db 20, MUD_SLAP
 	db 23, MINIMIZE
-	db 31, SCREECH
+	db 31, TOXIC
 	db 40, ACID_ARMOR
 	db 50, SLUDGE_BOMB
 	db 0 ; no more level-up moves
@@ -1230,16 +1231,14 @@ MukEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, POISON_GAS
 	db 1, POUND
-	db 1, HARDEN
+	db 5, ACID
+	db 10, DISABLE
 	db 16, SLUDGE
 	db 20, MUD_SLAP
 	db 23, MINIMIZE
-	db 31, SCREECH
-	db 33, HARDEN
-	db 37, DISABLE
-	db 45, SLUDGE
-	db 45, ACID_ARMOR
-	db 60, SLUDGE_BOMB
+	db 31, TOXIC
+	db 43, ACID_ARMOR
+	db 55, SLUDGE_BOMB
 	db 0 ; no more level-up moves
 
 ShellderEvosAttacks:
@@ -1545,7 +1544,7 @@ RhyhornEvosAttacks:
 	db 1, TAIL_WHIP
 	db 13, STOMP
 	db 19, HEADBUTT
-	db 31, ROCK_SLIDE
+	db 31, SKULL_BASH
 	db 37, HORN_DRILL
 	db 49, SUBMISSION
 	db 55, EARTHQUAKE
@@ -1557,7 +1556,7 @@ RhydonEvosAttacks:
 	db 1, TAIL_WHIP
 	db 13, STOMP
 	db 19, HEADBUTT
-	db 31, ROCK_SLIDE
+	db 31, SKULL_BASH
 	db 37, HORN_DRILL
 	db 54, OUTRAGE
 	db 65, EARTHQUAKE
@@ -1706,7 +1705,7 @@ ScytherEvosAttacks:
 	db EVOLVE_ITEM, UP_GRADE, SCIZOR
 	db 0 ; no more evolutions
 	db 1, QUICK_ATTACK
-	db 1, LEER
+	db 1, SHARPEN
 	db 6, FALSE_SWIPE
 	db 12, PURSUIT
 	db 18, SWIFT
@@ -2295,7 +2294,7 @@ LedianEvosAttacks:
 	db 24, REFLECT
 	db 24, LIGHT_SCREEN
 	db 33, BATON_PASS
-	db 42, SWIFT
+	db 42, DIZZY_PUNCH
 	db 51, AGILITY
 	db 60, DOUBLE_TEAM
 	db 0 ; no more level-up moves
@@ -2571,18 +2570,15 @@ HoppipEvosAttacks:
 	db 5, SYNTHESIS
 	db 7, GUST
 	db 10, ABSORB
-	db 13, POISONPOWDER
-	db 15, STUN_SPORE
-	db 17, SLEEP_POWDER
+	db 15, COTTON_SPORE
 	db 20, LEECH_SEED
 	db 23, SWEET_SCENT
-	db 25, COTTON_SPORE
+	db 25, SPIKES
 	db 28, WHIRLWIND
 	db 30, MEGA_DRAIN
 	db 32, GROWTH
 	db 38, BATON_PASS
 	db 40, GIGA_DRAIN
-	db 50, SUNNY_DAY
 	db 0 ; no more level-up moves
 
 SkiploomEvosAttacks:
@@ -2592,18 +2588,15 @@ SkiploomEvosAttacks:
 	db 5, SYNTHESIS
 	db 7, GUST
 	db 10, ABSORB
-	db 13, POISONPOWDER
-	db 15, STUN_SPORE
-	db 17, SLEEP_POWDER
+	db 15, COTTON_SPORE
 	db 22, LEECH_SEED
 	db 25, SWEET_SCENT
-	db 29, COTTON_SPORE
+	db 29, SPIKES
 	db 31, WHIRLWIND
 	db 35, MEGA_DRAIN
 	db 38, GROWTH
 	db 40, BATON_PASS
 	db 45, GIGA_DRAIN
-	db 50, SUNNY_DAY
 	db 0 ; no more level-up moves
 
 JumpluffEvosAttacks:
@@ -2612,18 +2605,15 @@ JumpluffEvosAttacks:
 	db 5, SYNTHESIS
 	db 7, GUST
 	db 10, ABSORB
-	db 13, POISONPOWDER
-	db 15, STUN_SPORE
-	db 17, SLEEP_POWDER
+	db 15, COTTON_SPORE
 	db 22, LEECH_SEED
 	db 25, SWEET_SCENT
-	db 32, COTTON_SPORE
+	db 32, SPIKES
 	db 34, WHIRLWIND
 	db 38, MEGA_DRAIN
 	db 42, GROWTH
 	db 46, BATON_PASS
 	db 49, GIGA_DRAIN
-	db 55, SUNNY_DAY
 	db 0 ; no more level-up moves
 
 AipomEvosAttacks:
@@ -2866,7 +2856,7 @@ GligarEvosAttacks:
 	db 20, QUICK_ATTACK
 	db 28, TWINEEDLE
 	db 34, SLASH
-	db 41, SCREECH
+	db 41, ROCK_SLIDE
 	db 46, RAZOR_WIND
 	db 52, GUILLOTINE
 	db 0 ; no more level-up moves
@@ -2937,7 +2927,7 @@ QwilfishEvosAttacks:
 ScizorEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, SLAM
-	db 1, LEER
+	db 1, HARDEN
 	db 6, FALSE_SWIPE
 	db 12, VICEGRIP
 	db 18, SWIFT
@@ -2946,6 +2936,7 @@ ScizorEvosAttacks:
 	db 36, AGILITY
 	db 42, CRUNCH
 	db 48, DOUBLE_EDGE
+	db 54, GUILLOTINE
 	db 0 ; no more level-up moves
 
 ShuckleEvosAttacks:
@@ -3021,15 +3012,15 @@ UrsaringEvosAttacks:
 
 SlugmaEvosAttacks:
 	db EVOLVE_LEVEL, 38, MAGCARGO
+	db EVOLVE_ITEM, FIRE_STONE, MAGCARGO
 	db 0 ; no more evolutions
 	db 1, SMOG
 	db 8, EMBER
-	db 15, ROCK_THROW
-	db 22, HARDEN
+	db 15, MAGNITUDE
+	db 22, ACID_ARMOR
 	db 29, AMNESIA
 	db 36, FLAMETHROWER
-	db 43, ROCK_SLIDE
-	db 50, ACID_ARMOR
+	db 43, EARTHQUAKE
 	db 0 ; no more level-up moves
 
 MagcargoEvosAttacks:
@@ -3040,8 +3031,8 @@ MagcargoEvosAttacks:
 	db 22, HARDEN
 	db 29, AMNESIA
 	db 36, FLAMETHROWER
-	db 48, ROCK_SLIDE
-	db 60, ACID_ARMOR
+	db 38, ROCK_SLIDE
+	db 48, EARTHQUAKE
 	db 0 ; no more level-up moves
 
 SwinubEvosAttacks:
