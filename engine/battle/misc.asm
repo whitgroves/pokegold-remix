@@ -167,7 +167,7 @@ DoBadgeTypeBoosts:
 .CheckBadge:
 	ld a, [hl]
 	cp -1
-	jr z, .done
+	jr z, .RocketBadge ; EOL, check for DARK boost
 
 	srl b
 	rr c
@@ -180,6 +180,11 @@ DoBadgeTypeBoosts:
 .NextBadge:
 	inc hl
 	jr .CheckBadge
+
+.RocketBadge: ; by confronting evil without, you have mastered the evil within
+	ld a, [wEventFlags + 4] ; EVENT_CLEARED_RADIO_TOWER
+	bit 1, a
+	jr z, .done
 
 .ApplyBoost:
 	ld a, [wCurDamage]
