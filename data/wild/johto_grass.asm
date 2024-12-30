@@ -1067,222 +1067,114 @@ JohtoGrassWildMons:
 
 	def_grass_wildmons SILVER_CAVE_ROOM_1
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
-	IF DEF(_GOLD)
 	; morn
-	db 42, ONIX
-	db 44, URSARING
-	db 43, GRAVELER
-	db 43, GRAVELER
-	db 45, GOLBAT
-	db 20, LARVITAR
-	db 15, LARVITAR
+	db 37, RHYHORN
+	db 42, GOLBAT
+	db 41, AZUMARILL
+	db 48, MAGCARGO
+	db 28, LARVITAR
+	db 37, PUPITAR
+	db 40, SNORLAX
 	; day
-	db 42, ONIX
-	db 44, URSARING
-	db 43, GRAVELER
-	db 43, GRAVELER
-	db 45, GOLBAT
-	db 20, LARVITAR
-	db 15, LARVITAR
+	db 37, RHYHORN
+	db 42, GOLBAT
+	db 41, AZUMARILL
+	db 48, MAGCARGO
+	db 28, LARVITAR
+	db 37, PUPITAR
+	db 40, SNORLAX
 	; nite
-	db 42, ONIX
-	db 44, URSARING
-	db 43, GRAVELER
-	db 43, GRAVELER
-	db 45, GOLBAT
-	db 20, LARVITAR
-	db 15, LARVITAR
-	ELIF DEF(_SILVER)
-	; morn
-	db 42, ONIX
-	db 44, DONPHAN
-	db 43, GRAVELER
-	db 43, GRAVELER
-	db 45, GOLBAT
-	db 20, LARVITAR
-	db 15, LARVITAR
-	; day
-	db 42, ONIX
-	db 44, DONPHAN
-	db 43, GRAVELER
-	db 43, GRAVELER
-	db 45, GOLBAT
-	db 20, LARVITAR
-	db 15, LARVITAR
-	; nite
-	db 42, ONIX
-	db 44, DONPHAN
-	db 43, GRAVELER
-	db 43, GRAVELER
-	db 45, GOLBAT
-	db 20, LARVITAR
-	db 15, LARVITAR
-	ENDC
+	db 37, RHYHORN
+	db 42, GOLBAT
+	db 41, AZUMARILL
+	db 48, MAGCARGO
+	db 28, LARVITAR
+	db 37, PUPITAR
+	db 40, SNORLAX
 	end_grass_wildmons
 
 	def_grass_wildmons SILVER_CAVE_ROOM_2
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
-	IF DEF(_GOLD)
 	; morn
-	db 45, QUAGSIRE
-	db 48, GOLDUCK
-	db 47, URSARING
-	db 45, QUAGSIRE
-	db 48, GOLBAT
-	db 20, LARVITAR
-	db 15, LARVITAR
+	db 37, RHYHORN
+	db 42, GOLBAT
+	db 48, MAGCARGO
+	db 41, SNEASEL
+	db 40, DRAGONAIR
+	db 37, PUPITAR
+	db 42, RHYDON
 	; day
-	db 45, QUAGSIRE
-	db 48, GOLDUCK
-	db 47, URSARING
-	db 45, QUAGSIRE
-	db 48, GOLBAT
-	db 20, LARVITAR
-	db 15, LARVITAR
+	db 37, RHYHORN
+	db 42, GOLBAT
+	db 48, MAGCARGO
+	db 41, SNEASEL
+	db 40, DRAGONAIR
+	db 37, PUPITAR
+	db 42, RHYDON
 	; nite
-	db 45, QUAGSIRE
-	db 48, GOLDUCK
-	db 47, URSARING
-	db 45, MISDREAVUS
-	db 48, GOLBAT
-	db 20, LARVITAR
-	db 15, LARVITAR
-	ELIF DEF(_SILVER)
-	; morn
-	db 45, QUAGSIRE
-	db 48, GOLDUCK
-	db 47, DONPHAN
-	db 45, QUAGSIRE
-	db 48, GOLBAT
-	db 20, LARVITAR
-	db 15, LARVITAR
-	; day
-	db 45, QUAGSIRE
-	db 48, GOLDUCK
-	db 47, DONPHAN
-	db 45, QUAGSIRE
-	db 48, GOLBAT
-	db 20, LARVITAR
-	db 15, LARVITAR
-	; nite
-	db 45, QUAGSIRE
-	db 48, GOLDUCK
-	db 47, DONPHAN
-	db 45, MISDREAVUS
-	db 48, GOLBAT
-	db 20, LARVITAR
-	db 15, LARVITAR
-	ENDC
+	db 37, RHYHORN
+	db 42, GOLBAT
+	db 48, MAGCARGO
+	db 41, SNEASEL
+	db 40, DRAGONAIR
+	db 37, PUPITAR
+	db 42, RHYDON
 	end_grass_wildmons
 
 	def_grass_wildmons SILVER_CAVE_ROOM_3
-	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
-	IF DEF(_GOLD)
+	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 51, GOLBAT
-	db 48, ONIX
-	db 48, GOLBAT
-	db 50, URSARING
-	db 51, GOLDUCK
-	db 20, LARVITAR
-	db 15, LARVITAR
+	db 55, GOLBAT
+	db 55, SKARMORY
+	db 60, MAGCARGO
+	db 45, DRAGONAIR
+	db 47, PUPITAR
+	db 55, RHYDON
+	db 55, DRAGONITE
 	; day
-	db 51, GOLBAT
-	db 48, ONIX
-	db 48, GOLBAT
-	db 50, URSARING
-	db 51, GOLDUCK
-	db 20, LARVITAR
-	db 15, LARVITAR
+	db 55, GOLBAT
+	db 55, SKARMORY
+	db 60, MAGCARGO
+	db 45, DRAGONAIR
+	db 47, PUPITAR
+	db 55, RHYDON
+	db 55, AERODACTYL
 	; nite
-	db 51, GOLBAT
-	db 48, ONIX
-	db 48, GOLBAT
-	db 50, URSARING
-	db 51, GOLDUCK
-	db 20, LARVITAR
-	db 15, LARVITAR
-	ELIF DEF(_SILVER)
-	; morn
-	db 51, GOLBAT
-	db 48, ONIX
-	db 48, GOLBAT
-	db 50, DONPHAN
-	db 51, GOLDUCK
-	db 20, LARVITAR
-	db 15, LARVITAR
-	; day
-	db 51, GOLBAT
-	db 48, ONIX
-	db 48, GOLBAT
-	db 50, DONPHAN
-	db 51, GOLDUCK
-	db 20, LARVITAR
-	db 15, LARVITAR
-	; nite
-	db 51, GOLBAT
-	db 48, ONIX
-	db 48, GOLBAT
-	db 50, DONPHAN
-	db 51, GOLDUCK
-	db 20, LARVITAR
-	db 15, LARVITAR
-	ENDC
+	db 55, GOLBAT
+	db 55, SKARMORY
+	db 60, MAGCARGO
+	db 45, DRAGONAIR
+	db 47, PUPITAR
+	db 55, RHYDON
+	db 55, TYRANITAR
 	end_grass_wildmons
 
 	def_grass_wildmons SILVER_CAVE_ITEM_ROOMS
-	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
-	IF DEF(_GOLD)
+	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn
-	db 45, QUAGSIRE
-	db 48, GOLDUCK
-	db 47, URSARING
-	db 45, QUAGSIRE
-	db 48, GOLBAT
-	db 20, LARVITAR
-	db 15, LARVITAR
+	db 37, RHYHORN
+	db 42, GOLBAT
+	db 41, AZUMARILL
+	db 48, MAGCARGO
+	db 28, LARVITAR
+	db 37, PUPITAR
+	db 40, SNORLAX
 	; day
-	db 45, QUAGSIRE
-	db 48, GOLDUCK
-	db 47, URSARING
-	db 45, QUAGSIRE
-	db 48, GOLBAT
-	db 20, LARVITAR
-	db 15, LARVITAR
+	db 37, RHYHORN
+	db 42, GOLBAT
+	db 41, AZUMARILL
+	db 48, MAGCARGO
+	db 28, LARVITAR
+	db 37, PUPITAR
+	db 40, SNORLAX
 	; nite
-	db 45, MISDREAVUS
-	db 48, GOLDUCK
-	db 47, URSARING
-	db 45, QUAGSIRE
-	db 48, GOLBAT
-	db 20, LARVITAR
-	db 15, LARVITAR
-	ELIF DEF(_SILVER)
-	; morn
-	db 45, QUAGSIRE
-	db 48, GOLDUCK
-	db 47, DONPHAN
-	db 45, QUAGSIRE
-	db 48, GOLBAT
-	db 20, LARVITAR
-	db 15, LARVITAR
-	; day
-	db 45, QUAGSIRE
-	db 48, GOLDUCK
-	db 47, DONPHAN
-	db 45, QUAGSIRE
-	db 48, GOLBAT
-	db 20, LARVITAR
-	db 15, LARVITAR
-	; nite
-	db 45, MISDREAVUS
-	db 48, GOLDUCK
-	db 47, DONPHAN
-	db 45, QUAGSIRE
-	db 48, GOLBAT
-	db 20, LARVITAR
-	db 15, LARVITAR
-	ENDC
+	db 37, RHYHORN
+	db 42, GOLBAT
+	db 41, AZUMARILL
+	db 48, MAGCARGO
+	db 28, LARVITAR
+	db 37, PUPITAR
+	db 40, SNORLAX
 	end_grass_wildmons
 
 	def_grass_wildmons DARK_CAVE_VIOLET_ENTRANCE
@@ -1793,28 +1685,28 @@ JohtoGrassWildMons:
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
 	db 40, RAPIDASH
-	db 40, DODRIO
+	db 37, RHYHORN
 	db 28, BAYLEEF
 	db 28, CROCONAW
 	db 40, GIRAFARIG
-	db 40, AZUMARILL
-	db 28, QUILAVA
+	db 41, AZUMARILL
+	db 40, SNORLAX
 	; day
-	db 40, RHYHORN
+	db 37, RHYHORN
 	db 40, FEAROW
 	db 28, QUILAVA
 	db 28, BAYLEEF
 	db 40, RAPIDASH
 	db 35, QUAGSIRE
-	db 28, CROCONAW
+	db 40, SNORLAX
 	; nite
 	db 40, GIRAFARIG
-	db 40, NOCTOWL
+	db 41, NOCTOWL
 	db 28, CROCONAW
 	db 28, QUILAVA
-	db 40, DODRIO
+	db 41, SNEASEL
 	db 35, POLIWHIRL
-	db 28, BAYLEEF
+	db 42, GOLBAT
 	end_grass_wildmons
 
 	db -1 ; end

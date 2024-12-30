@@ -95,9 +95,9 @@ JohtoWaterWildMons:
 
 	def_water_wildmons SILVER_CAVE_ROOM_2
 	db 2 percent ; encounter rate
-	db 35, SEAKING
-	db 40, SEAKING
-	db 35, GOLDEEN
+	db 45, LANTURN
+	db 40, DRAGONAIR
+	db 45, LAPRAS
 	end_water_wildmons
 
 	def_water_wildmons DARK_CAVE_VIOLET_ENTRANCE

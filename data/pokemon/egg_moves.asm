@@ -330,9 +330,9 @@ KoffingEggMoves:
 	db -1 ; end
 
 RhyhornEggMoves:
+	db ROAR
 	db CRUNCH
 	db REVERSAL
-	db ROCK_SLIDE
 	db THRASH
 	db PURSUIT
 	db COUNTER

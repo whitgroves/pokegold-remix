@@ -176,9 +176,10 @@ All evolution items are available for purchase at the [Mahogany Mart](#mahogany-
 Besides evolution, several unique or otherwise unobtainable pokemon are now available in new ways:
 - *Ivysaur*, *Charmeleon*, and *Wartortle* are available as 10% encounters along Routes 26, 27, and Victory Road.
 - *Hitmonlee*, *Hitmonchan*, and *Hitmontop* are available as 10% encounters on the bottom floor of Mt. Mortar.
+- *Porygon* is now available for 700 coins in the Goldenrod Game Corner.
 - *Omanyte* and *Kabuto* are 10% encounters on the lowest floor of the Ice Path (the room with the Nevermeltice).
 - *Bayleef*, *Quilava*, and *Croconaw* are 10-20% encounters along Route 28 and outside Mt. Silver.
-- Additional *Sudowoodo* are a 40% Headbutt encounter on "rare" trees.
+- *Sudowoodo* is now a 40% Headbutt encounter on all "rare" trees.
 
 ## Move Updates
 Several moves have had their types, effects, or other attributes changed to provide better STAB coverage or make certain movesets more viable.

@@ -818,14 +818,14 @@ KantoGrassWildMons:
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
 	db 40, RAPIDASH
-	db 40, DODRIO
+	db 37, RHYHORN
 	db 28, BAYLEEF
 	db 28, CROCONAW
 	db 40, GIRAFARIG
-	db 40, AZUMARILL
+	db 41, AZUMARILL
 	db 28, QUILAVA
 	; day
-	db 40, RHYHORN
+	db 37, RHYHORN
 	db 40, FEAROW
 	db 28, QUILAVA
 	db 28, BAYLEEF
@@ -834,10 +834,10 @@ KantoGrassWildMons:
 	db 28, CROCONAW
 	; nite
 	db 40, GIRAFARIG
-	db 40, NOCTOWL
+	db 41, NOCTOWL
 	db 28, CROCONAW
 	db 28, QUILAVA
-	db 40, DODRIO
+	db 41, SNEASEL
 	db 35, POLIWHIRL
 	db 28, BAYLEEF
 	end_grass_wildmons

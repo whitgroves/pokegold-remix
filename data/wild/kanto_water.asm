@@ -48,7 +48,7 @@ KantoWaterWildMons:
 	db 6 percent ; encounter rate
 	db 33, SEAKING
 	db 34, DEWGONG
-	db 36, PIDGEOT
+	db 36, LAPRAS
 	end_water_wildmons
 
 	def_water_wildmons ROUTE_20

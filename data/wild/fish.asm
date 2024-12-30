@@ -46,16 +46,16 @@ FishGroups:
 .Ocean_Old:
 	db  70 percent + 1, TENTACOOL,  10
 	db  85 percent + 1, GOLDEEN,    10
-	db 100 percent,     SHELLDER,   10
+	db 100 percent,     HORSEA,     10
 .Ocean_Good:
 	db  35 percent,     TENTACOOL,  20
 	db  70 percent,     GOLDEEN,    20
-	db  90 percent + 1, SHELLDER,   20
+	db  90 percent + 1, HORSEA,     20
 	db 100 percent,     STARYU,	    20
 .Ocean_Super:
 	db  40 percent,     TENTACRUEL, 40
 	db  70 percent,     SEAKING,    40
-	db  90 percent + 1, SHELLDER,   40
+	db  90 percent + 1, SEADRA,     40
 	db 100 percent,     STARYU,	    40
 
 ; misnomer, imo -- s/b FISHGROUP_CAVE

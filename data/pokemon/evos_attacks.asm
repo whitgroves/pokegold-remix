@@ -1545,7 +1545,7 @@ RhyhornEvosAttacks:
 	db 1, TAIL_WHIP
 	db 13, STOMP
 	db 19, HEADBUTT
-	db 31, SCARY_FACE
+	db 31, ROCK_SLIDE
 	db 37, HORN_DRILL
 	db 49, SUBMISSION
 	db 55, EARTHQUAKE
@@ -1557,8 +1557,7 @@ RhydonEvosAttacks:
 	db 1, TAIL_WHIP
 	db 13, STOMP
 	db 19, HEADBUTT
-	db 31, SCARY_FACE
-	db 35, ROAR
+	db 31, ROCK_SLIDE
 	db 37, HORN_DRILL
 	db 54, OUTRAGE
 	db 65, EARTHQUAKE
@@ -2251,8 +2250,8 @@ HoothootEvosAttacks:
 	db 1, GROWL
 	db 1, PECK
 	db 6, HYPNOSIS
-	db 11, CONFUSE_RAY
-	db 16, CONFUSION
+	db 11, CONFUSION
+	db 16, CONFUSE_RAY
 	db 22, SWIFT
 	db 28, WING_ATTACK
 	db 34, REST
@@ -2265,8 +2264,8 @@ NoctowlEvosAttacks:
 	db 1, GROWL
 	db 1, PECK
 	db 6, HYPNOSIS
-	db 11, CONFUSE_RAY
-	db 16, CONFUSION
+	db 11, CONFUSION
+	db 16, CONFUSE_RAY
 	db 25, NIGHT_SHADE
 	db 33, WING_ATTACK
 	db 41, PSYCHIC_M
