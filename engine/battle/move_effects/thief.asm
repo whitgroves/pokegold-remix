@@ -64,12 +64,19 @@ BattleCommand_Thief:
 	and a
 	ret z
 
-; Can't steal mail!
+; thief is permanent, and while that is good when the player uses it,
+; the AI can steal important items like EXP_SHARE, which is undesired.
+; to that end, the AI can only steal berries.
 
 	ld [wNamedObjectIndex], a
-	ld d, a
-	farcall ItemIsMail
-	ret c
+	push hl
+	push de
+	ld hl, EnemyCanSteal ; see EOF
+	ld de, 1
+	call IsInArray
+	pop de
+	pop hl
+	ret nc
 
 	ld a, [wEffectFailed]
 	and a
@@ -108,3 +115,17 @@ BattleCommand_Thief:
 	ld e, l
 	ld hl, wEnemyMonItem
 	ret
+
+EnemyCanSteal:
+    db PSNCUREBERRY
+    db PRZCUREBERRY
+    db BURNT_BERRY
+    db ICE_BERRY
+    db BITTER_BERRY
+    db MINT_BERRY
+    db MIRACLEBERRY
+    db BERRY_JUICE
+    db MYSTERYBERRY
+    db BERRY
+    db GOLD_BERRY
+    db -1 ; end
