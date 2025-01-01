@@ -1,4 +1,4 @@
-# Pokémon Gold Remix
+# Pokémon Gold Remix 1.1
 
 This is a follow-up to [Pokémon Blue Remix](https://github.com/whitgroves/pokeblue-remix) forked from [pret's disassembly of Pokémon Gold/Silver](https://github.com/pret/pokegold) and inspired by [TheSmithPlays' Crystal Legacy project](https://github.com/cRz-Shadows/Pokemon_Crystal_Legacy). If you'd like to play the game, please follow [these instructions](./INSTALL.md) (courtesy pret) on how to build the ROM.
 

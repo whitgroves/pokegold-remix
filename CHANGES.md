@@ -31,23 +31,24 @@ WATER||2|0.5||0.5|0.5|||2||||2||||
 ELECTRIC|||2|0.5|0.5|0.5|||0|2||2|0.5||0.5|2|2
 GRASS||0.5|2||0.5|||0.5||0.5||0.5|2||||0.5
 ICE||0.5|0.5||2|0.5|0.5||2|2||2|||0.5||0.5
-FIGHTING|2||0.5|||2||||0.5|0.5|0.5|2|0.5||2|2
-POISON|||2||2|0.5||0.5|0.5|||2|0.5|0.5|2|2|0
+FIGHTING|2||0.5|||2||0.5||0.5|0.5|0.5|2|0.5||2|2
+POISON|||2||2|||0.5|0.5|||2|0.5|0.5|2||0
 GROUND||2||2|0.5|||2||0||0.5|2||||2
 FLYING|||||2||2|||||2|0.5||||0.5
-PSYCHIC|||||||2||||0.5|0.5|||0.5|0.5|
+PSYCHIC|||||||2|2|||0.5|0.5|||0.5|0.5|
 BUG|||||2|||||0.5|2||0.5|0.5||2|0.5
 ROCK||2||||2|||0.5|2||2|||||
 GHOST|0||||0.5||0.5||||2|0.5||2||0.5|
-DRAGON||||||||||||||2|2||0.5
+DRAGON|||||||||||||||2||0.5
 DARK|2||||||0.5|0.5|||2|0.5|0.5|||0.5|0.5
-STEEL|||||2|2|0.5||||0.5|2||0.5|2||
+STEEL|||||2|2|0.5||||0.5||2|0.5|2||
 
 ## Pokémon Changes
 
 ### Types
 These mons have had their types (and in many cases, learnsets) updated.
-- Bulbasaur, Ivysaur, Venusaur: *Grass/Poison* -> *Grass*
+- Bulbasaur, Ivysaur: *Grass/Poison* -> *Grass*
+- Venusaur: *Grass/Poison* -> *Grass/Dragon*
 - Charizard: *Fire/Flying* -> *Fire/Dragon*
 - Blastoise: *Water* -> *Water/Steel*
 - Arbok: *Poison* -> *Poison/Dark*
