@@ -93,8 +93,8 @@ CamperDeanBeatenText:
 	done
 
 CamperDeanAfterBattleText:
-	text "My #MON were worn"
-	line "down before even"
+	text "My #MON were"
+	line "worn-down before"
 	cont "getting here…"
 
 	para "Good thing"

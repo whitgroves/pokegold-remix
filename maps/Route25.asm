@@ -378,8 +378,15 @@ SupernerdPatBeatenText:
 	done
 
 SupernerdPatAfterBattleText:
-	text "I'm sorry… I won't"
-	line "cheat anymore…"
+	text "I was supposed to"
+	line "meet someone here…"
+
+	para "But after losing"
+	line "to that guy over"
+	
+	para "there, he took my"
+	line "NUGGET as part of"
+	cont "some tradition…"
 	done
 
 CooltrainermKevinNuggetText:
