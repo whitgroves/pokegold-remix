@@ -2010,7 +2010,7 @@ SailorGroup:
 	db "STANLY@", TRAINERTYPE_NORMAL
 	db 26, SEEL
 	db 31, URSARING
-	db 33, PSYDUCK
+	db 32, PSYDUCK
 	db -1 ; end
 
 	; SAILOR (10)
