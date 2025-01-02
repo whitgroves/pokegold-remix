@@ -21,7 +21,7 @@ MountMortar2FInsideTMDefenseCurl:
 	itemball TM_DEFENSE_CURL
 
 MountMortar2FInsideDragonScale:
-	itemball DRAGON_SCALE
+	itemball DRAGON_SCALE ; TODO -- change to TM, KINGS_ROCK, evo item, etc.
 
 MountMortar2FInsideElixer:
 	itemball ELIXER

@@ -434,3 +434,4 @@ The Mahogany Mart carries these items once the Rocket Hideout is cleared and Pry
 ### Other
 - Since Remoraid are no longer found on Route 44, Sailor Huey (lighthouse) now activates the Remoraid swarm
 trees in cities (Ecruteak) can now spawn wild encounters.
+- Dragon's Fang now boosts Dragon-type moves instead of Dragon's Scale.
