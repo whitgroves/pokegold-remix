@@ -1,4 +1,4 @@
-# Pokémon Gold Remix - Revision 1.1
+# Pokémon Gold Remix - Revision 1.2
 Below is a non-exhaustive list of changes to this revision:
 - [Type Chart](#type-chart)
 - [Pokémon Changes](#pokémon-changes)
