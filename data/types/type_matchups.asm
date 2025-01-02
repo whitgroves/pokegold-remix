@@ -61,6 +61,7 @@ TypeMatchups:
 	db POISON,       GRASS,        SUPER_EFFECTIVE
 	db POISON,       POISON,       NOT_VERY_EFFECTIVE
 	db POISON,       GROUND,       NOT_VERY_EFFECTIVE
+	db POISON,       PSYCHIC_TYPE, NOT_VERY_EFFECTIVE
 	db POISON,       BUG,          SUPER_EFFECTIVE
 	db POISON,       ROCK,         NOT_VERY_EFFECTIVE
 	db POISON,       GHOST,        NOT_VERY_EFFECTIVE
@@ -97,6 +98,7 @@ TypeMatchups:
 	db ROCK,         GROUND,       NOT_VERY_EFFECTIVE
 	db ROCK,         FLYING,       SUPER_EFFECTIVE
 	db ROCK,         BUG,          SUPER_EFFECTIVE
+	db ROCK,         STEEL,        NOT_VERY_EFFECTIVE
 	db GHOST,        NORMAL,       NO_EFFECT
 	db GHOST,        GRASS,        NOT_VERY_EFFECTIVE
 	db GHOST,        FIGHTING,     NOT_VERY_EFFECTIVE
@@ -117,7 +119,6 @@ TypeMatchups:
 	db STEEL,        GRASS,        SUPER_EFFECTIVE
 	db STEEL,        ICE,          SUPER_EFFECTIVE
 	db STEEL,        FIGHTING,     NOT_VERY_EFFECTIVE
-	db STEEL,        PSYCHIC_TYPE, NOT_VERY_EFFECTIVE
 	db STEEL,        ROCK,         SUPER_EFFECTIVE
 	db STEEL,        GHOST,        NOT_VERY_EFFECTIVE
 	db STEEL,        DRAGON,       SUPER_EFFECTIVE
