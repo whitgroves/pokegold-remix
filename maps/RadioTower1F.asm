@@ -116,6 +116,8 @@ RadioTower1FRadioCardWomanScript:
 	opentext
 	checkflag ENGINE_RADIO_CARD
 	iftrue .GotCard
+	checkevent EVENT_CLEARED_RADIO_TOWER
+	iftrue .SavedTower
 	writetext RadioTower1FRadioCardWomanOfferQuizText
 	yesorno
 	iffalse .NoQuiz
@@ -146,6 +148,11 @@ RadioTower1FRadioCardWomanScript:
 	waitsfx
 	writetext RadioTower1FRadioCardWomanYouWinText
 	promptbutton
+	jr .GiveCard
+.SavedTower:
+	writetext RadioTower1FRadioCardWomanHeroText
+	promptbutton
+.GiveCard:
 	getstring STRING_BUFFER_4, .RadioCardText
 	scall .ReceiveItem
 	writetext RadioTower1FPokegearIsARadioText
@@ -301,6 +308,21 @@ RadioTower1FLuckyNumberManNoRoomForYourPrizeText:
 	line "back right away."
 	done
 
+RadioTower1FRadioCardWomanHeroText:
+	text "Oh, it's <PLAYER>!"
+
+	para "We have a special"
+	line "quiz campaign on"
+	cont "right now,"
+
+	para "But since you"
+	line "saved the TOWER,"
+
+	para "Take this prize"
+	line "as a token of our"
+	cont "appreciation!"
+	done
+
 RadioTower1FRadioCardWomanOfferQuizText:
 	text "We have a special"
 	line "quiz campaign on"
@@ -382,7 +404,7 @@ RadioTower1FPokegearIsARadioText:
 
 RadioTower1FRadioCardWomanTuneInText:
 	text "Please tune in to"
-	line "our radio shows."
+	line "our radio shows!"
 	done
 
 RadioTower1FRadioCardWomanWrongAnswerText:
