@@ -1,10 +1,10 @@
-# Pokémon Gold Remix 1.1
+# Pokémon Gold Remix
 
 This is a follow-up to [Pokémon Blue Remix](https://github.com/whitgroves/pokeblue-remix) forked from [pret's disassembly of Pokémon Gold/Silver](https://github.com/pret/pokegold) and inspired by [TheSmithPlays' Crystal Legacy project](https://github.com/cRz-Shadows/Pokemon_Crystal_Legacy). If you'd like to play the game, please follow [these instructions](./INSTALL.md) (courtesy pret) on how to build the ROM.
 
 Similar to Blue Remix, the goal is not to recreate the Legacy games, but rather to see what gen 2 would feel like with a rebalanced type chart and some unhinged typings (e.g., Steel is super effective vs Dragon, Sunflora is now Grass/Fire).
 
-However, some changes from Crystal, the Legacy hacks, and the [pret tutorials](https://github.com/pret/pokered/wiki/Tutorials) are duplicated here, such as learnsets, making *Cut* Bug-type, and auto-sorting the items in the backpack.
+However, some changes from Crystal Legacy and Blue Remix are duplicated here, such as making Cut Bug-type and the "Down + B" trick.
 
 ## Changes (✓ = done, ~ = in progress)
 The following changes have been implemented or planned:
@@ -25,7 +25,9 @@ The following changes have been implemented or planned:
 - Better rocket hideout & radio tower ✓
 - HMs can be forgotten ✓
 
-A detailed list of changes is available [here](./CHANGES.md). These are largely untested, so if you run into issues please reach out on X: [@whitgroves](https://x.com/whitgroves)
+A detailed list of changes is available [here](./CHANGES.md). 
+
+Most of these have been tested, but if you run into issues please reach out on X: [@whitgroves](https://x.com/whitgroves)
 
 ## Why *Gold* Remix?
 Similar to Blue Remix, Gold was the gen 2 game I made memories with, so I decided to go with my favorite.
@@ -33,24 +35,24 @@ Similar to Blue Remix, Gold was the gen 2 game I made memories with, so I decide
 ## Why Not Crystal?
 ~~I don't like the Suicune plot, plus Crystal Legacy is far more comprehensive than what I can build.~~ Nostalgia
 
-That said, if you'd like to play Crystal Legacy with the remixed types and learnsets, you can follow [Example 4](#example-4-the-good-one) below.
+That said, if you'd like to play Crystal Legacy with the remixed types and learnsets, you can use `easy_edit` by following [Example 4](#example-4-the-good-one) below.
 
-## What's *easy_edit*?
-While working on Blue Remix I developed a script, [*easy_edit*](https://github.com/whitgroves/pokeblue-remix/blob/rev_1.3/tools/easy_edit.py), to convert type, move, and pokemon data from assembly to csv and back again for easier editing.
+## What's `easy_edit`?
+While working on Blue Remix I developed a script, [easy_edit](https://github.com/whitgroves/pokeblue-remix/blob/rev_1.3/tools/easy_edit.py), to convert type, move, and pokemon data from assembly to csv and back again for easier editing.
 
-The version here, **ee2 (easy_edit gen 2)**, should be compatible with any gen 2 disassembly and only relies on the python3 standard library, so feel free to use it for your own projects.
+The version here, **ee2** (easy_edit gen 2), should be compatible with any gen 2 disassembly and only relies on the python3 standard library, so feel free to use it for your own projects.
 
 ### Example 1
-To make changes for another repo, copy [ee2.py](./tools/ee2.py) into the root of your project, then call:
+To make changes for another repo, save a copy of [ee2.py](./tools/ee2.py) in the root of your project, then run:
 ```
 $ ee2.py -e --matchups
 $ ee2.py -e --moves
 $ ee2.py -e --mon <pokemon name, all lowercase, no spaces>
 $ ee2.py -e --all
 ```
-To generate your csv files (`type_matchups.csv, moves.csv, <pokemon name>.csv`, or all 3, respectively). 
+To generate your csv files (`type_matchups.csv`, `moves.csv`, `<pokemon name>.csv`, or all 3, respectively). 
 
-Then run:
+After you make updates to your csv files, run:
 ```
 $ ee2.py -u --matchups
 $ ee2.py -u --moves

@@ -1,12 +1,13 @@
-# Pokémon Gold Remix - Changes
-Listed below are the changes that have been implemented so far:
+# Pokémon Gold Remix - Revision 1.1
+Below is a non-exhaustive list of changes to this revision:
 - [Type Chart](#type-chart)
 - [Pokémon Changes](#pokémon-changes)
     - [Types](#types)
     - [Evolution Methods](#evolution-methods)
         - [By Friendship](#by-friendship)
         - [By Item](#by-item)
-    - [Fossils](#fossils)
+    - [Encounters](#encounters)
+    - [Learnsets](#learnsets)
 - [Move Updates](#move-updates)
     - [Damaging Moves](#damaging-moves)
     - [Always Physical Moves](#always-physical-moves)
@@ -46,7 +47,7 @@ STEEL|||||2|2|0.5||||0.5||2|0.5|2||
 ## Pokémon Changes
 
 ### Types
-These mons have had their types (and in many cases, learnsets) updated.
+These mons have had their types updated:
 - Bulbasaur, Ivysaur: *Grass/Poison* -> *Grass*
 - Venusaur: *Grass/Poison* -> *Grass/Dragon*
 - Charizard: *Fire/Flying* -> *Fire/Dragon*
@@ -173,14 +174,63 @@ These evolutions now happen by item effect (select and use the item from menu):
 
 All evolution items are available for purchase at the [Mahogany Mart](#mahogany-mart) after Mahogany Gym has been cleared.
 
-### Availability
-Besides evolution, several unique or otherwise unobtainable pokemon are now available in new ways:
+### Encounters
+Encounters for every area of the game (grass, caves, trees, surfing, fishing, and the bug contest) have been updated.
+
+Notably, several unique or otherwise unobtainable pokemon are now available in new ways:
 - *Ivysaur*, *Charmeleon*, and *Wartortle* are available as 10% encounters along Routes 26, 27, and Victory Road.
 - *Hitmonlee*, *Hitmonchan*, and *Hitmontop* are available as 10% encounters on the bottom floor of Mt. Mortar.
-- *Porygon* is now available for 700 coins in the Goldenrod Game Corner.
+- *Porygon* is available earlier for 700 coins in the Goldenrod Game Corner.
 - *Omanyte* and *Kabuto* are 10% encounters on the lowest floor of the Ice Path (the room with the Nevermeltice).
 - *Bayleef*, *Quilava*, and *Croconaw* are 10-20% encounters along Route 28 and outside Mt. Silver.
 - *Sudowoodo* is now a 40% Headbutt encounter on all "rare" trees.
+
+Tables for every route and method are listed in the [Encounters.ods](./Encounters.ods) spreadsheet.
+
+### Learnsets
+Most learnsets have been updated to give each mon a unique kit that sets them apart for a playthrough. 
+
+For example, *Sunflora* keeps *Sunny Day* at level 19 but also gets early *Solarbeam* to reward raising one early:
+```
+ 1 - Pound
+ 4 - Growth
+10 - Razor Leaf
+19 - Sunny Day
+24 - Solarbeam
+31 - Morning Sun
+38 - Baton Pass
+46 - Petal Dance
+```
+
+And *Jigglypuff* gets access to sound-based utilities like *Sonicboom*, *Snore*, and *Perish Song*:
+```
+ 1 - Sing
+ 4 - Supersonic
+ 9 - Pound
+14 - Screech
+19 - Sonicboom
+24 - Doubleslap
+29 - Rest
+34 - Snore
+39 - Perish Song
+```
+
+But the player can trade that coverage for greater Normal STAB by evolving to *Wigglytuff*:
+```
+ 1 - Sing
+ 4 - Bide
+ 9 - Slam
+14 - Screech
+19 - Flail
+24 - Doubleslap
+29 - Body Slam
+34 - Take Down
+39 - Belly Drum
+```
+
+Generally speaking, any mon with an updated type has an updated learnset.
+
+All learnsets can be exported and viewed with [`easy_edit`](./README.md#whats-easy_edit).
 
 ## Move Updates
 Several moves have had their types, effects, or other attributes changed to provide better STAB coverage or make certain movesets more viable.
