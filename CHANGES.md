@@ -190,7 +190,7 @@ Tables for every route and method are listed in the [Encounters.ods](./Encounter
 ### Learnsets
 Most learnsets have been updated to give each mon a unique kit that sets them apart for a playthrough. 
 
-For example, *Sunflora* keeps *Sunny Day* at level 19 but also gets early *Solarbeam* to reward raising one early:
+For example, *Sunflora* keeps *Sunny Day* at level 19 but also gets *Solarbeam* at level 24 to reward raising one early:
 ```
  1 - Pound
  4 - Growth
@@ -202,7 +202,7 @@ For example, *Sunflora* keeps *Sunny Day* at level 19 but also gets early *Solar
 46 - Petal Dance
 ```
 
-And *Jigglypuff* gets access to sound-based utilities like *Sonicboom*, *Snore*, and *Perish Song*:
+Similarly, *Jigglypuff* gets access to sound-based utilities like *Sonicboom*, *Snore*, and *Perish Song*:
 ```
  1 - Sing
  4 - Supersonic
