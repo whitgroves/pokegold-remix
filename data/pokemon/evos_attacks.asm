@@ -937,12 +937,11 @@ MachampEvosAttacks:
 BellsproutEvosAttacks:
 	db EVOLVE_LEVEL, 21, WEEPINBELL
 	db 0 ; no more evolutions
-	db 1, ABSORB
-	db 3, WRAP
-	db 5, VINE_WHIP
-	db 11, ACID
+	db 1, VINE_WHIP
+	db 5, WRAP
+	db 11, SWEET_SCENT
 	db 13, GROWTH
-	db 17, SWEET_SCENT
+	db 17, ACID
 	db 23, MEGA_DRAIN
 	db 34, SLUDGE
 	db 41, GIGA_DRAIN
@@ -952,12 +951,11 @@ BellsproutEvosAttacks:
 WeepinbellEvosAttacks:
 	db EVOLVE_ITEM, LEAF_STONE, VICTREEBEL
 	db 0 ; no more evolutions
-	db 1, ABSORB
-	db 3, WRAP
-	db 5, VINE_WHIP
-	db 11, ACID
+	db 1, VINE_WHIP
+	db 5, WRAP
+	db 11, SWEET_SCENT
 	db 13, GROWTH
-	db 17, SWEET_SCENT
+	db 17, ACID
 	db 24, MEGA_DRAIN
 	db 37, SLUDGE
 	db 46, GIGA_DRAIN
@@ -966,12 +964,11 @@ WeepinbellEvosAttacks:
 
 VictreebelEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, ABSORB
-	db 3, WRAP
-	db 5, VINE_WHIP
-	db 11, ACID
+	db 1, VINE_WHIP
+	db 5, WRAP
+	db 11, SWEET_SCENT
 	db 13, GROWTH
-	db 17, SWEET_SCENT
+	db 17, ACID
 	db 24, RAZOR_LEAF
 	db 37, SWORDS_DANCE
 	db 46, SLUDGE_BOMB

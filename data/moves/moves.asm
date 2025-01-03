@@ -33,7 +33,7 @@ Moves:
 	move WING_ATTACK,  EFFECT_NORMAL_HIT,         60, FLYING,       100, 35,   0
 	move WHIRLWIND,    EFFECT_FORCE_SWITCH,        0, FLYING,       100, 20,   0
 	move FLY,          EFFECT_FLY,                70, FLYING,       100, 15,   0
-	move BIND,         EFFECT_TRAP_TARGET,        15, NORMAL,        85, 20,   0
+	move BIND,         EFFECT_TRAP_TARGET,        15, NORMAL,        75, 20,   0
 	move SLAM,         EFFECT_NORMAL_HIT,         80, NORMAL,        75, 20,   0
 	move VINE_WHIP,    EFFECT_NORMAL_HIT,         40, GRASS,        100, 20,   0
 	move STOMP,        EFFECT_STOMP,              65, NORMAL,       100, 20,  30
@@ -48,7 +48,7 @@ Moves:
 	move HORN_DRILL,   EFFECT_OHKO,                1, DRAGON,        30,  5,   0
 	move TACKLE,       EFFECT_NORMAL_HIT,         35, NORMAL,       100, 35,   0
 	move BODY_SLAM,    EFFECT_PARALYZE_HIT,       85, NORMAL,       100, 15,  30
-	move WRAP,         EFFECT_TRAP_TARGET,        15, POISON,        85, 20,   0
+	move WRAP,         EFFECT_TRAP_TARGET,        15, POISON,        75, 20,   0
 	move TAKE_DOWN,    EFFECT_RECOIL_HIT,         90, NORMAL,        85, 20,   0
 	move THRASH,       EFFECT_RAMPAGE,            90, DARK,         100, 20,   0
 	move DOUBLE_EDGE,  EFFECT_RECOIL_HIT,        120, STEEL,        100, 15,   0
@@ -145,7 +145,7 @@ Moves:
 	move SWIFT,        EFFECT_ALWAYS_HIT,         60, NORMAL,       100, 20,   0
 	move SKULL_BASH,   EFFECT_FLINCH_HIT,         70, ROCK,         100, 15,  30
 	move SPIKE_CANNON, EFFECT_MULTI_HIT,          20, STEEL,        100, 15,   0
-	move CONSTRICT,    EFFECT_TRAP_TARGET,        15, BUG,           85, 20,   0
+	move CONSTRICT,    EFFECT_TRAP_TARGET,        15, BUG,           75, 20,   0
 	move AMNESIA,      EFFECT_SP_DEF_UP_2,         0, PSYCHIC_TYPE, 100, 20,   0
 	move KINESIS,      EFFECT_ACCURACY_DOWN,       0, PSYCHIC_TYPE,  80, 15,   0
 	move SOFTBOILED,   EFFECT_HEAL,                0, NORMAL,       100, 10,   0

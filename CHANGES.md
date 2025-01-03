@@ -243,7 +243,7 @@ Several moves have had their types, effects, or other attributes changed to prov
 - Razor Wind: *Normal* -> *Flying* | *Charging Move* -> *30% Chance To Flinch* | *75%* -> *100% Accuracy*
 - Cut: *Normal* -> *Bug* | *No Effect* -> *High Crit Rate* | *95%* -> *100% Accuracy*
 - Fly: *95%* -> *100% Accuracy*
-- Bind: *75%* -> *85% Accuracy*
+- ~~Bind: *75%* -> *85% Accuracy*~~
 - Vine Whip: *35* -> *40 Power* | *10* -> *20 PP* | [*Always Physical*](#always-physical-moves)
 - Stomp: *Normal* -> *Ground*
 - Rolling Kick: *85%* -> *100% Accuracy*
@@ -279,7 +279,7 @@ Several moves have had their types, effects, or other attributes changed to prov
 - Clamp: *35* -> *15 Power* | *10* -> *20 PP* | [*Always Physical*](#always-physical-moves)
 - Skull Bash: *Normal* -> *Rock* | *Charging Move* -> *30% Chance To Flinch* | *100* -> *70 Power*
 - Spike Cannon: *Normal* -> *Steel*
-- Constrict: *Normal* -> *Bug* | *10% Chance To Lower Speed* -> [*Trapping Move*](#trapping-moves) | *10* -> *15 Power* | *100%* -> *85% Accuracy* | *35* -> *20 PP*
+- Constrict: *Normal* -> *Bug* | *10% Chance To Lower Speed* -> [*Trapping Move*](#trapping-moves) | *10* -> *15 Power* | *100%* -> *75% Accuracy* | *35* -> *20 PP*
 - Leech Life: *20* -> *30 Power* | *15* -> *30 PP*
 - Sky Attack: *Charging Move* -> [*Skips Charging Turn Under Sun*](#sun)
 - Dizzy Punch: *Normal* -> *Psychic* | [*Always Physical*](#always-physical-moves)
