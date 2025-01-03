@@ -1,7 +1,9 @@
 	object_const_def
 	const DRAGONSDENB1F_POKE_BALL1
-	const DRAGONSDENB1F_CLAIR
+	const DRAGONSDENB1F_CLAIR ; dereferenced -- for now
 	const DRAGONSDENB1F_RIVAL
+	const DRAGONSDENB1F_DRAGON
+	const DRAGONSDENB1F_POKE_BALL2
 
 DragonsDenB1F_MapScripts:
 	def_scene_scripts
@@ -10,6 +12,7 @@ DragonsDenB1F_MapScripts:
 	callback MAPCALLBACK_NEWMAP, DragonsDenB1FCheckRivalCallback
 
 DragonsDenB1FCheckRivalCallback:
+	;setevent EVENT_DRAGONS_DEN_B1F_DRAGON_FANG_DROPPED ; debug
 	checkevent EVENT_BEAT_RIVAL_IN_MT_MOON
 	iftrue .CheckDay
 	disappear DRAGONSDENB1F_RIVAL
@@ -25,56 +28,6 @@ DragonsDenB1FCheckRivalCallback:
 .AppearRival:
 	appear DRAGONSDENB1F_RIVAL
 	endcallback
-
-DragonsDenB1FDragonFangScript:
-	giveitem DRAGON_FANG
-	iffalse .BagFullDragonFang
-	;setevent EVENT_DRAGONS_DEN_B1F_DRAGON_FANG
-	disappear DRAGONSDENB1F_POKE_BALL1
-	opentext
-	getitemname STRING_BUFFER_3, DRAGON_FANG
-	writetext Text_FoundDragonFang
-	playsound SFX_ITEM
-	waitsfx
-	itemnotify
-	closetext
-	readvar VAR_FACING
-	ifequal RIGHT, .next
-	sjump .next2
-.next
-	moveobject DRAGONSDENB1F_CLAIR, 34, 21
-.next2
-	appear DRAGONSDENB1F_CLAIR
-	applymovement DRAGONSDENB1F_CLAIR, MovementDragonsDen_ClairWalksToYou
-	turnobject PLAYER, DOWN
-	opentext
-	writetext ClairText_GiveDragonbreathDragonDen
-	promptbutton
-	waitsfx
-	specialphonecall SPECIALCALL_MASTERBALL
-	verbosegiveitem TM_DRAGONBREATH, 1
-	iffalse .ClairLastText
-	setevent EVENT_GOT_TM24_DRAGONBREATH
-	writetext ClairText_DescribeDragonbreathDragonDen
-	promptbutton
-	sjump .ClairLastText
-.ClairLastText
-	writetext ClairText_CollectedAllBadges
-	waitbutton
-	closetext
-	applymovement DRAGONSDENB1F_CLAIR, MovementDragonsDen_ClairWalksAway
-	disappear DRAGONSDENB1F_CLAIR
-	end
-
-.BagFullDragonFang:
-	opentext
-	getitemname STRING_BUFFER_3, DRAGON_FANG
-	writetext Text_FoundDragonFang
-	promptbutton
-	writetext Text_NoRoomForDragonFang
-	waitbutton
-	closetext
-	end
 
 DragonsDenB1FRivalScript:
 	playmusic MUSIC_RIVAL_ENCOUNTER
@@ -108,83 +61,89 @@ DragonsDenB1FHiddenMaxPotion:
 DragonsDenB1FHiddenMaxElixer:
 	hiddenitem MAX_ELIXER, EVENT_DRAGONS_DEN_B1F_HIDDEN_MAX_ELIXER
 
-MovementDragonsDen_ClairWalksToYou:
-	step UP
-	step UP
-	step UP
-	step UP
-	step_end
+DragonsDenB1FDragonScale:
+	itemball DRAGON_SCALE
 
-MovementDragonsDen_ClairWalksAway:
-	step DOWN
-	step DOWN
-	step DOWN
-	step DOWN
-	step_end
+AncientDragon:
+	faceplayer
+	opentext
+	writetext DragonsDenAncientDragonCryText
+	pause 15
+	cry AERODACTYL
+	closetext
+	loadwildmon AERODACTYL, 40
+	loadvar VAR_BATTLETYPE, BATTLETYPE_FORCESHINY
+	startbattle
+	ifequal LOSE, .NotBeaten
+	disappear DRAGONSDENB1F_DRAGON
+.NotBeaten
+	reloadmapafterbattle
+	opentext
+	giveitem DRAGON_FANG
+	iffalse .BagFullDragonFang
+	waitsfx
+	writetext DragonsDenGotDragonsFangText
+	playsound SFX_ITEM
+	waitsfx
+	itemnotify
+	closetext
+	setscene 0
+	end
+.BagFullDragonFang:
+	clearevent EVENT_DRAGONS_DEN_B1F_DRAGON_FANG_DROPPED
+	writetext DragonsDenGotDragonsFangText
+	promptbutton
+	writetext DragonsDenNoRoomForFangText
+	waitbutton
+	closetext
+	appear DRAGONSDENB1F_POKE_BALL2
+	setscene 0
+	end
 
-ClairText_GiveDragonbreathDragonDen:
-	text "All right."
+DragonsDenB1FDragonFangScript:
+	opentext
+	giveitem DRAGON_FANG
+	iffalse .BagFullDragonFangAgain
+	setevent EVENT_DRAGONS_DEN_B1F_DRAGON_FANG_DROPPED
+	disappear DRAGONSDENB1F_POKE_BALL2
+	writetext DragonsDenGotDragonsFangText
+	playsound SFX_ITEM
+	waitsfx
+	itemnotify
+	closetext
+	end
+.BagFullDragonFangAgain
+	writetext DragonsDenGotDragonsFangText
+	promptbutton
+	writetext DragonsDenNoRoomForFangText
+	waitbutton
+	closetext
+	end
 
-	para "You have proven"
-	line "yourself worthy."
-
-	para "I want you to have"
-	line "this TM."
+DragonsDenAncientDragonCryText:
+	text "Aarrgiyaah!"
 	done
 
-ClairText_DescribeDragonbreathDragonDen:
-	text "That contains"
-	line "DRAGONBREATH."
-
-	para "Most dragons can"
-	line "breathe fire, ice,"
-	cont "or lightning."
-
-	para "But this move"
-	line "channels pure"
-	cont "mystical energy."
-
-	para "Receiving this"
-	line "technique is"
-	cont "an honor."
-
-	para "Don't take it"
-	line "lightly!"
+DragonsDenGotDragonsFangText:
+	text "<PLAYER> obtained"
+	line "the DRAGON FANG!"
 	done
 
-ClairText_CollectedAllBadges:
-	text "Now that you've"
-	line "beaten all the"
-	cont "GYMs in JOHTO,"
-
-	para "your next goal"
-	line "should be the"
-	cont "#MON LEAGUE."
-
-	para "The trainers along"
-	line "the way are tough."
-
-	para "You should prepare"
-	line "before you leave."
-
-	para "Don't you dare"
-	line "lose at the #-"
-	cont "MON LEAGUE!"
-
-	para "If you do, I'll"
-	line "feel even worse"
-
-	para "about having lost"
-	line "to you!"
+DragonsDenNoRoomForFangText:
+	text "But <PLAYER> can't"
+	line "carry any more"
+	cont "items."
 	done
+
+
 
 DragonShrineSignpostText:
 	text "DRAGON SHRINE"
 
-	para "A shrine honoring"
-	line "the dragon #MON"
+	para "We give honor to"
+	line "the #MON"
 
-	para "said to have lived"
+	para "that dwell within"
 	line "in DRAGON'S DEN."
 	done
 
@@ -217,19 +176,6 @@ RivalText_Training2:
 	line "of my way…"
 	done
 
-Text_FoundDragonFang:
-	text "<PLAYER> found a"
-	line "@"
-	text_ram wStringBuffer3
-	text "!"
-	done
-
-Text_NoRoomForDragonFang:
-	text "But <PLAYER> can't"
-	line "carry any more"
-	cont "items."
-	done
-
 DragonsDenB1F_MapEvents:
 	db 0, 0 ; filler
 
@@ -245,6 +191,8 @@ DragonsDenB1F_MapEvents:
 	bg_event 31, 15, BGEVENT_ITEM, DragonsDenB1FHiddenMaxElixer
 
 	def_object_events
-	object_event 35, 16, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, DragonsDenB1FDragonFangScript, EVENT_DRAGONS_DEN_B1F_DRAGON_FANG
-	object_event 35, 22, SPRITE_CLAIR, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_DRAGONS_DEN_CLAIR
+	object_event 35, 16, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, DragonsDenB1FDragonScale, EVENT_DRAGONS_DEN_B1F_DRAGON_SCALE
+	object_event 35, 22, SPRITE_CLAIR, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_DRAGONS_DEN_CLAIR ; dereferenced -- for now
 	object_event 20, 23, SPRITE_RIVAL, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, DragonsDenB1FRivalScript, EVENT_RIVAL_DRAGONS_DEN
+	object_event 20, 16, SPRITE_DRAGON, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, AncientDragon, EVENT_DRAGONS_DEN_B1F_BLUE_AERODACTYL
+	object_event 20, 16, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, DragonsDenB1FDragonFangScript, EVENT_DRAGONS_DEN_B1F_DRAGON_FANG_DROPPED

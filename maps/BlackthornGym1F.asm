@@ -54,27 +54,38 @@ BlackthornGymClairScript:
 	setevent EVENT_BEAT_COOLTRAINERF_LOLA
 	setevent EVENT_BLACKTHORN_CITY_GRAMPS_BLOCKS_DRAGONS_DEN
 	clearevent EVENT_BLACKTHORN_CITY_GRAMPS_NOT_BLOCKING_DRAGONS_DEN
+	;setevent EVENT_DRAGONS_DEN_B1F_DRAGON_FANG_DROPPED ; debug
 	end
 
 .FightDone:
-	checkevent EVENT_DRAGONS_DEN_B1F_DRAGON_FANG
+	checkevent EVENT_DRAGONS_DEN_B1F_DRAGON_FANG_DROPPED
+	iffalse .LeftDragonFang
+	checkevent EVENT_DRAGONS_DEN_B1F_BLUE_AERODACTYL
 	iftrue .HasDragonFang
 	writetext ClairText_WhatsTheMatter
 	waitbutton
 	closetext
 	end
 
+.LeftDragonFang:
+	writetext ClairText_LeftItBehind
+	waitbutton
+	closetext
+	end
+
 .HasDragonFang:
-	;checkevent EVENT_GOT_TM24_DRAGONBREATH
-	checkevent EVENT_DRAGONS_DEN_B1F_DRAGON_FANG
+	checkevent EVENT_GOT_TM24_DRAGONBREATH
 	iftrue .GotTM24
-	;writetext BlackthornGymClairText_YouKeptMeWaiting
-	;promptbutton
-	;verbosegiveitem TM_DRAGONBREATH
-	;iffalse .BagFull
-	;setevent EVENT_GOT_TM24_DRAGONBREATH
-	;writetext BlackthornGymClairText_DescribeTM24
-	;waitbutton
+	writetext BlackthornGymClairText_YouKeptMeWaiting
+	promptbutton
+	specialphonecall SPECIALCALL_MASTERBALL
+	verbosegiveitem TM_DRAGONBREATH
+	iffalse .BagFull
+	setevent EVENT_GOT_TM24_DRAGONBREATH
+	writetext BlackthornGymClairText_DescribeTM24
+	promptbutton
+	writetext ClairText_CollectedAllBadges
+	waitbutton
 	closetext
 	end
 
@@ -196,16 +207,18 @@ ClairText_BadgeSpeech:
 	line "obey your commands"
 	cont "without question."
 
-	para "However, I do not"
-	line "recognize you as"
+	para "However…"
 	
-	para "worthy of our"
-	line "GYM's techniques."
+	para "I do not recognize"
+	line "you as worthy of"
+	
+	para "our GYM's sacred"
+	line "dragon technique."
 
 	para "I may have lost,"
 	line "but I can only"
 	
-	para "pass them on to"
+	para "pass it on to"
 	line "someone who has"
 	
 	para "taken the dragon"
@@ -217,12 +230,10 @@ ClairText_BadgeSpeech:
 
 	para "Go and bring me"
 	line "a DRAGON FANG"
-	cont "from deep within" ; temp
-	cont "the DEN."			; temp
 
-	;para "from the ancient"
-	;line "#MON that lives"
-	;cont "deep inside."
+	para "from the ancient"
+	line "#MON that lives"
+	cont "deep inside."
 
 	para "That is the test"
 	line "to be accepted as"
@@ -244,11 +255,22 @@ ClairText_WhatsTheMatter:
 	line "be hard for you."
 	done
 
+ClairText_LeftItBehind:
+	text "You beat the #-"
+	line "MON but left the"
+	cont "FANG behind?"
+
+	para "How can I entrust"
+	line "you with anything?"
+	done
+
 BlackthornGymClairText_YouKeptMeWaiting:
 	text "You kept me"
-	line "waiting… but"
+	line "waiting…"
+	
+	para "But alright."
 
-	para "you have proven"
+	para "You have proven"
 	line "yourself worthy."
 
 	para "I want you to have"
@@ -269,10 +291,26 @@ BlackthornGymClairText_DescribeTM24:
 
 	para "Receiving this"
 	line "technique is"
-	cont "an honor."
+	cont "an honor,"
 
-	para "Don't take it"
+	para "So don't take it"
 	line "lightly!"
+	done
+
+ClairText_CollectedAllBadges:
+	text "Now that you've"
+	line "beaten all the"
+	cont "GYMs in JOHTO,"
+
+	para "your next goal"
+	line "should be the"
+	cont "#MON LEAGUE."
+
+	para "The trainers along"
+	line "the way are tough."
+
+	para "You should prepare"
+	line "before you leave."
 	done
 
 BlackthornGymClairText_League:

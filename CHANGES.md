@@ -182,6 +182,7 @@ Notably, several unique or otherwise unobtainable pokemon are now available in n
 - *Hitmonlee*, *Hitmonchan*, and *Hitmontop* are available as 10% encounters on the bottom floor of Mt. Mortar.
 - *Porygon* is available earlier for 700 coins in the Goldenrod Game Corner.
 - *Omanyte* and *Kabuto* are 10% encounters on the lowest floor of the Ice Path (the room with the Nevermeltice).
+- *Aerodactyl* is encountered as part of the plot, and at 1% on the summit of Mt. Silver. 
 - *Bayleef*, *Quilava*, and *Croconaw* are 10-20% encounters along Route 28 and outside Mt. Silver.
 - *Sudowoodo* is now a 40% Headbutt encounter on all "rare" trees.
 
@@ -416,22 +417,24 @@ The Mahogany Mart carries these items once the Rocket Hideout is cleared and Pry
 ## Miscellaneous
 
 ### DVs
-- Gender is no longer determined solely by Attack DV (i.e., female mons outside of all-female species can roll high ATK DVs)
-- As a consequence of the above, the shininess formula has been updated and now has a ~1/10,000 chance instead of 1/8192
-- Similarly, trainer DVs have been updated to raise the attack of (most) female trainer classes and give each of the Elite Four a perfect stat
-- The stats screen shows happiness as percent of 255 (TRUST) and Attack, Defense, Special, and Speed DVs (DNA)
+- Gender is no longer determined solely by Attack DV (i.e., female mons outside of all-female species can roll high ATK DVs).
+- As a consequence of the above, the shininess formula has been updated and now has a ~1/10,000 chance instead of 1/8192.
+- Similarly, trainer DVs have been updated to raise the attack of (most) female trainer classes and give each of the Elite Four a perfect stat.
+- The stats screen shows happiness as percent of 255 (TRUST) and Attack, Defense, Special, and Speed DVs (DNA).
 
 ### Story Progression
-- After receiving the Old and Good Rods, each Fishing Guru will tell the player where to find the next one
-- The trainer in Cianwood now gifts a Delibird instead of Shuckle so the player can always FLY home after beating the gym
-- Each surveillance statue in the Rocket Hideout summons 1 unique battle instead of 2 generic grunts
-- The Radio Tower incident now starts when reaching Blackthorn rather than immediately the 7th badge
-- Consequently, Route 44 and the [Mahogany Mart](#mahogany-mart-post-rocket-hideout) both open immediately after beating Pryce
-- After clearing Radio Tower, the player receives a badge boost for *Dark* type moves
-- Also, the Radio Card quiz will be skipped if the player hasn't picked it up already
-- Clair gives the Risingbadge immediately upon defeat, but the player must still get the Dragon Fang to receive TM24
+- After receiving the Old and Good Rods, each Fishing Guru will tell the player where to find the next one.
+- The trainer in Cianwood now gifts a Delibird instead of Shuckle so the player can always FLY home after beating the gym.
+- Each surveillance statue in the Rocket Hideout summons 1 unique battle instead of 2 generic grunts.
+- The Radio Tower incident now starts when reaching Blackthorn rather than immediately the 7th badge.
+- Consequently, Route 44 and the [Mahogany Mart](#mahogany-mart-post-rocket-hideout) both open immediately after beating Pryce.
+- After clearing Radio Tower, the player receives a badge boost for *Dark* type moves.
+- Also, the Radio Card quiz will be skipped if the player hasn't picked it up already.
+- Clair gives the Risingbadge immediately upon defeat, but the player must still complete the dragon user challenge to receive TM24.
+- The dragon user challenge has changed; check the center of the cavern first.
 
 ### Other
 - Since Remoraid are no longer found on Route 44, Sailor Huey (lighthouse) now activates the Remoraid swarm
 trees in cities (Ecruteak) can now spawn wild encounters.
 - Dragon's Fang now boosts Dragon-type moves instead of Dragon's Scale.
+- The Dragon's Fang in Dragon's Den is now a Dragon's Scale. The Dragon's Scale in Mt Mortar is now a Quick Claw.
