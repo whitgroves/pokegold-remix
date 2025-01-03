@@ -2423,10 +2423,10 @@ BurglarGroup:
 FirebreatherGroup:
 	; FIREBREATHER (1)
 	db "OTIS@", TRAINERTYPE_NORMAL
-	db 29, BELLOSSOM
+	db 34, PONYTA
 	db 32, VULPIX
 	db 33, MAGMAR
-	db 34, PONYTA
+	db 36, FLAREON
 	db -1 ; end
 
 	; FIREBREATHER (2)
