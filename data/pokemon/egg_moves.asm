@@ -465,9 +465,9 @@ DratiniEggMoves:
 ChikoritaEggMoves:
 	db VINE_WHIP
 	db LEECH_SEED
-	db COUNTER
+	db OUTRAGE
 	db ANCIENTPOWER
-	db FLAIL
+	db HEAL_BELL
 	db -1 ; end
 
 CyndaquilEggMoves:

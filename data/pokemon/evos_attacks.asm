@@ -2099,44 +2099,44 @@ ChikoritaEvosAttacks:
 	db EVOLVE_LEVEL, 16, BAYLEEF
 	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 1, GROWL
+	db 1, SWEET_SCENT
 	db 8, RAZOR_LEAF
-	db 12, REFLECT
-	db 15, POISONPOWDER
-	db 22, SYNTHESIS
+	db 12, SYNTHESIS
+	db 15, REFLECT
+	db 22, LIGHT_SCREEN
 	db 29, BODY_SLAM
-	db 36, LIGHT_SCREEN
-	db 43, SAFEGUARD
-	db 50, SOLARBEAM
+	db 36, SAFEGUARD
+	db 43, SOLARBEAM
+	db 50, TAKE_DOWN
 	db 0 ; no more level-up moves
 
 BayleefEvosAttacks:
 	db EVOLVE_LEVEL, 32, MEGANIUM
 	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 1, GROWL
+	db 1, SWEET_SCENT
 	db 8, RAZOR_LEAF
-	db 12, REFLECT
-	db 15, POISONPOWDER
-	db 23, SYNTHESIS
+	db 12, SYNTHESIS
+	db 15, REFLECT
+	db 23, LIGHT_SCREEN
 	db 31, BODY_SLAM
-	db 39, LIGHT_SCREEN
-	db 47, SAFEGUARD
-	db 55, SOLARBEAM
+	db 39, SAFEGUARD
+	db 47, SOLARBEAM
+	db 55, HYPER_BEAM
 	db 0 ; no more level-up moves
 
 MeganiumEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 1, GROWL
+	db 1, SWEET_SCENT
 	db 8, RAZOR_LEAF
-	db 12, REFLECT
-	db 15, POISONPOWDER
-	db 23, SYNTHESIS
+	db 12, SYNTHESIS
+	db 15, REFLECT
+	db 23, LIGHT_SCREEN
 	db 31, BODY_SLAM
-	db 41, LIGHT_SCREEN
-	db 51, SAFEGUARD
-	db 61, SOLARBEAM
+	db 41, SAFEGUARD
+	db 51, SOLARBEAM
+	db 61, HYPER_BEAM
 	db 0 ; no more level-up moves
 
 CyndaquilEvosAttacks:
@@ -2838,14 +2838,15 @@ ForretressEvosAttacks:
 
 DunsparceEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, RAGE
-	db 5, DEFENSE_CURL
+	db 1, DRAGON_RAGE
+	db 5, MUD_SLAP
 	db 13, SPITE
 	db 18, GLARE
-	db 22, MUD_SLAP
+	db 22, DIG
 	db 27, PURSUIT
 	db 31, SCREECH
-	db 38, ROLLOUT
+	db 38, OUTRAGE
+	db 42, EARTHQUAKE
 	db 0 ; no more level-up moves
 
 GligarEvosAttacks:

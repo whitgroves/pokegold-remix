@@ -33,6 +33,7 @@ TypeMatchups:
 	db GRASS,        WATER,        SUPER_EFFECTIVE
 	db GRASS,        GRASS,        NOT_VERY_EFFECTIVE
 	db GRASS,        POISON,       NOT_VERY_EFFECTIVE
+	db GRASS,        GROUND,       SUPER_EFFECTIVE
 	db GRASS,        FLYING,       NOT_VERY_EFFECTIVE
 	db GRASS,        BUG,          NOT_VERY_EFFECTIVE
 	db GRASS,        ROCK,         SUPER_EFFECTIVE
