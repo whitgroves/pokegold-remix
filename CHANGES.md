@@ -107,6 +107,7 @@ These mons have had their types updated:
 - Gyarados: *Water* -> *Water/Dragon*
 - Porygon: *Normal* -> *Normal/Ghost*
 - Kabuto, Kabutops: *Rock/Water* -> *Rock/Bug*
+- Chikorita: *Grass* -> *Grass/Normal*
 - Bayleef, Meganium: *Grass* -> *Grass/Dragon*
 - Cyndaquil, Quilava, Typhlosion: *Fire* -> *Fire/Normal*
 - Croconaw, Feraligatr: *Water* -> *Water/Dark*
@@ -125,6 +126,7 @@ These mons have had their types updated:
 - Slowking: *Water/Psychic* -> *Psychic/Dragon*
 - Misdreavus: *Ghost* -> *Ghost/Psychic*
 - Unown: *Psychic* -> *Ghost/Dark*
+- Dunsparce: *Normal* -> *Ground/Dragon*
 - Gligar: *Ground/Flying* -> *Poison/Flying*
 - Snubbull, Granbull: *Normal* -> *Normal/Dark*
 - Shuckle: *Bug/Rock* -> *Rock/Poison*
