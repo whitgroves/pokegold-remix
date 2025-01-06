@@ -224,10 +224,9 @@ Route40Lass1Text:
 	done
 
 MeetMonicaText:
-	text "MONICA: Glad to"
-	line "meet you. I'm"
-
-	para "MONICA of Monday."
+	text "Glad to meet you."
+	line "I'm MONICA"
+	cont "of Monday."
 	done
 
 MonicaGivesGiftText:
@@ -237,11 +236,11 @@ MonicaGivesGiftText:
 	done
 
 MonicaGaveGiftText:
-	text "MONICA: It's an"
-	line "item that raises"
+	text "It's an item that"
+	line "raises the power"
 
-	para "the power of fly-"
-	line "ing-type moves."
+	para "of flying-type"
+	line "moves."
 
 	para "You should equip a"
 	line "bird #MON with"
@@ -249,8 +248,8 @@ MonicaGaveGiftText:
 	done
 
 MonicaMondayText:
-	text "MONICA: My broth-"
-	line "ers and sisters"
+	text "My brothers"
+	line "and sisters"
 
 	para "are all over the"
 	line "place."
@@ -260,9 +259,10 @@ MonicaMondayText:
 	done
 
 MonicaNotMondayText:
-	text "MONICA: I don't"
-	line "think today is"
-	cont "Monday. How sad…"
+	text "I don't think"
+	line "today is Monday."
+	
+	para "How sad…"
 	done
 
 Route40SignText:

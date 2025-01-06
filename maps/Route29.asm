@@ -347,8 +347,8 @@ Route29CooltrainerMText_WaitingForMorning:
 	done
 
 MeetTuscanyText:
-	text "TUSCANY: I do be-"
-	line "lieve that this is"
+	text "I do believe"
+	line "that this is"
 
 	para "the first time"
 	line "we've met?"
@@ -369,8 +369,8 @@ TuscanyGivesGiftText:
 	done
 
 TuscanyGaveGiftText:
-	text "TUSCANY: Wouldn't"
-	line "you agree that it"
+	text "Wouldn't you"
+	line "agree that it"
 	cont "is most adorable?"
 
 	para "It strengthens"
@@ -381,8 +381,8 @@ TuscanyGaveGiftText:
 	done
 
 TuscanyTuesdayText:
-	text "TUSCANY: Have you"
-	line "met MONICA, my"
+	text "Have you met"
+	line "MONICA, my"
 	cont "older sister?"
 
 	para "Or my younger"
@@ -393,8 +393,8 @@ TuscanyTuesdayText:
 	done
 
 TuscanyNotTuesdayText:
-	text "TUSCANY: Today is"
-	line "not Tuesday. That"
+	text "Today is not"
+	line "Tuesday. That"
 	cont "is unfortunate…"
 	done
 

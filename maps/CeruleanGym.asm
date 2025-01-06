@@ -225,9 +225,8 @@ CeruleanGymNote2Text:
 	done
 
 MistyIntroText:
-	text "MISTY: I was ex-"
-	line "pecting you, you"
-	cont "pest!"
+	text "I was expecting"
+	line "you, you pest!"
 
 	para "You may have a"
 	line "lot of JOHTO GYM"
@@ -241,8 +240,8 @@ MistyIntroText:
 	done
 
 MistyWinLossText:
-	text "MISTY: You really"
-	line "are good…"
+	text "You really are"
+	line "that good…"
 
 	para "I'll admit that"
 	line "you are skilled…"
@@ -257,10 +256,10 @@ ReceivedCascadeBadgeText:
 	done
 
 MistyFightDoneText:
-	text "MISTY: Are there"
-	line "many strong train-"
-	cont "ers in JOHTO? Like"
-	cont "you, I mean."
+	text "Are there many"
+	line "strong TRAINERS"
+	cont "in JOHTO?"
+	cont "Like you, I mean."
 
 	para "I'm going to"
 	line "travel one day, so"

@@ -281,7 +281,7 @@ LakeOfRageLanceIntroText:
 	done
 
 LakeOfRageLanceRadioSignalText:
-	text "LANCE: Excellent!"
+	text "Excellent!"
 
 	para "It seems that the"
 	line "LAKE's MAGIKARP"
@@ -306,7 +306,7 @@ LakeOfRageLanceRefusedText:
 	done
 
 LakeOfRageLanceAskHelpText:
-	text "LANCE: Hm? Are you"
+	text "Hm? Are you"
 	line "going to help me?"
 	done
 
@@ -441,8 +441,8 @@ CooltrainerfLoisAfterBattleText:
 	done
 
 MeetWesleyText:
-	text "WESLEY: Well, how"
-	line "do you do?"
+	text "Well hello,"
+	line "How do you do?"
 
 	para "Seeing as how it's"
 	line "Wednesday today,"
@@ -458,24 +458,24 @@ WesleyGivesGiftText:
 	done
 
 WesleyGaveGiftText:
-	text "WESLEY: BLACKBELT"
+	text "That BLACKBELT"
 	line "beefs up the power"
 	cont "of fighting moves."
 	done
 
 WesleyWednesdayText:
-	text "WESLEY: Since you"
-	line "found me, you must"
+	text "Since you found"
+	line "me, you must have"
 
-	para "have met my broth-"
-	line "ers and sisters."
+	para "met my brothers"
+	line "and sisters."
 
 	para "Or did you just"
 	line "get lucky?"
 	done
 
 WesleyNotWednesdayText:
-	text "WESLEY: Today's"
+	text "Ah, today's"
 	line "not Wednesday."
 	cont "That's too bad."
 	done

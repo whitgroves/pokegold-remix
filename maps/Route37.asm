@@ -108,37 +108,33 @@ Route37HiddenEther:
 	hiddenitem ETHER, EVENT_ROUTE_37_HIDDEN_ETHER
 
 TwinsAnnandanne1SeenText:
-	text "ANN: ANNE and I"
-	line "are in this to-"
-	cont "gether!"
+	text "ANNE and I are in"
+	line "this together!"
 	done
 
 TwinsAnnandanne1BeatenText:
-	text "ANN & ANNE: You're"
-	line "mean!"
+	text "You're mean!"
 	done
 
 TwinsAnnandanne1AfterBattleText:
-	text "ANN: I can tell"
-	line "what my sister and"
+	text "I can tell what"
+	line "my sister and"
 
 	para "my #MON are"
 	line "thinking."
 	done
 
 TwinsAnnandanne2SeenText:
-	text "ANNE: ANN and I"
-	line "are in this to-"
-	cont "gether!"
+	text "ANN and I are in"
+	line "this together!"
 	done
 
 TwinsAnnandanne2BeatenText:
-	text "ANN & ANNE: You're"
-	line "mean!"
+	text "You're mean!"
 	done
 
 TwinsAnnandanne2AfterBattleText:
-	text "ANNE: We share the"
+	text "We share the"
 	line "same feelings as"
 	cont "our #MON."
 	done
@@ -165,10 +161,10 @@ PsychicGregAfterBattleText:
 	done
 
 MeetSunnyText:
-	text "SUNNY: Hi!"
+	text "Hi! I'm SUNNY"
+	line "of Sunday,"
 
-	para "I'm SUNNY of Sun-"
-	line "day, meaning it's"
+	para "meaning it's"
 	cont "Sunday today!"
 	done
 
@@ -179,7 +175,7 @@ SunnyGivesGiftText1:
 	done
 
 SunnyGaveGiftText:
-	text "SUNNY: That thing…"
+	text "That thing…"
 
 	para "Um…"
 
@@ -202,8 +198,8 @@ SunnyGaveGiftText:
 	done
 
 SunnySundayText:
-	text "SUNNY: My sisters"
-	line "and brothers are"
+	text "My sisters and"
+	line "brothers are"
 	cont "MONICA, TUSCANY,"
 	cont "WESLEY, ARTHUR,"
 	cont "FRIEDA and SANTOS."
@@ -213,7 +209,7 @@ SunnySundayText:
 	done
 
 SunnyNotSundayText:
-	text "SUNNY: Isn't today"
+	text "Isn't today"
 	line "Sunday?"
 	cont "Um… I forgot!"
 	done

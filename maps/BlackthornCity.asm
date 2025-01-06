@@ -232,7 +232,7 @@ BlackthornYoungsterText:
 	done
 
 MeetSantosText:
-	text "SANTOS: …"
+	text "…"
 
 	para "It's Saturday…"
 
@@ -245,7 +245,7 @@ SantosGivesGiftText:
 	done
 
 SantosGaveGiftText:
-	text "SANTOS: …"
+	text "…"
 
 	para "SPELL TAG…"
 
@@ -257,7 +257,7 @@ SantosGaveGiftText:
 	done
 
 SantosSaturdayText:
-	text "SANTOS: …"
+	text "…"
 
 	para "See you again on"
 	line "another Saturday…"
@@ -267,7 +267,7 @@ SantosSaturdayText:
 	done
 
 SantosNotSaturdayText:
-	text "SANTOS: Today's"
+	text "Today's…"
 	line "not Saturday…"
 	done
 

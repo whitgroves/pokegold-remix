@@ -209,10 +209,10 @@ LancesRoomMovementData_MaryRunsBackAndForth:
 	step_end
 
 LanceBattleIntroText:
-	text "LANCE: I've been"
-	line "waiting for you."
-
-	para "<PLAYER>!"
+	text "<PLAYER>!"
+	
+	para "I've been waiting"
+	line "for you."
 
 	para "I knew that you,"
 	line "with your skills,"
@@ -278,7 +278,7 @@ LanceBattleAfterText:
 	done
 
 LancesRoomMaryOhNoOakText:
-	text "MARY: Oh, no!"
+	text "Oh, no!"
 	line "It's all over!"
 
 	para "PROF.OAK, if you"
@@ -319,22 +319,22 @@ LancesRoomOakCongratulationsText:
 	done
 
 LancesRoomMaryInterviewText:
-	text "MARY: Let's inter-"
-	line "view the brand new"
+	text "Let's interview"
+	line "the brand new"
 	cont "CHAMPION!"
 	done
 
 LancesRoomNoisyText:
-	text "LANCE: This is"
-	line "getting to be a"
-	cont "bit too noisy…"
+	text "This is getting"
+	line "to be a bit too"
+	cont "noisy…"
 
 	para "<PLAYER>, could you"
 	line "come with me?"
 	done
 
 LancesRoomMaryNoInterviewText:
-	text "MARY: Oh, wait!"
+	text "Oh, wait!"
 	line "We haven't done"
 	cont "the interview!"
 	done

@@ -647,8 +647,8 @@ RocketBaseBossRetreatText:
 	done
 
 RocketBaseLancePostBattleText:
-	text "LANCE: That did"
-	line "it. We defeated"
+	text "That did it."
+	line "We defeated"
 
 	para "all the ROCKETS"
 	line "here."
@@ -705,14 +705,13 @@ RockerBaseLanceElectrodeFaintText:
 	done
 
 RocketBaseLancesSideText:
-	text "LANCE: Leave this"
+	text "Leave this"
 	line "side to me."
 	done
 
 RocketBaseLanceElectrodeDoneText:
-	text "LANCE: That odd"
-	line "signal has finally"
-	cont "stopped."
+	text "That odd signal"
+	line "finally stopped."
 
 	para "The LAKE should be"
 	line "back to normal."
@@ -784,8 +783,7 @@ RocketBaseLanceMonMasterText:
 	done
 
 LanceHealsText1:
-	text "LANCE: Are you all"
-	line "right?"
+	text "Are you all right?"
 
 	para "Your #MON are"
 	line "hurt and tired."
@@ -796,7 +794,7 @@ LanceHealsText1:
 	done
 
 LanceHealsText2:
-	text "LANCE: <PLAYER>,"
+	text "<PLAYER>,"
 	line "let's give it our"
 	cont "best for #MON."
 	done

@@ -386,8 +386,7 @@ SchoolboyAlanBooksText:
 	done
 
 MeetArthurText:
-	text "ARTHUR: Who are"
-	line "you?"
+	text "Who are you?"
 
 	para "I'm ARTHUR of"
 	line "Thursday."
@@ -399,10 +398,10 @@ ArthurGivesGiftText:
 	done
 
 ArthurGaveGiftText:
-	text "ARTHUR: A #MON"
-	line "that uses rock-"
+	text "A #MON that"
+	line "uses rock-type"
 
-	para "type moves should"
+	para "moves should"
 	line "hold on to that."
 
 	para "It pumps up rock-"
@@ -410,7 +409,7 @@ ArthurGaveGiftText:
 	done
 
 ArthurThursdayText:
-	text "ARTHUR: I'm ARTHUR"
+	text "I'm ARTHUR"
 	line "of Thursday. I'm"
 
 	para "the second son out"
@@ -418,8 +417,8 @@ ArthurThursdayText:
 	done
 
 ArthurNotThursdayText:
-	text "ARTHUR: Today's"
-	line "not Thursday. How"
+	text "Today's not"
+	line "Thursday. How"
 	cont "disappointing."
 	done
 

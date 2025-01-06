@@ -237,7 +237,7 @@ MrPokemonText_AlwaysNewDiscoveries:
 	done
 
 MrPokemonsHouse_OakText1:
-	text "OAK: Aha! So"
+	text "Aha! So"
 	line "you're <PLAYER>!"
 
 	para "I'm OAK! A #MON"

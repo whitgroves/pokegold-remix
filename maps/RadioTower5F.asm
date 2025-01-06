@@ -372,7 +372,7 @@ RadioTower5FRocketBossAfterText:
 	done
 
 RadioTower5FDirectorThankYouText:
-	text "DIRECTOR: <PLAYER>,"
+	text "<PLAYER>,"
 	line "thank you!"
 
 	para "Your courageous"
@@ -457,7 +457,7 @@ RadioTower5FDirectorDescribeSilverWingText:
 	done
 
 RadioTower5FDirectorText:
-	text "DIRECTOR: Hello,"
+	text "Hello,"
 	line "<PLAYER>!"
 
 	para "You know, I love"
@@ -475,7 +475,7 @@ RadioTower5FDirectorText:
 	done
 
 BenText:
-	text "BEN: Do you listen"
+	text "Do you listen"
 	line "to our music?"
 	done
 

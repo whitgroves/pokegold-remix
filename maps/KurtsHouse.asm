@@ -353,7 +353,7 @@ KurtsHouseKurtMakingBallsMustWaitText:
 	done
 
 KurtsHouseKurtHonoredToMakeBallsText:
-	text "KURT: Hi, <PLAYER>!"
+	text "Hi, <PLAYER>!"
 
 	para "You handled your-"
 	line "self like a real"
@@ -372,7 +372,7 @@ KurtsHouseKurtHonoredToMakeBallsText:
 	done
 
 KurtsHouseKurtBallsFromApricornsText:
-	text "KURT: I make BALLS"
+	text "I make BALLS"
 	line "from APRICORNS."
 
 	para "Collect them from"
@@ -384,7 +384,7 @@ KurtsHouseKurtBallsFromApricornsText:
 	done
 
 KurtsHouseKurtAskYouHaveAnApricornText:
-	text "KURT: You have an"
+	text "You have an"
 	line "APRICORN for me?"
 
 	para "Fine! I'll turn it"
@@ -392,31 +392,31 @@ KurtsHouseKurtAskYouHaveAnApricornText:
 	done
 
 KurtsHouseKurtItWillTakeADayText:
-	text "KURT: It'll take a"
-	line "day to make you a"
+	text "It'll take a day"
+	line "to make you a"
 
 	para "BALL. Come back"
 	line "for it later."
 	done
 
 KurtsHouseKurtThatsALetdownText:
-	text "KURT: Oh…"
+	text "Oh…"
 	line "That's a letdown."
 	done
 
 KurtsHouseKurtDontBotherMeText:
-	text "KURT: I'm working!"
+	text "I'm working!"
 	line "Don't bother me!"
 	done
 
 KurtsHouseKurtJustFinishedYourBallText:
-	text "KURT: Ah, <PLAYER>!"
+	text "Ah, <PLAYER>!"
 	line "I just finished"
 	cont "your BALL. Here!"
 	done
 
 KurtsHouseKurtTurnedOutGreatText:
-	text "KURT: That turned"
+	text "That turned"
 	line "out great."
 
 	para "Try catching"

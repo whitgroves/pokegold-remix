@@ -78,7 +78,7 @@ OaksLabPC:
 	jumptext OaksLabPCText
 
 OakWelcomeKantoText:
-	text "OAK: Ah, <PLAYER>!"
+	text "Ah, <PLAYER>!"
 	line "It's good of you"
 
 	para "to come all this"
@@ -105,7 +105,7 @@ OakLabGoodbyeText:
 	done
 
 OakOpenMtSilverText:
-	text "OAK: Wow! That's"
+	text "Wow! That's"
 	line "excellent!"
 
 	para "You collected the"
@@ -146,9 +146,9 @@ OakOpenMtSilverText:
 	done
 
 OakNoKantoBadgesText:
-	text "OAK: Hmm? You're"
-	line "not collecting"
-	cont "KANTO GYM BADGES?"
+	text "Hmm? You're not"
+	line "collecting KANTO"
+	cont "GYM BADGES?"
 
 	para "The GYM LEADERS in"
 	line "KANTO are as tough"
@@ -162,7 +162,7 @@ OakNoKantoBadgesText:
 	done
 
 OakYesKantoBadgesText:
-	text "OAK: Ah, you're"
+	text "Ah, you're"
 	line "collecting KANTO"
 	cont "GYM BADGES."
 

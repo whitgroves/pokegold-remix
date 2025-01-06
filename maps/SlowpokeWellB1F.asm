@@ -143,7 +143,7 @@ KurtSlowpokeWellVictoryMovementData:
 	step_end
 
 SlowpokeWellB1FKurtText:
-	text "KURT: Hey there,"
+	text "Hey there,"
 	line "<PLAYER>!"
 
 	para "The guards up top"
@@ -173,7 +173,7 @@ SlowpokeWellB1FKurtText:
 	done
 
 KurtLeaveSlowpokeWellText:
-	text "KURT: Way to go,"
+	text "Way to go,"
 	line "<PLAYER>!"
 
 	para "TEAM ROCKET has"

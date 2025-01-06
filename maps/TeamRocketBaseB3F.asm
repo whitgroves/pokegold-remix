@@ -313,7 +313,7 @@ RocketBaseRivalShovesPlayerMovement:
 	step_end
 
 LanceGetPasswordText:
-	text "LANCE: It takes"
+	text "It takes"
 	line "two passwords to"
 
 	para "get into the"

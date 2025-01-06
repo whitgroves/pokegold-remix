@@ -152,7 +152,7 @@ SproutTower3FRivalLeavesElderMovement:
 	step_end
 
 SproutTowerElderLecturesRivalText:
-	text "ELDER: You are in-"
+	text "You are in-"
 	line "deed skilled as a"
 	cont "trainer."
 

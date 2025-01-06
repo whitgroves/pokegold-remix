@@ -659,13 +659,13 @@ Route36NationalParkGateOfficer1SomeMonOnlySeenInParkText:
 	done
 
 BugCatchingContestant1BText:
-	text "DON: Wow, you beat"
-	line "me. You're pretty"
+	text "Wow, you beat me."
+	line "You're pretty"
 	cont "good."
 	done
 
 BugCatchingContestant1BStillCompetingText:
-	text "DON: Luck plays a"
+	text "Luck plays a"
 	line "big part in this."
 
 	para "You never know"
@@ -674,38 +674,38 @@ BugCatchingContestant1BStillCompetingText:
 	done
 
 BugCatchingContestant2BText:
-	text "ED: I envy you."
+	text "I envy you."
 	line "I just couldn't"
 	cont "do it this time."
 	done
 
 BugCatchingContestant2BStillCompetingText:
-	text "ED: Maybe you win"
+	text "Maybe you win"
 	line "with big #MON?"
 	done
 
 BugCatchingContestant3BText:
-	text "NICK: Well done!"
+	text "Well done!"
 	line "I'm going to raise"
 	cont "my #MON better."
 	done
 
 BugCatchingContestant3BStillCompetingText:
-	text "NICK: Maybe you"
-	line "get a higher score"
+	text "Maybe you get"
+	line "a higher score"
 
 	para "for a #MON of"
-	line "an unusual color."
+	line "an unusual color?"
 	done
 
 BugCatchingContestant4BText:
-	text "WILLIAM: You're"
-	line "the winner? What"
+	text "You're the winner?"
+	line "What #MON"
 	cont "did you catch?"
 	done
 
 BugCatchingContestant4BStillCompetingText:
-	text "WILLIAM: Well, I'm"
+	text "Well, I'm still"
 	line "satisfied because"
 
 	para "I caught a #MON"
@@ -713,29 +713,27 @@ BugCatchingContestant4BStillCompetingText:
 	done
 
 BugCatchingContestant5BText:
-	text "BENNY: Congrats!"
+	text "Congrats!"
 	line "You have earned my"
 	cont "respect!"
 	done
 
 BugCatchingContestant5BStillCompetingText:
-	text "BENNY: I caught a"
-	line "SCYTHER before,"
-	cont "but I didn't win."
+	text "I caught a SCYTHER"
+	line "before, but I"
+	cont "still didn't win."
 	done
 
 BugCatchingContestant6BText:
-	text "BARRY: That #-"
-	line "MON you caught…"
+	text "That #MON"
+	line "you caught…"
 	cont "it's awesome!"
 	done
 
 BugCatchingContestant6BStillCompetingText:
-	text "BARRY: It's easier"
-	line "to win if you get"
-
-	para "a high-level bug"
-	line "#MON."
+	text "It's easier to win"
+	line "if you get a high-"
+	cont "level bug #MON."
 
 	para "But I think they"
 	line "also consider some"
@@ -743,7 +741,7 @@ BugCatchingContestant6BStillCompetingText:
 	done
 
 BugCatchingContestant7BText:
-	text "CINDY: You won?"
+	text "You won?"
 	line "That's great!"
 
 	para "Do you feel like"
@@ -752,47 +750,45 @@ BugCatchingContestant7BText:
 	done
 
 BugCatchingContestant7BStillCompetingText:
-	text "CINDY: I really"
+	text "I really"
 	line "love bug #MON!"
 	done
 
 BugCatchingContestant8BText:
-	text "JOSH: I… I can't"
+	text "I… I can't"
 	line "believe I lost at"
 	cont "bug-catching…"
 	done
 
 BugCatchingContestant8BStillCompetingText:
-	text "JOSH: I heard that"
+	text "I heard that"
 	line "somebody won with"
 	cont "a CATERPIE!"
 	done
 
 BugCatchingContestant9BText:
-	text "SAMUEL: Next time,"
+	text "Next time,"
 	line "I'm going to win."
 	done
 
 BugCatchingContestant9BStillCompetingText:
-	text "SAMUEL: Darn."
+	text "Darn."
 	line "I thought I would"
 	cont "score higher…"
 	done
 
 BugCatchingContestant10BText:
-	text "KIPP: Could you"
-	line "give me some tips?"
+	text "Could you give me"
+	line "some tips?"
 
 	para "I want to study"
 	line "your style."
 	done
 
 BugCatchingContestant10BStillCompetingText:
-	text "KIPP: I study a"
-	line "lot, but that's"
-
-	para "not good enough to"
-	line "win."
+	text "I study a lot,"
+	line "but that's not"
+	cont "enough to win."
 	done
 
 UnusedSilphScope2Text: ; unreferenced

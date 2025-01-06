@@ -190,7 +190,7 @@ MahoganyMart1FBlackBeltText_LanceEntered:
 	done
 
 MahoganyMart1FLanceDragoniteHyperBeamText:
-	text "LANCE: DRAGONITE,"
+	text "DRAGONITE,"
 	line "HYPER BEAM."
 	done
 
@@ -211,7 +211,7 @@ MahoganyMart1FLanceStairsText:
 	done
 
 MahoganyMart1FLanceSplitUpText:
-	text "LANCE: <PLAYER>, we"
+	text "<PLAYER>, we"
 	line "should split up to"
 
 	para "check this place."

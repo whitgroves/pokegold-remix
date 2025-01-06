@@ -107,7 +107,7 @@ BillsHouseRadio:
 	jumpstd Radio2Script
 
 BillTakeThisEeveeText:
-	text "BILL: Hi, <PLAYER>!"
+	text "Hi, <PLAYER>!"
 	line "Do us a favor and"
 	cont "take this EEVEE."
 
@@ -127,7 +127,7 @@ BillTakeThisEeveeText:
 	done
 
 BillImCountingOnYouText:
-	text "BILL: I knew it!"
+	text "I knew it!"
 	line "Way to go, hero!"
 
 	para "You're the real"
@@ -144,8 +144,8 @@ ReceivedEeveeText:
 	done
 
 BillEeveeMayEvolveText:
-	text "BILL: PROF.ELM"
-	line "claims EEVEE may"
+	text "PROF.ELM claims"
+	line "EEVEE may still"
 
 	para "evolve in new and"
 	line "unknown ways."
@@ -163,7 +163,7 @@ BillNoEeveeText:
 	done
 
 BillPopWontWorkText:
-	text "BILL: I used to"
+	text "I used to"
 	line "experiment with a"
 	cont "TELEPORTER."
 

@@ -236,8 +236,8 @@ Route25MistyLeavesMovement:
 	step_end
 
 Route25MistyDateText:
-	text "MISTY: Aww! Why"
-	line "did you have to"
+	text "Aww! Why did"
+	line "you have to"
 
 	para "show up and bug us"
 	line "now?"

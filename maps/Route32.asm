@@ -766,7 +766,7 @@ Text_RoarOutro:
 	done
 
 MeetFriedaText:
-	text "FRIEDA: Yahoo!"
+	text "Yahoo!"
 	line "It's Friday!"
 
 	para "I'm FRIEDA of"
@@ -781,8 +781,8 @@ FriedaGivesGiftText:
 	done
 
 FriedaGaveGiftText:
-	text "FRIEDA: Give it to"
-	line "a #MON that has"
+	text "Give it to a"
+	line "#MON that has"
 	cont "poison-type moves."
 
 	para "Oh!"
@@ -795,7 +795,7 @@ FriedaGaveGiftText:
 	done
 
 FriedaFridayText:
-	text "FRIEDA: Hiya! What"
+	text "Hiya! What"
 	line "day do you like?"
 
 	para "I love Friday. No"
@@ -806,7 +806,7 @@ FriedaFridayText:
 	done
 
 FriedaNotFridayText:
-	text "FRIEDA: Isn't it"
+	text "Isn't it"
 	line "Friday today?"
 
 	para "It's so boring"

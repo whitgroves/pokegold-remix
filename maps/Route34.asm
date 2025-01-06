@@ -525,23 +525,23 @@ PokefanmBrandonAfterText:
 	done
 
 CooltrainerfIreneSeenText:
-	text "IRENE: Kyaaah!"
+	text "Kyaaah!"
 	line "A boy found us!"
 	done
 
 CooltrainerfIreneBeatenText:
-	text "IRENE: Ohhhh!"
+	text "Ohhhh!"
 	line "He's too strong!"
 	done
 
 CooltrainerfIreneAfterText1:
-	text "IRENE: My sister"
-	line "KATE will get you"
+	text "My sister KATE"
+	line "will get you"
 	cont "for this!"
 	done
 
 CooltrainerfIreneAfterText2:
-	text "IRENE: Isn't this"
+	text "Isn't this"
 	line "beach great?"
 
 	para "It's our secret"
@@ -549,50 +549,49 @@ CooltrainerfIreneAfterText2:
 	done
 
 CooltrainerfJennSeenText:
-	text "JENN: You can't"
-	line "beat IRENE and go"
+	text "You can't beat"
+	line "IRENE and go"
 	cont "unpunished!"
 	done
 
 CooltrainerfJennBeatenText:
-	text "JENN: So sorry,"
-	line "IRENE! Sis!"
+	text "So sorry, IRENE!"
 	done
 
 CooltrainerfJennAfterText1:
-	text "JENN: Don't get"
-	line "cocky! My sister"
-	cont "KATE is tough!"
+	text "Don't get cocky!"
+	line "My sister KATE"
+	cont "is tough!"
 	done
 
 CooltrainerfJennAfterText2:
-	text "JENN: Sunlight"
-	line "makes your body"
+	text "Sunlight makes"
+	line "your body"
 	cont "stronger."
 	done
 
 CooltrainerfKateSeenText:
-	text "KATE: You sure"
-	line "were mean to my"
+	text "You sure were"
+	line "mean to my"
 	cont "little sisters!"
 	done
 
 CooltrainerfKateBeatenText:
-	text "KATE: No! I can't"
+	text "No! I can't"
 	line "believe I lost."
 	done
 
 CooltrainerfKateOfferSoftSandText:
-	text "KATE: You're too"
-	line "strong. I didn't"
-	cont "stand a chance."
+	text "You're too strong."
+	line "I didn't stand"
+	cont "a chance."
 
-	para "Here. You deserve"
-	line "this."
+	para "Here."
+	line "You deserve this."
 	done
 
 CooltrainerfKateAfterText:
-	text "KATE: I'm sorry we"
+	text "I'm sorry we"
 	line "jumped you."
 
 	para "We never expected"
