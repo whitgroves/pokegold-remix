@@ -135,8 +135,6 @@ DragonsDenNoRoomForFangText:
 	cont "items."
 	done
 
-
-
 DragonShrineSignpostText:
 	text "DRAGON SHRINE"
 
