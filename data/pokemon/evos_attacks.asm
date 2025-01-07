@@ -1991,7 +1991,7 @@ ArticunoEvosAttacks:
 	db 1, MIST
 	db 13, ICY_WIND
 	db 25, AGILITY
-	db 37, MIND_READER
+	db 37, RAZOR_WIND
 	db 49, ICE_BEAM
 	db 61, REFLECT
 	db 73, BLIZZARD
