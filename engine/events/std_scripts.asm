@@ -500,7 +500,7 @@ InitializeEventsScript:
 	setevent EVENT_GOLDENROD_DEPT_STORE_B1F_LAYOUT_1
 	setevent EVENT_GOLDENROD_UNDERGROUND_WAREHOUSE_BLOCKED_OFF
 	setevent EVENT_DRAGONS_DEN_CLAIR
-	setevent EVENT_DRAGONS_DEN_B1F_DRAGON_FANG_DROPPED ; TODO -- confirm this works!
+	setevent EVENT_DRAGONS_DEN_B1F_DRAGON_FANG_DROPPED ; TODO -- confirm this works! -- it doesn't, set this when clair gives the mission
 	setevent EVENT_RIVAL_OLIVINE_CITY
 	setevent EVENT_RIVAL_VICTORY_ROAD
 	setevent EVENT_RIVAL_DRAGONS_DEN
@@ -534,7 +534,7 @@ InitializeEventsScript:
 	setevent EVENT_TRAINERS_IN_CERULEAN_GYM
 	setevent EVENT_COPYCATS_HOUSE_2F_DOLL
 	setevent EVENT_VIRIDIAN_GYM_BLUE
-	setevent EVENT_SEAFOAM_GYM_GYM_GUIDE
+	setevent EVENT_SEAFOAM_GYM_GYM_GUIDE   ; not sure if misty skip causes this, but guide shows up when he shouldn't
 	setevent EVENT_MT_MOON_SQUARE_CLEFAIRY
 	setevent EVENT_SAFFRON_TRAIN_STATION_POPULATION
 	setevent EVENT_INDIGO_PLATEAU_POKECENTER_RIVAL
