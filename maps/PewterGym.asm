@@ -86,7 +86,7 @@ BrockIntroText:
 	para "I'm an expert on"
 	line "rock-type #MON."
 
-	para "My rock #MON can"
+	para "My #MON can"
 	line "weather any storm."
 
 	para "Will your team be"
