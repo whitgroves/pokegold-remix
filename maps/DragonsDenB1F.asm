@@ -87,7 +87,6 @@ AncientDragon:
 	waitsfx
 	itemnotify
 	closetext
-	setscene 0
 	end
 .BagFullDragonFang:
 	clearevent EVENT_DRAGONS_DEN_B1F_DRAGON_FANG_DROPPED
@@ -96,8 +95,6 @@ AncientDragon:
 	writetext DragonsDenNoRoomForFangText
 	waitbutton
 	closetext
-	appear DRAGONSDENB1F_POKE_BALL2
-	setscene 0
 	end
 
 DragonsDenB1FDragonFangScript:
@@ -106,6 +103,7 @@ DragonsDenB1FDragonFangScript:
 	iffalse .BagFullDragonFangAgain
 	setevent EVENT_DRAGONS_DEN_B1F_DRAGON_FANG_DROPPED
 	disappear DRAGONSDENB1F_POKE_BALL2
+	waitsfx
 	writetext DragonsDenGotDragonsFangText
 	playsound SFX_ITEM
 	waitsfx

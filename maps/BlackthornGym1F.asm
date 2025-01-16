@@ -58,22 +58,10 @@ BlackthornGymClairScript:
 	end
 
 .FightDone:
+	checkevent EVENT_DRAGONS_DEN_B1F_BLUE_AERODACTYL
+	iffalse .NoDragonFang
 	checkevent EVENT_DRAGONS_DEN_B1F_DRAGON_FANG_DROPPED
 	iffalse .LeftDragonFang
-	checkevent EVENT_DRAGONS_DEN_B1F_BLUE_AERODACTYL
-	iftrue .HasDragonFang
-	writetext ClairText_WhatsTheMatter
-	waitbutton
-	closetext
-	end
-
-.LeftDragonFang:
-	writetext ClairText_LeftItBehind
-	waitbutton
-	closetext
-	end
-
-.HasDragonFang:
 	checkevent EVENT_GOT_TM24_DRAGONBREATH
 	iftrue .GotTM24
 	writetext BlackthornGymClairText_YouKeptMeWaiting
@@ -85,6 +73,18 @@ BlackthornGymClairScript:
 	writetext BlackthornGymClairText_DescribeTM24
 	promptbutton
 	writetext ClairText_CollectedAllBadges
+	waitbutton
+	closetext
+	end
+
+.NoDragonFang:
+	writetext ClairText_WhatsTheMatter
+	waitbutton
+	closetext
+	end
+
+.LeftDragonFang:
+	writetext ClairText_LeftItBehind
 	waitbutton
 	closetext
 	end

@@ -500,7 +500,7 @@ InitializeEventsScript:
 	setevent EVENT_GOLDENROD_DEPT_STORE_B1F_LAYOUT_1
 	setevent EVENT_GOLDENROD_UNDERGROUND_WAREHOUSE_BLOCKED_OFF
 	setevent EVENT_DRAGONS_DEN_CLAIR
-	setevent EVENT_DRAGONS_DEN_B1F_DRAGON_FANG_DROPPED ; TODO -- confirm this works! -- it doesn't, set this when clair gives the mission
+	setevent EVENT_DRAGONS_DEN_B1F_DRAGON_FANG_DROPPED ; possible BUG: failed on test run but that may have been faulty logic elsewhere
 	setevent EVENT_RIVAL_OLIVINE_CITY
 	setevent EVENT_RIVAL_VICTORY_ROAD
 	setevent EVENT_RIVAL_DRAGONS_DEN
