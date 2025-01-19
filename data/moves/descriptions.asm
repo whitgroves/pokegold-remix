@@ -848,7 +848,7 @@ BubbleDescription:
 	next "reduce SPEED.@"
 
 DizzyPunchDescription:
-	db   "An attack that may"
+	db   "A punch that may"
 	next "cause confusion.@"
 
 SporeDescription:
@@ -1156,7 +1156,7 @@ MagnitudeDescription:
 	next "with random power.@"
 
 DynamicpunchDescription:
-	db   "An attack that"
+	db   "A punch that"
 	next "always confuses.@"
 
 MegahornDescription:
