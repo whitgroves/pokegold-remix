@@ -107,7 +107,6 @@ These mons have had their types updated:
 - Gyarados: *Water* -> *Water/Dragon*
 - Porygon: *Normal* -> *Normal/Ghost*
 - Kabuto, Kabutops: *Rock/Water* -> *Rock/Bug*
-- Chikorita: *Grass* -> *Grass/Normal*
 - Bayleef, Meganium: *Grass* -> *Grass/Dragon*
 - Cyndaquil, Quilava, Typhlosion: *Fire* -> *Fire/Normal*
 - Croconaw, Feraligatr: *Water* -> *Water/Dark*
@@ -125,11 +124,12 @@ These mons have had their types updated:
 - Umbreon: *Dark* -> *Ghost*
 - Slowking: *Water/Psychic* -> *Psychic/Dragon*
 - Misdreavus: *Ghost* -> *Ghost/Psychic*
-- Unown: *Psychic* -> *Ghost/Dark*
+- Unown: *Psychic* -> *Psychic/Dark*
 - Dunsparce: *Normal* -> *Ground/Dragon*
 - Gligar: *Ground/Flying* -> *Poison/Flying*
 - Snubbull, Granbull: *Normal* -> *Normal/Dark*
 - Shuckle: *Bug/Rock* -> *Rock/Poison*
+- Slugma: *Fire* -> *Fire/Ground*
 - Corsola: *Water/Rock* -> *Water/Ghost*
 - Octillery: *Water* -> *Water/Fire*
 - Donphan: *Ground* -> *Ground/Fighting*
@@ -150,6 +150,7 @@ These evolutions can now happen by friendship:
 - Nidorino -> Nidoking
 - Gloom -> Vileplume (Night)
 - Gloom -> Bellossom (Day)
+- Growlithe -> Arcanine
 - Poliwhirl -> Politoed
 - Kadabra -> Alakazam
 - Machoke -> Machamp
@@ -160,21 +161,24 @@ These evolutions can now happen by friendship:
 In general, all friendship evolutions now happen at a happiness stat of of 217, displayed as a [TRUST](#dvs) level of 85% (vs 220 / ~87% in base).
 
 #### By Item
-These evolutions now happen by item effect (select and use the item from menu):
+These evolutions can now happen by item effect (select and use the item from menu):
 - Slowpoke -> Slowking: *Dragon Scale*
 - Onix -> Steelix: *Up-Grade*
 - Seadra -> Kingdra: *Dragon Scale*
 - Scyther -> Scizor: *Up-Grade*
+- Chansey -> Blissey: *Sun Stone*
 - Eevee -> Espeon: *Sun Stone*
 - Eevee -> Umbreon: *Moon Stone*
 - Porygon -> Porygon2: *Up-Grade*
 - Cleffa -> Clefairy: *Moon Stone*
 - Togepi -> Togetic: *Sun Stone* -OR- *Moon Stone*
+- Pineco -> Forretress: *Leaf Stone*
+- Slugma -> Magcargo: *Fire Stone*
 - Smoochum -> Jynx: *Water Stone*
 - Elekid -> Electabuzz: *Thunderstone*
 - Magby -> Magmar: *Fire Stone*
 
-All evolution items are available for purchase at the [Mahogany Mart](#mahogany-mart) after Mahogany Gym has been cleared.
+~~All evolution items are available for purchase at the [Mahogany Mart](#mahogany-mart) after Mahogany Gym has been cleared.~~
 
 ### Encounters
 Encounters for every area of the game (grass, caves, trees, surfing, fishing, and the bug contest) have been updated.
