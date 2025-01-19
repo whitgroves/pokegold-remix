@@ -436,9 +436,9 @@ BattleText_UserWasReleasedFromStringBuffer1:
 	prompt
 
 UsedBindText:
-	text "<USER>"
-	line "used BIND on"
-	cont "<TARGET>!"
+	text "<TARGET>"
+	line "was BOUND by"
+	cont "<USER>!"
 	prompt
 
 WasTrappedText:

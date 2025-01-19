@@ -5625,7 +5625,7 @@ BattleCommand_TrapTarget:
 	jp StdBattleTextbox
 
 .Traps:
-	dbw BIND,      UsedBindText   ; 'used BIND on'
+	dbw BIND,      UsedBindText   ; 'was BOUND by'
 	dbw WRAP,      WrappedByText  ; 'was WRAPPED by'
 	dbw FIRE_SPIN, WasTrappedText ; 'was trapped!'
 	dbw CLAMP,     ClampedByText  ; 'was CLAMPED by'
