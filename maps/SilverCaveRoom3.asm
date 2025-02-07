@@ -23,6 +23,7 @@ LegendaryBirdCallback:
 	ifequal MONDAY, .ArticunoCallback
 	ifequal THURSDAY, .ZapdosCallback
 	ifequal SUNDAY, .MoltresCallback
+	endcallback
 
 .ArticunoCallback:
 	appear SILVERCAVEROOM3_ARTICUNO
