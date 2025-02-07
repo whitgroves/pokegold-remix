@@ -11,7 +11,13 @@ GoldenrodDeptStore3F_MapScripts:
 GoldenrodDeptStore3FClerkScript:
 	faceplayer
 	opentext
-	pokemart MARTTYPE_STANDARD, MART_GOLDENROD_3F
+	checkflag ENGINE_PLAINBADGE
+	iftrue .evostones
+	pokemart MARTTYPE_STANDARD, MART_GOLDENROD_3F_1
+	closetext
+	end
+.evostones
+	pokemart MARTTYPE_STANDARD, MART_GOLDENROD_3F_2
 	closetext
 	end
 
@@ -34,6 +40,9 @@ GoldenrodDeptStore3FSuperNerdText:
 	para "I use X SPEED in"
 	line "battle to speed up"
 	cont "my #MON."
+
+	para "Should I evolve it"
+	line "too?"
 	done
 
 GoldenrodDeptStore3FRockerText:

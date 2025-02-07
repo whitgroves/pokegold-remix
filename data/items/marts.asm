@@ -8,7 +8,8 @@ Marts:
 	dw MartCianwood
 	dw MartGoldenrod2F1
 	dw MartGoldenrod2F2
-	dw MartGoldenrod3F
+	dw MartGoldenrod3F1
+	dw MartGoldenrod3F2
 	dw MartGoldenrod4F
 	dw MartGoldenrod5F1
 	dw MartGoldenrod5F2
@@ -113,15 +114,30 @@ MartGoldenrod2F2:
 	db FLOWER_MAIL
 	db -1 ; end
 
-MartGoldenrod3F:
+MartGoldenrod3F1:
 	db 7 ; # items
 	db X_SPEED
 	db X_SPECIAL
 	db X_DEFEND
 	db X_ATTACK
+	db X_ACCURACY
 	db DIRE_HIT
 	db GUARD_SPEC
+	db -1 ; end
+
+MartGoldenrod3F2:
+	db 11 ; # items
+	db X_SPEED
+	db X_SPECIAL
+	db X_DEFEND
+	db X_ATTACK
 	db X_ACCURACY
+	db DIRE_HIT
+	db GUARD_SPEC
+	db LEAF_STONE
+	db FIRE_STONE
+	db WATER_STONE
+	db THUNDERSTONE
 	db -1 ; end
 
 MartGoldenrod4F:
@@ -209,13 +225,9 @@ MartMahogany1:
 	db -1 ; end
 
 MartMahogany2:
-	db 10 ; # items
+	db 6 ; # items
 	db GOLD_BERRY
 	db LEMONADE
-	db LEAF_STONE
-	db FIRE_STONE
-	db WATER_STONE
-	db THUNDERSTONE
 	db MOON_STONE
 	db SUN_STONE
 	db DRAGON_SCALE

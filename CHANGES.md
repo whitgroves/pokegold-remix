@@ -144,6 +144,8 @@ These mons have had their types updated:
 ### Evolution Methods
 New evolution methods have been added to make trade evolutions available and stone evolutions available earlier. These are in addition to prior methods; for example, *Nidorina* can evolve into *Nidoqueen* by happiness, but will still evolve by Moon Stone.
 
+In addition, certain held evolution items (*Dragon Scale* and *Up-Grade*) can now be used from the menu.
+
 #### By Friendship
 These evolutions can now happen by friendship:
 - Nidorina -> Nidoqueen
@@ -161,7 +163,7 @@ These evolutions can now happen by friendship:
 In general, all friendship evolutions now happen at a happiness stat of of 217, displayed as a [TRUST](#dvs) level of 85% (vs 220 / ~87% in base).
 
 #### By Item
-These evolutions can now happen by item effect (select and use the item from menu):
+These evolutions can now happen by item effect:
 - Slowpoke -> Slowking: *Dragon Scale*
 - Onix -> Steelix: *Up-Grade*
 - Seadra -> Kingdra: *Dragon Scale*
@@ -403,6 +405,12 @@ Weathers cause new interactions in addition to their old ones (e.g., Rain boosti
 Several of the stores have been updated with new items.
 
 ### Goldenrod Dept. Store
+The BATTLE CORNER (3rd floor) now sells these additional items after defeating Whitney:
+- Leaf Stone
+- Fire Stone
+- Water Stone
+- Thunderstone
+
 The TM CORNER (5th floor) now sells these additional TMs:
 - TM09 Metal Claw
 - TM39 Swift -*Available after receiving TM02 Headbutt in Ilex Forest*
@@ -412,10 +420,6 @@ The TM CORNER (5th floor) now sells these additional TMs:
 The Mahogany Mart carries these items once the Rocket Hideout is cleared and Pryce has been defeated:
 - Lemonade
 - Gold Berry
-- Leaf Stone
-- Fire Stone
-- Water Stone
-- Thunderstone
 - Moon Stone
 - Sun Stone
 - Dragon Scale
