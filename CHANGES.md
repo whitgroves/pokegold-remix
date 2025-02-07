@@ -193,7 +193,7 @@ Notably, several unique or otherwise unobtainable pokemon are now available in n
 - *Aerodactyl* is encountered as part of the plot, and at 1% on the summit of Mt. Silver.
 - *Bayleef*, *Quilava*, and *Croconaw* are 10-20% encounters along Route 28 and outside Mt. Silver.
 - *Sudowoodo* is now a 40% Headbutt encounter on all "rare" trees.
-- *Articuno*, *Zapdos*, and *Moltres* are available as unique weekday encounters after defeating Red.
+- *Articuno*, *Zapdos*, and *Moltres* are available as unique weekday encounters on Mt. Silver after defeating Red.
 
 Tables for every route and method are listed in the [Encounters.ods](./Encounters.ods) spreadsheet.
 

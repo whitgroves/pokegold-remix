@@ -11,30 +11,32 @@ SilverCaveRoom3_MapScripts:
 	callback MAPCALLBACK_OBJECTS, LegendaryBirdCallback
 
 LegendaryBirdCallback:
-	disappear SILVERCAVEROOM3_ARTICUNO
-	disappear SILVERCAVEROOM3_ZAPDOS
-	disappear SILVERCAVEROOM3_MOLTRES
 	checkevent EVENT_RED_IN_MT_SILVER
-	iftrue .SpawnBird
-	endcallback
-	
-.SpawnBird:
+	iffalse .NoLegendaries
 	readvar VAR_WEEKDAY
 	ifequal MONDAY, .ArticunoCallback
 	ifequal THURSDAY, .ZapdosCallback
 	ifequal SUNDAY, .MoltresCallback
+
+.NoLegendaries:
+	disappear SILVERCAVEROOM3_ARTICUNO
+	disappear SILVERCAVEROOM3_ZAPDOS
+	disappear SILVERCAVEROOM3_MOLTRES
 	endcallback
 
 .ArticunoCallback:
-	appear SILVERCAVEROOM3_ARTICUNO
+	disappear SILVERCAVEROOM3_ZAPDOS
+	disappear SILVERCAVEROOM3_MOLTRES
 	endcallback
 
 .ZapdosCallback:
-	appear SILVERCAVEROOM3_ZAPDOS
+	disappear SILVERCAVEROOM3_ARTICUNO
+	disappear SILVERCAVEROOM3_MOLTRES
 	endcallback
 
 .MoltresCallback:
-	appear SILVERCAVEROOM3_MOLTRES
+	disappear SILVERCAVEROOM3_ARTICUNO
+	disappear SILVERCAVEROOM3_ZAPDOS
 	endcallback
 
 Red:
@@ -57,6 +59,7 @@ Red:
 	special FadeOutToBlack
 	special ReloadSpritesNoPalettes
 	disappear SILVERCAVEROOM3_RED
+; these may be redundant -- TODO -- comment out on next run
 	clearevent EVENT_MT_SILVER_ARTICUNO
 	clearevent EVENT_MT_SILVER_ZAPDOS
 	clearevent EVENT_MT_SILVER_MOLTRES
