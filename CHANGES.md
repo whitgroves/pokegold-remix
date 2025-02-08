@@ -194,7 +194,7 @@ Notably, several unique or otherwise unobtainable pokemon are now available in n
 - *Bayleef*, *Quilava*, and *Croconaw* are 10-20% encounters along Route 28 and outside Mt. Silver.
 - *Sudowoodo* is now a 40% Headbutt encounter on all "rare" trees.
 - *Articuno*, *Zapdos*, and *Moltres* are available as unique weekday encounters on Mt. Silver after defeating Red.
-- *Mewtwo* is available as a unique encounter somewhere in Kanto after defeating Red.
+- *Mewtwo* and *Mew* are available as unique encounters somewhere in Kanto after defeating Red.
 
 Tables for every route and method are listed in the [Encounters.ods](./Encounters.ods) spreadsheet.
 

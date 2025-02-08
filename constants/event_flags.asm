@@ -1328,6 +1328,7 @@
 	const EVENT_ROUTE_25_PROTEIN
 ; Mewtwo, Mew, Celebi
 	const EVENT_CINNABAR_ISLAND_MEWTWO
+	const EVENT_TOHJO_FALLS_MEW
 ; Unused: next 115 events
 
 	const_next 2048
