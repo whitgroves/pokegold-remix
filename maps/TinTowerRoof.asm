@@ -32,7 +32,7 @@ TinTowerHoOh:
 	setevent EVENT_FOUGHT_HO_OH
 	checkver
 	iftrue .Silver
-	loadvar VAR_BATTLETYPE, BATTLETYPE_FORCEITEM
+	loadvar VAR_BATTLETYPE, BATTLETYPE_FORCESHINY
 	loadwildmon HO_OH, 40
 	startbattle
 	disappear TINTOWERROOF_HO_OH
@@ -40,7 +40,7 @@ TinTowerHoOh:
 	end
 
 .Silver:
-	loadvar VAR_BATTLETYPE, BATTLETYPE_FORCEITEM
+	loadvar VAR_BATTLETYPE, BATTLETYPE_FORCESHINY
 	loadwildmon HO_OH, 70
 	startbattle
 	disappear TINTOWERROOF_HO_OH

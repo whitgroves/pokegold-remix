@@ -32,7 +32,7 @@ Lugia:
 	setevent EVENT_FOUGHT_LUGIA
 	checkver
 	iftrue .Silver
-	loadvar VAR_BATTLETYPE, BATTLETYPE_FORCEITEM
+	loadvar VAR_BATTLETYPE, BATTLETYPE_FORCESHINY
 	loadwildmon LUGIA, 70
 	startbattle
 	disappear WHIRLISLANDLUGIACHAMBER_LUGIA
@@ -40,7 +40,7 @@ Lugia:
 	end
 
 .Silver:
-	loadvar VAR_BATTLETYPE, BATTLETYPE_FORCEITEM
+	loadvar VAR_BATTLETYPE, BATTLETYPE_FORCESHINY
 	loadwildmon LUGIA, 40
 	startbattle
 	disappear WHIRLISLANDLUGIACHAMBER_LUGIA
