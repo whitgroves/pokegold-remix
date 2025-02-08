@@ -1,14 +1,23 @@
 	object_const_def
 	const CINNABARISLAND_BLUE
+	const CINNABARISLAND_MEWTWO
 
 CinnabarIsland_MapScripts:
 	def_scene_scripts
 
 	def_callbacks
 	callback MAPCALLBACK_NEWMAP, CinnabarIslandFlypointCallback
+	callback MAPCALLBACK_OBJECTS, CinnabarIslandMewtwoCallback
 
 CinnabarIslandFlypointCallback:
 	setflag ENGINE_FLYPOINT_CINNABAR
+	endcallback
+
+CinnabarIslandMewtwoCallback:
+	checkevent EVENT_RED_IN_MT_SILVER
+	iftrue .SpawnMewtwo
+	disappear CINNABARISLAND_MEWTWO
+.SpawnMewtwo
 	endcallback
 
 CinnabarIslandBlue:
@@ -21,6 +30,20 @@ CinnabarIslandBlue:
 	applymovement CINNABARISLAND_BLUE, CinnabarIslandBlueTeleport
 	disappear CINNABARISLAND_BLUE
 	clearevent EVENT_VIRIDIAN_GYM_BLUE
+	end
+
+CinnabarIslandMewtwo:
+	faceplayer
+	opentext
+	writetext CinnabarIslandMewtwoText
+	pause 15
+	cry MEWTWO
+	closetext
+	loadwildmon MEWTWO, 80
+	loadvar VAR_BATTLETYPE, BATTLETYPE_FORCESHINY
+	startbattle
+	disappear CINNABARISLAND_MEWTWO
+	reloadmapafterbattle
 	end
 
 CinnabarIslandGymSign:
@@ -107,6 +130,11 @@ CinnabarIslandBlueText:
 	line "then."
 	done
 
+CinnabarIslandMewtwoText:
+	text "…"
+	line "…home…?"
+	done
+
 CinnabarIslandGymSignText:
 	text "There's a notice"
 	line "here…"
@@ -141,3 +169,4 @@ CinnabarIsland_MapEvents:
 
 	def_object_events
 	object_event  9,  6, SPRITE_BLUE, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CinnabarIslandBlue, EVENT_BLUE_IN_CINNABAR
+	object_event  9,  1, SPRITE_MONSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, CinnabarIslandMewtwo, EVENT_CINNABAR_ISLAND_MEWTWO

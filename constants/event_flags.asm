@@ -1326,7 +1326,9 @@
 	const EVENT_ROUTE_12_NUGGET
 	const EVENT_ROUTE_15_PP_UP
 	const EVENT_ROUTE_25_PROTEIN
-; Unused: next 116 events
+; Mewtwo, Mew, Celebi
+	const EVENT_CINNABAR_ISLAND_MEWTWO
+; Unused: next 115 events
 
 	const_next 2048
 DEF NUM_EVENTS EQU const_value ; 800
