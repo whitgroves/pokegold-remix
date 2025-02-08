@@ -304,7 +304,30 @@ IlexForestSignpost:
 	jumptext IlexForestSignpostText
 
 IlexForestShrineScript:
+	checkevent EVENT_BEAT_ELITE_FOUR ; red flag isn't cleared until post-E4
+	iffalse .NoEncounter
+	checkevent EVENT_RED_IN_MT_SILVER
+	iffalse .NoEncounter
+	checkevent EVENT_ILEX_SHRINE_CELEBI
+	iftrue .NoEncounter
+	opentext
+	writetext CelebiEncounterText
+	pause 15
+	cry CELEBI
+	closetext
+	loadwildmon CELEBI, 40
+	loadvar VAR_BATTLETYPE, BATTLETYPE_FORCESHINY
+	startbattle
+	setevent EVENT_ILEX_SHRINE_CELEBI
+	reloadmapafterbattle
+	end
+.NoEncounter
 	jumptext Text_IlexForestShrine
+
+CelebiEncounterText:
+	text "…?"
+	line "…!"
+	done
 
 MovementData_Farfetchd_Pos1_Pos2:
 	big_step UP

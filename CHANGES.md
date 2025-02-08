@@ -195,6 +195,7 @@ Notably, several unique or otherwise unobtainable pokemon are now available in n
 - *Sudowoodo* is now a 40% Headbutt encounter on all "rare" trees.
 - *Articuno*, *Zapdos*, and *Moltres* are available as unique weekday encounters on Mt. Silver after defeating Red.
 - *Mewtwo* and *Mew* are available as unique encounters somewhere in Kanto after defeating Red.
+- *Celebi* is available as a unique encounter in Johto after defeating Red.
 
 Tables for every route and method are listed in the [Encounters.ods](./Encounters.ods) spreadsheet.
 

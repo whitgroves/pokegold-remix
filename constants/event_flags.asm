@@ -1329,7 +1329,8 @@
 ; Mewtwo, Mew, Celebi
 	const EVENT_CINNABAR_ISLAND_MEWTWO
 	const EVENT_TOHJO_FALLS_MEW
-; Unused: next 115 events
+	const EVENT_ILEX_SHRINE_CELEBI
+; Unused: next 114 events
 
 	const_next 2048
 DEF NUM_EVENTS EQU const_value ; 800
