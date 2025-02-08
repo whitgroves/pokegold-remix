@@ -1,5 +1,5 @@
-# Pokémon Gold Remix - Revision 1.2
-Below is a non-exhaustive list of changes to this revision:
+# Pokémon Gold Remix - Revision 1.2 ("Catch 'Em All")
+Below is a non-exhaustive list of changes as of this revision:
 - [Type Chart](#type-chart)
 - [Pokémon Changes](#pokémon-changes)
     - [Types](#types)
@@ -81,7 +81,7 @@ These mons have had their types updated:
 - Farfetch'd: *Normal/Flying* -> *Fighting/Flying*
 - Doduo, Dodrio: *Normal/Flying* -> *Ground/Flying*
 - Seel: *Water* -> *Water/Ice*
-- Cloyster: *Water* -> *Water/Steel*
+- Cloyster: *Water/Ice* -> *Water/Steel*
 - Gastly, Haunter: *Ghost/Poison* -> *Ghost*
 - Gengar: *Ghost/Poison* -> *Ghost/Dark*
 - Drowzee, Hypno: *Psychic* -> *Psychic/Dark*
@@ -102,6 +102,7 @@ These mons have had their types updated:
 - Scyther: *Bug/Flying* -> *Bug/Normal*
 - Jynx: *Ice/Psychic* -> *Ice/Ghost*
 - Electabuzz: *Electric* -> *Electric/Fighting*
+- Magmar: *Fire* -> *Fire/Poison*
 - Pinsir: *Bug* -> *Bug/Dark*
 - Tauros: *Normal* -> *Normal/Fighting*
 - Gyarados: *Water* -> *Water/Dragon*
@@ -144,7 +145,7 @@ These mons have had their types updated:
 ### Evolution Methods
 New evolution methods have been added to make trade evolutions available and stone evolutions available earlier. These are in addition to prior methods; for example, *Nidorina* can evolve into *Nidoqueen* by happiness, but will still evolve by Moon Stone.
 
-In addition, certain held evolution items (*Dragon Scale* and *Up-Grade*) can now be used from the menu.
+Also, certain held evolution items (*Dragon Scale* and *Up-Grade*) can now be used from the menu.
 
 #### By Friendship
 These evolutions can now happen by friendship:
@@ -180,7 +181,7 @@ These evolutions can now happen by item effect:
 - Elekid -> Electabuzz: *Thunderstone*
 - Magby -> Magmar: *Fire Stone*
 
-~~All evolution items are available for purchase at the [Mahogany Mart](#mahogany-mart) after Mahogany Gym has been cleared.~~
+All evolution items are available for purchase at either the [Goldenrod Dept. Store](#goldenrod-dept-store) or [Mahogany Mart](#mahogany-mart) after their respective Gyms have been cleared.
 
 ### Encounters
 Encounters for every area of the game (grass, caves, trees, surfing, fishing, and the bug contest) have been updated.
@@ -250,18 +251,14 @@ Several moves have had their types, effects, or other attributes changed to prov
 ### Damaging Moves
 - Comet Punch: *Normal* -> *Fighting*
 - Vicegrip: *Normal* -> *Dark*
-- Guillotine: *Normal* -> *Dark*
 - Razor Wind: *Normal* -> *Flying* | *Charging Move* -> *30% Chance To Flinch* | *75%* -> *100% Accuracy*
 - Cut: *Normal* -> *Bug* | *No Effect* -> *High Crit Rate* | *95%* -> *100% Accuracy*
 - Fly: *95%* -> *100% Accuracy*
-- ~~Bind: *75%* -> *85% Accuracy*~~
 - Vine Whip: *35* -> *40 Power* | *10* -> *20 PP* | [*Always Physical*](#always-physical-moves)
-- Stomp: *Normal* -> *Ground*
 - Rolling Kick: *85%* -> *100% Accuracy*
 - Sand Attack: *100%* -> *80% Accuracy*
 - Horn Attack: *Normal* -> *Dragon* | *No Effect* -> *30% Chance To Flinch* | *65* -> *70 Power* | *25* -> *15 PP* | [*Always Physical*](#always-physical-moves)
 - Fury Attack: *Normal* -> *Bug*
-- Horn Drill: *Normal* -> *Dragon*
 - Tackle: *95%* -> *100% Accuracy*
 - Wrap: *Normal* -> *Poison* | *85%* -> *75% Accuracy*
 - Thrash: *Normal* -> *Dark*
@@ -273,7 +270,7 @@ Several moves have had their types, effects, or other attributes changed to prov
 - Hyper Beam: *Normal* -> *Dragon*
 - Submission: *80 Damage* -> *100 Damage* | *25* -> *20 PP*
 - Seismic Toss: *Flat Damage* -> *30% Chance To Paralyze* | *Damage Equal To User's Level* -> *85 Power* | *20* -> *15 PP*
-- Strength: *Normal* -> *Fighting* | *No Effect* -> *10% Chance To Raise Attack* | *15* -> *10 PP*
+- Strength: *Normal* -> *Fighting* | *No Effect* -> *10% Chance To Raise Attack*
 - Absorb: *20* -> *30 Power* | *20* -> *30 PP*
 - Mega Drain: *40* -> *50 Power* | *10* -> *20 PP*
 - Razor Leaf: *95%* -> *100% Accuracy* | [*Always Physical*](#always-physical-moves)
@@ -298,7 +295,6 @@ Several moves have had their types, effects, or other attributes changed to prov
 - Rock Slide: *90%* -> *100% Accuracy* | *75* -> *80 Power*
 - Hyper Fang: *Normal* -> *Dark* | *90%* -> *100% Accuracy*
 - Tri Attack: *Normal* -> *Dragon*
-- Super Fang: *Normal* -> *Dark*
 - Triple Kick: *90%* -> *100% Accuracy*
 - Aeroblast: *95%* -> *100% Accuracy*
 - Mud-Slap: *100% Chance To Lower Accuracy* -> *50% Chance To Lower Accuracy*
@@ -338,7 +334,9 @@ Besides preventing a switch out, trapped pokemon will now have their speed cut a
 
 ### Non-STAB Moves
 These moves ignore STAB but have had their types changed for flavor only; however, this may still impact the AI's choices.
+- Guillotine: *Normal* -> *Dark*
 - Whirlwind: *Normal* -> *Flying*
+- Horn Drill: *Normal* -> *Dragon*
 - Roar: *Normal* -> *Dragon*
 - Disable: *Normal* -> *Psychic*
 - Growth: *Normal* -> *Grass*
@@ -350,6 +348,7 @@ These moves ignore STAB but have had their types changed for flavor only; howeve
 - Flash: *Normal* -> *Electric*
 - Splash: *Normal* -> *Water*
 - Rest: *Psychic* -> *Normal*
+- Super Fang: *Normal* -> *Dark*
 - Mind Reader: *Normal* -> *Psychic*
 - Spikes: *Ground* -> *Steel*
 - Perish Song: *Normal* -> *Ghost*
@@ -415,8 +414,8 @@ The BATTLE CORNER (3rd floor) now sells these additional items after defeating W
 
 The TM CORNER (5th floor) now sells these additional TMs:
 - TM09 Metal Claw
-- TM39 Swift -*Available after receiving TM02 Headbutt in Ilex Forest*
-- TM28 Dig -*Available after receiving TM08 Rock Smash on Route 36*
+- TM39 Swift - *Available after receiving TM02 Headbutt in Ilex Forest*
+- TM28 Dig - *Available after receiving TM08 Rock Smash on Route 36*
 
 ### Mahogany Mart
 The Mahogany Mart carries these items once the Rocket Hideout is cleared and Pryce has been defeated:
@@ -439,15 +438,15 @@ The Mahogany Mart carries these items once the Rocket Hideout is cleared and Pry
 - After receiving the Old and Good Rods, each Fishing Guru will tell the player where to find the next one.
 - The trainer in Cianwood now gifts a Delibird instead of Shuckle so the player can always FLY home after beating the gym.
 - Each surveillance statue in the Rocket Hideout summons 1 unique battle instead of 2 generic grunts.
-- The Radio Tower incident now starts when reaching Blackthorn rather than immediately the 7th badge.
+- The Radio Tower incident now starts when reaching Blackthorn rather than immediately after the 7th badge.
 - Consequently, Route 44 and the [Mahogany Mart](#mahogany-mart-post-rocket-hideout) both open immediately after beating Pryce.
-- After clearing Radio Tower, the player receives a badge boost for *Dark* type moves.
-- Also, the Radio Card quiz will be skipped if the player hasn't picked it up already.
+- After clearing Radio Tower, the player receives a badge boost for *Dark* type moves and can pick up the Radio Card without taking the quiz.
 - Clair gives the Risingbadge immediately upon defeat, but the player must still complete the dragon user challenge to receive TM24.
 - The dragon user challenge has changed; check the center of the cavern first.
 
 ### Other
-- Since Remoraid are no longer found on Route 44, Sailor Huey (lighthouse) now activates the Remoraid swarm
-trees in cities (Ecruteak) can now spawn wild encounters.
-- Dragon's Fang now boosts Dragon-type moves instead of Dragon's Scale.
-- The Dragon's Fang in Dragon's Den is now a Dragon's Scale. The Dragon's Scale in Mt Mortar is now a Quick Claw.
+- Since Remoraid are no longer found on Route 44, Sailor Huey (lighthouse) now activates the Remoraid swarm.
+- Headbutting trees in cities (Ecruteak) can now spawn wild encounters.
+- Dragon Fang now boosts Dragon-type moves instead of Dragon Scale.
+- The Dragon Fang in Dragons' Den is now a Dragon Scale.
+- The Dragon Scale in Mt Mortar is now a Quick Claw.
