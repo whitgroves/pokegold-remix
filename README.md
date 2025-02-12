@@ -68,7 +68,7 @@ $ git clone https://github.com/whitgroves/pokegold-remix.git
 $ cd pokegold-remix
 $ make types
 $ make moves
-$ make <pokemon name, all lowercase, no spaces>
+$ make edits/<pokemon name, all lowercase, no spaces>
 $ make edits
 << update csv files as desired >>
 $ make updates

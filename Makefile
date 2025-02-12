@@ -117,8 +117,8 @@ types:
 moves:
 	$(PY) tools/ee2.py -e -c $(EASY) --moves
 
-%:
-	$(PY) tools/ee2.py -e -c $(EASY) --mon $@
+edits/%:
+	$(PY) tools/ee2.py -e -c $(EASY) --mon $*
 
 edits:
 	$(PY) tools/ee2.py -e -c $(EASY) --all
