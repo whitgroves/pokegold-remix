@@ -145,9 +145,9 @@ These mons have had their types updated:
 ### Evolution Methods
 New evolution methods have been added to make trade evolutions available and stone evolutions available earlier. These are in addition to prior methods; for example, *Nidorina* can evolve into *Nidoqueen* by happiness, but will still evolve by Moon Stone.
 
-Also, certain held evolution items (*Dragon Scale* and *Up-Grade*) can now be used from the menu.
-
 #### By Friendship
+All friendship evolutions now happen at a happiness stat of of 217, displayed as a [TRUST](#dvs) level of 85% (vs 220 / ~87% in base).
+
 These evolutions can now happen by friendship:
 - Nidorina -> Nidoqueen
 - Nidorino -> Nidoking
@@ -161,9 +161,9 @@ These evolutions can now happen by friendship:
 - Haunter -> Gengar (Night)
 - Sunkern -> Sunflora (Day)
 
-In general, all friendship evolutions now happen at a happiness stat of of 217, displayed as a [TRUST](#dvs) level of 85% (vs 220 / ~87% in base).
-
 #### By Item
+Certain held evolution items (*Dragon Scale* and *Up-Grade*) can now be used from the menu. In general, item evolutions will grant a new [learnset](#learnsets) rather than removing it entirely.
+
 These evolutions can now happen by item effect:
 - Slowpoke -> Slowking: *Dragon Scale*
 - Onix -> Steelix: *Up-Grade*
@@ -429,7 +429,7 @@ The Mahogany Mart carries these items once the Rocket Hideout is cleared and Pry
 ## Miscellaneous
 
 ### DVs
-- Gender is no longer determined solely by Attack DV (i.e., female mons outside of all-female species can roll high ATK DVs).
+- The gender formula has been tweaked so female mons outside of all-female species can roll high ATK DVs.
 - As a consequence of the above, the shininess formula has been updated and now has a ~1/10,000 chance instead of 1/8192.
 - Similarly, trainer DVs have been updated to raise the attack of (most) female trainer classes and give each of the Elite Four a perfect stat.
 - The stats screen shows happiness as percent of 255 (TRUST) and Attack, Defense, Special, and Speed DVs (DNA).
