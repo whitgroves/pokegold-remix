@@ -451,3 +451,4 @@ The Mahogany Mart carries these items once the Rocket Hideout is cleared and Pry
 - Dragon Fang now boosts Dragon-type moves instead of Dragon Scale.
 - The Dragon Fang in Dragons' Den is now a Dragon Scale.
 - The Dragon Scale in Mt Mortar is now a Quick Claw.
+- Using *Sweet Scent* in the field will always pull a <=20% encounter.

@@ -296,6 +296,16 @@ ChooseWildEncounter:
 	ld b, a
 	ld h, d
 	ld l, e
+; hack to upgrade common encounters when using Sweet Scent (see engine/events/sweet_scent.asm->SweetScentEncounter)
+; based on Nayru62's hack (see stats_screen.asm->StatsScreen_PrintDVs)
+	ld a, [wPokedexStatus]
+	cp $ff
+	jr nz, .prob_bracket_loop
+	ld a, 60
+	add b
+	cp 101
+	jr nc, .prob_bracket_loop
+	ld b, a
 ; This next loop chooses which mon to load up.
 .prob_bracket_loop
 	ld a, [hli]

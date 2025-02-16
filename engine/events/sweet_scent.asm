@@ -32,6 +32,10 @@ SweetScentNothing:
 SweetScentEncounter:
 	farcall CanEncounterWildMon
 	jr nc, .no_battle
+; tells wildmons.asm->ChooseWildEncounter to prefer rarer pokemon
+; based on Nayru62's hack (see stats_screen.asm->StatsScreen_PrintDVs)
+	ld a, $ff
+	ld [wPokedexStatus], a
 	ld hl, wStatusFlags2
 	bit STATUSFLAGS2_BUG_CONTEST_TIMER_F, [hl]
 	jr nz, .bug_contest
