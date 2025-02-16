@@ -436,6 +436,7 @@ The Mahogany Mart carries these items once the Rocket Hideout is cleared and Pry
 - The stats screen shows happiness as percent of 255 (TRUST) and Attack, Defense, Special, and Speed DVs (DNA).
 
 ### Story Progression
+- The aide now gives 5 pokeballs when the player receives their starter and 2 potions when returning after the theft.
 - After receiving the Old and Good Rods, each Fishing Guru will tell the player where to find the next one.
 - The trainer in Cianwood now gifts a Delibird instead of Shuckle so the player can always FLY home after beating the gym.
 - Each surveillance statue in the Rocket Hideout summons 1 unique battle instead of 2 generic grunts.
