@@ -1,4 +1,4 @@
-# Pokémon Gold Remix - Revision 1.2 ("Catch 'Em All")
+# Pokémon Gold Remix - Revision 1.3
 Below is a non-exhaustive list of changes as of this revision:
 - [Type Chart](#type-chart)
 - [Pokémon Changes](#pokémon-changes)
@@ -401,6 +401,7 @@ Weathers cause new interactions in addition to their old ones (e.g., Rain boosti
 - *Fire*-type moves can no longer defrost through *Safeguard*
 - *Ghost*-type pokemon are now immune to *Spikes*
 - The enemy AI can only steal berries using *Thief*. Use by the player is unaffected.
+- Wild Pokemon with their evasion lowered by *Sweet Scent* cannot flee, and will have twice the catch rate.
 
 ## Store updates
 Several of the stores have been updated with new items.

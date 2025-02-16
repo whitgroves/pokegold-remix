@@ -4106,7 +4106,7 @@ BattleCommand_AccuracyUp2:
 	ld b, $10 | ACCURACY
 	jr BattleCommand_StatUp
 
-BattleCommand_EvasionUp2:
+BattleCommand_EvasionUp2: ; unused
 	ld b, $10 | EVASION
 	jr BattleCommand_StatUp
 
@@ -4294,7 +4294,7 @@ BattleCommand_AccuracyDown2:
 	ld a, $10 | ACCURACY
 	jr BattleCommand_StatDown
 
-BattleCommand_EvasionDown2:
+BattleCommand_EvasionDown2: ; unused
 	ld a, $10 | EVASION
 
 BattleCommand_StatDown:

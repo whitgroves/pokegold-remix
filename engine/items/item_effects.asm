@@ -246,7 +246,15 @@ PokeBallEffect:
 	cp MASTER_BALL
 	jp z, .catch_without_fail
 
-; down + b trick
+; lowered evasion check (SWEET_SCENT)
+	ld a, [wEnemyEvaLevel]
+	cp BASE_STAT_LEVEL
+	jr nc, .downB
+	sla b
+	jr nc, .downB
+	ld b, $ff
+
+.downB ; down + b trick
 	ldh a, [hJoyDown]
 	bit B_BUTTON_F, a
 	jr z, .continue

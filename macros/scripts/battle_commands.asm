@@ -129,21 +129,21 @@ ENDM
 	command specialattackup2        ; 7a
 	command specialdefenseup2       ; 7b
 	command accuracyup2             ; 7c
-	command evasionup2              ; 7d
+	command evasionup2              ; 7d -- unused
 	command attackdown              ; 7e
 	command defensedown             ; 7f
 	command speeddown               ; 80
 	command specialattackdown       ; 81
 	command specialdefensedown      ; 82
 	command accuracydown            ; 83
-	command evasiondown             ; 84
+	command evasiondown             ; 84 -- TODO rename to sweet scent
 	command attackdown2             ; 85
 	command defensedown2            ; 86
 	command speeddown2              ; 87
 	command specialattackdown2      ; 88
 	command specialdefensedown2     ; 89
 	command accuracydown2           ; 8a
-	command evasiondown2            ; 8b
+	command evasiondown2            ; 8b -- unused
 	command statupmessage           ; 8c
 	command statdownmessage         ; 8d
 	command statupfailtext          ; 8e

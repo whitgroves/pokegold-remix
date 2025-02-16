@@ -725,6 +725,11 @@ TryEnemyFlee:
 	and 1 << FRZ | SLP_MASK
 	jr nz, .Stay
 
+; enemy mons w/ lowered evasion can't flee
+	ld a, [wEnemyEvaLevel]
+	cp BASE_STAT_LEVEL
+	jr c, .Stay
+
 	ld a, [wTempEnemyMonSpecies]
 	ld de, 1
 	ld hl, AlwaysFleeMons

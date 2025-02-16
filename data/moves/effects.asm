@@ -362,7 +362,7 @@ AccuracyUp2:
 	statupfailtext
 	endmove
 
-EvasionUp2:
+EvasionUp2: ; unused
 	checkobedience
 	usedmovetext
 	doturn
@@ -543,7 +543,7 @@ AccuracyDown2:
 	statdownfailtext
 	endmove
 
-EvasionDown2:
+EvasionDown2: ; unused
 	checkobedience
 	usedmovetext
 	doturn
@@ -690,7 +690,7 @@ AccuracyDownHit:
 	statdownmessage
 	endmove
 
-EvasionDownHit:
+EvasionDownHit: ; unused -- for now, apply to VICEGRIP once evasiondown command is refactored
 	checkobedience
 	usedmovetext
 	doturn

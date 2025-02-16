@@ -57,7 +57,7 @@ MoveEffectsPointers:
 	dw SpecialAttackUp2
 	dw SpecialDefenseUp2
 	dw AccuracyUp2
-	dw EvasionUp2
+	dw EvasionUp2 ; unused
 	dw Transform
 	dw AttackDown2
 	dw DefenseDown2
@@ -65,7 +65,7 @@ MoveEffectsPointers:
 	dw SpecialAttackDown2
 	dw SpecialDefenseDown2
 	dw AccuracyDown2
-	dw EvasionDown2
+	dw EvasionDown2 ; unused
 	dw Reflect
 	dw DoPoison
 	dw DoParalyze
@@ -75,7 +75,7 @@ MoveEffectsPointers:
 	dw SpecialAttackDownHit
 	dw SpecialDefenseDownHit
 	dw AccuracyDownHit
-	dw EvasionDownHit
+	dw EvasionDownHit ; unused
 	dw SkyAttack ; TODO - consolidate with Solarbeam
 	dw ConfuseHit
 	dw PoisonMultiHit
