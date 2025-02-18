@@ -4108,7 +4108,6 @@ BattleCommand_AccuracyUp2:
 
 BattleCommand_EvasionUp2: ; unused
 	ld b, $10 | EVASION
-	jr BattleCommand_StatUp
 
 BattleCommand_StatUp:
 	call RaiseStat

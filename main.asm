@@ -139,6 +139,7 @@ SECTION "bankA", ROMX
 INCLUDE "engine/link/link.asm"
 INCLUDE "engine/link/mystery_gift.asm"
 INCLUDE "engine/overworld/wildmons.asm"
+INCLUDE "engine/battle/always_physical_moves.asm"
 
 
 SECTION "bankB", ROMX
@@ -155,7 +156,6 @@ INCLUDE "engine/events/pokerus/pokerus.asm"
 
 SECTION "Effect Commands", ROMX
 
-INCLUDE "engine/battle/always_physical_moves.asm"
 INCLUDE "engine/battle/effect_commands.asm"
 
 

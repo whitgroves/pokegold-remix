@@ -303,14 +303,12 @@ ChooseWildEncounter:
 	ld a, [wPokedexStatus]
 	cp $ff
 	jr nz, .prob_bracket_loop
-	ld a, 60
+	ld a, 70 ; bracket 1 (01-30) --> 71-100
 	add b
 	cp 101
 	jr c, .update_value
-	ld a, 40
+	ld a, 40 ; bracket 2 (31-60) --> 71-100
 	add b
-	cp 101
-	jr nc, .prob_bracket_loop
 .update_value
 	ld b, a
 ; This next loop chooses which mon to load up.
