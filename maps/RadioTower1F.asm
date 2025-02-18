@@ -117,7 +117,11 @@ RadioTower1FRadioCardWomanScript:
 	checkflag ENGINE_RADIO_CARD
 	iftrue .GotCard
 	checkevent EVENT_CLEARED_RADIO_TOWER
-	iftrue .SavedTower
+	iffalse .TakeQuiz
+	writetext RadioTower1FRadioCardWomanHeroText
+	promptbutton
+	sjump .GiveCard
+.TakeQuiz:
 	writetext RadioTower1FRadioCardWomanOfferQuizText
 	yesorno
 	iffalse .NoQuiz
@@ -147,10 +151,6 @@ RadioTower1FRadioCardWomanScript:
 	playsound SFX_ELEVATOR_END
 	waitsfx
 	writetext RadioTower1FRadioCardWomanYouWinText
-	promptbutton
-	jr .GiveCard
-.SavedTower:
-	writetext RadioTower1FRadioCardWomanHeroText
 	promptbutton
 .GiveCard:
 	getstring STRING_BUFFER_4, .RadioCardText
