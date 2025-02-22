@@ -2952,10 +2952,10 @@ HeracrossEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, LEER
-	db 6, HORN_ATTACK
-	db 12, ENDURE
-	db 19, FURY_ATTACK
-	db 27, COUNTER
+	db 6, FURY_ATTACK
+	db 12, VITAL_THROW
+	db 19, HORN_ATTACK
+	db 27, SEISMIC_TOSS
 	db 35, SUBMISSION
 	db 44, REVERSAL
 	db 54, MEGAHORN
