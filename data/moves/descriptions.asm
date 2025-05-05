@@ -540,8 +540,8 @@ CounterDescription:
 	next "blow double.@"
 
 SeismicTossDescription:
-	db   "The user's level"
-	next "equals damage HP.@"
+	db   "An attack that may"
+	next "cause paralysis.@"
 
 StrengthDescription:
 	db   "A powerful physi-"

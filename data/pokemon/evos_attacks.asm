@@ -2937,9 +2937,9 @@ ScizorEvosAttacks:
 ShuckleEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, WITHDRAW
-	db 1, CONSTRICT
+	db 1, WRAP
 	db 1, BIDE
-	db 9, WRAP
+	db 9, MUD_SLAP
 	db 11, DEFENSE_CURL
 	db 23, ROLLOUT
 	db 28, ACID
