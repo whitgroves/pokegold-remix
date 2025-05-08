@@ -48,13 +48,17 @@ BlackthornSuperNerdScript:
 	checkevent EVENT_BEAT_CLAIR
 	iftrue .BeatClair
 	checkevent EVENT_CLEARED_RADIO_TOWER
-	iftrue .ClearedRadioTower
+	iffalse .ClairIsOut
+	readvar VAR_BADGES
+	ifequal NUM_JOHTO_BADGES - 1, .ClairIsIn
+
+.ClairIsOut
 	writetext Text_ClairIsOut
 	waitbutton
 	closetext
 	end
 
-.ClearedRadioTower:
+.ClairIsIn:
 	writetext Text_ClairIsIn
 	waitbutton
 	closetext

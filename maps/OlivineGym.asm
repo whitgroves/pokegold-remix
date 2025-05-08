@@ -25,6 +25,12 @@ OlivineGymJasmineScript:
 	playsound SFX_GET_BADGE
 	waitsfx
 	setflag ENGINE_MINERALBADGE
+	checkevent EVENT_CLEARED_RADIO_TOWER
+	iffalse .FightDone
+	readvar VAR_BADGES
+	ifnotequal NUM_JOHTO_BADGES - 1, .FightDone
+	setevent EVENT_BLACKTHORN_CITY_SUPER_NERD_BLOCKS_GYM
+	clearevent EVENT_BLACKTHORN_CITY_SUPER_NERD_DOES_NOT_BLOCK_GYM
 .FightDone:
 	checkevent EVENT_GOT_TM23_IRON_TAIL
 	iftrue .GotIronTail
