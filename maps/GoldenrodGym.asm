@@ -71,7 +71,15 @@ GoldenrodGymWhitneyScript:
 	end
 
 .GotAttract:
+	checkevent EVENT_GOT_SQUIRTBOTTLE
+	iftrue .BetterNow
 	writetext WhitneyGoodCryText
+	waitbutton
+	closetext
+	end
+
+.BetterNow:
+	writetext WhitneyBetterNowText
 	waitbutton
 .NoRoomForAttract:
 	closetext
@@ -248,8 +256,17 @@ WhitneyAttractText:
 	done
 
 WhitneyGoodCryText:
-	text "Ah, that was a"
-	line "good cry!"
+	text "That was a good"
+	line "cry, but now I'm"
+	cont "thirsty…"
+
+	para "where'd I leave"
+	line "my SQUIRTBOTTLE?"
+	done
+
+WhitneyBetterNowText:
+	text "Ah, I feel better"
+	line "now!"
 
 	para "Come for a visit"
 	line "again! Bye-bye!"
