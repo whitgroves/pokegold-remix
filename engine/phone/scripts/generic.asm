@@ -163,14 +163,6 @@ PhoneScript_WantsToBattle_Female:
 	promptbutton
 	sjump PhoneScript_ByeBye
 
-Phone_WrongNumber_JoseBrent: ; TODO -- remove
-	writetext PhoneWrongNumberKazText
-	end
-
-Phone_WrongNumber_Tiffany: ; TODO -- remove
-	writetext PhoneWrongNumberAudreyText
-	end
-
 PhoneScript_SeeYouLater:
 	writetext PhoneSeeYouLaterText
 	end
@@ -199,12 +191,12 @@ PhoneScript_BugCatchingContest:
 	promptbutton
 	sjump PhoneScript_SeeYouLater
 
-IrwinRocketRumorScript:
+IrwinRocketRumorScript: ; also used for Liz
 	writetext IrwinRocketTakeoverRumorText
 	promptbutton
 	sjump PhoneScript_SeeYouLater
 
-GinaRocketRumorScript:
+GinaRocketRumorScript: ; also used for Tiffany
 	writetext GinaRocketTakeoverRumorText
 	promptbutton
 	sjump PhoneScript_ByeBye

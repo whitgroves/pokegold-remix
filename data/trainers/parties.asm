@@ -1169,7 +1169,7 @@ PokemaniacGroup:
 	db -1 ; end
 
 	; POKEMANIAC (9)
-	db "BRENT@", TRAINERTYPE_NORMAL ; rematch post Mahogany
+	db "BRENT@", TRAINERTYPE_NORMAL ; rematch post Hideout
 	db 19, SPINARAK
 	db 23, GIRAFARIG
 	db -1 ; end
@@ -1536,14 +1536,17 @@ BugCatcherGroup:
 	db  9, METAPOD
 	db  9, KAKUNA
 	db 12, SPINARAK
+	db 10, YANMA
 	db -1 ; end
 
 	; BUG_CATCHER (11)
 	db "WADE@", TRAINERTYPE_NORMAL ; rematch post Mahogany
 	db 18, LEDIAN
+	db 12, PINSIR
 	db 14, BUTTERFREE
 	db 16, BEEDRILL
-	db 22, SPINARAK
+	db 22, ARIADOS
+	db 20, YANMA
 	db -1 ; end
 
 	; BUG_CATCHER (12)
@@ -1681,14 +1684,16 @@ FisherGroup:
 	db -1 ; end
 
 	; FISHER (18)
-	db "CHRIS@", TRAINERTYPE_NORMAL ; rematch post Radio Tower
+	db "CHRIS@", TRAINERTYPE_NORMAL ; rematch post Hideout
 	db 18, MAGIKARP
+	db 20, AZUMARILL
 	db 25, CHINCHOU
 	db -1 ; end
 
 	; FISHER (19)
 	db "CHRIS@", TRAINERTYPE_NORMAL ; rematch post E4
-	db 31, QWILFISH
+	db 35, QUAGSIRE
+	db 31, AZUMARILL
 	db 33, LANTURN
 	db 35, GYARADOS
 	db -1 ; end
@@ -3120,14 +3125,16 @@ PokefanMGroup:
 
 	; POKEFANM (10)
 	db "DEREK@", TRAINERTYPE_ITEM ; rematch post Lake of Rage
-	db 21, AZUMARILL,  BERRY
-	db 20, PIKACHU,    BERRY
+	db 15, BUTTERFREE,	BERRY
+	db 17, MEOWTH,		BERRY
+	db 20, PIKACHU,		BERRY
 	db -1 ; end
 
 	; POKEFANM (11)
 	db "DEREK@", TRAINERTYPE_ITEM ; rematch post E4
-	db 36, AZUMARILL,  BERRY
-	db 41, PIKACHU,    BERRY
+	db 33, BUTTERFREE,	BERRY
+	db 38, PERSIAN,		BERRY
+	db 41, PIKACHU,		BERRY
 	db -1 ; end
 
 	; POKEFANM (12)

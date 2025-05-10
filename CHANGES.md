@@ -456,4 +456,4 @@ The Mahogany Mart carries these items once the Rocket Hideout is cleared and Pry
 - The Dragon Scale in Mt Mortar is now a Quick Claw.
 - Using *Sweet Scent* in the field will always pull a <=20% encounter.
 - The chance to receive a random incoming call in the overworld is now 12.5% instead of 50%.
-- Trainer calls are no longer generic; both incoming and outgoing calls will trigger a rematch, swarm, or rare mon sighting.
+- Phone calls are more meaningful; most incoming and outgoing calls will trigger a rematch, swarm, or rare mon sighting.

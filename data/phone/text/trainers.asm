@@ -326,7 +326,7 @@ PhoneBugCatchingContestText:
 	line "going to go?"
 	done
 
-IrwinRocketTakeoverRumorText:
+IrwinRocketTakeoverRumorText: ; also used for Liz
 	text "<PLAYER>, did you"
 	line "know?"
 
@@ -340,7 +340,7 @@ IrwinRocketTakeoverRumorText:
 	line "is TEAM ROCKET?"
 	done
 
-GinaRocketTakeoverRumorText:
+GinaRocketTakeoverRumorText: ; also used for Tiffany
 	text "<PLAYER>, did you"
 	line "hear the news?"
 
