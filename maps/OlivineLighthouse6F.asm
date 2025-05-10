@@ -11,14 +11,14 @@ OlivineLighthouse6F_MapScripts:
 OlivineLighthouseJasmine:
 	faceplayer
 	opentext
-	checkitem SECRETPOTION
-	iftrue .BroughtSecretpotion
 	checkevent EVENT_JASMINE_EXPLAINED_AMPHYS_SICKNESS
 	iftrue .ExplainedSickness
 	writetext JasmineCianwoodPharmacyText
 	promptbutton
 	setevent EVENT_JASMINE_EXPLAINED_AMPHYS_SICKNESS
 .ExplainedSickness:
+	checkitem SECRETPOTION
+	iftrue .BroughtSecretpotion
 	writetext JasmineGetSomeMedicineText
 	waitbutton
 	closetext
@@ -190,8 +190,9 @@ JasmineGetSomeMedicineText:
 	done
 
 JasmineCureAmphyText:
-	text "…Will that med-"
-	line "icine cure AMPHY?"
+	text "…Is that the"
+	line "medicine from"
+	cont "CIANWOOD?"
 	done
 
 PlayerHandedSecretpotionText:

@@ -451,6 +451,7 @@ The Mahogany Mart carries these items once the Rocket Hideout is cleared and Pry
 - The aide now gives 5 pokeballs when the player receives their starter and 2 potions when returning after the theft.
 - After receiving the Old and Good Rods, each Fishing Guru will tell the player where to find the next one.
 - Whitney now reminds the player to pick up the Squirtbottle after beating her.
+- The player can pick up the Secretpotion in Cianwood without clearing the lighthouse and talking to Jasmine first.
 - The trainer in Cianwood now gifts a Delibird instead of Shuckle so the player can always FLY home after beating the gym.
 - Each surveillance statue in the Rocket Hideout summons 1 unique battle instead of 2 generic grunts.
 - The Radio Tower incident now starts when reaching Blackthorn rather than immediately after the 7th badge.
@@ -461,11 +462,11 @@ The Mahogany Mart carries these items once the Rocket Hideout is cleared and Pry
 - The dragon user challenge has changed; check the center of the cavern first.
 
 ### Other
-- Since Remoraid are no longer found on Route 44, Sailor Huey (lighthouse) now activates the Remoraid swarm.
+- Since Remoraid are no longer found on Route 44, Sailor Huey (lighthouse) activates the Remoraid swarm on Route 40 instead.
 - Headbutting trees in cities (Ecruteak) can now spawn wild encounters.
 - Dragon Fang now boosts Dragon-type moves instead of Dragon Scale.
 - The Dragon Fang in Dragons' Den is now a Dragon Scale.
-- The Dragon Scale in Mt Mortar is now a Quick Claw.
+- The Dragon Scale in Mt. Mortar is now a Quick Claw.
 - Using *Sweet Scent* in the field will always pull a <=20% encounter.
 - The chance to receive a random incoming call in the overworld is now 12.5% instead of 50%.
 - Phone calls are more meaningful; most incoming and outgoing calls will trigger a rematch, swarm, or rare mon sighting.
