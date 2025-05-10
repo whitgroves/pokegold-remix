@@ -2101,7 +2101,7 @@ ChikoritaEvosAttacks:
 	db 29, BODY_SLAM
 	db 36, SAFEGUARD
 	db 43, SOLARBEAM
-	db 50, TAKE_DOWN
+	db 50, HEAL_BELL
 	db 0 ; no more level-up moves
 
 BayleefEvosAttacks:
@@ -2113,10 +2113,10 @@ BayleefEvosAttacks:
 	db 12, SYNTHESIS
 	db 15, REFLECT
 	db 23, LIGHT_SCREEN
-	db 31, BODY_SLAM
+	db 31, TWISTER
 	db 39, SAFEGUARD
 	db 47, SOLARBEAM
-	db 55, HYPER_BEAM
+	db 55, HEAL_BELL
 	db 0 ; no more level-up moves
 
 MeganiumEvosAttacks:
@@ -2127,10 +2127,10 @@ MeganiumEvosAttacks:
 	db 12, SYNTHESIS
 	db 15, REFLECT
 	db 23, LIGHT_SCREEN
-	db 31, BODY_SLAM
+	db 31, TWISTER
 	db 41, SAFEGUARD
 	db 51, SOLARBEAM
-	db 61, HYPER_BEAM
+	db 61, HEAL_BELL
 	db 0 ; no more level-up moves
 
 CyndaquilEvosAttacks:
@@ -2455,11 +2455,11 @@ MareepEvosAttacks:
 	db 1, GROWL
 	db 8, THUNDERSHOCK
 	db 14, COTTON_SPORE
-	db 23, SPARK
-	db 28, CHARM
+	db 23, CHARM
+	db 28, SPARK
 	db 37, BODY_SLAM
 	db 45, TAKE_DOWN
-	db 51, THUNDER
+	db 50, THUNDER
 	db 0 ; no more level-up moves
 
 FlaaffyEvosAttacks:
@@ -2470,11 +2470,11 @@ FlaaffyEvosAttacks:
 	db 8, THUNDERSHOCK
 	db 14, COTTON_SPORE
 	db 15, THUNDERPUNCH
-	db 26, SPARK
+	db 26, DIZZY_PUNCH
 	db 31, CHARM
 	db 41, RAIN_DANCE
-	db 50, TAKE_DOWN
-	db 55, THUNDER
+	db 48, MEGA_PUNCH
+	db 54, THUNDER
 	db 0 ; no more level-up moves
 
 AmpharosEvosAttacks:
@@ -2483,12 +2483,12 @@ AmpharosEvosAttacks:
 	db 1, GROWL
 	db 8, THUNDERSHOCK
 	db 15, THUNDERPUNCH
-	db 26, SPARK
+	db 26, DIZZY_PUNCH
 	db 30, FLASH
 	db 33, THUNDERBOLT
 	db 44, RAIN_DANCE
-	db 57, TWISTER
-	db 61, THUNDER
+	db 51, TWISTER
+	db 59, THUNDER
 	db 0 ; no more level-up moves
 
 BellossomEvosAttacks:
@@ -2986,10 +2986,10 @@ TeddiursaEvosAttacks:
 	db 8, LICK
 	db 15, FURY_SWIPES
 	db 22, FAINT_ATTACK
-	db 29, REST
-	db 36, SLASH
+	db 29, SLASH
+	db 36, REST
 	db 43, SNORE
-	db 50, TAKE_DOWN
+	db 50, SLEEP_TALK
 	db 0 ; no more level-up moves
 
 UrsaringEvosAttacks:
@@ -2999,9 +2999,9 @@ UrsaringEvosAttacks:
 	db 8, LICK
 	db 15, FURY_SWIPES
 	db 22, FAINT_ATTACK
-	db 25, ROAR
-	db 29, REST
-	db 39, SLASH
+	db 29, SLASH
+	db 30, ROAR
+	db 39, REST
 	db 49, SNORE
 	db 59, TAKE_DOWN
 	db 0 ; no more level-up moves

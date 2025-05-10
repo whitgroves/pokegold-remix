@@ -714,9 +714,9 @@ SneaselEggMoves:
 TeddiursaEggMoves:
 	db CRUNCH
 	db TAKE_DOWN
-	db SEISMIC_TOSS
-	db FOCUS_ENERGY
-	db COUNTER
+	db BITE
+	db ENDURE
+	db ROAR
 	db METAL_CLAW
 	db SUBMISSION
 	db -1 ; end
