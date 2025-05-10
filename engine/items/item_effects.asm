@@ -253,6 +253,7 @@ PokeBallEffect:
 	sla b
 	jr nc, .downB
 	ld b, $ff
+	jr .continue ; already at max value
 
 .downB ; down + b trick
 	ldh a, [hJoyDown]
@@ -264,6 +265,7 @@ PokeBallEffect:
 	sla b
 	jr nc, .continue
 	ld b, $ff
+
 .continue
 	ld a, [wCurItem]
 	ld c, a
