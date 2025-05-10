@@ -9,14 +9,18 @@ Below is a non-exhaustive list of changes as of this revision:
     - [Encounters](#encounters)
     - [Learnsets](#learnsets)
 - [Move Updates](#move-updates)
-    - [Damaging Moves](#damaging-moves)
+    - [General Updates](#general-updates)
     - [Always Physical Moves](#always-physical-moves)
-    - [Non-Damaging Moves](#non-damaging-moves)
+    - [Trapping Moves](#trapping-moves)
+    - [Flavor Changes](#flavor-changes)
     - [TMs](#tms)
     - [Weather Interactions](#weather-interactions)
     - [Other](#other)
 - [Store Updates](#store-updates)
 - [Miscellaneous](#miscellaneous)
+    - [DVs](#dvs)
+    - [Story Progression](#story-progression)
+    - [Other](#other-1)
 
 ## Type Chart
 The goal here was to rebalance the chart so otherwise "isolated" types (e.g., *Ghost*, *Dark*) feel more interactive while making "weaker" types (e.g. *Bug*) less so by giving them key advantages.
@@ -246,16 +250,18 @@ Generally speaking, any mon with an updated type has an updated learnset.
 All learnsets can be exported and viewed with [`easy_edit`](./README.md#whats-easy_edit).
 
 ## Move Updates
-Several moves have had their types, effects, or other attributes changed to provide better STAB coverage or make certain movesets more viable.
+Most moves have had their types, effects, or other attributes changed to provide better STAB coverage or make certain movesets more viable. 
 
-### Damaging Moves
+In rare cases (Sand Attack, Hyper Beam), moves have had their attack power or power points reduced to improve game balance around these changes.
+
+### General Updates
 - Comet Punch: *Normal* -> *Fighting*
 - Vicegrip: *Normal* -> *Dark*
 - Razor Wind: *Normal* -> *Flying* | *Charging Move* -> *30% Chance To Flinch* | *75%* -> *100% Accuracy*
 - Cut: *Normal* -> *Bug* | *No Effect* -> *High Crit Rate* | *95%* -> *100% Accuracy*
-- Fly: *95%* -> *100% Accuracy*
+- Fly: *Fly Effect* -> *Fly Effect, Hits Flying Targets* | *70* -> *80 Power* | *95%* -> *100% Accuracy*
 - Vine Whip: *35* -> *40 Power* | *10* -> *20 PP* | [*Always Physical*](#always-physical-moves)
-- Rolling Kick: *85%* -> *100% Accuracy*
+- Rolling Kick: *85%* -> *90% Accuracy*
 - Sand Attack: *100%* -> *80% Accuracy*
 - Horn Attack: *Normal* -> *Dragon* | *No Effect* -> *30% Chance To Flinch* | *65* -> *70 Power* | *25* -> *15 PP* | [*Always Physical*](#always-physical-moves)
 - Fury Attack: *Normal* -> *Bug*
@@ -266,8 +272,9 @@ Several moves have had their types, effects, or other attributes changed to prov
 - Poison Sting: *15* -> *20 Power*
 - Twineedle: *Bug* -> *Poison*
 - Sonicboom: *Normal* -> *Steel* | *Flat Damage* -> *Priority Move* | *20 Damage* -> *40 Power* | *20* -> *30 PP*
+- Surf: *No Effect* -> *Always Hits, Hits Underground Targets*
 - Blizzard: *10% Chance To Freeze* -> *20% Chance To Freeze*
-- Hyper Beam: *Normal* -> *Dragon* | *150 Power* -> *120 Power*
+- Hyper Beam: *Normal* -> *Dragon* | *150* -> *120 Power*
 - Submission: *80 Damage* -> *100 Damage* | *25* -> *20 PP*
 - Seismic Toss: *Flat Damage* -> *30% Chance To Paralyze* | *Damage Equal To User's Level* -> *85 Power* | *20* -> *15 PP*
 - Strength: *Normal* -> *Fighting* | *No Effect* -> *10% Chance To Raise Attack*
@@ -278,7 +285,8 @@ Several moves have had their types, effects, or other attributes changed to prov
 - Dragon Rage: *Flat Damage* -> *Always Hits* | *40 Damage* -> *60 Power* | *10* -> *20 PP*
 - Fire Spin: *70%* -> *75% Accuracy* | *15*-> *20 PP*
 - Rock Throw: *90%* -> *100% Accuracy*
-- Dig: *10* -> *15 PP*
+- Dig: *Dig Effect* -> *Dig Effect, Hits Underground Targets* | *10* -> *15 PP*
+- Hypnosis: *20* -> *15 PP*
 - Rage: *Normal* -> *Dark*
 - Night Shade: *Flat Damage* -> *10% Chance To Sleep* | *Damage Equal To User's Level* -> *55 Power*
 - Lick: *30% Chance To Paralyze* -> *Leeches Health On Hit* | *20* -> *30 Power*
@@ -288,6 +296,7 @@ Several moves have had their types, effects, or other attributes changed to prov
 - Skull Bash: *Normal* -> *Rock* | *Charging Move* -> *30% Chance To Flinch* | *100* -> *70 Power*
 - Spike Cannon: *Normal* -> *Steel*
 - Constrict: *Normal* -> *Bug* | *10% Chance To Lower Speed* -> [*Trapping Move*](#trapping-moves) | *10* -> *15 Power* | *100%* -> *75% Accuracy* | *35* -> *20 PP*
+- Dream Eater: *15* -> *10 PP*
 - Leech Life: *20* -> *30 Power* | *15* -> *30 PP*
 - Sky Attack: *Charging Move* -> [*Skips Charging Turn Under Sun*](#sun)
 - Dizzy Punch: *Normal* -> *Psychic* | [*Always Physical*](#always-physical-moves)
@@ -307,8 +316,11 @@ Several moves have had their types, effects, or other attributes changed to prov
 - Dragonbreath: *30% Chance To Paralyze* -> *20% Chance To Lower Special Defense*
 - Iron Tail: *75%* -> *90% Accuracy*
 - Metal Claw: *10% Chance To Raise Attack* -> *20% Chance To Raise Attack* | *95%* -> *100% Accuracy*
+- Twister: *40* -> *50 Power*
 - Crunch: *20% Chance To Lower Special Defense* -> *30% Chance To Paralyze*
-- Whirlpool: *70%* -> *75% Accuracy* | *15*-> *20 PP*
+- Ancientpower: *5* -> *10 PP*
+- Future Sight: *80* -> *150 Power* | *90%* -> *100% Accuracy* | *15* -> *5 PP*
+- Whirlpool: *70%* -> *75% Accuracy* | *15* -> *20 PP*
 
 ### Always Physical Moves
 These moves are special, but their damage is now treated as physical.
@@ -332,8 +344,8 @@ As a side note, all *Ghost* moves are now special and all *Dark* moves are now p
 ### Trapping Moves
 Besides preventing a switch out, trapped pokemon will now have their speed cut as if they were paralyzed. This does not stack with the PRZ status.
 
-### Non-STAB Moves
-These moves ignore STAB but have had their types changed for flavor only; however, this may still impact the AI's choices.
+### Flavor Changes
+These moves ignore STAB but have had their types changed for flavor; however, this may still impact the AI's choices.
 - Guillotine: *Normal* -> *Dark*
 - Whirlwind: *Normal* -> *Flying*
 - Horn Drill: *Normal* -> *Dragon*

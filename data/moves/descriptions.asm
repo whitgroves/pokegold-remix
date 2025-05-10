@@ -492,8 +492,8 @@ HydroPumpDescription:
 	next "type attack.@"
 
 SurfDescription:
-	db   "A strong water-"
-	next "type attack.@"
+	db   "A surging attack"
+	next "that always hits.@"
 
 IceBeamDescription:
 	db   "An attack that may"
@@ -1220,8 +1220,8 @@ CrossChopDescription:
 	next "cal hit ratio.@"
 
 TwisterDescription:
-	db   "Whips up a tornado"
-	next "to attack.@"
+	db   "Does extra damage"
+	next "to flying targets.@"
 
 RainDanceDescription:
 	db   "Boosts water-type"

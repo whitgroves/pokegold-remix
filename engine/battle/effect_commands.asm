@@ -1726,6 +1726,8 @@ BattleCommand_CheckHit:
 	cp THUNDER
 	ret z
 	cp TWISTER
+	ret z
+	cp FLY
 	ret
 
 .DigMoves:
@@ -1737,6 +1739,10 @@ BattleCommand_CheckHit:
 	cp FISSURE
 	ret z
 	cp MAGNITUDE
+	ret z
+	cp DIG
+	ret z
+	cp SURF
 	ret
 
 .ThunderRain:
