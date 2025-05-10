@@ -1406,27 +1406,28 @@ ElectrodeEvosAttacks:
 ExeggcuteEvosAttacks:
 	db EVOLVE_ITEM, LEAF_STONE, EXEGGUTOR
 	db 0 ; no more evolutions
-	db 1, HYPNOSIS
+	db 1, HARDEN
 	db 1, BARRAGE
-	db 7, REFLECT
+	db 7, SAFEGUARD
 	db 13, LEECH_SEED
-	db 19, CONFUSION
-	db 25, STUN_SPORE
-	db 31, POISONPOWDER
-	db 37, SLEEP_POWDER
-	db 43, SOLARBEAM
+	db 19, SUBSTITUTE
+	db 25, PROTECT
+	db 31, SOFTBOILED
+	db 37, MEGA_DRAIN
+	db 43, EGG_BOMB
 	db 0 ; no more level-up moves
 
 ExeggutorEvosAttacks:
 	db 0 ; no more evolutions
+	db 1, LOW_KICK
 	db 1, BARRAGE
-	db 7, REFLECT
+	db 7, SAFEGUARD
 	db 13, LEECH_SEED
-	db 19, STOMP
-	db 25, LIGHT_SCREEN
-	db 31, EGG_BOMB
-	db 37, DRAGON_RAGE
-	db 43, SOLARBEAM
+	db 19, ROLLING_KICK
+	db 25, STOMP
+	db 31, MEDITATE
+	db 37, MEGA_KICK
+	db 43, GIGA_DRAIN
 	db 0 ; no more level-up moves
 
 CuboneEvosAttacks:
@@ -1793,11 +1794,11 @@ GyaradosEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, THRASH
 	db 20, BITE
-	db 25, DRAGON_RAGE
-	db 30, LEER
-	db 35, TWISTER
-	db 40, HYDRO_PUMP
-	db 45, RAIN_DANCE
+	db 25, TWISTER
+	db 30, MEAN_LOOK
+	db 35, DRAGON_RAGE
+	db 40, RAIN_DANCE
+	db 45, HYDRO_PUMP
 	db 50, CRUNCH
 	db 55, HYPER_BEAM
 	db 0 ; no more level-up moves

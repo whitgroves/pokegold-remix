@@ -92,7 +92,7 @@ These mons have had their types updated:
 - Kingler: *Water* -> *Water/Fighting*
 - Voltorb, Electrode: *Electric* -> *Steel*
 - Exeggcute: *Grass/Psychic* -> *Grass/Normal*
-- Exeggcutor: *Grass/Psychic* -> *Grass/Dragon*
+- Exeggcutor: *Grass/Psychic* -> *Grass/Fighting*
 - Cubone: *Ground* -> *Rock/Normal*
 - Marowak: *Ground* -> *Rock/Ghost*
 - Lickitung: *Normal* -> *Normal/Poison*
