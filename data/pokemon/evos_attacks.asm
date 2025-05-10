@@ -1671,8 +1671,8 @@ StarmieEvosAttacks:
 	db 1, TACKLE
 	db 7, WATER_GUN
 	db 13, RAPID_SPIN
-	db 19, RECOVER
-	db 25, BUBBLEBEAM
+	db 19, CONFUSION
+	db 25, RECOVER
 	db 31, PSYBEAM
 	db 37, REFLECT
 	db 43, LIGHT_SCREEN
@@ -2911,11 +2911,12 @@ QwilfishEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, POISON_STING
 	db 1, MINIMIZE
-	db 1, SPIKES
-	db 10, PIN_MISSILE
-	db 19, WATER_GUN
-	db 28, TWINEEDLE
-	db 37, SPIKE_CANNON
+	db 1, PIN_MISSILE
+	db 10, WATER_GUN
+	db 19, TWINEEDLE
+	db 28, SPIKES
+	db 34, SPIKE_CANNON
+	db 41, HYDRO_PUMP
 	db 46, TOXIC
 	db 0 ; no more level-up moves
 
