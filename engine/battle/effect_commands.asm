@@ -4370,9 +4370,6 @@ BattleCommand_StatDown:
 	and a
 	jr nz, .Failed
 
-	call CheckHiddenOpponent
-	jr nz, .Failed
-
 ; Accuracy/Evasion reduction don't involve stats.
 	ld [hl], b
 	ld a, c
@@ -6253,10 +6250,6 @@ ResetTurn:
 INCLUDE "engine/battle/move_effects/thief.asm"
 
 BattleCommand_ArenaTrap:
-; Doesn't work on an absent opponent.
-
-	call CheckHiddenOpponent
-	jr nz, .failed
 
 ; Don't trap if the opponent is already trapped.
 
@@ -6514,12 +6507,12 @@ INCLUDE "engine/battle/move_effects/future_sight.asm"
 
 INCLUDE "engine/battle/move_effects/thunder.asm"
 
-CheckHiddenOpponent:
+;CheckHiddenOpponent:
 ; BUG: This routine is completely redundant and introduces a bug, since BattleCommand_CheckHit does these checks properly.
-	ld a, BATTLE_VARS_SUBSTATUS3_OPP
-	call GetBattleVar
-	and 1 << SUBSTATUS_FLYING | 1 << SUBSTATUS_UNDERGROUND
-	ret
+;	ld a, BATTLE_VARS_SUBSTATUS3_OPP
+;	call GetBattleVar
+;	and 1 << SUBSTATUS_FLYING | 1 << SUBSTATUS_UNDERGROUND
+;	ret
 
 GetUserItem:
 ; Return the effect of the user's item in bc, and its id at hl.

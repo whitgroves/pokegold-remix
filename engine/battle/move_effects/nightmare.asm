@@ -1,8 +1,4 @@
 BattleCommand_Nightmare:
-; Can't hit an absent opponent.
-
-	call CheckHiddenOpponent
-	jr nz, .failed
 
 ; Can't hit a substitute.
 
