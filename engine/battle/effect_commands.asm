@@ -3686,8 +3686,6 @@ SleepOpponent:
 	call BattleRandom
 	and SLP_MASK
 	jr z, .random_loop
-	cp SLP_MASK
-	jr z, .random_loop
 	inc a
 	ld [de], a
 	call UpdateOpponentInParty
