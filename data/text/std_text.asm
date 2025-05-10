@@ -207,8 +207,11 @@ RegisteredNumberMText:
 	done
 
 NumberAcceptedMText:
-	text "I'll call you if"
-	line "anything comes up."
+	text "Call ahead for a"
+	line "rematch."
+
+	para "I want my team to"
+	line "be ready!"
 	done
 
 NumberDeclinedMText:
@@ -254,8 +257,10 @@ RegisteredNumberFText:
 	done
 
 NumberAcceptedFText:
-	text "I'll call you if"
-	line "something's up."
+	text "A rematch?"
+	
+	para "My team's not"
+	line "ready yet!"
 	done
 
 NumberDeclinedFText:

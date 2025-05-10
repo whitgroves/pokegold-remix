@@ -74,8 +74,11 @@ _PhoneOutOfAreaText::
 	done
 
 _PhoneJustTalkToThemText::
-	text "Just go talk to"
-	line "that person!"
+	text "They should be"
+	line "nearby."
+
+	para "Why not talk to"
+	line "them in person?"
 	done
 
 _PhoneThankYouText::

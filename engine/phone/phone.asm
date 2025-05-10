@@ -116,10 +116,10 @@ CheckPhoneCall::
 	nop
 	jr nc, .no_call
 
-	; 50% chance for a call
+	; 12.5% chance for an incoming call
 	call Random
 	ld b, a
-	and %01111111
+	and %00011111
 	cp b
 	jr nz, .no_call
 

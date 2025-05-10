@@ -237,7 +237,7 @@ PhoneFemaleWantsToBattleText:
 	line "Look for me, OK?"
 	done
 
-PhoneWrongNumberKazText:
+PhoneWrongNumberKazText: ; TODO -- remove
 	text "Hello? This is"
 	line "@"
 	text_ram wStringBuffer3
@@ -248,7 +248,7 @@ PhoneWrongNumberKazText:
 	cont "number."
 	done
 
-PhoneWrongNumberAudreyText:
+PhoneWrongNumberAudreyText: ; TODO -- remove
 	text "Hello, this is"
 	line "@"
 	text_ram wStringBuffer3

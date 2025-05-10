@@ -163,11 +163,11 @@ PhoneScript_WantsToBattle_Female:
 	promptbutton
 	sjump PhoneScript_ByeBye
 
-Phone_WrongNumber_JoseBrent:
+Phone_WrongNumber_JoseBrent: ; TODO -- remove
 	writetext PhoneWrongNumberKazText
 	end
 
-Phone_WrongNumber_Tiffany:
+Phone_WrongNumber_Tiffany: ; TODO -- remove
 	writetext PhoneWrongNumberAudreyText
 	end
 

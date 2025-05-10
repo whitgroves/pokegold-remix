@@ -448,6 +448,12 @@ The Mahogany Mart carries these items once the Rocket Hideout is cleared and Pry
 - Clair gives the Risingbadge immediately upon defeat, but the player must still complete the dragon user challenge to receive TM24.
 - The dragon user challenge has changed; check the center of the cavern first.
 
+### Phone Calls
+- The chance to receive a random incoming call in the overworld is now 12.5% instead of 50%.
+- Incoming trainer calls are no longer generic; they will always trigger a rematch, swarm, rare mon sighting, or other event.
+- Outgoing trainer calls will always trigger a rematch or a rare mon sighting.
+- Certain trainers will always offer a rematch, while others will be less likely, or even wait until a specific condition is met.
+
 ### Other
 - Since Remoraid are no longer found on Route 44, Sailor Huey (lighthouse) now activates the Remoraid swarm.
 - Headbutting trees in cities (Ecruteak) can now spawn wild encounters.
