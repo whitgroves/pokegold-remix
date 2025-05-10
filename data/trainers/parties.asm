@@ -2724,7 +2724,7 @@ PicnickerGroup:
 	db -1 ; end
 
 	; PICNICKER (9)
-	db "GINA@", TRAINERTYPE_NORMAL
+	db "GINA@", TRAINERTYPE_NORMAL ; rematch post Mahogany
 	db 18, SKIPLOOM
 	db 19, TANGELA
 	db 20, IVYSAUR
@@ -2762,7 +2762,7 @@ PicnickerGroup:
 	db -1 ; end
 
 	; PICNICKER (15)
-	db "GINA@", TRAINERTYPE_NORMAL
+	db "GINA@", TRAINERTYPE_NORMAL ; rematch post Radio Tower
 	db 27, JUMPLUFF
 	db 30, TENTACRUEL
 	db 32, VENUSAUR
@@ -2866,14 +2866,14 @@ CamperGroup:
 	db -1 ; end
 
 	; CAMPER (12)
-	db "TODD@", TRAINERTYPE_NORMAL
+	db "TODD@", TRAINERTYPE_NORMAL ; rematch post Cianwood
 	db 17, GEODUDE
 	db 22, PINECO
 	db 23, PSYDUCK
 	db -1 ; end
 
 	; CAMPER (13)
-	db "TODD@", TRAINERTYPE_NORMAL
+	db "TODD@", TRAINERTYPE_NORMAL ; rematch post Blackthorn
 	db 26, GOLEM
 	db 31, FORRETRESS
 	db 33, GOLDUCK

@@ -1422,7 +1422,7 @@ JohtoGrassWildMons:
 	; nite
 	db 12, NIDORAN_F
 	db 12, NIDORAN_M
-	db 13, PIDGEY
+	db 13, HOOTHOOT
 	db 10, ABRA
 	db 12, JIGGLYPUFF
 	db 11, MURKROW

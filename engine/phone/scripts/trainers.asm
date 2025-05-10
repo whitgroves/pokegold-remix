@@ -5,7 +5,7 @@ JackPhoneCalleeScript:
 JackPhoneCallerScript:
 	gettrainername STRING_BUFFER_3, SCHOOLBOY, JACK1
 	scall PhoneScript_GreetPhone_Male
-.CanBattle
+.CanBattle:
 	checkflag ENGINE_FLYPOINT_OLIVINE
 	iffalse .NoBattle
 	scall PhoneScript_Random2
@@ -24,7 +24,7 @@ BeverlyPhoneCalleeScript:
 BeverlyPhoneCallerScript:
 	gettrainername STRING_BUFFER_3, POKEFANF, BEVERLY1
 	scall PhoneScript_GreetPhone_Female
-.CanBattle
+.CanBattle:
 	checkflag ENGINE_FLYPOINT_MAHOGANY
 	iffalse .NoBattle
 	scall PhoneScript_Random2
@@ -39,10 +39,13 @@ BeverlyPhoneCallerScript:
 HueyPhoneCalleeScript:
 	gettrainername STRING_BUFFER_3, SAILOR, HUEY1
 	scall PhoneScript_AnswerPhone_Male
-	sjump HueyPhoneCallerScript.WantsBattle
+	sjump HueyPhoneCallerScript.CheckSwarm
 HueyPhoneCallerScript:
 	gettrainername STRING_BUFFER_3, SAILOR, HUEY1
 	scall PhoneScript_GreetPhone_Male
+.CheckSwarm:
+	scall PhoneScript_Random4
+	ifgreater 0, .WantsBattle ; 25% chance to trigger swarm
 	checkflag ENGINE_SWARM
 	iftrue .WantsBattle
 	getmonname STRING_BUFFER_4, REMORAID
@@ -62,7 +65,7 @@ GavenPhoneCalleeScript:
 GavenPhoneCallerScript:
 	gettrainername STRING_BUFFER_3, COOLTRAINERM, GAVEN3
 	scall PhoneScript_GreetPhone_Male
-.CanBattle
+.CanBattle:
 	checkevent EVENT_BEAT_ELITE_FOUR
 	iftrue .WantsBattle
 	scall PhoneScript_Random2
@@ -80,7 +83,7 @@ BethPhoneCalleeScript:
 BethPhoneCallerScript:
 	gettrainername STRING_BUFFER_3, COOLTRAINERF, BETH1
 	scall PhoneScript_GreetPhone_Female
-.CanBattle
+.CanBattle:
 	checkevent EVENT_BEAT_ELITE_FOUR
 	iffalse .NoBattle
 	scall PhoneScript_Random4
@@ -99,7 +102,7 @@ JosePhoneCalleeScript:
 JosePhoneCallerScript:
 	gettrainername STRING_BUFFER_3, BIRD_KEEPER, JOSE2
 	scall PhoneScript_GreetPhone_Male
-.CanBattle
+.CanBattle:
 	checkevent EVENT_BEAT_ELITE_FOUR
 	iffalse .NoBattle
 	scall PhoneScript_Random2
@@ -118,7 +121,7 @@ ReenaPhoneCalleeScript:
 ReenaPhoneCallerScript:
 	gettrainername STRING_BUFFER_3, COOLTRAINERF, REENA1
 	scall PhoneScript_GreetPhone_Female
-.CanBattle
+.CanBattle:
 	checkevent EVENT_BEAT_ELITE_FOUR
 	iffalse .NoBattle
 	scall PhoneScript_Random2
@@ -137,7 +140,7 @@ JoeyPhoneCalleeScript:
 JoeyPhoneCallerScript:
 	gettrainername STRING_BUFFER_3, YOUNGSTER, JOEY1
 	scall PhoneScript_GreetPhone_Male
-.CanBattle
+.CanBattle:
 	checkflag ENGINE_FLYPOINT_GOLDENROD
 	iffalse .NoBattle
 	scall PhoneScript_Random2
@@ -152,41 +155,24 @@ JoeyPhoneCallerScript:
 WadePhoneCalleeScript:
 	gettrainername STRING_BUFFER_3, BUG_CATCHER, WADE1
 	scall PhoneScript_AnswerPhone_Male
-	scall PhoneScript_Random2
-	ifequal 0, .Generic
-	checkflag ENGINE_DAILY_BUG_CONTEST
-	iftrue .Generic
-	readvar VAR_WEEKDAY
-	ifequal TUESDAY, PhoneScript_BugCatchingContest
-	ifequal THURSDAY, PhoneScript_BugCatchingContest
-	ifequal SATURDAY, PhoneScript_BugCatchingContest
-
-.Generic:
-	sjump Phone_GenericCall_Male
-
+	sjump WadePhoneCallerScript.BugContest
 WadePhoneCallerScript:
 	gettrainername STRING_BUFFER_3, BUG_CATCHER, WADE1
 	scall PhoneScript_GreetPhone_Male
-	scall PhoneScript_Random2
-	ifequal 0, .NoContest
+.BugContest:
 	checkflag ENGINE_DAILY_BUG_CONTEST
 	iftrue .NoContest
 	readvar VAR_WEEKDAY
 	ifequal TUESDAY, PhoneScript_BugCatchingContest
 	ifequal THURSDAY, PhoneScript_BugCatchingContest
 	ifequal SATURDAY, PhoneScript_BugCatchingContest
-
 .NoContest:
 	checkflag ENGINE_FLYPOINT_GOLDENROD
 	iffalse .NoBattle
 	scall PhoneScript_Random2
 	ifequal 0, .WantsBattle
-
 .NoBattle:
-	scall PhoneScript_Random2
-	ifequal 0, Phone_CheckIfUnseenRare_Male
-	sjump Phone_GenericCall_Male
-
+	sjump Phone_CheckIfUnseenRare_Male
 .WantsBattle:
 	getstring STRING_BUFFER_5, PhoneRoute31Text
 	setevent EVENT_WADE_READY_FOR_REMATCH
@@ -195,55 +181,46 @@ WadePhoneCallerScript:
 RalphPhoneCalleeScript:
 	gettrainername STRING_BUFFER_3, FISHER, RALPH1
 	scall PhoneScript_AnswerPhone_Male
-	sjump Phone_GenericCall_Male
-
+	sjump RalphPhoneCallerScript.CheckSwarm
 RalphPhoneCallerScript:
 	gettrainername STRING_BUFFER_3, FISHER, RALPH1
 	scall PhoneScript_GreetPhone_Male
-	checkflag ENGINE_FLYPOINT_GOLDENROD
-	iffalse .NoBattle
-	scall PhoneScript_Random2
-	ifequal 0, .WantsBattle
-
-.NoBattle:
-	scall PhoneScript_Random2
-	ifequal 0, .QwilfishSwarm
-	scall PhoneScript_Random2
-	ifequal 0, Phone_CheckIfUnseenRare_Male
-	sjump Phone_GenericCall_Male
-
-.WantsBattle:
-	getstring STRING_BUFFER_5, PhoneRoute32Text
-	setevent EVENT_RALPH_READY_FOR_REMATCH
-	sjump PhoneScript_WantsToBattle_Male
-
-.QwilfishSwarm:
+.CheckSwarm
+	scall PhoneScript_Random4
+	ifequal 0, .CanBattle ; 75% chance to trigger swarm
 	checkflag ENGINE_SWARM
-	iftrue Phone_GenericCall_Male
+	iftrue .CanBattle
 	getmonname STRING_BUFFER_4, QWILFISH
 	getstring STRING_BUFFER_5, PhoneRoute32Text
 	setval FISHSWARM_QWILFISH
 	special ActivateFishingSwarm
 	sjump PhoneScript_SwarmFish
-
-LizPhoneCalleeScript:
-	gettrainername STRING_BUFFER_3, PICNICKER, LIZ1
-	scall PhoneScript_AnswerPhone_Female
-	sjump Phone_GenericCall_Female
-
-LizPhoneCallerScript:
-	gettrainername STRING_BUFFER_3, PICNICKER, LIZ1
-	scall PhoneScript_GreetPhone_Female
+.CanBattle:
 	checkflag ENGINE_FLYPOINT_GOLDENROD
 	iffalse .NoBattle
 	scall PhoneScript_Random2
 	ifequal 0, .WantsBattle
-
 .NoBattle:
-	scall PhoneScript_Random2
-	ifequal 0, Phone_CheckIfUnseenRare_Female
-	sjump Phone_GenericCall_Female
+	sjump Phone_CheckIfUnseenRare_Male
+.WantsBattle:
+	getstring STRING_BUFFER_5, PhoneRoute32Text
+	setevent EVENT_RALPH_READY_FOR_REMATCH
+	sjump PhoneScript_WantsToBattle_Male
 
+LizPhoneCalleeScript:
+	gettrainername STRING_BUFFER_3, PICNICKER, LIZ1
+	scall PhoneScript_AnswerPhone_Female
+	sjump LizPhoneCallerScript.CanBattle
+LizPhoneCallerScript:
+	gettrainername STRING_BUFFER_3, PICNICKER, LIZ1
+	scall PhoneScript_GreetPhone_Female
+.CanBattle
+	checkflag ENGINE_FLYPOINT_GOLDENROD
+	iffalse .NoBattle
+	scall PhoneScript_Random2
+	ifequal 0, .WantsBattle
+.NoBattle:
+	sjump Phone_CheckIfUnseenRare_Female
 .WantsBattle:
 	getstring STRING_BUFFER_5, PhoneRoute32Text
 	setevent EVENT_LIZ_READY_FOR_REMATCH
@@ -252,54 +229,45 @@ LizPhoneCallerScript:
 AnthonyPhoneCalleeScript:
 	gettrainername STRING_BUFFER_3, HIKER, ANTHONY2
 	scall PhoneScript_AnswerPhone_Male
-	sjump Phone_GenericCall_Male
-
+	sjump AnthonyPhoneCallerScript.CheckSwarm
 AnthonyPhoneCallerScript:
 	gettrainername STRING_BUFFER_3, HIKER, ANTHONY2
 	scall PhoneScript_GreetPhone_Male
+.CheckSwarm:
+	scall PhoneScript_Random2
+	ifequal 0, .CanBattle ; 50% chance to trigger swarm
+	checkflag ENGINE_SWARM
+	iftrue .CanBattle
+	getmonname STRING_BUFFER_4, LARVITAR
+	getstring STRING_BUFFER_5, PhoneDarkCaveText
+	swarm DARK_CAVE_VIOLET_ENTRANCE
+	sjump PhoneScript_SwarmCave
+.CanBattle:
 	checkflag ENGINE_FLYPOINT_GOLDENROD
 	iffalse .NoBattle
 	scall PhoneScript_Random2
 	ifequal 0, .WantsBattle
-
 .NoBattle:
-	scall PhoneScript_Random2
-	ifequal 0, .DunsparceSwarm
-	scall PhoneScript_Random2
-	ifequal 0, Phone_CheckIfUnseenRare_Male
-	sjump Phone_GenericCall_Male
-
+	sjump Phone_CheckIfUnseenRare_Male
 .WantsBattle:
 	getstring STRING_BUFFER_5, PhoneRoute33Text
 	setevent EVENT_ANTHONY_READY_FOR_REMATCH
 	sjump PhoneScript_WantsToBattle_Male
 
-.DunsparceSwarm:
-	checkflag ENGINE_SWARM
-	iftrue Phone_GenericCall_Male
-	getmonname STRING_BUFFER_4, DUNSPARCE
-	getstring STRING_BUFFER_5, PhoneDarkCaveText
-	swarm DARK_CAVE_VIOLET_ENTRANCE
-	sjump PhoneScript_SwarmCave
-
 ToddPhoneCalleeScript:
 	gettrainername STRING_BUFFER_3, CAMPER, TODD1
 	scall PhoneScript_AnswerPhone_Male
-	sjump Phone_GenericCall_Male
-
+	sjump ToddPhoneCallerScript.CanBattle
 ToddPhoneCallerScript:
 	gettrainername STRING_BUFFER_3, CAMPER, TODD1
 	scall PhoneScript_GreetPhone_Male
-	checkflag ENGINE_FLYPOINT_GOLDENROD
+.CanBattle:
+	checkflag ENGINE_FLYPOINT_ECRUTEAK
 	iffalse .NoBattle
 	scall PhoneScript_Random2
 	ifequal 0, .WantsBattle
-
 .NoBattle:
-	scall PhoneScript_Random2
-	ifequal 0, Phone_CheckIfUnseenRare_Male
-	sjump Phone_GenericCall_Male
-
+	sjump Phone_CheckIfUnseenRare_Male
 .WantsBattle:
 	getstring STRING_BUFFER_5, PhoneRoute34Text
 	setevent EVENT_TODD_READY_FOR_REMATCH
@@ -308,25 +276,20 @@ ToddPhoneCallerScript:
 GinaPhoneCalleeScript:
 	gettrainername STRING_BUFFER_3, PICNICKER, GINA1
 	scall PhoneScript_AnswerPhone_Female
-	checkflag ENGINE_ROCKETS_IN_RADIO_TOWER
-	iftrue GinaRocketRumorScript
-	sjump Phone_GenericCall_Female
-
+	sjump GinaPhoneCallerScript.Rockets
 GinaPhoneCallerScript:
 	gettrainername STRING_BUFFER_3, PICNICKER, GINA1
 	scall PhoneScript_GreetPhone_Female
+.Rockets:
 	checkflag ENGINE_ROCKETS_IN_RADIO_TOWER
 	iftrue GinaRocketRumorScript
-	checkflag ENGINE_FLYPOINT_GOLDENROD
+.CanBattle:
+	checkevent EVENT_BEAT_WHITNEY
 	iffalse .NoBattle
-	scall PhoneScript_Random2
-	ifequal 0, .WantsBattle
-
+	scall PhoneScript_Random4
+	ifgreater 0, .WantsBattle
 .NoBattle:
-	scall PhoneScript_Random2
-	ifequal 0, Phone_CheckIfUnseenRare_Female
-	sjump Phone_GenericCall_Female
-
+	sjump Phone_CheckIfUnseenRare_Female
 .WantsBattle:
 	getstring STRING_BUFFER_5, PhoneRoute34Text
 	setevent EVENT_GINA_READY_FOR_REMATCH
@@ -335,21 +298,20 @@ GinaPhoneCallerScript:
 IrwinPhoneCalleeScript:
 	gettrainername STRING_BUFFER_3, JUGGLER, IRWIN1
 	scall PhoneScript_AnswerPhone_Male
-	checkflag ENGINE_ROCKETS_IN_RADIO_TOWER
-	iftrue IrwinRocketRumorScript
-	sjump Phone_GenericCall_Male
-
+	sjump IrwinPhoneCallerScript.Rockets
 IrwinPhoneCallerScript:
 	gettrainername STRING_BUFFER_3, JUGGLER, IRWIN1
 	scall PhoneScript_GreetPhone_Male
+.Rockets:
 	checkflag ENGINE_ROCKETS_IN_RADIO_TOWER
 	iftrue IrwinRocketRumorScript
+.CanBattle:
+	checkflag ENGINE_FLYPOINT_CIANWOOD
+	iffalse .NoBattle
 	scall PhoneScript_Random2
 	ifequal 0, .WantsBattle
-	scall PhoneScript_Random2
-	ifequal 0, Phone_CheckIfUnseenRare_Male
-	sjump Phone_GenericCall_Male
-
+.NoBattle:
+	sjump Phone_CheckIfUnseenRare_Male
 .WantsBattle:
 	getstring STRING_BUFFER_5, PhoneRoute35Text
 	setevent EVENT_IRWIN_READY_FOR_REMATCH
@@ -358,46 +320,45 @@ IrwinPhoneCallerScript:
 ArniePhoneCalleeScript:
 	gettrainername STRING_BUFFER_3, BUG_CATCHER, ARNIE1
 	scall PhoneScript_AnswerPhone_Male
-	sjump Phone_GenericCall_Male
-
+	sjump ArniePhoneCallerScript.CheckSwarm
 ArniePhoneCallerScript:
 	gettrainername STRING_BUFFER_3, BUG_CATCHER, ARNIE1
 	scall PhoneScript_GreetPhone_Male
+.CheckSwarm:
+	scall PhoneScript_Random4
+	ifgreater 0, .WantsBattle ; 25% chance to trigger swarm
+	checkflag ENGINE_SWARM
+	iftrue .CanBattle
+	getmonname STRING_BUFFER_4, YANMA
+	getstring STRING_BUFFER_5, PhoneRoute35Text
+	swarm ROUTE_35
+	sjump PhoneScript_SwarmGrass
+.CanBattle:
+	checkflag ENGINE_FLYPOINT_LAKE_OF_RAGE
+	iffalse .NoBattle
 	scall PhoneScript_Random2
 	ifequal 0, .WantsBattle
-	scall PhoneScript_Random2
-	ifequal 0, .YanmaSwarm
-	scall PhoneScript_Random2
-	ifequal 0, Phone_CheckIfUnseenRare_Male
-	sjump Phone_GenericCall_Male
-
+.NoBattle:
+	sjump Phone_CheckIfUnseenRare_Male
 .WantsBattle:
 	getstring STRING_BUFFER_5, PhoneRoute35Text
 	setevent EVENT_ARNIE_READY_FOR_REMATCH
 	sjump PhoneScript_WantsToBattle_Male
 
-.YanmaSwarm:
-	checkflag ENGINE_SWARM
-	iftrue Phone_GenericCall_Male
-	getmonname STRING_BUFFER_4, YANMA
-	getstring STRING_BUFFER_5, PhoneRoute35Text
-	swarm ROUTE_35
-	sjump PhoneScript_SwarmGrass
-
 AlanPhoneCalleeScript:
 	gettrainername STRING_BUFFER_3, SCHOOLBOY, ALAN1
 	scall PhoneScript_AnswerPhone_Male
-	sjump Phone_GenericCall_Male
-
+	sjump AlanPhoneCallerScript.CanBattle
 AlanPhoneCallerScript:
 	gettrainername STRING_BUFFER_3, SCHOOLBOY, ALAN1
 	scall PhoneScript_GreetPhone_Male
+.CanBattle:
+	checkflag ENGINE_FLYPOINT_OLIVINE
+	iffalse .NoBattle
 	scall PhoneScript_Random2
 	ifequal 0, .WantsBattle
-	scall PhoneScript_Random2
-	ifequal 0, Phone_CheckIfUnseenRare_Male
-	sjump Phone_GenericCall_Male
-
+.NoBattle:
+	sjump Phone_CheckIfUnseenRare_Male
 .WantsBattle:
 	getstring STRING_BUFFER_5, PhoneRoute36Text
 	setevent EVENT_ALAN_READY_FOR_REMATCH
@@ -406,17 +367,17 @@ AlanPhoneCallerScript:
 DanaPhoneCalleeScript:
 	gettrainername STRING_BUFFER_3, LASS, DANA1
 	scall PhoneScript_AnswerPhone_Female
-	sjump Phone_GenericCall_Female
-
+	sjump DanaPhoneCallerScript.CanBattle
 DanaPhoneCallerScript:
 	gettrainername STRING_BUFFER_3, LASS, DANA1
 	scall PhoneScript_GreetPhone_Female
+.CanBattle:
+	checkflag ENGINE_FLYPOINT_CIANWOOD
+	iffalse .NoBattle
 	scall PhoneScript_Random2
 	ifequal 0, .WantsBattle
-	scall PhoneScript_Random2
-	ifequal 0, Phone_CheckIfUnseenRare_Female
-	sjump Phone_GenericCall_Female
-
+.NoBattle:
+	sjump Phone_CheckIfUnseenRare_Female
 .WantsBattle:
 	getstring STRING_BUFFER_5, PhoneRoute38Text
 	setevent EVENT_DANA_READY_FOR_REMATCH
@@ -426,30 +387,31 @@ ChadPhoneCalleeScript:
 	gettrainername STRING_BUFFER_3, SCHOOLBOY, CHAD1
 	scall PhoneScript_AnswerPhone_Male
 	sjump Phone_GenericCall_Male
-
 ChadPhoneCallerScript:
 	gettrainername STRING_BUFFER_3, SCHOOLBOY, CHAD1
 	scall PhoneScript_GreetPhone_Male
-	scall PhoneScript_Random2
-	ifequal 0, .SnubbullSwarm
-	scall PhoneScript_Random2
-	ifequal 0, .WantsBattle
-	scall PhoneScript_Random2
-	ifequal 0, Phone_CheckIfUnseenRare_Male
-	sjump Phone_GenericCall_Male
-
-.SnubbullSwarm:
+.CheckSwarm:
+	scall PhoneScript_Random4
+	ifgreater 0, .CanBattle ; 25% chance to trigger swarm
 	checkflag ENGINE_SWARM
-	iftrue Phone_GenericCall_Male
-	getmonname STRING_BUFFER_4, SNUBBULL
+	iftrue .CanBattle
+	getmonname STRING_BUFFER_4, TAUROS
 	getstring STRING_BUFFER_5, PhoneRoute38Text
 	swarm ROUTE_38
 	sjump PhoneScript_SwarmGrass
-
+.CanBattle
+	checkflag ENGINE_FLYPOINT_MAHOGANY
+	iffalse .NoBattle
+	scall PhoneScript_Random2
+	ifequal 0, .WantsBattle
+.NoBattle:
+	sjump Phone_CheckIfUnseenRare_Male
 .WantsBattle:
 	getstring STRING_BUFFER_5, PhoneRoute38Text
 	setevent EVENT_CHAD_READY_FOR_REMATCH
 	sjump PhoneScript_WantsToBattle_Male
+
+; -- bookmark --
 
 DerekPhoneCalleeScript:
 	gettrainername STRING_BUFFER_3, POKEFANM, DEREK1
@@ -627,7 +589,7 @@ ParryPhoneCallerScript:
 .MarillSwarm:
 	checkflag ENGINE_SWARM
 	iftrue Phone_GenericCall_Male
-	getmonname STRING_BUFFER_4, MARILL
+	getmonname STRING_BUFFER_4, DUNSPARCE
 	getstring STRING_BUFFER_5, PhoneMtMortarText
 	swarm MOUNT_MORTAR_1F_OUTSIDE
 	sjump PhoneScript_SwarmCave

@@ -184,7 +184,7 @@ These evolutions can now happen by item effect:
 All evolution items are available for purchase at either the [Goldenrod Dept. Store](#goldenrod-dept-store) or [Mahogany Mart](#mahogany-mart) after their respective Gyms have been cleared.
 
 ### Encounters
-Encounters for every area of the game (grass, caves, trees, surfing, fishing, and the bug contest) have been updated.
+Encounters for every area of the game (grass, caves, trees, surfing, fishing, swarms, and the bug contest) have been updated.
 
 Notably, several unique or otherwise unobtainable pokemon are now available in new ways:
 - *Ivysaur*, *Charmeleon*, and *Wartortle* are available as 10% encounters along Routes 26, 27, and Victory Road.
@@ -448,12 +448,6 @@ The Mahogany Mart carries these items once the Rocket Hideout is cleared and Pry
 - Clair gives the Risingbadge immediately upon defeat, but the player must still complete the dragon user challenge to receive TM24.
 - The dragon user challenge has changed; check the center of the cavern first.
 
-### Phone Calls
-- The chance to receive a random incoming call in the overworld is now 12.5% instead of 50%.
-- Incoming trainer calls are no longer generic; they will always trigger a rematch, swarm, rare mon sighting, or other event.
-- Outgoing trainer calls will always trigger a rematch or a rare mon sighting.
-- Certain trainers will always offer a rematch, while others will be less likely, or even wait until a specific condition is met.
-
 ### Other
 - Since Remoraid are no longer found on Route 44, Sailor Huey (lighthouse) now activates the Remoraid swarm.
 - Headbutting trees in cities (Ecruteak) can now spawn wild encounters.
@@ -461,3 +455,5 @@ The Mahogany Mart carries these items once the Rocket Hideout is cleared and Pry
 - The Dragon Fang in Dragons' Den is now a Dragon Scale.
 - The Dragon Scale in Mt Mortar is now a Quick Claw.
 - Using *Sweet Scent* in the field will always pull a <=20% encounter.
+- The chance to receive a random incoming call in the overworld is now 12.5% instead of 50%.
+- Trainer calls are no longer generic; both incoming and outgoing calls will trigger a rematch, swarm, or rare mon sighting.
