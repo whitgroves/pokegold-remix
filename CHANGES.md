@@ -472,6 +472,6 @@ The Mahogany Mart carries these items once the Rocket Hideout is cleared and Pry
 - Using *Sweet Scent* in the field will always pull a <=20% encounter.
 - The chance to receive a random incoming call in the overworld is now 12.5% instead of 50%.
 - Phone calls are more meaningful; most incoming and outgoing calls will trigger a rematch, swarm, or rare mon sighting.
-- Sleep lasts for a maximum of 4 turns instead of 7.
+- Sleep lasts for a maximum of 5 turns instead of 7.
 - In addition to *Steel* and *Poison* types, *Rock* and *Ghost* type pokemon are now immune to the PSN status.
 - The Hyper Potion in the hideout is now an Up-Grade.

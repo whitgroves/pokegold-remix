@@ -249,10 +249,11 @@ BattleCommand_CheckTurn:
 	call StdBattleTextbox
 
 .not_disabled
-
+ 
 	ld a, [wPlayerSubStatus3]
-	add a
-	jr nc, .not_confused
+	bit SUBSTATUS_CONFUSED, a
+	jr z, .not_confused
+
 	ld hl, wPlayerConfuseCount
 	dec [hl]
 	jr nz, .confused
@@ -275,12 +276,6 @@ BattleCommand_CheckTurn:
 	call BattleRandom
 	cp 50 percent + 1
 	jr nc, .not_confused
-
-	; clear confusion-dependent substatus
-	ld hl, wPlayerSubStatus3
-	ld a, [hl]
-	and 1 << SUBSTATUS_CONFUSED
-	ld [hl], a
 
 	call HitConfusion
 	call CantMove
@@ -478,8 +473,8 @@ CheckEnemyTurn:
 .not_disabled
 
 	ld a, [wEnemySubStatus3]
-	add a ; bit SUBSTATUS_CONFUSED
-	jr nc, .not_confused
+	bit SUBSTATUS_CONFUSED, a
+	jr z, .not_confused
 
 	ld hl, wEnemyConfuseCount
 	dec [hl]
@@ -505,32 +500,7 @@ CheckEnemyTurn:
 	cp 50 percent + 1
 	jr nc, .not_confused
 
-	; clear confusion-dependent substatus
-	ld hl, wEnemySubStatus3
-	ld a, [hl]
-	and 1 << SUBSTATUS_CONFUSED
-	ld [hl], a
-
-	ld hl, HurtItselfText
-	call StdBattleTextbox
-
-	call HitSelfInConfusion
-	call BattleCommand_DamageCalc
-	call BattleCommand_LowerSub
-
-	xor a
-	ld [wNumHits], a
-
-	; Flicker the monster pic unless flying or underground.
-	ld de, ANIM_HIT_CONFUSION
-	ld a, BATTLE_VARS_SUBSTATUS3_OPP
-	call GetBattleVar
-	and 1 << SUBSTATUS_FLYING | 1 << SUBSTATUS_UNDERGROUND
-	call z, PlayFXAnimID
-
-	ld c, TRUE
-	call DoEnemyDamage
-	call BattleCommand_RaiseSub
+	call HitConfusion
 	call CantMove
 	jp EndTurn
 
@@ -614,9 +584,6 @@ HitConfusion:
 	ld hl, HurtItselfText
 	call StdBattleTextbox
 
-	xor a
-	ld [wCriticalHit], a
-
 	call HitSelfInConfusion
 	call BattleCommand_DamageCalc
 	call BattleCommand_LowerSub
@@ -631,6 +598,11 @@ HitConfusion:
 	and 1 << SUBSTATUS_FLYING | 1 << SUBSTATUS_UNDERGROUND
 	call z, PlayFXAnimID
 
+	ldh a, [hBattleTurn]
+	and a
+	jr nz, .EnemyTurn
+
+;PlayerTurn
 	ld hl, UpdatePlayerHUD
 	call CallBattleCore
 	ld a, $1
@@ -638,6 +610,11 @@ HitConfusion:
 	ld c, TRUE
 	call DoPlayerDamage
 	jp BattleCommand_RaiseSub
+
+.EnemyTurn:
+	ld c, TRUE
+	call DoEnemyDamage
+	call BattleCommand_RaiseSub
 
 BattleCommand_CheckObedience:
 	; Enemy can't disobey
@@ -3685,6 +3662,9 @@ SleepOpponent:
 .random_loop
 	call BattleRandom
 	and SLP_MASK
+	jr z, .random_loop
+	;cp SLP_MASK
+	cp TREEMON_SLEEP_TURNS ; max sleep turns
 	jr z, .random_loop
 	inc a
 	ld [de], a
