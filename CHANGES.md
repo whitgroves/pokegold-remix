@@ -311,7 +311,8 @@ In rare cases (Sand Attack, Hyper Beam), moves have had their attack power or po
 - Icy Wind: *100% Chance To Lower Speed* -> *50% Chance To Lower Speed* | *95%* -> *100% Accuracy*
 - Bone Rush: *Ground* -> *Rock*
 - Giga Drain: *60* -> *80 Power* | *5* -> *10 PP*
-- Frustration: *Normal* -> *Dark*
+- Return: *Power Scales With Happiness* -> *Power Equal To Happiness Value*
+- Frustration: *Normal* -> *Dark* | *Power Scales With Happiness* -> *Power Equal To Max Happiness Less Happiness Value*
 - Sacred Fire: *95%* -> *100% Accuracy*
 - Dragonbreath: *30% Chance To Paralyze* -> *20% Chance To Lower Special Defense*
 - Iron Tail: *75%* -> *90% Accuracy*
@@ -475,3 +476,4 @@ The Mahogany Mart carries these items once the Rocket Hideout is cleared and Pry
 - Sleep lasts for a maximum of 5 turns instead of 7.
 - In addition to *Steel* and *Poison* types, *Rock* and *Ghost* type pokemon are now immune to the PSN status.
 - The Hyper Potion in the hideout is now an Up-Grade.
+- The likelihood of the player's mon to hit itself in confusion now scales with happiness rather than a 50/50 chance.

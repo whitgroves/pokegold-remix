@@ -272,10 +272,11 @@ BattleCommand_CheckTurn:
 	ld de, ANIM_CONFUSED
 	call FarPlayBattleAnimation
 
-	; 50% chance of hitting itself
+	; if mon happiness > RNG, no self hit
 	call BattleRandom
-	cp 50 percent + 1
-	jr nc, .not_confused
+	ld hl, wBattleMonHappiness
+	cp [hl]
+	jr c, .not_confused
 
 	call HitConfusion
 	call CantMove
