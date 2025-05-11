@@ -1351,25 +1351,25 @@ JohtoGrassWildMons:
 	db 8, SUNKERN
 	db 8, LEDYBA
 	db 7, PIDGEY
+	db 8, PARAS
 	db 6, YANMA
 	db 8, SPINARAK
-	db 8, PARAS
 	db 7, HOOTHOOT
 	; day
 	db 8, SUNKERN
 	db 8, LEDYBA
 	db 7, PIDGEY
+	db 7, EKANS
+	db 8, PARAS
 	db 6, YANMA
 	db 8, SPINARAK
-	db 8, PARAS
-	db 7, EKANS
 	; nite
 	db 7, HOOTHOOT
 	db 8, SPINARAK
 	db 7, EKANS
-	db 6, YANMA
-	db 8, LEDYBA
 	db 8, PARAS
+	db 8, LEDYBA
+	db 6, YANMA
 	db 7, PIDGEY
 	end_grass_wildmons
 
