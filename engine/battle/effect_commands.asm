@@ -3703,7 +3703,7 @@ SleepOpponent:
 BattleCommand_PoisonTarget:
 	call CheckStatusHit ; check for sub, existing status, type immunity, side effect chance, and safeguard
 	ret nz
-	call CheckIfTargetIsPoisonType
+	call CheckIfTargetIsPoisonStatusImmune
 	ret z
 	call GetOpponentItem
 	ld a, b
@@ -3727,7 +3727,7 @@ BattleCommand_Poison:
 	and $7f
 	jp z, .failed
 
-	call CheckIfTargetIsPoisonType
+	call CheckIfTargetIsPoisonStatusImmune
 	jp z, .failed
 
 	ld a, BATTLE_VARS_STATUS_OPP
@@ -3820,7 +3820,9 @@ BattleCommand_Poison:
 	cp EFFECT_TOXIC
 	ret
 
-CheckIfTargetIsPoisonType: ; TODO - implement status immunity for Rock, Steel, Ghost types
+; makes Poison, Rock, and Ghost immune to PSN status
+; Steel is already covered via type immunity
+CheckIfTargetIsPoisonStatusImmune: 
 	ld de, wEnemyMonType1
 	ldh a, [hBattleTurn]
 	and a
@@ -3831,8 +3833,16 @@ CheckIfTargetIsPoisonType: ; TODO - implement status immunity for Rock, Steel, G
 	inc de
 	cp POISON
 	ret z
+	cp ROCK
+	ret z
+	cp GHOST
+	ret z
 	ld a, [de]
 	cp POISON
+	ret z
+	cp ROCK
+	ret z
+	cp GHOST
 	ret
 
 PoisonOpponent:
