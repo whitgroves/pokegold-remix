@@ -1195,7 +1195,7 @@ PokemaniacGroup:
 
 	; POKEMANIAC (13)
 	db "ZACH@", TRAINERTYPE_NORMAL
-	db 27, RHYHORN
+	db 27, SCIZOR
 	db 27, DONPHAN
 	db -1 ; end
 

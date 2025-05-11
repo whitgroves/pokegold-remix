@@ -509,6 +509,7 @@ LedybaEggMoves:
 	db DIZZY_PUNCH
 	db BIDE
 	db DOUBLE_TEAM
+	db BEAT_UP
 	db -1 ; end
 
 SpinarakEggMoves:
