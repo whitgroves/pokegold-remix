@@ -2867,7 +2867,9 @@ CamperGroup:
 
 	; CAMPER (11)
 	db "TED@", TRAINERTYPE_NORMAL
+	db 19, HOOTHOOT
 	db 21, SANDSHREW
+	db 23, STANTLER
 	db -1 ; end
 
 	; CAMPER (12)
