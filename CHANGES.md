@@ -474,3 +474,4 @@ The Mahogany Mart carries these items once the Rocket Hideout is cleared and Pry
 - Phone calls are more meaningful; most incoming and outgoing calls will trigger a rematch, swarm, or rare mon sighting.
 - Sleep lasts for a maximum of 4 turns instead of 7.
 - In addition to *Steel* and *Poison* types, *Rock* and *Ghost* type pokemon are now immune to the PSN status.
+- The Hyper Potion in the hideout is now an Up-Grade.
