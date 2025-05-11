@@ -188,7 +188,7 @@ These evolutions can now happen by item effect:
 All evolution items are available for purchase at either the [Goldenrod Dept. Store](#goldenrod-dept-store) or [Mahogany Mart](#mahogany-mart) after their respective Gyms have been cleared.
 
 ### Encounters
-Encounters for every area of the game (grass, caves, trees, surfing, fishing, swarms, and the bug contest) have been updated.
+Encounters for every area of the game (grass, caves, trees, surfing, fishing, trades, swarms, and the bug contest) have been updated.
 
 Notably, several unique or otherwise unobtainable pokemon are now available in new ways:
 - *Ivysaur*, *Charmeleon*, and *Wartortle* are available as 10% encounters along Routes 26, 27, and Victory Road.
