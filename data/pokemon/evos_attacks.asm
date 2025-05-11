@@ -2291,7 +2291,7 @@ LedianEvosAttacks:
 	db 33, BATON_PASS
 	db 42, DIZZY_PUNCH
 	db 51, AGILITY
-	db 60, DOUBLE_TEAM
+	db 60, BEAT_UP
 	db 0 ; no more level-up moves
 
 SpinarakEvosAttacks:

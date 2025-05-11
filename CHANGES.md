@@ -385,6 +385,8 @@ The original moves can still be learned by level-up on mons that could learn it 
 ### HMs
 HM moves can now be forgotten; when learning over them, a confirmation prompt is brought up before they're overwritten.
 
+In addition, the locations of HM06 (Whirlpool) and HM07 (Waterfall) have been swapped, as HM06 is no longer required to progress the storyline outside of optional content.
+
 ### Weather Interactions
 Weathers cause new interactions in addition to their old ones (e.g., Rain boosting *Water* moves, *Solarbeam* skipping a turn in Sun).
 

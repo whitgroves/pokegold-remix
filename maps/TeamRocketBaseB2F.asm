@@ -284,9 +284,9 @@ RocketBaseElectrodeScript:
 	opentext
 	writetext RocketBaseLanceElectrodeDoneText
 	promptbutton
-	verbosegiveitem HM_WHIRLPOOL
-	setevent EVENT_GOT_HM06_WHIRLPOOL
-	writetext RocketBaseLanceWhirlpoolText
+	verbosegiveitem HM_WATERFALL
+	setevent EVENT_GOT_HM07_WATERFALL
+	writetext RocketBaseLanceWaterfallText
 	waitbutton
 	closetext
 	turnobject TEAMROCKETBASEB2F_LANCE, DOWN
@@ -732,24 +732,27 @@ RocketBaseLanceElectrodeDoneText:
 
 RocketBaseReceivedHM06Text: ; unreferenced
 	text "<PLAYER> received"
-	line "HM06."
+	line "HM07."
 	done
 
-RocketBaseLanceWhirlpoolText:
-	text "That's WHIRLPOOL."
-	line "Teach it to a"
+RocketBaseLanceWaterfallText:
+	text "That's WATERFALL."
+	line "You'll need it to"
 
-	para "#MON to get"
-	line "across wild water."
+	para "scale TOHJO FALLS"
+	line "if you plan to"
+
+	para "take on the"
+	cont "#MON LEAGUE."
 
 	para "But keep this in"
 	line "mind."
 
-	para "You can use that"
-	line "out of battle only"
+	para "To use it out of"
+	line "battle, you need"
 
-	para "with the BADGE"
-	line "from MAHOGANY GYM."
+	para "the badge from"
+	line "BLACKTHORN GYM."
 	done
 
 RocketBaseLanceMonMasterText:
