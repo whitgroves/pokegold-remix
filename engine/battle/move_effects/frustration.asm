@@ -8,4 +8,5 @@ BattleCommand_FrustrationPower:
 	ld a, $ff
 	sub [hl]
 	ld d, a
+	sra d
 	ret

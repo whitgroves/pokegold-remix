@@ -7,4 +7,5 @@ BattleCommand_HappinessPower:
 .ok
 	ld a, [hl]
 	ld d, a
+	sra d
 	ret

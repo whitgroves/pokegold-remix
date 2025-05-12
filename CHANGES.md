@@ -311,8 +311,8 @@ In rare cases (Sand Attack, Hyper Beam), moves have had their attack power or po
 - Icy Wind: *100% Chance To Lower Speed* -> *50% Chance To Lower Speed* | *95%* -> *100% Accuracy*
 - Bone Rush: *Ground* -> *Rock*
 - Giga Drain: *60* -> *80 Power* | *5* -> *10 PP*
-- Return: *Power Scales With Happiness* -> *Power Equal To Happiness Value*
-- Frustration: *Normal* -> *Dark* | *Power Scales With Happiness* -> *Power Equal To Max Happiness Less Happiness Value*
+- Return: *Power Scales With Happiness* -> *Power Equals Happiness Stat / 2*
+- Frustration: *Normal* -> *Dark* | *Power Scales With Happiness* -> *Power Equals (Max Happiness - Happiness Stat) / 2*
 - Sacred Fire: *95%* -> *100% Accuracy*
 - Dragonbreath: *30% Chance To Paralyze* -> *20% Chance To Lower Special Defense*
 - Iron Tail: *75%* -> *90% Accuracy*
