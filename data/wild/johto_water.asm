@@ -159,13 +159,13 @@ JohtoWaterWildMons:
 	def_water_wildmons ROUTE_40
 	db 6 percent ; encounter rate
 	db 20, REMORAID
-	db 23, TENTACOOL
+	db 21, TENTACOOL
 	db 20, QWILFISH
 	end_water_wildmons
 
 	def_water_wildmons ROUTE_41
 	db 6 percent ; encounter rate
-	db 23, TENTACOOL
+	db 21, TENTACOOL
 	db 20, QWILFISH
 	db 20, MANTINE
 	end_water_wildmons
