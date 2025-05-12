@@ -743,7 +743,7 @@ RocketBaseLanceWaterfallText:
 	line "if you plan to"
 
 	para "take on the"
-	cont "#MON LEAGUE."
+	line "#MON LEAGUE."
 
 	para "But keep this in"
 	line "mind."
