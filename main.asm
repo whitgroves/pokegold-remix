@@ -157,6 +157,7 @@ INCLUDE "engine/events/pokerus/pokerus.asm"
 SECTION "Effect Commands", ROMX
 
 INCLUDE "engine/battle/effect_commands.asm"
+INCLUDE "engine/battle/weather_interactions.asm"
 
 
 SECTION "Enemy Trainers", ROMX
@@ -171,7 +172,6 @@ SECTION "Battle Core", ROMX
 
 INCLUDE "engine/battle/core.asm"
 INCLUDE "data/battle/effect_command_pointers.asm"
-INCLUDE "engine/battle/weather_interactions.asm"
 
 
 SECTION "bank10", ROMX
