@@ -231,7 +231,7 @@ GruntF2BeatenText:
 	line "brat at all…"
 
 	para "You're a first-"
-	line "class TRAINER!"
+	line "class trainer!"
 	done
 
 GruntF2AfterBattleText:
