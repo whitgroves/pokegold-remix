@@ -338,7 +338,7 @@ AzaleaGymGuideText:
 	line "bringing in a bird"
 	
 	para "#MON is probably"
-	line "your best bet.
+	line "your best bet."
 	done
 
 AzaleaGymGuideWinText:

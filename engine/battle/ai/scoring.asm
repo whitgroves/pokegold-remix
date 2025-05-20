@@ -1376,7 +1376,7 @@ AI_Smart_Encore:
 	inc [hl]
 	ret
 
-INCLUDE "data/battle/ai/encore_moves.asm" -- TODO: review & update
+INCLUDE "data/battle/ai/encore_moves.asm" ; -- TODO: review & update
 
 AI_Smart_PainSplit:
 ; Discourage this move if [enemy's current HP * 2 > player's current HP].
@@ -2817,7 +2817,7 @@ AIHasMoveInArray:
 	pop hl
 	ret
 
-INCLUDE "data/battle/ai/useful_moves.asm" -- TODO: review & update
+INCLUDE "data/battle/ai/useful_moves.asm" ; -- TODO: review & update
 
 AI_Opportunist:
 ; Discourage stall moves when the enemy's HP is low.
@@ -2866,7 +2866,7 @@ AI_Opportunist:
 .done
 	ret
 
-INCLUDE "data/battle/ai/stall_moves.asm" -- TODO: review & update
+INCLUDE "data/battle/ai/stall_moves.asm" ; -- TODO: review & update
 
 
 AI_Aggressive:
@@ -3034,7 +3034,7 @@ AI_Cautious:
 	inc [hl]
 	jr .loop
 
-INCLUDE "data/battle/ai/residual_moves.asm" -- TODO: update
+INCLUDE "data/battle/ai/residual_moves.asm" ; -- TODO: update
 
 
 AI_Status:
