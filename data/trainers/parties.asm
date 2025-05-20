@@ -20,9 +20,10 @@ FalknerGroup:
 WhitneyGroup:
 	; WHITNEY (1)
 	db "WHITNEY@", TRAINERTYPE_MOVES
-	db 18, CLEFAIRY,   DOUBLESLAP, SING, ENCORE, METRONOME
-	db 17, FLAAFFY,	   THUNDERPUNCH, COTTON_SPORE, GROWL, ATTRACT
-	db 20, MILTANK,    ROLLOUT, ATTRACT, STOMP, MILK_DRINK
+	db 18, CLEFAIRY,	DOUBLESLAP, SING, ENCORE, METRONOME
+	db 17, FLAAFFY,		THUNDERPUNCH, COTTON_SPORE, GROWL, ATTRACT
+	db 18, FURRET,		ICE_PUNCH, METAL_CLAW, DIG, SWIFT
+	db 20, MILTANK,		ROLLOUT, ATTRACT, STOMP, MILK_DRINK
 	db -1 ; end
 
 BugsyGroup:
@@ -542,13 +543,13 @@ SchoolboyGroup:
 
 BirdKeeperGroup:
 	; BIRD_KEEPER (1)
-	db "ROD@", TRAINERTYPE_NORMAL
+	db "ROD@", TRAINERTYPE_NORMAL ; violet gym
 	db  7, PIDGEY
 	db  7, HOOTHOOT
 	db -1 ; end
 
 	; BIRD_KEEPER (2)
-	db "ABE@", TRAINERTYPE_NORMAL
+	db "ABE@", TRAINERTYPE_NORMAL ; violet gym
 	db  9, SPEAROW
 	db -1 ; end
 
@@ -665,12 +666,14 @@ BirdKeeperGroup:
 
 LassGroup:
 	; LASS (1)
-	db "CARRIE@", TRAINERTYPE_MOVES
-	db 18, SNUBBULL,   FIRE_PUNCH, CHARM, BITE, LICK
+	db "CARRIE@", TRAINERTYPE_MOVES ; goldenrod gym
+	db 18, SNUBBULL,	ICE_PUNCH, CHARM, BITE, LICK
+	db 19, PONYTA,		STOMP, EMBER, TAIL_WHIP, ATTRACT
 	db -1 ; end
 
 	; LASS (2)
-	db "BRIDGET@", TRAINERTYPE_NORMAL
+	db "BRIDGET@", TRAINERTYPE_NORMAL ; goldenrod gym
+	db 13, EXEGGCUTE
 	db 15, JIGGLYPUFF
 	db 14, TEDDIURSA
 	db 16, EEVEE
@@ -1035,14 +1038,15 @@ CooltrainerFGroup:
 
 BeautyGroup:
 	; BEAUTY (1)
-	db "VICTORIA@", TRAINERTYPE_NORMAL
+	db "VICTORIA@", TRAINERTYPE_NORMAL ; goldenrod gym 
 	db 13, SENTRET
+	db 14, MAREEP
 	db 15, MARILL
 	db 17, FURRET
 	db -1 ; end
 
 	; BEAUTY (2)
-	db "SAMANTHA@", TRAINERTYPE_MOVES
+	db "SAMANTHA@", TRAINERTYPE_MOVES ; goldenrod gym
 	db 20, MEOWTH,     BITE, PAY_DAY, METAL_CLAW, ATTRACT
 	db -1 ; end
 
@@ -1501,20 +1505,20 @@ BugCatcherGroup:
 	db -1 ; end
 
 	; BUG_CATCHER (5)
-	db "BENNY@", TRAINERTYPE_NORMAL
+	db "BENNY@", TRAINERTYPE_NORMAL ; azalea gym
 	db 12, BUTTERFREE
 	db 12, BEEDRILL
 	db -1 ; end
 
 	; BUG_CATCHER (6)
-	db "AL@", TRAINERTYPE_NORMAL
+	db "AL@", TRAINERTYPE_NORMAL ; azalea gym
 	db  7, PARAS
 	db  9, PINECO
 	db 12, VENONAT
 	db -1 ; end
 
 	; BUG_CATCHER (7)
-	db "JOSH@", TRAINERTYPE_NORMAL
+	db "JOSH@", TRAINERTYPE_NORMAL ; azalea gym
 	db 13, YANMA
 	db -1 ; end
 
@@ -2978,16 +2982,16 @@ SageGroup:
 	db -1 ; end
 
 	; SAGE (5)
-	db "JEFFREY@", TRAINERTYPE_MOVES
+	db "JEFFREY@", TRAINERTYPE_MOVES ; ecruteak gym
 	db 22, UMBREON,	  SHADOW_BALL, QUICK_ATTACK, CONFUSE_RAY, SAND_ATTACK
 	db -1 ; end
 
 	; SAGE (6)
-	db "PING@", TRAINERTYPE_NORMAL
+	db "PING@", TRAINERTYPE_NORMAL ; ecruteak gym
 	db 16, GASTLY
 	db 17, CORSOLA
-	db 18, NOCTOWL
-	db 19, MISDREAVUS
+	db 19, TANGELA
+	db 20, NOCTOWL
 	db -1 ; end
 
 	; SAGE (7)
@@ -3010,16 +3014,15 @@ SageGroup:
 
 MediumGroup:
 	; MEDIUM (1)
-	db "MARTHA@", TRAINERTYPE_NORMAL
+	db "MARTHA@", TRAINERTYPE_NORMAL ; ecruteak gym
 	db 18, SPINARAK
-	db 19, STANTLER
-	db 20, NINETALES
+	db 20, JYNX
 	db -1 ; end
 
 	; MEDIUM (2)
-	db "GRACE@", TRAINERTYPE_NORMAL
-	db 20, TANGELA
-	db 20, JYNX
+	db "GRACE@", TRAINERTYPE_NORMAL ; ecruteak gym
+	db 19, NATU
+	db 20, MISDREAVUS
 	db -1 ; end
 
 	; MEDIUM (3)
@@ -3184,7 +3187,7 @@ KimonoGirlGroup:
 
 TwinsGroup:
 	; TWINS (1)
-	db "AMY & MAY@", TRAINERTYPE_NORMAL
+	db "AMY & MAY@", TRAINERTYPE_NORMAL ; azalea gym
 	db 10, SPINARAK
 	db 10, LEDYBA
 	db -1 ; end
