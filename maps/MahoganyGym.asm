@@ -340,13 +340,19 @@ MahoganyGymGuideText:
 	line "good at freezing"
 
 	para "opponents with"
-	line "ice-type moves."
+	line "ice-type moves,"
 
-	para "That means you"
-	line "should melt him"
+	para "but you should be"
+	line "prepared for more"
 
-	para "with your burning"
-	line "ambition!"
+	para "than just ice-type"
+	line "#MON."
+
+	para "If you rush in"
+	line "like a hothead,"
+
+	para "He'll knock you"
+	line "out cold!"
 	done
 
 MahoganyGymGuideWinText:

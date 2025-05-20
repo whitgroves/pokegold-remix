@@ -159,19 +159,22 @@ BlackthornCityMartSign:
 	jumpstd MartSignScript
 
 Text_ClairIsOut:
-	text "I am sorry."
+	text "I'm sorry."
 
-	para "Our GYM LEADER is"
+	para "LEADER CLAIR is"
 	line "training in the"
-	cont "cave behind here."
+	cont "DRAGON'S DEN."
 
-	para "I have no idea"
-	line "when our LEADER"
-	cont "will return."
+	para "Only dragon users"
+	line "may enter the DEN,"
+
+	para "so you'll have to"
+	line "wait until she"
+	cont "gets back."
 	done
 
 Text_ClairIsIn:
-	text "Our GYM LEADER is"
+	text "LEADER CLAIR is"
 	line "waiting for you."
 
 	para "However, it would"
@@ -182,8 +185,8 @@ Text_ClairIsIn:
 	done
 
 Text_ClairIsBeaten:
-	text "You defeated our"
-	line "GYM LEADER?"
+	text "You defeated"
+	line "LEADER CLAIR?"
 	cont "That's amazing!"
 
 	para "With your power,"
