@@ -1,4 +1,4 @@
-AI_SwitchOrTryItem:
+AI_SwitchOrTryItem: ; TODO -- refactor switch logic
 	and a
 
 	ld a, [wBattleMode]
