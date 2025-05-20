@@ -323,12 +323,22 @@ AzaleaGymGuideText:
 	cont "advice."
 
 	para "Let's see… Bug"
-	line "#MON don't like"
-	cont "fire."
+	line "#MON have many"
+	cont "weaknesses,"
 
-	para "Flying-type moves"
-	line "are super-effec-"
-	cont "tive too."
+	para "But they resist"
+	line "a lot of types"
+	cont "that others don't."
+
+	para "Some don't mind the"
+	line "the heat or get"
+	cont "too big to squash,"
+
+	para "So zapping them or"
+	line "bringing in a bird"
+	
+	para "#MON is probably"
+	line "your best bet.
 	done
 
 AzaleaGymGuideWinText:

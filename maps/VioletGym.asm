@@ -251,11 +251,20 @@ VioletGymGuideText:
 	para "You believe?"
 	line "Then listen."
 
-	para "The grass-type is"
-	line "weak against the"
+	para "Bird #MON are"
+	line "all flying-type,"
 
-	para "flying-type. Keep"
-	line "this in mind."
+	para "but they don't"
+	line "all have the"
+	cont "same weaknesses."
+
+	para "Rather than one"
+	line "rock or electric-"
+	cont "type #MON,"
+
+	para "You should build"
+	line "a team you can"
+	cont "rely on."
 	done
 
 VioletGymGuideWinText:

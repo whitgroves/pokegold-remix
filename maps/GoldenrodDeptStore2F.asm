@@ -68,11 +68,23 @@ GoldenrodDeptStore2FYoungsterText:
 	done
 
 GoldenrodDeptStore2FCooltrainerFText:
-	text "I got my ABRA at"
-	line "the GAME CORNER."
+	text "I caught my ABRA"
+	line "on ROUTE 35."
 
-	para "Now it's my best"
-	line "partner."
+	para "I bought some TMs"
+	line "upstairs to give"
+	cont "it coverage,"
+
+	para "but THUNDERPUNCH"
+	line "isn't as strong"
+	cont "as I expected." 
+
+	para "It turns out even"
+	line "though that move"
+	cont "is electric-type,"
+
+	para "it's still doing"
+	line "physical damage."
 	done
 
 GoldenrodDeptStore2FGentlemanText:

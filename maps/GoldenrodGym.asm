@@ -370,9 +370,18 @@ GoldenrodGymGuideText:
 	line "to normal-type"
 	cont "#MON trainers."
 
-	para "I recommend you"
-	line "use fighting-type"
-	cont "#MON."
+	para "They don't deal"
+	line "with fighting or"
+	cont "dark-type moves"
+	
+	para "very well, but"
+	line "be careful!"
+
+	para "Normal #MON can"
+	line "learn moves to"
+	
+	para "deal with any"
+	line "type of #MON."
 	done
 
 GoldenrodGymGuideWinText:

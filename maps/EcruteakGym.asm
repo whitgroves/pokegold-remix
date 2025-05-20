@@ -282,7 +282,7 @@ MediumGraceSeenText:
 	done
 
 MediumGraceBeatenText:
-	text "Wha-what?"
+	text "I see!"
 	done
 
 MediumGraceAfterBattleText:
@@ -298,14 +298,20 @@ MediumGraceAfterBattleText:
 
 EcruteakGymGuideText:
 	text "The trainers here"
-	line "have secret mo-"
-	cont "tives."
+	line "came long ago to"
 
-	para "If you win, they"
-	line "may tell you some"
+	para "learn the secrets"
+	line "of ECRUTEAK."
+	
+	para "The ghost-type"
+	line "#MON they use"
 
-	para "deep secrets about"
-	line "ECRUTEAK."
+	para "can't be hit with"
+	line "normal attacks,"
+
+	para "but legends say"
+	line "you can ward off"
+	cont "spirits with fire."
 	done
 
 EcruteakGymGuideWinText:
