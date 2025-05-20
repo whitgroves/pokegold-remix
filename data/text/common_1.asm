@@ -1324,6 +1324,13 @@ _MomJustDoWhatYouCanText::
 	line "you can."
 	done
 
+_MomProudOfYouText::
+	text "My little <PLAYER>"
+	line "is the CHAMPION…"
+
+	para "I'm proud of you!"
+	done
+
 _DaycareDummyText::
 	text_start
 	done

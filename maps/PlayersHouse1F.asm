@@ -258,8 +258,8 @@ ImBehindYouText:
 PlayersHouse1FStoveText:
 	text "Mom's specialty!"
 
-	para "CINNABAR VOLCANO"
-	line "BURGER!"
+	para "CINNABAR ISLAND"
+	line "POKE BOWL!"
 	done
 
 PlayersHouse1FSinkText:

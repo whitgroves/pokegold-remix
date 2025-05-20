@@ -1041,8 +1041,16 @@ ElmGiveTicketText1:
 	para "See? It's an"
 	line "S.S.TICKET."
 
-	para "Now you can catch"
-	line "#MON in KANTO."
+	para "Your mom asked me"
+	line "to wait before"
+	cont "giving you this,"
+
+	para "But as the JOHTO"
+	line "LEAGUE CHAMPION,"
+
+	para "We think you're"
+	line "ready to catch"
+	cont "#MON in KANTO."
 	done
 
 ElmGiveTicketText2:

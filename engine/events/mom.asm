@@ -273,7 +273,13 @@ BankOfMom:
 	ret
 
 .JustDoWhatYouCan:
+	checkevent EVENT_BEAT_ELITE_FOUR
+	iftrue .ProudOfYou
 	ld hl, MomJustDoWhatYouCanText
+	call PrintText
+
+.ProudOfYou:
+	ld hl, MomProudOfYouText
 	call PrintText
 
 .AskDST:
@@ -637,6 +643,10 @@ MomTakenMoneyText:
 
 MomJustDoWhatYouCanText:
 	text_far _MomJustDoWhatYouCanText
+	text_end
+
+MomProudOfYouText:
+	text_far _MomProudOfYouText
 	text_end
 
 Mom_SavedString:
