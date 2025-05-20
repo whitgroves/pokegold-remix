@@ -41,29 +41,30 @@ CianwoodPokecenter1FLassText:
 	done
 
 CianwoodGymGuideText:
-	text "The #MON GYM"
-	line "trainers here are"
+	text "The GYM trainers"
+	line "next door are"
 	cont "macho bullies."
 
-	para "If I stick around,"
-	line "they might come"
-	cont "after me."
+	para "They all think"
+	line "they're big shots"
+	cont "from KANTO,"
 
-	para "Here's some ad-"
-	line "vice: the GYM"
+	para "so they won't let"
+	line "non-trainers like"
+	cont "me into the GYM."
 
-	para "LEADER uses the"
-	line "fighting-type."
+	para "Their fighting-"
+	line "type #MON are"
 
-	para "So you should"
-	line "confound him with"
-	cont "psychic #MON."
+	para "hard to spook and"
+	line "can shrug off"
 
-	para "Wipe out his #-"
-	line "MON before they"
+	para "the heat, the cold,"
+	line "or even poison,"
 
-	para "can use their"
-	line "physical strength."
+	para "so use attacks from"
+	line "above or below"
+	cont "to throw them off."
 	done
 
 CianwoodGymGuideWinText:

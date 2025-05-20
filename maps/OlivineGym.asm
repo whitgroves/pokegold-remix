@@ -161,7 +161,14 @@ OlivineGymGuideText:
 	cont "steel-type."
 
 	para "I don't know very"
-	line "much about it."
+	line "much about it,"
+
+	para "but rumor has it"
+	line "she used to be a"
+	cont "rock-type trainer,"
+
+	para "so the two must be"
+	line "similar, right?"
 	done
 
 OlivineGymGuideWinText:
