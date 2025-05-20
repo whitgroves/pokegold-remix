@@ -198,11 +198,11 @@ MahoganyMart1FLanceRadioText:
 	text "What took you,"
 	line "<PLAYER>?"
 
-	para "Just as I thought,"
-	line "that strange radio"
+	para "This is the last"
+	line "place in town we"
+	cont "need to check."
 
-	para "signal is coming"
-	line "from here."
+	para "Just as I thought,"
 	done
 
 MahoganyMart1FLanceStairsText:
@@ -211,10 +211,22 @@ MahoganyMart1FLanceStairsText:
 	done
 
 MahoganyMart1FLanceSplitUpText:
-	text "<PLAYER>, we"
-	line "should split up to"
+	text "There's no telling"
+	line "what we'll find."
 
-	para "check this place."
+	para "<PLAYER>, we"
+	line "should split up to"
+	cont "cover more ground."
+
+	para "These guys seem to"
+	line "favor dark-type"
+	cont "#MON,"
+
+	para "So rely on your"
+	line "#MON's STRENGTH"
+	cont "and CUT them down."
+
+	para "Good luck."
 	line "I'll go first."
 	done
 

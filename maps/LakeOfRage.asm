@@ -253,31 +253,40 @@ LakeOfRageLanceForcedToEvolveText:
 	done
 
 LakeOfRageLanceIntroText:
-	text "Did you come here"
-	line "because of the"
-	cont "rumors?"
-
-	para "You're <PLAYER>?"
+	text "You're <PLAYER>?"
 	line "I'm LANCE, a"
 	cont "trainer like you."
 
-	para "I heard some ru-"
-	line "mors, so I came to"
-	cont "investigate…"
+	para "Did you come here"
+	line "because of the"
+	cont "rumors?"
+
+	para "PRYCE asked the"
+	line "#MON LEAGUE"
+	cont "to look into it,"
+
+	para "so I'm here to"
+	line "do just that."
 
 	para "I saw the way you"
-	line "battled earlier,"
-	cont "<PLAYER>."
+	line "battled earlier."
 
-	para "I can tell that"
-	line "you're a trainer"
+	para "Most trainers lack"
+	line "the skill to deal"
+	
+	para "with a dragon-type"
+	line "#MON like that."
 
-	para "with considerable"
-	line "skill."
+	para "I could probably"
+	line "handle this alone,"
+
+	para "but with your help"
+	line "we can resolve"
+	cont "this quickly."
 
 	para "If you don't mind,"
-	line "could you help me"
-	cont "investigate?"
+	line "would you help me"
+	cont "to investigate?"
 	done
 
 LakeOfRageLanceRadioSignalText:
@@ -295,6 +304,18 @@ LakeOfRageLanceRadioSignalText:
 	para "from MAHOGANY is"
 	line "the cause."
 
+	para "KOGA told me that"
+	line "town was built"
+
+	para "on top of an old"
+	line "ninja hideout,"
+
+	para "so first we need"
+	line "to search each"
+
+	para "building for"
+	line "hidden entrances."
+
 	para "I'll be waiting"
 	line "for you, <PLAYER>."
 	done
@@ -302,7 +323,7 @@ LakeOfRageLanceRadioSignalText:
 LakeOfRageLanceRefusedText:
 	text "Oh… Well, if you"
 	line "change your mind,"
-	cont "please help me."
+	cont "I'd appreciate it."
 	done
 
 LakeOfRageLanceAskHelpText:

@@ -200,17 +200,22 @@ MahoganyTownGrampsText_ClearedRocketHideout:
 	done
 
 MahoganyTownFisherText:
-	text "Since you came"
-	line "this far, take the"
+	text "Sorry, the GYM's"
+	line "leader is out."
 
-	para "time to do some"
-	line "sightseeing."
+	para "There's GYARADOS"
+	line "rampaging at the"
+	cont "LAKE OF RAGE,"
 
-	para "You should head"
-	line "north and check"
+	para "so word is PRYCE"
+	line "went to the INDIGO"
+	cont "PLATEAU for help."
 
-	para "out LAKE OF RAGE"
-	line "right now."
+	para "I've got things"
+	line "covered over here,"
+
+	para "but be careful if"
+	line "you head up north."
 	done
 
 MahoganyTownLassText:

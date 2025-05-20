@@ -714,20 +714,20 @@ RocketBaseLanceElectrodeDoneText:
 	line "finally stopped."
 
 	para "The LAKE should be"
-	line "back to normal."
+	line "back to normal,"
+	
+	para "and MAHOGANY is"
+	line "safe once again."
 
 	para "You're the hero!"
 	line "Let me thank you"
 
-	para "on behalf of all"
-	line "the #MON."
+	para "on behalf of the"
+	line "#MON LEAGUE."
 
-	para "Oh, yes. You"
-	line "should take this."
-
-	para "I found it here,"
-	line "but I don't have"
-	cont "any need for it."
+	para "It's a bit early,"
+	line "but you should"
+	cont "take this."
 	done
 
 RocketBaseLanceWaterfallText:
@@ -737,8 +737,8 @@ RocketBaseLanceWaterfallText:
 	para "scale TOHJO FALLS"
 	line "if you plan to"
 
-	para "take on the"
-	line "#MON LEAGUE."
+	para "take the #MON"
+	line "LEAGUE challenge."
 
 	para "But keep this in"
 	line "mind."
@@ -753,11 +753,11 @@ RocketBaseLanceWaterfallText:
 RocketBaseLanceMonMasterText:
 	text "<PLAYER>…"
 
-	para "The journey to be-"
-	line "coming the #MON"
+	para "The journey to"
+	line "becoming the"
 
-	para "MASTER is long and"
-	line "difficult."
+	para "CHAMPION is long"
+	line "and difficult."
 
 	para "Knowing that, will"
 	line "you keep going?"
