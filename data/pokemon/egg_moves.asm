@@ -213,6 +213,7 @@ TentacoolEggMoves:
 	db RAPID_SPIN
 	db HAZE
 	db SAFEGUARD
+	db OCTAZOOKA
 	db -1 ; end
 
 GeodudeEggMoves:

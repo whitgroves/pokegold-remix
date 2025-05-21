@@ -203,7 +203,7 @@ Moves:
 	move BELLY_DRUM,   EFFECT_BELLY_DRUM,          0, NORMAL,       100, 10,   0
 	move SLUDGE_BOMB,  EFFECT_POISON_HIT,         90, POISON,       100, 10,  30
 	move MUD_SLAP,     EFFECT_ACCURACY_DOWN_HIT,  20, GROUND,       100, 10,  50
-	move OCTAZOOKA,    EFFECT_ACCURACY_DOWN_HIT,  65, WATER,        100, 10,  50
+	move OCTAZOOKA,    EFFECT_ACCURACY_DOWN_HIT,  90, WATER,         90, 10,  50
 	move SPIKES,       EFFECT_SPIKES,              0, GROUND,       100, 20,   0
 	move ZAP_CANNON,   EFFECT_PARALYZE_HIT,      100, ELECTRIC,      50,  5, 100
 	move FORESIGHT,    EFFECT_FORESIGHT,           0, NORMAL,       100, 40,   0
