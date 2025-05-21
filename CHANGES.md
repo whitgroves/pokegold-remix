@@ -321,6 +321,7 @@ In rare cases (Sand Attack, Hyper Beam), moves have had their attack power or po
 - Twister: *40* -> *50 Power*
 - Crunch: *20% Chance To Lower Special Defense* -> *30% Chance To Paralyze*
 - Ancientpower: *5* -> *10 PP*
+- Rock Smash: *20* -> *40 Power*
 - Future Sight: *80* -> *150 Power* | *90%* -> *100% Accuracy* | *15* -> *5 PP*
 - Whirlpool: *70%* -> *75% Accuracy* | *15* -> *20 PP*
 
