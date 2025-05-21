@@ -130,7 +130,7 @@ SeafoamGymGuideWinText:
 	para "… Huh? It's over"
 	line "already?"
 
-	para "Sorry, dude!"
+	para "Sorry, CHAMP!"
 
 	para "CINNABAR GYM was"
 	line "gone, so I didn't"

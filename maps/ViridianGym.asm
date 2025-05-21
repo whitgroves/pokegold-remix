@@ -136,18 +136,22 @@ LeaderBlueEpilogueText:
 	done
 
 ViridianGymGuideText:
-	text "Yo, CHAMP in"
-	line "making!"
+	text "Yo, JOHTO trainer!"
+	line "How's it going?"
+	
+	para "Looks like you're"
+	line "on a roll, but"
 
-	para "How's it going?"
-	line "Looks like you're"
-	cont "on a roll."
-
-	para "The GYM LEADER is"
+	para "the GYM LEADER is"
 	line "a guy who battled"
 
-	para "the CHAMPION three"
-	line "years ago."
+	para "the best trainer"
+	line "in KANTO three"
+	cont "years ago,"
+
+	para "and once held the"
+	line "title of CHAMPION"
+	cont "himself."
 
 	para "He's no pushover."
 

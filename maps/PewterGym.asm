@@ -171,14 +171,13 @@ CamperJerryAfterBattleText:
 	done
 
 PewterGymGuideText:
-	text "Yo! CHAMP in"
-	line "making! You're"
+	text "Hey! JOHTO CHAMP!"
+	line "You're really"
 
-	para "really rocking."
-	line "Are you battling"
+	para "rocking. Are you"
+	line "battling the GYM"
 
-	para "the GYM LEADERS of"
-	line "KANTO?"
+	para "LEADERS of KANTO?"
 
 	para "They're strong and"
 	line "dedicated people,"
@@ -188,17 +187,13 @@ PewterGymGuideText:
 	done
 
 PewterGymGuideWinText:
-	text "Yo! CHAMP in"
-	line "making! That GYM"
+	text "That GYM didn't"
+	line "give you much"
 
-	para "didn't give you"
-	line "much trouble."
+	para "trouble. Should I"
+	line "start calling you"
 
-	para "The way you took"
-	line "charge was really"
-
-	para "inspiring. I mean"
-	line "that seriously."
+	para "KANTO CHAMP now?"
 	done
 
 PewterGym_MapEvents:

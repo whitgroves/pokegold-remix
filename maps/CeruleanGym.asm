@@ -326,14 +326,22 @@ SwimmermParkerAfterBattleText:
 	done
 
 CeruleanGymGuideText:
-	text "Yo! CHAMP in"
-	line "making!"
+	text "Yo! JOHTO CHAMP!"
 
 	para "Since MISTY was"
 	line "away, I went out"
 
 	para "for some fun too."
 	line "He-he-he."
+
+	para "You should know"
+	line "how to deal with"
+
+	para "water-type #MON"
+	line "by now,"
+
+	para "but still be ready"
+	line "for anything!"
 	done
 
 CeruleanGymGuideWinText:

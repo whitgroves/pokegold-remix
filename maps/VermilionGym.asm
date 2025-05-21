@@ -200,7 +200,10 @@ GuitaristVincentAfterBattleText:
 	line "were working, you"
 
 	para "would have been"
-	line "toast…"
+	line "toast… not that we"
+
+	para "need them now,"
+	line "anyway…"
 	done
 
 JugglerHortonSeenText:
@@ -223,25 +226,26 @@ JugglerHortonAfterBattleText:
 	done
 
 VermilionGymGuideText:
-	text "Yo! CHAMP in"
-	line "making!"
+	text "Yo! CHAMPION!"
 
 	para "You lucked out"
 	line "this time."
 
 	para "LT.SURGE is very"
-	line "cautious. He has"
+	line "cautious. He used"
 
-	para "traps set all over"
-	line "the GYM."
+	para "to set traps all"
+	line "over the GYM,"
 
-	para "But--he-heh--the"
-	line "traps aren't"
-	cont "active right now."
+	para "But now they say"
+	line "he has a psychic"
+	
+	para "#MON to protect"
+	line "himself."
 
 	para "You'll have no"
 	line "problem getting to"
-	cont "LT.SURGE."
+	cont "LT.SURGE, right?"
 	done
 
 VermilionGymGuideWinText:

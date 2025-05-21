@@ -224,8 +224,7 @@ CeladonGameCornerFisherFullCoinCaseText:
 	done
 
 CeladonGymGuideText:
-	text "Hey! CHAMP in"
-	line "making!"
+	text "Hey! CHAMPION!"
 
 	para "Are you playing"
 	line "the slots too?"
@@ -236,6 +235,16 @@ CeladonGymGuideText:
 
 	para "But I don't have"
 	line "enough coins yet…"
+
+	para "As far as ERIKA"
+	line "goes, I hear her"
+
+	para "team is hard to"
+	line "deal with once it"
+	cont "gets setup."
+
+	para "Don't go in ex-"
+	line "pecting a free win!"
 	done
 
 CeladonGameCornerGrampsText:

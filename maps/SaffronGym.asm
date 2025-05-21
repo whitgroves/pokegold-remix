@@ -271,8 +271,7 @@ PsychicJaredAfterBattleText:
 	done
 
 SaffronGymGuideText:
-	text "Yo, CHAMP in"
-	line "making!"
+	text "Hey, JOHTO CHAMP!"
 
 	para "A trainer as"
 	line "skilled as you"

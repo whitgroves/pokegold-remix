@@ -355,24 +355,29 @@ CamperBarryAfterText:
 	done
 
 FuchsiaGymGuideText:
-	text "Yo, CHAMP in"
-	line "making!"
+	text "CHAMP! Take a"
+	line "good look around!"
 
-	para "Whoops! Take a"
-	line "good look around"
-
-	para "you. The trainers"
+	para "The trainers"
 	line "all look like the"
 	cont "LEADER, JANINE."
 
 	para "Which of them is"
 	line "the real JANINE?"
+
+	para "You'll need a"
+	line "psychic-type to"
+
+	para "figure out on your"
+	line "first guess!"
 	done
 
 FuchsiaGymGuideWinText:
 	text "That was a great"
-	line "battle, trainer"
-	cont "from JOHTO!"
+	line "battle! You really"
+	
+	para "are the JOHTO"
+	line "CHAMPION!"
 	done
 
 FuchsiaGym_MapEvents:
