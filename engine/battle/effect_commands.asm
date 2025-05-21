@@ -1523,6 +1523,9 @@ BattleCommand_DamageVariation:
 	ret
 
 BattleCommand_CheckHit:
+	call .LowKick
+	jp z, .Miss
+
 	call .DreamEater
 	jp z, .Miss
 
@@ -1603,6 +1606,27 @@ BattleCommand_CheckHit:
 .Missed:
 	ld a, 1
 	ld [wAttackMissed], a
+	ret
+
+.LowKick:
+; Return z if we're trying to low kick a flying type.
+	ld a, BATTLE_VARS_MOVE
+	call GetBattleVar
+	cp LOW_KICK
+	ret nz
+	
+	ld de, wEnemyMonType1
+	ldh a, [hBattleTurn]
+	and a
+	jr z, .ok
+	ld de, wBattleMonType1
+.ok
+	ld a, [de]
+	inc de
+	cp FLYING
+	ret z
+	ld a, [de]
+	cp FLYING
 	ret
 
 .DreamEater:

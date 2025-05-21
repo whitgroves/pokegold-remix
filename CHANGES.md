@@ -276,6 +276,7 @@ In rare cases (Sand Attack, Hyper Beam), moves have had their attack power or po
 - Blizzard: *10% Chance To Freeze* -> *20% Chance To Freeze*
 - Hyper Beam: *Normal* -> *Dragon* | *150* -> *120 Power*
 - Submission: *80 Damage* -> *100 Damage* | *25* -> *20 PP*
+- Low Kick: *30% Chance To Flinch* -> *30% Chance To Flinch, Can't Hit Flying Types*
 - Seismic Toss: *Flat Damage* -> *30% Chance To Paralyze* | *Damage Equal To User's Level* -> *85 Power* | *20* -> *15 PP*
 - Strength: *Normal* -> *Fighting* | *No Effect* -> *10% Chance To Raise Attack*
 - Absorb: *20* -> *30 Power* | *20* -> *30 PP*
