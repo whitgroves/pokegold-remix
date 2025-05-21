@@ -1405,7 +1405,7 @@ CheckTypeMatchup:
 	call GetBattleVar
 	bit SUBSTATUS_IDENTIFIED, a
 	jr z, .TypesLoop
-	ld a, SUPER_EFFECTIVE
+	ld a, MORE_EFFECTIVE ; identified targets take 1.5 damage
 	ld [wTypeMatchup], a
 	jr .End
 
