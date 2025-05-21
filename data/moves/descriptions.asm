@@ -1036,8 +1036,8 @@ ZapCannonDescription:
 	next "always paralyzes.@"
 
 ForesightDescription:
-	db   "Negates accuracy"
-	next "reduction moves.@"
+	db   "Makes all damage"
+	next "super effective.@"
 
 DestinyBondDescription:
 	db   "The foe faints if"
