@@ -427,9 +427,9 @@ NidoranMEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, LEER
 	db 1, TACKLE
-	db 8, HORN_ATTACK
+	db 8, HEADBUTT
 	db 12, DOUBLE_KICK
-	db 17, STOMP
+	db 17, HORN_ATTACK
 	db 23, TWINEEDLE
 	db 30, TAKE_DOWN
 	db 38, HORN_DRILL
@@ -441,9 +441,9 @@ NidorinoEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, LEER
 	db 1, TACKLE
-	db 8, HORN_ATTACK
+	db 8, HEADBUTT
 	db 12, DOUBLE_KICK
-	db 19, STOMP
+	db 19, HORN_ATTACK
 	db 27, TWINEEDLE
 	db 36, SUBMISSION
 	db 46, HORN_DRILL
@@ -1534,10 +1534,10 @@ WeezingEvosAttacks:
 RhyhornEvosAttacks:
 	db EVOLVE_LEVEL, 42, RHYDON
 	db 0 ; no more evolutions
-	db 1, HORN_ATTACK
+	db 1, HEADBUTT
 	db 1, TAIL_WHIP
 	db 13, STOMP
-	db 19, HEADBUTT
+	db 19, HORN_ATTACK
 	db 31, SKULL_BASH
 	db 37, HORN_DRILL
 	db 49, SUBMISSION
@@ -1546,10 +1546,10 @@ RhyhornEvosAttacks:
 
 RhydonEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, HORN_ATTACK
+	db 1, HEADBUTT
 	db 1, TAIL_WHIP
 	db 13, STOMP
-	db 19, HEADBUTT
+	db 19, HORN_ATTACK
 	db 31, SKULL_BASH
 	db 37, HORN_DRILL
 	db 54, OUTRAGE
@@ -1594,8 +1594,8 @@ KangaskhanEvosAttacks:
 	db 13, STOMP
 	db 17, SAFEGUARD
 	db 21, ROAR
-	db 25, MEGA_PUNCH
-	db 29, DRAGON_RAGE
+	db 25, DRAGON_RAGE
+	db 29, MEGA_PUNCH
 	db 37, PROTECT
 	db 43, OUTRAGE
 	db 49, ENDURE
@@ -2790,10 +2790,10 @@ WobbuffetEvosAttacks:
 
 GirafarigEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, TACKLE
+	db 1, STOMP
 	db 1, GROWL
 	db 7, CONFUSION
-	db 13, STOMP
+	db 13, HEADBUTT
 	db 20, AGILITY
 	db 30, BATON_PASS
 	db 35, PSYCH_UP

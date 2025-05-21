@@ -261,6 +261,7 @@ In rare cases (Sand Attack, Hyper Beam), moves have had their attack power or po
 - Cut: *Normal* -> *Bug* | *No Effect* -> *High Crit Rate* | *95%* -> *100% Accuracy*
 - Fly: *Fly Effect* -> *Fly Effect, Hits Flying Targets* | *70* -> *80 Power* | *95%* -> *100% Accuracy*
 - Vine Whip: *35* -> *40 Power* | *10* -> *20 PP* | [*Always Physical*](#always-physical-moves)
+- Stomp: *Normal* -> *Ground*
 - Rolling Kick: *85%* -> *90% Accuracy*
 - Sand Attack: *100%* -> *80% Accuracy*
 - Horn Attack: *Normal* -> *Dragon* | *No Effect* -> *30% Chance To Flinch* | *65* -> *70 Power* | *25* -> *15 PP* | [*Always Physical*](#always-physical-moves)
