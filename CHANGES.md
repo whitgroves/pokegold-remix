@@ -306,6 +306,7 @@ In rare cases (Sand Attack, Hyper Beam), moves have had their attack power or po
 - Tri Attack: *Normal* -> *Dragon*
 - Triple Kick: *90%* -> *100% Accuracy*
 - Aeroblast: *95%* -> *100% Accuracy*
+- Powder Snow: *10% Chance To Freeze* -> *50% Chance To Lower Evasion*
 - Mud-Slap: *100% Chance To Lower Accuracy* -> *50% Chance To Lower Accuracy*
 - Octazooka: *85%* -> *100% Accuracy*
 - Icy Wind: *100% Chance To Lower Speed* -> *50% Chance To Lower Speed* | *95%* -> *100% Accuracy*
@@ -416,7 +417,8 @@ Weathers cause new interactions in addition to their old ones (e.g., Rain boosti
 - *Fire*-type moves can no longer defrost through *Safeguard*
 - *Ghost*-type pokemon are now immune to *Spikes*
 - The enemy AI can only steal berries using *Thief*. Use by the player is unaffected.
-- Wild Pokemon with their evasion lowered by *Sweet Scent* cannot flee, and will have twice the catch rate.
+- Wild Pokemon with their evasion lowered cannot flee, and will have twice the catch rate.
+- Moves that drop evasion (*Powder Snow*, *Sweet Scent*) always hit.
 
 ## Store updates
 Several of the stores have been updated with new items.

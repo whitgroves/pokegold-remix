@@ -1549,6 +1549,10 @@ BattleCommand_CheckHit:
 	call GetBattleVar
 	cp EFFECT_ALWAYS_HIT
 	ret z
+	cp EFFECT_EVASION_DOWN
+	ret z
+	cp EFFECT_EVASION_DOWN_HIT
+	ret z
 
 	call .StatModifiers
 
