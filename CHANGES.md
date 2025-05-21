@@ -12,6 +12,7 @@ Below is a non-exhaustive list of changes as of this revision:
     - [Always Physical Moves](#always-physical-moves)
     - [Trapping Moves](#trapping-moves)
     - [Foresight](#foresight)
+    - [Lock-On](#lock-on)
     - [Flavor Changes](#flavor-changes)
     - [TMs](#tms)
     - [Weather Interactions](#weather-interactions)
@@ -351,6 +352,11 @@ Besides preventing a switch out, trapped pokemon will now have their speed cut a
 Previously, *Foresight* allowed *Normal*- and *Fighting*-type moves to hit *Ghost*-type pokemon for neutral damage, while bypassing evasion checks for identified pokemon.
 
 Now, identified targets will take 1.5 damage from all types, unless they have an immunity other than *Normal*->*Ghost*. Evasion checks will still be bypassed.
+
+### Lock-On
+Previously, *Lock-On* would cause all subsequent attacks to land, except *Earthquake*, *Fissure*, and *Magnitude* on a pokemon that is flying.
+
+Now, *Lock-On* will be ignored for any *Ground*-type move against such targets.
 
 ### Flavor Changes
 These moves ignore STAB but have had their types changed for flavor; however, this may still impact the AI's choices.
