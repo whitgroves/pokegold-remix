@@ -989,7 +989,7 @@ SpiteDescription:
 
 PowderSnowDescription:
 	db   "An attack that may"
-	next "cause freezing.@"
+	next "lower evasion.@"
 
 ProtectDescription:
 	db   "Foils attack that"
