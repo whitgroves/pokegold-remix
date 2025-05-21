@@ -604,7 +604,7 @@ VileplumeEvosAttacks:
 	db 24, TOXIC
 	db 29, GIGA_DRAIN
 	db 35, MOONLIGHT
-	db 44, HAZE
+	db 44, SPORE
 	db 0 ; no more level-up moves
 
 ParasEvosAttacks:
