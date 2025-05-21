@@ -47,20 +47,20 @@ ViridianCityGrampsNearGym:
 	closetext
 	end
 
-ViridianCityDreamEaterFisher:
+ViridianCityBatonPassFisher:
 	faceplayer
 	opentext
-	checkevent EVENT_GOT_TM42_DREAM_EATER
-	iftrue .GotDreamEater
-	writetext ViridianCityDreamEaterFisherText
+	checkevent EVENT_GOT_TM42_BATON_PASS
+	iftrue .GotBatonPass
+	writetext ViridianCityBatonPassFisherText
 	promptbutton
-	verbosegiveitem TM_DREAM_EATER
-	iffalse .NoRoomForDreamEater
-	setevent EVENT_GOT_TM42_DREAM_EATER
-.GotDreamEater:
-	writetext ViridianCityDreamEaterFisherGotDreamEaterText
+	verbosegiveitem TM_BATON_PASS
+	iffalse .NoRoomForBatonPass
+	setevent EVENT_GOT_TM42_BATON_PASS
+.GotBatonPass:
+	writetext ViridianCityBatonPassFisherGotBatonPassText
 	waitbutton
-.NoRoomForDreamEater:
+.NoRoomForBatonPass:
 	closetext
 	end
 
@@ -144,34 +144,46 @@ ViridianCityGrampsNearGymBlueReturnedText:
 	line "You'll need it."
 	done
 
-ViridianCityDreamEaterFisherText:
-	text "Yawn!"
+ViridianCityBatonPassFisherText:
+	text "Oh man!"
 
-	para "I must have dozed"
-	line "off in the sun."
+	para "I came out here"
+	line "to challenge the"
+	cont "#MON LEAGUE,"
 
-	para "…I had this dream"
-	line "about a DROWZEE"
+	para "But that BLUE is"
+	line "too tough for an"
+	cont "old guy like me."
 
-	para "eating my dream."
-	line "Weird, huh?"
+	para "Here!"
 
-	para "Huh?"
-	line "What's this?"
+	para "I can't complete"
+	line "my dream, so I'm"
 
-	para "Where did this TM"
-	line "come from?"
-
-	para "This is spooky!"
-	line "Here, you can have"
-	cont "this TM."
+	para "passing it on to"
+	line "you!"
 	done
 
-ViridianCityDreamEaterFisherGotDreamEaterText:
+ViridianCityBatonPassFisherGotBatonPassText:
 	text "TM42 contains"
-	line "DREAM EATER…"
+	line "BATON PASS."
+	
+	para "It's a move that"
+	line "lets your #MON"
 
-	para "…Zzzzz…"
+	para "give its strength"
+	line "to another #MON"
+	cont "on your team."
+
+	para "Even if one member"
+	line "is outmatched,"
+
+	para "a strong team can"
+	line "overcome any"
+	cont "challenge."
+
+	para "Use that to become"
+	line "the CHAMPION!"
 	done
 
 ViridianCityYoungsterText:
@@ -236,5 +248,5 @@ ViridianCity_MapEvents:
 	def_object_events
 	object_event 18,  5, SPRITE_GRAMPS, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ViridianCityCoffeeGramps, -1
 	object_event 30,  8, SPRITE_GRAMPS, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, ViridianCityGrampsNearGym, -1
-	object_event  6, 23, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, ViridianCityDreamEaterFisher, -1
+	object_event  6, 23, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, ViridianCityBatonPassFisher, -1
 	object_event 17, 21, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 3, 3, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, ViridianCityYoungsterScript, -1

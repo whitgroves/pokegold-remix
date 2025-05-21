@@ -109,7 +109,7 @@ TrainerBugCatcherWade1:
 Route31MailRecipientScript:
 	faceplayer
 	opentext
-	checkevent EVENT_GOT_TM50_NIGHTMARE
+	checkevent EVENT_GOT_TM50_PURSUIT
 	iftrue .DescribeNightmare
 	checkevent EVENT_GOT_KENYA
 	iftrue .TryGiveKenya
@@ -132,11 +132,11 @@ Route31MailRecipientScript:
 	writetext Text_Route31ReadingMail
 	promptbutton
 	setevent EVENT_GAVE_KENYA
-	verbosegiveitem TM_NIGHTMARE
+	verbosegiveitem TM_PURSUIT
 	iffalse .NoRoomForItems
-	setevent EVENT_GOT_TM50_NIGHTMARE
+	setevent EVENT_GOT_TM50_PURSUIT
 .DescribeNightmare:
-	writetext Text_Route31DescribeNightmare
+	writetext Text_Route31DescribePursuit
 	waitbutton
 .NoRoomForItems:
 	closetext
@@ -224,12 +224,13 @@ BugCatcherWade1AfterText:
 Text_Route31SleepyMan:
 	text "… Hnuurg… Huh?"
 
-	para "I walked too far"
-	line "today looking for"
-	cont "#MON."
+	para "I dozed off after"
+	line "walking all day to"
+	cont "find #MON…"
 
 	para "My feet hurt and"
-	line "I'm sleepy…"
+	line "I already ate my"
+	cont "MINT BERRY…"
 
 	para "If I were a wild"
 	line "#MON, I'd be"
@@ -275,20 +276,26 @@ Text_Route31ReadingMail:
 	line "to have this!"
 	done
 
-Text_Route31DescribeNightmare:
-	text "TM50 is NIGHTMARE."
+Text_Route31DescribePursuit:
+	text "TM50 is PURSUIT."
 
-	para "It's a wicked move"
-	line "that steadily cuts"
+	para "It's a move that"
+	line "chases down the"
 
-	para "the HP of a sleep-"
-	line "ing enemy."
+	para "target and does"
+	line "extra damage when"
 
-	para "Ooooh…"
-	line "That's scary…"
+	para "they try to get"
+	line "away."
 
-	para "I don't want to"
-	line "have bad dreams."
+	para "It can be scary to"
+	line "think about, but"
+
+	para "sometimes you have"
+	line "to chase down your"
+
+	para "dreams no matter"
+	line "what!"
 	done
 
 Text_Route31WrongMail:

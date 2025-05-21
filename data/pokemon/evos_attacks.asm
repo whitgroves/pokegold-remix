@@ -847,7 +847,7 @@ PoliwrathEvosAttacks:
 	db 26, KARATE_CHOP
 	db 27, RAIN_DANCE
 	db 35, SEISMIC_TOSS
-	db 43, BELLY_DRUM
+	db 43, DETECT
 	db 51, CROSS_CHOP
 	db 0 ; no more level-up moves
 
@@ -915,7 +915,7 @@ MachokeEvosAttacks:
 	db 25, COMET_PUNCH
 	db 34, VITAL_THROW
 	db 43, CROSS_CHOP
-	db 52, SCARY_FACE
+	db 52, DETECT
 	db 61, SUBMISSION
 	db 0 ; no more level-up moves
 
@@ -929,7 +929,7 @@ MachampEvosAttacks:
 	db 25, COMET_PUNCH
 	db 34, VITAL_THROW
 	db 43, CROSS_CHOP
-	db 52, SCARY_FACE
+	db 52, DETECT
 	db 61, SUBMISSION
 	db 0 ; no more level-up moves
 
@@ -1150,6 +1150,7 @@ FarfetchDEvosAttacks:
 	db 31, SLASH
 	db 37, RAZOR_WIND
 	db 42, CROSS_CHOP
+	db 48, REVERSAL
 	db 0 ; no more level-up moves
 
 DoduoEvosAttacks:
@@ -1274,7 +1275,8 @@ GastlyEvosAttacks:
 	db 21, NIGHT_SHADE
 	db 28, CONFUSE_RAY
 	db 33, DREAM_EATER
-	db 36, DESTINY_BOND
+	db 36, NIGHTMARE
+	db 42, DESTINY_BOND
 	db 0 ; no more level-up moves
 
 HaunterEvosAttacks:
@@ -1289,7 +1291,8 @@ HaunterEvosAttacks:
 	db 21, NIGHT_SHADE
 	db 31, CONFUSE_RAY
 	db 39, DREAM_EATER
-	db 48, DESTINY_BOND
+	db 45, NIGHTMARE
+	db 50, DESTINY_BOND
 	db 0 ; no more level-up moves
 
 GengarEvosAttacks:
@@ -1302,7 +1305,8 @@ GengarEvosAttacks:
 	db 21, NIGHT_SHADE
 	db 31, CONFUSE_RAY
 	db 39, DREAM_EATER
-	db 48, DESTINY_BOND
+	db 45, NIGHTMARE
+	db 50, DESTINY_BOND
 	db 0 ; no more level-up moves
 
 OnixEvosAttacks:
@@ -1720,10 +1724,10 @@ JynxEvosAttacks:
 	db 13, POWDER_SNOW
 	db 18, LOVELY_KISS
 	db 21, NIGHT_SHADE
-	db 25, ICY_WIND
+	db 25, ATTRACT
 	db 35, MEAN_LOOK
-	db 41, ATTRACT
-	db 51, PERISH_SONG
+	db 41, DREAM_EATER
+	db 51, NIGHTMARE
 	db 57, BLIZZARD
 	db 0 ; no more level-up moves
 
@@ -2001,7 +2005,7 @@ ZapdosEvosAttacks:
 	db 1, THUNDERSHOCK
 	db 13, THUNDER_WAVE
 	db 25, AGILITY
-	db 37, DETECT
+	db 37, RAIN_DANCE
 	db 49, DRILL_PECK
 	db 61, LIGHT_SCREEN
 	db 73, THUNDER
@@ -2247,9 +2251,9 @@ HoothootEvosAttacks:
 	db 11, CONFUSION
 	db 16, CONFUSE_RAY
 	db 22, SWIFT
-	db 28, WING_ATTACK
-	db 34, REST
-	db 42, SLEEP_TALK
+	db 28, REST
+	db 34, SLEEP_TALK
+	db 42, MIRROR_MOVE
 	db 0 ; no more level-up moves
 
 NoctowlEvosAttacks:
@@ -2260,9 +2264,10 @@ NoctowlEvosAttacks:
 	db 6, HYPNOSIS
 	db 11, CONFUSION
 	db 16, CONFUSE_RAY
+	db 20, WING_ATTACK
 	db 25, NIGHT_SHADE
-	db 33, WING_ATTACK
-	db 41, PSYCHIC_M
+	db 33, PSYBEAM
+	db 41, DREAM_EATER
 	db 49, NIGHTMARE
 	db 0 ; no more level-up moves
 
@@ -2427,11 +2432,10 @@ NatuEvosAttacks:
 	db 15, CONFUSION
 	db 20, PSYCH_UP
 	db 25, FUTURE_SIGHT
-	db 30, REFLECT
-	db 35, LIGHT_SCREEN
-	db 40, NIGHT_SHADE
-	db 50, PSYCHIC_M
-	db 55, DREAM_EATER
+	db 30, NIGHT_SHADE
+	db 35, DREAM_EATER
+	db 40, PSYCHIC_M
+	db 50, NIGHTMARE
 	db 0 ; no more level-up moves
 
 XatuEvosAttacks:
@@ -2442,11 +2446,10 @@ XatuEvosAttacks:
 	db 15, CONFUSION
 	db 20, PSYCH_UP
 	db 25, FUTURE_SIGHT
-	db 35, REFLECT
-	db 41, LIGHT_SCREEN
-	db 47, NIGHT_SHADE
-	db 58, PSYCHIC_M
-	db 64, DREAM_EATER
+	db 35, NIGHT_SHADE
+	db 41, DREAM_EATER
+	db 47, PSYCHIC_M
+	db 58, NIGHTMARE
 	db 0 ; no more level-up moves
 
 MareepEvosAttacks:
@@ -2731,8 +2734,8 @@ MurkrowEvosAttacks:
 	db 17, THIEF
 	db 26, GLARE
 	db 35, MIRROR_MOVE
-	db 41, MEAN_LOOK
-	db 50, HAZE
+	db 41, NIGHT_SHADE
+	db 50, NIGHTMARE
 	db 0 ; no more level-up moves
 
 SlowkingEvosAttacks:
@@ -2750,7 +2753,7 @@ SlowkingEvosAttacks:
 	db 43, DRAGON_RAGE
 	db 48, PSYCHIC_M
 	db 55, HYPER_BEAM
-	db 59, RECOVER
+	db 59, FUTURE_SIGHT
 	db 0 ; no more level-up moves
 
 MisdreavusEvosAttacks:
@@ -2763,7 +2766,9 @@ MisdreavusEvosAttacks:
 	db 23, DOUBLE_TEAM
 	db 27, PSYBEAM
 	db 36, PAIN_SPLIT
-	db 46, PERISH_SONG
+	db 43, SHADOW_BALL
+	db 49, PSYCHIC_M
+	db 56, PERISH_SONG
 	db 0 ; no more level-up moves
 
 UnownEvosAttacks:
@@ -2798,7 +2803,7 @@ GirafarigEvosAttacks:
 	db 30, BATON_PASS
 	db 35, PSYCH_UP
 	db 41, PSYBEAM
-	db 54, CRUNCH
+	db 54, FORESIGHT
 	db 60, PSYCHIC_M
 	db 0 ; no more level-up moves
 
@@ -2958,7 +2963,7 @@ HeracrossEvosAttacks:
 	db 12, VITAL_THROW
 	db 19, HORN_ATTACK
 	db 27, SEISMIC_TOSS
-	db 35, SUBMISSION
+	db 35, DETECT
 	db 44, REVERSAL
 	db 54, MEGAHORN
 	db 0 ; no more level-up moves
@@ -3205,7 +3210,7 @@ DonphanEvosAttacks:
 	db 17, SCREECH
 	db 25, RAPID_SPIN
 	db 33, ROLLOUT
-	db 38, ROAR
+	db 38, DETECT
 	db 41, SUBMISSION
 	db 49, EARTHQUAKE
 	db 0 ; no more level-up moves
@@ -3227,12 +3232,12 @@ Porygon2EvosAttacks:
 StantlerEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, STOMP
-	db 1, LICK
-	db 8, HYPNOSIS
-	db 16, DISABLE
-	db 24, HEADBUTT
-	db 32, HORN_ATTACK
-	db 40, NIGHT_SHADE
+	db 1, HYPNOSIS
+	db 8, DISABLE
+	db 16, HEADBUTT
+	db 24, HORN_ATTACK
+	db 32, NIGHT_SHADE
+	db 40, DREAM_EATER
 	db 48, TAKE_DOWN
 	db 56, MEGAHORN
 	db 0 ; no more level-up moves

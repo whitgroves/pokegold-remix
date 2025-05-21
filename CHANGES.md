@@ -394,8 +394,11 @@ These TMs have been reassigned. Except for TM09, they are available in their sam
 - TM20: *Endure* -> *Tri Attack*
 - TM31: *Mud Slap* -> *Razor Wind*
 - TM32: *Double Team* -> *Flamethrower*
+- TM42: *Dream Eater* -> *Baton Pass*
+- TM43: *Detect* -> *Rock Slide*
+- TM50: *Nightmare* -> *Pursuit*
 
-The original moves can still be learned by level-up on mons that could learn it by TM or otherwise fit the theming (e.g., *Dragon* and "dog" pokemon get *Roar*).
+The original moves can still be learned by level-up on mons that could learn it by TM or otherwise fit the theming (e.g., most pokemon with sleep kits get *Dream Eater* and *Nightmare*, most *Dragon* and "dog" pokemon get *Roar*).
 
 ### HMs
 HM moves can now be forgotten; when learning over them, a confirmation prompt is brought up before they're overwritten.

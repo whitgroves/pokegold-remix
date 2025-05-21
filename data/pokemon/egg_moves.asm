@@ -14,7 +14,6 @@ BulbasaurEggMoves:
 CharmanderEggMoves:
 	db BELLY_DRUM
 	db ANCIENTPOWER
-	db ROCK_SLIDE
 	db BITE
 	db OUTRAGE
 	db BEAT_UP
@@ -159,11 +158,10 @@ PsyduckEggMoves:
 	db -1 ; end
 
 MankeyEggMoves:
-	db ROCK_SLIDE
-	db FORESIGHT
 	db MEDITATE
 	db COUNTER
 	db REVERSAL
+	db DETECT
 	db BEAT_UP
 	db -1 ; end
 
@@ -188,13 +186,17 @@ AbraEggMoves:
 	db LIGHT_SCREEN
 	db ENCORE
 	db BARRIER
+	db NIGHT_SHADE
+	db HYPNOSIS
+	db DREAM_EATER
+	db NIGHTMARE
 	db -1 ; end
 
 MachopEggMoves:
-	db LIGHT_SCREEN
 	db MEDITATE
 	db ROLLING_KICK
 	db ENCORE
+	db FORESIGHT
 	db -1 ; end
 
 BellsproutEggMoves:
@@ -218,7 +220,6 @@ TentacoolEggMoves:
 
 GeodudeEggMoves:
 	db MEGA_PUNCH
-	db ROCK_SLIDE
 	db -1 ; end
 
 PonytaEggMoves:
@@ -235,6 +236,7 @@ SlowpokeEggMoves:
 	db BELLY_DRUM
 	db FUTURE_SIGHT
 	db STOMP
+	db DREAM_EATER
 	db -1 ; end
 
 FarfetchDEggMoves:
@@ -242,6 +244,7 @@ FarfetchDEggMoves:
 	db FORESIGHT
 	db MIRROR_MOVE
 	db AGILITY
+	db DETECT
 	db -1 ; end
 
 DoduoEggMoves:
@@ -393,8 +396,6 @@ StaryuEggMoves:
 	db -1
 
 MrMimeEggMoves:
-	db FUTURE_SIGHT
-	db HYPNOSIS
 	db MIMIC
 	db PSYCH_UP
 	db -1 ; end
@@ -502,6 +503,7 @@ HoothootEggMoves:
 	db MIRROR_MOVE
 	db PSYCHIC_M
 	db NIGHT_SHADE
+	db DREAM_EATER
 	db NIGHTMARE
 	db WHIRLWIND
 	db -1 ; end
@@ -543,6 +545,7 @@ CleffaEggMoves:
 	db BARRIER
 	db RECOVER
 	db MIRROR_COAT
+	db DREAM_EATER
 	db -1 ; end
 
 IgglybuffEggMoves:
@@ -552,6 +555,8 @@ IgglybuffEggMoves:
 	db BODY_SLAM
 	db TAKE_DOWN
 	db DOUBLE_EDGE
+	db DREAM_EATER
+	db NIGHTMARE
 	db -1 ; end
 
 TogepiEggMoves:
@@ -565,9 +570,10 @@ TogepiEggMoves:
 NatuEggMoves:
 	db HAZE
 	db DRILL_PECK
-	db QUICK_ATTACK
-	db FAINT_ATTACK
-	db STEEL_WING
+	db SKY_ATTACK
+	db LIGHT_SCREEN
+	db REFLECT
+	db BARRIER
 	db -1 ; end
 
 MareepEggMoves:
@@ -636,19 +642,24 @@ MurkrowEggMoves:
 	db QUICK_ATTACK
 	db MIRROR_MOVE
 	db WING_ATTACK
+	db MEAN_LOOK
 	db -1 ; end
 
 MisdreavusEggMoves:
 	db SCREECH
 	db DESTINY_BOND
+	db DREAM_EATER
+	db NIGHTMARE
 	db -1 ; end
 
 GirafarigEggMoves:
 	db TAKE_DOWN
 	db AMNESIA
-	db FORESIGHT
 	db FUTURE_SIGHT
-	db BEAT_UP
+	db DREAM_EATER
+	db NIGHTMARE
+	db HYPNOSIS
+	db NIGHT_SHADE
 	db -1 ; end
 
 PinecoEggMoves:
@@ -661,7 +672,6 @@ PinecoEggMoves:
 DunsparceEggMoves:
 	db BIDE
 	db ANCIENTPOWER
-	db ROCK_SLIDE
 	db BITE
 	db RAGE
 	db -1 ; end
@@ -669,7 +679,6 @@ DunsparceEggMoves:
 GligarEggMoves:
 	db METAL_CLAW
 	db WING_ATTACK
-	db ROCK_SLIDE
 	db COUNTER
 	db HYPER_FANG
 	db SUPER_FANG
@@ -738,7 +747,6 @@ SwinubEggMoves:
 	db -1 ; end
 
 CorsolaEggMoves:
-	db ROCK_SLIDE
 	db SAFEGUARD
 	db SCREECH
 	db MIST
@@ -778,11 +786,11 @@ SkarmoryEggMoves:
 HoundourEggMoves:
 	db FIRE_SPIN
 	db RAGE
-	db PURSUIT
-	db COUNTER
+	db DIG
 	db SPITE
 	db REVERSAL
 	db BEAT_UP
+	db NIGHTMARE
 	db -1 ; end
 
 PhanpyEggMoves:
@@ -793,10 +801,9 @@ PhanpyEggMoves:
 
 StantlerEggMoves:
 	db CURSE
-	db REFLECT
-	db LIGHT_SCREEN
 	db BODY_SLAM
 	db PSYCHIC_M
+	db NIGHTMARE
 	db -1 ; end
 
 TyrogueEggMoves:
@@ -823,7 +830,7 @@ ElekidEggMoves:
 	db BARRIER
 	db ROLLING_KICK
 	db MEDITATE
-	db SUBMISSION
+	db DETECT
 	db -1 ; end
 
 MagbyEggMoves:

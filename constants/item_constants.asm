@@ -217,7 +217,7 @@ ENDM
 
 ; see data/moves/tmhm_moves.asm for moves
 DEF TM01 EQU const_value
-	add_tm DYNAMICPUNCH ; bf (TODO: consider changing to literally any other fighting move) TM01
+	add_tm DYNAMICPUNCH ; bf
 	add_tm HEADBUTT     ; c0
 	add_tm CURSE        ; c1
 	add_tm ROLLOUT      ; c2
@@ -260,15 +260,15 @@ DEF TM01 EQU const_value
 	add_tm SWIFT        ; e7
 	add_tm DEFENSE_CURL ; e8
 	add_tm THUNDERPUNCH ; e9
-	add_tm DREAM_EATER  ; ea
-	add_tm DETECT       ; eb (TODO: consider changing to ROCK_SLIDE, TELEPORT, CRUNCH, or PURSUIT) TM43
+	add_tm BATON_PASS   ; ea (formerly DREAM_EATER) TM42
+	add_tm ROCK_SLIDE   ; eb (formerly DETECT) TM43
 	add_tm REST         ; ec
 	add_tm ATTRACT      ; ed
 	add_tm THIEF        ; ee
 	add_tm STEEL_WING   ; ef
 	add_tm FIRE_PUNCH   ; f0
 	add_tm FURY_CUTTER  ; f1
-	add_tm NIGHTMARE    ; f2 (TODO: consider changing to ROCK_SLIDE, TELEPORT, CRUNCH, or PURSUIT) TM50
+	add_tm PURSUIT      ; f2 (formerly NIGHTMARE) TM50
 DEF NUM_TMS EQU __tmhm_value__ - 1
 
 MACRO add_hm
