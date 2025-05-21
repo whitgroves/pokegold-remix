@@ -9,7 +9,6 @@ Below is a non-exhaustive list of changes as of this revision:
     - [Encounters](#encounters)
     - [Learnsets](#learnsets)
 - [Move Updates](#move-updates)
-    - [General Updates](#general-updates)
     - [Always Physical Moves](#always-physical-moves)
     - [Trapping Moves](#trapping-moves)
     - [Flavor Changes](#flavor-changes)
@@ -254,7 +253,6 @@ Most moves have had their types, effects, or other attributes changed to provide
 
 In rare cases (Sand Attack, Hyper Beam), moves have had their attack power or power points reduced to improve game balance around these changes.
 
-### General Updates
 - Comet Punch: *Normal* -> *Fighting*
 - Vicegrip: *Normal* -> *Dark*
 - Razor Wind: *Normal* -> *Flying* | *Charging Move* -> *30% Chance To Flinch* | *75%* -> *100% Accuracy*
@@ -347,6 +345,11 @@ As a side note, all *Ghost* moves are now special and all *Dark* moves are now p
 
 ### Trapping Moves
 Besides preventing a switch out, trapped pokemon will now have their speed cut as if they were paralyzed. This does not stack with the PRZ status.
+
+### Foresight
+Previously, *Foresight* allowed *Normal*- and *Fighting*-type moves to hit *Ghost*-type pokemon for neutral damage, while bypassing evasion checks for identified pokemon.
+
+Now, identified targets will take super effective damage from all types, unless they have an immunity other than *Normal*->*Ghost*.
 
 ### Flavor Changes
 These moves ignore STAB but have had their types changed for flavor; however, this may still impact the AI's choices.
