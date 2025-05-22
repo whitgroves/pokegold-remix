@@ -268,8 +268,14 @@ JanineText_ToxicSpeech:
 	para "It's TOXIC, a pow-"
 	line "erful poison that"
 
-	para "steadily saps the"
-	line "victim's HP."
+	para "steadily gets more"
+	line "potent every turn."
+
+	para "It can even affect"
+	line "rock, steel, and"
+	
+	para "other poison-type"
+	line "#MON!"
 	done
 
 JanineText_ApplyMyself:

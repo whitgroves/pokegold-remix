@@ -136,7 +136,7 @@ Moves:
 	move SELFDESTRUCT, EFFECT_SELFDESTRUCT,      200, NORMAL,       100,  5,   0
 	move EGG_BOMB,     EFFECT_NORMAL_HIT,        100, NORMAL,        75, 10,   0
 	move LICK,         EFFECT_LEECH_HIT,          30, GHOST,        100, 30,   0
-	move SMOG,         EFFECT_POISON_HIT,         30, POISON,        70, 20,  40
+	move SMOG,         EFFECT_POISON_HIT,         30, POISON,        85, 20,  40
 	move SLUDGE,       EFFECT_POISON_HIT,         65, POISON,       100, 20,  30
 	move BONE_CLUB,    EFFECT_FLINCH_HIT,         65, ROCK,         100, 20,  10
 	move FIRE_BLAST,   EFFECT_BURN_HIT,          120, FIRE,          85,  5,  10
@@ -152,7 +152,7 @@ Moves:
 	move HI_JUMP_KICK, EFFECT_JUMP_KICK,          85, FIGHTING,      90, 20,   0
 	move GLARE,        EFFECT_PARALYZE,            0, DARK,          75, 30,   0
 	move DREAM_EATER,  EFFECT_DREAM_EATER,       100, PSYCHIC_TYPE, 100, 10,   0
-	move POISON_GAS,   EFFECT_POISON,              0, POISON,        55, 40,   0
+	move POISON_GAS,   EFFECT_POISON,              0, POISON,        85, 40,   0
 	move BARRAGE,      EFFECT_MULTI_HIT,          15, NORMAL,        85, 20,   0
 	move LEECH_LIFE,   EFFECT_LEECH_HIT,          30, BUG,          100, 30,   0
 	move LOVELY_KISS,  EFFECT_SLEEP,               0, DARK,          75, 10,   0

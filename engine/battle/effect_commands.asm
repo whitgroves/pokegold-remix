@@ -3727,14 +3727,6 @@ BattleCommand_PoisonTarget:
 	ret
 
 BattleCommand_Poison:
-	ld hl, DoesntAffectText
-	ld a, [wTypeModifier]
-	and $7f
-	jp z, .failed
-
-	call CheckIfTargetIsPoisonStatusImmune
-	jp z, .failed
-
 	ld a, BATTLE_VARS_STATUS_OPP
 	call GetBattleVar
 	ld b, a
@@ -3781,8 +3773,19 @@ BattleCommand_Poison:
 	ld a, [wAttackMissed]
 	and a
 	jr nz, .failed
+
+; check toxic before type immunity
 	call .check_toxic
 	jr z, .toxic
+
+; otherwise, can't poison STEEL, POISON, ROCK, or GHOST types
+	ld hl, DoesntAffectText
+	ld a, [wTypeModifier]
+	and $7f
+	jp z, .failed
+
+	call CheckIfTargetIsPoisonStatusImmune
+	jp z, .failed
 
 	call .apply_poison
 	ld hl, WasPoisonedText

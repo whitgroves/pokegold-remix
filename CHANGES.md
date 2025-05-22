@@ -288,17 +288,19 @@ In rare cases (Sand Attack, Hyper Beam), moves have had their attack power or po
 - Fire Spin: *70%* -> *75% Accuracy* | *15*-> *20 PP*
 - Rock Throw: *90%* -> *100% Accuracy*
 - Dig: *Dig Effect* -> *Dig Effect, Hits Underground Targets* | *10* -> *15 PP*
+- Toxic: *Badly Poisons Target* -> *Badly Poisons Target, Bypasses Type Immunity*
 - Hypnosis: *20* -> *15 PP*
 - Rage: *Normal* -> *Dark*
 - Night Shade: *Flat Damage* -> *10% Chance To Sleep* | *Damage Equal To User's Level* -> *55 Power*
 - Lick: *30% Chance To Paralyze* -> *Leeches Health On Hit* | *20* -> *30 Power*
-- Smog: *20* -> *30 Power*
+- Smog: *20* -> *30 Power* | *70%* -> *85% Accuracy*
 - Bone Club: *Ground* -> *Rock* | *85%* -> *100% Accuracy*
 - Clamp: *35* -> *15 Power* | *10* -> *20 PP* | [*Always Physical*](#always-physical-moves)
 - Skull Bash: *Normal* -> *Rock* | *Charging Move* -> *30% Chance To Flinch* | *100* -> *70 Power*
 - Spike Cannon: *Normal* -> *Steel*
 - Constrict: *Normal* -> *Bug* | *10% Chance To Lower Speed* -> [*Trapping Move*](#trapping-moves) | *10* -> *15 Power* | *100%* -> *75% Accuracy* | *35* -> *20 PP*
 - Dream Eater: *15* -> *10 PP*
+- Poison Gas: *55% Chance To Poison* -> *85% Chance To Poison*
 - Leech Life: *20* -> *30 Power* | *15* -> *30 PP*
 - Sky Attack: *Charging Move* -> [*Skips Charging Turn Under Sun*](#sun)
 - Dizzy Punch: *Normal* -> *Psychic* | [*Always Physical*](#always-physical-moves)

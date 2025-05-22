@@ -632,8 +632,8 @@ DigDescription:
 	next "2nd turn: Attack@"
 
 ToxicDescription:
-	db   "A poison move with"
-	next "increasing damage.@"
+	db   "Badly poisons any"
+	next "target.@"
 
 ConfusionDescription:
 	db   "An attack that may"

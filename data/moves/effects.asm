@@ -1058,6 +1058,14 @@ TriAttack:
 	endmove
 
 Toxic:
+	checkobedience
+	usedmovetext
+	doturn
+	checkhit
+	checksafeguard
+	poison
+	endmove
+
 DoPoison:
 	checkobedience
 	usedmovetext
