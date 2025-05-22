@@ -2005,7 +2005,7 @@ ZapdosEvosAttacks:
 	db 1, THUNDERSHOCK
 	db 13, THUNDER_WAVE
 	db 25, AGILITY
-	db 37, RAIN_DANCE
+	db 37, PURSUIT
 	db 49, DRILL_PECK
 	db 61, LIGHT_SCREEN
 	db 73, THUNDER
@@ -2970,17 +2970,16 @@ HeracrossEvosAttacks:
 
 SneaselEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, SCRATCH
+	db 1, FURY_SWIPES
 	db 1, LEER
 	db 9, QUICK_ATTACK
-	db 12, FURY_SWIPES
 	db 17, SCREECH
 	db 19, FAINT_ATTACK
 	db 25, ICE_PUNCH
-	db 33, DOUBLE_TEAM
+	db 33, PURSUIT
 	db 41, AGILITY
 	db 49, SLASH
-	db 57, BEAT_UP
+	db 57, DOUBLE_TEAM
 	db 65, BLIZZARD
 	db 0 ; no more level-up moves
 

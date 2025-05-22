@@ -172,6 +172,7 @@ GrowlitheEggMoves:
 	db DIG
 	db FIRE_SPIN
 	db SUBMISSION
+	db PURSUIT
 	db -1 ; end
 
 PoliwagEggMoves:
