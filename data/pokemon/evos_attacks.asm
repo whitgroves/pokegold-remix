@@ -601,7 +601,7 @@ VileplumeEvosAttacks:
 	db 14, POISONPOWDER
 	db 16, STUN_SPORE
 	db 18, SLEEP_POWDER
-	db 24, TOXIC
+	db 24, FAINT_ATTACK
 	db 29, GIGA_DRAIN
 	db 35, MOONLIGHT
 	db 44, SPORE
