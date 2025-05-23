@@ -833,7 +833,7 @@ PoliwhirlEvosAttacks:
 	db 19, BUBBLEBEAM
 	db 25, DOUBLESLAP
 	db 27, RAIN_DANCE
-	db 35, BODY_SLAM
+	db 35, MEGA_PUNCH
 	db 43, BELLY_DRUM
 	db 51, HYDRO_PUMP
 	db 0 ; no more level-up moves
@@ -2552,8 +2552,8 @@ PolitoedEvosAttacks:
 	db 17, MUD_SLAP
 	db 19, BUBBLEBEAM
 	db 25, SING
-	db 27, RAIN_DANCE
-	db 35, AURORA_BEAM
+	db 27, BELLY_DRUM
+	db 35, BATON_PASS
 	db 43, BEAT_UP
 	db 51, PERISH_SONG
 	db 0 ; no more level-up moves
