@@ -1836,58 +1836,54 @@ EeveeEvosAttacks:
 	db EVOLVE_HAPPINESS, TR_MORNDAY, ESPEON
 	db EVOLVE_HAPPINESS, TR_NITE, UMBREON
 	db 0 ; no more evolutions
-	db 1, TACKLE
 	db 1, TAIL_WHIP
-	db 8, SAND_ATTACK
-	db 16, GROWL
-	db 23, QUICK_ATTACK
-	db 30, BITE
-	db 36, BATON_PASS
+	db 1, TACKLE
+	db 8, GROWL
+	db 16, QUICK_ATTACK
+	db 23, FORESIGHT
+	db 30, SWIFT
+	db 36, MIMIC
 	db 42, TAKE_DOWN
 	db 48, CONVERSION
 	db 0 ; no more level-up moves
 
 VaporeonEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, BUBBLE
-	db 1, TAIL_WHIP
-	db 8, ICY_WIND
-	db 16, WATER_GUN
+	db 1, MIST
+	db 1, WATER_GUN
+	db 8, POWDER_SNOW
+	db 16, QUICK_ATTACK
 	db 23, BUBBLEBEAM
-	db 30, BITE
-	db 36, AURORA_BEAM
-	db 42, RAIN_DANCE
-	db 47, ACID_ARMOR
-	db 52, HYDRO_PUMP
+	db 30, AURORA_BEAM
+	db 36, ACID_ARMOR
+	db 42, HYDRO_PUMP
+	db 48, BLIZZARD
 	db 0 ; no more level-up moves
 
 JolteonEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, TACKLE
-	db 1, TAIL_WHIP
-	db 8, SAND_ATTACK
-	db 16, THUNDERSHOCK
-	db 23, QUICK_ATTACK
-	db 30, SPARK
-	db 36, DOUBLE_KICK
-	db 42, PIN_MISSILE
-	db 47, RAIN_DANCE
-	db 52, THUNDER
-	db 59, EXTREMESPEED
+	db 1, THUNDER_WAVE
+	db 1, THUNDERSHOCK
+	db 8, PIN_MISSILE
+	db 16, QUICK_ATTACK
+	db 23, SPARK
+	db 30, DOUBLE_KICK
+	db 36, DOUBLE_TEAM
+	db 42, EXTREMESPEED
+	db 48, THUNDER
 	db 0 ; no more level-up moves
 
 FlareonEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, TACKLE
-	db 1, TAIL_WHIP
-	db 8, SAND_ATTACK
-	db 16, EMBER
-	db 23, QUICK_ATTACK
+	db 1, SMOKESCREEN
+	db 1, EMBER
+	db 8, FIRE_SPIN
+	db 16, QUICK_ATTACK
+	db 23, FLAME_WHEEL
 	db 30, BITE
-	db 36, FLAME_WHEEL
-	db 42, SUNNY_DAY
-	db 47, FIRE_SPIN
-	db 52, FLAMETHROWER
+	db 36, GROWTH
+	db 42, FLAMETHROWER
+	db 48, FIRE_BLAST
 	db 0 ; no more level-up moves
 
 PorygonEvosAttacks:
@@ -2699,32 +2695,28 @@ QuagsireEvosAttacks:
 
 EspeonEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, TACKLE
-	db 1, TAIL_WHIP
-	db 8, SAND_ATTACK
-	db 16, CONFUSION
-	db 23, QUICK_ATTACK
-	db 30, SWIFT
-	db 36, PSYBEAM
-	db 42, PSYCH_UP
-	db 47, PSYCHIC_M
-	db 52, MORNING_SUN
-	db 59, DOUBLE_TEAM
+	db 1, PSYCH_UP
+	db 1, CONFUSION
+	db 8, DISABLE
+	db 16, QUICK_ATTACK
+	db 23, PSYBEAM
+	db 30, MORNING_SUN
+	db 36, BARRIER
+	db 42, PSYCHIC_M
+	db 48, MIRROR_COAT
 	db 0 ; no more level-up moves
 
 UmbreonEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, TACKLE
-	db 1, TAIL_WHIP
-	db 8, SAND_ATTACK
-	db 16, CONFUSE_RAY
-	db 23, QUICK_ATTACK
-	db 30, NIGHT_SHADE
+	db 1, MEAN_LOOK
+	db 1, PURSUIT
+	db 8, BIDE
+	db 16, QUICK_ATTACK
+	db 23, NIGHT_SHADE
+	db 30, MOONLIGHT
 	db 36, FAINT_ATTACK
-	db 42, MEAN_LOOK
-	db 47, SHADOW_BALL
-	db 52, MOONLIGHT
-	db 59, PERISH_SONG
+	db 42, SHADOW_BALL
+	db 48, TOXIC
 	db 0 ; no more level-up moves
 
 MurkrowEvosAttacks:
