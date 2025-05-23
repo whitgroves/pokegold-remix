@@ -134,8 +134,8 @@ VenonatEggMoves:
 
 DiglettEggMoves:
 	db FAINT_ATTACK
-	db SCREECH
 	db ANCIENTPOWER
+	db SPIKES
 	db PURSUIT
 	db BEAT_UP
 	db -1 ; end

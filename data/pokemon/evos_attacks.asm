@@ -671,27 +671,27 @@ VenomothEvosAttacks:
 DiglettEvosAttacks:
 	db EVOLVE_LEVEL, 26, DUGTRIO
 	db 0 ; no more evolutions
+	db 1, SAND_ATTACK
 	db 1, SCRATCH
-	db 5, GROWL
+	db 5, MUD_SLAP
 	db 9, MAGNITUDE
 	db 17, DIG
-	db 25, MUD_SLAP
-	db 33, SLASH
-	db 41, EARTHQUAKE
-	db 49, FISSURE
+	db 25, SLASH
+	db 33, EARTHQUAKE
+	db 41, FISSURE
 	db 0 ; no more level-up moves
 
 DugtrioEvosAttacks:
 	db 0 ; no more evolutions
+	db 1, SAND_ATTACK
 	db 1, SCRATCH
-	db 5, GROWL
+	db 5, MUD_SLAP
 	db 9, MAGNITUDE
 	db 17, DIG
-	db 25, MUD_SLAP
-	db 37, SLASH
-	db 49, EARTHQUAKE
-	db 61, FISSURE
-	db 70, TRI_ATTACK
+	db 25, SLASH
+	db 26, BEAT_UP
+	db 37, EARTHQUAKE
+	db 49, FISSURE
 	db 0 ; no more level-up moves
 
 MeowthEvosAttacks:
