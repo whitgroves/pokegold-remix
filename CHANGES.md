@@ -205,6 +205,8 @@ Notably, several unique or otherwise unobtainable pokemon are now available in n
 
 Tables for every route and method are listed in the [Encounters.ods](./Encounters.ods) spreadsheet.
 
+In very rare cases, the catch rate has been increased as well.
+
 ### Learnsets
 Most learnsets have been updated to give each mon a unique kit that sets them apart for a playthrough. 
 

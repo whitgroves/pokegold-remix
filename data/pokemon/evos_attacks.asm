@@ -2856,8 +2856,8 @@ GligarEvosAttacks:
 	db 13, VICEGRIP
 	db 20, QUICK_ATTACK
 	db 28, TWINEEDLE
-	db 34, SLASH
-	db 41, ROCK_SLIDE
+	db 34, CLAMP
+	db 41, SLASH
 	db 46, RAZOR_WIND
 	db 52, GUILLOTINE
 	db 0 ; no more level-up moves
