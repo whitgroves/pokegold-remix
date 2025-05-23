@@ -840,14 +840,15 @@ PoliwhirlEvosAttacks:
 
 PoliwrathEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, SUBMISSION
-	db 7, MIND_READER
+	db 1, BUBBLE
+	db 7, HYPNOSIS
 	db 13, WATER_GUN
+	db 17, MUD_SLAP
 	db 19, BUBBLEBEAM
-	db 26, KARATE_CHOP
-	db 27, RAIN_DANCE
-	db 35, SEISMIC_TOSS
-	db 43, DETECT
+	db 25, KARATE_CHOP
+	db 27, MIND_READER
+	db 35, DIZZY_PUNCH
+	db 43, BELLY_DRUM
 	db 51, CROSS_CHOP
 	db 0 ; no more level-up moves
 
@@ -2554,10 +2555,10 @@ PolitoedEvosAttacks:
 	db 13, WATER_GUN
 	db 17, MUD_SLAP
 	db 19, BUBBLEBEAM
-	db 26, ICY_WIND
+	db 25, SING
 	db 27, RAIN_DANCE
-	db 35, BATON_PASS
-	db 43, BELLY_DRUM
+	db 35, AURORA_BEAM
+	db 43, BEAT_UP
 	db 51, PERISH_SONG
 	db 0 ; no more level-up moves
 
