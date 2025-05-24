@@ -222,7 +222,7 @@ DEF TM01 EQU const_value
 	add_tm CURSE        ; c1
 	add_tm ROLLOUT      ; c2
 	const ITEM_C3       ; c3
-	add_tm SONICBOOM    ; c4 (formerly ROAR, then TRI_ATTACK) TM05
+	add_tm SONICBOOM    ; c4 (formerly ROAR) TM05
 	add_tm TOXIC        ; c5
 	add_tm THUNDERBOLT  ; c6 (formerly ZAP_CANNON) TM07
 	add_tm ROCK_SMASH   ; c7

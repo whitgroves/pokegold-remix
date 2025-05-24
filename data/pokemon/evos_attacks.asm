@@ -1705,10 +1705,9 @@ ScytherEvosAttacks:
 	db EVOLVE_ITEM, UP_GRADE, SCIZOR
 	db 0 ; no more evolutions
 	db 1, QUICK_ATTACK
-	db 1, SHARPEN
-	db 6, FALSE_SWIPE
-	db 12, PURSUIT
-	db 18, SWIFT
+	db 6, SHARPEN
+	db 12, FALSE_SWIPE
+	db 18, PURSUIT
 	db 24, CUT
 	db 30, AGILITY
 	db 36, SLASH
@@ -2922,10 +2921,9 @@ QwilfishEvosAttacks:
 ScizorEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, SLAM
-	db 1, HARDEN
-	db 6, FALSE_SWIPE
-	db 12, VICEGRIP
-	db 18, SWIFT
+	db 6, HARDEN
+	db 12, FALSE_SWIPE
+	db 18, VICEGRIP
 	db 24, METAL_CLAW
 	db 30, SWORDS_DANCE
 	db 36, AGILITY

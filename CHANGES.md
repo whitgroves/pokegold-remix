@@ -104,7 +104,7 @@ These mons have had their types updated:
 - Kangaskhan: *Normal* -> *Normal/Dragon*
 - Seadra: *Water* -> *Water/Dragon*
 - Mr. Mime: *Psychic* -> *Psychic/Normal*
-- Scyther: *Bug/Flying* -> *Bug/Normal*
+- Scyther: *Bug/Flying* -> *Bug*
 - Jynx: *Ice/Psychic* -> *Ice/Ghost*
 - Electabuzz: *Electric* -> *Electric/Fighting*
 - Magmar: *Fire* -> *Fire/Poison*
