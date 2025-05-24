@@ -1610,11 +1610,12 @@ HorseaEvosAttacks:
 	db EVOLVE_LEVEL, 32, SEADRA
 	db 0 ; no more evolutions
 	db 1, BUBBLE
-	db 8, SMOKESCREEN
-	db 15, LEER
-	db 22, WATER_GUN
+	db 1, SMOKESCREEN
+	db 8, WATER_GUN
+	db 15, AGILITY
+	db 22, BUBBLEBEAM
 	db 29, TWISTER
-	db 36, AGILITY
+	db 36, AURORA_BEAM
 	db 43, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
@@ -1623,12 +1624,13 @@ SeadraEvosAttacks:
 	db EVOLVE_ITEM, DRAGON_SCALE, KINGDRA
 	db 0 ; no more evolutions
 	db 1, BUBBLE
-	db 8, SMOKESCREEN
-	db 15, LEER
-	db 22, WATER_GUN
+	db 1, SMOKESCREEN
+	db 8, WATER_GUN
+	db 15, AGILITY
+	db 22, BUBBLEBEAM
 	db 29, TWISTER
-	db 40, AGILITY
-	db 51, HYDRO_PUMP
+	db 40, AURORA_BEAM
+	db 48, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
 GoldeenEvosAttacks:
@@ -3169,12 +3171,13 @@ HoundoomEvosAttacks:
 KingdraEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, BUBBLE
-	db 8, SMOKESCREEN
-	db 15, LEER
-	db 22, WATER_GUN
+	db 1, SMOKESCREEN
+	db 8, WATER_GUN
+	db 15, AGILITY
+	db 22, BUBBLEBEAM
 	db 29, TWISTER
-	db 40, AGILITY
-	db 51, HYDRO_PUMP
+	db 40, AURORA_BEAM
+	db 48, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
 PhanpyEvosAttacks:

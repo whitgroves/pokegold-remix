@@ -375,11 +375,10 @@ KangaskhanEggMoves:
 
 HorseaEggMoves:
 	db FLAIL
-	db AURORA_BEAM
+	db ICE_BEAM
 	db OCTAZOOKA
-	db DISABLE
-	db SPLASH
 	db DRAGON_RAGE
+	db DRAGONBREATH
 	db -1 ; end
 
 GoldeenEggMoves:
