@@ -633,7 +633,11 @@ YanmaEggMoves:
 WooperEggMoves:
 	db BODY_SLAM
 	db ANCIENTPOWER
-	db SAFEGUARD
+	db MAGNITUDE
+	db CURSE
+	db BUBBLEBEAM
+	db SNORE
+	db SLEEP_TALK
 	db -1 ; end
 
 MurkrowEggMoves:

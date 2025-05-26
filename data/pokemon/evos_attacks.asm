@@ -246,7 +246,7 @@ PidgeotEvosAttacks:
 	db 33, WING_ATTACK
 	db 46, AGILITY
 	db 55, RAZOR_WIND
-	db 61, MIRROR_MOVE
+	db 61, SKY_ATTACK
 	db 0 ; no more level-up moves
 
 RattataEvosAttacks:
@@ -287,6 +287,7 @@ SpearowEvosAttacks:
 	db 31, MIRROR_MOVE
 	db 37, DRILL_PECK
 	db 43, AGILITY
+	db 51, BATON_PASS
 	db 0 ; no more level-up moves
 
 FearowEvosAttacks:
@@ -299,6 +300,7 @@ FearowEvosAttacks:
 	db 32, MIRROR_MOVE
 	db 40, DRILL_PECK
 	db 47, AGILITY
+	db 55, SKY_ATTACK
 	db 0 ; no more level-up moves
 
 EkansEvosAttacks:
@@ -2646,8 +2648,8 @@ SunfloraEvosAttacks:
 	db 19, SUNNY_DAY
 	db 24, SOLARBEAM
 	db 31, MORNING_SUN
-	db 38, BATON_PASS
-	db 46, PETAL_DANCE
+	db 38, PETAL_DANCE
+	db 46, FIRE_BLAST
 	db 0 ; no more level-up moves
 
 YanmaEvosAttacks:
@@ -2673,10 +2675,9 @@ WooperEvosAttacks:
 	db 1, MUD_SLAP
 	db 11, SLAM
 	db 21, AMNESIA
-	db 24, BUBBLEBEAM
+	db 24, MIST
 	db 31, EARTHQUAKE
 	db 41, RAIN_DANCE
-	db 51, MIST
 	db 51, HAZE
 	db 0 ; no more level-up moves
 
@@ -2687,10 +2688,9 @@ QuagsireEvosAttacks:
 	db 1, MUD_SLAP
 	db 11, SLAM
 	db 23, AMNESIA
-	db 27, BUBBLEBEAM
+	db 27, MIST
 	db 35, EARTHQUAKE
 	db 47, RAIN_DANCE
-	db 59, MIST
 	db 59, HAZE
 	db 0 ; no more level-up moves
 
