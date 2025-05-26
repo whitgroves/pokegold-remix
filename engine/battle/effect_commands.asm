@@ -205,11 +205,9 @@ BattleCommand_CheckTurn:
 	bit FRZ, [hl]
 	jr z, .not_frozen
 
-	; Flame Wheel and Sacred Fire thaw the user.
-	ld a, [wCurPlayerMove]
-	cp FLAME_WHEEL
-	jr z, .not_frozen
-	cp SACRED_FIRE
+	; Any fire type move will thaw the user.
+	ld a, [wPlayerMoveStructType]
+	cp FIRE
 	jr z, .not_frozen
 
 	ld hl, FrozenSolidText
@@ -376,8 +374,7 @@ CheckEnemyTurn:
 	res SUBSTATUS_RECHARGE, [hl]
 	ld hl, MustRechargeText
 	call StdBattleTextbox
-	call CantMove
-	jp EndTurn
+	jp .cant_move
 
 .no_recharge
 
@@ -419,8 +416,7 @@ CheckEnemyTurn:
 	jr z, .not_asleep
 	cp SLEEP_TALK
 	jr z, .not_asleep
-	call CantMove
-	jp EndTurn
+	jp .cant_move
 
 .not_asleep
 
@@ -428,17 +424,14 @@ CheckEnemyTurn:
 	bit FRZ, [hl]
 	jr z, .not_frozen
 
-	; Flame Wheel and Sacred Fire thaw the user.
-	ld a, [wCurEnemyMove]
-	cp FLAME_WHEEL
-	jr z, .not_frozen
-	cp SACRED_FIRE
+	; Any fire type move will thaw the user.
+	ld a, [wEnemyMoveStructType]
+	cp FIRE
 	jr z, .not_frozen
 
 	ld hl, FrozenSolidText
 	call StdBattleTextbox
-	call CantMove
-	jp EndTurn
+	jp .cant_move
 
 .not_frozen
 
@@ -449,9 +442,7 @@ CheckEnemyTurn:
 	res SUBSTATUS_FLINCHED, [hl]
 	ld hl, FlinchedText
 	call StdBattleTextbox
-
-	call CantMove
-	jp EndTurn
+	jp .cant_move
 
 .not_flinched
 
@@ -502,8 +493,7 @@ CheckEnemyTurn:
 	jr nc, .not_confused
 
 	call HitConfusion
-	call CantMove
-	jp EndTurn
+	jp .cant_move
 
 .not_confused
 
@@ -525,8 +515,7 @@ CheckEnemyTurn:
 
 	ld hl, InfatuationText
 	call StdBattleTextbox
-	call CantMove
-	jp EndTurn
+	jp .cant_move
 
 .not_infatuated
 
@@ -541,9 +530,7 @@ CheckEnemyTurn:
 	jr nz, .no_disabled_move
 
 	call MoveDisabled
-
-	call CantMove
-	jp EndTurn
+	jp .cant_move
 
 .no_disabled_move
 
@@ -558,9 +545,9 @@ CheckEnemyTurn:
 
 	ld hl, FullyParalyzedText
 	call StdBattleTextbox
-	call CantMove
 
-	; fallthrough
+.cant_move: ; it had to be this way
+	call CantMove
 
 EndTurn:
 	ld a, $1
@@ -4059,6 +4046,8 @@ BattleCommand_ParalyzeTarget:
 	ld [wNumHits], a
 	call CheckStatusHit ; check for sub, existing status, type immunity, side effect chance, and safeguard
 	ret nz
+	call CheckMoveTypeMatchesTarget ; Don't paralyze an Electric-type with an Electric move
+	ret z
 	call GetOpponentItem
 	ld a, b
 	cp HELD_PREVENT_PARALYZE
@@ -5823,6 +5812,8 @@ BattleCommand_Paralyze:
 	ld a, [wTypeModifier]
 	and $7f
 	jr z, .didnt_affect
+	call CheckMoveTypeMatchesTarget ; Don't paralyze an Electric-type with an Electric move
+	jr z, .didnt_affect
 	call GetOpponentItem
 	ld a, b
 	cp HELD_PREVENT_PARALYZE
@@ -5890,24 +5881,32 @@ BattleCommand_Paralyze:
 	jp PrintDoesntAffect
 
 CheckMoveTypeMatchesTarget:
-; Compare move type to opponent type.
-; Return z if matching the opponent type,
-; unless the move is Tri Attack.
+; Compare move type to opponent type for FIRE, ICE, and ELECTRIC moves.
+; Return z if the move is another type, or matches the opponent type.
 
 	push hl
-
 	ld hl, wEnemyMonType1
 	ldh a, [hBattleTurn]
 	and a
 	jr z, .ok
 	ld hl, wBattleMonType1
+
 .ok
-
-	ld a, BATTLE_VARS_MOVE
+	ld a, BATTLE_VARS_MOVE_TYPE
 	call GetBattleVar
-	cp TRI_ATTACK
-	jr z, .tri_attack
+	cp FIRE
+	jr z, .match
+	cp ELECTRIC
+	jr z, .match
+	cp ICE
+	jr z, .match
 
+; no match, return nz
+	ld a, 1
+	and a
+	jr .return
+
+.match
 	cp [hl]
 	jr z, .return
 
@@ -5915,12 +5914,6 @@ CheckMoveTypeMatchesTarget:
 	cp [hl]
 
 .return
-	pop hl
-	ret
-
-.tri_attack
-	ld a, 1
-	and a
 	pop hl
 	ret
 

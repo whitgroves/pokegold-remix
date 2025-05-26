@@ -70,7 +70,7 @@ TypeMatchups:
 	db POISON,       GHOST,        NOT_VERY_EFFECTIVE
 	db POISON,       DRAGON,       SUPER_EFFECTIVE
 	db POISON,       DARK,         NOT_VERY_EFFECTIVE
-	db POISON,       STEEL,        NO_EFFECT
+	db POISON,       STEEL,        NOT_VERY_EFFECTIVE
 	db GROUND,       FIRE,         SUPER_EFFECTIVE
 	db GROUND,       ELECTRIC,     SUPER_EFFECTIVE
 	db GROUND,       GRASS,        NOT_VERY_EFFECTIVE

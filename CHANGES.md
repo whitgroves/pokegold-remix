@@ -26,7 +26,7 @@ Below is a non-exhaustive list of changes as of this revision:
 ## Type Chart
 The goal here was to rebalance the chart so otherwise "isolated" types (e.g., *Ghost*, *Dark*) feel more interactive while making "weaker" types (e.g. *Bug*) less so by giving them key advantages.
 
-To that end, please pay close attention to *Ice*, *Bug*, *Ghost*, *Dragon*, and *Dark*, as many well-known interactions have changed (e.g., *Dragon* now resists *Ice*, *Dark* is no longer immune to *Psychic*).
+To that end, please review the chart carefully as many well-known interactions have changed (e.g., *Dragon* now resists *Ice*, *Dark* is no longer immune to *Psychic*).
 
 |*→Defending→*|NORMAL|FIRE|WATER|ELECTRIC|GRASS|ICE|FIGHTING|POISON|GROUND|FLYING|PSYCHIC|BUG|ROCK|GHOST|DRAGON|DARK|STEEL
 |:--|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
@@ -38,7 +38,7 @@ ELECTRIC|||2|0.5|0.5|0.5|||0|2|0.5|2|0.5||0.5|2|2
 GRASS||0.5|2||0.5|||0.5|2|0.5||0.5|2||||0.5
 ICE||0.5|0.5|2|2|0.5|0.5||2|2||2|||0.5||0.5
 FIGHTING|2||0.5|||2|0.5|||0.5|0.5|0.5|2|0.5||2|2
-POISON|||2||2||0.5|0.5|0.5|||2|0.5|0.5|2|0.5|0
+POISON|||2||2||0.5|0.5|0.5|||2|0.5|0.5|2|0.5|0.5
 GROUND||2||2|0.5||2|2||0||0.5|2||||2
 FLYING|||||2||2|||||2|0.5||||0.5
 PSYCHIC|||||||2|2|||0.5|0.5|||0.5|0.5|
@@ -429,13 +429,12 @@ Weathers cause new interactions in addition to their old ones (e.g., Rain boosti
 #### Sand
 - *Rock*, *Ground*, and *Dark* moves are more effective
 - *Grass*, *Flying*, and *Electric* moves are less effective
-- *Ghost* and *Dragon* Pokemon are immune to Sandstorm
+- *Psychic*, *Ghost*, and *Dragon* Pokemon are immune to Sandstorm
 - *Solarbeam* behaves as if under Rain
 - *Thunder* behaves as if under Sun
 
 ### Other
-- *Fire*-type moves can no longer defrost through *Safeguard*
-- *Ghost*-type pokemon are now immune to *Spikes*
+- *Ghost*-type pokemon are now immune to *Spikes*.
 - The enemy AI can only steal berries using *Thief*. Use by the player is unaffected.
 - Wild Pokemon with their evasion lowered cannot flee, and will have twice the catch rate.
 - Moves that drop evasion (*Powder Snow*, *Sweet Scent*) always hit.
@@ -486,6 +485,12 @@ The Mahogany Mart carries these items once the Rocket Hideout is cleared and Pry
 - Clair gives the Risingbadge immediately upon defeat, but the player must still complete the dragon user challenge to receive TM24.
 - The dragon user challenge has changed; check the center of the cavern first.
 
+### Status Ailments
+- *Fire*-type moves can no longer defrost enemies through their own *Safeguard*.
+- Sleep lasts for a maximum of 5 turns instead of 7.
+- Although not immune to *Poison*-type damage, *Steel*, *Poison*, *Rock*, and *Ghost* type pokemon are immune to the poison status, unless applied by *Toxic*.
+- Any *Fire*-type move, not just *Flame Wheel*, will now defrost the user.
+
 ### Other
 - Since Remoraid are no longer found on Route 44, Sailor Huey (lighthouse) activates the Remoraid swarm on Route 40 instead.
 - Headbutting trees in cities (Ecruteak) can now spawn wild encounters.
@@ -495,7 +500,5 @@ The Mahogany Mart carries these items once the Rocket Hideout is cleared and Pry
 - Using *Sweet Scent* in the field will always pull a <=20% encounter.
 - The chance to receive a random incoming call in the overworld is now 12.5% instead of 50%.
 - Phone calls are more meaningful; most incoming and outgoing calls will trigger a rematch, swarm, or rare mon sighting.
-- Sleep lasts for a maximum of 5 turns instead of 7.
-- In addition to *Steel* and *Poison* types, *Rock* and *Ghost* type pokemon are now immune to the PSN status.
 - The Hyper Potion in the hideout is now an Up-Grade.
 - The likelihood of the player's mon to hit itself in confusion now scales with happiness rather than a 50/50 chance.

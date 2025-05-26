@@ -1673,7 +1673,7 @@ HandleWeather:
 	and a
 	jr z, .ok
 	ld hl, wEnemyMonType1
-.ok ; TODO -- create an immune to sandstorm table and use IsInArray instead
+.ok ; TODO -- create an immune to sandstorm table and use IsInArray instead (scoring.asm does this, check there)
 	ld a, [hli]
 	cp ROCK
 	ret z
@@ -1684,6 +1684,8 @@ HandleWeather:
 	cp GHOST
 	ret z
 	cp DRAGON
+	ret z
+	cp PSYCHIC_TYPE
 	ret z
 
 	ld a, [hl]
@@ -1696,6 +1698,8 @@ HandleWeather:
 	cp GHOST
 	ret z
 	cp DRAGON
+	ret z
+	cp PSYCHIC_TYPE
 	ret z
 
 	call SwitchTurnCore

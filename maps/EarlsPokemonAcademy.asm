@@ -133,6 +133,9 @@ AcademyNotebook:
 	yesorno
 	iffalse .Done
 	writetext AcademyNotebookText3
+	yesorno
+	iffalse .Done
+	writetext AcademyNotebookText4
 	waitbutton
 .Done:
 	closetext
@@ -322,8 +325,12 @@ AcademyBurnText:
 	para "A burn lingers"
 	line "after battle."
 
-	para "Use a BURN HEAL as"
-	line "the cure."
+	para "Fire-type #MON"
+	line "can't get burned."
+
+	para "But for the rest,"
+	line "use a BURN HEAL as"
+	cont "the cure."
 	done
 
 AcademyFreezeText:
@@ -334,7 +341,13 @@ AcademyFreezeText:
 	para "It remains frozen"
 	line "after battle."
 
-	para "Thaw it out with"
+	para "If your #MON"
+	line "isn't Ice-type,"
+
+	para "Or knows a fire-"
+	line "type move,"
+
+	para "thaw it out with"
 	line "an ICE HEAL."
 	done
 
@@ -356,8 +369,8 @@ AcademyNotebookText1:
 	line "# BALL, weaken"
 	cont "the target first."
 
-	para "A poisoned or"
-	line "burned #MON is"
+	para "A sleeping or"
+	line "frozen #MON is"
 	cont "easier to catch."
 
 	para "Keep reading?"
@@ -391,13 +404,27 @@ AcademyNotebookText3:
 	para "GYMS and defeat"
 	line "other trainers."
 
+	para "Keep reading?"
+	done
+
+AcademyNotebookText4:
+	text "In battle, there"
+	line "are moves that"
+
+	para "will change your"
+	line "#MON's status."
+
+	para "Whether that"
+	line "happens depends"
+
+	para "on your #MON's"
+	line "type and the"
+
+	para "conditions of the"
+	line "battlefield…"
+
 	para "The next page"
 	line "is… Blank!"
-
-	para "Boy: E-he-he…"
-
-	para "I haven't written"
-	line "anymore…"
 	done
 
 AcademyStickerMachineText:
