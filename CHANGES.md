@@ -107,7 +107,6 @@ These mons have had their types updated:
 - Scyther: *Bug/Flying* -> *Bug*
 - Jynx: *Ice/Psychic* -> *Ice/Ghost*
 - Electabuzz: *Electric* -> *Electric/Fighting*
-- Magmar: *Fire* -> *Fire/Poison*
 - Pinsir: *Bug* -> *Bug/Dark*
 - Tauros: *Normal* -> *Normal/Fighting*
 - Gyarados: *Water* -> *Water/Dragon*
