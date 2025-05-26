@@ -1780,14 +1780,13 @@ TaurosEvosAttacks:
 	db 4, RAGE
 	db 8, STOMP
 	db 13, HEADBUTT
-	db 16, HORN_ATTACK
-	db 21, DOUBLE_KICK
-	db 26, PURSUIT
-	db 34, BODY_SLAM
+	db 16, DOUBLE_KICK
+	db 21, PURSUIT
+	db 26, BODY_SLAM
+	db 34, HORN_ATTACK
 	db 43, TAKE_DOWN
 	db 52, SUBMISSION
 	db 61, THRASH
-	db 70, HORN_DRILL
 	db 0 ; no more level-up moves
 
 MagikarpEvosAttacks:
@@ -2250,7 +2249,7 @@ HoothootEvosAttacks:
 	db 6, HYPNOSIS
 	db 11, CONFUSION
 	db 16, CONFUSE_RAY
-	db 22, SWIFT
+	db 22, PSYBEAM
 	db 28, REST
 	db 34, SLEEP_TALK
 	db 42, MIRROR_MOVE
@@ -2264,9 +2263,8 @@ NoctowlEvosAttacks:
 	db 6, HYPNOSIS
 	db 11, CONFUSION
 	db 16, CONFUSE_RAY
-	db 20, WING_ATTACK
-	db 25, NIGHT_SHADE
-	db 33, PSYBEAM
+	db 25, WING_ATTACK
+	db 33, NIGHT_SHADE
 	db 41, DREAM_EATER
 	db 49, NIGHTMARE
 	db 0 ; no more level-up moves
@@ -2302,27 +2300,27 @@ LedianEvosAttacks:
 SpinarakEvosAttacks:
 	db EVOLVE_LEVEL, 22, ARIADOS
 	db 0 ; no more evolutions
-	db 1, POISON_STING
+	db 1, CONSTRICT
 	db 6, STRING_SHOT
-	db 11, CONSTRICT
-	db 17, NIGHT_SHADE
-	db 23, LEECH_LIFE
+	db 11, BITE
+	db 17, LEECH_LIFE
+	db 23, BIDE
 	db 30, HYPER_FANG
 	db 37, SPIDER_WEB
-	db 45, TWINEEDLE
+	db 45, NIGHT_SHADE
 	db 53, SUPER_FANG
 	db 0 ; no more level-up moves
 
 AriadosEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, POISON_STING
+	db 1, CONSTRICT
 	db 6, STRING_SHOT
-	db 11, CONSTRICT
-	db 17, NIGHT_SHADE
-	db 25, LEECH_LIFE
+	db 11, BITE
+	db 17, LEECH_LIFE
+	db 25, BIDE
 	db 34, HYPER_FANG
 	db 43, SPIDER_WEB
-	db 53, TWINEEDLE
+	db 53, NIGHT_SHADE
 	db 63, SUPER_FANG
 	db 0 ; no more level-up moves
 
@@ -3033,28 +3031,28 @@ SwinubEvosAttacks:
 	db EVOLVE_LEVEL, 33, PILOSWINE
 	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 1, POWDER_SNOW
-	db 5, MUD_SLAP
+	db 1, GROWL
+	db 5, POWDER_SNOW
 	db 10, MAGNITUDE
 	db 19, ENDURE
 	db 28, ICY_WIND
-	db 37, TAKE_DOWN
-	db 46, BLIZZARD
-	db 55, AMNESIA
+	db 35, AMNESIA
+	db 44, EARTHQUAKE
+	db 53, BLIZZARD
 	db 0 ; no more level-up moves
 
 PiloswineEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 1, POWDER_SNOW
-	db 5, MUD_SLAP
+	db 1, GROWL
+	db 5, POWDER_SNOW
 	db 10, MAGNITUDE
 	db 19, ENDURE
 	db 28, ICY_WIND
 	db 33, HORN_ATTACK
-	db 42, SUBMISSION
-	db 56, BLIZZARD
-	db 70, AMNESIA
+	db 37, TAKE_DOWN
+	db 50, EARTHQUAKE
+	db 61, BLIZZARD
 	db 0 ; no more level-up moves
 
 CorsolaEvosAttacks:
@@ -3149,11 +3147,11 @@ HoundourEvosAttacks:
 	db 1, LEER
 	db 1, BITE
 	db 7, EMBER
-	db 13, ROAR
-	db 20, PURSUIT
+	db 13, PURSUIT
+	db 20, ROAR
 	db 27, FIRE_SPIN
-	db 35, FLAMETHROWER
-	db 43, CRUNCH
+	db 35, CRUNCH
+	db 43, FLAMETHROWER
 	db 0 ; no more level-up moves
 
 HoundoomEvosAttacks:
@@ -3161,11 +3159,11 @@ HoundoomEvosAttacks:
 	db 1, LEER
 	db 1, BITE
 	db 7, EMBER
-	db 13, ROAR
-	db 20, PURSUIT
+	db 13, PURSUIT
+	db 20, ROAR
 	db 30, FIRE_SPIN
-	db 41, FLAMETHROWER
-	db 52, CRUNCH
+	db 41, CRUNCH
+	db 52, FLAMETHROWER
 	db 0 ; no more level-up moves
 
 KingdraEvosAttacks:

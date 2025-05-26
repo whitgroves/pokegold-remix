@@ -500,7 +500,7 @@ SentretEggMoves:
 	db -1 ; end
 
 HoothootEggMoves:
-	db MIRROR_MOVE
+	db ICY_WIND
 	db PSYCHIC_M
 	db NIGHT_SHADE
 	db DREAM_EATER
@@ -518,9 +518,9 @@ LedybaEggMoves:
 SpinarakEggMoves:
 	db PSYBEAM
 	db DISABLE
-	db SONICBOOM
-	db BATON_PASS
-	db PURSUIT
+	db SCARY_FACE
+	db POISON_STING
+	db TWINEEDLE
 	db -1 ; end
 
 ChinchouEggMoves:
@@ -747,6 +747,8 @@ SwinubEggMoves:
 	db BODY_SLAM
 	db ROCK_SLIDE
 	db ANCIENTPOWER
+	db SNORE
+	db TAKE_DOWN
 	db SUBMISSION
 	db -1 ; end
 
