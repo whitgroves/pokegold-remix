@@ -212,10 +212,9 @@ BellsproutEggMoves:
 
 TentacoolEggMoves:
 	db AURORA_BEAM
-	db MIRROR_COAT
-	db RAPID_SPIN
-	db HAZE
-	db SAFEGUARD
+	db ANCIENTPOWER
+	db AMNESIA
+	db RECOVER
 	db OCTAZOOKA
 	db -1 ; end
 

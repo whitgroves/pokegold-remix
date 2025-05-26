@@ -981,26 +981,28 @@ TentacoolEvosAttacks:
 	db EVOLVE_LEVEL, 30, TENTACRUEL
 	db 0 ; no more evolutions
 	db 1, POISON_STING
-	db 6, SUPERSONIC
-	db 12, WRAP
-	db 19, ACID
-	db 25, BUBBLEBEAM
-	db 36, AMNESIA
-	db 43, TOXIC
-	db 49, HYDRO_PUMP
+	db 1, BUBBLE
+	db 6, WRAP
+	db 12, BIDE
+	db 19, BUBBLEBEAM
+	db 25, AMNESIA
+	db 36, TOXIC
+	db 43, HYDRO_PUMP
+	db 49, RECOVER
 	db 0 ; no more level-up moves
 
 TentacruelEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, POISON_STING
-	db 6, SUPERSONIC
-	db 12, WRAP
-	db 19, ACID
-	db 25, BUBBLEBEAM
+	db 1, BUBBLE
+	db 6, WRAP
+	db 12, BIDE
+	db 19, BUBBLEBEAM
+	db 25, AMNESIA
 	db 30, CLAMP
-	db 38, AMNESIA
-	db 47, TOXIC
-	db 55, HYDRO_PUMP
+	db 38, TOXIC
+	db 47, HYDRO_PUMP
+	db 55, CRUNCH
 	db 0 ; no more level-up moves
 
 GeodudeEvosAttacks:
