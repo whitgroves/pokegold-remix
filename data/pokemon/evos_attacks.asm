@@ -1853,8 +1853,10 @@ EeveeEvosAttacks:
 
 VaporeonEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, MIST
-	db 1, WATER_GUN
+	db 1, TAIL_WHIP
+	db 1, TACKLE
+	db 5, MIST
+	db 5, WATER_GUN
 	db 8, POWDER_SNOW
 	db 16, QUICK_ATTACK
 	db 23, BUBBLEBEAM
@@ -1866,8 +1868,10 @@ VaporeonEvosAttacks:
 
 JolteonEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, THUNDER_WAVE
-	db 1, THUNDERSHOCK
+	db 1, TAIL_WHIP
+	db 1, TACKLE
+	db 5, THUNDER_WAVE
+	db 5, THUNDERSHOCK
 	db 8, PIN_MISSILE
 	db 16, QUICK_ATTACK
 	db 23, SPARK
@@ -1879,8 +1883,10 @@ JolteonEvosAttacks:
 
 FlareonEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, SMOKESCREEN
-	db 1, EMBER
+	db 1, TAIL_WHIP
+	db 1, TACKLE
+	db 5, SMOKESCREEN
+	db 5, EMBER
 	db 8, FIRE_SPIN
 	db 16, QUICK_ATTACK
 	db 23, FLAME_WHEEL
@@ -2696,8 +2702,10 @@ QuagsireEvosAttacks:
 
 EspeonEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, PSYCH_UP
-	db 1, CONFUSION
+	db 1, TAIL_WHIP
+	db 1, TACKLE
+	db 5, PSYCH_UP
+	db 5, CONFUSION
 	db 8, DISABLE
 	db 16, QUICK_ATTACK
 	db 23, PSYBEAM
@@ -2709,8 +2717,10 @@ EspeonEvosAttacks:
 
 UmbreonEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, MEAN_LOOK
-	db 1, PURSUIT
+	db 1, TAIL_WHIP
+	db 1, TACKLE
+	db 5, MEAN_LOOK
+	db 5, PURSUIT
 	db 8, BIDE
 	db 16, QUICK_ATTACK
 	db 23, NIGHT_SHADE

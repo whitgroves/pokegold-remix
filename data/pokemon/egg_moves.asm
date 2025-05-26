@@ -422,9 +422,11 @@ LaprasEggMoves:
 EeveeEggMoves:
 	db CHARM
 	db AGILITY
-	db BATON_PASS
+	db ACID_ARMOR
+	db GROWTH
 	db DOUBLE_TEAM
-	db EXTREMESPEED
+	db MORNING_SUN
+	db FAINT_ATTACK
 	db -1 ; end
 
 OmanyteEggMoves:

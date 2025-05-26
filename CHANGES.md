@@ -502,3 +502,4 @@ The Mahogany Mart carries these items once the Rocket Hideout is cleared and Pry
 - Phone calls are more meaningful; most incoming and outgoing calls will trigger a rematch, swarm, or rare mon sighting.
 - The Hyper Potion in the hideout is now an Up-Grade.
 - The likelihood of the player's mon to hit itself in confusion now scales with happiness rather than a 50/50 chance.
+- The Eevee you get from Bill is now level 5 instead of level 20.
