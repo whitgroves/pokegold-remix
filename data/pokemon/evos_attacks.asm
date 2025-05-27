@@ -363,26 +363,26 @@ SandshrewEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, SCRATCH
 	db 6, DEFENSE_CURL
-	db 11, SAND_ATTACK
-	db 14, FURY_SWIPES
+	db 11, FURY_SWIPES
+	db 14, ROLLOUT
 	db 20, DIG
-	db 23, SLASH
-	db 30, METAL_CLAW
+	db 23, METAL_CLAW
+	db 30, SLASH
 	db 37, EARTHQUAKE
-	db 45, ROLLOUT
+	db 45, SANDSTORM
 	db 0 ; no more level-up moves
 
 SandslashEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, SCRATCH
 	db 6, DEFENSE_CURL
-	db 11, SAND_ATTACK
-	db 14, FURY_SWIPES
+	db 11, FURY_SWIPES
+	db 14, ROLLOUT
 	db 20, DIG
-	db 24, SLASH
-	db 33, METAL_CLAW
+	db 24, METAL_CLAW
+	db 33, SLASH
 	db 42, EARTHQUAKE
-	db 52, ROLLOUT
+	db 52, SANDSTORM
 	db 0 ; no more level-up moves
 
 NidoranFEvosAttacks:

@@ -53,8 +53,7 @@ STEEL|||||2|2|0.5|||0.5|||2|0.5|2||
 
 ### Types
 These mons have had their types updated:
-- Bulbasaur, Ivysaur: *Grass/Poison* -> *Grass*
-- Venusaur: *Grass/Poison* -> *Grass/Dragon*
+- Bulbasaur, Ivysaur, Venusaur: *Grass/Poison* -> *Grass*
 - Charizard: *Fire/Flying* -> *Fire/Dragon*
 - Blastoise: *Water* -> *Water/Steel*
 - Arbok: *Poison* -> *Poison/Dark*
