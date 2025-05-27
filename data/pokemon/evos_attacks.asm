@@ -2977,9 +2977,9 @@ SneaselEvosAttacks:
 	db 1, LEER
 	db 9, QUICK_ATTACK
 	db 17, SCREECH
-	db 19, FAINT_ATTACK
+	db 19, PURSUIT
 	db 25, ICE_PUNCH
-	db 33, PURSUIT
+	db 33, FAINT_ATTACK
 	db 41, AGILITY
 	db 49, SLASH
 	db 57, DOUBLE_TEAM
