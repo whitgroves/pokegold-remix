@@ -3323,12 +3323,12 @@ MiltankEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 4, GROWL
-	db 8, DEFENSE_CURL
+	db 8, BIDE
 	db 13, STOMP
 	db 19, MILK_DRINK
-	db 26, BIDE
-	db 34, ROLLOUT
-	db 43, BODY_SLAM
+	db 26, BODY_SLAM
+	db 34, FORESIGHT
+	db 43, TAKE_DOWN
 	db 53, HEAL_BELL
 	db 0 ; no more level-up moves
 
