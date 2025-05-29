@@ -497,20 +497,20 @@ VulpixEvosAttacks:
 	db 1, EMBER
 	db 7, QUICK_ATTACK
 	db 13, ROAR
-	db 19, CONFUSE_RAY
-	db 25, FIRE_SPIN
-	db 31, SAFEGUARD
+	db 19, FIRE_SPIN
+	db 25, SAFEGUARD
+	db 31, FAINT_ATTACK
 	db 37, FLAMETHROWER
 	db 0 ; no more level-up moves
 
 NinetalesEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, EMBER
 	db 1, TAIL_WHIP
+	db 1, EMBER
 	db 7, SPITE
-	db 13, CURSE
-	db 19, CONFUSE_RAY
-	db 25, FIRE_SPIN
+	db 13, CONFUSE_RAY
+	db 19, FIRE_SPIN
+	db 25, CURSE
 	db 31, FAINT_ATTACK
 	db 37, SHADOW_BALL
 	db 0 ; no more level-up moves
@@ -1278,8 +1278,8 @@ GastlyEvosAttacks:
 	db 13, MEAN_LOOK
 	db 16, CURSE
 	db 21, NIGHT_SHADE
-	db 28, CONFUSE_RAY
-	db 33, DREAM_EATER
+	db 28, DREAM_EATER
+	db 33, SHADOW_BALL
 	db 36, NIGHTMARE
 	db 42, DESTINY_BOND
 	db 0 ; no more level-up moves
@@ -1294,8 +1294,8 @@ HaunterEvosAttacks:
 	db 13, MEAN_LOOK
 	db 16, CURSE
 	db 21, NIGHT_SHADE
-	db 31, CONFUSE_RAY
-	db 39, DREAM_EATER
+	db 31, DREAM_EATER
+	db 39, SHADOW_BALL
 	db 45, NIGHTMARE
 	db 50, DESTINY_BOND
 	db 0 ; no more level-up moves
@@ -1308,8 +1308,8 @@ GengarEvosAttacks:
 	db 13, MEAN_LOOK
 	db 16, CURSE
 	db 21, NIGHT_SHADE
-	db 31, CONFUSE_RAY
-	db 39, DREAM_EATER
+	db 31, DREAM_EATER
+	db 39, SHADOW_BALL
 	db 45, NIGHTMARE
 	db 50, DESTINY_BOND
 	db 0 ; no more level-up moves
@@ -2952,7 +2952,7 @@ ShuckleEvosAttacks:
 	db 9, MUD_SLAP
 	db 11, DEFENSE_CURL
 	db 23, ROLLOUT
-	db 28, ACID
+	db 28, SAFEGUARD
 	db 34, SOFTBOILED
 	db 37, SANDSTORM
 	db 42, TOXIC
