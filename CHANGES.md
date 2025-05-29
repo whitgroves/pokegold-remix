@@ -90,9 +90,8 @@ These mons have had their types updated:
 - Gengar: *Ghost/Poison* -> *Ghost/Dark*
 - Drowzee, Hypno: *Psychic* -> *Psychic/Dark*
 - Kingler: *Water* -> *Water/Fighting*
-- Voltorb, Electrode: *Electric* -> *Steel*
+- Voltorb, Electrode: *Electric* -> *Steel/Normal*
 - Exeggcute: *Grass/Psychic* -> *Grass/Normal*
-- Exeggcutor: *Grass/Psychic* -> *Grass/Fighting*
 - Cubone: *Ground* -> *Rock/Normal*
 - Marowak: *Ground* -> *Rock/Ghost*
 - Lickitung: *Normal* -> *Normal/Poison*
@@ -374,7 +373,6 @@ These moves ignore STAB but have had their types changed for flavor; however, th
 - Smokescreen: *Normal* -> *Dark*
 - Glare: *Normal* -> *Dark*
 - Lovely Kiss: *Normal* -> *Dark*
-- Flash: *Normal* -> *Electric*
 - Splash: *Normal* -> *Water*
 - Rest: *Psychic* -> *Normal*
 - Super Fang: *Normal* -> *Dark*

@@ -185,12 +185,11 @@ PoliwagEggMoves:
 
 AbraEggMoves:
 	db LIGHT_SCREEN
-	db ENCORE
+	db REFLECT
 	db BARRIER
-	db NIGHT_SHADE
+	db DIZZY_PUNCH
 	db HYPNOSIS
 	db DREAM_EATER
-	db NIGHTMARE
 	db -1 ; end
 
 MachopEggMoves:
@@ -281,6 +280,7 @@ GastlyEggMoves:
 	db PSYWAVE
 	db PERISH_SONG
 	db HAZE
+	db DREAM_EATER
 	db -1 ; end
 
 OnixEggMoves:

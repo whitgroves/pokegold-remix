@@ -1248,7 +1248,6 @@ ShellderEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, BUBBLE
 	db 1, WITHDRAW
-	db 9, SUPERSONIC
 	db 17, BUBBLEBEAM
 	db 25, AURORA_BEAM
 	db 33, CLAMP
@@ -1428,14 +1427,14 @@ ExeggcuteEvosAttacks:
 
 ExeggutorEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, LOW_KICK
+	db 1, PSYWAVE
 	db 1, BARRAGE
 	db 7, SAFEGUARD
 	db 13, LEECH_SEED
-	db 19, ROLLING_KICK
+	db 19, CONFUSION
 	db 25, STOMP
-	db 31, MEDITATE
-	db 37, MEGA_KICK
+	db 31, SWAGGER
+	db 37, PSYCHIC_M
 	db 43, GIGA_DRAIN
 	db 0 ; no more level-up moves
 
