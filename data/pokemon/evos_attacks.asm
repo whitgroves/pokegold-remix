@@ -549,6 +549,7 @@ ZubatEvosAttacks:
 	db 6, SUPERSONIC
 	db 12, BITE
 	db 19, CONFUSE_RAY
+	db 23, SCREECH
 	db 27, WING_ATTACK
 	db 36, HYPER_FANG
 	db 46, SUPER_FANG
@@ -562,6 +563,7 @@ GolbatEvosAttacks:
 	db 6, SUPERSONIC
 	db 12, BITE
 	db 19, CONFUSE_RAY
+	db 25, SCREECH
 	db 30, WING_ATTACK
 	db 42, HYPER_FANG
 	db 55, SUPER_FANG
@@ -2333,11 +2335,11 @@ AriadosEvosAttacks:
 
 CrobatEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, SCREECH
 	db 1, LEECH_LIFE
 	db 6, SUPERSONIC
 	db 12, BITE
 	db 19, CONFUSE_RAY
+	db 25, SCREECH
 	db 30, WING_ATTACK
 	db 42, HYPER_FANG
 	db 48, SUPER_FANG
