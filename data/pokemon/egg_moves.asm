@@ -16,7 +16,7 @@ CharmanderEggMoves:
 	db ANCIENTPOWER
 	db BITE
 	db OUTRAGE
-	db BEAT_UP
+	db DRAGON_RAGE
 	db -1 ; end
 
 SquirtleEggMoves:
@@ -278,8 +278,8 @@ ShellderEggMoves:
 
 GastlyEggMoves:
 	db PSYWAVE
-	db PERISH_SONG
 	db HAZE
+	db GLARE
 	db DREAM_EATER
 	db -1 ; end
 
@@ -791,7 +791,6 @@ SkarmoryEggMoves:
 	db -1 ; end
 
 HoundourEggMoves:
-	db FIRE_SPIN
 	db RAGE
 	db DIG
 	db SPITE

@@ -73,7 +73,7 @@ CharmanderEvosAttacks:
 	db 31, FLAMETHROWER
 	db 37, SLASH
 	db 43, DRAGON_RAGE
-	db 49, FIRE_SPIN
+	db 49, FIRE_BLAST
 	db 0 ; no more level-up moves
 
 CharmeleonEvosAttacks:
@@ -89,7 +89,7 @@ CharmeleonEvosAttacks:
 	db 34, FLAMETHROWER
 	db 41, SLASH
 	db 48, DRAGON_RAGE
-	db 55, FIRE_SPIN
+	db 55, FIRE_BLAST
 	db 0 ; no more level-up moves
 
 CharizardEvosAttacks:
@@ -105,7 +105,7 @@ CharizardEvosAttacks:
 	db 36, WING_ATTACK
 	db 44, SLASH
 	db 54, DRAGON_RAGE
-	db 64, FIRE_SPIN
+	db 64, FIRE_BLAST
 	db 0 ; no more level-up moves
 
 SquirtleEvosAttacks:
@@ -1805,11 +1805,11 @@ GyaradosEvosAttacks:
 	db 1, THRASH
 	db 20, BITE
 	db 25, TWISTER
-	db 30, MEAN_LOOK
-	db 35, DRAGON_RAGE
-	db 40, RAIN_DANCE
-	db 45, HYDRO_PUMP
-	db 50, CRUNCH
+	db 30, DRAGON_RAGE
+	db 35, THRASH
+	db 40, OUTRAGE
+	db 45, CRUNCH
+	db 50, HYDRO_PUMP
 	db 55, HYPER_BEAM
 	db 0 ; no more level-up moves
 
@@ -2755,12 +2755,12 @@ SlowkingEvosAttacks:
 	db 18, HEADBUTT
 	db 20, CONFUSION
 	db 24, HORN_ATTACK
-	db 29, DISABLE
+	db 29, PSYBEAM
 	db 34, SWAGGER
 	db 43, DRAGON_RAGE
 	db 48, PSYCHIC_M
 	db 55, HYPER_BEAM
-	db 59, FUTURE_SIGHT
+	db 59, MIRROR_COAT
 	db 0 ; no more level-up moves
 
 MisdreavusEvosAttacks:
@@ -3178,7 +3178,7 @@ HoundoomEvosAttacks:
 	db 20, ROAR
 	db 30, FIRE_SPIN
 	db 41, CRUNCH
-	db 52, FLAMETHROWER
+	db 49, FLAMETHROWER
 	db 0 ; no more level-up moves
 
 KingdraEvosAttacks:
