@@ -876,7 +876,7 @@ KadabraEvosAttacks:
 	db 26, RECOVER
 	db 31, FUTURE_SIGHT
 	db 38, PSYCHIC_M
-	db 45, REFLECT
+	db 45, BARRIER
 	db 0 ; no more level-up moves
 
 AlakazamEvosAttacks:
@@ -890,7 +890,7 @@ AlakazamEvosAttacks:
 	db 26, RECOVER
 	db 31, FUTURE_SIGHT
 	db 38, PSYCHIC_M
-	db 45, REFLECT
+	db 45, BARRIER
 	db 0 ; no more level-up moves
 
 MachopEvosAttacks:
@@ -2156,7 +2156,8 @@ CyndaquilEvosAttacks:
 	db 19, QUICK_ATTACK
 	db 27, FLAME_WHEEL
 	db 36, SWIFT
-	db 46, FLAMETHROWER
+	db 43, FLAMETHROWER
+	db 50, TAKE_DOWN
 	db 0 ; no more level-up moves
 
 QuilavaEvosAttacks:
@@ -2169,7 +2170,8 @@ QuilavaEvosAttacks:
 	db 21, QUICK_ATTACK
 	db 31, FLAME_WHEEL
 	db 42, SWIFT
-	db 54, FLAMETHROWER
+	db 48, FLAMETHROWER
+	db 55, TAKE_DOWN
 	db 0 ; no more level-up moves
 
 TyphlosionEvosAttacks:
@@ -2181,8 +2183,8 @@ TyphlosionEvosAttacks:
 	db 21, QUICK_ATTACK
 	db 31, FLAME_WHEEL
 	db 45, SWIFT
-	db 50, ROAR
-	db 60, FLAMETHROWER
+	db 50, FLAMETHROWER
+	db 60, TAKE_DOWN
 	db 0 ; no more level-up moves
 
 TotodileEvosAttacks:

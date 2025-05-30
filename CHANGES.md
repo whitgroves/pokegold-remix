@@ -86,8 +86,7 @@ These mons have had their types updated:
 - Doduo, Dodrio: *Normal/Flying* -> *Ground/Flying*
 - Seel: *Water* -> *Water/Ice*
 - Cloyster: *Water/Ice* -> *Water/Steel*
-- Gastly, Haunter: *Ghost/Poison* -> *Ghost*
-- Gengar: *Ghost/Poison* -> *Ghost/Dark*
+- Gastly, Haunter, Gengar: *Ghost/Poison* -> *Ghost*
 - Drowzee, Hypno: *Psychic* -> *Psychic/Dark*
 - Kingler: *Water* -> *Water/Fighting*
 - Voltorb, Electrode: *Electric* -> *Steel/Normal*
@@ -127,7 +126,7 @@ These mons have had their types updated:
 - Umbreon: *Dark* -> *Ghost*
 - Slowking: *Water/Psychic* -> *Psychic/Dragon*
 - Misdreavus: *Ghost* -> *Ghost/Psychic*
-- Unown: *Psychic* -> *Psychic/Dark*
+- Unown: *Psychic* -> *Ghost/Dark*
 - Dunsparce: *Normal* -> *Ground/Dragon*
 - Gligar: *Ground/Flying* -> *Poison/Flying*
 - Snubbull, Granbull: *Normal* -> *Normal/Dark*
