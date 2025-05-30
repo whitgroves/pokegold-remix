@@ -1387,14 +1387,14 @@ CheckTypeMatchup:
 	cp -1
 	jr z, .End
 	cp -2
-	jr nz, .Next
-	ld a, BATTLE_VARS_SUBSTATUS1_OPP
-	call GetBattleVar
-	bit SUBSTATUS_IDENTIFIED, a
+	;jr nz, .Next
+	;ld a, BATTLE_VARS_SUBSTATUS1_OPP
+	;call GetBattleVar
+	;bit SUBSTATUS_IDENTIFIED, a
 	jr z, .TypesLoop
-	ld a, MORE_EFFECTIVE ; identified targets take 1.5 damage
-	ld [wTypeMatchup], a
-	jr .End
+	;ld a, MORE_EFFECTIVE ; identified targets take 1.5 damage
+	;ld [wTypeMatchup], a
+	;jr .End
 
 .Next:
 	cp d
@@ -1432,7 +1432,18 @@ CheckTypeMatchup:
 	ld [wTypeMatchup], a
 	jr .TypesLoop
 
-.End:
+.End: ; identified targets always take at least 1.5 damage
+	ld a, BATTLE_VARS_SUBSTATUS1_OPP
+	call GetBattleVar
+	bit SUBSTATUS_IDENTIFIED, a
+	jr z, .Done
+	ld a, [wTypeMatchup]
+	cp MORE_EFFECTIVE
+	jr nc, .Done
+	ld a, MORE_EFFECTIVE
+	ld [wTypeMatchup], a
+	
+.Done:
 	pop bc
 	pop de
 	pop hl

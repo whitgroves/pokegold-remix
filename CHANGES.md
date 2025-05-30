@@ -350,14 +350,10 @@ As a side note, all *Ghost* moves are now special and all *Dark* moves are now p
 Besides preventing a switch out, trapped pokemon will now have their speed cut as if they were paralyzed. This does not stack with the PRZ status.
 
 ### Foresight
-Previously, *Foresight* allowed *Normal*- and *Fighting*-type moves to hit *Ghost*-type pokemon for neutral damage, while bypassing evasion checks for identified pokemon.
-
-Now, identified targets will take 1.5 damage from all types, unless they have an immunity other than *Normal*->*Ghost*. Evasion checks will still be bypassed.
+All identified pokemon, not just *Ghost*-types, will take at least 1.5 damage from damaging moves of *any* type. Evasion checks are still bypassed.
 
 ### Lock-On
-Previously, *Lock-On* would cause all subsequent attacks to land, except *Earthquake*, *Fissure*, and *Magnitude* on a pokemon that is flying.
-
-Now, *Lock-On* will be ignored for any *Ground*-type move against such targets.
+Previously, *Lock-On* ignored *Earthquake*, *Fissure*, and *Magnitude* used against a pokemon that is flying; now it ignores any *Ground*-type move against such targets.
 
 ### Flavor Changes
 These moves ignore STAB but have had their types changed for flavor; however, this may still impact the AI's choices.
