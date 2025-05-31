@@ -313,10 +313,11 @@ ExeggcuteEggMoves:
 
 CuboneEggMoves:
 	db DRAGON_RAGE
-	db OUTRAGE
 	db PROTECT
 	db ENDURE
 	db SAFEGUARD
+	db BEAT_UP
+	db FALSE_SWIPE
 	db -1 ; end
 
 LickitungEggMoves:

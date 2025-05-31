@@ -13,6 +13,7 @@ Below is a non-exhaustive list of changes as of this revision:
     - [Trapping Moves](#trapping-moves)
     - [Foresight](#foresight)
     - [Lock-On](#lock-on)
+    - [Withdraw](#withdraw)
     - [Flavor Changes](#flavor-changes)
     - [TMs](#tms)
     - [Weather Interactions](#weather-interactions)
@@ -174,6 +175,8 @@ These evolutions can now happen by item effect:
 - Eevee -> Espeon: *Sun Stone*
 - Eevee -> Umbreon: *Moon Stone*
 - Porygon -> Porygon2: *Up-Grade*
+- Omanyte -> Omastar: *Water Stone*
+- Kabuto -> Kabutops: *Leaf Stone*
 - Cleffa -> Clefairy: *Moon Stone*
 - Togepi -> Togetic: *Sun Stone* -OR- *Moon Stone*
 - Pineco -> Forretress: *Leaf Stone*
@@ -354,6 +357,9 @@ All identified pokemon, not just *Ghost*-types, will take at least 1.5 damage fr
 
 ### Lock-On
 Previously, *Lock-On* ignored *Earthquake*, *Fissure*, and *Magnitude* used against a pokemon that is flying; now it ignores any *Ground*-type move against such targets.
+
+### Withdraw
+*Withdraw* now sets up the "curled" substatus that boosts *Rollout*, similar to *Defense Curl*.
 
 ### Flavor Changes
 These moves ignore STAB but have had their types changed for flavor; however, this may still impact the AI's choices.

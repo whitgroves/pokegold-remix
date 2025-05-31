@@ -1447,12 +1447,12 @@ CuboneEvosAttacks:
 	db 5, TAIL_WHIP
 	db 9, BONE_CLUB
 	db 13, HEADBUTT
-	db 17, LEER
-	db 21, FOCUS_ENERGY
-	db 25, BONEMERANG
-	db 29, RAGE
-	db 33, SKULL_BASH
-	db 37, THRASH
+	db 17, RAGE
+	db 21, BONEMERANG
+	db 25, SKULL_BASH
+	db 29, SWORDS_DANCE
+	db 33, FAINT_ATTACK
+	db 37, OUTRAGE
 	db 41, BONE_RUSH
 	db 0 ; no more level-up moves
 
@@ -1462,12 +1462,13 @@ MarowakEvosAttacks:
 	db 5, TAIL_WHIP
 	db 9, BONE_CLUB
 	db 13, HEADBUTT
-	db 17, LEER
-	db 21, FOCUS_ENERGY
-	db 25, BONEMERANG
-	db 32, RAGE
-	db 39, SKULL_BASH
-	db 46, THRASH
+	db 17, RAGE
+	db 21, BONEMERANG
+	db 25, SKULL_BASH
+	db 28, PAIN_SPLIT
+	db 32, SWORDS_DANCE
+	db 39, FAINT_ATTACK
+	db 46, DESTINY_BOND
 	db 53, BONE_RUSH
 	db 0 ; no more level-up moves
 
@@ -1915,6 +1916,7 @@ PorygonEvosAttacks:
 
 OmanyteEvosAttacks:
 	db EVOLVE_LEVEL, 40, OMASTAR
+	db EVOLVE_ITEM, WATER_STONE, OMASTAR
 	db 0 ; no more evolutions
 	db 1, CONSTRICT
 	db 1, WITHDRAW
@@ -1922,8 +1924,8 @@ OmanyteEvosAttacks:
 	db 19, WATER_GUN
 	db 31, LEER
 	db 37, PROTECT
-	db 49, ANCIENTPOWER
-	db 55, HYDRO_PUMP
+	db 41, HYDRO_PUMP
+	db 50, ANCIENTPOWER
 	db 0 ; no more level-up moves
 
 OmastarEvosAttacks:
@@ -1935,34 +1937,35 @@ OmastarEvosAttacks:
 	db 31, LEER
 	db 37, PROTECT
 	db 40, SPIKE_CANNON
-	db 54, ANCIENTPOWER
-	db 65, HYDRO_PUMP
+	db 45, HYDRO_PUMP
+	db 55, ANCIENTPOWER
 	db 0 ; no more level-up moves
 
 KabutoEvosAttacks:
 	db EVOLVE_LEVEL, 40, KABUTOPS
+	db EVOLVE_ITEM, LEAF_STONE, KABUTOPS
 	db 0 ; no more evolutions
 	db 1, SCRATCH
 	db 1, HARDEN
 	db 10, ABSORB
-	db 19, LEER
-	db 28, CUT
-	db 37, ENDURE
-	db 46, MEGA_DRAIN
-	db 55, ANCIENTPOWER
+	db 19, ENDURE
+	db 28, SKULL_BASH
+	db 37, AMNESIA
+	db 41, MEGA_DRAIN
+	db 50, ANCIENTPOWER
 	db 0 ; no more level-up moves
 
 KabutopsEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, SCRATCH
 	db 1, HARDEN
-	db 10, ABSORB
-	db 19, LEER
-	db 28, CUT
-	db 37, ENDURE
+	db 10, CUT
+	db 19, DETECT
+	db 28, SWORDS_DANCE
+	db 37, AMNESIA
 	db 40, SLASH
-	db 51, MEGA_DRAIN
-	db 65, ANCIENTPOWER
+	db 45, FURY_CUTTER
+	db 55, ANCIENTPOWER
 	db 0 ; no more level-up moves
 
 AerodactylEvosAttacks:

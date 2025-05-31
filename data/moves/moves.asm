@@ -123,7 +123,7 @@ Moves:
 	move MINIMIZE,     EFFECT_EVASION_UP,          0, NORMAL,       100, 20,   0
 	move SMOKESCREEN,  EFFECT_ACCURACY_DOWN,       0, DARK,         100, 20,   0
 	move CONFUSE_RAY,  EFFECT_CONFUSE,             0, GHOST,        100, 10,   0
-	move WITHDRAW,     EFFECT_DEFENSE_UP,          0, WATER,        100, 40,   0
+	move WITHDRAW,     EFFECT_DEFENSE_CURL,        0, WATER,        100, 40,   0
 	move DEFENSE_CURL, EFFECT_DEFENSE_CURL,        0, NORMAL,       100, 40,   0
 	move BARRIER,      EFFECT_DEFENSE_UP_2,        0, PSYCHIC_TYPE, 100, 30,   0
 	move LIGHT_SCREEN, EFFECT_LIGHT_SCREEN,        0, PSYCHIC_TYPE, 100, 30,   0
