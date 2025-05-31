@@ -166,13 +166,11 @@ MankeyEggMoves:
 	db -1 ; end
 
 GrowlitheEggMoves:
-	db BODY_SLAM
 	db SAFEGUARD
+	db DETECT
 	db CRUNCH
-	db DIG
-	db FIRE_SPIN
-	db SUBMISSION
-	db PURSUIT
+	db FLAME_WHEEL
+	db TAKE_DOWN
 	db -1 ; end
 
 PoliwagEggMoves:

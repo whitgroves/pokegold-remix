@@ -793,7 +793,7 @@ GrowlitheEvosAttacks:
 	db 1, EMBER
 	db 9, BITE
 	db 18, DIG
-	db 26, ROAR
+	db 26, FORESIGHT
 	db 34, BODY_SLAM
 	db 42, AGILITY
 	db 50, FLAMETHROWER
@@ -805,10 +805,10 @@ ArcanineEvosAttacks:
 	db 1, EMBER
 	db 9, BITE
 	db 18, DIG
-	db 26, SUBMISSION
+	db 26, ROAR
 	db 34, FLAME_WHEEL
-	db 42, DETECT
-	db 50, EXTREMESPEED
+	db 42, EXTREMESPEED
+	db 50, DETECT
 	db 0 ; no more level-up moves
 
 PoliwagEvosAttacks:
