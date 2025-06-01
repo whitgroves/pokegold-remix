@@ -833,7 +833,7 @@ SmoochumEggMoves:
 ElekidEggMoves:
 	db KARATE_CHOP
 	db BARRIER
-	db ROLLING_KICK
+	db COUNTER
 	db MEDITATE
 	db DETECT
 	db -1 ; end

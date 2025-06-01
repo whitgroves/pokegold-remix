@@ -1126,9 +1126,8 @@ MagnemiteEvosAttacks:
 	db 21, THUNDER_WAVE
 	db 27, LOCK_ON
 	db 31, THUNDERBOLT
-	db 33, SWIFT
-	db 39, SCREECH
-	db 45, ZAP_CANNON
+	db 39, ZAP_CANNON
+	db 45, SWIFT
 	db 0 ; no more level-up moves
 
 MagnetonEvosAttacks:
@@ -1140,9 +1139,8 @@ MagnetonEvosAttacks:
 	db 21, THUNDER_WAVE
 	db 27, LOCK_ON
 	db 35, THUNDERBOLT
-	db 43, SCREECH
-	db 53, ZAP_CANNON
-	db 64, TRI_ATTACK
+	db 43, ZAP_CANNON
+	db 53, TRI_ATTACK
 	db 0 ; no more level-up moves
 
 FarfetchDEvosAttacks:
@@ -1397,7 +1395,7 @@ VoltorbEvosAttacks:
 	db 33, SPARK
 	db 37, SWIFT
 	db 39, EXPLOSION
-	db 41, ZAP_CANNON
+	db 41, THUNDER
 	db 0 ; no more level-up moves
 
 ElectrodeEvosAttacks:
@@ -1410,7 +1408,7 @@ ElectrodeEvosAttacks:
 	db 34, SPARK
 	db 40, SWIFT
 	db 44, EXPLOSION
-	db 48, ZAP_CANNON
+	db 48, THUNDER
 	db 0 ; no more level-up moves
 
 ExeggcuteEvosAttacks:
@@ -2362,8 +2360,8 @@ ChinchouEvosAttacks:
 	db 17, WATER_GUN
 	db 25, SPARK
 	db 29, CONFUSE_RAY
-	db 37, TAKE_DOWN
-	db 41, HYDRO_PUMP
+	db 37, HYDRO_PUMP
+	db 41, THUNDER
 	db 0 ; no more level-up moves
 
 LanturnEvosAttacks:
@@ -2375,8 +2373,8 @@ LanturnEvosAttacks:
 	db 17, WATER_GUN
 	db 25, SPARK
 	db 33, CONFUSE_RAY
-	db 45, TAKE_DOWN
-	db 53, HYDRO_PUMP
+	db 45, HYDRO_PUMP
+	db 53, THUNDER
 	db 0 ; no more level-up moves
 
 PichuEvosAttacks:
