@@ -218,7 +218,8 @@ PidgeyEvosAttacks:
 	db 15, QUICK_ATTACK
 	db 21, WHIRLWIND
 	db 29, WING_ATTACK
-	db 37, AGILITY
+	db 34, AGILITY
+	db 41, FAINT_ATTACK
 	db 47, MIRROR_MOVE
 	db 0 ; no more level-up moves
 
@@ -231,9 +232,9 @@ PidgeottoEvosAttacks:
 	db 15, QUICK_ATTACK
 	db 23, WHIRLWIND
 	db 33, WING_ATTACK
-	db 43, AGILITY
-	db 47, RAZOR_WIND
-	db 55, MIRROR_MOVE
+	db 39, EXTREMESPEED
+	db 45, RAZOR_WIND
+	db 50, MIRROR_MOVE
 	db 0 ; no more level-up moves
 
 PidgeotEvosAttacks:
@@ -244,9 +245,9 @@ PidgeotEvosAttacks:
 	db 15, QUICK_ATTACK
 	db 23, WHIRLWIND
 	db 33, WING_ATTACK
-	db 46, AGILITY
-	db 55, RAZOR_WIND
-	db 61, SKY_ATTACK
+	db 41, EXTREMESPEED
+	db 47, RAZOR_WIND
+	db 55, SKY_ATTACK
 	db 0 ; no more level-up moves
 
 RattataEvosAttacks:
@@ -1164,7 +1165,7 @@ DoduoEvosAttacks:
 	db 1, GROWL
 	db 1, PECK
 	db 6, MUD_SLAP
-	db 11, QUICK_ATTACK
+	db 11, PURSUIT
 	db 18, DOUBLE_KICK
 	db 21, STOMP
 	db 25, AGILITY
@@ -1179,7 +1180,7 @@ DodrioEvosAttacks:
 	db 1, PECK
 	db 1, GROWL
 	db 6, MUD_SLAP
-	db 11, QUICK_ATTACK
+	db 11, PURSUIT
 	db 18, DOUBLE_KICK
 	db 21, STOMP
 	db 25, AGILITY
