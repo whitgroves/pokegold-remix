@@ -338,9 +338,9 @@ PikachuEvosAttacks:
 	db 8, THUNDER_WAVE
 	db 11, QUICK_ATTACK
 	db 15, SPARK
-	db 20, SWIFT
+	db 20, AGILITY
 	db 26, THUNDERBOLT
-	db 33, AGILITY
+	db 33, BATON_PASS
 	db 41, THUNDER
 	db 50, EXTREMESPEED
 	db 0 ; no more level-up moves
