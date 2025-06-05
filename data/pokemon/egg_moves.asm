@@ -643,10 +643,11 @@ WooperEggMoves:
 MurkrowEggMoves:
 	db WHIRLWIND
 	db DRILL_PECK
-	db QUICK_ATTACK
-	db MIRROR_MOVE
 	db WING_ATTACK
 	db MEAN_LOOK
+	db NIGHT_SHADE
+	db DREAM_EATER
+	db NIGHTMARE
 	db -1 ; end
 
 MisdreavusEggMoves:

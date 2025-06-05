@@ -2743,8 +2743,8 @@ MurkrowEvosAttacks:
 	db 17, THIEF
 	db 26, GLARE
 	db 35, MIRROR_MOVE
-	db 41, NIGHT_SHADE
-	db 50, NIGHTMARE
+	db 41, FAINT_ATTACK
+	db 50, HAZE
 	db 0 ; no more level-up moves
 
 SlowkingEvosAttacks:
