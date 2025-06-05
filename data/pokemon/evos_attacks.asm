@@ -1824,7 +1824,7 @@ LaprasEvosAttacks:
 	db 36, ICE_BEAM
 	db 43, RAIN_DANCE
 	db 50, PERISH_SONG
-	db 57, HYDRO_PUMP
+	db 57, BLIZZARD
 	db 0 ; no more level-up moves
 
 DittoEvosAttacks:
