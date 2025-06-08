@@ -288,8 +288,16 @@ AcademyPoisonText:
 	para "and HP is lost as"
 	line "you walk."
 
-	para "To cure it, use an"
-	line "ANTIDOTE."
+	para "some #MON, like"
+	line "Rock- and other"
+	cont "Poison-types,"
+	
+	para "are immune"
+	line "to poisoning."
+
+	para "But for those that"
+	line "aren't, cure it"
+	cont "with an ANTIDOTE."
 	done
 
 AcademyParalysisText:
@@ -329,8 +337,8 @@ AcademyBurnText:
 	line "can't get burned."
 
 	para "But for the rest,"
-	line "use a BURN HEAL as"
-	cont "the cure."
+	line "soothe it with a"
+	cont "BURN HEAL."
 	done
 
 AcademyFreezeText:
@@ -342,10 +350,10 @@ AcademyFreezeText:
 	line "after battle."
 
 	para "If your #MON"
-	line "isn't Ice-type,"
+	line "isn't an Ice-type,"
 
-	para "Or knows a fire-"
-	line "type move,"
+	para "or doesn't know a"
+	line "Fire-type move,"
 
 	para "thaw it out with"
 	line "an ICE HEAL."
@@ -355,11 +363,23 @@ AcademyNotebookText:
 	text "It's this kid's"
 	line "notebook…"
 
+	para "People who catch"
+	line "and use #MON"
+
+	para "in battle are"
+	line "#MON trainers."
+
 	para "Catch #MON"
 	line "using # BALLS."
 
 	para "Up to six can be"
-	line "in your party."
+	line "in your party,"
+
+	para "so choose a team"
+	line "that covers"
+
+	para "each others'"
+	line "weaknesses."
 
 	para "Keep reading?"
 	done
@@ -373,6 +393,14 @@ AcademyNotebookText1:
 	line "frozen #MON is"
 	cont "easier to catch."
 
+	para "It's also wise"
+	line "to lower the"
+	cont "target's evasion,"
+
+	para "and proper form"
+	line "makes catching"
+	cont "much easier."
+
 	para "Keep reading?"
 	done
 
@@ -382,7 +410,13 @@ AcademyNotebookText2:
 
 	para "Confusion may make"
 	line "a #MON attack"
-	cont "itself."
+	cont "itself,"
+
+	para "but a #MON"
+	line "that trusts its"
+
+	para "trainer will"
+	line "rarely do this." 
 
 	para "Leaving battle"
 	line "clears up any"
@@ -392,24 +426,30 @@ AcademyNotebookText2:
 	done
 
 AcademyNotebookText3:
-	text "People who catch"
-	line "and use #MON"
+	text "Other moves can"
+	line "trap #MON,"
 
-	para "in battle are"
-	line "#MON trainers."
+	para "which will slow"
+	line "them down and"
 
-	para "They are expected"
-	line "to visit #MON"
+	para "prevent you from"
+	line "switching them."
 
-	para "GYMS and defeat"
-	line "other trainers."
+	para "These moves do"
+	line "damage over time,"
+
+	para "so be careful to"
+	line "avoid them or"
+
+	para "defeat the op-"
+	line "ponent quickly."
 
 	para "Keep reading?"
 	done
 
 AcademyNotebookText4:
-	text "In battle, there"
-	line "are moves that"
+	text "There are also"
+	line "some moves that"
 
 	para "will change your"
 	line "#MON's status."
@@ -418,10 +458,23 @@ AcademyNotebookText4:
 	line "happens depends"
 
 	para "on your #MON's"
-	line "type and the"
+	line "type and other"
 
-	para "conditions of the"
-	line "battlefield…"
+	para "factors like the"
+	line "weather."
+
+	para "For instance,"
+	line "it's easy to burn"
+
+	para "a #MON when"
+	line "the sun is out,"
+
+	para "But almost im-"
+	line "possible to do"
+	cont "so in the rain."
+
+	para "The different"
+	line "statuses are…"
 
 	para "The next page"
 	line "is… Blank!"
