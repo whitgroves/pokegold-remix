@@ -106,8 +106,8 @@ FalknerIntroText:
 	line "clip flying-type"
 
 	para "#MON's wings"
-	line "with a jolt of"
-	cont "electricity…"
+	line "with a little"
+	cont "rubble…"
 
 	para "I won't allow such"
 	line "insults to bird"
