@@ -368,7 +368,8 @@ YoungsterGroup:
 	; YOUNGSTER (3)
 	db "ALBERT@", TRAINERTYPE_NORMAL
 	db  6, SENTRET
-	db  8, WOOPER
+	db  7, HOPPIP
+	db  8, POLIWAG
 	db -1 ; end
 
 	; YOUNGSTER (4)
@@ -1590,7 +1591,7 @@ FisherGroup:
 
 	; FISHER (2)
 	db "RALPH@", TRAINERTYPE_NORMAL
-	db 10, GOLDEEN
+	db 9, GOLDEEN
 	db -1 ; end
 
 	; FISHER (3)

@@ -28,17 +28,17 @@ VioletGymFalknerScript:
 	waitsfx
 	setflag ENGINE_ZEPHYRBADGE
 .FightDone:
-	checkevent EVENT_GOT_TM31_MUD_SLAP
+	checkevent EVENT_GOT_TM31_RAZOR_WIND
 	iftrue .SpeechAfterTM
 	setevent EVENT_BEAT_BIRD_KEEPER_ROD
 	setevent EVENT_BEAT_BIRD_KEEPER_ABE
-	setmapscene ELMS_LAB, SCENE_ELMSLAB_NOOP
-	specialphonecall SPECIALCALL_ASSISTANT
+	;setmapscene ELMS_LAB, SCENE_ELMSLAB_NOOP
+	;specialphonecall SPECIALCALL_ASSISTANT
 	writetext FalknerZephyrBadgeText
 	promptbutton
-	verbosegiveitem TM_RAZOR_WIND ; MUD_SLAP was swapped out, but event flags are the same
+	verbosegiveitem TM_RAZOR_WIND
 	iffalse .NoRoomForMudSlap
-	setevent EVENT_GOT_TM31_MUD_SLAP
+	setevent EVENT_GOT_TM31_RAZOR_WIND
 	writetext FalknerTMMudSlapText
 	waitbutton
 	closetext
@@ -107,7 +107,9 @@ FalknerIntroText:
 
 	para "#MON's wings"
 	line "with a little"
-	cont "rubble…"
+
+	para "rubble or a jolt"
+	line "of electricity…"
 
 	para "I won't allow such"
 	line "insults to bird"

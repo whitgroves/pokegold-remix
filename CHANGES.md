@@ -470,6 +470,8 @@ The Mahogany Mart carries these items once the Rocket Hideout is cleared and Pry
 
 ### Story Progression
 - The aide now gives 5 pokeballs when the player receives their starter and 2 potions when returning after the theft.
+- Elm's doesn't ask the player to take the Mystery Egg until after clearing Sudowoodo on Route 36.
+- Consequently, pokemon in the Day Care will not produce eggs until the Mystery Egg is received.
 - After receiving the Old and Good Rods, each Fishing Guru will tell the player where to find the next one.
 - Whitney now reminds the player to pick up the Squirtbottle after beating her.
 - The player can pick up the Secretpotion in Cianwood without clearing the lighthouse and talking to Jasmine first.

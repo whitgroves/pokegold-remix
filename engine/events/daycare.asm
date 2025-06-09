@@ -524,6 +524,10 @@ DayCare_InitBreeding:
 	ld a, [wDayCareMan]
 	bit DAYCAREMAN_HAS_MON_F, a
 	ret z
+	checkevent EVENT_GOT_TOGEPI_EGG_FROM_ELMS_AIDE
+	iftrue .GotEggFromAide
+	ret z
+.GotEggFromAide:
 	callfar CheckBreedmonCompatibility
 	ld a, [wBreedingCompatibility]
 	and a
