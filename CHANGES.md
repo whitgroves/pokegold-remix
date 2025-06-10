@@ -470,8 +470,10 @@ The Mahogany Mart carries these items once the Rocket Hideout is cleared and Pry
 
 ### Story Progression
 - The aide now gives 5 pokeballs when the player receives their starter and 2 potions when returning after the theft.
-- Elm's doesn't ask the player to take the Mystery Egg until after clearing Sudowoodo on Route 36.
-- Consequently, pokemon in the Day Care will not produce eggs until the Mystery Egg is received.
+- The guy on Route 29 offers the catch tutorial the first time the player passes by instead of on the return trip.
+- The Cherrygrove guide gent's will still give the player the Map Card if they skip the tutorial.
+- Elm's aide doesn't ask the player to take the Togepi egg until after clearing Sudowoodo on Route 36.
+- However, pokemon in the Day Care will not produce eggs until the Togepi egg is received.
 - After receiving the Old and Good Rods, each Fishing Guru will tell the player where to find the next one.
 - Whitney now reminds the player to pick up the Squirtbottle after beating her.
 - The player can pick up the Secretpotion in Cianwood without clearing the lighthouse and talking to Jasmine first.

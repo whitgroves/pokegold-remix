@@ -247,19 +247,22 @@ DudeMovementData2b:
 	step_end
 
 CatchingTutorialBoxFullText:
-	text "#MON hide in"
-	line "the grass. Who"
+	text "I've seen some-"
+	line "one who always"
 
-	para "knows when they'll"
-	line "pop out…"
+	para "comes by on"
+	line "Tuesday…"
+
+	para "I bet she's here"
+	line "to catch #MON."
 	done
 
 CatchingTutorialIntroText:
-	text "I've seen you a"
-	line "couple times. How"
+	text "I haven't seen you"
+	line "out here before."
 
-	para "many #MON have"
-	line "you caught?"
+	para "Have you caught"
+	line "#MON before?"
 
 	para "Would you like me"
 	line "to show you how to"
@@ -322,20 +325,18 @@ Route29FisherText:
 	line "progress."
 	done
 
-Route29CooltrainerMText_WaitingForDay: ; unreferenced
-	text "I'm waiting for"
-	line "#MON that"
-
-	para "appear only in the"
-	line "daytime."
-	done
-
 Route29CooltrainerMText_WaitingForNight:
 	text "I'm waiting for"
 	line "#MON that"
 
 	para "appear only at"
 	line "night."
+
+	para "Sometimes you can"
+	line "catch them early"
+
+	para "in the morning,"
+	line "though."
 	done
 
 Route29CooltrainerMText_WaitingForMorning:
@@ -344,6 +345,9 @@ Route29CooltrainerMText_WaitingForMorning:
 
 	para "appear only in the"
 	line "morning."
+
+	para "But rarely, you'll"
+	line "see them at night."
 	done
 
 MeetTuscanyText:

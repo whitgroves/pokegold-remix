@@ -35,7 +35,11 @@ CherrygrovePokecenter1FTeacherScript:
 	end
 
 CherrygrovePokecenter1FFisherText:
-	text "It's great. I can"
+	text "The PC over there"
+	line "is free for any"
+	cont "trainer to use."
+
+	para "It's great. I can"
 	line "store any number"
 
 	para "of #MON, and"
@@ -43,9 +47,11 @@ CherrygrovePokecenter1FFisherText:
 	done
 
 CherrygrovePokecenter1FGentlemanText:
-	text "That PC is free"
-	line "for any trainer"
-	cont "to use."
+	text "The MART ran out"
+	line "of # BALLS."
+
+	para "Thankfully I had"
+	line "some in the PC."
 	done
 
 CherrygrovePokecenter1FTeacherText:

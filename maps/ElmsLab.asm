@@ -234,6 +234,7 @@ ElmDirectionsScript:
 	setevent EVENT_RIVAL_CHERRYGROVE_CITY
 	setscene SCENE_ELMSLAB_AIDE_GIVES_BALLS
 	setmapscene NEW_BARK_TOWN, SCENE_NEWBARKTOWN_NOOP
+	setmapscene ROUTE_29, SCENE_ROUTE29_CATCH_TUTORIAL
 	end
 
 ElmDescribesMrPokemonScript:
@@ -297,7 +298,6 @@ ElmAfterTheftScript:
 	writetext ElmAfterTheftText5
 	promptbutton
 	setevent EVENT_GAVE_MYSTERY_EGG_TO_ELM
-	setmapscene ROUTE_29, SCENE_ROUTE29_CATCH_TUTORIAL
 	clearevent EVENT_ROUTE_30_YOUNGSTER_JOEY
 	setevent EVENT_ROUTE_30_BATTLE
 	writetext ElmAfterTheftText6
@@ -1068,24 +1068,14 @@ ElmGiveTicketText2:
 	line "PROF.OAK in KANTO!"
 	done
 
-ElmsLabMonEggText: ; unreferenced
-	text "It's the #MON"
-	line "EGG being studied"
-	cont "by PROF.ELM."
-	done
-
 AideText_GiveYouBalls:
 	text "<PLAYER>, I want"
-	line "you to have this"
+	line "you to have these"
 	cont "for your errand."
 
 	para "It can help to"
 	line "have more #MON"
 	cont "on hand."
-
-	para "Throw # BALLS"
-	line "at wild #MON"
-	cont "to catch them."
 	done
 
 AideText_AlwaysBusy:
@@ -1122,19 +1112,31 @@ AideText_TheftTestimony:
 AideText_GiveYouPotions:
 	text "<PLAYER>!"
 
-	para "Use these on your"
-	line "#DEX quest!"
-	done
-
-AideText_ExplainPotions:
-	text "To add to your"
+	para "To add to your"
 	line "#DEX, you have"
 	cont "to catch #MON."
 
+	para "To catch #MON,"
+	line "you have to"
+	cont "battle them."
+
 	para "There will be a"
 	line "lot of battles,"
-	cont "so keep your #-"
-	cont "MON healthy."
+	
+	para "so use these to"
+	line "keep your #MON"
+	cont "healthy."
+	done
+
+AideText_ExplainPotions:
+	text "You have a long"
+	line "journey ahead."
+
+	para "Those can help"
+	line "when there's no"
+
+	para "#MON CENTER"
+	line "nearby."
 	done
 
 ElmsLabOfficerText1:

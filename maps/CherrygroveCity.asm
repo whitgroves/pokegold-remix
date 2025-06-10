@@ -26,6 +26,8 @@ CherrygroveCityFlypointCallback:
 CherrygroveCityGuideGent:
 	faceplayer
 	opentext
+	checkflag ENGINE_MAP_CARD
+	iftrue .GotMapCard
 	writetext GuideGentIntroText
 	yesorno
 	iffalse .No
@@ -67,6 +69,29 @@ CherrygroveCityGuideGent:
 	opentext
 	writetext GuideGentGiftText
 	promptbutton
+	scall CherrygroveCityGiveMapCard
+	stopfollow
+	special RestartMapMusic
+	turnobject PLAYER, UP
+	applymovement CHERRYGROVECITY_GRAMPS, GuideGentMovement6
+	playsound SFX_ENTER_DOOR
+	disappear CHERRYGROVECITY_GRAMPS
+	waitsfx
+	end
+
+.No:
+	writetext GuideGentNoText
+	promptbutton
+	scall CherrygroveCityGiveMapCard
+	end
+	
+.GotMapCard
+	writetext GuideGentIfYouCanFindItText
+	waitbutton
+	closetext
+	end
+
+CherrygroveCityGiveMapCard:
 	getstring STRING_BUFFER_4, .mapcardname
 	scall .JumpstdReceiveItem
 	setflag ENGINE_MAP_CARD
@@ -75,14 +100,8 @@ CherrygroveCityGuideGent:
 	writetext GuideGentPokegearText
 	waitbutton
 	closetext
-	stopfollow
-	special RestartMapMusic
-	turnobject PLAYER, UP
-	applymovement CHERRYGROVECITY_GRAMPS, GuideGentMovement6
-	playsound SFX_ENTER_DOOR
-	disappear CHERRYGROVECITY_GRAMPS
-	clearevent EVENT_GUIDE_GENT_VISIBLE_IN_CHERRYGROVE
-	waitsfx
+	setevent EVENT_GUIDE_GENT_VISIBLE_IN_CHERRYGROVE
+	clearevent EVENT_GUIDE_GENT_IN_HIS_HOUSE
 	end
 
 .JumpstdReceiveItem:
@@ -91,12 +110,6 @@ CherrygroveCityGuideGent:
 
 .mapcardname
 	db "MAP CARD@"
-
-.No:
-	writetext GuideGentNoText
-	waitbutton
-	closetext
-	end
 
 CherrygroveRivalSceneSouth:
 	moveobject CHERRYGROVECITY_RIVAL, 39, 7
@@ -426,8 +439,27 @@ GuideGentNoText:
 	text "Oh… It's something"
 	line "I enjoy doing…"
 
-	para "Fine. Come see me"
-	line "when you like."
+	para "Fufufu… but I was"
+	line "young once."
+
+	para "Sometimes you have"
+	line "to find things for"
+	cont "yourself!"
+
+	para "Here! Take this"
+	line "with you."
+	done
+
+GuideGentIfYouCanFindItText:
+	text "Life's full of"
+	line "adventures if you"
+	cont "look hard enough."
+
+	para "Come by my house"
+	line "for a visit…"
+
+	para "That is… if you"
+	line "can find it!"
 	done
 
 CherrygroveRivalText_Seen:
@@ -488,9 +520,12 @@ CherrygroveTeacherText_NoMapCard:
 	line "the old man by the"
 	cont "#MON CENTER?"
 
-	para "He'll put a MAP of"
-	line "JOHTO on your"
-	cont "#GEAR."
+	para "He likes to show"
+	line "people around."
+
+	para "If you're new in"
+	line "town, you should"
+	cont "talk to him."
 	done
 
 CherrygroveTeacherText_HaveMapCard:
@@ -500,20 +535,23 @@ CherrygroveTeacherText_HaveMapCard:
 	done
 
 CherrygroveYoungsterText_NoPokedex:
-	text "MR.#MON's house"
+	text "You're here on"
+	line "an errand?"
+
+	para "MR.#MON's house"
 	line "is still farther"
 	cont "up ahead."
 	done
 
 CherrygroveYoungsterText_HavePokedex:
-	text "I battled the"
-	line "trainers on the"
-	cont "road."
+	text "I battled some"
+	line "trainers out on"
+	cont "ROUTE 30."
 
-	para "My #MON lost."
-	line "They're a mess! I"
+	para "My #MON lost!"
+	line "They're a mess!"
 
-	para "must take them to"
+	para "I'm glad we have"
 	line "a #MON CENTER."
 	done
 
@@ -565,7 +603,7 @@ CherrygroveCity_MapEvents:
 	bg_event 30,  3, BGEVENT_READ, CherrygroveCityPokecenterSign
 
 	def_object_events
-	object_event 32,  6, SPRITE_GRAMPS, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CherrygroveCityGuideGent, EVENT_GUIDE_GENT_IN_HIS_HOUSE
+	object_event 32,  6, SPRITE_GRAMPS, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CherrygroveCityGuideGent, EVENT_GUIDE_GENT_VISIBLE_IN_CHERRYGROVE
 	object_event 39,  6, SPRITE_RIVAL, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_RIVAL_CHERRYGROVE_CITY
 	object_event 27, 12, SPRITE_TEACHER, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, CherrygroveTeacherScript, -1
 	object_event 23,  7, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, CherrygroveYoungsterScript, -1

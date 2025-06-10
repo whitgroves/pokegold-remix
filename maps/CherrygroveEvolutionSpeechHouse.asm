@@ -28,15 +28,16 @@ CherrygroveEvolutionSpeechHouseYoungsterText:
 	text "#MON gain expe-"
 	line "rience in battle"
 
-	para "and change their"
-	line "form."
+	para "and can even"
+	line "change their form."
 	done
 
 CherrygroveEvolutionSpeechHouseLassText:
-	text "#MON change?"
+	text "#MON change as"
+	line "they battle?"
 
-	para "I would be shocked"
-	line "if one did that!"
+	para "Is that the only"
+	line "way they do that?"
 	done
 
 CherrygroveEvolutionSpeechHouse_MapEvents:
