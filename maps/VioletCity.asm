@@ -25,9 +25,6 @@ VioletCityEarlScript:
 	writetext Text_EarlAsksIfYouBeatFalkner
 	yesorno
 	iffalse .FollowEarl
-	sjump .PointlessJump
-
-.PointlessJump:
 	writetext Text_VeryNiceIndeed
 	waitbutton
 	closetext
@@ -207,11 +204,16 @@ VioletCityLassText:
 	line "to appear in"
 	cont "SPROUT TOWER."
 
-	para "They said normal-"
-	line "type #MON moves"
+	para "They say Normal-"
+	line "type moves can't"
+	cont "hit them,"
 
-	para "had no effect on"
-	line "ghosts."
+	para "and bug #MON"
+	line "can't poison them"
+	cont "at all."
+
+	para "How do you deal"
+	line "with that?"
 	done
 
 VioletCitySuperNerdText:

@@ -70,12 +70,17 @@ CherrygroveCityGuideGent:
 	writetext GuideGentGiftText
 	promptbutton
 	scall CherrygroveCityGiveMapCard
+	writetext GuideGentTourCompleteText
+	waitbutton
+	closetext
 	stopfollow
 	special RestartMapMusic
 	turnobject PLAYER, UP
 	applymovement CHERRYGROVECITY_GRAMPS, GuideGentMovement6
 	playsound SFX_ENTER_DOOR
 	disappear CHERRYGROVECITY_GRAMPS
+	setevent EVENT_GUIDE_GENT_VISIBLE_IN_CHERRYGROVE
+	clearevent EVENT_GUIDE_GENT_IN_HIS_HOUSE
 	waitsfx
 	end
 
@@ -83,8 +88,6 @@ CherrygroveCityGuideGent:
 	writetext GuideGentNoText
 	promptbutton
 	scall CherrygroveCityGiveMapCard
-	end
-	
 .GotMapCard
 	writetext GuideGentIfYouCanFindItText
 	waitbutton
@@ -99,9 +102,6 @@ CherrygroveCityGiveMapCard:
 	promptbutton
 	writetext GuideGentPokegearText
 	waitbutton
-	closetext
-	setevent EVENT_GUIDE_GENT_VISIBLE_IN_CHERRYGROVE
-	clearevent EVENT_GUIDE_GENT_IN_HIS_HOUSE
 	end
 
 .JumpstdReceiveItem:
@@ -430,8 +430,10 @@ GuideGentPokegearText:
 	text "#GEAR becomes"
 	line "more useful as you"
 	cont "add CARDS."
+	done
 
-	para "I wish you luck on"
+GuideGentTourCompleteText:
+	text "I wish you luck on"
 	line "your journey!"
 	done
 

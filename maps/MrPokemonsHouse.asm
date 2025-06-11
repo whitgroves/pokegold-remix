@@ -119,6 +119,8 @@ MrPokemonsHouse_OakScript:
 	writetext MrPokemonText_ImDependingOnYou
 	waitbutton
 	closetext
+	clearevent EVENT_GUIDE_GENT_IN_HIS_HOUSE ; in case the player skipped the tour
+	setevent EVENT_GUIDE_GENT_VISIBLE_IN_CHERRYGROVE
 	setevent EVENT_RIVAL_NEW_BARK_TOWN
 	setscene SCENE_MRPOKEMONSHOUSE_NOOP
 	setmapscene CHERRYGROVE_CITY, SCENE_CHERRYGROVECITY_MEET_RIVAL
