@@ -16,7 +16,20 @@ CherrygrovePokecenter1FFisherScript:
 	jumptextfaceplayer CherrygrovePokecenter1FFisherText
 
 CherrygrovePokecenter1FGentlemanScript:
-	jumptextfaceplayer CherrygrovePokecenter1FGentlemanText
+	faceplayer
+	opentext
+	checkevent EVENT_GAVE_MYSTERY_EGG_TO_ELM
+	iftrue .MartRestocked
+	writetext CherrygrovePokecenter1FGentlemanText_NoBalls
+	waitbutton
+	closetext
+	end
+
+.MartRestocked:
+	writetext CherrygrovePokecenter1FGentlemanText_Restocked
+	waitbutton
+	closetext
+	end
 
 CherrygrovePokecenter1FTeacherScript:
 	faceplayer
@@ -46,12 +59,20 @@ CherrygrovePokecenter1FFisherText:
 	line "it's all free."
 	done
 
-CherrygrovePokecenter1FGentlemanText:
+CherrygrovePokecenter1FGentlemanText_NoBalls:
 	text "The MART ran out"
 	line "of # BALLS."
 
 	para "Thankfully I had"
 	line "some in the PC."
+	done
+
+CherrygrovePokecenter1FGentlemanText_Restocked:
+	text "# BALLS are"
+	line "back in stock!"
+
+	para "But I wish they"
+	line "carried REPEL."
 	done
 
 CherrygrovePokecenter1FTeacherText:
@@ -64,12 +85,16 @@ CherrygrovePokecenter1FTeacherText:
 	done
 
 CherrygrovePokecenter1FTeacherText_CommCenterOpen:
-	text "The COMMUNICATION"
-	line "CENTER upstairs"
-	cont "was just built."
+	text "They just finished"
+	line "the COMMUNICATION"
+	cont "CENTER upstairs."
 
 	para "I traded #MON"
-	line "there already!"
+	line "with a friend in"
+	cont "BLACKTHORN CITY."
+
+	para "I know she'll take"
+	line "good care of it."
 	done
 
 CherrygrovePokecenter1F_MapEvents:

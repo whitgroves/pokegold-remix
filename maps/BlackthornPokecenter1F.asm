@@ -36,15 +36,15 @@ BlackthornPokecenter1FGentlemanText:
 	done
 
 BlackthornPokecenter1FTwinText:
-	text "There was this"
-	line "move I just had"
+	text "I traded #MON"
+	line "with my friend in"
+	cont "CHERRYGROVE CITY,"
 
-	para "to teach my #-"
-	line "MON."
+	para "But it evolved as"
+	line "soon as I got it!"
 
-	para "So I got the MOVE"
-	line "DELETER to make it"
-	cont "forget an HM move."
+	para "I hope she doesn't"
+	line "get mad…"
 	done
 
 BlackthornPokecenter1F_MapEvents:
