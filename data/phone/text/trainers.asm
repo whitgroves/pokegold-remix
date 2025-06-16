@@ -320,7 +320,7 @@ PhoneBugCatchingContestText:
 	line "the Bug-Catching"
 
 	para "Contest today at"
-	line "the PARK."
+	line "NATIONAL PARK."
 
 	para "<PLAYER>, are you"
 	line "going to go?"

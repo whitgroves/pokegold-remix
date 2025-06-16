@@ -204,7 +204,7 @@ VioletCityLassText:
 	line "to appear in"
 	cont "SPROUT TOWER."
 
-	para "They say Normal-"
+	para "They say normal-"
 	line "type moves can't"
 	cont "hit them,"
 
@@ -254,7 +254,7 @@ VioletCitySignText:
 	text "VIOLET CITY"
 
 	para "The City of"
-	line "Nostalgic Scents"
+	line "Rising Winds"
 	done
 
 VioletGymSignText:

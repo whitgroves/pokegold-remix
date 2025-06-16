@@ -37,9 +37,9 @@ VioletGymFalknerScript:
 	writetext FalknerZephyrBadgeText
 	promptbutton
 	verbosegiveitem TM_RAZOR_WIND
-	iffalse .NoRoomForMudSlap
+	iffalse .NoRoomForRazorWind
 	setevent EVENT_GOT_TM31_RAZOR_WIND
-	writetext FalknerTMMudSlapText
+	writetext FalknerTMRazorWindText
 	waitbutton
 	closetext
 	end
@@ -47,7 +47,7 @@ VioletGymFalknerScript:
 .SpeechAfterTM:
 	writetext FalknerFightDoneText
 	waitbutton
-.NoRoomForMudSlap:
+.NoRoomForRazorWind:
 	closetext
 	end
 
@@ -155,7 +155,7 @@ FalknerZephyrBadgeText:
 	line "too."
 	done
 
-FalknerTMMudSlapText:
+FalknerTMRazorWindText:
 	text "By using a TM, a"
 	line "#MON will"
 
@@ -261,8 +261,7 @@ VioletGymGuideText:
 	cont "same weaknesses."
 
 	para "Rather than one"
-	line "rock or electric-"
-	cont "type #MON,"
+	line "#MON,"
 
 	para "You should build"
 	line "a team you can"
