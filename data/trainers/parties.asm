@@ -367,13 +367,15 @@ YoungsterGroup:
 
 	; YOUNGSTER (3)
 	db "ALBERT@", TRAINERTYPE_NORMAL
-	db  6, SENTRET
+	db  6, RATTATA
 	db  7, HOPPIP
 	db  8, POLIWAG
 	db -1 ; end
 
 	; YOUNGSTER (4)
 	db "GORDON@", TRAINERTYPE_NORMAL
+	db  7, PIDGEY
+	db  6, SENTRET
 	db 11, WOOPER
 	db -1 ; end
 
@@ -1583,10 +1585,8 @@ BugCatcherGroup:
 FisherGroup:
 	; FISHER (1)
 	db "JUSTIN@", TRAINERTYPE_NORMAL
-	db  5, MAGIKARP
-	db  5, MAGIKARP
-	db 15, MAGIKARP
-	db  5, MAGIKARP
+	db  8, POLIWAG
+	db  8, WOOPER
 	db -1 ; end
 
 	; FISHER (2)
@@ -1611,8 +1611,10 @@ FisherGroup:
 
 	; FISHER (5)
 	db "HENRY@", TRAINERTYPE_NORMAL
-	db  8, POLIWAG
-	db  8, WOOPER
+	db  5, MAGIKARP
+	db  5, MAGIKARP
+	db 15, MAGIKARP
+	db  5, MAGIKARP
 	db -1 ; end
 
 	; FISHER (6)
@@ -2757,6 +2759,7 @@ PicnickerGroup:
 
 	; PICNICKER (11)
 	db "LIZ@", TRAINERTYPE_NORMAL ; rematch post Ecruteak
+	db 18, POLIWAG
 	db 18, SKIPLOOM
 	db 18, FLAAFFY
 	db -1 ; end
@@ -2824,7 +2827,7 @@ PicnickerGroup:
 CamperGroup:
 	; CAMPER (1)
 	db "ROLAND@", TRAINERTYPE_NORMAL
-	db  9, HOPPIP
+	db  7, FARFETCH_D
 	db -1 ; end
 
 	; CAMPER (2)
@@ -3011,7 +3014,7 @@ SageGroup:
 
 	; SAGE (8)
 	db "NEAL@", TRAINERTYPE_NORMAL
-	db  6, BELLSPROUT
+	db  8, BELLSPROUT
 	db -1 ; end
 
 	; SAGE (9)

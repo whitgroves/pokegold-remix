@@ -30,7 +30,7 @@ VioletPokecenter1F_ElmsAideScript:
 	setevent EVENT_GOT_TOGEPI_EGG_FROM_ELMS_AIDE
 	clearevent EVENT_ELMS_AIDE_IN_LAB
 	clearevent EVENT_TOGEPI_HATCHED
-	setmapscene ROUTE_32, SCENE_ROUTE32_OFFER_SLOWPOKETAIL
+	;setmapscene ROUTE_32, SCENE_ROUTE32_OFFER_SLOWPOKETAIL ; TODO -- remove
 	writetext VioletPokecenterElmsAideGiveEggText
 	waitbutton
 	closetext
@@ -161,6 +161,14 @@ VioletPokecenter1FSuperNerdText:
 	text "A guy named BILL"
 	line "made the #MON"
 	cont "PC storage system."
+
+	para "When you catch a"
+	line "#MON with a"
+	cont "full party,"
+
+	para "The new #MON"
+	line "is instantly up-"
+	cont "loaded to the PC."
 	done
 
 VioletPokecenter1FGentlemanText:
@@ -174,7 +182,10 @@ VioletPokecenter1FGentlemanText:
 	para "But justice pre-"
 	line "vailed--a young"
 	cont "kid broke 'em up."
-	done
+
+	para "I wonder…"
+	line "Where is he now?"
+	done 
 
 VioletPokecenter1FYoungsterText:
 	text "#MON are smart."

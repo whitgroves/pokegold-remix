@@ -16,8 +16,8 @@
 
 Route32_MapScripts:
 	def_scene_scripts
-	scene_script Route32Noop1Scene, SCENE_ROUTE32_COOLTRAINER_M_BLOCKS
-	scene_script Route32Noop2Scene, SCENE_ROUTE32_OFFER_SLOWPOKETAIL
+	scene_script Route32Noop1Scene, SCENE_ROUTE32_OFFER_SLOWPOKETAIL
+	scene_script Route32Noop2Scene, SCENE_ROUTE32_COOLTRAINER_M_BLOCKS
 	scene_script Route32Noop3Scene, SCENE_ROUTE32_NOOP
 
 	def_callbacks
@@ -111,7 +111,7 @@ Route32WannaBuyASlowpokeTailScript:
 SlowpokeTailSalesmanScript:
 	faceplayer
 _OfferToSellSlowpokeTail:
-	setscene SCENE_ROUTE32_NOOP
+	setscene SCENE_ROUTE32_COOLTRAINER_M_BLOCKS
 	opentext
 	writetext Text_MillionDollarSlowpokeTail
 	yesorno
@@ -754,8 +754,8 @@ Route32_MapEvents:
 	warp_event  6, 79, UNION_CAVE_1F, 4
 
 	def_coord_events
-	coord_event 10, 76, SCENE_ROUTE32_COOLTRAINER_M_BLOCKS, Route32CooltrainerMStopsYouScene
 	coord_event  7, 71, SCENE_ROUTE32_OFFER_SLOWPOKETAIL, Route32WannaBuyASlowpokeTailScript
+	coord_event 10, 76, SCENE_ROUTE32_COOLTRAINER_M_BLOCKS, Route32CooltrainerMStopsYouScene
 
 	def_bg_events
 	bg_event 13,  5, BGEVENT_READ, Route32Sign

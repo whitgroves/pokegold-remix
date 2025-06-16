@@ -289,8 +289,8 @@ AcademyPoisonText:
 	line "you walk."
 
 	para "some #MON, like"
-	line "Rock- and other"
-	cont "Poison-types,"
+	line "rock- and other"
+	cont "poison-types,"
 	
 	para "are immune"
 	line "to poisoning."
@@ -350,10 +350,10 @@ AcademyFreezeText:
 	line "after battle."
 
 	para "If your #MON"
-	line "isn't an Ice-type,"
+	line "isn't an ice-type,"
 
 	para "or doesn't know a"
-	line "Fire-type move,"
+	line "fire-type move,"
 
 	para "thaw it out with"
 	line "an ICE HEAL."
@@ -477,7 +477,7 @@ AcademyNotebookText4:
 	line "statuses are…"
 
 	para "The next page"
-	line "is… Blank!"
+	line "is… blank!"
 	done
 
 AcademyStickerMachineText:

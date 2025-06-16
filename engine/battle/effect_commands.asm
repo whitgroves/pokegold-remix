@@ -3686,9 +3686,8 @@ SleepOpponent:
 	call BattleRandom
 	and SLP_MASK
 	jr z, .random_loop
-	;cp SLP_MASK
-	cp TREEMON_SLEEP_TURNS ; max sleep turns
-	jr z, .random_loop
+	cp TREEMON_SLEEP_TURNS ; set max sleep turns to 5
+	jr nc, .random_loop
 	inc a
 	ld [de], a
 	call UpdateOpponentInParty
@@ -5321,7 +5320,7 @@ BattleCommand_EndLoop:
 	ld [wBattleScriptBufferAddress], a
 	ret
 
-BattleCommand_FakeOut:
+BattleCommand_FakeOut: ; TODO -- review if/where this is used
 	ld a, [wAttackMissed]
 	and a
 	ret nz

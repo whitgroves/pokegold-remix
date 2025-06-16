@@ -32,8 +32,7 @@ VioletGymFalknerScript:
 	iftrue .SpeechAfterTM
 	setevent EVENT_BEAT_BIRD_KEEPER_ROD
 	setevent EVENT_BEAT_BIRD_KEEPER_ABE
-	;setmapscene ELMS_LAB, SCENE_ELMSLAB_NOOP
-	;specialphonecall SPECIALCALL_ASSISTANT
+	setmapscene ROUTE_32, SCENE_ROUTE32_NOOP
 	writetext FalknerZephyrBadgeText
 	promptbutton
 	verbosegiveitem TM_RAZOR_WIND
