@@ -12,9 +12,10 @@ Trainers:
 
 FalknerGroup:
 	; FALKNER (1)
-	db "FALKNER@", TRAINERTYPE_MOVES 
-	db 	7, DODUO,		GROWL, PECK, MUD_SLAP, PURSUIT
-	db  9, FARFETCH_D,  LEER, PECK, VINE_WHIP, RAZOR_WIND
+	db "FALKNER@", TRAINERTYPE_MOVES
+	db  9, MURKROW,		PECK, PURSUIT, WHIRLWIND, RAZOR_WIND
+	db 10, DODUO,		GROWL, PECK, MUD_SLAP, NO_MOVE
+	db  8, FARFETCH_D,  LEER, PECK, VINE_WHIP, RAZOR_WIND
 	db -1 ; end
 
 WhitneyGroup:
@@ -550,13 +551,14 @@ SchoolboyGroup:
 BirdKeeperGroup:
 	; BIRD_KEEPER (1)
 	db "ROD@", TRAINERTYPE_NORMAL ; violet gym
-	db  7, PIDGEY
-	db  7, HOOTHOOT
+	db  9, PIDGEY
+	db  9, HOOTHOOT
 	db -1 ; end
 
 	; BIRD_KEEPER (2)
 	db "ABE@", TRAINERTYPE_NORMAL ; violet gym
 	db  9, SPEAROW
+	db  9, NATU
 	db -1 ; end
 
 	; BIRD_KEEPER (3)

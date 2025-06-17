@@ -27,14 +27,14 @@ VioletGymFalknerScript:
 	playsound SFX_GET_BADGE
 	waitsfx
 	setflag ENGINE_ZEPHYRBADGE
+	writetext FalknerZephyrBadgeText
+	promptbutton
 .FightDone:
 	checkevent EVENT_GOT_TM31_RAZOR_WIND
 	iftrue .SpeechAfterTM
 	setevent EVENT_BEAT_BIRD_KEEPER_ROD
 	setevent EVENT_BEAT_BIRD_KEEPER_ABE
 	setmapscene ROUTE_32, SCENE_ROUTE32_NOOP
-	writetext FalknerZephyrBadgeText
-	promptbutton
 	verbosegiveitem TM_RAZOR_WIND
 	iffalse .NoRoomForRazorWind
 	setevent EVENT_GOT_TM31_RAZOR_WIND
@@ -161,10 +161,6 @@ FalknerTMRazorWindText:
 	para "instantly learn a"
 	line "new move."
 
-	para "Think before you"
-	line "act--a TM can be"
-	cont "used only once."
-
 	para "TM31 contains"
 	line "RAZOR WIND."
 
@@ -177,6 +173,10 @@ FalknerTMRazorWindText:
 	para "In other words, it"
 	line "is both defensive"
 	cont "and offensive."
+
+	para "Think before you"
+	line "act--a TM can be"
+	cont "used only once."
 	done
 
 FalknerFightDoneText:

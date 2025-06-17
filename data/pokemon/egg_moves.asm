@@ -245,7 +245,6 @@ FarfetchDEggMoves:
 	db -1 ; end
 
 DoduoEggMoves:
-	db PURSUIT
 	db FAINT_ATTACK
 	db FLAIL
 	db THRASH

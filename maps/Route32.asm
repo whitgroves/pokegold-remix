@@ -55,18 +55,16 @@ Route32CooltrainerMContinueScene:
 	verbosegiveitem MIRACLE_SEED
 	iffalse .BagFull
 	setevent EVENT_GOT_MIRACLE_SEED_IN_ROUTE_32
-	jr .GotMiracleSeed
-
-.DontHaveZephyrBadge:
-	writetext Route32CooltrainerMText_VioletGym
-	waitbutton
-	closetext
-	end
-
 .GotMiracleSeed:
 	writetext Route32CooltrainerMText_ExperiencesShouldBeUseful
 	waitbutton
 .BagFull:
+	closetext
+	end
+
+.DontHaveZephyrBadge:
+	writetext Route32CooltrainerMText_VioletGym
+	waitbutton
 	closetext
 	end
 
