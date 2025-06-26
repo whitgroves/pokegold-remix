@@ -13,9 +13,10 @@ Trainers:
 FalknerGroup:
 	; FALKNER (1)
 	db "FALKNER@", TRAINERTYPE_MOVES
-	db  9, MURKROW,		PECK, PURSUIT, WHIRLWIND, RAZOR_WIND
-	db 10, DODUO,		GROWL, PECK, MUD_SLAP, NO_MOVE
-	db  8, FARFETCH_D,  LEER, PECK, VINE_WHIP, RAZOR_WIND
+	db  7, MURKROW,		PECK, PURSUIT, WHIRLWIND, RAZOR_WIND
+	db  9, DODUO,		GROWL, PECK, MUD_SLAP, NO_MOVE
+	db  9, NATU,		PECK, TELEPORT, HAZE, NO_MOVE
+	db  7, FARFETCH_D,  LEER, PECK, VINE_WHIP, RAZOR_WIND
 	db -1 ; end
 
 WhitneyGroup:
@@ -367,17 +368,17 @@ YoungsterGroup:
 	db -1 ; end
 
 	; YOUNGSTER (3)
-	db "ALBERT@", TRAINERTYPE_NORMAL
+	db "ALBERT@", TRAINERTYPE_NORMAL ; route 32
 	db  6, RATTATA
 	db  7, HOPPIP
 	db  8, POLIWAG
 	db -1 ; end
 
 	; YOUNGSTER (4)
-	db "GORDON@", TRAINERTYPE_NORMAL
+	db "GORDON@", TRAINERTYPE_NORMAL ; route 32
 	db  7, PIDGEY
 	db  6, SENTRET
-	db 11, WOOPER
+	db  9, WOOPER
 	db -1 ; end
 
 	; YOUNGSTER (5)
@@ -629,10 +630,10 @@ BirdKeeperGroup:
 	db -1 ; end
 
 	; BIRD_KEEPER (13)
-	db "PETER@", TRAINERTYPE_NORMAL
-	db  6, HOOTHOOT
-	db  6, PIDGEY
-	db  8, DODUO
+	db "PETER@", TRAINERTYPE_NORMAL ; route 32
+	db  8, HOOTHOOT
+	db  9, NATU
+	db 10, DODUO
 	db -1 ; end
 
 	; BIRD_KEEPER (14)
@@ -1140,7 +1141,8 @@ BeautyGroup:
 
 PokemaniacGroup:
 	; POKEMANIAC (1)
-	db "LARRY@", TRAINERTYPE_NORMAL
+	db "LARRY@", TRAINERTYPE_NORMAL ; union cave 1F
+	db  8, PARAS
 	db 10, SLOWPOKE
 	db -1 ; end
 
@@ -1586,13 +1588,13 @@ BugCatcherGroup:
 
 FisherGroup:
 	; FISHER (1)
-	db "JUSTIN@", TRAINERTYPE_NORMAL
+	db "JUSTIN@", TRAINERTYPE_NORMAL ; route 32
 	db  8, POLIWAG
 	db  8, WOOPER
 	db -1 ; end
 
 	; FISHER (2)
-	db "RALPH@", TRAINERTYPE_NORMAL
+	db "RALPH@", TRAINERTYPE_NORMAL ; route 32
 	db 9, GOLDEEN
 	db -1 ; end
 
@@ -1612,7 +1614,7 @@ FisherGroup:
 	db -1 ; end
 
 	; FISHER (5)
-	db "HENRY@", TRAINERTYPE_NORMAL
+	db "HENRY@", TRAINERTYPE_NORMAL ; route 32
 	db  5, MAGIKARP
 	db  5, MAGIKARP
 	db 15, MAGIKARP
@@ -2221,9 +2223,9 @@ HikerGroup:
 	db -1 ; end
 
 	; HIKER (2)
-	db "RUSSELL@", TRAINERTYPE_NORMAL
-	db  6, DIGLETT
+	db "RUSSELL@", TRAINERTYPE_NORMAL ; union cave 1F
 	db  7, MACHOP
+	db  9, DIGLETT
 	db  8, GEODUDE
 	db -1 ; end
 
@@ -2241,7 +2243,7 @@ HikerGroup:
 	db -1 ; end
 
 	; HIKER (5)
-	db "ANTHONY@", TRAINERTYPE_NORMAL
+	db "ANTHONY@", TRAINERTYPE_NORMAL ; route 33
 	db 11, GEODUDE
 	db 11, MACHOP
 	db -1 ; end
@@ -2332,8 +2334,9 @@ HikerGroup:
 	db -1 ; end
 
 	; HIKER (18)
-	db "DANIEL@", TRAINERTYPE_NORMAL
-	db 11, ONIX
+	db "DANIEL@", TRAINERTYPE_NORMAL ; union cave 1F
+	db  8, DUNSPARCE
+	db 10, ONIX
 	db -1 ; end
 
 	; HIKER (19)
@@ -2472,7 +2475,7 @@ FirebreatherGroup:
 	db -1 ; end
 
 	; FIREBREATHER (5)
-	db "BILL@", TRAINERTYPE_NORMAL
+	db "BILL@", TRAINERTYPE_NORMAL ; union cave 1F
 	db  9, KOFFING
 	db  7, MAGBY
 	db -1 ; end
@@ -2484,7 +2487,8 @@ FirebreatherGroup:
 	db -1 ; end
 
 	; FIREBREATHER (7)
-	db "RAY@", TRAINERTYPE_NORMAL
+	db "RAY@", TRAINERTYPE_NORMAL ; union cave 1F
+	db  8, ZUBAT
 	db  9, VULPIX
 	db -1 ; end
 
@@ -2699,8 +2703,8 @@ PsychicGroup:
 
 PicnickerGroup:
 	; PICNICKER (1)
-	db "LIZ@", TRAINERTYPE_NORMAL
-	db  9, HOPPIP
+	db "LIZ@", TRAINERTYPE_NORMAL ; route 32
+	db  7, HOPPIP
 	db  9, MAREEP
 	db -1 ; end
 
@@ -2828,7 +2832,7 @@ PicnickerGroup:
 
 CamperGroup:
 	; CAMPER (1)
-	db "ROLAND@", TRAINERTYPE_NORMAL
+	db "ROLAND@", TRAINERTYPE_NORMAL ; route 32
 	db  7, FARFETCH_D
 	db -1 ; end
 

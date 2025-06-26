@@ -174,9 +174,9 @@ FalknerTMRazorWindText:
 	line "is both defensive"
 	cont "and offensive."
 
-	para "Think before you"
-	line "act--a TM can be"
-	cont "used only once."
+	para "Think before using"
+	line "it! A TM can only"
+	cont "be used once."
 	done
 
 FalknerFightDoneText:

@@ -1340,9 +1340,9 @@ JohtoGrassWildMons:
 	db 6, WOOPER
 	db 7, HOOTHOOT
 	db 6, POLIWAG
-	db 8, ZUBAT
 	db 6, MAREEP
-	db 7, HOPPIP
+	db 8, NATU
+	db 9, NATU
 	end_grass_wildmons
 
 	def_grass_wildmons ROUTE_33
