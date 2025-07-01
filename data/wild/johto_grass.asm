@@ -1325,7 +1325,7 @@ JohtoGrassWildMons:
 	db 7, HOPPIP
 	db 7, PIDGEY
 	db 6, WOOPER
-	db 6, HOOTHOOT
+	db 8, NATU
 	db 7, FARFETCH_D
 	; day
 	db 6, SENTRET

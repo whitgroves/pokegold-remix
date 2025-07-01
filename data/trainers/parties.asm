@@ -13,10 +13,10 @@ Trainers:
 FalknerGroup:
 	; FALKNER (1)
 	db "FALKNER@", TRAINERTYPE_MOVES
-	db  7, MURKROW,		PECK, PURSUIT, WHIRLWIND, RAZOR_WIND
 	db  9, DODUO,		GROWL, PECK, MUD_SLAP, NO_MOVE
 	db  9, NATU,		PECK, TELEPORT, HAZE, NO_MOVE
 	db  7, FARFETCH_D,  LEER, PECK, VINE_WHIP, RAZOR_WIND
+	db  7, MURKROW,		PECK, PURSUIT, WHIRLWIND, RAZOR_WIND
 	db -1 ; end
 
 WhitneyGroup:
@@ -552,14 +552,14 @@ SchoolboyGroup:
 BirdKeeperGroup:
 	; BIRD_KEEPER (1)
 	db "ROD@", TRAINERTYPE_NORMAL ; violet gym
+	db  7, HOOTHOOT
 	db  9, PIDGEY
-	db  9, HOOTHOOT
 	db -1 ; end
 
 	; BIRD_KEEPER (2)
 	db "ABE@", TRAINERTYPE_NORMAL ; violet gym
 	db  9, SPEAROW
-	db  9, NATU
+	db  7, NATU
 	db -1 ; end
 
 	; BIRD_KEEPER (3)
@@ -1143,7 +1143,7 @@ PokemaniacGroup:
 	; POKEMANIAC (1)
 	db "LARRY@", TRAINERTYPE_NORMAL ; union cave 1F
 	db  8, PARAS
-	db 10, SLOWPOKE
+	db  7, DUNSPARCE
 	db -1 ; end
 
 	; POKEMANIAC (2)
@@ -1525,7 +1525,7 @@ BugCatcherGroup:
 
 	; BUG_CATCHER (6)
 	db "AL@", TRAINERTYPE_NORMAL ; azalea gym
-	db  7, PARAS
+	db  8, PARAS
 	db  9, PINECO
 	db 12, VENONAT
 	db -1 ; end
@@ -2335,8 +2335,7 @@ HikerGroup:
 
 	; HIKER (18)
 	db "DANIEL@", TRAINERTYPE_NORMAL ; union cave 1F
-	db  8, DUNSPARCE
-	db 10, ONIX
+	db 11, ONIX
 	db -1 ; end
 
 	; HIKER (19)
@@ -3222,7 +3221,7 @@ TwinsGroup:
 	db -1 ; end
 
 	; TWINS (4)
-	db "AMY & MAY@", TRAINERTYPE_NORMAL
+	db "AMY & MAY@", TRAINERTYPE_NORMAL ; azalea gym
 	db 10, LEDYBA
 	db 10, SPINARAK
 	db -1 ; end
