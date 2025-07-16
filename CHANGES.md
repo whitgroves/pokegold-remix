@@ -58,7 +58,6 @@ These mons have had their types updated:
 - Charizard: *Fire/Flying* -> *Fire/Dragon*
 - Blastoise: *Water* -> *Water/Steel*
 - Arbok: *Poison* -> *Poison/Dark*
-- Pikachu: *Electric* -> *Electric/Normal*
 - Raichu: *Electric* -> *Electric/Psychic*
 - Sandshrew: *Ground* -> *Ground/Normal*
 - Sandslash: *Ground* -> *Ground/Steel*
@@ -78,8 +77,6 @@ These mons have had their types updated:
 - Mankey: *Fighting* -> *Fighting/Normal*
 - Primeape: *Fighting* -> *Fighting/Dark*
 - Growlithe: *Fire* -> *Fire/Normal*
-- Arcanine: *Fire* -> *Fire/Fighting*
-- Poliwag, Poliwhirl: *Water* -> *Water/Normal*
 - Geodude, Graveler, Golem: *Rock/Ground* -> *Rock*
 - Ponyta, Rapidash: *Fire* -> *Fire/Normal*
 - Slowpoke, Slowbro: *Water/Psychic* -> *Poison/Psychic*
