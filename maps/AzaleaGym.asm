@@ -263,7 +263,7 @@ BugCatcherJoshSeenText:
 	cont "you're mighty!"
 
 	para "But my bug"
-	line "#MON are pretty"
+	line "#MON is pretty"
 	cont "tough too!"
 	done
 

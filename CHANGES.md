@@ -41,8 +41,8 @@ ICE||0.5|0.5|2|2|0.5|0.5||2|2||2|||0.5||0.5
 FIGHTING|2||0.5|||2|0.5|||0.5|0.5|0.5|2|0.5||2|2
 POISON|||2||2||0.5|0.5|0.5|||2|0.5|0.5|2|0.5|0.5
 GROUND||2||2|0.5||2|2||0||0.5|2||||2
-FLYING|||||2||2|||||2|0.5||||0.5
-PSYCHIC|||||||2|2|||0.5|0.5|||0.5|0.5|
+FLYING||||0.5|2||2|||||2|0.5||||0.5
+PSYCHIC|||||0.5||2|2|||0.5|0.5|||0.5|0.5|
 BUG||0.5||0.5|2|||||0.5|2||0.5|0.5||2|0.5
 ROCK||2||||2|||0.5|2||2|||||0.5
 GHOST|0||||0.5||0.5||||2|0.5||2|2|0.5|
@@ -486,7 +486,7 @@ The Mahogany Mart carries these items once the Rocket Hideout is cleared and Pry
 
 ### Status Ailments
 - *Fire*-type moves can no longer defrost enemies through their own *Safeguard*.
-- Sleep lasts for a maximum of 5 turns instead of 7.
+- Sleep lasts for 3-5 turns instead of 2-7, except for *Rest*, which is still 2 turns.
 - Although not immune to *Poison*-type damage, *Steel*, *Poison*, *Rock*, and *Ghost* type pokemon are immune to the poison status, unless applied by *Toxic*.
 - Any *Fire*-type move, not just *Flame Wheel*, will now defrost the user.
 
