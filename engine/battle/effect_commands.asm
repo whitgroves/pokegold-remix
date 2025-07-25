@@ -3686,8 +3686,9 @@ SleepOpponent:
 	call BattleRandom
 	and SLP_MASK
 	jr z, .random_loop
-	cp TREEMON_SLEEP_TURNS ; set max sleep turns to 5
+	cp TREEMON_SLEEP_TURNS - 1 ; set max sleep turns to 5
 	jr nc, .random_loop
+	inc a
 	inc a
 	ld [de], a
 	call UpdateOpponentInParty
@@ -3825,7 +3826,7 @@ BattleCommand_Poison:
 	cp EFFECT_TOXIC
 	ret
 
-; makes Poison, Rock, and Ghost immune to PSN status
+; makes Poison, Rock, Steel, and Ghost immune to PSN status
 ; Steel is already covered via type immunity
 CheckIfTargetIsPoisonStatusImmune: 
 	ld de, wEnemyMonType1
@@ -3842,12 +3843,16 @@ CheckIfTargetIsPoisonStatusImmune:
 	ret z
 	cp GHOST
 	ret z
+	cp STEEL
+	ret z
 	ld a, [de]
 	cp POISON
 	ret z
 	cp ROCK
 	ret z
 	cp GHOST
+	ret z
+	cp STEEL
 	ret
 
 PoisonOpponent:
