@@ -41,7 +41,6 @@ TypeMatchups:
 	db GRASS,        STEEL,        NOT_VERY_EFFECTIVE
 	db ICE,          FIRE,         NOT_VERY_EFFECTIVE
 	db ICE,          WATER,        NOT_VERY_EFFECTIVE
-	db ICE,          ELECTRIC,     SUPER_EFFECTIVE
 	db ICE,          GRASS,        SUPER_EFFECTIVE
 	db ICE,          ICE,          NOT_VERY_EFFECTIVE
 	db ICE,          FIGHTING,     NOT_VERY_EFFECTIVE

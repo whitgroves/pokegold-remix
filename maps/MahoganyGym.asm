@@ -193,10 +193,10 @@ PryceText_GlacierBadgeSpeech:
 	line "raise the SPECIAL"
 	cont "stats of #MON."
 
-	para "It also lets your"
-	line "#MON use WHIRL-"
-	cont "POOL to get across"
-	cont "real whirlpools."
+	para "It also allows"
+	line "#MON to use"
+	cont "WHIRLPOOL to get"
+	cont "across whirlpools."
 
 	para "And this… This is"
 	line "a gift from me!"
