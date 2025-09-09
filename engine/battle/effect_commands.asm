@@ -3967,7 +3967,7 @@ SapHealth:
 BattleCommand_BurnTarget:
 	xor a
 	ld [wNumHits], a
-	call CheckWeatherBurn ; updates wEffectFailed against current weather status
+	farcall CheckWeatherBurn ; updates wEffectFailed against current weather status
 	call CheckStatusHit ; check for sub, existing status, type immunity, side effect chance, and safeguard
 	ret nz
 	call CheckMoveTypeMatchesTarget ; Don't burn a Fire-type
@@ -4022,7 +4022,7 @@ Defrost:
 BattleCommand_FreezeTarget:
 	xor a
 	ld [wNumHits], a
-	call CheckWeatherFreeze ; updates wEffectFailed against current weather status
+	farcall CheckWeatherFreeze ; updates wEffectFailed against current weather status
 	call CheckStatusHit ; check for sub, existing status, type immunity, side effect chance, and safeguard
 	ret nz
 	call CheckMoveTypeMatchesTarget ; Don't freeze an Ice-type
