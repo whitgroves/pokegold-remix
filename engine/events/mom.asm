@@ -273,10 +273,12 @@ BankOfMom:
 	ret
 
 .JustDoWhatYouCan:
-	checkevent EVENT_BEAT_ELITE_FOUR
-	iftrue .ProudOfYou
+	ld a, [wStatusFlags]
+	bit STATUSFLAGS_HALL_OF_FAME_F, a
+	jr nz, .ProudOfYou
 	ld hl, MomJustDoWhatYouCanText
 	call PrintText
+	jr .AskDST
 
 .ProudOfYou:
 	ld hl, MomProudOfYouText
