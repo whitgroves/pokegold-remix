@@ -72,6 +72,7 @@ WillScript_AfterBattle:
 	end
 
 WillsRoom_EnterMovement:
+	step LEFT
 	step UP
 	step UP
 	step UP
