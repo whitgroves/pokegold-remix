@@ -293,7 +293,7 @@ In rare cases (Sand Attack, Hyper Beam), moves have had their attack power or po
 - Lick: *30% Chance To Paralyze* -> *Leeches Health On Hit* | *20* -> *30 Power*
 - Smog: *20* -> *30 Power* | *70%* -> *85% Accuracy*
 - Bone Club: *Ground* -> *Rock* | *85%* -> *100% Accuracy*
-- Clamp: *35* -> *15 Power* | *10* -> *20 PP* | [*Always Physical*](#always-physical-moves)
+- Clamp: *Water* -> *Dark* | *35* -> *15 Power* | *10* -> *20 PP*
 - Skull Bash: *Normal* -> *Rock* | *Charging Move* -> *30% Chance To Flinch* | *100* -> *70 Power*
 - Spike Cannon: *Normal* -> *Steel*
 - Constrict: *Normal* -> *Bug* | *10% Chance To Lower Speed* -> [*Trapping Move*](#trapping-moves) | *10* -> *15 Power* | *100%* -> *75% Accuracy* | *35* -> *20 PP*
@@ -334,7 +334,6 @@ These moves are special, but their damage is now treated as physical.
 - Thunderpunch
 - Razor Leaf
 - Petal Dance
-- Clamp
 - Waterfall
 - Dizzy Punch
 - Crabhammer

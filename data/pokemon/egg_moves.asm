@@ -481,6 +481,7 @@ CyndaquilEggMoves:
 	db -1 ; end
 
 TotodileEggMoves:
+	db RAGE
 	db GLARE
 	db THRASH
 	db VICEGRIP

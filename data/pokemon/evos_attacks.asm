@@ -2194,10 +2194,10 @@ TotodileEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, SCRATCH
 	db 1, LEER
-	db 7, RAGE
+	db 7, CLAMP
 	db 13, WATER_GUN
 	db 20, BITE
-	db 27, CLAMP
+	db 27, MEAN_LOOK
 	db 35, SLASH
 	db 43, CRUNCH
 	db 52, HYDRO_PUMP
@@ -2208,10 +2208,10 @@ CroconawEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, SCRATCH
 	db 1, LEER
-	db 7, RAGE
+	db 7, CLAMP
 	db 13, WATER_GUN
 	db 21, BITE
-	db 28, CLAMP
+	db 28, GLARE
 	db 37, SLASH
 	db 45, CRUNCH
 	db 55, HYDRO_PUMP
@@ -2221,10 +2221,10 @@ FeraligatrEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, SCRATCH
 	db 1, LEER
-	db 7, RAGE
+	db 7, CLAMP
 	db 13, WATER_GUN
 	db 21, BITE
-	db 28, CLAMP
+	db 28, GLARE
 	db 38, SLASH
 	db 47, CRUNCH
 	db 58, HYDRO_PUMP
@@ -2937,7 +2937,7 @@ QwilfishEvosAttacks:
 
 ScizorEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, SLAM
+	db 1, CLAMP
 	db 6, HARDEN
 	db 12, FALSE_SWIPE
 	db 18, VICEGRIP

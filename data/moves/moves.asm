@@ -141,7 +141,7 @@ Moves:
 	move BONE_CLUB,    EFFECT_FLINCH_HIT,         65, ROCK,         100, 20,  10
 	move FIRE_BLAST,   EFFECT_BURN_HIT,          120, FIRE,          85,  5,  10
 	move WATERFALL,    EFFECT_NORMAL_HIT,         80, WATER,        100, 15,   0
-	move CLAMP,        EFFECT_TRAP_TARGET,        15, WATER,         75, 20,   0
+	move CLAMP,        EFFECT_TRAP_TARGET,        15, DARK,          75, 20,   0
 	move SWIFT,        EFFECT_ALWAYS_HIT,         60, NORMAL,       100, 20,   0
 	move SKULL_BASH,   EFFECT_FLINCH_HIT,         70, ROCK,         100, 15,  30
 	move SPIKE_CANNON, EFFECT_MULTI_HIT,          20, STEEL,        100, 15,   0
