@@ -21,7 +21,7 @@ MountMortar2FInsideTMDefenseCurl:
 	itemball TM_DEFENSE_CURL
 
 MountMortar2FInsideQuickClaw:
-	itemball QUICK_CLAW ; previously DRAGON_SCALE
+	itemball MOON_STONE ; previously DRAGON_SCALE
 
 MountMortar2FInsideElixer:
 	itemball ELIXER
