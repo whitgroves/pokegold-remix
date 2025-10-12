@@ -47,6 +47,7 @@ TypeMatchups:
 	db ICE,          GROUND,       SUPER_EFFECTIVE
 	db ICE,          FLYING,       SUPER_EFFECTIVE
 	db ICE,          BUG,          SUPER_EFFECTIVE
+	db ICE,          GHOST,        NOT_VERY_EFFECTIVE
 	db ICE,          DRAGON,       NOT_VERY_EFFECTIVE
 	db ICE,          STEEL,        NOT_VERY_EFFECTIVE
 	db FIGHTING,     NORMAL,       SUPER_EFFECTIVE
