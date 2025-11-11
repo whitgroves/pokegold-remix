@@ -140,23 +140,25 @@ BrockFightDoneText:
 	done
 
 CamperJerrySeenText:
-	text "The trainers of"
-	line "this GYM use rock-"
+	text "The leader of"
+	line "this GYM uses rock"
 	cont "type #MON."
 
-	para "That includes"
-	line "#MON that became"
+	para "But he'll accept"
+	line "any trainer whose"
 
-	para "the rock-type when"
-	line "they were revived"
+	para "#MON can endure"
+	line "the harsh weather"
 
-	para "from fossils."
-	line "Are you ready?"
+	para "rock-type #MON"
+	line "thrive in."
+
+	para "Are you ready?"
 	done
 
 CamperJerryBeatenText:
-	text "Fossil #MON"
-	line "weren't enough…"
+	text "My #MON weren't"
+	line "hardy enough…"
 	done
 
 CamperJerryAfterBattleText:
